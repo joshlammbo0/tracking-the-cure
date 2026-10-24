@@ -62,8 +62,10 @@ def quote(ticker):
             earnings = str(ed[0])
     except Exception:
         pass
-    spark = []
+    spark, history = [], []
     if closes is not None and len(closes):
+        weekly = closes.iloc[::-5].iloc[::-1]  # every 5th session, anchored on the latest close
+        history = [[str(i.date()), round(float(v), 4)] for i, v in weekly.items()]
         last_year = closes[closes.index >= closes.index[-1] - dt.timedelta(days=365)]
         spark = [round(float(v), 4) for v in last_year.iloc[::5]]
     return {
@@ -75,5 +77,6 @@ def quote(ticker):
         "revenue_ttm_usd": _rev_usd(info, ccy),
         "next_earnings": earnings,
         "spark": spark,
+        "history": history,
         "as_of": str(closes.index[-1].date()) if closes is not None and len(closes) else None,
     }

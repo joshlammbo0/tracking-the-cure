@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% import "_macros.html" as ui %}
+{% block main %}
+{% call ui.page_head("Catalyst calendar", "What could move the story next", "Trial readouts, launches, FDA decisions, conferences and earnings for everything tracked here. Registry dates are sponsor estimates and often slip; every item states how precise its date is.") %}
+<div class="toolbar mt-5">
+  <a class="btn" href="{{ root }}catalysts.ics" download>Download .ics</a>
+  <button class="btn ghost js-only" type="button" data-copy="{{ SITE_URL }}catalysts.ics">Copy subscribe URL</button>
+</div>
+<p class="xs muted mt-3 mb-0">To subscribe (updates daily): in Google Calendar choose <i>Other calendars → From URL</i>; in Apple Calendar <i>File → New Calendar Subscription</i>; paste <span class="nowrap">{{ SITE_URL }}catalysts.ics</span>.</p>
+{% endcall %}
+<div class="wrap">
+<section class="section" style="padding-top:var(--sp-6)" aria-labelledby="h-q">
+  <div class="section-head"><div><span class="eyebrow">Timeline</span><h2 id="h-q">By quarter</h2></div></div>
+  <div class="legend" aria-hidden="true"><span><i style="background:var(--s1)"></i>Readout</span><span><i style="background:var(--s3)"></i>Launch / FDA</span><span><i style="background:var(--s2)"></i>Company</span><span><i style="background:var(--rule-strong)"></i>Conference / earnings</span></div>
+  <div class="quarters" tabindex="0" role="region" aria-label="Catalysts by quarter (scrolls sideways)">
+    {% for q in quarters %}
+    <div class="quarter">
+      {% set main = q["items"]|rejectattr("type", "eq", "earnings")|list %}
+      {% set earn = q["items"]|selectattr("type", "eq", "earnings")|list %}
+      <h3>{{ q.label }} <span class="n">{{ q["items"]|length }}</span></h3>
+      {% if main %}<ul>{% for c in main %}<li data-type="{{ c.type }}"><span class="t">{{ c.type_label }} · {{ c.short }}</span>{% if c.related_url %}<a href="{{ root }}{{ c.related_url }}">{{ c.title }}</a>{% elif c.source %}<a href="{{ c.source }}" rel="noopener">{{ c.title }}</a>{% else %}{{ c.title }}{% endif %}</li>{% endfor %}</ul>{% endif %}
+      {% if earn %}<p class="xs muted mt-3 mb-0">+ {{ earn|length }} earnings date{{ "s" if earn|length > 1 }}: {{ earn|map(attribute="title")|map("replace", " earnings", "")|map("regex_ticker")|join(", ") }}</p>{% endif %}
+      {% if not q["items"] %}<p class="xs muted">Nothing dated yet.</p>{% endif %}
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="section" aria-labelledby="h-all">
+  <div class="section-head"><div><span class="eyebrow">{{ cats|length }} items</span><h2 id="h-all">All catalysts</h2><p>Includes the last 120 days so slipped readouts stay visible. Click a column to sort.</p></div></div>
+  <div class="filters" data-filter-for="cat-table" data-attr="type" data-status="cat-count" role="group" aria-label="Filter by type">
+    <span class="lbl">Type</span>
+    <button class="chip" type="button" data-val="all" aria-pressed="true">All</button>
+    {% for k, v in CAT_TYPE.items() %}{% if cats|selectattr("type","eq",k)|list %}<button class="chip" type="button" data-val="{{ k }}" aria-pressed="false">{{ v }}</button>{% endif %}{% endfor %}
+    <button class="chip" type="button" data-val="upcoming" aria-pressed="false">Upcoming only</button>
+    <span class="small muted" id="cat-count" aria-live="polite">{{ cats|length }} shown</span>
+  </div>
+  <div class="table-scroll" tabindex="0" role="region" aria-label="All catalysts">
+  <table class="data sortable" id="cat-table">
+    <thead><tr><th>Date</th><th>Type</th><th>Event</th><th>Date precision</th><th>Source</th></tr></thead>
+    <tbody>
+    {% for c in cats %}
+    <tr data-type="{{ c.type }}{{ ' upcoming' if c.days is not none and c.days >= 0 }}"{% if c.days is not none and c.days < 0 %} style="color:var(--muted)"{% endif %}>
+      <td class="num" data-sort="{{ c.date }}">{{ c.when }}{% if c.end and c.end != c.date %}<span class="sub">to {{ c.end|fdate }}</span>{% endif %}{% if c.days is not none and c.days < 0 %}<span class="sub">past</span>{% endif %}</td>
+      <td><span class="badge">{{ c.type_label }}</span></td>
+      <td class="wrap-text">{% if c.related_url %}<a href="{{ root }}{{ c.related_url }}">{{ c.title }}</a>{% else %}{{ c.title }}{% endif %}{% if c.note %}<span class="sub">{{ c.note }}</span>{% endif %}</td>
+      <td class="small">{{ c.prec_note or "exact" }}</td>
+      <td class="small">{% if c.source %}<a href="{{ c.source }}" rel="noopener">{{ c.origin }}</a>{% else %}{{ c.origin }}{% endif %}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+  </table></div>
+</section>
+</div>
+{% endblock %}

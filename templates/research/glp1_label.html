@@ -1,0 +1,43 @@
+{% extends "research/_note.html" %}
+{% set T = D.trials %}
+{% set s1 = T.get("NCT06914895") or {} %}
+{% set s2 = T.get("NCT06962280") or {} %}
+{% set a1 = T.get("NCT01836523") or {} %}
+{% set a2 = T.get("NCT02098395") or {} %}
+{% set L = D.glp1.labels %}
+{% block keypoints %}
+<li>Of the {{ L|length }} GLP-1-class brands checked against current FDA labels, {{ L|selectattr("approved_for_t1d")|list|length }} {{ "is" if (L|selectattr("approved_for_t1d")|list|length) == 1 else "are" }} indicated for type 1 diabetes.</li>
+<li>The last large attempt, Novo Nordisk's liraglutide ADJUNCT program ({{ a1.enrollment|num }} + {{ a2.enrollment|num }} patients), found small HbA1c benefits and more symptomatic hypoglycemia and ketosis. No T1D label followed.</li>
+<li>Newer data are better on weight and insulin dose but small: 24 patients for 12 weeks (tirzepatide) and 72 for 26 weeks (semaglutide).</li>
+<li>Lilly's SURPASS-T1D-1 and -2 ({{ s1.enrollment|num }} and {{ s2.enrollment|num }} patients) are the first industry-sponsored Phase 3s of a GLP-1-class drug in T1D since ADJUNCT. The registry estimates primary completion in {{ s1.primary_completion|fdate("month") if s1.primary_completion else "an undisclosed month" }}. Safety, not weight loss, is the bar.</li>
+{% endblock %}
+{% block body %}
+<p>GLP-1-class drugs such as semaglutide and tirzepatide are approved for type 2 diabetes and weight management, and some people with type 1 diabetes already take them off-label to lose weight and cut insulin doses. Yet none of the {{ L|length }} brands this site checks every day (Ozempic, Wegovy, Mounjaro, Zepbound, Victoza, Trulicity, Rybelsus) carries a type 1 indication.<sup><a href="#refs">1</a></sup> The reason is not that nobody tried.</p>
+
+<h2>The trial that set the bar</h2>
+<p>In 2016 Novo Nordisk reported two Phase 3 trials of liraglutide added to insulin in type 1 diabetes. ADJUNCT ONE enrolled {{ a1.enrollment|num }} patients for 52 weeks; ADJUNCT TWO enrolled {{ a2.enrollment|num }}.<sup><a href="#refs">2</a>,<a href="#refs">3</a></sup> Glycemic benefit was modest, reported in the abstracts as small HbA1c reductions versus placebo (this site still flags that summary range for re-checking against the dose-specific tables). At the highest dose, symptomatic hypoglycemia and hyperglycemia with ketosis rose. For regulators, a drug that adds ketosis risk in a population already exposed to diabetic ketoacidosis (DKA) needs a large benefit to justify it. Liraglutide did not show one, and no T1D label followed.</p>
+
+<h2>What is different now</h2>
+<p>Two things have changed: the drugs under study are newer, and the outcomes people care about have shifted from HbA1c alone to weight, time in range and insulin dose.</p>
+<ul>
+  <li><b>Tirzepatide.</b> An independent Phase 2 in 24 adults with T1D and obesity reported −8.7 kg body weight and −35.1% total daily insulin versus placebo over 12 weeks, with a borderline HbA1c difference (−0.4 points, P = 0.05) and no severe hypoglycemia or DKA reported.<sup><a href="#refs">4</a></sup></li>
+  <li><b>Semaglutide.</b> ADJUST-T1D randomized 72 adults on automated insulin delivery. After 26 weeks, 36% on semaglutide versus 0% on placebo met a composite of time in range above 70%, time below range under 4% and at least 5% weight loss; time in range rose 8.8 points. There were two severe hypoglycemia events in each arm and no DKA.<sup><a href="#refs">5</a></sup></li>
+</ul>
+<p>Both are encouraging, and both are far too small and short to answer the safety question that stopped liraglutide.</p>
+
+<h2>The path to a label</h2>
+<p>Lilly is now running SURPASS-T1D-1 (NCT06914895, {{ s1.enrollment|num }} patients, registry status: {{ s1.status|status|lower }}) and SURPASS-T1D-2 (NCT06962280, {{ s2.enrollment|num }} patients), the first industry-sponsored Phase 3 program of a GLP-1-class drug in type 1 diabetes since ADJUNCT.<sup><a href="#refs">6</a></sup> The registry estimates primary completion for both in {{ s1.primary_completion|fdate("month") if s1.primary_completion else "a month not yet disclosed" }}. That is when the last patient finishes the primary endpoint, not when results are published; toplines usually follow months later. Novo Nordisk has not announced a semaglutide T1D registration program; the semaglutide trials tracked here are academic.</p>
+<p>The question for a filing is whether DKA and severe hypoglycemia stay flat with hundreds of patients over a longer period. Continuous ketone monitoring could help manage that risk: Abbott's FreeStyle Libre Duo, the first integrated glucose-ketone sensor, received FDA De Novo authorization in August 2026.<sup><a href="#refs">7</a></sup></p>
+
+<h2>Why it matters to investors</h2>
+<p>A T1D label would mostly change who pays, not who uses: off-label use already exists. For Lilly the T1D population is small next to type 2 diabetes and obesity. The more interesting read-across is to insulin pump and AID makers: if patients need around a third less insulin, pump volumes don't change but insulin consumption does. That would matter to insulin sellers more than to device makers.</p>
+{% endblock %}
+{% block refs %}
+<li><span><a href="{{ root }}glp1/">Tracking the Cure, GLP-1 label check (openFDA drug labels, refreshed {{ built_human }})</a></span></li>
+<li><span><a href="https://doi.org/10.2337/dc16-0691" rel="noopener">Liraglutide ADJUNCT ONE. Diabetes Care 2016 (PMID 27506222)</a> · <a href="https://clinicaltrials.gov/study/NCT01836523" rel="noopener">NCT01836523</a></span></li>
+<li><span><a href="https://doi.org/10.2337/dc16-0690" rel="noopener">Liraglutide ADJUNCT TWO. Diabetes Care 2016 (PMID 27493132)</a> · <a href="https://clinicaltrials.gov/study/NCT02098395" rel="noopener">NCT02098395</a></span></li>
+<li><span><a href="https://doi.org/10.2337/dc25-2379" rel="noopener">Snaith et al. Tirzepatide in T1D, Phase 2 RCT. Diabetes Care 2026 (PMID 41264593)</a></span></li>
+<li><span><a href="https://doi.org/10.1056/EVIDoa2500173" rel="noopener">Semaglutide in Adults with T1D and Obesity (ADJUST-T1D). NEJM Evidence 2025 (PMID 40550013)</a></span></li>
+<li><span><a href="https://clinicaltrials.gov/study/NCT06914895" rel="noopener">ClinicalTrials.gov NCT06914895 (SURPASS-T1D-1)</a> · <a href="https://clinicaltrials.gov/study/NCT06962280" rel="noopener">NCT06962280 (SURPASS-T1D-2)</a></span></li>
+<li><span><a href="https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/denovo.cfm?ID=DEN250049" rel="noopener">FDA De Novo DEN250049, FreeStyle Libre Duo (Aug 25, 2026)</a></span></li>
+{% endblock %}

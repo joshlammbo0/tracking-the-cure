@@ -1,0 +1,105 @@
+{# Shared components. Every page imports these so the design system stays in one place. #}
+
+{% macro stat(v, l, d="") %}<div class="stat"><div class="v">{{ v }}</div><div class="l">{{ l }}</div>{% if d %}<div class="d">{{ d }}</div>{% endif %}</div>{% endmacro %}
+
+{% macro page_head(eyebrow, title, lede="", crumbs=None) %}
+<div class="wrap"><header class="page-head">
+  {% if crumbs %}<div class="crumbs">{% for href, label in crumbs %}<a href="{{ href }}">{{ label }}</a> / {% endfor %}</div>{% endif %}
+  <span class="eyebrow">{{ eyebrow }}</span>
+  <h1>{{ title }}</h1>
+  {% if lede %}<p class="lede">{{ lede }}</p>{% endif %}
+  {{ caller() if caller }}
+</header></div>
+{% endmacro %}
+
+{% macro status_badge(s) %}
+{% if s == "active" %}<span class="badge good dot">Active</span>{% elif s == "discontinued" %}<span class="badge bad">✕ Discontinued</span>{% else %}<span class="badge warn">❚❚ {{ s|title }}</span>{% endif %}
+{% endmacro %}
+
+{% macro trial_status(s) %}
+{% set label = s|status %}
+{% if s in ["RECRUITING", "ENROLLING_BY_INVITATION", "ACTIVE_NOT_RECRUITING"] %}<span class="badge good dot">{{ label }}</span>
+{% elif s in ["TERMINATED", "WITHDRAWN", "SUSPENDED"] %}<span class="badge bad">✕ {{ label }}</span>
+{% elif s == "COMPLETED" %}<span class="badge">✓ {{ label }}</span>
+{% else %}<span class="badge">{{ label }}</span>{% endif %}
+{% endmacro %}
+
+{% macro ladder(p) %}
+<span class="ladder" role="img" aria-label="Stage {{ p.stage|grade }}, evidence {{ p.evidence|grade }}">{% for g in GRADES %}<i class="{% if loop.index0 <= p.evidence_i %}ev{% elif loop.index0 <= p.stage_i %}st{% endif %}"></i>{% endfor %}</span>
+{% endmacro %}
+
+{% macro hype_legend() %}
+<div class="hype-legend" aria-hidden="true"><span><i class="ev"></i>Evidence read out</span><span><i class="st"></i>Stage reached, not yet proven</span><span><i class="no"></i>Discontinued (struck through)</span></div>
+{% endmacro %}
+
+{% macro hype_map(programs, root, groups=False) %}
+<div class="hype" role="table" aria-label="Stage versus evidence for each program">
+  <div class="hype-head" role="row"><span class="who" role="columnheader">Program</span><span class="scale" role="columnheader">{% for g in GRADES %}<span>{{ GRADE_SHORT[g] }}</span>{% endfor %}</span><span role="columnheader" style="text-align:right">Gap</span></div>
+  {% set ns = namespace(cur=None) %}
+  {% for p in programs %}
+  {% if groups and p.approach != ns.cur %}{% set ns.cur = p.approach %}<div class="hype-group" role="row"><span role="cell">{{ APPROACH[p.approach][0] }}</span></div>{% endif %}
+  <div class="hype-row{% if p.status == 'discontinued' %} stopped{% endif %}" role="row">
+    <span class="nm" role="cell"><a href="{{ root }}{{ p.url }}">{{ p.short }}</a><span class="sub">{{ p.company }}{% if p.status == 'discontinued' %} · discontinued{% endif %}</span></span>
+    <span role="cell">{{ ladder(p) }}</span>
+    <span class="gap" role="cell">{% if p.status == 'discontinued' %}—{% elif p.gap > 0 %}<b>+{{ p.gap }}</b> unproven{% else %}<b>0</b> gap{% endif %}</span>
+  </div>
+  {% endfor %}
+</div>
+{% endmacro %}
+
+{% macro flags(fl) %}
+{% if fl %}<ul class="flags">{% for f in fl %}<li class="flag {{ f.level }}"><span class="ico" aria-hidden="true">{{ "!" if f.level == "alert" else ("▲" if f.level == "warn" else "i") }}</span><span><span class="sr-only">{{ {"alert":"Alert","warn":"Warning","info":"Note"}[f.level] }}: </span>{{ f.text }}</span></li>{% endfor %}</ul>{% endif %}
+{% endmacro %}
+
+{% macro sources(list, links) %}
+<ol class="sources">{% for s in list %}<li><span><a href="{{ s.url }}" rel="noopener">{{ s.label }}</a>{% if (links.get(s.url) or {}).get("state") == "broken" %}<span class="state">link appears broken</span>{% endif %}</span></li>{% endfor %}</ol>
+{% endmacro %}
+
+{% macro trials_table(trials, show_program=False) %}
+<div class="table-scroll" tabindex="0" role="region" aria-label="Registered trials">
+<table class="data">
+  <thead><tr><th>Trial</th><th>Phase</th><th>Status</th><th class="r">Enrolment</th><th>Primary completion</th><th>Sponsor</th></tr></thead>
+  <tbody>
+  {% for t in trials %}
+  <tr>
+    <td class="wrap-text"><a href="{{ t.url }}" rel="noopener">{{ t.nct_id }}</a>{% if t.acronym %} · <b>{{ t.acronym }}</b>{% endif %}<span class="sub">{{ t.title }}</span></td>
+    <td class="nowrap">{{ (t.phases or ["—"])|join(" / ") }}</td>
+    <td>{{ trial_status(t.status) }}{% if t.has_results %}<span class="sub">Results posted</span>{% endif %}</td>
+    <td class="num">{{ t.enrollment|num if t.enrollment is not none else "—" }}<span class="sub">{{ (t.enrollment_type or "")|lower }}</span></td>
+    <td class="num">{{ t.primary_completion|fdate("month" if (t.primary_completion|length) == 7 else "exact") if t.primary_completion else "—" }}<span class="sub">{{ "actual" if t.primary_completion_type == "ACTUAL" else ("estimate" if t.primary_completion else "") }}</span></td>
+    <td class="small">{{ t.sponsor or "—" }}</td>
+  </tr>
+  {% endfor %}
+  </tbody>
+</table></div>
+{% endmacro %}
+
+{% macro catalyst_list(rows, root, n=6) %}
+<ul class="list">
+{% for c in rows[:n] %}
+  <li><span class="when">{{ c.short }}</span>
+  <span class="what"><span class="badge">{{ c.type_label }}</span>{% if c.related_url %}<a href="{{ root }}{{ c.related_url }}">{{ c.title }}</a>{% elif c.source %}<a href="{{ c.source }}" rel="noopener">{{ c.title }}</a>{% else %}{{ c.title }}{% endif %}
+  <span class="sub">{% if c.days is not none and c.days >= 0 %}{{ "today" if c.days == 0 else "in " ~ c.days ~ " day" ~ ("s" if c.days != 1 else "") }}{% elif c.days is not none %}{{ -c.days }} days ago{% endif %}{% if c.prec_note %} · {{ c.prec_note }}{% endif %}</span></span></li>
+{% endfor %}
+</ul>
+{% endmacro %}
+
+{% macro program_card(p, root) %}
+<a class="card" href="{{ root }}{{ p.url }}">
+  <div class="row mb-3">{{ status_badge(p.status) }}<span class="badge">Stage · {{ p.stage|grade }}</span><span class="badge accent">Evidence · {{ p.evidence|grade }}</span></div>
+  <h3>{{ p.name }}</h3>
+  <div class="co">{{ p.company }}{% if p.ticker %} · {{ p.ticker }}{% endif %}</div>
+  <p>{{ p.reality_check }}</p>
+  {{ ladder(p) }}
+  {% if p.flags|selectattr("level", "ne", "info")|list %}<p class="xs muted mt-3 mb-0">▲ {{ p.flags|selectattr("level", "ne", "info")|list|length }} verification flag{{ "s" if (p.flags|selectattr("level", "ne", "info")|list|length) > 1 }}</p>{% endif %}
+</a>
+{% endmacro %}
+
+{% macro papers(list, n=6) %}
+{% if list %}<ul class="list">{% for r in list[:n] %}<li><span class="when">{{ (r.sortdate or "")[:7] }}</span><span class="what"><a href="{{ r.url }}" rel="noopener">{{ r.title }}</a><span class="sub">{{ r.authors }} · <i>{{ r.journal }}</i>{% if r.is_rct %} · RCT{% endif %}{% if r.is_review %} · Review{% endif %}</span></span></li>{% endfor %}</ul>
+{% else %}<p class="small muted">No recent citations retrieved.</p>{% endif %}
+{% endmacro %}
+
+{% macro ret(x) %}<span class="{{ 'pos' if x is not none and x >= 0 else ('neg' if x is not none else '') }}">{{ x|pct(1, True) }}</span>{% endmacro %}
+
+{% macro analysis_label() %}<span class="badge solid">Analysis · not advice</span>{% endmacro %}

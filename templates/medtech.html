@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% import "_macros.html" as ui %}
+{% set DV = D.devices %}
+{% block main %}
+{% call ui.page_head("T1D medtech", "The devices a cure would replace", "CGMs, insulin pumps and automated insulin delivery are where today's T1D revenue sits, and where a functional cure would bite first. Each device record cites its FDA clearance; new FDA decisions in the relevant product codes appear automatically.") %}
+<div class="meta"><span><b>{{ DV.devices|length }}</b> devices tracked</span><span><b>{{ DV.fda_feed|length }}</b> FDA decisions in the last two years</span><span>Refreshed <b>{{ built_human }}</b></span></div>
+{% endcall %}
+<div class="wrap">
+{% for cat in DEVICE_CATS %}
+{% set devs = DV.devices|selectattr("category", "eq", cat.key)|list %}
+<section class="section" aria-labelledby="h-{{ cat.slug }}"{% if loop.first %} style="padding-top:var(--sp-6)"{% endif %}>
+  <div class="section-head"><div><span class="eyebrow">{{ devs|length }} devices</span><h2 id="h-{{ cat.slug }}">{{ cat.title }}</h2><p>{{ cat.lede }}</p></div><a class="more" href="{{ root }}medtech/{{ cat.slug }}/">Category page &amp; FDA feed →</a></div>
+  <div class="table-scroll" tabindex="0" role="region" aria-label="{{ cat.title }}">
+  <table class="data">
+    <thead><tr><th>Device</th><th>Status</th><th>FDA</th><th>Key specs</th></tr></thead>
+    <tbody>{% for d in devs %}<tr><td><b>{{ d.name }}</b><span class="sub">{% set cs = D.companies|selectattr("ticker","eq",d.ticker)|list %}{% if cs %}<a href="{{ root }}{{ cs[0].url }}">{{ d.company }}</a>{% else %}{{ d.company }}{% endif %}</span></td><td><span class="badge{{ ' good' if d.status == 'marketed' }}">{{ DEVICE_STATUS.get(d.status, d.status) }}</span></td><td class="small">{{ d.fda }}</td><td class="small wrap-text">{{ d.key_specs }}</td></tr>{% endfor %}</tbody>
+  </table></div>
+</section>
+{% endfor %}
+<section class="section" aria-labelledby="h-feed">
+  <div class="section-head"><div><span class="eyebrow">openFDA · live</span><h2 id="h-feed">Latest FDA decisions</h2><p>510(k), De Novo and PMA decisions in CGM, pump and AID product codes.</p></div></div>
+  <ul class="list">{% for f in DV.fda_feed[:10] %}<li><span class="when">{{ f.date|fdate("exact", True) }} ’{{ f.date[2:4] }}</span><span class="what"><span class="badge">{{ f.kind }}</span><a href="{{ f.url }}" rel="noopener">{{ f.device }}</a><span class="sub">{{ f.applicant }} · {{ f.number }} · {{ f.code_label or f.product_code }}</span></span></li>{% endfor %}</ul>
+</section>
+</div>
+{% endblock %}

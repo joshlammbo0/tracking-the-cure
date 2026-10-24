@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+{% import "_macros.html" as ui %}
+{% set src = meta.sources or {} %}
+{% set links = meta.links or {} %}
+{% block main %}
+{% call ui.page_head("Methodology", "How this tracker works", "Curated records, verified by hand against primary sources, with live data layered on top every day. Where the two disagree, the site raises a flag instead of picking a side.") %}{% endcall %}
+<div class="wrap">
+<section class="section" style="padding-top:var(--sp-6)" aria-labelledby="h-grades">
+  <div class="cols cols-2">
+    <div class="prose">
+      <span class="eyebrow">Grading</span><h2 id="h-grades" class="mt-0">Two grades per program</h2>
+      <p><b>Stage</b> is the furthest point of active development, for example a Phase 3 trial that is enrolling. <b>Evidence</b> is the highest-quality human data that has actually been read out. Evidence can never be ahead of stage. A program at Phase 3 stage with Phase 1 evidence has a lot left to prove.</p>
+      <p>Combined-phase trials (for example Phase 1/2) are graded at the lower phase. Registry phases feed a check, not the grade: if the registry shows an active trial ahead of the curated stage, the program gets a flag for review.</p>
+    </div>
+    <div>
+      <table class="data">
+        <thead><tr><th>Grade</th><th>Means</th></tr></thead>
+        <tbody>
+        {% for g, d in [("Preclinical", "No human data. An IND or a registry entry alone does not count."), ("Phase 1", "First-in-human safety; very small, usually open-label."), ("Phase 2", "Dose and efficacy signal, often randomized, usually under 200 patients."), ("Phase 3", "Pivotal randomized data of the kind a filing rests on."), ("Filed", "Under regulatory review."), ("Approved", "FDA (or EMA) approved for a T1D indication.")] %}
+        <tr><td><b>{{ g }}</b></td><td class="small">{{ d }}</td></tr>
+        {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="flags" aria-labelledby="h-flags">
+  <div class="cols cols-2">
+    <div class="prose">
+      <span class="eyebrow">Verification</span><h2 id="h-flags" class="mt-0">When a flag is raised</h2>
+      <ul>
+        <li>A tracked trial is terminated, withdrawn or suspended while the program is marked active.</li>
+        <li>A registry primary completion date has passed but the trial still says recruiting.</li>
+        <li>An active trial's registry record hasn't been updated in 18 months.</li>
+        <li>The registry lists an active trial at a later phase than the curated stage.</li>
+        <li>A curated record hasn't been re-verified in {{ 120 }} days.</li>
+        <li>A source link returns 404 or 410 in the weekly link check.</li>
+        <li>Anything the curator could not confirm from a primary source is listed as <i>Unverified</i>.</li>
+      </ul>
+      <p>Flags are shown on each program page with an icon and a label: <b>!</b> alert, <b>▲</b> warning, <b>i</b> note.</p>
+    </div>
+    <div class="prose">
+      <span class="eyebrow">Rules</span><h2 class="mt-0">What the data never does</h2>
+      <ul>
+        <li>Guess. Unknown values are shown as unknown or "not disclosed".</li>
+        <li>Add precision. A date guided to "later this year" is shown as guidance, not a day.</li>
+        <li>Treat a registry primary completion date as a results date.</li>
+        <li>Reproduce article text. Headlines appear as links only.</li>
+        <li>Mix opinion with data. Personal notes are labelled "My take"; interpretation is labelled "Analysis".</li>
+      </ul>
+      <p><a href="{{ root }}model/#methodology">Cure Impact Model methodology →</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="h-src">
+  <div class="section-head"><div><span class="eyebrow">Refreshed daily at ~07:17 US Eastern</span><h2 id="h-src">Sources and their health</h2><p>Each source is fetched independently. If one fails, the previous day's data is kept and marked here, so the site never goes blank. Last build: <b>{{ built_at or "—" }}</b>{% if meta.offline_build %} (offline re-render){% endif %}.</p></div></div>
+  <div class="table-scroll" tabindex="0" role="region" aria-label="Source health">
+  <table class="data">
+    <thead><tr><th>Source</th><th>Used for</th><th>Last run</th><th>Status</th></tr></thead>
+    <tbody>
+    {% set uses = {"ClinicalTrials.gov": "Trial status, phase, enrolment, dates", "ClinicalTrials.gov (GLP-1 scan)": "GLP-1-class trials in T1D", "PubMed (cure literature)": "Recent citations by approach", "PubMed (GLP-1 in T1D)": "Recent GLP-1 citations", "openFDA drug labels": "GLP-1 label check", "openFDA device decisions": "FDA device decision feed", "Google News RSS (headlines)": "Headline links per program", "Source link check": "Weekly check of every cited URL"} %}
+    {% for k, v in src.items() if not (k.startswith("Market data: ") or k.startswith("SEC EDGAR: ")) %}
+    <tr><td><b>{{ k }}</b></td><td class="small">{{ uses.get(k, "") }}</td><td class="num small">{{ v.at[:16].replace("T", " ") }} UTC</td><td>{% if v.ok %}<span class="badge good">✓ OK</span>{% else %}<span class="badge bad">✕ Stale</span><span class="sub">{{ v.detail }}</span>{% endif %}</td></tr>
+    {% endfor %}
+    {% for prefix, label, use in [("Market data: ", "Yahoo Finance (via yfinance)", "Prices, returns, market cap, revenue, earnings dates"), ("SEC EDGAR: ", "SEC EDGAR", "Recent 10-K, 10-Q, 8-K, 20-F, 6-K filings")] %}
+    {% set ks = src.keys()|select("startingwith", prefix)|list %}
+    <tr><td><b>{{ label }}</b></td><td class="small">{{ use }}</td><td class="small">{{ ks|length }} tickers</td><td>{% set okn = namespace(n=0) %}{% for k in ks %}{% if src[k].ok %}{% set okn.n = okn.n + 1 %}{% endif %}{% endfor %}{% if okn.n == ks|length %}<span class="badge good">✓ {{ okn.n }}/{{ ks|length }} OK</span>{% else %}<span class="badge warn">▲ {{ okn.n }}/{{ ks|length }} OK</span>{% endif %}</td></tr>
+    {% endfor %}
+    </tbody>
+  </table></div>
+  {% set broken = links.values()|selectattr("state","eq","broken")|list %}
+  {% set unreach = links.values()|selectattr("state","eq","unreachable")|list %}
+  <p class="small ink2 mt-5">Source links: <b>{{ links|length }}</b> checked, <b>{{ broken|length }}</b> broken, <b>{{ unreach|length }}</b> unreachable (often bot-blocked, which is not proof a link is wrong).</p>
+</section>
+
+<section class="section" aria-labelledby="h-stack">
+  <div class="cols cols-2">
+    <div class="prose">
+      <span class="eyebrow">How it's built</span><h2 id="h-stack" class="mt-0">Pipeline</h2>
+      <ol>
+        <li>A GitHub Action runs every morning.</li>
+        <li>Python pulls ClinicalTrials.gov, PubMed, openFDA, SEC EDGAR and market data, merges them with the curated YAML records, and writes JSON.</li>
+        <li>The same job runs the Cure Impact Model and renders every page as static HTML, plus the calendar file, CSV and sitemap.</li>
+        <li>GitHub Pages serves the result. No server, no database, no tracking.</li>
+      </ol>
+      <p><a href="{{ REPO_URL }}">Source code on GitHub →</a></p>
+    </div>
+    <div class="prose">
+      <span class="eyebrow">Caveats</span><h2 class="mt-0">Known limitations</h2>
+      <ul>
+        <li>yfinance is an unofficial wrapper around Yahoo Finance. Prices can be delayed and it can break.</li>
+        <li>Registry fields are entered by sponsors and are often out of date; that is what the flags are for.</li>
+        <li>Market-size estimates vary widely between research firms; the model shows the published range.</li>
+        <li>Curated records are maintained by one person.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+</div>
+{% endblock %}

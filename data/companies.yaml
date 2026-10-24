@@ -4,42 +4,77 @@
 # leave null otherwise — the site shows "not disclosed" rather than guessing.
 #
 # group: cgm_pump | pharma | cell_gene | immune
+#
+# exposure (optional) feeds the Cure Impact Model's company read-across: the fraction of
+# the company's CURRENT total revenue that sits in each modelled market (cgm | pump | insulin).
+#   basis: disclosed  = straight from a filing/release (source given)
+#          derived    = arithmetic on disclosed or live figures (shown on the site)
+#          assumption = a labelled judgment call (e.g. treating a segment as one market)
+# Leave it out when no primary source supports a split; the site then shows "not modelled".
 
 companies:
   - {ticker: DXCM, name: Dexcom, group: cgm_pump, sec: true,
+     exposure: {cgm: 1.0}, exposure_basis: assumption,
+     exposure_note: "CGM pure-play; all revenue treated as CGM (includes OTC Stelo, which is not T1D)",
      diabetes_rev_pct: 100, pct_note: "CGM pure-play",
      pct_source: "https://investors.dexcom.com/"}
   - {ticker: PODD, name: Insulet, group: cgm_pump, sec: true,
+     exposure: {pump: 1.0}, exposure_basis: assumption,
+     exposure_note: "Omnipod treated as 100% insulin-pump revenue",
      diabetes_rev_pct: 100, pct_note: "Omnipod ≈ all revenue",
      pct_source: "https://investors.insulet.com/"}
   - {ticker: TNDM, name: Tandem Diabetes Care, group: cgm_pump, sec: true,
+     exposure: {pump: 1.0}, exposure_basis: assumption,
+     exposure_note: "Insulin-pump pure-play",
      diabetes_rev_pct: 100, pct_note: "Insulin pump pure-play",
      pct_source: "https://investor.tandemdiabetes.com/"}
   - {ticker: BBNX, name: Beta Bionics, group: cgm_pump, sec: true,
+     exposure: {pump: 1.0}, exposure_basis: assumption,
+     exposure_note: "Insulin-pump pure-play",
      diabetes_rev_pct: 100, pct_note: "iLet / Mint pure-play",
      pct_source: "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001674632"}
   - {ticker: MMED, name: MiniMed Group, group: cgm_pump, sec: true,
+     exposure: {pump: 1.0}, exposure_basis: assumption,
+     exposure_note: "Pumps plus the CGM sensors sold with them; all treated as pump/AID-system revenue (no residual CGM use)",
      diabetes_rev_pct: 100, pct_note: "IPO Mar 2026; Medtronic owns ~90%",
      pct_source: "https://www.sec.gov/Archives/edgar/data/0002062583/000162828026045915/mdt-20260424.htm"}
   - {ticker: SENS, name: Senseonics, group: cgm_pump, sec: true,
+     exposure: {cgm: 1.0}, exposure_basis: assumption,
+     exposure_note: "Implantable-CGM pure-play",
      diabetes_rev_pct: 100, pct_note: "Implantable CGM pure-play",
      pct_source: "https://www.senseonics.com/investor-relations"}
   - {ticker: EMBC, name: Embecta, group: cgm_pump, sec: true,
+     exposure: {insulin: 1.0}, exposure_basis: assumption,
+     exposure_note: "Pen needles and syringes; volumes assumed to move with insulin use",
      diabetes_rev_pct: 100, pct_note: "Insulin pen needles & syringes",
      pct_source: "https://investors.embecta.com/"}
   - {ticker: ABT, name: Abbott Laboratories, group: cgm_pump, sec: true,
+     exposure: {cgm: 0.18}, exposure_basis: derived,
+     exposure_note: "Diabetes Care ≈$8.0B ÷ $44.3B FY2025 sales; all of Diabetes Care treated as CGM (Libre), which slightly overstates CGM",
+     exposure_source: "https://abbott.mediaroom.com/2026-01-22-Abbott-Reports-Fourth-Quarter-and-Full-Year-2025-Results-Issues-2026-Financial-Outlook",
      diabetes_rev_pct: 18, pct_note: "Diabetes Care ≈$8.0B of $44.3B FY2025 sales",
      pct_source: "https://abbott.mediaroom.com/2026-01-22-Abbott-Reports-Fourth-Quarter-and-Full-Year-2025-Results-Issues-2026-Financial-Outlook"}
   - {ticker: MDT, name: Medtronic, group: cgm_pump, sec: true,
+     exposure_derived_from: MMED, exposure_basis: derived,
+     exposure_note: "Medtronic consolidates MiniMed: pump share = MiniMed TTM revenue ÷ Medtronic TTM revenue (live; fiscal periods differ slightly)",
      diabetes_rev_pct: null, pct_note: "Consolidates MiniMed; see Diabetes segment in 10-K",
      pct_source: "https://investorrelations.medtronic.com/"}
   - {ticker: LLY, name: Eli Lilly, group: pharma, sec: true,
+     exposure_basis: unknown,
+     exposure_note: "Lilly's FY2025 10-K and Q4 release group insulins inside 'Other products' ($22.9B of $65.2B); no insulin-only figure found in a primary source, so not modelled",
+     exposure_source: "https://www.sec.gov/Archives/edgar/data/59478/000005947826000013/lly-20251231.htm",
      diabetes_rev_pct: null, pct_note: "Mounjaro ≈$23B of ≈$65B FY2025 (secondary source); T2D + obesity, T1D ≈0",
      pct_source: "https://www.pharmaceutical-technology.com/news/eli-lilly-soars-past-expectations-to-hit-45-sales-growth-in-2025/"}
   - {ticker: NVO, name: Novo Nordisk (ADR), group: pharma, sec: true,
+     exposure: {insulin: 0.172}, exposure_basis: derived,
+     exposure_note: "Insulin sales DKK 53,137M ÷ total sales DKK 309,064M, FY2025",
+     exposure_source: "https://www.sec.gov/Archives/edgar/data/353278/000035327826000006/caq42025.htm",
      diabetes_rev_pct: null, pct_note: "Diabetes & Obesity care is the majority; see annual report",
      pct_source: "https://www.novonordisk.com/investors.html"}
   - {ticker: SNY, name: Sanofi (ADR), group: immune, sec: true,
+     exposure: {insulin: 0.071}, exposure_basis: derived,
+     exposure_note: "Lantus €1,733M + Toujeo €1,345M ÷ net sales €43,626M, FY2025. Other insulins are not broken out, so this is a floor",
+     exposure_source: "https://www.sec.gov/Archives/edgar/data/1121404/000112140426000001/pressreleaseq42025english.htm",
      diabetes_rev_pct: null, pct_note: "Tzield / insulins are a small share of group sales",
      pct_source: "https://www.sanofi.com/en/investors"}
   - {ticker: VRTX, name: Vertex Pharmaceuticals, group: cell_gene, sec: true,

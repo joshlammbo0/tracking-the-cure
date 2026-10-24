@@ -1,0 +1,23 @@
+name: Validate curated data
+
+on:
+  pull_request:
+    paths: ["data/**", "pipeline/**", "templates/**", "site/**", "tests/**", "requirements.txt"]
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt pytest
+      # Unit tests: YAML validation rules, registry/date parsing, openFDA and SEC parsing, the model.
+      - run: python -m pytest -q
+      # Offline build: checks YAML schema + my_notes keys without hitting any API.
+      - run: python -m pipeline.build --offline
+      # Render every page from the committed data, so template errors fail the PR.
+      - run: python -m pipeline.render

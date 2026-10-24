@@ -1,0 +1,229 @@
+{% extends "base.html" %}
+{% import "_macros.html" as ui %}
+{% set R = md.results %}
+{% set b = R.base.summary %}
+{% set bi = R.base.inputs %}
+{% set mk = market.markets %}
+{% set A = market.assumptions %}
+{% block main %}
+{% call ui.page_head("Flagship model", "Cure Impact Model", "If a functional cure for type 1 diabetes works, how much CGM, insulin-pump and insulin revenue does it displace, how fast, and whose income statement takes the hit? Market sizes are cited. Every judgment call is labelled and adjustable.") %}
+<div class="meta"><span>Horizon <b>{{ md.json.start }}–{{ md.json.end }}</b></span><span>Base year <b>{{ market.base_year }}</b></span><span>Company data as of <b>{{ built_human }}</b></span></div>
+<div class="toolbar mt-5 no-print">
+  <a class="btn ghost" href="cure-impact-model.csv" download>Download CSV · all scenarios</a>
+  <button class="btn ghost js-only" type="button" id="csv-current">Download CSV · current inputs</button>
+  <button class="btn ghost js-only" type="button" id="print-btn">Print / save as PDF</button>
+  <button class="btn ghost js-only" type="button" id="share-btn">Copy link to these inputs</button>
+</div>
+{% endcall %}
+
+<div class="wrap">
+<section class="section" aria-labelledby="h-scen" style="padding-top:var(--sp-6)">
+  <h2 class="sr-only" id="h-scen">Scenario and outputs</h2>
+  <div class="scenario-tabs" role="group" aria-label="Scenario presets">
+    {% for k in ["bear", "base", "bull", "immuno"] %}<button type="button" class="chip" data-preset="{{ k }}" aria-pressed="{{ 'true' if k == 'base' else 'false' }}">{{ market.scenarios[k].label }}</button>{% endfor %}
+  </div>
+  <p class="scenario-desc" id="scenario-desc" aria-live="polite">{{ market.scenarios.base.thesis }}</p>
+  <div class="model">
+    <form class="inputs" id="model-inputs" aria-label="Model inputs" autocomplete="off" onsubmit="return false">
+      <noscript><p class="small muted">Turn on JavaScript to move the inputs. The figures shown are the base case.</p></noscript>
+      <div class="group">
+        <h4 class="mb-3">Cure scenario</h4>
+        {% set rows = [
+          ("approval", "First broad approval year", 2027, 2038, 1, bi.approval, bi.approval|string, "Zimislecel's filing timeline is being reset; SC451 has no human data yet."),
+          ("peak", "Peak share of all T1D patients cured", 0.01, 0.6, 0.01, bi.peak, bi.peak|pct, "Limited by manufacturing, transplant capacity, eligibility and patient willingness."),
+          ("ramp", "Years from approval to peak", 4, 20, 1, bi.ramp, bi.ramp ~ " yrs", ""),
+          ("cap", "Treatment capacity (patients / year)", 1000, 300000, 1000, bi.cap, (bi.cap/1000)|round|int ~ "K", "Cell manufacturing and transplant-centre throughput. Usually the binding constraint early on."),
+          ("price", "Blended one-time price per patient", 100000, 3000000, 50000, bi.price, bi.price|money(2), "One-time US gene therapies list at roughly $2–4M; a global blended price with ex-US discounts would be far lower."),
+        ] %}
+        {% for id, label, lo, hi, step, val, shown, hint in rows %}
+        <div class="inp"><label for="in-{{ id }}"><span>{{ label }} <span class="tag-assume">assumption</span></span><output id="out-{{ id }}" for="in-{{ id }}">{{ shown }}</output></label>
+        <input type="range" id="in-{{ id }}" name="{{ id }}" min="{{ lo }}" max="{{ hi }}" step="{{ step }}" value="{{ val }}">{% if hint %}<div class="hint">{{ hint }}</div>{% endif %}</div>
+        {% endfor %}
+      </div>
+      <div class="group">
+        <h4 class="mb-3">Market exposure</h4>
+        {% set rows = [
+          ("sh_cgm", "T1D share of CGM revenue", 0.1, 0.8, 0.05, bi.sh_cgm, A.t1d_share_cgm.note),
+          ("sh_pump", "T1D share of pump revenue", 0.5, 1, 0.05, bi.sh_pump, A.t1d_share_pump.note),
+          ("sh_ins", "T1D share of insulin revenue", 0.05, 0.5, 0.05, bi.sh_ins, A.t1d_share_insulin.note),
+          ("residual", "Cured patients still using CGM", 0, 1, 0.05, bi.residual, A.residual_cgm_use.note),
+        ] %}
+        {% for id, label, lo, hi, step, val, hint in rows %}
+        <div class="inp"><label for="in-{{ id }}"><span>{{ label }} <span class="tag-assume">assumption</span></span><output id="out-{{ id }}" for="in-{{ id }}">{{ val|pct }}</output></label>
+        <input type="range" id="in-{{ id }}" name="{{ id }}" min="{{ lo }}" max="{{ hi }}" step="{{ step }}" value="{{ val }}"><div class="hint">{{ hint }}</div></div>
+        {% endfor %}
+      </div>
+      <div class="group">
+        <h4 class="mb-3">Market size &amp; growth</h4>
+        <div class="inp"><label for="in-size"><span>2025 market sizes <span class="tag-src">sourced</span></span></label>
+          <select id="in-size" name="size"><option value="value" selected>Base estimates</option><option value="low">Low end of published range</option><option value="high">High end of published range</option></select></div>
+        {% set rows = [
+          ("g_cgm", "CGM market CAGR", 0, 0.25, 0.001, bi.g_cgm, true, mk.cgm.source_label),
+          ("g_pump", "Pump market CAGR", 0, 0.25, 0.001, bi.g_pump, true, mk.pump.source_label),
+          ("g_ins", "Insulin market CAGR", -0.05, 0.08, 0.001, bi.g_ins, false, mk.insulin.cagr_note),
+        ] %}
+        {% for id, label, lo, hi, step, val, src, hint in rows %}
+        <div class="inp"><label for="in-{{ id }}"><span>{{ label }} {% if src %}<span class="tag-src">sourced</span>{% else %}<span class="tag-assume">assumption</span>{% endif %}</span><output id="out-{{ id }}" for="in-{{ id }}">{{ val|pct(1) }}</output></label>
+        <input type="range" id="in-{{ id }}" name="{{ id }}" min="{{ lo }}" max="{{ hi }}" step="{{ step }}" value="{{ val }}"><div class="hint">{{ hint }}</div></div>
+        {% endfor %}
+      </div>
+      <button type="button" class="btn ghost js-only" id="reset-btn">Reset to base case</button>
+    </form>
+
+    <div class="outputs">
+      <div class="stats" id="model-stats">
+        {{ ui.stat(b["2035"].displaced_total|money, "Displaced in 2035", b["2035"].share_of_t1d|pct(1) ~ " of T1D-attributable revenue") }}
+        {{ ui.stat(b["2040"].displaced_total|money, "Displaced in 2040", b["2040"].share_of_t1d|pct(1) ~ " of T1D-attributable revenue") }}
+        {{ ui.stat(b["2040"].penetration|pct(1), "T1D patients cured by 2040", (b["2040"].cured/1000)|round|int ~ "K people") }}
+        {{ ui.stat(b.peak_cure_sales|money, "Peak annual cure sales", "in " ~ b.peak_cure_year) }}
+        {{ ui.stat(b.cum_cure_sales|money, "Cumulative cure sales", md.json.start ~ "–" ~ md.json.end ~ " vs " ~ b.cum_displaced|money ~ " displaced") }}
+      </div>
+      <figure class="figure mt-6">
+        <div class="fig-title">T1D-attributable revenue displaced by the cure</div>
+        <div class="fig-sub">Annual revenue that would have existed in the no-cure baseline. Hover, or focus the chart and use ← →.</div>
+        <div class="legend" aria-hidden="true"><span><i class="sw-s1"></i>Insulin</span><span><i class="sw-s2"></i>CGM</span><span><i class="sw-s3"></i>Pumps / AID</span></div>
+        {{ md.chart }}
+        <figcaption>Source: Tracking the Cure Cure Impact Model; market sizes per the sources table below. Model output, not a forecast.</figcaption>
+      </figure>
+      <div class="table-scroll mt-6" tabindex="0" role="region" aria-label="Displaced revenue by market">
+      <table class="data" id="market-table">
+        <caption>Displaced revenue by market</caption>
+        <thead><tr><th>Market</th><th class="r">2030</th><th class="r">2035</th><th class="r">2040</th><th class="r">2040, % of T1D revenue</th></tr></thead>
+        <tbody>
+        {% set r40 = R.base.rows[-1] %}
+        {% for key, name in [("insulin", "Insulin"), ("cgm", "CGM"), ("pump", "Pumps / AID")] %}
+        <tr><td>{{ name }}</td><td class="num">{{ b["2030"].displaced[key]|money }}</td><td class="num">{{ b["2035"].displaced[key]|money }}</td><td class="num">{{ b["2040"].displaced[key]|money }}</td><td class="num">{{ (r40.displaced[key] / r40.t1d_baseline[key])|pct(1) }}</td></tr>
+        {% endfor %}
+        <tr class="total"><td>Total</td><td class="num">{{ b["2030"].displaced_total|money }}</td><td class="num">{{ b["2035"].displaced_total|money }}</td><td class="num">{{ b["2040"].displaced_total|money }}</td><td class="num">{{ b["2040"].share_of_t1d|pct(1) }}</td></tr>
+        </tbody>
+      </table></div>
+
+      <h3 class="mt-7 mb-3">Scenario comparison</h3>
+      <div class="table-scroll" tabindex="0" role="region" aria-label="Scenario comparison">
+      <table class="data">
+        <thead><tr><th>Scenario</th><th class="r">Approval</th><th class="r">Peak share</th><th class="r">Capacity / yr</th><th class="r">Price</th><th class="r">Displaced 2035</th><th class="r">Displaced 2040</th><th class="r">Cured by 2040</th><th class="r">Peak cure sales</th></tr></thead>
+        <tbody>
+        {% for k in ["bear", "base", "bull", "immuno"] %}{% set s = R[k].summary %}{% set i = R[k].inputs %}
+        <tr{% if k == "base" %} class="hl"{% endif %}><td>{{ market.scenarios[k].label }}</td><td class="num">{{ i.approval }}</td><td class="num">{{ i.peak|pct }}</td><td class="num">{{ i.cap|num }}</td><td class="num">{{ i.price|money(2) }}</td><td class="num">{{ s["2035"].displaced_total|money }}</td><td class="num">{{ s["2040"].displaced_total|money }}</td><td class="num">{{ s["2040"].penetration|pct(1) }}</td><td class="num">{{ s.peak_cure_sales|money }}<span class="sub">{{ s.peak_cure_year }}</span></td></tr>
+        {% endfor %}
+        </tbody>
+      </table></div>
+      <p class="xs muted mt-3">Presets are fixed and shown for comparison; the inputs panel drives everything else on this page.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="h-years">
+  <div class="section-head"><div><span class="eyebrow">Outputs</span><h2 id="h-years">Year by year</h2><p>Follows the current inputs.</p></div></div>
+  <div class="table-scroll" tabindex="0" role="region" aria-label="Year-by-year model output">
+  <table class="data dense" id="year-table">
+    <thead><tr><th>Year</th><th class="r">T1D cured (cum.)</th><th class="r">Share cured</th><th class="r">Newly treated</th><th class="r">Insulin</th><th class="r">CGM</th><th class="r">Pumps</th><th class="r">Total displaced</th><th class="r">Cure sales</th></tr></thead>
+    <tbody>
+    {% for r in R.base.rows %}
+    <tr><td class="num">{{ r.year }}</td><td class="num">{{ r.cured|num }}</td><td class="num">{{ r.penetration|pct(1) }}</td><td class="num">{{ r.new_patients|num }}</td><td class="num">{{ r.displaced.insulin|money }}</td><td class="num">{{ r.displaced.cgm|money }}</td><td class="num">{{ r.displaced.pump|money }}</td><td class="num"><b>{{ r.displaced_total|money }}</b></td><td class="num">{{ r.cure_sales|money }}</td></tr>
+    {% endfor %}
+    </tbody>
+  </table></div>
+</section>
+
+<section class="section" aria-labelledby="h-sens">
+  <div class="section-head"><div><span class="eyebrow">Sensitivity</span><h2 id="h-sens">What moves the answer</h2><p>Each grid flexes two levers and holds everything else at the current inputs. The outlined cell is the current setting when it sits on the grid. Shading is by rank within each grid.</p></div></div>
+  <div class="cols cols-2">
+    {% set g = md.sens.approval_peak %}
+    <div>
+      <h3 class="mb-3">Approval year × peak share</h3>
+      <div class="table-scroll" tabindex="0" role="region" aria-label="Sensitivity: approval year by peak share">
+      <table class="data heat" id="sens-ap">
+        <caption>Total displaced revenue in 2040</caption>
+        <thead><tr><th>Approval ↓ · Peak →</th>{% for c in g.cols %}<th class="r">{{ c|pct }}</th>{% endfor %}</tr></thead>
+        <tbody>{% for r in g.rows %}{% set ri = loop.index0 %}<tr><th scope="row">{{ r }}</th>{% for c in g.cols %}<td class="cell{% if r == bi.approval and (c - bi.peak)|abs < 1e-9 %} cur{% endif %}" data-b="{{ g.bins[ri][loop.index0] }}">{{ g["values"][ri][loop.index0]|money }}</td>{% endfor %}</tr>{% endfor %}</tbody>
+      </table></div>
+    </div>
+    {% set g = md.sens.price_capacity %}
+    <div>
+      <h3 class="mb-3">Price × treatment capacity</h3>
+      <div class="table-scroll" tabindex="0" role="region" aria-label="Sensitivity: price by capacity">
+      <table class="data heat" id="sens-pc">
+        <caption>Cumulative cure sales, {{ md.json.start }}–{{ md.json.end }}</caption>
+        <thead><tr><th>Price ↓ · Capacity →</th>{% for c in g.cols %}<th class="r">{{ (c/1000)|round|int }}K/yr</th>{% endfor %}</tr></thead>
+        <tbody>{% for r in g.rows %}{% set ri = loop.index0 %}<tr><th scope="row">{{ r|money(2) }}</th>{% for c in g.cols %}<td class="cell{% if (r - bi.price)|abs < 1 and (c - bi.cap)|abs < 1 %} cur{% endif %}" data-b="{{ g.bins[ri][loop.index0] }}">{{ g["values"][ri][loop.index0]|money }}</td>{% endfor %}</tr>{% endfor %}</tbody>
+      </table></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="h-ra">
+  <div class="section-head"><div><span class="eyebrow">Company read-across</span><h2 id="h-ra">Whose revenue is at risk</h2>
+  <p>Displaced revenue mapped onto the public companies tracked here, assuming each keeps its current share of its market. Shown as dollars and as a percentage of the company's <b>current</b> trailing-twelve-month revenue. Follows the current inputs.</p></div></div>
+  <div class="table-scroll" tabindex="0" role="region" aria-label="Company read-across">
+  <table class="data" id="ra-table">
+    <thead><tr><th>Company</th><th>Type</th><th>Revenue mix modelled</th><th class="r">TTM revenue</th><th class="r">T1D-driven share today</th><th class="r">Displaced 2035</th><th class="r">% of TTM rev.</th><th class="r">Displaced 2040</th><th class="r">% of TTM rev.</th></tr></thead>
+    <tbody>
+    {% for r in md.ra %}
+    <tr data-ticker="{{ r.ticker }}">
+      <td class="nowrap"><a href="{{ root }}companies/{{ r.slug }}/">{{ r.name }}</a><span class="sub">{{ r.ticker }} · {{ r.basis }}</span></td>
+      <td>{{ r.kind }}</td>
+      <td class="small">{% if r.exposure %}{% for m, f in r.exposure.items() %}{{ {"cgm":"CGM","pump":"Pumps","insulin":"Insulin"}[m] }} {{ f|pct(1) }}{% if not loop.last %}, {% endif %}{% endfor %}{% else %}Not modelled{% endif %} <sup><a href="#ra-note-{{ r.ticker|slug }}" aria-label="Basis note for {{ r.name }}">{{ loop.index }}</a></sup></td>
+      <td class="num">{{ r.revenue|money }}</td>
+      <td class="num">{{ r.t1d_share_of_rev|pct(1) if r.t1d_share_of_rev is not none else "—" }}</td>
+      {% for y in ["2035", "2040"] %}{% set v = r.years[y] %}
+      <td class="num">{{ v.displaced|money if v else "—" }}</td><td class="num"><b>{{ v.pct_current_rev|pct(1) if v else "unknown" }}</b></td>
+      {% endfor %}
+    </tr>
+    {% endfor %}
+    </tbody>
+  </table></div>
+  <details class="more-toggle mt-3"><summary>Revenue-mix basis for each company</summary>
+  <ol class="sources">{% for r in md.ra %}<li id="ra-note-{{ r.ticker|slug }}"><span><b>{{ r.name }}</b> ({{ r.basis }}): {{ r.note }}{% if r.source %} · <a href="{{ r.source }}" rel="noopener">source</a>{% endif %}</span></li>{% endfor %}</ol>
+  </details>
+  <div class="cols cols-2 mt-6">
+    <div class="small ink2">
+      <h4 class="mb-3">How to read it</h4>
+      <p>Displaced revenue for a company = TTM revenue × share of revenue in each market × that market's growth to the year × the T1D share of that market × share of T1D patients cured (× one minus residual CGM use, for CGM). Comparing a future displaced amount to <i>today's</i> revenue is deliberate: it is the simplest way to show scale without forecasting each company.</p>
+    </div>
+    <div class="small ink2">
+      <h4 class="mb-3">What it leaves out</h4>
+      <p>Share shifts between competitors, pricing, new T2D and OTC demand, and the cure's own revenue for companies that sell it (Vertex, Sana). Revenue splits are disclosed, derived from filings, or labelled assumptions; Lilly's insulin revenue is not broken out in the primary sources reviewed, so it is shown as unknown rather than estimated.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="methodology" aria-labelledby="h-meth">
+  <div class="section-head"><div><span class="eyebrow">Methodology</span><h2 id="h-meth">How the model works</h2></div></div>
+  <div class="cols cols-2">
+    <div class="prose">
+      <h3 class="mt-0">Mechanics</h3>
+      <ol>
+        <li><b>Baseline markets.</b> Each market grows from its 2025 size at its CAGR: size × (1 + CAGR)<sup>year − 2025</sup>.</li>
+        <li><b>Demand.</b> From the approval year, target patients = peak share × a smooth S-curve that reaches 1 after the ramp × the global T1D population ({{ market.population.t1d_global_m }}M).</li>
+        <li><b>Capacity.</b> Cumulative patients treated can rise by at most the treatment capacity each year. Early on this is usually the binding constraint.</li>
+        <li><b>Displacement.</b> Share cured × the T1D share of each market's revenue. For CGM it is further reduced by the share of cured patients assumed to keep a sensor.</li>
+        <li><b>Cure sales.</b> Newly treated patients × the one-time price.</li>
+      </ol>
+      <h3>Limitations</h3>
+      <p>The model holds the T1D population flat (no new diagnoses or mortality), uses one global blended price, ignores payer budget caps and geographic rollout, and treats each market's T1D share as constant over time. Read it as an order-of-magnitude framework for comparing scenarios, not a forecast.</p>
+      <p>The same formulas run in Python (which prints every number on this site and writes the CSV) and in the browser (for the sliders). Automated tests pin the Python results.</p>
+    </div>
+    <div>
+      <h3 class="mb-3">Sources &amp; assumptions</h3>
+      <div class="table-scroll" tabindex="0" role="region" aria-label="Model sources">
+      <table class="data">
+        <thead><tr><th>Input</th><th class="r">Value</th><th>Source / note</th></tr></thead>
+        <tbody>
+        {% for k in ["cgm", "pump", "insulin"] %}{% set m = mk[k] %}
+        <tr><td>{{ m.label }} <span class="tag-src">sourced</span></td><td class="num">${{ m.value }}B<span class="sub">range ${{ m.low }}–{{ m.high }}B · CAGR {{ m.cagr|pct(1) }}</span></td><td class="small"><a href="{{ m.source }}" rel="noopener">{{ m.source_label }}</a>{% if m.cross_check %}<span class="sub">{{ m.cross_check }}</span>{% endif %}{% if m.cagr_note %}<span class="sub">{{ m.cagr_note }}</span>{% endif %}</td></tr>
+        {% endfor %}
+        <tr><td>People with T1D <span class="tag-src">sourced</span></td><td class="num">{{ market.population.t1d_global_m }}M<span class="sub">{{ market.population.t1d_us_m }}M US</span></td><td class="small"><a href="{{ market.population.source }}" rel="noopener">{{ market.population.source_label }}</a></td></tr>
+        {% for k, a in A.items() %}
+        <tr><td>{{ k.replace("_", " ")|capitalize }} <span class="tag-assume">assumption</span></td><td class="num">{{ a.value|num if a.value > 1 else a.value|pct }}</td><td class="small">{{ a.note }}{% if a.source %} <a href="{{ a.source }}" rel="noopener">source</a>{% endif %}</td></tr>
+        {% endfor %}
+        </tbody>
+      </table></div>
+      <p class="xs muted mt-3">Market-size estimates vary a lot between research firms; switch "2025 market sizes" to the low or high end to see the spread. The initial-eligible population (≈60K) is shown for context and does not drive the model.</p>
+    </div>
+  </div>
+</section>
+</div>
+<script type="application/json" id="model-data">{{ md.js|json }}</script>
+{% endblock %}
+{% block scripts %}<script src="{{ root }}assets/model.js" defer></script>{% endblock %}

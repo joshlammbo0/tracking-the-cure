@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ full_title }}</title>
+<meta name="description" content="{{ description }}">
+<link rel="canonical" href="{{ canonical }}">
+<meta property="og:type" content="{% block og_type %}website{% endblock %}">
+<meta property="og:site_name" content="{{ SITE_NAME }}">
+<meta property="og:title" content="{{ title }}">
+<meta property="og:description" content="{{ description }}">
+<meta property="og:url" content="{{ canonical }}">
+<meta property="og:image" content="{{ og_image }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ title }}">
+<meta name="twitter:description" content="{{ description }}">
+<meta name="twitter:image" content="{{ og_image }}">
+<meta name="theme-color" content="#f9f9f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0e0e0d" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="{{ root }}assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap">
+<link rel="stylesheet" href="{{ root }}assets/style.css">
+<link rel="alternate" type="text/calendar" title="T1D catalyst calendar" href="{{ root }}catalysts.ics">
+<script>
+(function(){var d=document.documentElement;d.className=d.className.replace("no-js","js");
+try{var t=localStorage.getItem("ttc-theme");if(t==="dark"||t==="light")d.setAttribute("data-theme",t);}catch(e){}})();
+</script>
+{% block head %}{% endblock %}
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="disclaimer-bar" role="note">
+  <div class="wrap"><b>Not medical advice. Not investment advice.</b><span>Independent research for information only. Data is pulled automatically and may be incomplete or delayed; every record links to its source.</span></div>
+</div>
+<header class="masthead">
+  <div class="wrap">
+    <a class="brand" href="{{ root }}" aria-label="{{ SITE_NAME }} home">
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="var(--accent)"/><path d="M7 22 L13 16 L17 19 L25 9" stroke="var(--bg)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span><span class="brand-name">Tracking the Cure</span><span class="brand-sub">Independent T1D research</span></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      {% for href, label in NAV[1:] %}<a href="{{ root }}{{ href }}"{% if path.startswith(href) and href %} aria-current="page"{% endif %}>{{ label }}</a>{% endfor %}
+    </nav>
+    <details class="nav-toggle">
+      <summary aria-label="Menu">Menu</summary>
+      <nav class="nav-panel" aria-label="Main (mobile)">
+        {% for href, label in NAV %}<a href="{{ root }}{{ href }}"{% if (path.startswith(href) and href) or (not href and not path) %} aria-current="page"{% endif %}>{{ label }}</a>{% endfor %}
+        <a href="{{ root }}methodology/">Methodology</a>
+      </nav>
+    </details>
+    <button class="theme-btn" id="theme-btn" type="button" aria-label="Switch colour theme" title="Switch light / dark">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg>
+    </button>
+  </div>
+</header>
+<main id="main">
+{% block main %}{% endblock %}
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>About this project</h4>
+        <p>Tracking the Cure is an independent research project on the race to cure type 1 diabetes, built by someone who lives with it. It is not affiliated with any company it covers.</p>
+        <p><b>Not medical advice. Not investment advice.</b> Nothing here is a recommendation to start, stop or change any treatment, or to buy or sell any security. Talk to your care team about your diabetes care. Notes labelled "My take" are the author's personal perspective; notes labelled "Analysis" are the author's interpretation of the cited data.</p>
+      </div>
+      <nav aria-label="Footer">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="{{ root }}model/">Cure Impact Model</a></li>
+          <li><a href="{{ root }}pipeline/">Cure pipeline</a></li>
+          <li><a href="{{ root }}catalysts/">Catalyst calendar</a></li>
+          <li><a href="{{ root }}research/">Research notes</a></li>
+          <li><a href="{{ root }}methodology/">Methodology</a></li>
+          <li><a href="{{ root }}about/">About</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h4>Data</h4>
+        <ul>
+          <li>Refreshed <b>{{ built_human }}</b></li>
+          <li>ClinicalTrials.gov · PubMed · openFDA · SEC EDGAR · Yahoo Finance (via yfinance) · company releases · peer-reviewed journals</li>
+          <li><a href="{{ root }}catalysts.ics">Catalyst calendar (.ics)</a></li>
+          <li><a href="{{ REPO_URL }}">Source code on GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="fine">News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry dates are sponsor estimates and often slip.</p>
+  </div>
+</footer>
+<script src="{{ root }}assets/app.js" defer></script>
+{% block scripts %}{% endblock %}
+</body>
+</html>

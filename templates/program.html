@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% import "_macros.html" as ui %}
+{% block og_type %}article{% endblock %}
+{% block main %}
+{% set crumbs = [(root ~ ("pipeline/" if p.section == "cure" else "glp1/"), "Cure pipeline" if p.section == "cure" else "GLP-1s in T1D")] %}
+{% call ui.page_head(p.approach_label, p.name, "", crumbs) %}
+<div class="row mt-3">{{ ui.status_badge(p.status) }}<span class="badge">{{ p.company }}</span>{% if p.ticker %}{% if p.company_slug %}<a class="badge accent" href="{{ root }}companies/{{ p.company_slug }}/">{{ p.ticker }} →</a>{% else %}<span class="badge">{{ p.ticker }}</span>{% endif %}{% endif %}</div>
+<div class="grades mt-6">
+  <div class="grade"><div class="k">Stage reached</div><div class="v">{{ p.stage|grade }}</div></div>
+  <div class="grade"><div class="k">Evidence read out</div><div class="v">{{ p.evidence|grade }}</div></div>
+</div>
+<div class="mt-3" style="max-width:560px">{{ ui.ladder(p) }}<div class="hype-head" style="border:0;grid-template-columns:1fr;padding:4px 0 0"><span class="scale">{% for g in GRADES %}<span>{{ GRADE_SHORT[g] }}</span>{% endfor %}</span></div></div>
+<div class="meta"><span>Modality: <b>{{ p.modality }}</b></span>{% if p.population %}<span>Population: <b>{{ p.population }}</b></span>{% endif %}<span>Curated record verified <b>{{ p.verified_on|fdate }}</b></span></div>
+{% endcall %}
+<div class="wrap">
+<section class="section" style="padding-top:var(--sp-6)">
+  <div class="cols cols-2-1">
+    <div class="prose">
+      <h2 class="mt-0" style="font-size:var(--fs-xl)">Summary</h2>
+      <p>{{ p.summary }}</p>
+      <div class="callout big"><span class="label">Reality check</span><p>{{ p.reality_check }}</p></div>
+      {% if p.my_commentary %}<div class="callout mine"><span class="label">My take · personal perspective</span><p>{{ p.my_commentary }}</p></div>{% endif %}
+      {% if p.endpoints %}
+      <h3>Reported endpoints</h3>
+      <div class="table-scroll" tabindex="0" role="region" aria-label="Reported endpoints">
+      <table class="data"><thead><tr><th>Endpoint</th><th>Result</th></tr></thead><tbody>
+      {% for e in p.endpoints %}<tr><td>{{ e.metric }}</td><td>{{ e.result }}</td></tr>{% endfor %}
+      </tbody></table></div>
+      <p class="xs muted mt-3">As reported in the cited sources. Not independently re-analysed.</p>
+      {% endif %}
+    </div>
+    <aside>
+      <h4 class="mb-3">Next catalyst</h4>
+      {% if p.next_catalyst %}
+      <p class="mb-0"><b>{{ p.next_catalyst.label }}</b></p>
+      <p class="small muted">{{ p.next_label }}{% if p.next_catalyst.date_precision %} · {{ ("registry" if p.next_catalyst.date_precision == "registry" else p.next_catalyst.date_precision)|prec_note }}{% endif %}{% if p.next_catalyst.nct_id %} · <a href="https://clinicaltrials.gov/study/{{ p.next_catalyst.nct_id }}" rel="noopener">{{ p.next_catalyst.nct_id }}</a>{% endif %}</p>
+      {% else %}<p class="small muted">None identified.</p>{% endif %}
+      <h4 class="mb-3 mt-6">Verification flags</h4>
+      {% if p.flags %}{{ ui.flags(p.flags) }}{% else %}<p class="small muted">No open flags: registry data and the curated record agree.</p>{% endif %}
+      {% if related %}<h4 class="mb-3 mt-6">Same company</h4><ul class="list">{% for q in related %}<li class="nodate"><span class="what"><a href="{{ root }}{{ q.url }}">{{ q.name }}</a><span class="sub">{{ q.stage|grade }} stage · {{ q.evidence|grade }} evidence{% if q.status != "active" %} · {{ q.status }}{% endif %}</span></span></li>{% endfor %}</ul>{% endif %}
+    </aside>
+  </div>
+</section>
+
+{% if p.trials %}
+<section class="section" aria-labelledby="h-trials">
+  <div class="section-head"><div><span class="eyebrow">ClinicalTrials.gov · live</span><h2 id="h-trials">Registered trials</h2><p>Status, phase, enrolment and dates as the sponsor reports them to the registry. A primary completion date is when the last patient finishes the primary endpoint, not a results date.</p></div></div>
+  {{ ui.trials_table(p.trials) }}
+</section>
+{% endif %}
+
+<section class="section" aria-labelledby="h-time">
+  <div class="cols cols-2">
+    <div>
+      <span class="eyebrow">Timeline</span><h2 id="h-time" class="mb-5">Key events</h2>
+      {% if p.timeline %}
+      <ol class="timeline">{% for e in p.timeline %}<li class="{{ e.kind }}"><span class="when">{{ e.date|fdate(e.precision if e.precision and e.precision != "registry" else ("month" if (e.date|string|length) == 7 else "exact")) }}{% if e.estimate %}<span class="badge">Estimate</span>{% endif %}</span><br>{% if e.url %}<a href="{{ e.url }}" rel="noopener">{{ e.label }}</a>{% else %}{{ e.label }}{% endif %}{% if e.sub %}<span class="sub">{{ e.sub }}</span>{% endif %}</li>{% endfor %}</ol>
+      <p class="xs muted">Built from registry dates, the registry change log and the curated next catalyst. Readouts and approvals are described in the summary and sources.</p>
+      {% else %}<p class="small muted">No registry events: this program has no registered trial tracked here.</p>{% endif %}
+    </div>
+    <div>
+      <span class="eyebrow">Primary sources</span><h2 class="mb-5">Sources</h2>
+      {{ ui.sources(p.sources, meta.links or {}) }}
+      {% if p.news %}
+      <h3 class="mt-6 mb-3">Recent headlines</h3>
+      <ul class="list">{% for n in p.news %}<li><span class="when">{{ n.date|fdate("exact", True) if n.date else "" }}</span><span class="what"><a href="{{ n.url }}" rel="noopener">{{ n.title }}</a><span class="sub">{{ n.outlet }}</span></span></li>{% endfor %}</ul>
+      <p class="xs muted">Headline links via Google News; no article text is reproduced. Headlines are not verified sources.</p>
+      {% endif %}
+      {% if papers %}<h3 class="mt-6 mb-3">Recent literature in this area</h3>{{ ui.papers(papers, 4) }}{% endif %}
+    </div>
+  </div>
+</section>
+</div>
+{% endblock %}

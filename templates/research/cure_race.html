@@ -1,0 +1,57 @@
+{% extends "research/_note.html" %}
+{% set act = cure|selectattr("status", "eq", "active")|list %}
+{% set stopped = cure|selectattr("status", "eq", "discontinued")|list %}
+{% set proven = act|selectattr("gap", "eq", 0)|list %}
+{% set ahead = act|selectattr("gap", "gt", 0)|list %}
+{% set ge = act|selectattr("approach", "eq", "gene_edited")|list %}
+{% set ge_ev = ge|map(attribute="evidence_i")|max if ge else 0 %}
+{% block keypoints %}
+<li>{{ act|length }} active cure programs are tracked. {{ ahead|length }} have advanced further than their evidence has read out; {{ proven|length }} have evidence that matches their stage.</li>
+<li>The two approved therapies, {{ act|selectattr("stage","eq","approved")|map(attribute="short")|join(" and ") }}, either need organ donors and immunosuppression or slow the disease rather than cure it.</li>
+<li>The immune-evasive approach, the version of a cure that needs no immunosuppression, has at best {{ GRADE_LABEL[GRADES[ge_ev]] }} evidence, from a single patient.</li>
+<li>{{ stopped|length }} programs have been discontinued, including the best-funded encapsulation effort.</li>
+{% endblock %}
+{% block body %}
+<p>Headlines about a type 1 diabetes cure tend to quote a program's stage: "Phase 3", "in the clinic", "IND cleared". Stage measures how far a sponsor has pushed. It says little about what has been shown. This site therefore grades every program twice: <b>stage</b>, the furthest point of active development, and <b>evidence</b>, the highest-quality human data actually read out.<sup><a href="#refs">1</a></sup> The chart below puts the two side by side.</p>
+
+<figure class="figure mt-6 mb-5" style="max-width:none">
+  <div class="fig-title">Figure 1. Active cure programs by stage reached (columns) and evidence read out (rows)</div>
+  <div class="fig-sub">Programs on the shaded diagonal have evidence that matches their stage. Everything to the right of it is still unproven at its current stage.</div>
+  <div class="table-scroll" tabindex="0" role="region" aria-label="Stage versus evidence matrix">
+  <table class="data" style="table-layout:fixed;min-width:640px">
+    <thead><tr><th style="width:110px">Evidence ↓ · Stage →</th>{% for g in GRADES %}<th>{{ GRADE_LABEL[g] }}</th>{% endfor %}</tr></thead>
+    <tbody>
+    {% for ev in GRADES|reverse %}{% set ei = GRADES.index(ev) %}
+    <tr><th scope="row" style="text-transform:none;letter-spacing:0;font-size:var(--fs-sm);color:var(--ink-2)">{{ GRADE_LABEL[ev] }}</th>
+    {% for st in GRADES %}{% set si = loop.index0 %}
+      {% set here = act|selectattr("evidence_i","eq",ei)|selectattr("stage_i","eq",si)|list %}
+      <td class="small" style="{{ 'background:var(--accent-soft);' if si == ei }}{{ 'background:var(--surface-2);' if si < ei }}">{% for p in here %}<a href="{{ root }}{{ p.url }}">{{ p.short }}</a>{% if not loop.last %}<br>{% endif %}{% endfor %}</td>
+    {% endfor %}</tr>
+    {% endfor %}
+    </tbody>
+  </table></div>
+  <figcaption>Source: Tracking the Cure curated records, verified against the cited primary sources; registry data from ClinicalTrials.gov, {{ built_human }}. Grey cells are impossible (evidence cannot exceed stage). Discontinued programs are excluded and listed below.</figcaption>
+</figure>
+
+<h2>Reading the chart</h2>
+{% set pre = proven|selectattr("stage", "eq", "preclinical")|list %}
+{% set clin = proven|rejectattr("stage", "eq", "preclinical")|list %}
+<p><b>The diagonal flatters the field.</b> {{ proven|length }} of {{ act|length }} active programs sit on it, but {{ pre|length }} of those are preclinical, where stage and evidence match only because there is no human data yet. The clinical programs with evidence that matches their stage are {% for p in clin %}<a href="{{ root }}{{ p.url }}">{{ p.short }}</a> ({{ p.stage|grade }}){{ ", " if not loop.last else "." }}{% endfor %} The approved ones show the limits of today's options. Lantidra uses deceased-donor islets, so supply is capped, and it needs chronic immunosuppression. Teplizumab delays or slows the disease; it does not restore insulin production.<sup><a href="#refs">2</a>,<a href="#refs">3</a></sup></p>
+<p><b>The most advanced cell therapy is still a trade.</b> Vertex's zimislecel is at Phase 3 stage with Phase 2-grade evidence: in the NEJM report, 10 of 12 full-dose participants were insulin-independent at one year.<sup><a href="#refs">4</a></sup> It requires chronic immunosuppression, so it swaps insulin for a different lifelong drug regimen, aimed first at patients with severe hypoglycemia.</p>
+<p><b>The "real cure" is the earliest.</b> Immune-evasive (hypoimmune) cells are the version that would need no immunosuppression. The best evidence is Sana's UP421: surviving, insulin-producing cells without immunosuppression in a single patient, at a dose too low to replace insulin.<sup><a href="#refs">5</a></sup> Sana's scalable successor, SC451, has not dosed a patient. Vertex's VX-017 has an IND cleared and no human data.</p>
+
+<h2>What has dropped out</h2>
+<p>{{ stopped|length }} programs are discontinued and kept on record: {% for p in stopped %}<a href="{{ root }}{{ p.url }}">{{ p.short }}</a> ({{ p.company }}){{ ", " if not loop.last else "." }}{% endfor %} Vertex's VX-264, which put stem-cell islets inside a protective device, was safe but did not produce enough C-peptide.<sup><a href="#refs">6</a></sup> Diamyd's Phase 3 stopped for futility. Each one removes a shot on goal, which is why the count of active programs matters less than where they sit on the chart.</p>
+
+<h2>Implication</h2>
+<p>For the Cure Impact Model, this argues for treating near-term approvals as the immunosuppression-required case: real, but narrow. The scenarios in which a cure displaces meaningful device and insulin revenue all depend on immune-evasive programs moving up the chart, and the best of them currently has {{ GRADE_LABEL[GRADES[ge_ev]] }} evidence.</p>
+<p><a href="{{ root }}model/#immuno">See the immunosuppression-required scenario →</a></p>
+{% endblock %}
+{% block refs %}
+<li><span><a href="{{ root }}methodology/">Tracking the Cure, grading methodology</a></span></li>
+<li><span><a href="https://www.fda.gov/news-events/press-announcements/fda-approves-first-cellular-therapy-treat-patients-type-1-diabetes" rel="noopener">FDA, approval of Lantidra (June 2023)</a></span></li>
+<li><span><a href="https://www.fda.gov/media/164864/download" rel="noopener">FDA, approval of teplizumab (Nov 2022)</a> · <a href="https://doi.org/10.1056/NEJMoa1902226" rel="noopener">NEJM 2019, TN-10</a></span></li>
+<li><span><a href="https://doi.org/10.1056/NEJMoa2506549" rel="noopener">Stem Cell–Derived, Fully Differentiated Islets for T1D. NEJM 2025 (PMID 40544428)</a></span></li>
+<li><span><a href="https://doi.org/10.1056/NEJMc2604408" rel="noopener">Long-Term Survival of Hypoimmune Allogeneic Islets without Immunosuppression. NEJM 2026 (PMID 42430558)</a></span></li>
+<li><span><a href="https://investors.vrtx.com/node/33221/pdf" rel="noopener">Vertex T1D portfolio update (Mar 28, 2025)</a></span></li>
+{% endblock %}

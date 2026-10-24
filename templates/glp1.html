@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% import "_macros.html" as ui %}
+{% set G = D.glp1 %}
+{% block main %}
+{% call ui.page_head("GLP-1s in type 1 diabetes", "GLP-1s are everywhere in diabetes, except on a type 1 label", "GLP-1 and GIP/GLP-1 drugs are used off-label by people with type 1 diabetes for weight and insulin-dose reduction. This page checks the FDA labels daily, tracks every registered trial, and grades the evidence.") %}
+<div class="meta"><span>Label check: <b>{{ "No GLP-1 label covers T1D" if not G.any_t1d_label else "A label now mentions T1D — review" }}</b></span><span><b>{{ G.registry_scan|length }}</b> registered trials in T1D (active or completed in the last 2 years)</span><span>Refreshed <b>{{ built_human }}</b></span></div>
+{% endcall %}
+<div class="wrap">
+<section class="section" style="padding-top:var(--sp-6)" aria-labelledby="h-labels">
+  <div class="section-head"><div><span class="eyebrow">openFDA drug labels · live</span><h2 id="h-labels">What the labels say</h2><p>For each brand, the latest label's Indications and Usage section is scanned for "type 1 diabetes". A statement that the drug is <i>not</i> for type 1 does not count as a T1D indication.</p></div><a class="more" href="{{ root }}research/glp1s-and-the-t1d-label/">Research note: why there's no label →</a></div>
+  <div class="table-scroll" tabindex="0" role="region" aria-label="GLP-1 label check">
+  <table class="data">
+    <thead><tr><th>Brand</th><th>Molecule</th><th>Indicated for</th><th>T1D indication?</th><th>What the label says about T1D</th><th>Label date</th></tr></thead>
+    <tbody>
+    {% for l in G.labels %}
+    <tr><td><a href="{{ l.url }}" rel="noopener"><b>{{ l.brand }}</b></a></td><td class="small">{{ (l.generic or "—")|lower }}</td><td class="small">{{ l.indication_scope or "—" }}</td>
+    <td>{% if not l.found %}<span class="badge">Label not found</span>{% elif l.approved_for_t1d %}<span class="badge warn">▲ Yes — review</span>{% else %}<span class="badge">✕ No</span>{% endif %}</td>
+    <td class="small wrap-text">{{ l.t1d_statement or "No mention of type 1 diabetes in Indications and Usage." }}</td><td class="num small">{{ l.effective|fdate if l.effective else "—" }}</td></tr>
+    {% endfor %}
+    </tbody>
+  </table></div>
+  <p class="xs muted mt-3">Labels are pulled from openFDA, which can return a repackager's label (manufacturer shown on DailyMed). The scan reads indications only, not the full prescribing information.</p>
+</section>
+
+{% for topic, label in GLP_TOPIC.items() %}
+{% set ps = glp|selectattr("glp1_topic", "eq", topic)|list %}
+{% if ps %}
+<section class="section" aria-labelledby="h-{{ topic }}">
+  <div class="section-head"><div><span class="eyebrow">Tracked programs</span><h2 id="h-{{ topic }}">{{ label }}</h2></div></div>
+  <div class="card-grid">{% for p in ps %}{{ ui.program_card(p, root) }}{% endfor %}</div>
+  <details class="more-toggle mt-5"><summary>Recent literature (PubMed)</summary>{{ ui.papers((G.papers or {}).get(topic) or [], 8) }}</details>
+</section>
+{% endif %}
+{% endfor %}
+
+<section class="section" aria-labelledby="h-scan">
+  <div class="section-head"><div><span class="eyebrow">ClinicalTrials.gov scan · live</span><h2 id="h-scan">Every registered GLP-1-class trial in T1D</h2><p>A daily search for semaglutide, tirzepatide, liraglutide and other incretin drugs in type 1 diabetes. Active trials plus those completed in the last two years. "Tracked" trials feed a program page.</p></div></div>
+  <div class="filters" data-filter-for="scan-table" data-attr="st" data-status="scan-count" role="group" aria-label="Filter trials by status">
+    <span class="lbl">Status</span>
+    <button class="chip" type="button" data-val="all" aria-pressed="true">All</button>
+    <button class="chip" type="button" data-val="active" aria-pressed="false">Active</button>
+    <button class="chip" type="button" data-val="completed" aria-pressed="false">Completed</button>
+    <button class="chip" type="button" data-val="tracked" aria-pressed="false">Tracked</button>
+    <span class="small muted" id="scan-count" aria-live="polite">{{ G.registry_scan|length }} shown</span>
+  </div>
+  <div class="table-scroll" tabindex="0" role="region" aria-label="GLP-1 trials in type 1 diabetes">
+  <table class="data sortable" id="scan-table">
+    <thead><tr><th>Trial</th><th>Phase</th><th>Status</th><th class="r">Enrolment</th><th>Primary completion</th><th>Sponsor</th></tr></thead>
+    <tbody>
+    {% for t in G.registry_scan|sort(attribute="primary_completion", reverse=True) %}
+    <tr data-st="{{ 'completed' if t.status == 'COMPLETED' else 'active' }}{{ ' tracked' if t.tracked }}">
+      <td class="wrap-text"><a href="{{ t.url }}" rel="noopener">{{ t.nct_id }}</a>{% if t.tracked %} <span class="badge accent">Tracked</span>{% endif %}<span class="sub">{{ t.title }}</span></td>
+      <td class="nowrap small">{{ (t.phases or ["—"])|join(" / ") }}</td>
+      <td data-sort="{{ t.status }}">{{ ui.trial_status(t.status) }}</td>
+      <td class="num" data-sort="{{ t.enrollment or 0 }}">{{ t.enrollment|num if t.enrollment else "—" }}</td>
+      <td class="num" data-sort="{{ t.primary_completion or '' }}">{{ t.primary_completion or "—" }}<span class="sub">{{ "actual" if t.primary_completion_type == "ACTUAL" else "estimate" }}</span></td>
+      <td class="small">{{ t.sponsor }}<span class="sub">{{ (t.sponsor_class or "")|lower }}</span></td>
+    </tr>
+    {% endfor %}
+    </tbody>
+  </table></div>
+</section>
+</div>
+{% endblock %}

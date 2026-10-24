@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% import "_macros.html" as ui %}
+{% block main %}
+{% call ui.page_head("Cure pipeline", "Every shot on goal, graded twice", "Each program is graded on stage (the furthest point of active development) and evidence (the best human data actually read out). Registry status, phase and dates refresh daily from ClinicalTrials.gov; disagreements raise a flag.") %}
+<div class="meta"><span><b>{{ cure|length }}</b> cure programs</span><span><b>{{ headline.active }}</b> active</span><span><b>{{ cure|selectattr("status","eq","discontinued")|list|length }}</b> discontinued, kept on record</span><span>Refreshed <b>{{ built_human }}</b></span></div>
+{% endcall %}
+<div class="wrap">
+<section class="section" aria-labelledby="h-map" style="padding-top:var(--sp-6)">
+  <div class="section-head"><div><span class="eyebrow">Overview</span><h2 id="h-map">Stage vs. evidence, by approach</h2></div></div>
+  {{ ui.hype_legend() }}
+  {{ ui.hype_map(cure|sort(attribute="name")|sort(attribute="evidence_i", reverse=True)|sort(attribute="stage_i", reverse=True)|sort(attribute="approach"), root, groups=True) }}
+</section>
+{% for key, ab in APPROACH.items() %}{% set label = ab[0] %}{% set blurb = ab[1] %}
+{% set ps = cure|selectattr("approach", "eq", key)|list %}
+<section class="section" id="{{ key }}" aria-labelledby="h-{{ key }}">
+  <div class="section-head"><div><span class="eyebrow">{{ ps|selectattr("status","eq","active")|list|length }} active · {{ ps|length }} tracked</span><h2 id="h-{{ key }}">{{ label }}</h2><p>{{ blurb }}</p></div></div>
+  <div class="card-grid">
+    {% for p in ps|sort(attribute="evidence_i", reverse=True)|sort(attribute="stage_i", reverse=True)|sort(attribute="status") %}{{ ui.program_card(p, root) }}{% endfor %}
+  </div>
+  <details class="more-toggle mt-5"><summary>Recent literature on {{ label|lower }} (PubMed)</summary>{{ ui.papers((D.papers or {}).get(key) or [], 6) }}</details>
+</section>
+{% endfor %}
+</div>
+{% endblock %}

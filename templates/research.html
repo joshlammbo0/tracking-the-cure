@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% import "_macros.html" as ui %}
+{% block main %}
+{% call ui.page_head("Research", "Research notes", "Short analytical write-ups built from the tracked data. Every figure is pulled live from the same records and model the rest of the site uses, and every claim is cited. These notes are analysis, not advice.") %}{% endcall %}
+<div class="wrap">
+<section class="section" style="padding-top:var(--sp-6)">
+  <ul class="note-list">
+  {% for n in notes_meta %}
+    <li><span class="small muted">{{ n.published|fdate }}</span><div><h3><a href="{{ root }}research/{{ n.slug }}/">{{ n.title }}</a></h3><p>{{ n.dek }}</p></div></li>
+  {% endfor %}
+  </ul>
+</section>
+</div>
+{% endblock %}

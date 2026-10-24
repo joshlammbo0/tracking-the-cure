@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% import "_macros.html" as ui %}
+{% set q = c.q %}
+{% block main %}
+{% call ui.page_head(c.group_label, c.name, "", [(root ~ "companies/", "Companies")]) %}
+<div class="price-head mt-3">
+  <span class="ticker">{{ c.ticker }}</span>
+  {% if q.price %}<span class="px">{{ "{:,.2f}".format(q.price) }} <span class="small muted" style="font-family:var(--font-sans)">{{ q.currency }}</span></span>
+  <span class="small">1Y {{ ui.ret(q.ret_1y) }} · YTD {{ ui.ret(q.ret_ytd) }} · 1M {{ ui.ret(q.ret_1m) }}</span>
+  <span class="small muted">as of {{ q.as_of|fdate if q.as_of else "—" }}</span>{% else %}<span class="small muted">No market data retrieved.</span>{% endif %}
+</div>
+{% endcall %}
+<div class="wrap">
+<section class="section" style="padding-top:var(--sp-6)" aria-labelledby="h-price">
+  <div class="cols cols-2-1">
+    <figure class="figure">
+      <div class="fig-title" id="h-price">Share price</div>
+      <div class="fig-sub">{{ "Weekly closes, last 2 years" if q.history else "Approx. weekly closes, last 12 months" }} · {{ q.currency or "" }}</div>
+      {% if price_chart %}{{ price_chart }}{% else %}<p class="small muted">No price history retrieved.</p>{% endif %}
+      <figcaption>Source: Yahoo Finance via yfinance (unofficial, may be delayed).</figcaption>
+    </figure>
+    <div>
+      <h4 class="mb-3">Key metrics</h4>
+      <dl class="kv" style="grid-template-columns:repeat(2,minmax(0,1fr))">
+        <div><dt>Market cap</dt><dd>{{ q.market_cap_usd|money }}<span class="sub">US$</span></dd></div>
+        <div><dt>Revenue TTM</dt><dd>{{ q.revenue_ttm_usd|money }}<span class="sub">US$</span></dd></div>
+        <div><dt>EV / sales proxy</dt><dd>{{ (q.market_cap_usd / q.revenue_ttm_usd)|round(1) ~ "×" if q.market_cap_usd and q.revenue_ttm_usd else "—" }}<span class="sub">market cap ÷ TTM revenue</span></dd></div>
+        <div><dt>Next earnings</dt><dd>{{ q.next_earnings|fdate if q.next_earnings else "—" }}</dd></div>
+        <div><dt>Diabetes % of revenue</dt><dd>{{ c.diabetes_rev_pct ~ "%" if c.diabetes_rev_pct is not none else "Not disclosed" }}<span class="sub">{{ c.pct_note }}{% if c.pct_source %} · <a href="{{ c.pct_source }}" rel="noopener">source</a>{% endif %}</span></dd></div>
+        <div><dt>SEC CIK</dt><dd>{{ c.cik|int if c.cik else "—" }}<span class="sub">{{ "SEC registrant" if c.sec else "Not an SEC filer" }}</span></dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="h-exp">
+  <div class="section-head"><div><span class="eyebrow">Cure Impact Model read-across</span><h2 id="h-exp">T1D exposure</h2></div><a class="more" href="{{ root }}model/#h-ra">All companies →</a></div>
+  {% set r = c.ra %}
+  {% if r and r.exposure and r.years["2040"] %}
+  <div class="stats">
+    {{ ui.stat(r.t1d_share_of_rev|pct(1), "T1D-driven share of revenue today", "revenue mix × T1D share of each market") }}
+    {{ ui.stat(r.years["2035"].displaced|money, "Displaced in 2035 · base case", r.years["2035"].pct_current_rev|pct(1) ~ " of TTM revenue") }}
+    {{ ui.stat(r.years["2040"].displaced|money, "Displaced in 2040 · base case", r.years["2040"].pct_current_rev|pct(1) ~ " of TTM revenue") }}
+  </div>
+  <p class="small ink2 mt-5">Revenue mix modelled: {% for m, f in r.exposure.items() %}<b>{{ {"cgm":"CGM","pump":"pumps","insulin":"insulin"}[m] }} {{ f|pct(1) }}</b>{% if not loop.last %}, {% endif %}{% endfor %} (basis: {{ r.basis }}). {{ r.note }}{% if r.source %} <a href="{{ r.source }}" rel="noopener">Source</a>.{% endif %} Assumes the company holds its current market share. Model output, not a forecast.</p>
+  {% else %}
+  <p class="ink2">{% if c.exposure_note %}{{ c.exposure_note }}.{% else %}Not modelled: {{ c.name }}'s revenue is not in the CGM, pump or insulin markets the model covers{% if c.programs %}; its T1D exposure is through the cure programs below{% endif %}.{% endif %}</p>
+  {% endif %}
+</section>
+
+{% if c.programs or c.devices %}
+<section class="section" aria-labelledby="h-linked">
+  <div class="section-head"><div><span class="eyebrow">Tracked here</span><h2 id="h-linked">Programs &amp; devices</h2></div></div>
+  {% if c.programs %}<div class="card-grid">{% for p in c.programs %}{{ ui.program_card(p, root) }}{% endfor %}</div>{% endif %}
+  {% if c.devices %}
+  <div class="table-scroll{{ ' mt-6' if c.programs }}" tabindex="0" role="region" aria-label="Devices">
+  <table class="data"><thead><tr><th>Device</th><th>Status</th><th>FDA</th></tr></thead><tbody>
+  {% for d in c.devices %}{% set cat = DEVICE_CATS|selectattr("key","eq",d.category)|first %}<tr><td><a href="{{ root }}medtech/{{ cat.slug }}/"><b>{{ d.name }}</b></a><span class="sub">{{ cat.title }}</span></td><td><span class="badge{{ ' good' if d.status == 'marketed' }}">{{ DEVICE_STATUS.get(d.status, d.status) }}</span></td><td class="small">{{ d.fda }}</td></tr>{% endfor %}
+  </tbody></table></div>
+  {% endif %}
+</section>
+{% endif %}
+
+<section class="section" aria-labelledby="h-sec">
+  <div class="section-head"><div><span class="eyebrow">SEC EDGAR · live</span><h2 id="h-sec">Recent filings</h2></div>{% if c.cik %}<a class="more" href="https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&amp;CIK={{ c.cik }}&amp;type=&amp;dateb=&amp;owner=include&amp;count=40" rel="noopener">All filings on EDGAR →</a>{% endif %}</div>
+  {% if c.filings %}
+  <ul class="list">{% for f in c.filings %}<li><span class="when">{{ f.date|fdate("exact", True) }} ’{{ f.date[2:4] }}</span><span class="what"><span class="badge">{{ f.form }}</span><a href="{{ f.url }}" rel="noopener">{{ f.description if f.description != f.form else "Form " ~ f.form }}</a></span></li>{% endfor %}</ul>
+  {% elif not c.sec %}<p class="small muted">{{ c.name }} is not an SEC registrant; see the company's own investor site{% if c.pct_source %}: <a href="{{ c.pct_source }}" rel="noopener">{{ c.pct_source }}</a>{% endif %}.</p>
+  {% else %}<p class="small muted">No recent filings retrieved.</p>{% endif %}
+</section>
+</div>
+{% endblock %}

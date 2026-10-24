@@ -1,0 +1,54 @@
+{% extends "research/_note.html" %}
+{% set RA = md.json.read_across %}
+{% set R = md.results %}
+{% set bi = R.base.inputs %}
+{% set podd = RA.base|selectattr("ticker","eq","PODD")|first %}
+{% set dxcm = RA.base|selectattr("ticker","eq","DXCM")|first %}
+{% set podd_bull = RA.bull|selectattr("ticker","eq","PODD")|first %}
+{% set podd_imm = RA.immuno|selectattr("ticker","eq","PODD")|first %}
+{% block keypoints %}
+<li>Pumps are the most exposed device category: the model assumes {{ bi.sh_pump|pct }} of pump revenue is T1D-driven, against {{ bi.sh_cgm|pct }} for CGM, and a cured patient no longer needs a pump at all.</li>
+<li>Base case: displacement equal to {{ podd.years["2035"].pct_current_rev|pct(1) }} of a pump pure-play's current revenue by 2035 and {{ podd.years["2040"].pct_current_rev|pct(1) }} by 2040, versus {{ dxcm.years["2040"].pct_current_rev|pct(1) }} for Dexcom in 2040.</li>
+<li>The range is wide: {{ podd_imm.years["2040"].pct_current_rev|pct(1) }} in the immunosuppression-required case and {{ podd_bull.years["2040"].pct_current_rev|pct(1) }} in the bull case.</li>
+<li>Displacement begins only in {{ R.base.summary.first_displacement_year }} in the base case ({{ R.bull.summary.first_displacement_year }} in the bull case). Before then, the risk is to valuation multiples, not to reported revenue.</li>
+{% endblock %}
+{% block body %}
+<p>Insulin pumps and automated insulin delivery (AID) systems exist because the body can no longer make insulin. A functional cure would remove that need entirely, which makes pump makers the cleanest test of what the cure race means for public-market investors. This note runs the <a href="{{ root }}model/">Cure Impact Model</a> through the companies tracked on this site.</p>
+
+<h2>Method in one paragraph</h2>
+<p>For each company, displaced revenue = current trailing-twelve-month revenue × its share of revenue in each modelled market × that market's growth × the T1D share of the market × the share of T1D patients cured (reduced for CGM by the share of cured patients assumed to keep a sensor). The company is assumed to hold its market share. The result is compared with <i>today's</i> revenue to show scale without forecasting each company. Revenue splits are disclosed, derived from filings, or labelled assumptions; see the <a href="{{ root }}model/#h-ra">read-across table</a> for each basis.</p>
+
+<figure class="figure mt-6 mb-5">
+  <div class="fig-title">Table 1. Displaced revenue as % of current revenue, 2040, by scenario</div>
+  <div class="fig-sub">Model output. Pure-plays share one row because their modelled revenue mix is identical.</div>
+  <div class="table-scroll" tabindex="0" role="region" aria-label="Read-across by scenario">
+  <table class="data">
+    <thead><tr><th>Company</th>{% for k in ["immuno", "bear", "base", "bull"] %}<th class="r">{{ market.scenarios[k].label.split(":")[0] }}</th>{% endfor %}</tr></thead>
+    <tbody>
+    {% for label, t in [("Pump pure-plays (Insulet, Tandem, Beta Bionics, MiniMed)", "PODD"), ("Dexcom (CGM)", "DXCM"), ("Abbott (Diabetes Care ≈18% of sales)", "ABT"), ("Medtronic (consolidates MiniMed)", "MDT"), ("Novo Nordisk (insulin ≈17% of sales)", "NVO")] %}
+    <tr><td>{{ label }}</td>{% for k in ["immuno", "bear", "base", "bull"] %}{% set r = RA[k]|selectattr("ticker","eq",t)|first %}<td class="num{{ ' ' if k != 'base' }}"{% if k == "base" %} style="font-weight:600"{% endif %}>{{ r.years["2040"].pct_current_rev|pct(1) if r and r.years["2040"] else "—" }}</td>{% endfor %}</tr>
+    {% endfor %}
+    </tbody>
+  </table></div>
+  <figcaption>Scenario inputs: immunosuppression-required approval {{ R.immuno.inputs.approval }}, {{ R.immuno.inputs.peak|pct }} peak share; bear {{ R.bear.inputs.approval }}, {{ R.bear.inputs.peak|pct }}; base {{ R.base.inputs.approval }}, {{ R.base.inputs.peak|pct }}; bull {{ R.bull.inputs.approval }}, {{ R.bull.inputs.peak|pct }}. Company revenue as of {{ built_human }}.</figcaption>
+</figure>
+
+<h2>Three observations</h2>
+<p><b>1. Exposure, not size, drives the ranking.</b> Abbott's Diabetes Care business (≈$8.0B in FY2025) is bigger than any pump maker, but it is about 18% of Abbott's sales, and CGM is partly protected by type 2, over-the-counter use and post-cure monitoring. A pump pure-play has none of those cushions in the model. In the base case its 2040 hit is {{ (podd.years["2040"].pct_current_rev / dxcm.years["2040"].pct_current_rev)|round(1) }}× Dexcom's as a share of current revenue.</p>
+<p><b>2. Capacity sets the pace.</b> The base case caps treatment at {{ bi.cap|num }} patients a year. With about {{ market.population.t1d_global_m }} million people living with T1D, even a perfect product cures only {{ R.base.summary["2040"].penetration|pct(1) }} of them by 2040. Capacity, more than efficacy, is what holds the base case at {{ podd.years["2040"].pct_current_rev|pct(1) }} of a pump pure-play's current revenue by 2040, and why the <a href="{{ root }}model/#h-sens">price × capacity sensitivity</a> is the one to watch.</p>
+<p><b>3. Timing points to multiples.</b> In the base case, displacement starts in {{ R.base.summary.first_displacement_year }}. Device equities are valued on long-duration cash flows, so credible human data from an immune-evasive program would likely move terminal-value assumptions years before revenue changes. The catalysts to watch are on the <a href="{{ root }}catalysts/">calendar</a>: zimislecel and VX-017 timelines and Sana's SC451 IND.</p>
+
+<h2>What the model leaves out</h2>
+<ul>
+  <li><b>Type 2 diversification.</b> Insulet's Omnipod 5 algorithm received FDA clearance for type 2 diabetes in August 2024 (K241777).<sup><a href="#refs">1</a></sup> Growth outside T1D lowers the T1D share over time, which the model holds constant.</li>
+  <li><b>Competitive shifts.</b> Share moves between pump makers likely matter more to any one company this decade than a cure does.</li>
+  <li><b>Who sells the cure.</b> Cell therapy revenue accrues to companies like Vertex and Sana, not to device makers.</li>
+</ul>
+{% endblock %}
+{% block refs %}
+<li><span><a href="https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K241777" rel="noopener">FDA 510(k) K241777, Omnipod 5 SmartAdjust type 2 indication (Aug 26, 2024)</a></span></li>
+<li><span><a href="{{ market.markets.pump.source }}" rel="noopener">{{ market.markets.pump.source_label }}</a> · <a href="{{ market.markets.cgm.source }}" rel="noopener">{{ market.markets.cgm.source_label }}</a></span></li>
+<li><span><a href="{{ market.population.source }}" rel="noopener">{{ market.population.source_label }}</a></span></li>
+<li><span><a href="https://abbott.mediaroom.com/2026-01-22-Abbott-Reports-Fourth-Quarter-and-Full-Year-2025-Results-Issues-2026-Financial-Outlook" rel="noopener">Abbott Q4 / FY2025 results (Diabetes Care sales)</a></span></li>
+<li><span><a href="https://www.sec.gov/Archives/edgar/data/353278/000035327826000006/caq42025.htm" rel="noopener">Novo Nordisk FY2025 financial report (Form 6-K)</a></span></li>
+{% endblock %}

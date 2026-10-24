@@ -5,7 +5,7 @@ on:
     - cron: "17 11 * * *"   # daily, ~7am US Eastern
   push:
     branches: [main]
-    paths: ["data/**", "pipeline/**", "site/**", ".github/workflows/**"]
+    paths: ["data/**", "pipeline/**", "site/**", "templates/**", "requirements.txt", ".github/workflows/**"]
   workflow_dispatch:
 
 permissions:
@@ -49,10 +49,13 @@ jobs:
             git push
           fi
 
+      - name: Render pages, model outputs, calendar and sitemap
+        run: python -m pipeline.render
+
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: site
+          path: _site
 
   deploy:
     needs: refresh

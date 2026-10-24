@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% import "_macros.html" as ui %}
+{% block main %}
+{% call ui.page_head("About", "Why I built this", "") %}{% endcall %}
+<div class="wrap">
+<section class="section" style="padding-top:var(--sp-6)">
+  <div class="cols cols-1-2">
+    <div>
+      <div class="photo-ph" role="img" aria-label="Photo placeholder">[Photo placeholder]</div>
+      <p class="mt-5 mb-0"><b><span class="placeholder">[Your name]</span></b></p>
+      <p class="small muted"><span class="placeholder">[School, degree, graduation year]</span></p>
+      <p class="small"><span class="placeholder">[LinkedIn URL]</span> · <span class="placeholder">[Email]</span></p>
+      <p class="small"><a href="{{ REPO_URL }}">GitHub repository →</a></p>
+    </div>
+    <div class="prose">
+      <p>I live with type 1 diabetes, and I'm pursuing a career in healthcare investment banking. Those two facts meet in one question I kept asking and couldn't find a straight answer to: <b>how close is a cure, really, and what happens to the companies built around managing the disease if it arrives?</b></p>
+      <p>Most coverage of the cure race either cheers every press release or ignores it. I wanted the view an analyst would build: every program graded on what it has actually shown, every number tied to a primary source, the open questions flagged rather than smoothed over, and a model that turns "what if" into dollars and companies.</p>
+      <p><span class="placeholder">[Optional: a sentence or two in your own words, e.g. when you were diagnosed, which devices you use, or what got you interested in healthcare finance.]</span></p>
+      <h2>Method in brief</h2>
+      <ul>
+        <li><b>Two grades per program.</b> Stage reached versus evidence read out. The gap is where hype lives.</li>
+        <li><b>Live checks.</b> ClinicalTrials.gov, openFDA, SEC EDGAR, PubMed and market data refresh daily. Disagreements with the curated record raise a flag.</li>
+        <li><b>A transparent model.</b> The <a href="{{ root }}model/">Cure Impact Model</a> sizes displaced CGM, pump and insulin revenue under labelled assumptions, with sensitivities and a company read-across.</li>
+        <li><b>Sourced or labelled.</b> Every fact cites a primary source; every judgment is labelled as an assumption, analysis or my take.</li>
+      </ul>
+      <p><a href="{{ root }}methodology/">Full methodology →</a></p>
+      <h2>Data sources</h2>
+      <p>ClinicalTrials.gov API v2 · PubMed E-utilities · openFDA (device 510(k), De Novo, PMA; drug labels) · SEC EDGAR · Yahoo Finance via yfinance · company press releases and filings · peer-reviewed journals (NEJM, JAMA, Diabetes Care, NEJM Evidence, Diabetes Research and Clinical Practice).</p>
+      <h2>Independence</h2>
+      <p>This is a personal research project. I have no affiliation with, and receive nothing from, any company covered here. <span class="placeholder">[Disclose any positions you hold in covered securities, or state that you hold none.]</span></p>
+      <div class="callout"><span class="label">Not advice</span><p class="small">Nothing on this site is medical advice or a recommendation to buy or sell any security. Talk to your care team about your diabetes care.</p></div>
+    </div>
+  </div>
+</section>
+</div>
+{% endblock %}
