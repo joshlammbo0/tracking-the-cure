@@ -1,0 +1,59 @@
+# Public companies with T1D exposure. Prices, market cap, returns and revenue are
+# pulled live (yfinance); SEC filings are pulled from EDGAR by ticker.
+# diabetes_rev_pct is hand-entered ONLY when disclosed or derivable from a filing;
+# leave null otherwise — the site shows "not disclosed" rather than guessing.
+#
+# group: cgm_pump | pharma | cell_gene | immune
+
+companies:
+  - {ticker: DXCM, name: Dexcom, group: cgm_pump, sec: true,
+     diabetes_rev_pct: 100, pct_note: "CGM pure-play",
+     pct_source: "https://investors.dexcom.com/"}
+  - {ticker: PODD, name: Insulet, group: cgm_pump, sec: true,
+     diabetes_rev_pct: 100, pct_note: "Omnipod ≈ all revenue",
+     pct_source: "https://investors.insulet.com/"}
+  - {ticker: TNDM, name: Tandem Diabetes Care, group: cgm_pump, sec: true,
+     diabetes_rev_pct: 100, pct_note: "Insulin pump pure-play",
+     pct_source: "https://investor.tandemdiabetes.com/"}
+  - {ticker: BBNX, name: Beta Bionics, group: cgm_pump, sec: true,
+     diabetes_rev_pct: 100, pct_note: "iLet / Mint pure-play",
+     pct_source: "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001674632"}
+  - {ticker: MMED, name: MiniMed Group, group: cgm_pump, sec: true,
+     diabetes_rev_pct: 100, pct_note: "IPO Mar 2026; Medtronic owns ~90%",
+     pct_source: "https://www.sec.gov/Archives/edgar/data/0002062583/000162828026045915/mdt-20260424.htm"}
+  - {ticker: SENS, name: Senseonics, group: cgm_pump, sec: true,
+     diabetes_rev_pct: 100, pct_note: "Implantable CGM pure-play",
+     pct_source: "https://www.senseonics.com/investor-relations"}
+  - {ticker: EMBC, name: Embecta, group: cgm_pump, sec: true,
+     diabetes_rev_pct: 100, pct_note: "Insulin pen needles & syringes",
+     pct_source: "https://investors.embecta.com/"}
+  - {ticker: ABT, name: Abbott Laboratories, group: cgm_pump, sec: true,
+     diabetes_rev_pct: 18, pct_note: "Diabetes Care ≈$8.0B of $44.3B FY2025 sales",
+     pct_source: "https://abbott.mediaroom.com/2026-01-22-Abbott-Reports-Fourth-Quarter-and-Full-Year-2025-Results-Issues-2026-Financial-Outlook"}
+  - {ticker: MDT, name: Medtronic, group: cgm_pump, sec: true,
+     diabetes_rev_pct: null, pct_note: "Consolidates MiniMed; see Diabetes segment in 10-K",
+     pct_source: "https://investorrelations.medtronic.com/"}
+  - {ticker: LLY, name: Eli Lilly, group: pharma, sec: true,
+     diabetes_rev_pct: null, pct_note: "Mounjaro ≈$23B of ≈$65B FY2025 (secondary source); T2D + obesity, T1D ≈0",
+     pct_source: "https://www.pharmaceutical-technology.com/news/eli-lilly-soars-past-expectations-to-hit-45-sales-growth-in-2025/"}
+  - {ticker: NVO, name: Novo Nordisk (ADR), group: pharma, sec: true,
+     diabetes_rev_pct: null, pct_note: "Diabetes & Obesity care is the majority; see annual report",
+     pct_source: "https://www.novonordisk.com/investors.html"}
+  - {ticker: SNY, name: Sanofi (ADR), group: immune, sec: true,
+     diabetes_rev_pct: null, pct_note: "Tzield / insulins are a small share of group sales",
+     pct_source: "https://www.sanofi.com/en/investors"}
+  - {ticker: VRTX, name: Vertex Pharmaceuticals, group: cell_gene, sec: true,
+     diabetes_rev_pct: 0, pct_note: "Pre-revenue in T1D (zimislecel, VX-017)",
+     pct_source: "https://investors.vrtx.com/"}
+  - {ticker: SANA, name: Sana Biotechnology, group: cell_gene, sec: true,
+     diabetes_rev_pct: 0, pct_note: "Pre-revenue; SC451 is the lead T1D asset",
+     pct_source: "https://ir.sana.com/"}
+  - {ticker: CRSP, name: CRISPR Therapeutics, group: cell_gene, sec: true,
+     diabetes_rev_pct: 0, pct_note: "CTX211 T1D study terminated per registry",
+     pct_source: "https://clinicaltrials.gov/study/NCT05565248"}
+  - {ticker: DMYD-B.ST, name: Diamyd Medical, group: immune, sec: false,
+     diabetes_rev_pct: 0, pct_note: "Pre-revenue; Phase 3 discontinued Apr 2026",
+     pct_source: "https://www.diamyd.com/"}
+  - {ticker: SVA.TO, name: Sernova Biotherapeutics, group: cell_gene, sec: false,
+     diabetes_rev_pct: 0, pct_note: "Pre-revenue",
+     pct_source: "https://www.sernova.com/"}

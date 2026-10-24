@@ -1,0 +1,36 @@
+# Hand-curated catalysts. The pipeline ADDS:
+#   - registry primary-completion dates for every tracked trial (ClinicalTrials.gov)
+#   - upcoming earnings dates for tracked tickers (yfinance)
+#   - each program's next_catalyst from programs.yaml
+# type: conference | fda | readout | company | launch
+# precision: exact | month | quarter | half | year | guided   (guided = company guidance, not a fixed date)
+
+catalysts:
+  - {date: 2026-09-28, end: 2026-10-02, type: conference, precision: exact,
+     title: "EASD 2026 — 62nd Annual Meeting (Milan)",
+     source: "https://www.easd.org/annual-meeting/easd-2026/"}
+  - {date: 2026-10-27, end: 2026-10-29, type: conference, precision: exact,
+     title: "Diabetes Technology Meeting 2026 (Washington, DC)",
+     source: "https://professional.diabetes.org/scientific-sessions"}
+  - {date: 2026-12-31, type: launch, precision: half,
+     title: "Abbott Libre Duo 10 Day (glucose-ketone) US launch — guided 'later in 2026'",
+     related: abbott-libre-duo,
+     source: "https://abbott.mediaroom.com/2026-08-25-Abbott-receives-FDA-authorization-for-worlds-first-dual-glucose-ketone-sensing-technology-for-people-with-diabetes"}
+  - {date: 2027-03-03, end: 2027-03-06, type: conference, precision: exact,
+     title: "ATTD 2027 — Advanced Technologies & Treatments for Diabetes (Paris)",
+     source: "https://attd.kenes.com/",
+     note: "Dates from conference listings; confirm on the official site."}
+  - {date: 2027-03-31, type: launch, precision: quarter,
+     title: "Beta Bionics Mint patch pump — full US launch (guided Q1 2027)",
+     related: betabionics-mint,
+     source: "https://www.medtechdive.com/news/beta-bionics-insulin-patch-pump-gets-fda-nod/830332/"}
+  - {date: 2027-06-18, end: 2027-06-21, type: conference, precision: exact,
+     title: "ADA 87th Scientific Sessions (Washington, DC)",
+     source: "https://professional.diabetes.org/scientific-sessions"}
+  - {date: 2027-09-21, end: 2027-09-24, type: conference, precision: exact,
+     title: "EASD 2027 — 63rd Annual Meeting (Budapest)",
+     source: "https://www.easd.org/annual-meeting/"}
+  - {date: 2027-12-31, type: launch, precision: guided,
+     title: "Dexcom G8 launch — guided 'end of 2027 or early 2028'",
+     related: dexcom-g8,
+     source: "https://investors.dexcom.com/"}
