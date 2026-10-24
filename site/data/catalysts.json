@@ -1,0 +1,447 @@
+{
+ "catalysts": [
+  {
+   "date": "2026-09-17",
+   "type": "readout",
+   "precision": "registry-estimated",
+   "title": "Zimislecel (VX-880) — primary completion (NCT06832410)",
+   "related": "vertex-zimislecel",
+   "source": "https://clinicaltrials.gov/study/NCT06832410",
+   "origin": "registry",
+   "note": "Registry primary completion is when the last patient finishes the primary endpoint, not a results date. Toplines typically follow 1–6 months later."
+  },
+  {
+   "date": "2026-09-28",
+   "end": "2026-10-02",
+   "type": "conference",
+   "precision": "exact",
+   "title": "EASD 2026 — 62nd Annual Meeting (Milan)",
+   "source": "https://www.easd.org/annual-meeting/easd-2026/",
+   "origin": "curated"
+  },
+  {
+   "date": "2026-10-21",
+   "type": "earnings",
+   "precision": "exact",
+   "title": "Abbott Laboratories (ABT) earnings",
+   "origin": "yfinance",
+   "source": "https://finance.yahoo.com/quote/ABT"
+  },
+  {
+   "date": "2026-10-27",
+   "end": "2026-10-29",
+   "type": "conference",
+   "precision": "exact",
+   "title": "Diabetes Technology Meeting 2026 (Washington, DC)",
+   "source": "https://professional.diabetes.org/scientific-sessions",
+   "origin": "curated"
+  },
+  {
+   "date": "2026-10-27",
+   "type": "earnings",
+   "precision": "exact",
+   "title": "Beta Bionics (BBNX) earnings",
+   "origin": "yfinance",
+   "source": "https://finance.yahoo.com/quote/BBNX"
+  },
+  {
+   "date": "2026-10-29",
+   "type": "earnings",
+   "precision": "exact",
+   "title": "Dexcom (DXCM) earnings",
+   "origin": "yfinance",
+   "source": "https://finance.yahoo.com/quote/DXCM"
+  },
+  {
+   "date": "2026-10-29",
+   "type": "earnings",
+   "precision": "exact",
+   "title": "Eli Lilly (LLY) earnings",
+   "origin": "yfinance",
+   "source": "https://finance.yahoo.com/quote/LLY"
+  },
+  {
+   "date": "2026-10-30",
+   "type": "earnings",
+   "precision": "exact",
+   "title": "Sanofi (ADR) (SNY) earnings",
+   "origin": "yfinance",
+   "source": "https://finance.yahoo.com/quote/SNY"
+  },
+  {
+   "date": "2026-10-31",
+   "type": "readout",
+   "precision": "registry-estimated",
+   "title": "Cell Pouch System — primary completion (NCT03513939)",
+   "related": "sernova-cellpouch",
+   "source": "https://clinicaltrials.gov/study/NCT03513939",
+   "origin": "registry",
+   "note": "Registry primary completion is when the last patient finishes the primary endpoint, not a results date. Toplines typically follow 1–6 months later."
+  },
+  {
+   "date": "2026-11-02",
+   "type": "earnings",
+   "precision": "exact",
+   "title": "Vertex Pharmaceuticals (VRTX) earnings",
+   "origin": "yfinance",
+   "source": "https://finance.yahoo.com/quote/VRTX"
+  },
+  {
+   "date": "2026-11-04",
+   "type": "earnings",
+   "precision": "exact",
+   "title": "Insulet (PODD) earnings",
+   "origin": "yfinance",
+   "source": "https://finance.yahoo.com/quote/PODD"
+  },
+  {
+   "date": "2026-11-04",
+   "type": "earnings",
+   "precision": "exact",
+   "title": "Novo Nordisk (ADR) (NVO) earnings",
+   "origin": "yfinance",
+   "source": "https://finance.yahoo.com/quote/NVO"
+  },
+  {
+   "date": "2026-11-05",
+   "type": "earnings",
+   "precision": "exact",
+   "title": "Tandem Diabetes Care (TNDM) earnings",
+   "origin": "yfinance",
+   "source": "https://finance.yahoo.com/quote/TNDM"
+  },
+  {
+   "date": "2026-11-05",
+   "type": "earnings",
+   "precision": "exact",
+   "title": "Sana Biotechnology (SANA) earnings",
+   "origin": "yfinance",
+   "source": "https://finance.yahoo.com/quote/SANA"
+  },
+  {
+   "date": "2026-11-09",
+   "type": "earnings",
+   "precision": "exact",
+   "title": "Senseonics (SENS) earnings",
+   "origin": "yfinance",
+   "source": "https://finance.yahoo.com/quote/SENS"
+  },
+  {
+   "date": "2026-11-09",
+   "type": "earnings",
+   "precision": "exact",
+   "title": "CRISPR Therapeutics (CRSP) earnings",
+   "origin": "yfinance",
+   "source": "https://finance.yahoo.com/quote/CRSP"
+  },
+  {
+   "date": "2026-11-16",
+   "type": "earnings",
+   "precision": "exact",
+   "title": "MiniMed Group (MMED) earnings",
+   "origin": "yfinance",
+   "source": "https://finance.yahoo.com/quote/MMED"
+  },
+  {
+   "date": "2026-11-17",
+   "type": "earnings",
+   "precision": "exact",
+   "title": "Medtronic (MDT) earnings",
+   "origin": "yfinance",
+   "source": "https://finance.yahoo.com/quote/MDT"
+  },
+  {
+   "date": "2026-11-25",
+   "type": "earnings",
+   "precision": "exact",
+   "title": "Embecta (EMBC) earnings",
+   "origin": "yfinance",
+   "source": "https://finance.yahoo.com/quote/EMBC"
+  },
+  {
+   "date": "2026-11-30",
+   "type": "readout",
+   "precision": "registry-estimated",
+   "title": "SURPASS-T1D-1 — primary completion (NCT06914895)",
+   "related": "lilly-tirzepatide-t1d",
+   "source": "https://clinicaltrials.gov/study/NCT06914895",
+   "origin": "registry",
+   "note": "Registry primary completion is when the last patient finishes the primary endpoint, not a results date. Toplines typically follow 1–6 months later."
+  },
+  {
+   "date": "2026-11-30",
+   "type": "readout",
+   "precision": "registry-estimated",
+   "title": "SURPASS-T1D-2 — primary completion (NCT06962280)",
+   "related": "lilly-tirzepatide-t1d",
+   "source": "https://clinicaltrials.gov/study/NCT06962280",
+   "origin": "registry",
+   "note": "Registry primary completion is when the last patient finishes the primary endpoint, not a results date. Toplines typically follow 1–6 months later."
+  },
+  {
+   "date": "2026-12-31",
+   "type": "launch",
+   "precision": "half",
+   "title": "Abbott Libre Duo 10 Day (glucose-ketone) US launch — guided 'later in 2026'",
+   "related": "abbott-libre-duo",
+   "source": "https://abbott.mediaroom.com/2026-08-25-Abbott-receives-FDA-authorization-for-worlds-first-dual-glucose-ketone-sensing-technology-for-people-with-diabetes",
+   "end": null,
+   "origin": "curated"
+  },
+  {
+   "date": "2026-12-31",
+   "type": "company",
+   "precision": "guided",
+   "title": "Zimislecel (VX-880) — Updated zimislecel / VX-017 timelines",
+   "related": "vertex-zimislecel",
+   "source": "https://doi.org/10.1056/NEJMoa2506549",
+   "origin": "program"
+  },
+  {
+   "date": "2026-12-31",
+   "type": "company",
+   "precision": "guided",
+   "title": "VX-017 — First VX-017 dosing / program timelines",
+   "related": "vertex-vx017",
+   "source": "https://clinicaltrials.gov/study/NCT04786262",
+   "origin": "program"
+  },
+  {
+   "date": "2026-12-31",
+   "type": "company",
+   "precision": "guided",
+   "title": "SC451 — IND submission / Phase 1/2 start (guided \"as early as 2026\")",
+   "related": "sana-sc451",
+   "source": "https://ir.sana.com/news-releases/news-release-details/sana-biotechnology-reports-second-quarter-2026-financial-results",
+   "origin": "program"
+  },
+  {
+   "date": "2026-12-31",
+   "type": "readout",
+   "precision": "registry-estimated",
+   "title": "Tirzepatide (Mounjaro/Zepbound) — SURPASS-T1D program — primary completion (NCT07803744)",
+   "related": "lilly-tirzepatide-t1d",
+   "source": "https://clinicaltrials.gov/study/NCT07803744",
+   "origin": "registry",
+   "note": "Registry primary completion is when the last patient finishes the primary endpoint, not a results date. Toplines typically follow 1–6 months later."
+  },
+  {
+   "date": "2027-02-20",
+   "type": "readout",
+   "precision": "registry-estimated",
+   "title": "Verapamil (repurposed) — primary completion (NCT07804849)",
+   "related": "verapamil-clver",
+   "source": "https://clinicaltrials.gov/study/NCT07804849",
+   "origin": "registry",
+   "note": "Registry primary completion is when the last patient finishes the primary endpoint, not a results date. Toplines typically follow 1–6 months later."
+  },
+  {
+   "date": "2027-03-03",
+   "end": "2027-03-06",
+   "type": "conference",
+   "precision": "exact",
+   "title": "ATTD 2027 — Advanced Technologies & Treatments for Diabetes (Paris)",
+   "source": "https://attd.kenes.com/",
+   "note": "Dates from conference listings; confirm on the official site.",
+   "origin": "curated"
+  },
+  {
+   "date": "2027-03-12",
+   "type": "readout",
+   "precision": "registry-estimated",
+   "title": "VX-264 — primary completion (NCT05791201)",
+   "related": "vertex-vx264",
+   "source": "https://clinicaltrials.gov/study/NCT05791201",
+   "origin": "registry",
+   "note": "Registry primary completion is when the last patient finishes the primary endpoint, not a results date. Toplines typically follow 1–6 months later."
+  },
+  {
+   "date": "2027-03-31",
+   "type": "launch",
+   "precision": "quarter",
+   "title": "Beta Bionics Mint patch pump — full US launch (guided Q1 2027)",
+   "related": "betabionics-mint",
+   "source": "https://www.medtechdive.com/news/beta-bionics-insulin-patch-pump-gets-fda-nod/830332/",
+   "end": null,
+   "origin": "curated"
+  },
+  {
+   "date": "2027-03-31",
+   "type": "readout",
+   "precision": "registry-estimated",
+   "title": "GLP-TEP — primary completion (NCT06338553)",
+   "related": "glp1-beta-cell-preservation",
+   "source": "https://clinicaltrials.gov/study/NCT06338553",
+   "origin": "registry",
+   "note": "Registry primary completion is when the last patient finishes the primary endpoint, not a results date. Toplines typically follow 1–6 months later."
+  },
+  {
+   "date": "2027-04-28",
+   "type": "readout",
+   "precision": "registry-estimated",
+   "title": "FABULINUS — primary completion (NCT06111586)",
+   "related": "sanofi-frexalimab",
+   "source": "https://clinicaltrials.gov/study/NCT06111586",
+   "origin": "registry",
+   "note": "Registry primary completion is when the last patient finishes the primary endpoint, not a results date. Toplines typically follow 1–6 months later."
+  },
+  {
+   "date": "2027-06-18",
+   "end": "2027-06-21",
+   "type": "conference",
+   "precision": "exact",
+   "title": "ADA 87th Scientific Sessions (Washington, DC)",
+   "source": "https://professional.diabetes.org/scientific-sessions",
+   "origin": "curated"
+  },
+  {
+   "date": "2027-06-30",
+   "type": "readout",
+   "precision": "registry-estimated",
+   "title": "OPF-310 — primary completion (NCT06575426)",
+   "related": "otsuka-opf310",
+   "source": "https://clinicaltrials.gov/study/NCT06575426",
+   "origin": "registry",
+   "note": "Registry primary completion is when the last patient finishes the primary endpoint, not a results date. Toplines typically follow 1–6 months later."
+  },
+  {
+   "date": "2027-09-21",
+   "end": "2027-09-24",
+   "type": "conference",
+   "precision": "exact",
+   "title": "EASD 2027 — 63rd Annual Meeting (Budapest)",
+   "source": "https://www.easd.org/annual-meeting/",
+   "origin": "curated"
+  },
+  {
+   "date": "2027-10-01",
+   "type": "readout",
+   "precision": "registry-estimated",
+   "title": "T1-DISCO — primary completion (NCT05819138)",
+   "related": "semaglutide-adjust-t1d",
+   "source": "https://clinicaltrials.gov/study/NCT05819138",
+   "origin": "registry",
+   "note": "Registry primary completion is when the last patient finishes the primary endpoint, not a results date. Toplines typically follow 1–6 months later."
+  },
+  {
+   "date": "2027-12-31",
+   "type": "launch",
+   "precision": "guided",
+   "title": "Dexcom G8 launch — guided 'end of 2027 or early 2028'",
+   "related": "dexcom-g8",
+   "source": "https://investors.dexcom.com/",
+   "end": null,
+   "origin": "curated"
+  },
+  {
+   "date": "2027-12-31",
+   "type": "readout",
+   "precision": "registry-estimated",
+   "title": "Zimislecel (VX-880) — primary completion (NCT04786262)",
+   "related": "vertex-zimislecel",
+   "source": "https://clinicaltrials.gov/study/NCT04786262",
+   "origin": "registry",
+   "note": "Registry primary completion is when the last patient finishes the primary endpoint, not a results date. Toplines typically follow 1–6 months later."
+  },
+  {
+   "date": "2028-01-18",
+   "type": "readout",
+   "precision": "registry-estimated",
+   "title": "CRG-002 — primary completion (NCT07503028)",
+   "related": "celregen-crg002",
+   "source": "https://clinicaltrials.gov/study/NCT07503028",
+   "origin": "registry",
+   "note": "Registry primary completion is when the last patient finishes the primary endpoint, not a results date. Toplines typically follow 1–6 months later."
+  },
+  {
+   "date": "2028-01-31",
+   "type": "readout",
+   "precision": "registry-estimated",
+   "title": "SHIELD-T1D — primary completion (NCT07614412)",
+   "related": "glp1-beta-cell-preservation",
+   "source": "https://clinicaltrials.gov/study/NCT07614412",
+   "origin": "registry",
+   "note": "Registry primary completion is when the last patient finishes the primary endpoint, not a results date. Toplines typically follow 1–6 months later."
+  },
+  {
+   "date": "2028-03-06",
+   "type": "readout",
+   "precision": "registry-estimated",
+   "title": "KIBOU-T1D — primary completion (NCT06791291)",
+   "related": "sanofi-teplizumab",
+   "source": "https://clinicaltrials.gov/study/NCT06791291",
+   "origin": "registry",
+   "note": "Registry primary completion is when the last patient finishes the primary endpoint, not a results date. Toplines typically follow 1–6 months later."
+  },
+  {
+   "date": "2028-04-30",
+   "type": "readout",
+   "precision": "registry-estimated",
+   "title": "Semaglutide — ADJUST-T1D (investigator-led) — primary completion (NCT06411210)",
+   "related": "semaglutide-adjust-t1d",
+   "source": "https://clinicaltrials.gov/study/NCT06411210",
+   "origin": "registry",
+   "note": "Registry primary completion is when the last patient finishes the primary endpoint, not a results date. Toplines typically follow 1–6 months later."
+  },
+  {
+   "date": "2028-06-06",
+   "type": "readout",
+   "precision": "registry-estimated",
+   "title": "βETA PRESERVE — primary completion (NCT07088068)",
+   "related": "sanofi-teplizumab",
+   "source": "https://clinicaltrials.gov/study/NCT07088068",
+   "origin": "registry",
+   "note": "Registry primary completion is when the last patient finishes the primary endpoint, not a results date. Toplines typically follow 1–6 months later."
+  },
+  {
+   "date": "2028-07-31",
+   "type": "readout",
+   "precision": "registry-estimated",
+   "title": "Baricitinib (Olumiant) in T1D — primary completion (NCT07222332)",
+   "related": "lilly-baricitinib",
+   "source": "https://clinicaltrials.gov/study/NCT07222332",
+   "origin": "registry",
+   "note": "Registry primary completion is when the last patient finishes the primary endpoint, not a results date. Toplines typically follow 1–6 months later."
+  },
+  {
+   "date": "2028-09-01",
+   "type": "readout",
+   "precision": "registry-estimated",
+   "title": "SEMA-T1D-BODY — primary completion (NCT07891156)",
+   "related": "semaglutide-adjust-t1d",
+   "source": "https://clinicaltrials.gov/study/NCT07891156",
+   "origin": "registry",
+   "note": "Registry primary completion is when the last patient finishes the primary endpoint, not a results date. Toplines typically follow 1–6 months later."
+  },
+  {
+   "date": "2028-11-30",
+   "type": "readout",
+   "precision": "registry-estimated",
+   "title": "SR-02 — primary completion (NCT07581197)",
+   "related": "seraxis-sr02",
+   "source": "https://clinicaltrials.gov/study/NCT07581197",
+   "origin": "registry",
+   "note": "Registry primary completion is when the last patient finishes the primary endpoint, not a results date. Toplines typically follow 1–6 months later."
+  },
+  {
+   "date": "2029-06-01",
+   "type": "readout",
+   "precision": "registry-estimated",
+   "title": "GLP-1 RAs for beta-cell preservation (new-onset / early T1D) — primary completion (NCT07430332)",
+   "related": "glp1-beta-cell-preservation",
+   "source": "https://clinicaltrials.gov/study/NCT07430332",
+   "origin": "registry",
+   "note": "Registry primary completion is when the last patient finishes the primary endpoint, not a results date. Toplines typically follow 1–6 months later."
+  },
+  {
+   "date": "2029-11-30",
+   "type": "readout",
+   "precision": "registry-estimated",
+   "title": "TN40A — primary completion (NCT07216391)",
+   "related": "sanofi-teplizumab",
+   "source": "https://clinicaltrials.gov/study/NCT07216391",
+   "origin": "registry",
+   "note": "Registry primary completion is when the last patient finishes the primary endpoint, not a results date. Toplines typically follow 1–6 months later."
+  }
+ ]
+}

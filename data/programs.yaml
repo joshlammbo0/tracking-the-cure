@@ -1,0 +1,649 @@
+# Curated cure-pipeline and GLP-1-in-T1D programs.
+#
+# Each record is hand-verified against primary sources (ClinicalTrials.gov, company
+# releases / SEC filings, FDA, peer-reviewed papers). The daily pipeline layers live
+# registry data on top (status, phase, dates) and raises flags when the two disagree.
+#
+# Grades (use exactly these): preclinical | phase1 | phase2 | phase3 | filed | approved
+#   stage    = furthest point of active development (e.g. a Phase 3 trial enrolling)
+#   evidence = highest-quality human data actually read out (the hype filter)
+# status:  active | paused | discontinued
+# unverified: list anything you could not confirm; it is shown on the site as a flag.
+
+programs:
+
+  # ---------------------------------------------------------------- cell replacement
+  - id: vertex-zimislecel
+    section: cure
+    approach: cell_replacement
+    name: Zimislecel (VX-880)
+    company: Vertex Pharmaceuticals
+    ticker: VRTX
+    modality: Fully differentiated stem-cell-derived islets, infused into the portal vein
+    population: T1D with impaired hypoglycemia awareness and severe hypoglycemia
+    stage: phase3
+    evidence: phase2
+    status: active
+    nct_ids: [NCT04786262, NCT06832410]
+    summary: >-
+      Phase 1/2/3 master protocol (FORWARD). In the NEJM report, 10 of 12 full-dose
+      participants were insulin-independent at day 365; all 12 had HbA1c <7% and no severe
+      hypoglycemia. Requires chronic immunosuppression; two deaths were reported in the
+      study (cryptococcal meningitis; progression of pre-existing neurocognitive disease).
+      Vertex postponed completion of dosing in Jan 2026 for an internal manufacturing
+      analysis, then resumed dosing; it said it will give updated timelines later in 2026.
+    reality_check: >-
+      The strongest cure-type data in the field, but it's a swap of insulin for lifelong
+      immunosuppression, aimed first at the sickest ~60k patients. The 2026 filing goal
+      has slipped and has no new date yet.
+    next_catalyst:
+      label: Updated zimislecel / VX-017 timelines
+      date: 2026-12-31
+      date_precision: guided  # "later this year" per Vertex Q2 2026 release
+    sources:
+      - label: NEJM 2025 — Stem Cell–Derived, Fully Differentiated Islets for T1D (PMID 40544428)
+        url: https://doi.org/10.1056/NEJMoa2506549
+      - label: Vertex Q1 2026 results (dosing resumed)
+        url: https://investors.vrtx.com/news-releases/news-release-details/vertex-reports-first-quarter-2026-financial-results
+      - label: Vertex Q2 2026 results (updated timelines later this year)
+        url: https://news.vrtx.com/news-releases/news-release-details/vertex-reports-second-quarter-2026-financial-results
+    verified_on: 2026-10-24
+
+  - id: vertex-vx017
+    section: cure
+    approach: gene_edited
+    name: VX-017
+    company: Vertex Pharmaceuticals
+    ticker: VRTX
+    modality: Next-generation islet cell product, studied within the FORWARD master protocol
+    stage: phase1
+    evidence: preclinical
+    status: active
+    nct_ids: [NCT04786262]
+    skip_checks: [registry_phase]  # shares the zimislecel Phase 1/2/3 master protocol
+    summary: >-
+      Listed as an intervention in Vertex's Phase 1/2/3 master protocol (NCT04786262).
+      Vertex said in its Q2 2026 release that the FDA cleared the VX-017 IND and that it
+      would accelerate the program.
+    reality_check: >-
+      No human data yet. Vertex has described it as a 'universal donor' approach, but
+      the company hasn't disclosed engineering details we could check, so treat the
+      label as a goal, not a result.
+    next_catalyst:
+      label: First VX-017 dosing / program timelines
+      date: 2026-12-31
+      date_precision: guided
+    sources:
+      - label: ClinicalTrials.gov master protocol listing VX-017
+        url: https://clinicaltrials.gov/study/NCT04786262
+      - label: Vertex Q2 2026 results
+        url: https://news.vrtx.com/news-releases/news-release-details/vertex-reports-second-quarter-2026-financial-results
+    unverified:
+      - Exact mechanism / engineering of VX-017 is not described in a primary source we could find.
+    verified_on: 2026-10-24
+
+  - id: celltrans-lantidra
+    section: cure
+    approach: cell_replacement
+    name: Lantidra (donislecel)
+    company: CellTrans (private)
+    ticker: null
+    modality: Deceased-donor pancreatic islets, infused into the portal vein
+    population: Adults with T1D unable to reach target A1c due to repeated severe hypoglycemia
+    stage: approved
+    evidence: approved
+    status: active
+    nct_ids: []
+    summary: >-
+      FDA approved it in June 2023 as the first allogeneic islet cell therapy for T1D.
+      It needs organ donors and chronic immunosuppression.
+    reality_check: >-
+      Approved, but supply is capped by organ donors, so it reaches very few patients.
+      It shows the regulatory path that stem-cell islets will follow.
+    next_catalyst: null
+    sources:
+      - label: FDA press release (June 2023)
+        url: https://www.fda.gov/news-events/press-announcements/fda-approves-first-cellular-therapy-treat-patients-type-1-diabetes
+    verified_on: 2026-10-24
+
+  - id: seraxis-sr02
+    section: cure
+    approach: cell_replacement
+    name: SR-02
+    company: Seraxis (private)
+    ticker: null
+    modality: Stem-cell-derived pancreatic endocrine cells
+    stage: phase1
+    evidence: preclinical
+    status: active
+    nct_ids: [NCT07581197, NCT06651515]
+    summary: >-
+      A Phase 1/2 is registered as not yet recruiting (NCT07581197). An earlier Phase 1/2
+      registration (NCT06651515, omental implant) is listed as withdrawn.
+    reality_check: >-
+      A registry entry isn't data. No patient results have been reported.
+    next_catalyst:
+      label: First patient dosed (no date disclosed)
+      date: null
+    sources:
+      - label: ClinicalTrials.gov NCT07581197
+        url: https://clinicaltrials.gov/study/NCT07581197
+    verified_on: 2026-10-24
+
+  - id: celregen-crg002
+    section: cure
+    approach: cell_replacement
+    name: CRG-002
+    company: Celregen Therapeutics (private)
+    ticker: null
+    modality: Allogeneic iPSC-derived pancreatic islet cells
+    stage: phase1
+    evidence: preclinical
+    status: active
+    nct_ids: [NCT07503028]
+    summary: Exploratory early Phase 1 study, enrolling by invitation, per ClinicalTrials.gov.
+    reality_check: >-
+      Very early, and little is disclosed publicly. We're tracking it as part of a
+      broader wave of iPSC islet programs, not as a near-term option.
+    next_catalyst: null
+    sources:
+      - label: ClinicalTrials.gov NCT07503028
+        url: https://clinicaltrials.gov/study/NCT07503028
+    unverified:
+      - Company background and funding not verified from a primary source.
+    verified_on: 2026-10-24
+
+  # ---------------------------------------------------- gene-edited / immune-evasive
+  - id: sana-up421
+    section: cure
+    approach: gene_edited
+    name: UP421 (investigator-sponsored)
+    company: Sana Biotechnology / Uppsala University
+    ticker: SANA
+    modality: Hypoimmune (HIP)-edited primary donor islets, intramuscular, no immunosuppression
+    stage: phase1
+    evidence: phase1
+    status: active
+    nct_ids: [NCT06239636]
+    summary: >-
+      First-in-human study at Uppsala. Sana reported surviving, insulin-producing cells and
+      no immunosuppression through 14 months in the first patient; long-term follow-up was
+      published as an NEJM correspondence in 2026.
+    reality_check: >-
+      This is a single patient at a low, sub-therapeutic dose, so it's proof of the concept
+      of hiding cells from the immune system, not proof of a cure. It's still a real first.
+    next_catalyst: null
+    sources:
+      - label: NEJM 2026 — Long-Term Survival of Hypoimmune Allogeneic Islets without Immunosuppression (PMID 42430558)
+        url: https://doi.org/10.1056/NEJMc2604408
+      - label: Sana 14-month update (Mar 2026)
+        url: https://www.globenewswire.com/news-release/2026/03/13/3255502/0/en/sana-biotechnology-announces-continued-positive-clinical-results-through-14-months-from-type-1-diabetes-study-of-islet-cell-transplantation-without-immunosuppression.html
+    verified_on: 2026-10-24
+
+  - id: sana-sc451
+    section: cure
+    approach: gene_edited
+    name: SC451
+    company: Sana Biotechnology
+    ticker: SANA
+    modality: HIP-edited, iPSC-derived islet cells (scalable successor to UP421)
+    stage: preclinical
+    evidence: preclinical
+    status: active
+    nct_ids: []
+    summary: >-
+      Sana says it is preparing an IND and Phase 1/2 start "as early as" 2026 (GLP tox,
+      tech transfer to CMO). It announced a Mayo Clinic collaboration in April 2026.
+    reality_check: >-
+      This is the program that matters for Sana's valuation, and it hasn't dosed a single
+      patient yet. Watch for the IND.
+    next_catalyst:
+      label: IND submission / Phase 1/2 start (guided "as early as 2026")
+      date: 2026-12-31
+      date_precision: guided
+    sources:
+      - label: Sana Q2 2026 results
+        url: https://ir.sana.com/news-releases/news-release-details/sana-biotechnology-reports-second-quarter-2026-financial-results
+      - label: Sana × Mayo Clinic collaboration (Apr 2026)
+        url: https://www.globenewswire.com/news-release/2026/04/13/3272888/0/en/sana-biotechnology-and-mayo-clinic-announce-strategic-collaboration-focused-on-improving-care-in-type-1-diabetes-and-accelerating-development-of-sc451.html
+    verified_on: 2026-10-24
+
+  - id: crispr-vctx211
+    section: cure
+    approach: gene_edited
+    name: CTX211 (VCTX211)
+    company: CRISPR Therapeutics
+    ticker: CRSP
+    modality: Gene-edited stem-cell-derived pancreatic progenitors in a device
+    stage: phase1
+    evidence: phase1
+    status: discontinued
+    nct_ids: [NCT05565248]
+    summary: ClinicalTrials.gov lists the first-in-human study as TERMINATED.
+    reality_check: >-
+      The original gene-edited islet program from the ViaCyte deal has stopped in the
+      registry. Don't count it as an active shot on goal.
+    next_catalyst: null
+    sources:
+      - label: ClinicalTrials.gov NCT05565248
+        url: https://clinicaltrials.gov/study/NCT05565248
+    unverified:
+      - Reason for termination not confirmed from a CRISPR Therapeutics primary source.
+    verified_on: 2026-10-24
+
+  # ----------------------------------------------------------- encapsulation devices
+  - id: sernova-cellpouch
+    section: cure
+    approach: encapsulation
+    name: Cell Pouch System
+    company: Sernova Biotherapeutics
+    ticker: SVA.TO
+    modality: Implantable pre-vascularized device with donor islets (immunosuppression required)
+    stage: phase2
+    evidence: phase1
+    status: active
+    nct_ids: [NCT03513939]
+    summary: >-
+      Phase 1/2 (NCT03513939). Company-reported: 5 of 6 Cohort A patients reached insulin
+      independence for 9 months to over 4 years. Sernova plans a next trial with
+      iPSC-derived cells (Evotec partnership).
+    reality_check: >-
+      It's a small, open-label study that still requires immunosuppression. The device
+      only becomes a cure platform if a renewable cell source and immune protection work.
+    next_catalyst:
+      label: Registry-listed study completion
+      date: null
+    sources:
+      - label: ClinicalTrials.gov NCT03513939
+        url: https://clinicaltrials.gov/study/NCT03513939
+      - label: Sernova DSMB / trial update
+        url: https://www.barchart.com/story/news/31674354/sernova-biotherapeutics-provides-update-on-phase-1-2-clinical-trial-of-cell-pouch-bio-hybrid-organ-for-treatment-of-type-1-diabetes
+    unverified:
+      - Cohort A outcome figures are company-reported, not peer-reviewed.
+    verified_on: 2026-10-24
+
+  - id: otsuka-opf310
+    section: cure
+    approach: encapsulation
+    name: OPF-310
+    company: Otsuka Pharmaceutical Factory
+    ticker: 4578.T
+    modality: Encapsulated porcine pancreatic islet cells (xenotransplant)
+    stage: phase1
+    evidence: preclinical
+    status: active
+    nct_ids: [NCT06575426]
+    summary: Phase 1/2, recruiting, per ClinicalTrials.gov.
+    reality_check: >-
+      Pig islets in a capsule would solve the supply problem only if the encapsulation
+      really protects them. Earlier encapsulated-porcine efforts (DIABECELL) didn't reach
+      approval.
+    next_catalyst: null
+    sources:
+      - label: ClinicalTrials.gov NCT06575426
+        url: https://clinicaltrials.gov/study/NCT06575426
+    verified_on: 2026-10-24
+
+  - id: vertex-vx264
+    section: cure
+    approach: encapsulation
+    name: VX-264
+    company: Vertex Pharmaceuticals
+    ticker: VRTX
+    modality: Stem-cell-derived islets inside an immunoprotective device
+    stage: phase1
+    evidence: phase1
+    status: discontinued
+    nct_ids: [NCT05791201]
+    summary: >-
+      Vertex discontinued VX-264 in March 2025 after Phase 1/2 data showed it was safe but
+      did not reach the intended efficacy (insufficient C-peptide).
+    reality_check: >-
+      This is the cautionary tale for encapsulation. The best-funded player couldn't get
+      enough function through a device barrier.
+    next_catalyst: null
+    sources:
+      - label: Vertex T1D portfolio update (Mar 28, 2025)
+        url: https://investors.vrtx.com/node/33221/pdf
+      - label: ClinicalTrials.gov NCT05791201
+        url: https://clinicaltrials.gov/study/NCT05791201
+    verified_on: 2026-10-24
+
+  - id: aspect-bioprinted
+    section: cure
+    approach: encapsulation
+    name: Bioprinted islet tissue (ex-Novo Nordisk assets)
+    company: Aspect Biosystems (private)
+    ticker: null
+    modality: 3D-bioprinted tissue therapeutic with stem-cell-derived islets
+    stage: preclinical
+    evidence: preclinical
+    status: active
+    nct_ids: []
+    summary: >-
+      Novo Nordisk shut its cell therapy unit in Oct 2025 and transferred its stem-cell
+      islet and hypoimmune technologies to Aspect, keeping commercialization and royalty
+      options.
+    reality_check: >-
+      A big pharma pulling back from the cure race is a signal. The assets are alive, but
+      at a much smaller company.
+    next_catalyst: null
+    sources:
+      - label: Fierce Biotech — Novo offloads diabetes assets to Aspect
+        url: https://www.fiercebiotech.com/biotech/novo-nordisk-offloads-diabetes-assets-aspect-amid-cell-therapy-retreat
+    verified_on: 2026-10-24
+
+  # ------------------------------------------------ immune / disease-modifying
+  - id: sanofi-teplizumab
+    section: cure
+    approach: immune
+    name: Teplizumab (Tzield; Teizeild in EU)
+    company: Sanofi
+    ticker: SNY
+    modality: Anti-CD3 monoclonal antibody, 14-day IV course
+    population: Stage 2 T1D age 8+ (full approval); recently diagnosed stage 3 T1D age 8–17 (accelerated approval, Jun 2026)
+    stage: approved
+    evidence: approved
+    status: active
+    nct_ids: [NCT07088068, NCT06791291, NCT07216391, NCT03875729]
+    summary: >-
+      FDA-approved (Nov 2022) to delay stage 3 T1D in stage 2 patients age 8+, based on
+      TN-10 (median delay of about 2 years). EU approval came in Jan 2026. On Jun 12, 2026
+      the FDA granted accelerated approval to slow the decline of insulin production in
+      children age 8–17 recently diagnosed with stage 3 T1D. That approval rests on a
+      C-peptide surrogate endpoint, and a post-approval study must confirm clinical
+      benefit. In the earlier PROTECT Phase 3 (new-onset), teplizumab met its C-peptide
+      primary endpoint but did not separate on clinical secondary endpoints. A new Phase 3
+      (βETA PRESERVE, age 1–25) is enrolling.
+    reality_check: >-
+      It's the only approved disease-modifying T1D drug, and now it's approved both before
+      and just after diagnosis. It slows the disease rather than curing it, and the new-onset
+      label is accelerated on a surrogate endpoint. If the confirmatory study fails, the FDA
+      can withdraw it.
+    next_catalyst:
+      label: βETA PRESERVE Phase 3 primary completion (registry estimate)
+      date: null  # pulled live from ClinicalTrials.gov
+      nct_id: NCT07088068
+    sources:
+      - label: FDA — accelerated approval, recently diagnosed stage 3, age 8–17 (Jun 2026)
+        url: https://www.fda.gov/news-events/press-announcements/fda-approves-new-indication-tzield-teplizumab-certain-pediatric-patients-recently-diagnosed-stage-3
+      - label: FDA approval announcement (Nov 2022)
+        url: https://www.fda.gov/media/164864/download
+      - label: Sanofi — EU approval (6-K, Jan 2026)
+        url: https://www.sec.gov/Archives/edgar/data/1121404/000119312526014575/d100861dex991.htm
+      - label: NEJM 2023 — PROTECT (PMID 37861217)
+        url: https://doi.org/10.1056/NEJMoa2308743
+      - label: NEJM 2019 — TN-10 at-risk relatives
+        url: https://doi.org/10.1056/NEJMoa1902226
+    unverified:
+      - FDA's Jun 2026 release does not name the pivotal or confirmatory trial; βETA PRESERVE (NCT07088068) is a plausible confirmatory study but this is not confirmed.
+    verified_on: 2026-10-24
+
+  - id: lilly-baricitinib
+    section: cure
+    approach: immune
+    name: Baricitinib (Olumiant) in T1D
+    company: Eli Lilly
+    ticker: LLY
+    modality: Oral JAK1/2 inhibitor (already approved for other indications)
+    stage: phase3
+    evidence: phase2
+    status: active
+    nct_ids: [NCT07222332, NCT07222137, NCT04774224]
+    summary: >-
+      In the BANDIT Phase 2 (NEJM 2023), baricitinib preserved C-peptide versus placebo
+      over 48 weeks in new-onset T1D. Lilly is now running two Phase 3s: new-onset beta-cell
+      preservation, and delay of stage 3 in at-risk people.
+    reality_check: >-
+      An oral pill with a positive randomized trial behind it is a real step. The open
+      questions are durability after stopping, and JAK-class safety in kids.
+    next_catalyst:
+      label: Phase 3 (new-onset) primary completion (registry estimate)
+      date: null
+      nct_id: NCT07222332
+    sources:
+      - label: NEJM 2023 — BANDIT (PMID 38055252)
+        url: https://doi.org/10.1056/NEJMoa2306691
+      - label: ClinicalTrials.gov NCT07222332
+        url: https://clinicaltrials.gov/study/NCT07222332
+      - label: ClinicalTrials.gov NCT07222137
+        url: https://clinicaltrials.gov/study/NCT07222137
+    verified_on: 2026-10-24
+
+  - id: sanofi-frexalimab
+    section: cure
+    approach: immune
+    name: Frexalimab (FABULINUS)
+    company: Sanofi
+    ticker: SNY
+    modality: Anti-CD40L monoclonal antibody
+    stage: phase2
+    evidence: preclinical
+    status: active
+    nct_ids: [NCT06111586]
+    summary: >-
+      Phase 2 in recent-onset T1D, evaluating preservation of endogenous insulin
+      secretion. It's also in Phase 3 for multiple sclerosis.
+    reality_check: >-
+      No T1D efficacy data yet. It's interesting because it targets a different
+      immune pathway than teplizumab.
+    next_catalyst:
+      label: FABULINUS primary completion (registry estimate)
+      date: null
+    sources:
+      - label: ClinicalTrials.gov NCT06111586
+        url: https://clinicaltrials.gov/study/NCT06111586
+    verified_on: 2026-10-24
+
+  - id: diamyd-rhgad65
+    section: cure
+    approach: immune
+    name: Diamyd (rhGAD65, intralymphatic)
+    company: Diamyd Medical
+    ticker: DMYD-B.ST
+    modality: Antigen-specific immunotherapy (GAD65), for HLA DR3-DQ2 carriers
+    stage: phase3
+    evidence: phase3
+    status: discontinued
+    nct_ids: [NCT05018585]
+    summary: >-
+      DIAGNODE-3's interim analysis (Mar 2026) showed no C-peptide treatment effect. Diamyd
+      discontinued the trial for futility in April 2026 and started a strategic review.
+    reality_check: >-
+      This was a negative Phase 3. The precision-medicine (HLA-selected) thesis didn't
+      hold at this readout.
+    next_catalyst: null
+    sources:
+      - label: Diamyd — discontinues DIAGNODE-3 (futility)
+        url: https://news.cision.com/diamyd-medical-ab/r/diamyd-medical-discontinues-diagnode-3-following-evaluation-confirming-futility--initiates-strategic,c4333531
+      - label: ClinicalTrials.gov NCT05018585
+        url: https://clinicaltrials.gov/study/NCT05018585
+    verified_on: 2026-10-24
+
+  - id: verapamil-clver
+    section: cure
+    approach: immune
+    name: Verapamil (repurposed)
+    company: Academic (Jaeb Center / NIH-funded)
+    ticker: null
+    modality: Generic calcium-channel blocker, studied for beta-cell protection
+    stage: phase3
+    evidence: phase3
+    status: active
+    nct_ids: [NCT04233034, NCT07804849, NCT07880769]
+    summary: >-
+      In the CLVer randomized trial (JAMA 2023), verapamil preserved C-peptide at 52 weeks
+      in newly diagnosed youth. Further academic trials are registered.
+    reality_check: >-
+      It's cheap, oral, and has a modest effect. There's no commercial sponsor, so no FDA
+      label is likely. It matters for patients more than for investors.
+    next_catalyst: null
+    sources:
+      - label: JAMA 2023 — CLVer (PMID 36826844)
+        url: https://doi.org/10.1001/jama.2023.2064
+    verified_on: 2026-10-24
+
+  - id: golimumab-t1d
+    section: cure
+    approach: immune
+    name: Golimumab (Simponi) in T1D
+    company: Johnson & Johnson / NIDDK
+    ticker: JNJ
+    modality: Anti-TNFα monoclonal antibody
+    stage: phase2
+    evidence: phase2
+    status: active
+    nct_ids: [NCT02846545, NCT07683026]
+    summary: >-
+      In T1GER (NEJM 2020), golimumab preserved C-peptide in youth with new-onset T1D. An
+      NIDDK platform trial in stage 1 is registered but not yet recruiting.
+    reality_check: >-
+      It has positive Phase 2 data, but there's no visible industry path to a T1D label.
+      For now it's a TrialNet-style academic effort.
+    next_catalyst: null
+    sources:
+      - label: NEJM 2020 — T1GER (PMID 33207093)
+        url: https://doi.org/10.1056/NEJMoa2006136
+    verified_on: 2026-10-24
+
+  # =========================================================== GLP-1s in T1D
+  - id: lilly-tirzepatide-t1d
+    section: glp1
+    glp1_topic: adjunct
+    name: Tirzepatide (Mounjaro/Zepbound) — SURPASS-T1D program
+    company: Eli Lilly
+    ticker: LLY
+    modality: Weekly GIP/GLP-1 dual agonist, added to insulin
+    population: Adults with T1D and obesity or overweight
+    stage: phase3
+    evidence: phase2
+    status: active
+    nct_ids: [NCT06914895, NCT06962280, NCT07803744]
+    endpoints:
+      - metric: Body weight (12 wk, Phase 2, n=24)
+        result: −8.7 kg vs placebo (95% CI −12.0 to −5.5)
+      - metric: HbA1c
+        result: −0.4 pts vs placebo (95% CI −0.7 to 0.0; P=0.05, borderline)
+      - metric: Total daily insulin
+        result: −35.1% vs placebo
+      - metric: Severe hypo / DKA
+        result: None reported in either arm (small, short study)
+    summary: >-
+      Lilly is running the first industry-sponsored Phase 3 program of a GLP-1-class drug
+      in T1D (SURPASS-T1D-1 and -2). The endpoint figures above are from the independent
+      Phase 2 (Snaith et al., Diabetes Care 2026).
+    reality_check: >-
+      This is the most credible route to the first GLP-1-class T1D label. The Phase 2 had
+      only 24 patients over 12 weeks, so the Phase 3 safety data (DKA, hypoglycemia) is
+      what will decide it.
+    next_catalyst:
+      label: SURPASS-T1D-1 primary completion (registry estimate)
+      date: null
+      nct_id: NCT06914895
+    sources:
+      - label: Diabetes Care 2026 — Phase 2 RCT (PMID 41264593)
+        url: https://doi.org/10.2337/dc25-2379
+      - label: Lilly trial page — SURPASS-T1D-1
+        url: https://trials.lilly.com/en-US/trial/589916
+      - label: ClinicalTrials.gov NCT06914895
+        url: https://clinicaltrials.gov/study/NCT06914895
+    verified_on: 2026-10-24
+
+  - id: semaglutide-adjust-t1d
+    section: glp1
+    glp1_topic: adjunct
+    name: Semaglutide — ADJUST-T1D (investigator-led)
+    company: Novo Nordisk (drug); academic sponsor
+    ticker: NVO
+    modality: Weekly GLP-1 RA up to 1 mg, added to automated insulin delivery
+    population: Adults with T1D and obesity on AID
+    stage: phase3  # academic Phase 3 (CV outcomes, NCT05819138); no Novo registration program
+    evidence: phase2
+    status: active
+    nct_ids: [NCT05819138, NCT06411210, NCT07891156]
+    endpoints:
+      - metric: Composite (TIR>70%, TBR<4%, ≥5% weight loss), 26 wk, n=72
+        result: 36% vs 0% placebo
+      - metric: Time in range (70–180)
+        result: +8.8 pts vs placebo (95% CI 3.9 to 13.7)
+      - metric: HbA1c
+        result: −0.3 pts vs placebo
+      - metric: Body weight
+        result: −8.8 kg vs placebo
+      - metric: Severe hypo / DKA
+        result: 2 severe hypo events per arm; no DKA
+    summary: >-
+      Randomized trial published in NEJM Evidence (2025); a 2026 Diabetes Care analysis
+      examined insulin-dose reduction. Several academic follow-ons are registered,
+      including a semaglutide cardiovascular-outcomes study in T1D (NCT05819138).
+    reality_check: >-
+      It's a clean randomized result, but small, and Novo has not announced a T1D
+      registration program. Today this is off-label use, not a label in the making.
+    next_catalyst: null
+    sources:
+      - label: NEJM Evidence 2025 — Semaglutide in Adults with T1D and Obesity (PMID 40550013)
+        url: https://doi.org/10.1056/EVIDoa2500173
+      - label: Diabetes Care 2026 — insulin dose reduction analysis (PMID 41429002)
+        url: https://doi.org/10.2337/dc25-2249
+    verified_on: 2026-10-24
+
+  - id: glp1-beta-cell-preservation
+    section: glp1
+    glp1_topic: beta_cell
+    name: GLP-1 RAs for beta-cell preservation (new-onset / early T1D)
+    company: Academic
+    ticker: null
+    modality: Semaglutide and other GLP-1 RAs, alone or combined with immunotherapy
+    stage: phase2
+    evidence: phase1
+    status: active
+    nct_ids: [NCT07430332, NCT06338553, NCT07614412, NCT03899402]
+    summary: >-
+      In an NEJM correspondence (2023), Dandona et al. reported that 10 people with
+      early T1D started on semaglutide sharply reduced or stopped prandial insulin. It was
+      uncontrolled. Randomized follow-ons are registered, including GLP-1 RA in stage 1 T1D
+      (Cincinnati) and GLP-1 RA given alongside teplizumab in stage 2 (Vanderbilt).
+    reality_check: >-
+      The hypothesis is exciting, but the evidence is a 10-patient case series. Anyone
+      quoting 'GLP-1s preserve beta cells in T1D' is ahead of the data.
+    next_catalyst: null
+    sources:
+      - label: NEJM 2023 — Semaglutide in Early Type 1 Diabetes (PMID 37672701)
+        url: https://doi.org/10.1056/NEJMc2302677
+      - label: ClinicalTrials.gov NCT07430332
+        url: https://clinicaltrials.gov/study/NCT07430332
+      - label: ClinicalTrials.gov NCT06338553
+        url: https://clinicaltrials.gov/study/NCT06338553
+    verified_on: 2026-10-24
+
+  - id: novo-liraglutide-adjunct
+    section: glp1
+    glp1_topic: safety
+    name: Liraglutide — ADJUNCT ONE & TWO (historical)
+    company: Novo Nordisk
+    ticker: NVO
+    modality: Daily GLP-1 RA added to insulin
+    stage: phase3
+    evidence: phase3
+    status: discontinued
+    nct_ids: [NCT01836523, NCT02098395]
+    endpoints:
+      - metric: HbA1c (ADJUNCT ONE, 52 wk)
+        result: Small reductions vs placebo (≈0.1–0.2 pts)
+      - metric: Safety
+        result: Higher symptomatic hypoglycemia and hyperglycemia with ketosis at the 1.8 mg dose
+    summary: >-
+      Novo's 2016 Phase 3 program of GLP-1 add-on in T1D. Glycemic benefit was modest, and
+      symptomatic hypoglycemia and ketosis signals rose. No T1D label resulted.
+    reality_check: >-
+      This is why there's still no GLP-1 T1D label, and why DKA and hypoglycemia data
+      will decide the tirzepatide filing, more than weight loss will.
+    next_catalyst: null
+    sources:
+      - label: Diabetes Care 2016 — ADJUNCT ONE (PMID 27506222)
+        url: https://doi.org/10.2337/dc16-0691
+      - label: Diabetes Care 2016 — ADJUNCT TWO (PMID 27493132)
+        url: https://doi.org/10.2337/dc16-0690
+    unverified:
+      - The ≈0.1–0.2 pt HbA1c range is summarized from the abstracts; check the dose-specific figures in the papers.
+    verified_on: 2026-10-24
