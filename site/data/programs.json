@@ -702,14 +702,7 @@
     }
    ],
    "my_commentary": null,
-   "news": [
-    {
-     "title": "Sernova Corp (OTC: SEOVF) Stock Price, News & Analysis",
-     "outlet": "kalkine.ca",
-     "date": "2026-10-09",
-     "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE00UmRxRFotTUVodlFUQllteWxsNFVGTFJxRWs3NmR1QkNvSzFyMllaV3dGZjdScGNSb1N0a0NJODVBMFRWcHRuMkptZU9hZw?oc=5"
-    }
-   ]
+   "news": []
   },
   {
    "id": "otsuka-opf310",
@@ -2270,6 +2263,18 @@
     "doi": "10.1016/j.bioactmat.2026.07.057"
    },
    {
+    "pmid": "42920585",
+    "title": "The stiffness of three-dimensional biomimetic matrices regulates insulin secretion via the Piezo1 mechanosensitive ion channel",
+    "journal": "Front Chem",
+    "pubdate": "2026",
+    "sortdate": "2026-10-09",
+    "authors": "Chen X, Wang Z, Gu J et al.",
+    "is_rct": false,
+    "is_review": false,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42920585/",
+    "doi": "10.3389/fchem.2026.1981529"
+   },
+   {
     "pmid": "42876362",
     "title": "Oxidative Stress, Post-Translational Modifications, and Type 1 Diabetes Pathogenesis",
     "journal": "Immunol Rev",
@@ -2316,18 +2321,6 @@
     "is_review": true,
     "url": "https://pubmed.ncbi.nlm.nih.gov/42571658/",
     "doi": "10.1002/dmrr.70215"
-   },
-   {
-    "pmid": "42601420",
-    "title": "Biomimetic zona pellucida-encapsulated islets for sustained glycaemic control in immunocompetent mice",
-    "journal": "Nat Biomed Eng",
-    "pubdate": "2026 Aug 14",
-    "sortdate": "2026-08-14",
-    "authors": "Lee K, Wang X, Wen C et al.",
-    "is_rct": false,
-    "is_review": false,
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42601420/",
-    "doi": "10.1038/s41551-026-01775-8"
    }
   ],
   "immune": [
@@ -2497,14 +2490,7 @@
     "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9xMnFZSTJua1ZqbEJoWjItMlY4S3daYXhzNV9VdXZUR2t3X2VyTUtTTEllOXdHMFJvRnpQaTBfc2VyTEM1RnNZbWJpRzZYLTRlT19PcVhZdWJWVW9WWEJXTE51SjAxdm83T1RVQlB0eWc0cGtjMzFrX3VPUm4?oc=5"
    }
   ],
-  "sernova-cellpouch": [
-   {
-    "title": "Sernova Corp (OTC: SEOVF) Stock Price, News & Analysis",
-    "outlet": "kalkine.ca",
-    "date": "2026-10-09",
-    "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE00UmRxRFotTUVodlFUQllteWxsNFVGTFJxRWs3NmR1QkNvSzFyMllaV3dGZjdScGNSb1N0a0NJODVBMFRWcHRuMkptZU9hZw?oc=5"
-   }
-  ],
+  "sernova-cellpouch": [],
   "otsuka-opf310": [],
   "aspect-bioprinted": [],
   "sanofi-teplizumab": [
