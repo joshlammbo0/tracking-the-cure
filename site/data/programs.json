@@ -702,7 +702,14 @@
     }
    ],
    "my_commentary": null,
-   "news": []
+   "news": [
+    {
+     "title": "Sernova Corp (OTC: SEOVF) Stock Price, News & Analysis",
+     "outlet": "kalkine.ca",
+     "date": "2026-10-09",
+     "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE00UmRxRFotTUVodlFUQllteWxsNFVGTFJxRWs3NmR1QkNvSzFyMllaV3dGZjdScGNSb1N0a0NJODVBMFRWcHRuMkptZU9hZw?oc=5"
+    }
+   ]
   },
   {
    "id": "otsuka-opf310",
@@ -1554,7 +1561,7 @@
      "result": "None reported in either arm (small, short study)"
     }
    ],
-   "summary": "Lilly is running the first industry-sponsored Phase 3 program of a GLP-1-class drug in T1D (SURPASS-T1D-1 and -2). The endpoint figures above are from the independent Phase 2 (Snaith et al., Diabetes Care 2026).",
+   "summary": "Lilly is running the first industry-sponsored Phase 3 program of a GLP-1-class drug in T1D since Novo Nordisk's liraglutide ADJUNCT trials (SURPASS-T1D-1 and -2). The endpoint figures above are from the independent Phase 2 (Snaith et al., Diabetes Care 2026).",
    "reality_check": "This is the most credible route to the first GLP-1-class T1D label. The Phase 2 had only 24 patients over 12 weeks, so the Phase 3 safety data (DKA, hypoglycemia) is what will decide it.",
    "next_catalyst": {
     "label": "SURPASS-T1D-1 primary completion (registry estimate)",
@@ -2490,7 +2497,14 @@
     "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9xMnFZSTJua1ZqbEJoWjItMlY4S3daYXhzNV9VdXZUR2t3X2VyTUtTTEllOXdHMFJvRnpQaTBfc2VyTEM1RnNZbWJpRzZYLTRlT19PcVhZdWJWVW9WWEJXTE51SjAxdm83T1RVQlB0eWc0cGtjMzFrX3VPUm4?oc=5"
    }
   ],
-  "sernova-cellpouch": [],
+  "sernova-cellpouch": [
+   {
+    "title": "Sernova Corp (OTC: SEOVF) Stock Price, News & Analysis",
+    "outlet": "kalkine.ca",
+    "date": "2026-10-09",
+    "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE00UmRxRFotTUVodlFUQllteWxsNFVGTFJxRWs3NmR1QkNvSzFyMllaV3dGZjdScGNSb1N0a0NJODVBMFRWcHRuMkptZU9hZw?oc=5"
+   }
+  ],
   "otsuka-opf310": [],
   "aspect-bioprinted": [],
   "sanofi-teplizumab": [
