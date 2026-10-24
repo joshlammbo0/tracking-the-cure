@@ -1,6 +1,6 @@
 {
- "built_at": "2026-10-24T06:18:19Z",
- "offline_build": true,
+ "built_at": "2026-10-24T06:59:10Z",
+ "offline_build": false,
  "counts": {
   "programs": 22,
   "trials": 36,
@@ -13,205 +13,215 @@
   "ClinicalTrials.gov": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-24T06:10:53.291776Z"
+   "at": "2026-10-24T06:58:21.000140Z"
   },
   "Source link check": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-24T06:08:15.200461Z"
+   "at": "2026-10-24T06:58:21.195855Z"
   },
   "PubMed (cure literature)": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-24T06:08:18.966134Z"
+   "at": "2026-10-24T06:58:25.411665Z"
   },
   "Google News RSS (headlines)": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-24T06:08:40.744696Z"
+   "at": "2026-10-24T06:58:46.269726Z"
   },
   "ClinicalTrials.gov (GLP-1 scan)": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-24T06:10:53.720674Z"
+   "at": "2026-10-24T06:58:46.615389Z"
   },
   "PubMed (GLP-1 in T1D)": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-24T06:08:44.464995Z"
+   "at": "2026-10-24T06:58:49.567959Z"
   },
   "openFDA drug labels": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-24T06:10:57.422997Z"
+   "at": "2026-10-24T06:58:52.980131Z"
   },
   "openFDA device decisions": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-24T06:10:58.411661Z"
+   "at": "2026-10-24T06:58:53.892013Z"
   },
   "Market data: DXCM": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-24T06:17:47.614180Z"
+   "at": "2026-10-24T06:58:54.969333Z"
   },
   "SEC EDGAR: DXCM": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-24T06:10:58.864644Z"
+   "at": "2026-10-24T06:58:57.262182Z"
   },
   "Market data: PODD": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-24T06:17:48.101138Z"
+   "at": "2026-10-24T06:58:57.955831Z"
   },
   "SEC EDGAR: PODD": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-24T06:10:59.046771Z"
+   "at": "2026-10-24T06:58:58.089437Z"
   },
   "Market data: TNDM": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-24T06:17:48.630510Z"
+   "at": "2026-10-24T06:58:58.780071Z"
   },
   "SEC EDGAR: TNDM": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-24T06:10:59.232711Z"
+   "at": "2026-10-24T06:58:58.822680Z"
   },
   "Market data: BBNX": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-24T06:17:49.134819Z"
+   "at": "2026-10-24T06:58:59.475249Z"
   },
   "SEC EDGAR: BBNX": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-24T06:10:59.408507Z"
+   "at": "2026-10-24T06:58:59.506951Z"
   },
   "Market data: MMED": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-24T06:17:49.630235Z"
+   "at": "2026-10-24T06:59:00.184943Z"
   },
   "SEC EDGAR: MMED": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-24T06:10:59.722216Z"
+   "at": "2026-10-24T06:59:00.306337Z"
   },
   "Market data: SENS": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-24T06:17:50.142955Z"
+   "at": "2026-10-24T06:59:01.210692Z"
   },
   "SEC EDGAR: SENS": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-24T06:10:59.906653Z"
+   "at": "2026-10-24T06:59:01.247105Z"
   },
   "Market data: EMBC": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-24T06:17:50.680836Z"
+   "at": "2026-10-24T06:59:02.049159Z"
   },
   "SEC EDGAR: EMBC": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-24T06:11:00.085836Z"
+   "at": "2026-10-24T06:59:02.148882Z"
   },
   "Market data: ABT": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-24T06:17:51.364568Z"
+   "at": "2026-10-24T06:59:02.904872Z"
   },
   "SEC EDGAR: ABT": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-24T06:11:00.266989Z"
+   "at": "2026-10-24T06:59:02.942507Z"
   },
   "Market data: MDT": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-24T06:17:51.973133Z"
+   "at": "2026-10-24T06:59:03.758606Z"
   },
   "SEC EDGAR: MDT": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-24T06:11:00.446662Z"
+   "at": "2026-10-24T06:59:03.798182Z"
   },
   "Market data: LLY": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-24T06:17:52.514360Z"
+   "at": "2026-10-24T06:59:04.598295Z"
   },
   "SEC EDGAR: LLY": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-24T06:11:00.640816Z"
+   "at": "2026-10-24T06:59:04.636098Z"
   },
   "Market data: NVO": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-24T06:17:53.241093Z"
+   "at": "2026-10-24T06:59:05.692528Z"
   },
   "SEC EDGAR: NVO": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-24T06:11:00.824852Z"
+   "at": "2026-10-24T06:59:05.736200Z"
   },
   "Market data: SNY": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-24T06:17:53.974861Z"
+   "at": "2026-10-24T06:59:06.801826Z"
   },
   "SEC EDGAR: SNY": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-24T06:11:01.133908Z"
+   "at": "2026-10-24T06:59:06.842436Z"
   },
   "Market data: VRTX": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-24T06:17:54.475316Z"
+   "at": "2026-10-24T06:59:07.534075Z"
   },
   "SEC EDGAR: VRTX": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-24T06:11:01.305133Z"
+   "at": "2026-10-24T06:59:07.570794Z"
   },
   "Market data: SANA": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-24T06:17:55.035259Z"
+   "at": "2026-10-24T06:59:08.236724Z"
   },
   "SEC EDGAR: SANA": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-24T06:11:01.485344Z"
+   "at": "2026-10-24T06:59:08.269311Z"
   },
   "Market data: CRSP": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-24T06:17:55.505493Z"
+   "at": "2026-10-24T06:59:08.935099Z"
   },
   "SEC EDGAR: CRSP": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-24T06:11:01.667751Z"
+   "at": "2026-10-24T06:59:08.973755Z"
   },
   "Market data: DMYD-B.ST": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-24T06:17:56.163270Z"
+   "at": "2026-10-24T06:59:09.887967Z"
   },
   "Market data: SVA.TO": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-24T06:17:56.757973Z"
+   "at": "2026-10-24T06:59:10.767565Z"
   }
  },
  "links": {
+  "https://www.fda.gov/media/164864/download": {
+   "state": "ok",
+   "code": 200,
+   "checked": "2026-10-24"
+  },
+  "https://www.fda.gov/news-events/press-announcements/fda-approves-new-indication-tzield-teplizumab-certain-pediatric-patients-recently-diagnosed-stage-3": {
+   "state": "ok",
+   "code": 200,
+   "checked": "2026-10-24"
+  },
   "https://abbott.mediaroom.com/2026-01-22-Abbott-Reports-Fourth-Quarter-and-Full-Year-2025-Results-Issues-2026-Financial-Outlook": {
    "state": "ok",
    "code": 200,
