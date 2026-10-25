@@ -104,6 +104,12 @@
    "my_commentary": null,
    "news": [
     {
+     "title": "Vertex reports results from Phase IIb AMPLIFIED trial for AMKD",
+     "outlet": "Clinical Trials Arena",
+     "date": "2026-09-23",
+     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPTk5JTDFaLWJBbkxFTG1yWkJoZ09iNFVQYUx0SEhRbDRsektvNWNHRmR2X1dzZWVzUzI5MnVyY002Z3RaM29lOXA5bGZxMm1NbDR2bmJzcTRKeWRmcXJxNFoycFJkM3o1cE05Wng2SjlQcHRWaGwtRjJCdVBMcUFsaF9TMA?oc=5"
+    },
+    {
      "title": "Diabetes cell therapy biotechs Sernova and Seraxis to merge",
      "outlet": "Endpoints News",
      "date": "2026-09-16",
@@ -702,14 +708,7 @@
     }
    ],
    "my_commentary": null,
-   "news": [
-    {
-     "title": "Sernova Corp (OTC: SEOVF) Stock Price, News & Analysis",
-     "outlet": "kalkine.ca",
-     "date": "2026-10-09",
-     "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE00UmRxRFotTUVodlFUQllteWxsNFVGTFJxRWs3NmR1QkNvSzFyMllaV3dGZjdScGNSb1N0a0NJODVBMFRWcHRuMkptZU9hZw?oc=5"
-    }
-   ]
+   "news": []
   },
   {
    "id": "otsuka-opf310",
@@ -1052,10 +1051,10 @@
      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOaEZ2QVF4UHh3UEdLMk1BMXNmRDBnWWl2bFY2Y1JWVlI2d2RFZ1dRam5YN2dVSWhESzBKcV9jYkJnNXpoNzVxRVJUQ0t0NWhOWGdheGl6dmxyZjFPX0hJbklpeGNwOFlLVXVpSHl0d0lyb01tWHRzZEdvdWFCYUc1M0p3bjBxRnczaGp5bVg5NkY3UUtGbnl2TmNMbDR6dGVQUkRlaA?oc=5"
     },
     {
-     "title": "Type 1 diabetes update: Immune therapy, screening, and new technology",
-     "outlet": "Contemporary Pediatrics",
-     "date": "2026-10-04",
-     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQZHJ2Q2dmV2lsQnByU0p2V2JBV2RLUUxkSDEwbnBJM1EzcXNDek00NzJLRzVtQnhNUmJiVUxpZjFUdXp2MEFTMzFDVzRHZEdMNkx2cHh0QlFNYklRbW10US1DQlZpSUN4cDZFUzduZTkwcC1mS1BiYTFZdU5XZWtrUUNCSFNuMWFmdmh4eGo3QlRQa244d09IczNpMnV0RTBNa0JEazR3eW9vWjlMbWlB?oc=5"
+     "title": "T cells in type 1 diabetes: mechanisms of β-cell autoimmunity, innate-adaptive immune crosstalk, and translational immunotherapy",
+     "outlet": "Frontiers",
+     "date": "2026-09-23",
+     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxObmZJdGp0NkY2cXgzR0RzcUl4bGhBaHBoUmtXZWF2VjUydFpzTE9FZzB2elotdGpJT19IZW9ORlgwWjI2WGJoUXdrcDktTVd0MW9ITWNuQlVGV1F6U2tCenBRdjY3Y2VBLXpQX0VtWDkzZEdRT1VFT1NiWnB4V21USXRETVcwVU41RTBkd1B4dldSZw?oc=5"
     }
    ]
   },
@@ -1189,16 +1188,16 @@
      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNb2FxcXRoeDUxSnd4N3BKcVc4ZDhPUzdOdXZkT3c2NXV0YmtGYWllYnBybG1UMTMzU3gtQ2dVTFVjQnVzOEtJamVPRUQ1T1gyNnl1REgwdHhaY05Uc3pQdXBMSTQxTmFoSVE3Ui0wRFlPY0tSNGJZRTdYQXRoZ3M2TlVrRFNvMnJiVU1KLVVkaw?oc=5"
     },
     {
-     "title": "Diabetes Dialogue: Screening, Cell Therapy, and Adjunctive Agents at Breakthrough-T1D",
-     "outlet": "HCPLive",
-     "date": "2026-10-15",
-     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOZWdHWWdYbmg3Qm9neXd2STFZVjB6emFsbmNhNUZMU2JFQUIxM1N1WjF2MG5pOXM5VTJzNVN1ZURuZzZkb0drOVhaeEMyZDZvejJkajRuWUpGSWxIWkdRQnJtbXphazBFSW0xU2k2NG5ZNVRrTUxvQU90bTNHY2taUzJhS2wySmJ6dTlyZXByZGhjelBfZGVWNEt4NE9zRVlSMGVIRTNCc01JSHFSZVBvUA?oc=5"
-    },
-    {
      "title": "5 FDA Decisions for Primary Care to Know from September 2026",
      "outlet": "Patient Care Online",
      "date": "2026-10-01",
      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOWWhvOXROekc5RlRtU2hNRWRiRDNHd3U3UFRNOFNnZ1gtWVZXMlA2dGtkaXJZNzJhSGJ5bW1Ncm5UMG90SlR4R29GX0FVTzRZWVVvQk85WV9jYjZTVlpKaFJ1SEtrbGtuYTZBdWR2dTRiVHpjYTZBNUY3QW84anF6WlA5X09DRmRlQW1CRUxaVTVuWl9GSWlfQUw3b0RSc3VR?oc=5"
+    },
+    {
+     "title": "Stopping baricitinib undoes T1D gains, Aus trial finds",
+     "outlet": "the limbic",
+     "date": "2026-09-03",
+     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNUDI1YldZZHF3VGVIWks0bWlGUFMyczh1SmNFLTRSTDVJTVJENktfcHhEZE5sNXMtUTdwc0FpYzZOZ3BsbGFBeDhTdjhlMGtHV21mZVN6WHJXd2x3U0JJMHB6a1FoOEozajZKemJ3eTVuVFh4Snc4RmNCMDhSUHc0SHlmM0Utcl9FQjViX1NqNUQ0eXZT?oc=5"
     }
    ]
   },
@@ -1687,10 +1686,10 @@
      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPazVvazk4YUphX2RqYnNsV3AzNmVNMlpBZkdqd1VFRVFBb3JjeUMwQkVaM21xaGVZazNjS1JQNy1TaW1XeHBXMHhseWQ0M3BhQjRyT0lSdjN4YURTVkwzeFZHOEhtQWcxNTctdUsyMy1oMzlETnBpSGM1Zms3MHRoWmpYSFVGRzhOdFB5UGJ0bHBCYmdvblZzZWtB?oc=5"
     },
     {
-     "title": "Effects of Tirzepatide on Pancreatic β-Cell Function in Adults With Type 2 Diabetes Mellitus: A Systematic Review",
-     "outlet": "The Cureus Journal of Medical Science",
-     "date": "2026-09-22",
-     "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNT2Zxc3Y3QlBteU1LWHU1OWY3RTluMkstWS1sMGk3V2l5VHFRMVhLRmI0ZXptcFhWOVktY0dud1NocmxqNEJjZGJ3aEtjdmVycVQzalVGMlVBbFZXYnFjY1lmWnN1UmN6bmVHY3Z3UEVLM0tERkVPdURteUZUSV8wVi1VeFpycWZXeENoM2U3R3FBNG9GSWM4Si1IU0RqVmphMGpPTndsdUxpdzhoUnFXRjB0a3NPcUo5TlZwX1B3cXFUVFRhUjVXT25tZ1RTRXoydUxxSUh2dUx3SkJfcXhRbnNnZjg?oc=5"
+     "title": "Recap: Tirzepatide Is Approved to Cut Cardiovascular Risk in Type 2 Diabetes",
+     "outlet": "Pharmacy Times",
+     "date": "2026-10-21",
+     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQcTBVZEFyVURuaXlnNGdWZ05oRkxGSUgzQUU3SlBROTNQdHdaTThnVThUaENxXzhGaVZxLUlLV3pjeDdnOXhWMXJ2b01CY3E1R0NuM0VlaXB6TXc2cEdkLThSSWV6OTZ5dTdjS3F1Wnkxd0puMlQ4UjA5RmkxdkUzcmFjQk13UFR6MVRrdGY5eFZidDBTVG83S3Y0Z0ZadDUtY1dJ?oc=5"
     }
    ]
   },
@@ -2208,6 +2207,18 @@
     "doi": "10.1016/j.isci.2026.117560"
    },
    {
+    "pmid": "42923301",
+    "title": "The capsule was never just a capsule: what islet encapsulation is for, now that immunoisolation is no longer its job",
+    "journal": "Front Bioeng Biotechnol",
+    "pubdate": "2026",
+    "sortdate": "2026-10-08",
+    "authors": "Citro A, Piemonti L",
+    "is_rct": false,
+    "is_review": false,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42923301/",
+    "doi": "10.3389/fbioe.2026.1943061"
+   },
+   {
     "pmid": "42750143",
     "title": "Engineering Immune-Protective Stem Cell-Derived β-Cell Grafts for Type 1 Diabetes: Encapsulation Technologies and the Emerging Graft Ecosystem",
     "journal": "Artif Organs",
@@ -2242,18 +2253,6 @@
     "is_review": true,
     "url": "https://pubmed.ncbi.nlm.nih.gov/42739778/",
     "doi": "10.3390/jcm15176774"
-   },
-   {
-    "pmid": "42476259",
-    "title": "Rebuilding beta-cell function: Advances in replacement, preservation and regeneration",
-    "journal": "Ann Endocrinol (Paris)",
-    "pubdate": "2026 Jul 20",
-    "sortdate": "2026-07-20",
-    "authors": "Lericque V, Pasquetti G, Thevenet J et al.",
-    "is_rct": false,
-    "is_review": true,
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42476259/",
-    "doi": "10.1016/j.ando.2026.102591"
    }
   ],
   "encapsulation": [
@@ -2280,6 +2279,18 @@
     "is_review": false,
     "url": "https://pubmed.ncbi.nlm.nih.gov/42920585/",
     "doi": "10.3389/fchem.2026.1981529"
+   },
+   {
+    "pmid": "42923301",
+    "title": "The capsule was never just a capsule: what islet encapsulation is for, now that immunoisolation is no longer its job",
+    "journal": "Front Bioeng Biotechnol",
+    "pubdate": "2026",
+    "sortdate": "2026-10-08",
+    "authors": "Citro A, Piemonti L",
+    "is_rct": false,
+    "is_review": false,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42923301/",
+    "doi": "10.3389/fbioe.2026.1943061"
    },
    {
     "pmid": "42876362",
@@ -2316,18 +2327,6 @@
     "is_review": false,
     "url": "https://pubmed.ncbi.nlm.nih.gov/42781481/",
     "doi": "10.3389/fnut.2026.1851659"
-   },
-   {
-    "pmid": "42571658",
-    "title": "Advancing Type 1 Diabetes Treatment: 3 PM-Oriented Innovations in Islet Transplantation and Biomaterial Engineering",
-    "journal": "Diabetes Metab Res Rev",
-    "pubdate": "2026 Sep",
-    "sortdate": "2026-09-01",
-    "authors": "Sabet Sarvestani F, Yaghobi R, Khosravi Maharlooei M et al.",
-    "is_rct": false,
-    "is_review": true,
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42571658/",
-    "doi": "10.1002/dmrr.70215"
    }
   ],
   "immune": [
@@ -2407,6 +2406,12 @@
  },
  "news": {
   "vertex-zimislecel": [
+   {
+    "title": "Vertex reports results from Phase IIb AMPLIFIED trial for AMKD",
+    "outlet": "Clinical Trials Arena",
+    "date": "2026-09-23",
+    "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPTk5JTDFaLWJBbkxFTG1yWkJoZ09iNFVQYUx0SEhRbDRsektvNWNHRmR2X1dzZWVzUzI5MnVyY002Z3RaM29lOXA5bGZxMm1NbDR2bmJzcTRKeWRmcXJxNFoycFJkM3o1cE05Wng2SjlQcHRWaGwtRjJCdVBMcUFsaF9TMA?oc=5"
+   },
    {
     "title": "Diabetes cell therapy biotechs Sernova and Seraxis to merge",
     "outlet": "Endpoints News",
@@ -2497,14 +2502,7 @@
     "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9xMnFZSTJua1ZqbEJoWjItMlY4S3daYXhzNV9VdXZUR2t3X2VyTUtTTEllOXdHMFJvRnpQaTBfc2VyTEM1RnNZbWJpRzZYLTRlT19PcVhZdWJWVW9WWEJXTE51SjAxdm83T1RVQlB0eWc0cGtjMzFrX3VPUm4?oc=5"
    }
   ],
-  "sernova-cellpouch": [
-   {
-    "title": "Sernova Corp (OTC: SEOVF) Stock Price, News & Analysis",
-    "outlet": "kalkine.ca",
-    "date": "2026-10-09",
-    "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE00UmRxRFotTUVodlFUQllteWxsNFVGTFJxRWs3NmR1QkNvSzFyMllaV3dGZjdScGNSb1N0a0NJODVBMFRWcHRuMkptZU9hZw?oc=5"
-   }
-  ],
+  "sernova-cellpouch": [],
   "otsuka-opf310": [],
   "aspect-bioprinted": [],
   "sanofi-teplizumab": [
@@ -2521,10 +2519,10 @@
     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOaEZ2QVF4UHh3UEdLMk1BMXNmRDBnWWl2bFY2Y1JWVlI2d2RFZ1dRam5YN2dVSWhESzBKcV9jYkJnNXpoNzVxRVJUQ0t0NWhOWGdheGl6dmxyZjFPX0hJbklpeGNwOFlLVXVpSHl0d0lyb01tWHRzZEdvdWFCYUc1M0p3bjBxRnczaGp5bVg5NkY3UUtGbnl2TmNMbDR6dGVQUkRlaA?oc=5"
    },
    {
-    "title": "Type 1 diabetes update: Immune therapy, screening, and new technology",
-    "outlet": "Contemporary Pediatrics",
-    "date": "2026-10-04",
-    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQZHJ2Q2dmV2lsQnByU0p2V2JBV2RLUUxkSDEwbnBJM1EzcXNDek00NzJLRzVtQnhNUmJiVUxpZjFUdXp2MEFTMzFDVzRHZEdMNkx2cHh0QlFNYklRbW10US1DQlZpSUN4cDZFUzduZTkwcC1mS1BiYTFZdU5XZWtrUUNCSFNuMWFmdmh4eGo3QlRQa244d09IczNpMnV0RTBNa0JEazR3eW9vWjlMbWlB?oc=5"
+    "title": "T cells in type 1 diabetes: mechanisms of β-cell autoimmunity, innate-adaptive immune crosstalk, and translational immunotherapy",
+    "outlet": "Frontiers",
+    "date": "2026-09-23",
+    "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxObmZJdGp0NkY2cXgzR0RzcUl4bGhBaHBoUmtXZWF2VjUydFpzTE9FZzB2elotdGpJT19IZW9ORlgwWjI2WGJoUXdrcDktTVd0MW9ITWNuQlVGV1F6U2tCenBRdjY3Y2VBLXpQX0VtWDkzZEdRT1VFT1NiWnB4V21USXRETVcwVU41RTBkd1B4dldSZw?oc=5"
    }
   ],
   "lilly-baricitinib": [
@@ -2535,16 +2533,16 @@
     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNb2FxcXRoeDUxSnd4N3BKcVc4ZDhPUzdOdXZkT3c2NXV0YmtGYWllYnBybG1UMTMzU3gtQ2dVTFVjQnVzOEtJamVPRUQ1T1gyNnl1REgwdHhaY05Uc3pQdXBMSTQxTmFoSVE3Ui0wRFlPY0tSNGJZRTdYQXRoZ3M2TlVrRFNvMnJiVU1KLVVkaw?oc=5"
    },
    {
-    "title": "Diabetes Dialogue: Screening, Cell Therapy, and Adjunctive Agents at Breakthrough-T1D",
-    "outlet": "HCPLive",
-    "date": "2026-10-15",
-    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOZWdHWWdYbmg3Qm9neXd2STFZVjB6emFsbmNhNUZMU2JFQUIxM1N1WjF2MG5pOXM5VTJzNVN1ZURuZzZkb0drOVhaeEMyZDZvejJkajRuWUpGSWxIWkdRQnJtbXphazBFSW0xU2k2NG5ZNVRrTUxvQU90bTNHY2taUzJhS2wySmJ6dTlyZXByZGhjelBfZGVWNEt4NE9zRVlSMGVIRTNCc01JSHFSZVBvUA?oc=5"
-   },
-   {
     "title": "5 FDA Decisions for Primary Care to Know from September 2026",
     "outlet": "Patient Care Online",
     "date": "2026-10-01",
     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOWWhvOXROekc5RlRtU2hNRWRiRDNHd3U3UFRNOFNnZ1gtWVZXMlA2dGtkaXJZNzJhSGJ5bW1Ncm5UMG90SlR4R29GX0FVTzRZWVVvQk85WV9jYjZTVlpKaFJ1SEtrbGtuYTZBdWR2dTRiVHpjYTZBNUY3QW84anF6WlA5X09DRmRlQW1CRUxaVTVuWl9GSWlfQUw3b0RSc3VR?oc=5"
+   },
+   {
+    "title": "Stopping baricitinib undoes T1D gains, Aus trial finds",
+    "outlet": "the limbic",
+    "date": "2026-09-03",
+    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNUDI1YldZZHF3VGVIWks0bWlGUFMyczh1SmNFLTRSTDVJTVJENktfcHhEZE5sNXMtUTdwc0FpYzZOZ3BsbGFBeDhTdjhlMGtHV21mZVN6WHJXd2x3U0JJMHB6a1FoOEozajZKemJ3eTVuVFh4Snc4RmNCMDhSUHc0SHlmM0Utcl9FQjViX1NqNUQ0eXZT?oc=5"
    }
   ],
   "sanofi-frexalimab": [],
@@ -2571,10 +2569,10 @@
     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPazVvazk4YUphX2RqYnNsV3AzNmVNMlpBZkdqd1VFRVFBb3JjeUMwQkVaM21xaGVZazNjS1JQNy1TaW1XeHBXMHhseWQ0M3BhQjRyT0lSdjN4YURTVkwzeFZHOEhtQWcxNTctdUsyMy1oMzlETnBpSGM1Zms3MHRoWmpYSFVGRzhOdFB5UGJ0bHBCYmdvblZzZWtB?oc=5"
    },
    {
-    "title": "Effects of Tirzepatide on Pancreatic β-Cell Function in Adults With Type 2 Diabetes Mellitus: A Systematic Review",
-    "outlet": "The Cureus Journal of Medical Science",
-    "date": "2026-09-22",
-    "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNT2Zxc3Y3QlBteU1LWHU1OWY3RTluMkstWS1sMGk3V2l5VHFRMVhLRmI0ZXptcFhWOVktY0dud1NocmxqNEJjZGJ3aEtjdmVycVQzalVGMlVBbFZXYnFjY1lmWnN1UmN6bmVHY3Z3UEVLM0tERkVPdURteUZUSV8wVi1VeFpycWZXeENoM2U3R3FBNG9GSWM4Si1IU0RqVmphMGpPTndsdUxpdzhoUnFXRjB0a3NPcUo5TlZwX1B3cXFUVFRhUjVXT25tZ1RTRXoydUxxSUh2dUx3SkJfcXhRbnNnZjg?oc=5"
+    "title": "Recap: Tirzepatide Is Approved to Cut Cardiovascular Risk in Type 2 Diabetes",
+    "outlet": "Pharmacy Times",
+    "date": "2026-10-21",
+    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQcTBVZEFyVURuaXlnNGdWZ05oRkxGSUgzQUU3SlBROTNQdHdaTThnVThUaENxXzhGaVZxLUlLV3pjeDdnOXhWMXJ2b01CY3E1R0NuM0VlaXB6TXc2cEdkLThSSWV6OTZ5dTdjS3F1Wnkxd0puMlQ4UjA5RmkxdkUzcmFjQk13UFR6MVRrdGY5eFZidDBTVG83S3Y0Z0ZadDUtY1dJ?oc=5"
    }
   ],
   "semaglutide-adjust-t1d": [
