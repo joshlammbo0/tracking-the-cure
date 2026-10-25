@@ -59,5 +59,47 @@
    "note": "Vertex's stated initial zimislecel population (severe hypoglycemia) ≈60k.",
    "source": "https://breakthrought1d.ca/important-update-on-vertex-trials/"
   }
+ },
+ "scenarios": {
+  "bear": {
+   "label": "Bear: late and niche",
+   "approval": 2034,
+   "peak": 0.05,
+   "ramp": 14,
+   "price": 750000,
+   "cap": 15000,
+   "residual": 0.5,
+   "thesis": "Immune-evasive cells slip, manufacturing stays scarce, and payers restrict access."
+  },
+  "base": {
+   "label": "Base: immune-evasive cells work",
+   "approval": 2031,
+   "peak": 0.15,
+   "ramp": 12,
+   "price": 500000,
+   "cap": 40000,
+   "residual": 0.3,
+   "thesis": "A no-immunosuppression product is approved early next decade and adoption is capacity-limited."
+  },
+  "bull": {
+   "label": "Bull: fast, broad adoption",
+   "approval": 2029,
+   "peak": 0.35,
+   "ramp": 9,
+   "price": 400000,
+   "cap": 150000,
+   "residual": 0.15,
+   "thesis": "Fast approval, scaled manufacturing, and broad patient willingness."
+  },
+  "immuno": {
+   "label": "Immunosuppression required",
+   "approval": 2028,
+   "peak": 0.02,
+   "ramp": 8,
+   "price": 1000000,
+   "cap": 5000,
+   "residual": 0.6,
+   "thesis": "Only today's approach reaches market: cells plus lifelong immunosuppression, for the sickest patients."
+  }
  }
 }
