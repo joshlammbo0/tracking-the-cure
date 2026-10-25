@@ -84,7 +84,7 @@ that starts with `(Placeholder` is hidden.
 - `data/programs.yaml`: cure and GLP-1 programs. Update `stage`, `evidence`, `status`, `summary`, `reality_check`, `sources`, and set `verified_on` to today. Any record older than 120 days gets a "re-verify" flag on the site.
 - `data/devices.yaml`, `data/companies.yaml`, `data/catalysts.yaml`, `data/market.yaml`.
 - `data/market.yaml` also holds the model's scenario presets (`scenarios:`); `data/companies.yaml` holds each company's revenue mix for the read-across (`exposure:`, with a basis and source).
-- **About page placeholders** (name, school, photo, links, disclosures) are in `templates/about.html`, marked `[like this]`.
+- **About page** text lives in `templates/about.html`.
 
 Rules the data follows: cite a source on every record. Never guess. Put anything you can't
 confirm under `unverified:` and it shows as a flag. Leave `diabetes_rev_pct: null` unless a

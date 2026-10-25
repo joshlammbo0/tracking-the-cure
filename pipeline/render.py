@@ -32,7 +32,6 @@ TPL = ROOT / "templates"
 OUT = ROOT / "_site"
 
 SITE_URL = os.environ.get("SITE_URL", "https://joshlammbo0.github.io/tracking-the-cure/")
-REPO_URL = "https://github.com/joshlammbo0/tracking-the-cure"
 SITE_NAME = "Tracking the Cure"
 
 GRADE_LABEL = {"preclinical": "Preclinical", "phase1": "Phase 1", "phase2": "Phase 2", "phase3": "Phase 3",
@@ -459,7 +458,7 @@ class Site:
         f["regex_ticker"] = lambda t: (re.search(r"\(([^)]+)\)\s*$", t) or [None, t])[1]
         self.env.tests["startingwith"] = lambda v, prefix: str(v).startswith(prefix)
         self.env.globals.update(GRADES=GRADES, GRADE_LABEL=GRADE_LABEL, GRADE_SHORT=GRADE_SHORT, APPROACH=APPROACH,
-                                CAT_TYPE=CAT_TYPE, SITE_NAME=SITE_NAME, SITE_URL=SITE_URL, REPO_URL=REPO_URL,
+                                CAT_TYPE=CAT_TYPE, SITE_NAME=SITE_NAME, SITE_URL=SITE_URL,
                                 NAV=NAV, today=TODAY, days_until=days_until, DEVICE_STATUS=DEVICE_STATUS)
 
     def page(self, path, template, title, description, og_key=None, og_kicker="", **ctx):
