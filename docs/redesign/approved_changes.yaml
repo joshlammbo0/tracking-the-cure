@@ -2,7 +2,8 @@ _comment: 'Owner-approved presentation text changes. Phase 1 (approved 2026-10-2
   Phase 2 (approved 2026-10-26): new homepage H1; T1D-attributable baseline values, axis labels and approval marker in the hero chart; $3.2B figure and existing qualifier/caveat repeated in the hero; one
   text node split by formatting. Phase 2 captions approved 2026-10-26 (hero chart title, subtitle, caption, legend labels). Phase 3 (recorded 2026-10-26): model page reuses the approved homepage context
   chart strings; read-across bar values duplicate the read-across table; heatmap legend values duplicate heatmap cells. Phase 3 text approved 2026-10-26 (read-across chart title and caption, labels). Phase
-  4 (recorded 2026-10-26): program-page ''Ahead of results'' values and pipeline matrix view re-display existing gap/grade data.'
+  4 (recorded 2026-10-26): program-page ''Ahead of results'' values and pipeline matrix view re-display existing gap/grade data. Phase 5 (autonomous, 2026-10-26): company-page verdict strip repeats each
+  page''s market cap, disclosed diabetes share and base-case cure exposure, with the qualifier ''base case · % of current revenue · model output''.'
 added:
 - page: 404.html
   text: GLP-1s in T1D
@@ -449,6 +450,198 @@ added:
   text: '+1'
 - page: programs/vertex-zimislecel/index.html
   text: '+1'
+- page: companies/abt/index.html
+  text: $179B
+- page: companies/abt/index.html
+  text: Diabetes % of revenue
+- page: companies/abt/index.html
+  text: 18%
+- page: companies/abt/index.html
+  text: Cure exposure, 2040
+- page: companies/abt/index.html
+  text: 1.9%
+- page: companies/abt/index.html
+  text: base case · % of current revenue · model output
+- page: companies/bbnx/index.html
+  text: $1.0B
+- page: companies/bbnx/index.html
+  text: Diabetes % of revenue
+- page: companies/bbnx/index.html
+  text: 100%
+- page: companies/bbnx/index.html
+  text: Cure exposure, 2040
+- page: companies/bbnx/index.html
+  text: 20.9%
+- page: companies/bbnx/index.html
+  text: base case · % of current revenue · model output
+- page: companies/crsp/index.html
+  text: $4.8B
+- page: companies/crsp/index.html
+  text: Diabetes % of revenue
+- page: companies/crsp/index.html
+  text: 0%
+- page: companies/crsp/index.html
+  text: Cure exposure, 2040
+- page: companies/crsp/index.html
+  text: Not modelled
+- page: companies/dmyd-b-st/index.html
+  text: $15.8M
+- page: companies/dmyd-b-st/index.html
+  text: Diabetes % of revenue
+- page: companies/dmyd-b-st/index.html
+  text: 0%
+- page: companies/dmyd-b-st/index.html
+  text: Cure exposure, 2040
+- page: companies/dmyd-b-st/index.html
+  text: Not modelled
+- page: companies/dxcm/index.html
+  text: $29.4B
+- page: companies/dxcm/index.html
+  text: Diabetes % of revenue
+- page: companies/dxcm/index.html
+  text: 100%
+- page: companies/dxcm/index.html
+  text: Cure exposure, 2040
+- page: companies/dxcm/index.html
+  text: 10.6%
+- page: companies/dxcm/index.html
+  text: base case · % of current revenue · model output
+- page: companies/embc/index.html
+  text: $380M
+- page: companies/embc/index.html
+  text: Diabetes % of revenue
+- page: companies/embc/index.html
+  text: 100%
+- page: companies/embc/index.html
+  text: Cure exposure, 2040
+- page: companies/embc/index.html
+  text: 1.6%
+- page: companies/embc/index.html
+  text: base case · % of current revenue · model output
+- page: companies/lly/index.html
+  text: $1.1T
+- page: companies/lly/index.html
+  text: Diabetes % of revenue
+- page: companies/lly/index.html
+  text: Not disclosed
+- page: companies/lly/index.html
+  text: Cure exposure, 2040
+- page: companies/lly/index.html
+  text: Not modelled
+- page: companies/mdt/index.html
+  text: $122B
+- page: companies/mdt/index.html
+  text: Diabetes % of revenue
+- page: companies/mdt/index.html
+  text: Not disclosed
+- page: companies/mdt/index.html
+  text: Cure exposure, 2040
+- page: companies/mdt/index.html
+  text: 1.8%
+- page: companies/mdt/index.html
+  text: base case · % of current revenue · model output
+- page: companies/mmed/index.html
+  text: $5.2B
+- page: companies/mmed/index.html
+  text: Diabetes % of revenue
+- page: companies/mmed/index.html
+  text: 100%
+- page: companies/mmed/index.html
+  text: Cure exposure, 2040
+- page: companies/mmed/index.html
+  text: 20.9%
+- page: companies/mmed/index.html
+  text: base case · % of current revenue · model output
+- page: companies/nvo/index.html
+  text: $172B
+- page: companies/nvo/index.html
+  text: Diabetes % of revenue
+- page: companies/nvo/index.html
+  text: Not disclosed
+- page: companies/nvo/index.html
+  text: Cure exposure, 2040
+- page: companies/nvo/index.html
+  text: 0.3%
+- page: companies/nvo/index.html
+  text: base case · % of current revenue · model output
+- page: companies/podd/index.html
+  text: $10.3B
+- page: companies/podd/index.html
+  text: Diabetes % of revenue
+- page: companies/podd/index.html
+  text: 100%
+- page: companies/podd/index.html
+  text: Cure exposure, 2040
+- page: companies/podd/index.html
+  text: 20.9%
+- page: companies/podd/index.html
+  text: base case · % of current revenue · model output
+- page: companies/sana/index.html
+  text: $698M
+- page: companies/sana/index.html
+  text: Diabetes % of revenue
+- page: companies/sana/index.html
+  text: 0%
+- page: companies/sana/index.html
+  text: Cure exposure, 2040
+- page: companies/sana/index.html
+  text: Not modelled
+- page: companies/sens/index.html
+  text: $397M
+- page: companies/sens/index.html
+  text: Diabetes % of revenue
+- page: companies/sens/index.html
+  text: 100%
+- page: companies/sens/index.html
+  text: Cure exposure, 2040
+- page: companies/sens/index.html
+  text: 10.6%
+- page: companies/sens/index.html
+  text: base case · % of current revenue · model output
+- page: companies/sny/index.html
+  text: $101B
+- page: companies/sny/index.html
+  text: Diabetes % of revenue
+- page: companies/sny/index.html
+  text: Not disclosed
+- page: companies/sny/index.html
+  text: Cure exposure, 2040
+- page: companies/sny/index.html
+  text: 0.1%
+- page: companies/sny/index.html
+  text: base case · % of current revenue · model output
+- page: companies/sva-to/index.html
+  text: $29.7M
+- page: companies/sva-to/index.html
+  text: Diabetes % of revenue
+- page: companies/sva-to/index.html
+  text: 0%
+- page: companies/sva-to/index.html
+  text: Cure exposure, 2040
+- page: companies/sva-to/index.html
+  text: Not modelled
+- page: companies/tndm/index.html
+  text: $1.2B
+- page: companies/tndm/index.html
+  text: Diabetes % of revenue
+- page: companies/tndm/index.html
+  text: 100%
+- page: companies/tndm/index.html
+  text: Cure exposure, 2040
+- page: companies/tndm/index.html
+  text: 20.9%
+- page: companies/tndm/index.html
+  text: base case · % of current revenue · model output
+- page: companies/vrtx/index.html
+  text: $133B
+- page: companies/vrtx/index.html
+  text: Diabetes % of revenue
+- page: companies/vrtx/index.html
+  text: 0%
+- page: companies/vrtx/index.html
+  text: Cure exposure, 2040
+- page: companies/vrtx/index.html
+  text: Not modelled
 removed:
 - page: 404.html
   text: GLP-1s

@@ -9,6 +9,12 @@
   <span class="small">1Y {{ ui.ret(q.ret_1y) }} · YTD {{ ui.ret(q.ret_ytd) }} · 1M {{ ui.ret(q.ret_1m) }}</span>
   <span class="small muted">as of {{ q.as_of|fdate if q.as_of else "—" }}</span>{% else %}<span class="small muted">No market data retrieved.</span>{% endif %}
 </div>
+{% set y40 = c.ra.years["2040"] if c.ra and c.ra.exposure else none %}
+<div class="verdict-strip co-verdict mt-5">
+  <div class="grade"><div class="k">Market cap</div><div class="v">{{ q.market_cap_usd|money }}</div></div>
+  <div class="grade"><div class="k">Diabetes % of revenue</div><div class="v">{{ c.diabetes_rev_pct ~ "%" if c.diabetes_rev_pct is not none else "Not disclosed" }}</div></div>
+  <div class="grade"><div class="k">Cure exposure, 2040</div><div class="v">{{ y40.pct_current_rev|pct(1) if y40 else "Not modelled" }}</div>{% if y40 %}<div class="sub">base case · % of current revenue · model output</div>{% endif %}</div>
+</div>
 {% endcall %}
 <div class="wrap">
 <section class="section" style="padding-top:var(--sp-6)" aria-labelledby="h-price">

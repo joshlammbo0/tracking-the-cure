@@ -500,7 +500,7 @@ class Site:
                                 CAT_TYPE=CAT_TYPE, SITE_NAME=SITE_NAME, SITE_URL=SITE_URL,
                                 NAV=NAV, NAV_PRIMARY=NAV_PRIMARY, NAV_MORE=NAV_MORE, today=TODAY, days_until=days_until, DEVICE_STATUS=DEVICE_STATUS)
 
-    def page(self, path, template, title, description, og_key=None, og_kicker="", **ctx):
+    def page(self, path, template, title, description, og_key=None, og_kicker="", og_track=None, **ctx):
         """path is the directory URL relative to the site root ('' for home, 'model/' ...)."""
         depth = path.count("/") if path and not path.endswith(".html") else 0
         root = "../" * depth
@@ -508,7 +508,7 @@ class Site:
             from urllib.parse import urlparse
             root = urlparse(SITE_URL).path
         og_name = (og_key or (path.strip("/").replace("/", "-") or "home")) + ".png"
-        og.ensure(og_name, title if path else SITE_NAME, og_kicker or "Independent research · Type 1 diabetes")
+        og.ensure(og_name, title if path else SITE_NAME, og_kicker or "Independent research · Type 1 diabetes", og_track)
         full_title = title if not path else "{} · {}".format(title, SITE_NAME)
         html = self.env.get_template(template).render(
             root=root, path=path, title=title, full_title=full_title, description=description,
@@ -581,7 +581,7 @@ def render(out=OUT, styleguide=False):
         S.page(p["url"], "program.html", p["name"],
                "{} ({}): stage {}, evidence {}. {}".format(p["name"], p["company"], GRADE_LABEL[p["stage"]], GRADE_LABEL[p["evidence"]],
                                                           re.sub(r"\s+", " ", p["reality_check"])[:140]),
-               og_key="program-" + p["id"], og_kicker=p["company"], p=p, related=related,
+               og_key="program-" + p["id"], og_kicker=p["company"], og_track=(p["evidence_i"], p["stage_i"]), p=p, related=related,
                papers=(D["papers"] or {}).get(p.get("approach")) or (D["glp1"]["papers"] or {}).get(p.get("glp1_topic")) or [],
                **common)
     # GLP-1
