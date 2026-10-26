@@ -1,6 +1,33 @@
 {
  "registry_scan": [
   {
+   "nct_id": "NCT01909245",
+   "title": "Islet Cell Transplant for Type 1 Diabetes",
+   "acronym": "TCD",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 2"
+   ],
+   "phase_grade": "phase2",
+   "sponsor": "City of Hope Medical Center",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type 1 Diabetes Mellitus"
+   ],
+   "enrollment": 10,
+   "enrollment_type": "ACTUAL",
+   "start_date": "2015-07-10",
+   "primary_completion": "2027-08-31",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2027-08-31",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-10-26",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT01909245",
+   "tracked": false
+  },
+  {
    "nct_id": "NCT07891156",
    "title": "Lean Mass Changes With Semaglutide in Adults With Type 1 Diabetes and Overweight/Obesity.",
    "acronym": "SEMA-T1D-BODY",
@@ -333,33 +360,6 @@
    "tracked": true
   },
   {
-   "nct_id": "NCT07427251",
-   "title": "The Postprandial Hypo-Avoid Study",
-   "acronym": null,
-   "status": "RECRUITING",
-   "why_stopped": null,
-   "phases": [
-    "Phase 4"
-   ],
-   "phase_grade": "approved",
-   "sponsor": "Steno Diabetes Center Copenhagen",
-   "sponsor_class": "OTHER",
-   "conditions": [
-    "Type 1 Diabetes Mellitus"
-   ],
-   "enrollment": 18,
-   "enrollment_type": "ESTIMATED",
-   "start_date": "2026-04-27",
-   "primary_completion": "2027-05-01",
-   "primary_completion_type": "ESTIMATED",
-   "completion": "2028-05-01",
-   "completion_type": "ESTIMATED",
-   "last_update": "2026-08-13",
-   "has_results": false,
-   "url": "https://clinicaltrials.gov/study/NCT07427251",
-   "tracked": false
-  },
-  {
    "nct_id": "NCT07087795",
    "title": "A Study to See the Effect of NNC0194-0499 Alone or in Combination With Semaglutide on Blood Sugar Control in People Living With Type 1 Diabetes",
    "acronym": null,
@@ -384,6 +384,33 @@
    "last_update": "2026-08-13",
    "has_results": false,
    "url": "https://clinicaltrials.gov/study/NCT07087795",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT07427251",
+   "title": "The Postprandial Hypo-Avoid Study",
+   "acronym": null,
+   "status": "RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 4"
+   ],
+   "phase_grade": "approved",
+   "sponsor": "Steno Diabetes Center Copenhagen",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type 1 Diabetes Mellitus"
+   ],
+   "enrollment": 18,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2026-04-27",
+   "primary_completion": "2027-05-01",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2028-05-01",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-08-13",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT07427251",
    "tracked": false
   },
   {
@@ -720,6 +747,33 @@
    "tracked": false
   },
   {
+   "nct_id": "NCT07614412",
+   "title": "SHIELD-T1D: Shingrix and GLP-1 Agonist for Beta-Cell Preservation in Recent-Onset Type 1 Diabetes.",
+   "acronym": "SHIELD-T1D",
+   "status": "NOT_YET_RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 2"
+   ],
+   "phase_grade": "phase2",
+   "sponsor": "Ministry of Health, Saudi Arabia",
+   "sponsor_class": "OTHER_GOV",
+   "conditions": [
+    "Type 1 Diabetes Mellitus"
+   ],
+   "enrollment": 240,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2027-01-01",
+   "primary_completion": "2028-01-31",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2028-12-31",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-05-29",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT07614412",
+   "tracked": true
+  },
+  {
    "nct_id": "NCT03899402",
    "title": "Triple Therapy in T1DM",
    "acronym": null,
@@ -745,33 +799,6 @@
    "last_update": "2026-05-29",
    "has_results": false,
    "url": "https://clinicaltrials.gov/study/NCT03899402",
-   "tracked": true
-  },
-  {
-   "nct_id": "NCT07614412",
-   "title": "SHIELD-T1D: Shingrix and GLP-1 Agonist for Beta-Cell Preservation in Recent-Onset Type 1 Diabetes.",
-   "acronym": "SHIELD-T1D",
-   "status": "NOT_YET_RECRUITING",
-   "why_stopped": null,
-   "phases": [
-    "Phase 2"
-   ],
-   "phase_grade": "phase2",
-   "sponsor": "Ministry of Health, Saudi Arabia",
-   "sponsor_class": "OTHER_GOV",
-   "conditions": [
-    "Type 1 Diabetes Mellitus"
-   ],
-   "enrollment": 240,
-   "enrollment_type": "ESTIMATED",
-   "start_date": "2027-01-01",
-   "primary_completion": "2028-01-31",
-   "primary_completion_type": "ESTIMATED",
-   "completion": "2028-12-31",
-   "completion_type": "ESTIMATED",
-   "last_update": "2026-05-29",
-   "has_results": false,
-   "url": "https://clinicaltrials.gov/study/NCT07614412",
    "tracked": true
   },
   {
@@ -1438,33 +1465,6 @@
    "tracked": false
   },
   {
-   "nct_id": "NCT07341243",
-   "title": "Exercising in Hot Conditions: How Does it Effect Blood Glucose in People With T1D",
-   "acronym": "T1D-Heat",
-   "status": "RECRUITING",
-   "why_stopped": null,
-   "phases": [
-    "N/A"
-   ],
-   "phase_grade": null,
-   "sponsor": "Liverpool John Moores University",
-   "sponsor_class": "OTHER",
-   "conditions": [
-    "Type 1 Diabetes (T1D)"
-   ],
-   "enrollment": 38,
-   "enrollment_type": "ESTIMATED",
-   "start_date": "2025-11-01",
-   "primary_completion": "2026-11-01",
-   "primary_completion_type": "ESTIMATED",
-   "completion": "2026-11-01",
-   "completion_type": "ESTIMATED",
-   "last_update": "2026-01-14",
-   "has_results": false,
-   "url": "https://clinicaltrials.gov/study/NCT07341243",
-   "tracked": false
-  },
-  {
    "nct_id": "NCT06904846",
    "title": "To Evaluate the Change in Glucose Parameters in Adult Patients With Type 1 or Type 2 Diabetes From Europe Using the iCan o3 CGM System for 60 Days Period",
    "acronym": "DETECT",
@@ -1490,6 +1490,33 @@
    "last_update": "2026-01-14",
    "has_results": false,
    "url": "https://clinicaltrials.gov/study/NCT06904846",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT07341243",
+   "title": "Exercising in Hot Conditions: How Does it Effect Blood Glucose in People With T1D",
+   "acronym": "T1D-Heat",
+   "status": "RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "N/A"
+   ],
+   "phase_grade": null,
+   "sponsor": "Liverpool John Moores University",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type 1 Diabetes (T1D)"
+   ],
+   "enrollment": 38,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2025-11-01",
+   "primary_completion": "2026-11-01",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2026-11-01",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-01-14",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT07341243",
    "tracked": false
   },
   {
@@ -1576,33 +1603,6 @@
    "tracked": false
   },
   {
-   "nct_id": "NCT06338553",
-   "title": "GLP-1Ra Impact on Metabolic Outcomes in Stage 2 T1DM While Receiving Teplizumab",
-   "acronym": "GLP-TEP",
-   "status": "RECRUITING",
-   "why_stopped": null,
-   "phases": [
-    "Early Phase 1"
-   ],
-   "phase_grade": "phase1",
-   "sponsor": "Vanderbilt University Medical Center",
-   "sponsor_class": "OTHER",
-   "conditions": [
-    "Type 1 Diabetes"
-   ],
-   "enrollment": 24,
-   "enrollment_type": "ESTIMATED",
-   "start_date": "2024-06-12",
-   "primary_completion": "2027-03",
-   "primary_completion_type": "ESTIMATED",
-   "completion": "2027-03",
-   "completion_type": "ESTIMATED",
-   "last_update": "2025-12-18",
-   "has_results": false,
-   "url": "https://clinicaltrials.gov/study/NCT06338553",
-   "tracked": true
-  },
-  {
    "nct_id": "NCT06082973",
    "title": "Dual-hormone Artificial Pancreas Versus Single-hormone Under Exercise and a Meal Challenge",
    "acronym": "TAILOR/3",
@@ -1628,6 +1628,33 @@
    "has_results": false,
    "url": "https://clinicaltrials.gov/study/NCT06082973",
    "tracked": false
+  },
+  {
+   "nct_id": "NCT06338553",
+   "title": "GLP-1Ra Impact on Metabolic Outcomes in Stage 2 T1DM While Receiving Teplizumab",
+   "acronym": "GLP-TEP",
+   "status": "RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Early Phase 1"
+   ],
+   "phase_grade": "phase1",
+   "sponsor": "Vanderbilt University Medical Center",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type 1 Diabetes"
+   ],
+   "enrollment": 24,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2024-06-12",
+   "primary_completion": "2027-03",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2027-03",
+   "completion_type": "ESTIMATED",
+   "last_update": "2025-12-18",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT06338553",
+   "tracked": true
   },
   {
    "nct_id": "NCT06588504",
@@ -1682,33 +1709,6 @@
    "last_update": "2025-11-14",
    "has_results": false,
    "url": "https://clinicaltrials.gov/study/NCT06418880",
-   "tracked": false
-  },
-  {
-   "nct_id": "NCT01909245",
-   "title": "Islet Cell Transplant for Type 1 Diabetes",
-   "acronym": "TCD",
-   "status": "ACTIVE_NOT_RECRUITING",
-   "why_stopped": null,
-   "phases": [
-    "Phase 2"
-   ],
-   "phase_grade": "phase2",
-   "sponsor": "City of Hope Medical Center",
-   "sponsor_class": "OTHER",
-   "conditions": [
-    "Type 1 Diabetes Mellitus"
-   ],
-   "enrollment": 10,
-   "enrollment_type": "ACTUAL",
-   "start_date": "2013-10-16",
-   "primary_completion": "2026-09-22",
-   "primary_completion_type": "ESTIMATED",
-   "completion": "2026-09-22",
-   "completion_type": "ESTIMATED",
-   "last_update": "2025-11-10",
-   "has_results": false,
-   "url": "https://clinicaltrials.gov/study/NCT01909245",
    "tracked": false
   }
  ],

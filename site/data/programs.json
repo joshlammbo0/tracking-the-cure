@@ -418,8 +418,8 @@
     {
      "title": "Stem cell-derived islets edge toward clinical reality",
      "outlet": "BioWorld News",
-     "date": "2026-10-07",
-     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNZU4wa0Nhd2N4dlhLYm0tdVJZNWRsdm56NU5qYV9feTdzNXdOSnhxdElIdWhhWmQ1S1g5Z3pzZFF3QVFMb3EwbkQxaGtFcERJMW9TOGhUWDdCUWpub3FHeGJyVmR5VWFNMXAtWnBMcjBNelN3QmhBTzVjbUU2MENlWmVvUmYzYkcwZ0FYeGxvYkp2MnZzdkJVZzZR?oc=5"
+     "date": "2026-10-13",
+     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQR0RnY3IwN3VJYS1wSmEtTFpqTUpTakVHWXJRcFRLd0tuandwTk1QUm9aRkdpVjk4T3dUbmZweGxGVGY3S1NlTGI1NzNObk5EU0N6LVBsMFNiQnBoWGxwZHVONndmVUpaeWhxOGdtekVweUxGLXdIMTQxLUJvRmZDR1JzTFlIazFJeEt0VFBNaDBfR05LaXZvcXpR?oc=5"
     }
    ]
   },
@@ -1674,10 +1674,10 @@
      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPazVvazk4YUphX2RqYnNsV3AzNmVNMlpBZkdqd1VFRVFBb3JjeUMwQkVaM21xaGVZazNjS1JQNy1TaW1XeHBXMHhseWQ0M3BhQjRyT0lSdjN4YURTVkwzeFZHOEhtQWcxNTctdUsyMy1oMzlETnBpSGM1Zms3MHRoWmpYSFVGRzhOdFB5UGJ0bHBCYmdvblZzZWtB?oc=5"
     },
     {
-     "title": "Recap: Tirzepatide Is Approved to Cut Cardiovascular Risk in Type 2 Diabetes",
-     "outlet": "Pharmacy Times",
-     "date": "2026-10-21",
-     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQcTBVZEFyVURuaXlnNGdWZ05oRkxGSUgzQUU3SlBROTNQdHdaTThnVThUaENxXzhGaVZxLUlLV3pjeDdnOXhWMXJ2b01CY3E1R0NuM0VlaXB6TXc2cEdkLThSSWV6OTZ5dTdjS3F1Wnkxd0puMlQ4UjA5RmkxdkUzcmFjQk13UFR6MVRrdGY5eFZidDBTVG83S3Y0Z0ZadDUtY1dJ?oc=5"
+     "title": "EASD 2026: EloraTZP Bests Tirzepatide on Weight Loss, A1C in Type 2 Diabetes",
+     "outlet": "HCPLive",
+     "date": "2026-09-30",
+     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQRjhwTHA3d09uRHlibmR5X2RBcjUxWUdTeXVidkJUbWduUGJCUGk3RjNDeTVwLTkzUTBha0lxU2ppNXFUMHhWbEp5aXlKd1E4cjMyOUIwX29nUmJPRWVOeTVfZFRjVDBjZFEyQ2JJUlZCLWRvUFgzMXlEeGY4b3kzLVdDVnlnSzJoaXhNUXVkYzR2SXo2NlNwTkpYUXBnT2N3aDRhNEh3?oc=5"
     }
    ]
   },
@@ -2145,28 +2145,28 @@
     "doi": "10.1097/TP.0000000000005783"
    },
    {
-    "pmid": "42907150",
-    "title": "Engineering stem cell-derived islets for type 1 diabetes: genetic strategies for immune evasion and stress resilience",
-    "journal": "Regen Med",
-    "pubdate": "2026 Oct 21",
-    "sortdate": "2026-10-21",
-    "authors": "Leavens C, Chamberlain CS, Kapadia D et al.",
-    "is_rct": false,
-    "is_review": true,
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42907150/",
-    "doi": "10.1080/17460751.2026.2751695"
-   },
-   {
-    "pmid": "42887499",
-    "title": "Organotypic vascularization improves maturation of human stem cell-derived islets and restores normoglycemia in diabetic mice",
-    "journal": "Cell Stem Cell",
-    "pubdate": "2026 Oct 16",
-    "sortdate": "2026-10-16",
-    "authors": "Wang J, Pelissier A, Lin JSH et al.",
+    "pmid": "42928611",
+    "title": "Characterising differential maturation of stem cell-derived islets in mice: Graft function and transcriptomic analysis",
+    "journal": "Diabet Med",
+    "pubdate": "2026 Oct 25",
+    "sortdate": "2026-10-25",
+    "authors": "Sullivan R, Gatward LFD, Hong TW et al.",
     "is_rct": false,
     "is_review": false,
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42887499/",
-    "doi": "10.1016/j.stem.2026.09.011"
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42928611/",
+    "doi": "10.1111/dme.70507"
+   },
+   {
+    "pmid": "42928449",
+    "title": "Mesenchymal stromal cell-derived extracellular vesicles improve islet β-cell metabolic function via miRNA-mediated regulation of Ankyrin-B expression",
+    "journal": "Diabet Med",
+    "pubdate": "2026 Oct 25",
+    "sortdate": "2026-10-25",
+    "authors": "Hong TW, Arora R, Sullivan R et al.",
+    "is_rct": false,
+    "is_review": false,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42928449/",
+    "doi": "10.1111/dme.70508"
    }
   ],
   "gene_edited": [
@@ -2446,8 +2446,8 @@
    {
     "title": "Stem cell-derived islets edge toward clinical reality",
     "outlet": "BioWorld News",
-    "date": "2026-10-07",
-    "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNZU4wa0Nhd2N4dlhLYm0tdVJZNWRsdm56NU5qYV9feTdzNXdOSnhxdElIdWhhWmQ1S1g5Z3pzZFF3QVFMb3EwbkQxaGtFcERJMW9TOGhUWDdCUWpub3FHeGJyVmR5VWFNMXAtWnBMcjBNelN3QmhBTzVjbUU2MENlWmVvUmYzYkcwZ0FYeGxvYkp2MnZzdkJVZzZR?oc=5"
+    "date": "2026-10-13",
+    "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQR0RnY3IwN3VJYS1wSmEtTFpqTUpTakVHWXJRcFRLd0tuandwTk1QUm9aRkdpVjk4T3dUbmZweGxGVGY3S1NlTGI1NzNObk5EU0N6LVBsMFNiQnBoWGxwZHVONndmVUpaeWhxOGdtekVweUxGLXdIMTQxLUJvRmZDR1JzTFlIazFJeEt0VFBNaDBfR05LaXZvcXpR?oc=5"
    }
   ],
   "sana-up421": [
@@ -2545,10 +2545,10 @@
     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPazVvazk4YUphX2RqYnNsV3AzNmVNMlpBZkdqd1VFRVFBb3JjeUMwQkVaM21xaGVZazNjS1JQNy1TaW1XeHBXMHhseWQ0M3BhQjRyT0lSdjN4YURTVkwzeFZHOEhtQWcxNTctdUsyMy1oMzlETnBpSGM1Zms3MHRoWmpYSFVGRzhOdFB5UGJ0bHBCYmdvblZzZWtB?oc=5"
    },
    {
-    "title": "Recap: Tirzepatide Is Approved to Cut Cardiovascular Risk in Type 2 Diabetes",
-    "outlet": "Pharmacy Times",
-    "date": "2026-10-21",
-    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQcTBVZEFyVURuaXlnNGdWZ05oRkxGSUgzQUU3SlBROTNQdHdaTThnVThUaENxXzhGaVZxLUlLV3pjeDdnOXhWMXJ2b01CY3E1R0NuM0VlaXB6TXc2cEdkLThSSWV6OTZ5dTdjS3F1Wnkxd0puMlQ4UjA5RmkxdkUzcmFjQk13UFR6MVRrdGY5eFZidDBTVG83S3Y0Z0ZadDUtY1dJ?oc=5"
+    "title": "EASD 2026: EloraTZP Bests Tirzepatide on Weight Loss, A1C in Type 2 Diabetes",
+    "outlet": "HCPLive",
+    "date": "2026-09-30",
+    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQRjhwTHA3d09uRHlibmR5X2RBcjUxWUdTeXVidkJUbWduUGJCUGk3RjNDeTVwLTkzUTBha0lxU2ppNXFUMHhWbEp5aXlKd1E4cjMyOUIwX29nUmJPRWVOeTVfZFRjVDBjZFEyQ2JJUlZCLWRvUFgzMXlEeGY4b3kzLVdDVnlnSzJoaXhNUXVkYzR2SXo2NlNwTkpYUXBnT2N3aDRhNEh3?oc=5"
    }
   ],
   "semaglutide-adjust-t1d": [
