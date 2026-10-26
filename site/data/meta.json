@@ -1,5 +1,5 @@
 {
- "built_at": "2026-10-26T12:12:24Z",
+ "built_at": "2026-10-26T13:39:23Z",
  "offline_build": false,
  "counts": {
   "programs": 22,
@@ -13,202 +13,202 @@
   "ClinicalTrials.gov": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-26T12:08:24.322621Z"
+   "at": "2026-10-26T13:36:46.457126Z"
   },
   "Source link check": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-26T12:10:08.382967Z"
+   "at": "2026-10-26T13:38:30.834753Z"
   },
   "PubMed (cure literature)": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-26T12:10:12.797227Z"
+   "at": "2026-10-26T13:38:35.073077Z"
   },
   "Google News RSS (headlines)": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-26T12:10:33.840729Z"
+   "at": "2026-10-26T13:38:56.287444Z"
   },
   "ClinicalTrials.gov (GLP-1 scan)": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-26T12:10:34.373735Z"
+   "at": "2026-10-26T13:38:56.769370Z"
   },
   "PubMed (GLP-1 in T1D)": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-26T12:10:37.898710Z"
+   "at": "2026-10-26T13:38:59.695966Z"
   },
   "openFDA drug labels": {
-   "ok": false,
-   "detail": "RetryError: HTTPSConnectionPool(host='api.fda.gov', port=443): Max retries exceeded with url: /drug/label.json?search=openfda.brand_name%3A%22Victoza%22&limit=1&sort=effective_time%3Adesc (Caused by ResponseError",
-   "at": "2026-10-26T12:11:28.742459Z"
+   "ok": true,
+   "detail": "refreshed",
+   "at": "2026-10-26T13:39:03.371201Z"
   },
   "openFDA device decisions": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-26T12:12:10.515402Z"
+   "at": "2026-10-26T13:39:04.310592Z"
   },
   "Market data: DXCM": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-26T12:12:11.556619Z"
+   "at": "2026-10-26T13:39:05.646918Z"
   },
   "SEC EDGAR: DXCM": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-26T12:12:11.905212Z"
+   "at": "2026-10-26T13:39:06.174188Z"
   },
   "Market data: PODD": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-26T12:12:12.640124Z"
+   "at": "2026-10-26T13:39:07.292145Z"
   },
   "SEC EDGAR: PODD": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-26T12:12:12.790741Z"
+   "at": "2026-10-26T13:39:07.337248Z"
   },
   "Market data: TNDM": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-26T12:12:13.484046Z"
+   "at": "2026-10-26T13:39:08.366009Z"
   },
   "SEC EDGAR: TNDM": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-26T12:12:13.524016Z"
+   "at": "2026-10-26T13:39:08.410134Z"
   },
   "Market data: BBNX": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-26T12:12:14.176978Z"
+   "at": "2026-10-26T13:39:09.280596Z"
   },
   "SEC EDGAR: BBNX": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-26T12:12:14.257281Z"
+   "at": "2026-10-26T13:39:09.309653Z"
   },
   "Market data: MMED": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-26T12:12:14.886668Z"
+   "at": "2026-10-26T13:39:10.170087Z"
   },
   "SEC EDGAR: MMED": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-26T12:12:14.921635Z"
+   "at": "2026-10-26T13:39:10.200123Z"
   },
   "Market data: SENS": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-26T12:12:15.536112Z"
+   "at": "2026-10-26T13:39:11.129282Z"
   },
   "SEC EDGAR: SENS": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-26T12:12:15.583454Z"
+   "at": "2026-10-26T13:39:11.160451Z"
   },
   "Market data: EMBC": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-26T12:12:16.324179Z"
+   "at": "2026-10-26T13:39:12.067066Z"
   },
   "SEC EDGAR: EMBC": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-26T12:12:16.360783Z"
+   "at": "2026-10-26T13:39:12.096118Z"
   },
   "Market data: ABT": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-26T12:12:17.102297Z"
+   "at": "2026-10-26T13:39:13.082671Z"
   },
   "SEC EDGAR: ABT": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-26T12:12:17.141911Z"
+   "at": "2026-10-26T13:39:13.195882Z"
   },
   "Market data: MDT": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-26T12:12:17.853623Z"
+   "at": "2026-10-26T13:39:14.357334Z"
   },
   "SEC EDGAR: MDT": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-26T12:12:17.917295Z"
+   "at": "2026-10-26T13:39:14.445972Z"
   },
   "Market data: LLY": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-26T12:12:18.659317Z"
+   "at": "2026-10-26T13:39:15.490015Z"
   },
   "SEC EDGAR: LLY": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-26T12:12:18.696890Z"
+   "at": "2026-10-26T13:39:15.528867Z"
   },
   "Market data: NVO": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-26T12:12:19.545746Z"
+   "at": "2026-10-26T13:39:16.771468Z"
   },
   "SEC EDGAR: NVO": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-26T12:12:19.583208Z"
+   "at": "2026-10-26T13:39:16.805621Z"
   },
   "Market data: SNY": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-26T12:12:20.468364Z"
+   "at": "2026-10-26T13:39:18.086726Z"
   },
   "SEC EDGAR: SNY": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-26T12:12:20.479093Z"
+   "at": "2026-10-26T13:39:18.122943Z"
   },
   "Market data: VRTX": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-26T12:12:21.225589Z"
+   "at": "2026-10-26T13:39:18.966546Z"
   },
   "SEC EDGAR: VRTX": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-26T12:12:21.235825Z"
+   "at": "2026-10-26T13:39:18.997464Z"
   },
   "Market data: SANA": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-26T12:12:21.854013Z"
+   "at": "2026-10-26T13:39:19.849852Z"
   },
   "SEC EDGAR: SANA": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-26T12:12:21.918233Z"
+   "at": "2026-10-26T13:39:19.907178Z"
   },
   "Market data: CRSP": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-26T12:12:22.537303Z"
+   "at": "2026-10-26T13:39:20.887212Z"
   },
   "SEC EDGAR: CRSP": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-26T12:12:22.601834Z"
+   "at": "2026-10-26T13:39:20.925245Z"
   },
   "Market data: DMYD-B.ST": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-26T12:12:23.434116Z"
+   "at": "2026-10-26T13:39:22.442901Z"
   },
   "Market data: SVA.TO": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-10-26T12:12:24.269578Z"
+   "at": "2026-10-26T13:39:23.655388Z"
   }
  },
  "links": {
