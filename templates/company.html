@@ -9,6 +9,12 @@
   <span class="small">1Y {{ ui.ret(q.ret_1y) }} · YTD {{ ui.ret(q.ret_ytd) }} · 1M {{ ui.ret(q.ret_1m) }}</span>
   <span class="small muted">as of {{ q.as_of|fdate if q.as_of else "—" }}</span>{% else %}<span class="small muted">No market data retrieved.</span>{% endif %}
 </div>
+{% set y40 = c.ra.years["2040"] if c.ra and c.ra.exposure else none %}
+<div class="verdict-strip co-verdict mt-5">
+  <div class="grade"><div class="k">Market cap</div><div class="v">{{ q.market_cap_usd|money }}</div></div>
+  <div class="grade"><div class="k">Diabetes % of revenue</div><div class="v">{{ c.diabetes_rev_pct ~ "%" if c.diabetes_rev_pct is not none else "Not disclosed" }}</div></div>
+  <div class="grade"><div class="k">Cure exposure, 2040</div><div class="v">{{ y40.pct_current_rev|pct(1) if y40 else "Not modelled" }}</div>{% if y40 %}<div class="sub">base case · % of current revenue · model output</div>{% endif %}</div>
+</div>
 {% endcall %}
 <div class="wrap">
 <section class="section" style="padding-top:var(--sp-6)" aria-labelledby="h-price">
@@ -20,7 +26,7 @@
       <figcaption>Source: Yahoo Finance via yfinance (unofficial, may be delayed).</figcaption>
     </figure>
     <div>
-      <h4 class="mb-3">Key metrics</h4>
+      <h2 class="label-h mb-3">Key metrics</h2>
       <dl class="kv" style="grid-template-columns:repeat(2,minmax(0,1fr))">
         <div><dt>Market cap</dt><dd>{{ q.market_cap_usd|money }}<span class="sub">US$</span></dd></div>
         <div><dt>Revenue TTM</dt><dd>{{ q.revenue_ttm_usd|money }}<span class="sub">US$</span></dd></div>

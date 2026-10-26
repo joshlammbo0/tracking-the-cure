@@ -4,18 +4,34 @@
 {% set bi = md.results.base.inputs %}
 {% block main %}
 <div class="wrap">
-<section class="hero">
+<section class="hero hero-b" aria-labelledby="h-hero">
   <span class="eyebrow">Independent research · Type 1 diabetes · Updated {{ built_human }}</span>
-  <h1>A cure for type 1 diabetes would reshape a {{ headline.tam|money(0) }} market. Here is how close it is, and who is exposed.</h1>
-  <p class="lede">Every cure program is graded on how far it has advanced and on the results it has actually reported. A model then sizes what a working cure would take from today's device and insulin makers. Data refreshes daily from primary sources.</p>
-  <div class="actions">
-    <a class="btn" href="{{ root }}model/">Open the Cure Impact Model →</a>
-    <a class="btn ghost" href="{{ root }}pipeline/">See the cure pipeline</a>
+  <h1 id="h-hero">A cure would rewrite a {{ headline.tam|money(0) }} market. The model says the revenue shifts slowly, and the strategic exposure starts long before.</h1>
+  <div class="hero-grid">
+    <div class="hero-figure">
+      <div class="display-figure">{{ b["2040"].displaced_total|money }}</div>
+      <p class="hero-label">Revenue displaced in 2040, base case</p>
+      <p class="hero-qual"><b>{{ b["2040"].share_of_t1d|pct(1) }} of T1D-driven revenue</b> · CGM, pumps &amp; insulin · model output</p>
+      <p class="hero-caveat">Model output under labelled assumptions, not a forecast.</p>
+      <p class="hero-lede">Every cure program is graded on how far it has advanced and on the results it has actually reported. A model then sizes what a working cure would take from today's device and insulin makers. Data refreshes daily from primary sources.</p>
+      <div class="actions"><a class="btn" href="{{ root }}model/">Open the Cure Impact Model →</a></div>
+    </div>
+    <figure class="figure hero-chart">
+      <div class="fig-title">How much of T1D-driven revenue a cure displaces</div>
+      <div class="fig-sub">Annual, US$, global CGM, pumps and insulin, {{ md.json.start }}–{{ md.json.end }}</div>
+      <div class="legend" aria-hidden="true"><span><i class="sw-baseline"></i>T1D-attributable revenue, no cure</span><span><i class="sw-accent"></i>Displaced by a cure, base case</span></div>
+      <div class="chart-wide">{{ md.hero.wide }}</div>
+      <div class="chart-narrow">{{ md.hero.narrow }}</div>
+      <figcaption>The grey area is revenue attributable to people with T1D if no cure arrives, using the model's labelled T1D-share assumptions; the highlighted area is the part the base-case cure displaces. Model output, not a forecast.</figcaption>
+    </figure>
   </div>
-  <div class="stats">
-    {{ ui.stat(headline.active, "Active cure programs", headline.late ~ " at Phase 3 or beyond · " ~ headline.late_ev ~ " with Phase 3-grade results") }}
-    {{ ui.stat(headline.approved|length, "Approved T1D cell or immune therapies", headline.approved|map(attribute="short")|join(" and ")) }}
-    {{ ui.stat(b["2040"].displaced_total|money, "Revenue displaced in 2040, base case", "CGM, pumps & insulin · model output") }}
+  <div class="evidence-strip" aria-label="Evidence today">
+    <span class="eyebrow">Evidence today</span>
+    <div class="stats">
+      {{ ui.stat(headline.active, "Active cure programs", headline.late ~ " at Phase 3 or beyond · " ~ headline.late_ev ~ " with Phase 3-grade results") }}
+      {{ ui.stat(headline.approved|length, "Approved T1D cell or immune therapies", headline.approved|map(attribute="short")|join(" and ")) }}
+    </div>
+    <a class="btn ghost" href="{{ root }}pipeline/">See the cure pipeline</a>
   </div>
   <p class="asof">Market size: 2025 global CGM ({{ (market.markets.cgm.value * 1e9)|money }}), insulin pumps ({{ (market.markets.pump.value * 1e9)|money }}) and insulin ({{ (market.markets.insulin.value * 1e9)|money }}), Global Market Insights estimates; <a href="{{ root }}model/#methodology">sources and ranges</a>. {{ headline.trials }} registered trials tracked.</p>
 </section>

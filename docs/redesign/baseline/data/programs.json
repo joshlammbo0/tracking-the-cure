@@ -1,0 +1,2576 @@
+{
+ "programs": [
+  {
+   "id": "vertex-zimislecel",
+   "section": "cure",
+   "approach": "cell_replacement",
+   "name": "Zimislecel (VX-880)",
+   "company": "Vertex Pharmaceuticals",
+   "ticker": "VRTX",
+   "modality": "Fully differentiated stem-cell-derived islets, infused into the portal vein",
+   "population": "T1D with impaired hypoglycemia awareness and severe hypoglycemia",
+   "stage": "phase3",
+   "evidence": "phase2",
+   "status": "active",
+   "nct_ids": [
+    "NCT04786262",
+    "NCT06832410"
+   ],
+   "summary": "Phase 1/2/3 master protocol (FORWARD). In the NEJM report, 10 of 12 full-dose participants were insulin-independent at day 365; all 12 had HbA1c <7% and no severe hypoglycemia. Requires chronic immunosuppression; two deaths were reported in the study (cryptococcal meningitis; progression of pre-existing neurocognitive disease). Vertex postponed completion of dosing in Jan 2026 for an internal manufacturing analysis, then resumed dosing; it said it will give updated timelines later in 2026.",
+   "reality_check": "The strongest cure-type data in the field, but it's a swap of insulin for lifelong immunosuppression, aimed first at the sickest ~60k patients. The 2026 filing goal has slipped and has no new date yet.",
+   "next_catalyst": {
+    "label": "Updated zimislecel / VX-017 timelines",
+    "date": "2026-12-31",
+    "date_precision": "guided"
+   },
+   "sources": [
+    {
+     "label": "NEJM 2025 — Stem Cell–Derived, Fully Differentiated Islets for T1D (PMID 40544428)",
+     "url": "https://doi.org/10.1056/NEJMoa2506549"
+    },
+    {
+     "label": "Vertex Q1 2026 results (dosing resumed)",
+     "url": "https://investors.vrtx.com/news-releases/news-release-details/vertex-reports-first-quarter-2026-financial-results"
+    },
+    {
+     "label": "Vertex Q2 2026 results (updated timelines later this year)",
+     "url": "https://news.vrtx.com/news-releases/news-release-details/vertex-reports-second-quarter-2026-financial-results"
+    }
+   ],
+   "verified_on": "2026-10-24",
+   "trials": [
+    {
+     "nct_id": "NCT04786262",
+     "title": "A Safety, Tolerability, and Efficacy Study of VX-880 and VX-017 in Participants With Type 1 Diabetes",
+     "acronym": null,
+     "status": "RECRUITING",
+     "why_stopped": null,
+     "phases": [
+      "Phase 3"
+     ],
+     "phase_grade": "phase3",
+     "sponsor": "Vertex Pharmaceuticals Incorporated",
+     "sponsor_class": "INDUSTRY",
+     "conditions": [
+      "Diabetes Mellitus, Type 1",
+      "Impaired Hypoglycemic Awareness",
+      "Severe Hypoglycemia"
+     ],
+     "enrollment": 57,
+     "enrollment_type": "ESTIMATED",
+     "start_date": "2021-03-29",
+     "primary_completion": "2027-12-31",
+     "primary_completion_type": "ESTIMATED",
+     "completion": "2031-12-31",
+     "completion_type": "ESTIMATED",
+     "last_update": "2026-09-01",
+     "has_results": false,
+     "url": "https://clinicaltrials.gov/study/NCT04786262"
+    },
+    {
+     "nct_id": "NCT06832410",
+     "title": "An Efficacy, Safety, and Tolerability Study of VX-880 in Participants With Type 1 Diabetes With a Kidney Transplant",
+     "acronym": null,
+     "status": "RECRUITING",
+     "why_stopped": null,
+     "phases": [
+      "Phase 3"
+     ],
+     "phase_grade": "phase3",
+     "sponsor": "Vertex Pharmaceuticals Incorporated",
+     "sponsor_class": "INDUSTRY",
+     "conditions": [
+      "Type 1 Diabetes",
+      "Kidney Transplant"
+     ],
+     "enrollment": 10,
+     "enrollment_type": "ESTIMATED",
+     "start_date": "2025-03-31",
+     "primary_completion": "2026-09-17",
+     "primary_completion_type": "ESTIMATED",
+     "completion": "2027-09-17",
+     "completion_type": "ESTIMATED",
+     "last_update": "2026-03-23",
+     "has_results": false,
+     "url": "https://clinicaltrials.gov/study/NCT06832410"
+    }
+   ],
+   "flags": [
+    {
+     "level": "warn",
+     "text": "NCT06832410: registry primary completion (2026-09-17) has passed but status is still recruiting — registry likely out of date."
+    }
+   ],
+   "my_commentary": null,
+   "news": [
+    {
+     "title": "Vertex reports results from Phase IIb AMPLIFIED trial for AMKD",
+     "outlet": "Clinical Trials Arena",
+     "date": "2026-09-23",
+     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPTk5JTDFaLWJBbkxFTG1yWkJoZ09iNFVQYUx0SEhRbDRsektvNWNHRmR2X1dzZWVzUzI5MnVyY002Z3RaM29lOXA5bGZxMm1NbDR2bmJzcTRKeWRmcXJxNFoycFJkM3o1cE05Wng2SjlQcHRWaGwtRjJCdVBMcUFsaF9TMA?oc=5"
+    },
+    {
+     "title": "Diabetes cell therapy biotechs Sernova and Seraxis to merge",
+     "outlet": "Endpoints News",
+     "date": "2026-09-16",
+     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOYU5qSDMxcjI1aTZERGFTdlNKMThNdlpRYzltWC1xVlo4YmFYMzBRSG1LN1FLQ3NDLVNFNnZ4eDEtdW04aFl1bl9WLXMwb3hkQnJiVFFoUjRIVjlQc01scGVkaTJlVTA4MWdza3lHcFRjNWdoMm9WWVJwV1dMQjROTDB3YzhCRUxrZkhZ?oc=5"
+    },
+    {
+     "title": "Vertex Pharmaceuticals (VRTX) Q1 2026 Earnings Call Transcript",
+     "outlet": "Fortune",
+     "date": "2026-10-24",
+     "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE0tMFF5RERWSkhXNXloMjZKN0w2cmY0SGRfcnNoNkhkX1FMVE5kLXozMHdKY1ZFNjNqY20tTlpyd24teDlDcU1ZWktjS0lYaUlMeVVJWkg3U3p1UUpzQlFVYlUtN3RpZzhzbHJscHZJcEsxeVI1bndN?oc=5"
+    }
+   ]
+  },
+  {
+   "id": "vertex-vx017",
+   "section": "cure",
+   "approach": "gene_edited",
+   "name": "VX-017",
+   "company": "Vertex Pharmaceuticals",
+   "ticker": "VRTX",
+   "modality": "Next-generation islet cell product, studied within the FORWARD master protocol",
+   "stage": "phase1",
+   "evidence": "preclinical",
+   "status": "active",
+   "nct_ids": [
+    "NCT04786262"
+   ],
+   "skip_checks": [
+    "registry_phase"
+   ],
+   "summary": "Listed as an intervention in Vertex's Phase 1/2/3 master protocol (NCT04786262). Vertex said in its Q2 2026 release that the FDA cleared the VX-017 IND and that it would accelerate the program.",
+   "reality_check": "No human data yet. Vertex has described it as a 'universal donor' approach, but the company hasn't disclosed engineering details we could check, so treat the label as a goal, not a result.",
+   "next_catalyst": {
+    "label": "First VX-017 dosing / program timelines",
+    "date": "2026-12-31",
+    "date_precision": "guided"
+   },
+   "sources": [
+    {
+     "label": "ClinicalTrials.gov master protocol listing VX-017",
+     "url": "https://clinicaltrials.gov/study/NCT04786262"
+    },
+    {
+     "label": "Vertex Q2 2026 results",
+     "url": "https://news.vrtx.com/news-releases/news-release-details/vertex-reports-second-quarter-2026-financial-results"
+    }
+   ],
+   "unverified": [
+    "Exact mechanism / engineering of VX-017 is not described in a primary source we could find."
+   ],
+   "verified_on": "2026-10-24",
+   "trials": [
+    {
+     "nct_id": "NCT04786262",
+     "title": "A Safety, Tolerability, and Efficacy Study of VX-880 and VX-017 in Participants With Type 1 Diabetes",
+     "acronym": null,
+     "status": "RECRUITING",
+     "why_stopped": null,
+     "phases": [
+      "Phase 3"
+     ],
+     "phase_grade": "phase3",
+     "sponsor": "Vertex Pharmaceuticals Incorporated",
+     "sponsor_class": "INDUSTRY",
+     "conditions": [
+      "Diabetes Mellitus, Type 1",
+      "Impaired Hypoglycemic Awareness",
+      "Severe Hypoglycemia"
+     ],
+     "enrollment": 57,
+     "enrollment_type": "ESTIMATED",
+     "start_date": "2021-03-29",
+     "primary_completion": "2027-12-31",
+     "primary_completion_type": "ESTIMATED",
+     "completion": "2031-12-31",
+     "completion_type": "ESTIMATED",
+     "last_update": "2026-09-01",
+     "has_results": false,
+     "url": "https://clinicaltrials.gov/study/NCT04786262"
+    }
+   ],
+   "flags": [
+    {
+     "level": "info",
+     "text": "Unverified: Exact mechanism / engineering of VX-017 is not described in a primary source we could find."
+    }
+   ],
+   "my_commentary": null,
+   "news": []
+  },
+  {
+   "id": "celltrans-lantidra",
+   "section": "cure",
+   "approach": "cell_replacement",
+   "name": "Lantidra (donislecel)",
+   "company": "CellTrans (private)",
+   "ticker": null,
+   "modality": "Deceased-donor pancreatic islets, infused into the portal vein",
+   "population": "Adults with T1D unable to reach target A1c due to repeated severe hypoglycemia",
+   "stage": "approved",
+   "evidence": "approved",
+   "status": "active",
+   "nct_ids": [],
+   "summary": "FDA approved it in June 2023 as the first allogeneic islet cell therapy for T1D. It needs organ donors and chronic immunosuppression.",
+   "reality_check": "Approved, but supply is capped by organ donors, so it reaches very few patients. It shows the regulatory path that stem-cell islets will follow.",
+   "next_catalyst": null,
+   "sources": [
+    {
+     "label": "FDA press release (June 2023)",
+     "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-cellular-therapy-treat-patients-type-1-diabetes"
+    }
+   ],
+   "verified_on": "2026-10-24",
+   "trials": [],
+   "flags": [],
+   "my_commentary": null,
+   "news": [
+    {
+     "title": "Donor Islet Cells for Type 1 Diabetes Could Be Regulated Like Organs as HHS Seeks Public Comment",
+     "outlet": "Medical Daily",
+     "date": "2026-09-24",
+     "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxObmNZdmw1Q0lCZ0VLQkp3dmtScWxjWmxaQnVmeFYxYVRKV0lDa3RQSkhRVkJzMnJVWjU1MHhINDNuV25IQ3VkM1FISDR4OEdrVTJqcFZFVVZyU0lEZkxtRkNrSV80Vjk3TWZMTkZDOWlkaHpDU3JmT1ZSYk93eFRscnlGUE1TMWxi?oc=5"
+    }
+   ]
+  },
+  {
+   "id": "seraxis-sr02",
+   "section": "cure",
+   "approach": "cell_replacement",
+   "name": "SR-02",
+   "company": "Seraxis (private)",
+   "ticker": null,
+   "modality": "Stem-cell-derived pancreatic endocrine cells",
+   "stage": "phase1",
+   "evidence": "preclinical",
+   "status": "active",
+   "nct_ids": [
+    "NCT07581197",
+    "NCT06651515"
+   ],
+   "summary": "A Phase 1/2 is registered as not yet recruiting (NCT07581197). An earlier Phase 1/2 registration (NCT06651515, omental implant) is listed as withdrawn.",
+   "reality_check": "A registry entry isn't data. No patient results have been reported.",
+   "next_catalyst": {
+    "label": "First patient dosed (no date disclosed)",
+    "date": "2028-11-30",
+    "date_precision": "registry",
+    "nct_id": "NCT07581197",
+    "registry_date_type": "ESTIMATED"
+   },
+   "sources": [
+    {
+     "label": "ClinicalTrials.gov NCT07581197",
+     "url": "https://clinicaltrials.gov/study/NCT07581197"
+    }
+   ],
+   "verified_on": "2026-10-24",
+   "trials": [
+    {
+     "nct_id": "NCT07581197",
+     "title": "Study of the Safety and Efficacy of Pancreatic Endocrine Cells in Adult Patients With Type 1 Diabetes",
+     "acronym": null,
+     "status": "NOT_YET_RECRUITING",
+     "why_stopped": null,
+     "phases": [
+      "Phase 1",
+      "Phase 2"
+     ],
+     "phase_grade": "phase1",
+     "sponsor": "Seraxis",
+     "sponsor_class": "INDUSTRY",
+     "conditions": [
+      "Diabete Mellitus",
+      "Diabete Type 1"
+     ],
+     "enrollment": 9,
+     "enrollment_type": "ESTIMATED",
+     "start_date": "2026-11",
+     "primary_completion": "2028-11",
+     "primary_completion_type": "ESTIMATED",
+     "completion": "2029-11",
+     "completion_type": "ESTIMATED",
+     "last_update": "2026-10-19",
+     "has_results": false,
+     "url": "https://clinicaltrials.gov/study/NCT07581197"
+    },
+    {
+     "nct_id": "NCT06651515",
+     "title": "A Study of the Safety and Efficacy of Pancreatic Endocrine Cell Clusters Implanted Into the Omentum of Type 1 Diabetes Patients With Severe Hypoglycemia",
+     "acronym": "SUGR",
+     "status": "WITHDRAWN",
+     "why_stopped": "Study is being withdrawn for business reasons",
+     "phases": [
+      "Phase 1",
+      "Phase 2"
+     ],
+     "phase_grade": "phase1",
+     "sponsor": "Seraxis",
+     "sponsor_class": "INDUSTRY",
+     "conditions": [
+      "Diabetes Mellitus Type 1"
+     ],
+     "enrollment": 0,
+     "enrollment_type": "ACTUAL",
+     "start_date": "2025-04",
+     "primary_completion": "2027-03",
+     "primary_completion_type": "ESTIMATED",
+     "completion": "2028-03",
+     "completion_type": "ESTIMATED",
+     "last_update": "2025-10-16",
+     "has_results": false,
+     "url": "https://clinicaltrials.gov/study/NCT06651515"
+    }
+   ],
+   "flags": [
+    {
+     "level": "info",
+     "text": "NCT06651515 is withdrawn on ClinicalTrials.gov; the program continues in other registered trials."
+    }
+   ],
+   "my_commentary": null,
+   "news": [
+    {
+     "title": "Sernova and Seraxis merge to form BetaNova",
+     "outlet": "BioXconomy",
+     "date": "2026-09-08",
+     "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQNVVRY0FqaXo4OUNlbWRHanJCMm1oZ3NkMUdZZUM0TXNLVWNseUFuV1RyNmtUei1CajV5SFJLOC1VVWJRWFJBQXE1OHdnQUttQTUySHpLMGw3Vkh6cDRyS3lZc2RoUE0zNGNlXzdVTmlzaTZ0NzhudjNSS25XWjl1QjAyUTZjVlZkOGFiaWZVSm00S29fQlpJSGNyb0U1ZFE?oc=5"
+    },
+    {
+     "title": "Diabetes cell therapy biotechs Sernova and Seraxis to merge",
+     "outlet": "Endpoints News",
+     "date": "2026-09-16",
+     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOYU5qSDMxcjI1aTZERGFTdlNKMThNdlpRYzltWC1xVlo4YmFYMzBRSG1LN1FLQ3NDLVNFNnZ4eDEtdW04aFl1bl9WLXMwb3hkQnJiVFFoUjRIVjlQc01scGVkaTJlVTA4MWdza3lHcFRjNWdoMm9WWVJwV1dMQjROTDB3YzhCRUxrZkhZ?oc=5"
+    },
+    {
+     "title": "Diabetes Cell Therapy Merger Nears Close Ahead of Q1 2027 First Patient Dosing",
+     "outlet": "Streetwise Reports",
+     "date": "2026-10-21",
+     "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQWEFBNGc0SVkweURLckhGSk1YTWszcGNGZFFjQWlBX3dFNUthRFMwSkpWZE5scDFkb25leUJsTTMzUlNoUUliTjZXa05ZbDFkUEZIaTJ2eU5rM19zTWFaZzM3QjZLWVI3ZW1HeHJQQTdVZ2dGZ19RclJJbUw2VUVaYlRSMTNwbVJJUGJUdFJBUlQ0NTU1bTBIcXJDemFidWR2SFd2RVZlTU1sSzBEVlMwaV9DdTlyYlFGU3EyYjViNmRKcnJqcENSWVNwRFpDanNyREE?oc=5"
+    }
+   ]
+  },
+  {
+   "id": "celregen-crg002",
+   "section": "cure",
+   "approach": "cell_replacement",
+   "name": "CRG-002",
+   "company": "Celregen Therapeutics (private)",
+   "ticker": null,
+   "modality": "Allogeneic iPSC-derived pancreatic islet cells",
+   "stage": "phase1",
+   "evidence": "preclinical",
+   "status": "active",
+   "nct_ids": [
+    "NCT07503028"
+   ],
+   "summary": "Exploratory early Phase 1 study, enrolling by invitation, per ClinicalTrials.gov.",
+   "reality_check": "Very early, and little is disclosed publicly. We're tracking it as part of a broader wave of iPSC islet programs, not as a near-term option.",
+   "next_catalyst": null,
+   "sources": [
+    {
+     "label": "ClinicalTrials.gov NCT07503028",
+     "url": "https://clinicaltrials.gov/study/NCT07503028"
+    }
+   ],
+   "unverified": [
+    "Company background and funding not verified from a primary source."
+   ],
+   "verified_on": "2026-10-24",
+   "trials": [
+    {
+     "nct_id": "NCT07503028",
+     "title": "An Exploratory Clinical Study Evaluating Allogeneic iPSC-derived Pancreatic Islet Cells (CRG-002) for the Treatment of Diabetic Patients With Hypoglycemia Unawareness or Severe Hypoglycemic Events",
+     "acronym": null,
+     "status": "ENROLLING_BY_INVITATION",
+     "why_stopped": null,
+     "phases": [
+      "Early Phase 1"
+     ],
+     "phase_grade": "phase1",
+     "sponsor": "Celregen Therapeutics",
+     "sponsor_class": "INDUSTRY",
+     "conditions": [
+      "T1DM - Type 1 Diabetes Mellitus",
+      "Pancreatogenic Diabetes Mellitus"
+     ],
+     "enrollment": 10,
+     "enrollment_type": "ESTIMATED",
+     "start_date": "2025-10-17",
+     "primary_completion": "2028-01-18",
+     "primary_completion_type": "ESTIMATED",
+     "completion": "2028-01-18",
+     "completion_type": "ESTIMATED",
+     "last_update": "2026-08-26",
+     "has_results": false,
+     "url": "https://clinicaltrials.gov/study/NCT07503028"
+    }
+   ],
+   "flags": [
+    {
+     "level": "info",
+     "text": "Unverified: Company background and funding not verified from a primary source."
+    }
+   ],
+   "my_commentary": null,
+   "news": [
+    {
+     "title": "Stem cell-derived islets edge toward clinical reality",
+     "outlet": "BioWorld News",
+     "date": "2026-10-07",
+     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNZU4wa0Nhd2N4dlhLYm0tdVJZNWRsdm56NU5qYV9feTdzNXdOSnhxdElIdWhhWmQ1S1g5Z3pzZFF3QVFMb3EwbkQxaGtFcERJMW9TOGhUWDdCUWpub3FHeGJyVmR5VWFNMXAtWnBMcjBNelN3QmhBTzVjbUU2MENlWmVvUmYzYkcwZ0FYeGxvYkp2MnZzdkJVZzZR?oc=5"
+    }
+   ]
+  },
+  {
+   "id": "sana-up421",
+   "section": "cure",
+   "approach": "gene_edited",
+   "name": "UP421 (investigator-sponsored)",
+   "company": "Sana Biotechnology / Uppsala University",
+   "ticker": "SANA",
+   "modality": "Hypoimmune (HIP)-edited primary donor islets, intramuscular, no immunosuppression",
+   "stage": "phase1",
+   "evidence": "phase1",
+   "status": "active",
+   "nct_ids": [
+    "NCT06239636"
+   ],
+   "summary": "First-in-human study at Uppsala. Sana reported surviving, insulin-producing cells and no immunosuppression through 14 months in the first patient; long-term follow-up was published as an NEJM correspondence in 2026.",
+   "reality_check": "This is a single patient at a low, sub-therapeutic dose, so it's proof of the concept of hiding cells from the immune system, not proof of a cure. It's still a real first.",
+   "next_catalyst": null,
+   "sources": [
+    {
+     "label": "NEJM 2026 — Long-Term Survival of Hypoimmune Allogeneic Islets without Immunosuppression (PMID 42430558)",
+     "url": "https://doi.org/10.1056/NEJMc2604408"
+    },
+    {
+     "label": "Sana 14-month update (Mar 2026)",
+     "url": "https://www.globenewswire.com/news-release/2026/03/13/3255502/0/en/sana-biotechnology-announces-continued-positive-clinical-results-through-14-months-from-type-1-diabetes-study-of-islet-cell-transplantation-without-immunosuppression.html"
+    }
+   ],
+   "verified_on": "2026-10-24",
+   "trials": [
+    {
+     "nct_id": "NCT06239636",
+     "title": "First-in-human Safety Study of Hypoimmune Pancreatic Islet Transplantation in Adult Subjects With Type 1 Diabetes",
+     "acronym": null,
+     "status": "RECRUITING",
+     "why_stopped": null,
+     "phases": [
+      "Early Phase 1"
+     ],
+     "phase_grade": "phase1",
+     "sponsor": "Per-Ola Carlsson",
+     "sponsor_class": "OTHER",
+     "conditions": [
+      "Type1diabetes"
+     ],
+     "enrollment": 2,
+     "enrollment_type": "ESTIMATED",
+     "start_date": "2024-03-08",
+     "primary_completion": "2025-05",
+     "primary_completion_type": "ESTIMATED",
+     "completion": "2025-06",
+     "completion_type": "ESTIMATED",
+     "last_update": "2024-12-11",
+     "has_results": false,
+     "url": "https://clinicaltrials.gov/study/NCT06239636"
+    }
+   ],
+   "flags": [
+    {
+     "level": "warn",
+     "text": "NCT06239636: registry primary completion (2025-05) has passed but status is still recruiting — registry likely out of date."
+    },
+    {
+     "level": "info",
+     "text": "NCT06239636: registry record not updated since 2024-12-11."
+    }
+   ],
+   "my_commentary": null,
+   "news": [
+    {
+     "title": "Sana Biotechnology: A Shot At Diabetes",
+     "outlet": "Seeking Alpha",
+     "date": "2026-10-13",
+     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNbUo4TjlpVm5VeEYyMTYyLW42czVNcGtXOVJycm5rMkM3aTBCb0tub2p2RUtRUHZTSnFHYTNRTnQzUC13N29oSFhUQVhVZkpaaHluNEZ1Rk1UTnVNdnRHM0hSZTI0OGdVcFhpT3hvZlRTdnd2ajc0SzZ0LTN2VU5oOU1pR1g?oc=5"
+    },
+    {
+     "title": "Sana Biotechnology trades at a discount despite promising early T1D treatment data and limited cash runway.",
+     "outlet": "Pluang",
+     "date": "2026-10-13",
+     "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5MVFl4Q3VxMmRmbkJUYUdWeWlEQVBjUUFUVnZIMEIteWtDSFV6YmlhZ0hHM0d1UXQwTWVPdHVUTTh4OXE5UEtKcU0yM2EyREtPS19BTnMzdmtQb2M2YjZmX2F6RGpGOUdJaW5vaTFjM2c3RlhzNEE?oc=5"
+    }
+   ]
+  },
+  {
+   "id": "sana-sc451",
+   "section": "cure",
+   "approach": "gene_edited",
+   "name": "SC451",
+   "company": "Sana Biotechnology",
+   "ticker": "SANA",
+   "modality": "HIP-edited, iPSC-derived islet cells (scalable successor to UP421)",
+   "stage": "preclinical",
+   "evidence": "preclinical",
+   "status": "active",
+   "nct_ids": [],
+   "summary": "Sana says it is preparing an IND and Phase 1/2 start \"as early as\" 2026 (GLP tox, tech transfer to CMO). It announced a Mayo Clinic collaboration in April 2026.",
+   "reality_check": "This is the program that matters for Sana's valuation, and it hasn't dosed a single patient yet. Watch for the IND.",
+   "next_catalyst": {
+    "label": "IND submission / Phase 1/2 start (guided \"as early as 2026\")",
+    "date": "2026-12-31",
+    "date_precision": "guided"
+   },
+   "sources": [
+    {
+     "label": "Sana Q2 2026 results",
+     "url": "https://ir.sana.com/news-releases/news-release-details/sana-biotechnology-reports-second-quarter-2026-financial-results"
+    },
+    {
+     "label": "Sana × Mayo Clinic collaboration (Apr 2026)",
+     "url": "https://www.globenewswire.com/news-release/2026/04/13/3272888/0/en/sana-biotechnology-and-mayo-clinic-announce-strategic-collaboration-focused-on-improving-care-in-type-1-diabetes-and-accelerating-development-of-sc451.html"
+    }
+   ],
+   "verified_on": "2026-10-24",
+   "trials": [],
+   "flags": [],
+   "my_commentary": null,
+   "news": [
+    {
+     "title": "Sana Biotechnology: A Shot At Diabetes",
+     "outlet": "Seeking Alpha",
+     "date": "2026-10-13",
+     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNbUo4TjlpVm5VeEYyMTYyLW42czVNcGtXOVJycm5rMkM3aTBCb0tub2p2RUtRUHZTSnFHYTNRTnQzUC13N29oSFhUQVhVZkpaaHluNEZ1Rk1UTnVNdnRHM0hSZTI0OGdVcFhpT3hvZlRTdnd2ajc0SzZ0LTN2VU5oOU1pR1g?oc=5"
+    },
+    {
+     "title": "6 ‘Moonshot’ Biotech Stocks That Offer Big Risks, Bigger Rewards",
+     "outlet": "Barron's",
+     "date": "2026-09-23",
+     "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9xMnFZSTJua1ZqbEJoWjItMlY4S3daYXhzNV9VdXZUR2t3X2VyTUtTTEllOXdHMFJvRnpQaTBfc2VyTEM1RnNZbWJpRzZYLTRlT19PcVhZdWJWVW9WWEJXTE51SjAxdm83T1RVQlB0eWc0cGtjMzFrX3VPUm4?oc=5"
+    }
+   ]
+  },
+  {
+   "id": "crispr-vctx211",
+   "section": "cure",
+   "approach": "gene_edited",
+   "name": "CTX211 (VCTX211)",
+   "company": "CRISPR Therapeutics",
+   "ticker": "CRSP",
+   "modality": "Gene-edited stem-cell-derived pancreatic progenitors in a device",
+   "stage": "phase1",
+   "evidence": "phase1",
+   "status": "discontinued",
+   "nct_ids": [
+    "NCT05565248"
+   ],
+   "summary": "ClinicalTrials.gov lists the first-in-human study as TERMINATED.",
+   "reality_check": "The original gene-edited islet program from the ViaCyte deal has stopped in the registry. Don't count it as an active shot on goal.",
+   "next_catalyst": null,
+   "sources": [
+    {
+     "label": "ClinicalTrials.gov NCT05565248",
+     "url": "https://clinicaltrials.gov/study/NCT05565248"
+    }
+   ],
+   "unverified": [
+    "Reason for termination not confirmed from a CRISPR Therapeutics primary source."
+   ],
+   "verified_on": "2026-10-24",
+   "trials": [
+    {
+     "nct_id": "NCT05565248",
+     "title": "An Open-Label, FIH Study Evaluating the Safety, Tolerability, and Efficacy of VCTX211 Combination Product in Subjects With T1D",
+     "acronym": null,
+     "status": "TERMINATED",
+     "why_stopped": "Patients to be followed up in the VCTX-201 study",
+     "phases": [
+      "Phase 1"
+     ],
+     "phase_grade": "phase1",
+     "sponsor": "CRISPR Therapeutics AG",
+     "sponsor_class": "INDUSTRY",
+     "conditions": [
+      "Diabetes Mellitus",
+      "Diabetes Mellitus, Type 1",
+      "Glucose Metabolism Disorders",
+      "Metabolic Disease",
+      "Endocrine System Diseases",
+      "Autoimmune Diseases",
+      "Immune System Diseases"
+     ],
+     "enrollment": 5,
+     "enrollment_type": "ACTUAL",
+     "start_date": "2023-01-20",
+     "primary_completion": "2025-08-08",
+     "primary_completion_type": "ACTUAL",
+     "completion": "2025-08-08",
+     "completion_type": "ACTUAL",
+     "last_update": "2026-05-07",
+     "has_results": false,
+     "url": "https://clinicaltrials.gov/study/NCT05565248"
+    }
+   ],
+   "flags": [
+    {
+     "level": "info",
+     "text": "Unverified: Reason for termination not confirmed from a CRISPR Therapeutics primary source."
+    }
+   ],
+   "my_commentary": null,
+   "news": []
+  },
+  {
+   "id": "sernova-cellpouch",
+   "section": "cure",
+   "approach": "encapsulation",
+   "name": "Cell Pouch System",
+   "company": "Sernova Biotherapeutics",
+   "ticker": "SVA.TO",
+   "modality": "Implantable pre-vascularized device with donor islets (immunosuppression required)",
+   "stage": "phase2",
+   "evidence": "phase1",
+   "status": "active",
+   "nct_ids": [
+    "NCT03513939"
+   ],
+   "summary": "Phase 1/2 (NCT03513939). Company-reported: 5 of 6 Cohort A patients reached insulin independence for 9 months to over 4 years. Sernova plans a next trial with iPSC-derived cells (Evotec partnership).",
+   "reality_check": "It's a small, open-label study that still requires immunosuppression. The device only becomes a cure platform if a renewable cell source and immune protection work.",
+   "next_catalyst": {
+    "label": "Registry-listed study completion",
+    "date": "2026-10-31",
+    "date_precision": "registry",
+    "nct_id": "NCT03513939",
+    "registry_date_type": "ESTIMATED"
+   },
+   "sources": [
+    {
+     "label": "ClinicalTrials.gov NCT03513939",
+     "url": "https://clinicaltrials.gov/study/NCT03513939"
+    },
+    {
+     "label": "Sernova DSMB / trial update",
+     "url": "https://www.barchart.com/story/news/31674354/sernova-biotherapeutics-provides-update-on-phase-1-2-clinical-trial-of-cell-pouch-bio-hybrid-organ-for-treatment-of-type-1-diabetes"
+    }
+   ],
+   "unverified": [
+    "Cohort A outcome figures are company-reported, not peer-reviewed."
+   ],
+   "verified_on": "2026-10-24",
+   "trials": [
+    {
+     "nct_id": "NCT03513939",
+     "title": "A Safety, Tolerability and Efficacy Study of Sernova's Cell Pouch™ for Clinical Islet Transplantation",
+     "acronym": null,
+     "status": "ACTIVE_NOT_RECRUITING",
+     "why_stopped": null,
+     "phases": [
+      "Phase 1",
+      "Phase 2"
+     ],
+     "phase_grade": "phase1",
+     "sponsor": "Sernova Biotherapeutics Inc.",
+     "sponsor_class": "INDUSTRY",
+     "conditions": [
+      "Type 1 Diabetes Mellitus"
+     ],
+     "enrollment": 17,
+     "enrollment_type": "ESTIMATED",
+     "start_date": "2019-02-07",
+     "primary_completion": "2026-10",
+     "primary_completion_type": "ESTIMATED",
+     "completion": "2026-10",
+     "completion_type": "ESTIMATED",
+     "last_update": "2026-02-25",
+     "has_results": false,
+     "url": "https://clinicaltrials.gov/study/NCT03513939"
+    }
+   ],
+   "flags": [
+    {
+     "level": "info",
+     "text": "Unverified: Cohort A outcome figures are company-reported, not peer-reviewed."
+    }
+   ],
+   "my_commentary": null,
+   "news": []
+  },
+  {
+   "id": "otsuka-opf310",
+   "section": "cure",
+   "approach": "encapsulation",
+   "name": "OPF-310",
+   "company": "Otsuka Pharmaceutical Factory",
+   "ticker": "4578.T",
+   "modality": "Encapsulated porcine pancreatic islet cells (xenotransplant)",
+   "stage": "phase1",
+   "evidence": "preclinical",
+   "status": "active",
+   "nct_ids": [
+    "NCT06575426"
+   ],
+   "summary": "Phase 1/2, recruiting, per ClinicalTrials.gov.",
+   "reality_check": "Pig islets in a capsule would solve the supply problem only if the encapsulation really protects them. Earlier encapsulated-porcine efforts (DIABECELL) didn't reach approval.",
+   "next_catalyst": null,
+   "sources": [
+    {
+     "label": "ClinicalTrials.gov NCT06575426",
+     "url": "https://clinicaltrials.gov/study/NCT06575426"
+    }
+   ],
+   "verified_on": "2026-10-24",
+   "trials": [
+    {
+     "nct_id": "NCT06575426",
+     "title": "A Study to Investigate Safety and Effectiveness of Porcine Pancreatic Cells (OPF-310) in Patients With Type 1 Diabetes Mellitus",
+     "acronym": null,
+     "status": "RECRUITING",
+     "why_stopped": null,
+     "phases": [
+      "Phase 1",
+      "Phase 2"
+     ],
+     "phase_grade": "phase1",
+     "sponsor": "Otsuka Pharmaceutical Factory, Inc.",
+     "sponsor_class": "INDUSTRY",
+     "conditions": [
+      "Diabetes Mellitus, Type 1",
+      "Hypoglycemia",
+      "Islet Cell Transplantation",
+      "Type 1 Diabetes",
+      "Type 1 Diabetes Mellitus",
+      "T1D",
+      "T1DM",
+      "T1DM - Type 1 Diabetes Mellitus",
+      "Type 1 Diabetes (T1D)",
+      "Severe Hypoglycemia",
+      "Xenotransplantation",
+      "Hypoglycemic Episode",
+      "Islet Transplantation in Diabetes Mellitus Type 1",
+      "Glucose Metabolism Disorders (Including Diabetes Mellitus)",
+      "Immune System Diseases",
+      "Autoimmune Diseases",
+      "Metabolic Disease"
+     ],
+     "enrollment": 13,
+     "enrollment_type": "ESTIMATED",
+     "start_date": "2025-06-10",
+     "primary_completion": "2027-06-30",
+     "primary_completion_type": "ESTIMATED",
+     "completion": "2027-06-30",
+     "completion_type": "ESTIMATED",
+     "last_update": "2026-08-21",
+     "has_results": false,
+     "url": "https://clinicaltrials.gov/study/NCT06575426"
+    }
+   ],
+   "flags": [],
+   "my_commentary": null,
+   "news": []
+  },
+  {
+   "id": "vertex-vx264",
+   "section": "cure",
+   "approach": "encapsulation",
+   "name": "VX-264",
+   "company": "Vertex Pharmaceuticals",
+   "ticker": "VRTX",
+   "modality": "Stem-cell-derived islets inside an immunoprotective device",
+   "stage": "phase1",
+   "evidence": "phase1",
+   "status": "discontinued",
+   "nct_ids": [
+    "NCT05791201"
+   ],
+   "summary": "Vertex discontinued VX-264 in March 2025 after Phase 1/2 data showed it was safe but did not reach the intended efficacy (insufficient C-peptide).",
+   "reality_check": "This is the cautionary tale for encapsulation. The best-funded player couldn't get enough function through a device barrier.",
+   "next_catalyst": null,
+   "sources": [
+    {
+     "label": "Vertex T1D portfolio update (Mar 28, 2025)",
+     "url": "https://investors.vrtx.com/node/33221/pdf"
+    },
+    {
+     "label": "ClinicalTrials.gov NCT05791201",
+     "url": "https://clinicaltrials.gov/study/NCT05791201"
+    }
+   ],
+   "verified_on": "2026-10-24",
+   "trials": [
+    {
+     "nct_id": "NCT05791201",
+     "title": "A Safety, Tolerability, and Efficacy Study of VX-264 in Participants With Type 1 Diabetes",
+     "acronym": null,
+     "status": "ACTIVE_NOT_RECRUITING",
+     "why_stopped": null,
+     "phases": [
+      "Phase 1",
+      "Phase 2"
+     ],
+     "phase_grade": "phase1",
+     "sponsor": "Vertex Pharmaceuticals Incorporated",
+     "sponsor_class": "INDUSTRY",
+     "conditions": [
+      "Type 1 Diabetes"
+     ],
+     "enrollment": 7,
+     "enrollment_type": "ACTUAL",
+     "start_date": "2023-05-16",
+     "primary_completion": "2027-03-12",
+     "primary_completion_type": "ESTIMATED",
+     "completion": "2027-03-12",
+     "completion_type": "ESTIMATED",
+     "last_update": "2026-10-09",
+     "has_results": false,
+     "url": "https://clinicaltrials.gov/study/NCT05791201"
+    }
+   ],
+   "flags": [],
+   "my_commentary": null,
+   "news": []
+  },
+  {
+   "id": "aspect-bioprinted",
+   "section": "cure",
+   "approach": "encapsulation",
+   "name": "Bioprinted islet tissue (ex-Novo Nordisk assets)",
+   "company": "Aspect Biosystems (private)",
+   "ticker": null,
+   "modality": "3D-bioprinted tissue therapeutic with stem-cell-derived islets",
+   "stage": "preclinical",
+   "evidence": "preclinical",
+   "status": "active",
+   "nct_ids": [],
+   "summary": "Novo Nordisk shut its cell therapy unit in Oct 2025 and transferred its stem-cell islet and hypoimmune technologies to Aspect, keeping commercialization and royalty options.",
+   "reality_check": "A big pharma pulling back from the cure race is a signal. The assets are alive, but at a much smaller company.",
+   "next_catalyst": null,
+   "sources": [
+    {
+     "label": "Fierce Biotech — Novo offloads diabetes assets to Aspect",
+     "url": "https://www.fiercebiotech.com/biotech/novo-nordisk-offloads-diabetes-assets-aspect-amid-cell-therapy-retreat"
+    }
+   ],
+   "verified_on": "2026-10-24",
+   "trials": [],
+   "flags": [],
+   "my_commentary": null,
+   "news": []
+  },
+  {
+   "id": "sanofi-teplizumab",
+   "section": "cure",
+   "approach": "immune",
+   "name": "Teplizumab (Tzield; Teizeild in EU)",
+   "company": "Sanofi",
+   "ticker": "SNY",
+   "modality": "Anti-CD3 monoclonal antibody, 14-day IV course",
+   "population": "Stage 2 T1D age 8+ (full approval); recently diagnosed stage 3 T1D age 8–17 (accelerated approval, Jun 2026)",
+   "stage": "approved",
+   "evidence": "approved",
+   "status": "active",
+   "nct_ids": [
+    "NCT07088068",
+    "NCT06791291",
+    "NCT07216391",
+    "NCT03875729"
+   ],
+   "summary": "FDA-approved (Nov 2022) to delay stage 3 T1D in stage 2 patients age 8+, based on TN-10 (median delay of about 2 years). EU approval came in Jan 2026. On Jun 12, 2026 the FDA granted accelerated approval to slow the decline of insulin production in children age 8–17 recently diagnosed with stage 3 T1D. That approval rests on a C-peptide surrogate endpoint, and a post-approval study must confirm clinical benefit. In the earlier PROTECT Phase 3 (new-onset), teplizumab met its C-peptide primary endpoint but did not separate on clinical secondary endpoints. A new Phase 3 (βETA PRESERVE, age 1–25) is enrolling.",
+   "reality_check": "It's the only approved disease-modifying T1D drug, and now it's approved both before and just after diagnosis. It slows the disease rather than curing it, and the new-onset label is accelerated on a surrogate endpoint. If the confirmatory study fails, the FDA can withdraw it.",
+   "next_catalyst": {
+    "label": "βETA PRESERVE Phase 3 primary completion (registry estimate)",
+    "date": "2028-06-06",
+    "nct_id": "NCT07088068",
+    "date_precision": "registry",
+    "registry_date_type": "ESTIMATED"
+   },
+   "sources": [
+    {
+     "label": "FDA — accelerated approval, recently diagnosed stage 3, age 8–17 (Jun 2026)",
+     "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-new-indication-tzield-teplizumab-certain-pediatric-patients-recently-diagnosed-stage-3"
+    },
+    {
+     "label": "FDA approval announcement (Nov 2022)",
+     "url": "https://www.fda.gov/media/164864/download"
+    },
+    {
+     "label": "Sanofi — EU approval (6-K, Jan 2026)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1121404/000119312526014575/d100861dex991.htm"
+    },
+    {
+     "label": "NEJM 2023 — PROTECT (PMID 37861217)",
+     "url": "https://doi.org/10.1056/NEJMoa2308743"
+    },
+    {
+     "label": "NEJM 2019 — TN-10 at-risk relatives",
+     "url": "https://doi.org/10.1056/NEJMoa1902226"
+    }
+   ],
+   "unverified": [
+    "FDA's Jun 2026 release does not name the pivotal or confirmatory trial; βETA PRESERVE (NCT07088068) is a plausible confirmatory study but this is not confirmed."
+   ],
+   "verified_on": "2026-10-24",
+   "trials": [
+    {
+     "nct_id": "NCT07088068",
+     "title": "A Study to Investigate Efficacy and Safety of Teplizumab Compared With Placebo in Participants 1 to 25 Years of Age With Stage 3 Type 1 Diabetes",
+     "acronym": "βETA PRESERVE",
+     "status": "RECRUITING",
+     "why_stopped": null,
+     "phases": [
+      "Phase 3"
+     ],
+     "phase_grade": "phase3",
+     "sponsor": "Sanofi",
+     "sponsor_class": "INDUSTRY",
+     "conditions": [
+      "Type 1 Diabetes Mellitus"
+     ],
+     "enrollment": 723,
+     "enrollment_type": "ESTIMATED",
+     "start_date": "2025-08-06",
+     "primary_completion": "2028-06-06",
+     "primary_completion_type": "ESTIMATED",
+     "completion": "2028-12-12",
+     "completion_type": "ESTIMATED",
+     "last_update": "2026-10-13",
+     "has_results": false,
+     "url": "https://clinicaltrials.gov/study/NCT07088068"
+    },
+    {
+     "nct_id": "NCT06791291",
+     "title": "Efficacy and Safety of Teplizumab in Japanese Participants With Stage 2 Type 1 Diabetes",
+     "acronym": "KIBOU-T1D",
+     "status": "RECRUITING",
+     "why_stopped": null,
+     "phases": [
+      "Phase 2"
+     ],
+     "phase_grade": "phase2",
+     "sponsor": "Sanofi",
+     "sponsor_class": "INDUSTRY",
+     "conditions": [
+      "Type 1 Diabetes Mellitus"
+     ],
+     "enrollment": 10,
+     "enrollment_type": "ESTIMATED",
+     "start_date": "2025-07-25",
+     "primary_completion": "2028-03-06",
+     "primary_completion_type": "ESTIMATED",
+     "completion": "2028-03-06",
+     "completion_type": "ESTIMATED",
+     "last_update": "2026-10-13",
+     "has_results": false,
+     "url": "https://clinicaltrials.gov/study/NCT06791291"
+    },
+    {
+     "nct_id": "NCT07216391",
+     "title": "Platform Trial to Delay Stage 3 Diabetes: Comparing Teplizumab With ATG",
+     "acronym": "TN40A",
+     "status": "RECRUITING",
+     "why_stopped": null,
+     "phases": [
+      "Phase 2"
+     ],
+     "phase_grade": "phase2",
+     "sponsor": "National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK)",
+     "sponsor_class": "NIH",
+     "conditions": [
+      "Type 1 Diabetes Mellitus"
+     ],
+     "enrollment": 60,
+     "enrollment_type": "ESTIMATED",
+     "start_date": "2026-07-29",
+     "primary_completion": "2029-11-30",
+     "primary_completion_type": "ESTIMATED",
+     "completion": "2030-05-30",
+     "completion_type": "ESTIMATED",
+     "last_update": "2026-09-09",
+     "has_results": false,
+     "url": "https://clinicaltrials.gov/study/NCT07216391"
+    },
+    {
+     "nct_id": "NCT03875729",
+     "title": "Recent-Onset Type 1 Diabetes Trial Evaluating Efficacy and Safety of Teplizumab",
+     "acronym": "PROTECT",
+     "status": "COMPLETED",
+     "why_stopped": null,
+     "phases": [
+      "Phase 3"
+     ],
+     "phase_grade": "phase3",
+     "sponsor": "Provention Bio, Inc.",
+     "sponsor_class": "INDUSTRY",
+     "conditions": [
+      "Type 1 Diabetes Mellitus"
+     ],
+     "enrollment": 328,
+     "enrollment_type": "ACTUAL",
+     "start_date": "2019-04-05",
+     "primary_completion": "2023-05-01",
+     "primary_completion_type": "ACTUAL",
+     "completion": "2023-05-01",
+     "completion_type": "ACTUAL",
+     "last_update": "2024-04-24",
+     "has_results": true,
+     "url": "https://clinicaltrials.gov/study/NCT03875729"
+    }
+   ],
+   "flags": [
+    {
+     "level": "info",
+     "text": "Unverified: FDA's Jun 2026 release does not name the pivotal or confirmatory trial; βETA PRESERVE (NCT07088068) is a plausible confirmatory study but this is not confirmed."
+    }
+   ],
+   "my_commentary": null,
+   "news": [
+    {
+     "title": "Type 1 Diabetes Immunotherapy: Can ATG Rival Teplizumab?",
+     "outlet": "Diabetes In Control",
+     "date": "2026-10-02",
+     "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNYXVfcFlOREJPOUtWQmlIazY0UEY0Ulk1TXVSM0ZmNlRyYmJZY3Q3cWhjNkZra2hGMXl1WTI0TWE4UE1FWkNaZjVYaUhBaGMyYlJMeGhmVVR6RUhmenY2Q1Q2ZzRkcFFkQ0xnOUZNbEdIaWZ0V1JiTzh3cVJTZTBMcW9QUUNua2RFbmc?oc=5"
+    },
+    {
+     "title": "Can immunotherapy stop the clock on type 1 diabetes?",
+     "outlet": "The Pharmaceutical Journal",
+     "date": "2026-09-23",
+     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOaEZ2QVF4UHh3UEdLMk1BMXNmRDBnWWl2bFY2Y1JWVlI2d2RFZ1dRam5YN2dVSWhESzBKcV9jYkJnNXpoNzVxRVJUQ0t0NWhOWGdheGl6dmxyZjFPX0hJbklpeGNwOFlLVXVpSHl0d0lyb01tWHRzZEdvdWFCYUc1M0p3bjBxRnczaGp5bVg5NkY3UUtGbnl2TmNMbDR6dGVQUkRlaA?oc=5"
+    },
+    {
+     "title": "T cells in type 1 diabetes: mechanisms of β-cell autoimmunity, innate-adaptive immune crosstalk, and translational immunotherapy",
+     "outlet": "Frontiers",
+     "date": "2026-09-23",
+     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxObmZJdGp0NkY2cXgzR0RzcUl4bGhBaHBoUmtXZWF2VjUydFpzTE9FZzB2elotdGpJT19IZW9ORlgwWjI2WGJoUXdrcDktTVd0MW9ITWNuQlVGV1F6U2tCenBRdjY3Y2VBLXpQX0VtWDkzZEdRT1VFT1NiWnB4V21USXRETVcwVU41RTBkd1B4dldSZw?oc=5"
+    }
+   ]
+  },
+  {
+   "id": "lilly-baricitinib",
+   "section": "cure",
+   "approach": "immune",
+   "name": "Baricitinib (Olumiant) in T1D",
+   "company": "Eli Lilly",
+   "ticker": "LLY",
+   "modality": "Oral JAK1/2 inhibitor (already approved for other indications)",
+   "stage": "phase3",
+   "evidence": "phase2",
+   "status": "active",
+   "nct_ids": [
+    "NCT07222332",
+    "NCT07222137",
+    "NCT04774224"
+   ],
+   "summary": "In the BANDIT Phase 2 (NEJM 2023), baricitinib preserved C-peptide versus placebo over 48 weeks in new-onset T1D. Lilly is now running two Phase 3s: new-onset beta-cell preservation, and delay of stage 3 in at-risk people.",
+   "reality_check": "An oral pill with a positive randomized trial behind it is a real step. The open questions are durability after stopping, and JAK-class safety in kids.",
+   "next_catalyst": {
+    "label": "Phase 3 (new-onset) primary completion (registry estimate)",
+    "date": "2028-07-31",
+    "nct_id": "NCT07222332",
+    "date_precision": "registry",
+    "registry_date_type": "ESTIMATED"
+   },
+   "sources": [
+    {
+     "label": "NEJM 2023 — BANDIT (PMID 38055252)",
+     "url": "https://doi.org/10.1056/NEJMoa2306691"
+    },
+    {
+     "label": "ClinicalTrials.gov NCT07222332",
+     "url": "https://clinicaltrials.gov/study/NCT07222332"
+    },
+    {
+     "label": "ClinicalTrials.gov NCT07222137",
+     "url": "https://clinicaltrials.gov/study/NCT07222137"
+    }
+   ],
+   "verified_on": "2026-10-24",
+   "trials": [
+    {
+     "nct_id": "NCT07222332",
+     "title": "A Study of Baricitinib (LY3009104) to Preserve Beta Cell Function in Children and Adults Newly Diagnosed With Type 1 Diabetes (BARICADE-PRESERVE)",
+     "acronym": null,
+     "status": "RECRUITING",
+     "why_stopped": null,
+     "phases": [
+      "Phase 3"
+     ],
+     "phase_grade": "phase3",
+     "sponsor": "Eli Lilly and Company",
+     "sponsor_class": "INDUSTRY",
+     "conditions": [
+      "Diabetes Mellitus, Type 1"
+     ],
+     "enrollment": 300,
+     "enrollment_type": "ESTIMATED",
+     "start_date": "2026-02-05",
+     "primary_completion": "2028-07",
+     "primary_completion_type": "ESTIMATED",
+     "completion": "2028-07",
+     "completion_type": "ESTIMATED",
+     "last_update": "2026-10-08",
+     "has_results": false,
+     "url": "https://clinicaltrials.gov/study/NCT07222332"
+    },
+    {
+     "nct_id": "NCT07222137",
+     "title": "A Study of Baricitinib (LY3009104) for the Delay of Stage 3 Type 1 Diabetes in At-Risk Children and Adults",
+     "acronym": "BARICADE-DELAY",
+     "status": "RECRUITING",
+     "why_stopped": null,
+     "phases": [
+      "Phase 3"
+     ],
+     "phase_grade": "phase3",
+     "sponsor": "Eli Lilly and Company",
+     "sponsor_class": "INDUSTRY",
+     "conditions": [
+      "Diabetes Mellitus, Type 1"
+     ],
+     "enrollment": 150,
+     "enrollment_type": "ESTIMATED",
+     "start_date": "2026-01-12",
+     "primary_completion": "2031-07",
+     "primary_completion_type": "ESTIMATED",
+     "completion": "2031-07",
+     "completion_type": "ESTIMATED",
+     "last_update": "2026-10-08",
+     "has_results": false,
+     "url": "https://clinicaltrials.gov/study/NCT07222137"
+    },
+    {
+     "nct_id": "NCT04774224",
+     "title": "Baricitinib in New-onset Type 1 Diabetes",
+     "acronym": "BANDIT",
+     "status": "COMPLETED",
+     "why_stopped": null,
+     "phases": [
+      "Phase 2"
+     ],
+     "phase_grade": "phase2",
+     "sponsor": "St Vincent's Institute of Medical Research",
+     "sponsor_class": "OTHER",
+     "conditions": [
+      "Type 1 Diabetes"
+     ],
+     "enrollment": 91,
+     "enrollment_type": "ACTUAL",
+     "start_date": "2020-10-30",
+     "primary_completion": "2023-01-30",
+     "primary_completion_type": "ACTUAL",
+     "completion": "2024-05-06",
+     "completion_type": "ACTUAL",
+     "last_update": "2024-12-03",
+     "has_results": false,
+     "url": "https://clinicaltrials.gov/study/NCT04774224"
+    }
+   ],
+   "flags": [],
+   "my_commentary": null,
+   "news": [
+    {
+     "title": "The Treatment Stopped—Did the Benefit Last? New Baricitinib Data in Type 1 Diabetes",
+     "outlet": "Diabetes In Control",
+     "date": "2026-08-31",
+     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNb2FxcXRoeDUxSnd4N3BKcVc4ZDhPUzdOdXZkT3c2NXV0YmtGYWllYnBybG1UMTMzU3gtQ2dVTFVjQnVzOEtJamVPRUQ1T1gyNnl1REgwdHhaY05Uc3pQdXBMSTQxTmFoSVE3Ui0wRFlPY0tSNGJZRTdYQXRoZ3M2TlVrRFNvMnJiVU1KLVVkaw?oc=5"
+    },
+    {
+     "title": "Diabetes Dialogue: Screening, Cell Therapy, and Adjunctive Agents at Breakthrough-T1D",
+     "outlet": "HCPLive",
+     "date": "2026-10-15",
+     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOZWdHWWdYbmg3Qm9neXd2STFZVjB6emFsbmNhNUZMU2JFQUIxM1N1WjF2MG5pOXM5VTJzNVN1ZURuZzZkb0drOVhaeEMyZDZvejJkajRuWUpGSWxIWkdRQnJtbXphazBFSW0xU2k2NG5ZNVRrTUxvQU90bTNHY2taUzJhS2wySmJ6dTlyZXByZGhjelBfZGVWNEt4NE9zRVlSMGVIRTNCc01JSHFSZVBvUA?oc=5"
+    },
+    {
+     "title": "5 FDA Decisions for Primary Care to Know from September 2026",
+     "outlet": "Patient Care Online",
+     "date": "2026-10-01",
+     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOWWhvOXROekc5RlRtU2hNRWRiRDNHd3U3UFRNOFNnZ1gtWVZXMlA2dGtkaXJZNzJhSGJ5bW1Ncm5UMG90SlR4R29GX0FVTzRZWVVvQk85WV9jYjZTVlpKaFJ1SEtrbGtuYTZBdWR2dTRiVHpjYTZBNUY3QW84anF6WlA5X09DRmRlQW1CRUxaVTVuWl9GSWlfQUw3b0RSc3VR?oc=5"
+    }
+   ]
+  },
+  {
+   "id": "sanofi-frexalimab",
+   "section": "cure",
+   "approach": "immune",
+   "name": "Frexalimab (FABULINUS)",
+   "company": "Sanofi",
+   "ticker": "SNY",
+   "modality": "Anti-CD40L monoclonal antibody",
+   "stage": "phase2",
+   "evidence": "preclinical",
+   "status": "active",
+   "nct_ids": [
+    "NCT06111586"
+   ],
+   "summary": "Phase 2 in recent-onset T1D, evaluating preservation of endogenous insulin secretion. It's also in Phase 3 for multiple sclerosis.",
+   "reality_check": "No T1D efficacy data yet. It's interesting because it targets a different immune pathway than teplizumab.",
+   "next_catalyst": {
+    "label": "FABULINUS primary completion (registry estimate)",
+    "date": "2027-04-28",
+    "date_precision": "registry",
+    "nct_id": "NCT06111586",
+    "registry_date_type": "ESTIMATED"
+   },
+   "sources": [
+    {
+     "label": "ClinicalTrials.gov NCT06111586",
+     "url": "https://clinicaltrials.gov/study/NCT06111586"
+    }
+   ],
+   "verified_on": "2026-10-24",
+   "trials": [
+    {
+     "nct_id": "NCT06111586",
+     "title": "Frexalimab in Preservation of Endogenous Insulin Secretion Compared to Placebo in Adults, Adolescents and Children on Top of Insulin Therapy (FABULINUS)",
+     "acronym": "FABULINUS",
+     "status": "ACTIVE_NOT_RECRUITING",
+     "why_stopped": null,
+     "phases": [
+      "Phase 2"
+     ],
+     "phase_grade": "phase2",
+     "sponsor": "Sanofi",
+     "sponsor_class": "INDUSTRY",
+     "conditions": [
+      "Type 1 Diabetes Mellitus"
+     ],
+     "enrollment": 197,
+     "enrollment_type": "ACTUAL",
+     "start_date": "2023-12-11",
+     "primary_completion": "2027-04-28",
+     "primary_completion_type": "ESTIMATED",
+     "completion": "2030-10-29",
+     "completion_type": "ESTIMATED",
+     "last_update": "2026-06-29",
+     "has_results": false,
+     "url": "https://clinicaltrials.gov/study/NCT06111586"
+    }
+   ],
+   "flags": [],
+   "my_commentary": null,
+   "news": []
+  },
+  {
+   "id": "diamyd-rhgad65",
+   "section": "cure",
+   "approach": "immune",
+   "name": "Diamyd (rhGAD65, intralymphatic)",
+   "company": "Diamyd Medical",
+   "ticker": "DMYD-B.ST",
+   "modality": "Antigen-specific immunotherapy (GAD65), for HLA DR3-DQ2 carriers",
+   "stage": "phase3",
+   "evidence": "phase3",
+   "status": "discontinued",
+   "nct_ids": [
+    "NCT05018585"
+   ],
+   "summary": "DIAGNODE-3's interim analysis (Mar 2026) showed no C-peptide treatment effect. Diamyd discontinued the trial for futility in April 2026 and started a strategic review.",
+   "reality_check": "This was a negative Phase 3. The precision-medicine (HLA-selected) thesis didn't hold at this readout.",
+   "next_catalyst": null,
+   "sources": [
+    {
+     "label": "Diamyd — discontinues DIAGNODE-3 (futility)",
+     "url": "https://news.cision.com/diamyd-medical-ab/r/diamyd-medical-discontinues-diagnode-3-following-evaluation-confirming-futility--initiates-strategic,c4333531"
+    },
+    {
+     "label": "ClinicalTrials.gov NCT05018585",
+     "url": "https://clinicaltrials.gov/study/NCT05018585"
+    }
+   ],
+   "verified_on": "2026-10-24",
+   "trials": [
+    {
+     "nct_id": "NCT05018585",
+     "title": "A Phase III Study to Investigate if the Study Drug Diamyd Can Preserve Insulin Production and Improve Glycemic Control in Patients Newly Diagnosed With Type 1 Diabetes",
+     "acronym": "DIAGNODE-3",
+     "status": "TERMINATED",
+     "why_stopped": "Stopped for futility.",
+     "phases": [
+      "Phase 3"
+     ],
+     "phase_grade": "phase3",
+     "sponsor": "Diamyd Medical AB",
+     "sponsor_class": "INDUSTRY",
+     "conditions": [
+      "Type 1 Diabetes Mellitus"
+     ],
+     "enrollment": 321,
+     "enrollment_type": "ACTUAL",
+     "start_date": "2022-05-19",
+     "primary_completion": "2026-06-24",
+     "primary_completion_type": "ACTUAL",
+     "completion": "2026-06-24",
+     "completion_type": "ACTUAL",
+     "last_update": "2026-08-26",
+     "has_results": false,
+     "url": "https://clinicaltrials.gov/study/NCT05018585"
+    }
+   ],
+   "flags": [],
+   "my_commentary": null,
+   "news": []
+  },
+  {
+   "id": "verapamil-clver",
+   "section": "cure",
+   "approach": "immune",
+   "name": "Verapamil (repurposed)",
+   "company": "Academic (Jaeb Center / NIH-funded)",
+   "ticker": null,
+   "modality": "Generic calcium-channel blocker, studied for beta-cell protection",
+   "stage": "phase3",
+   "evidence": "phase3",
+   "status": "active",
+   "nct_ids": [
+    "NCT04233034",
+    "NCT07804849",
+    "NCT07880769"
+   ],
+   "summary": "In the CLVer randomized trial (JAMA 2023), verapamil preserved C-peptide at 52 weeks in newly diagnosed youth. Further academic trials are registered.",
+   "reality_check": "It's cheap, oral, and has a modest effect. There's no commercial sponsor, so no FDA label is likely. It matters for patients more than for investors.",
+   "next_catalyst": null,
+   "sources": [
+    {
+     "label": "JAMA 2023 — CLVer (PMID 36826844)",
+     "url": "https://doi.org/10.1001/jama.2023.2064"
+    }
+   ],
+   "verified_on": "2026-10-24",
+   "trials": [
+    {
+     "nct_id": "NCT04233034",
+     "title": "Hybrid Closed Loop Therapy and Verapamil for Beta Cell Preservation in New Onset Type 1 Diabetes",
+     "acronym": "CLVer",
+     "status": "COMPLETED",
+     "why_stopped": null,
+     "phases": [
+      "Phase 3"
+     ],
+     "phase_grade": "phase3",
+     "sponsor": "Jaeb Center for Health Research",
+     "sponsor_class": "OTHER",
+     "conditions": [
+      "Type1 Diabetes"
+     ],
+     "enrollment": 113,
+     "enrollment_type": "ACTUAL",
+     "start_date": "2020-07-09",
+     "primary_completion": "2022-09-15",
+     "primary_completion_type": "ACTUAL",
+     "completion": "2022-09-30",
+     "completion_type": "ACTUAL",
+     "last_update": "2024-11-27",
+     "has_results": true,
+     "url": "https://clinicaltrials.gov/study/NCT04233034"
+    },
+    {
+     "nct_id": "NCT07804849",
+     "title": "Oral Verapamil Among Newly Diagnosed Children and Adolescents With Type 1 Diabetes",
+     "acronym": null,
+     "status": "RECRUITING",
+     "why_stopped": null,
+     "phases": [
+      "Phase 2",
+      "Phase 3"
+     ],
+     "phase_grade": "phase2",
+     "sponsor": "Ain Shams University",
+     "sponsor_class": "OTHER",
+     "conditions": [
+      "Type 1 Diabetes Mellitus"
+     ],
+     "enrollment": 70,
+     "enrollment_type": "ESTIMATED",
+     "start_date": "2026-08-20",
+     "primary_completion": "2027-02-20",
+     "primary_completion_type": "ESTIMATED",
+     "completion": "2027-03-20",
+     "completion_type": "ESTIMATED",
+     "last_update": "2026-09-04",
+     "has_results": false,
+     "url": "https://clinicaltrials.gov/study/NCT07804849"
+    },
+    {
+     "nct_id": "NCT07880769",
+     "title": "Verapamil In Preclinical Type 1 Diabetes",
+     "acronym": "VIP-1",
+     "status": "NOT_YET_RECRUITING",
+     "why_stopped": null,
+     "phases": [
+      "Phase 2",
+      "Phase 3"
+     ],
+     "phase_grade": "phase2",
+     "sponsor": "Assistance Publique - Hôpitaux de Paris",
+     "sponsor_class": "OTHER",
+     "conditions": [
+      "Type 1 Diabetes"
+     ],
+     "enrollment": 50,
+     "enrollment_type": "ESTIMATED",
+     "start_date": "2027-01",
+     "primary_completion": "2031-03",
+     "primary_completion_type": "ESTIMATED",
+     "completion": "2031-03",
+     "completion_type": "ESTIMATED",
+     "last_update": "2026-10-22",
+     "has_results": false,
+     "url": "https://clinicaltrials.gov/study/NCT07880769"
+    }
+   ],
+   "flags": [],
+   "my_commentary": null,
+   "news": [
+    {
+     "title": "Clinical Trials and Studies Now Enrolling!",
+     "outlet": "Breakthrough T1D",
+     "date": "2026-10-21",
+     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNZjY1OXhoZDMzNmF3MTlBSFJ0RndrS05BT203aVExOVZxRDAzYmdvM3AxNDRXbU1lV05mSkd2NE5aalBzRFRLS04wN1lJcjFGMU53VUlOODlFX0M2cVB4M3FpUG9SZWF5bkNxMmFuSURPTjhPb0FONFdmWWhlbWQ0bzlNNHd4OEZCX3huQWQySnQ5dm5JNldwUEhzNVhlMjFmUHRacw?oc=5"
+    }
+   ]
+  },
+  {
+   "id": "golimumab-t1d",
+   "section": "cure",
+   "approach": "immune",
+   "name": "Golimumab (Simponi) in T1D",
+   "company": "Johnson & Johnson / NIDDK",
+   "ticker": "JNJ",
+   "modality": "Anti-TNFα monoclonal antibody",
+   "stage": "phase2",
+   "evidence": "phase2",
+   "status": "active",
+   "nct_ids": [
+    "NCT02846545",
+    "NCT07683026"
+   ],
+   "summary": "In T1GER (NEJM 2020), golimumab preserved C-peptide in youth with new-onset T1D. An NIDDK platform trial in stage 1 is registered but not yet recruiting.",
+   "reality_check": "It has positive Phase 2 data, but there's no visible industry path to a T1D label. For now it's a TrialNet-style academic effort.",
+   "next_catalyst": null,
+   "sources": [
+    {
+     "label": "NEJM 2020 — T1GER (PMID 33207093)",
+     "url": "https://doi.org/10.1056/NEJMoa2006136"
+    }
+   ],
+   "verified_on": "2026-10-24",
+   "trials": [
+    {
+     "nct_id": "NCT02846545",
+     "title": "A Study of SIMPONI® to Arrest Beta-cell Loss in Type 1 Diabetes",
+     "acronym": "T1GER",
+     "status": "COMPLETED",
+     "why_stopped": null,
+     "phases": [
+      "Phase 2"
+     ],
+     "phase_grade": "phase2",
+     "sponsor": "Janssen Research & Development, LLC",
+     "sponsor_class": "INDUSTRY",
+     "conditions": [
+      "Diabetes Mellitus, Type 1"
+     ],
+     "enrollment": 84,
+     "enrollment_type": "ACTUAL",
+     "start_date": "2016-08-26",
+     "primary_completion": "2019-05-21",
+     "primary_completion_type": "ACTUAL",
+     "completion": "2021-01-05",
+     "completion_type": "ACTUAL",
+     "last_update": "2025-02-04",
+     "has_results": true,
+     "url": "https://clinicaltrials.gov/study/NCT02846545"
+    },
+    {
+     "nct_id": "NCT07683026",
+     "title": "Platform Trial in Stage 1 Diabetes: Comparing Golimumab vs Placebo",
+     "acronym": null,
+     "status": "NOT_YET_RECRUITING",
+     "why_stopped": null,
+     "phases": [
+      "Phase 2"
+     ],
+     "phase_grade": "phase2",
+     "sponsor": "National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK)",
+     "sponsor_class": "NIH",
+     "conditions": [
+      "Type 1 Diabetes (T1D)"
+     ],
+     "enrollment": 255,
+     "enrollment_type": "ESTIMATED",
+     "start_date": "2026-08-08",
+     "primary_completion": "2032-09-01",
+     "primary_completion_type": "ESTIMATED",
+     "completion": "2032-09-01",
+     "completion_type": "ESTIMATED",
+     "last_update": "2026-07-06",
+     "has_results": false,
+     "url": "https://clinicaltrials.gov/study/NCT07683026"
+    }
+   ],
+   "flags": [],
+   "my_commentary": null,
+   "news": []
+  },
+  {
+   "id": "lilly-tirzepatide-t1d",
+   "section": "glp1",
+   "glp1_topic": "adjunct",
+   "name": "Tirzepatide (Mounjaro/Zepbound) — SURPASS-T1D program",
+   "company": "Eli Lilly",
+   "ticker": "LLY",
+   "modality": "Weekly GIP/GLP-1 dual agonist, added to insulin",
+   "population": "Adults with T1D and obesity or overweight",
+   "stage": "phase3",
+   "evidence": "phase2",
+   "status": "active",
+   "nct_ids": [
+    "NCT06914895",
+    "NCT06962280",
+    "NCT07803744"
+   ],
+   "endpoints": [
+    {
+     "metric": "Body weight (12 wk, Phase 2, n=24)",
+     "result": "−8.7 kg vs placebo (95% CI −12.0 to −5.5)"
+    },
+    {
+     "metric": "HbA1c",
+     "result": "−0.4 pts vs placebo (95% CI −0.7 to 0.0; P=0.05, borderline)"
+    },
+    {
+     "metric": "Total daily insulin",
+     "result": "−35.1% vs placebo"
+    },
+    {
+     "metric": "Severe hypo / DKA",
+     "result": "None reported in either arm (small, short study)"
+    }
+   ],
+   "summary": "Lilly is running the first industry-sponsored Phase 3 program of a GLP-1-class drug in T1D since Novo Nordisk's liraglutide ADJUNCT trials (SURPASS-T1D-1 and -2). The endpoint figures above are from the independent Phase 2 (Snaith et al., Diabetes Care 2026).",
+   "reality_check": "This is the most credible route to the first GLP-1-class T1D label. The Phase 2 had only 24 patients over 12 weeks, so the Phase 3 safety data (DKA, hypoglycemia) is what will decide it.",
+   "next_catalyst": {
+    "label": "SURPASS-T1D-1 primary completion (registry estimate)",
+    "date": "2026-11-30",
+    "nct_id": "NCT06914895",
+    "date_precision": "registry",
+    "registry_date_type": "ESTIMATED"
+   },
+   "sources": [
+    {
+     "label": "Diabetes Care 2026 — Phase 2 RCT (PMID 41264593)",
+     "url": "https://doi.org/10.2337/dc25-2379"
+    },
+    {
+     "label": "Lilly trial page — SURPASS-T1D-1",
+     "url": "https://trials.lilly.com/en-US/trial/589916"
+    },
+    {
+     "label": "ClinicalTrials.gov NCT06914895",
+     "url": "https://clinicaltrials.gov/study/NCT06914895"
+    }
+   ],
+   "verified_on": "2026-10-24",
+   "trials": [
+    {
+     "nct_id": "NCT06914895",
+     "title": "A Study of Tirzepatide (LY3298176) Compared With Placebo in Adults With Type 1 Diabetes and Obesity or Overweight",
+     "acronym": "SURPASS-T1D-1",
+     "status": "ACTIVE_NOT_RECRUITING",
+     "why_stopped": null,
+     "phases": [
+      "Phase 3"
+     ],
+     "phase_grade": "phase3",
+     "sponsor": "Eli Lilly and Company",
+     "sponsor_class": "INDUSTRY",
+     "conditions": [
+      "Type 1 Diabetes",
+      "Obesity",
+      "Overweight"
+     ],
+     "enrollment": 905,
+     "enrollment_type": "ESTIMATED",
+     "start_date": "2025-04-25",
+     "primary_completion": "2026-11",
+     "primary_completion_type": "ESTIMATED",
+     "completion": "2026-12",
+     "completion_type": "ESTIMATED",
+     "last_update": "2026-05-12",
+     "has_results": false,
+     "url": "https://clinicaltrials.gov/study/NCT06914895"
+    },
+    {
+     "nct_id": "NCT06962280",
+     "title": "A Long-Term Study of Tirzepatide (LY3298176) in Adults With Type 1 Diabetes and Obesity or Overweight",
+     "acronym": "SURPASS-T1D-2",
+     "status": "ACTIVE_NOT_RECRUITING",
+     "why_stopped": null,
+     "phases": [
+      "Phase 3"
+     ],
+     "phase_grade": "phase3",
+     "sponsor": "Eli Lilly and Company",
+     "sponsor_class": "INDUSTRY",
+     "conditions": [
+      "Type 1 Diabetes",
+      "Obesity",
+      "Overweight"
+     ],
+     "enrollment": 465,
+     "enrollment_type": "ESTIMATED",
+     "start_date": "2025-05-12",
+     "primary_completion": "2026-11",
+     "primary_completion_type": "ESTIMATED",
+     "completion": "2027-07",
+     "completion_type": "ESTIMATED",
+     "last_update": "2026-02-17",
+     "has_results": false,
+     "url": "https://clinicaltrials.gov/study/NCT06962280"
+    },
+    {
+     "nct_id": "NCT07803744",
+     "title": "A Study of Tirzepatide (LY3298176) in Participants With Type 1 Diabetes Mellitus and Overweight or Obesity",
+     "acronym": null,
+     "status": "RECRUITING",
+     "why_stopped": null,
+     "phases": [
+      "Phase 1"
+     ],
+     "phase_grade": "phase1",
+     "sponsor": "Eli Lilly and Company",
+     "sponsor_class": "INDUSTRY",
+     "conditions": [
+      "Diabetes Mellitus, Type 1",
+      "Overweight",
+      "Obesity"
+     ],
+     "enrollment": 18,
+     "enrollment_type": "ESTIMATED",
+     "start_date": "2026-09-11",
+     "primary_completion": "2026-12",
+     "primary_completion_type": "ESTIMATED",
+     "completion": "2026-12",
+     "completion_type": "ESTIMATED",
+     "last_update": "2026-09-23",
+     "has_results": false,
+     "url": "https://clinicaltrials.gov/study/NCT07803744"
+    }
+   ],
+   "flags": [],
+   "my_commentary": null,
+   "news": [
+    {
+     "title": "Indirect comparative efficacy and safety of tirzepatide vs semaglutide for the treatment of obesity or overweight in patients without type 2 diabetes",
+     "outlet": "Nature",
+     "date": "2026-09-28",
+     "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE12aXljbjFfbVFSRWNFeE1Ga0V5RVZIclI4azRtRUN3WjIwY1Q0Y0ctOUJWOFA4SmlpYWlNVHgya1JPZjNkdi0zSHhPVkhMcTRjcGg5UndpVEhqMlItRm5r?oc=5"
+    },
+    {
+     "title": "CagriSema Tops Eli Lilly's Tirzepatide for Weight Loss in Late-Stage Diabetes Trial: Report",
+     "outlet": "Pharmaceutical Executive",
+     "date": "2026-09-21",
+     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPazVvazk4YUphX2RqYnNsV3AzNmVNMlpBZkdqd1VFRVFBb3JjeUMwQkVaM21xaGVZazNjS1JQNy1TaW1XeHBXMHhseWQ0M3BhQjRyT0lSdjN4YURTVkwzeFZHOEhtQWcxNTctdUsyMy1oMzlETnBpSGM1Zms3MHRoWmpYSFVGRzhOdFB5UGJ0bHBCYmdvblZzZWtB?oc=5"
+    },
+    {
+     "title": "Recap: Tirzepatide Is Approved to Cut Cardiovascular Risk in Type 2 Diabetes",
+     "outlet": "Pharmacy Times",
+     "date": "2026-10-21",
+     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQcTBVZEFyVURuaXlnNGdWZ05oRkxGSUgzQUU3SlBROTNQdHdaTThnVThUaENxXzhGaVZxLUlLV3pjeDdnOXhWMXJ2b01CY3E1R0NuM0VlaXB6TXc2cEdkLThSSWV6OTZ5dTdjS3F1Wnkxd0puMlQ4UjA5RmkxdkUzcmFjQk13UFR6MVRrdGY5eFZidDBTVG83S3Y0Z0ZadDUtY1dJ?oc=5"
+    }
+   ]
+  },
+  {
+   "id": "semaglutide-adjust-t1d",
+   "section": "glp1",
+   "glp1_topic": "adjunct",
+   "name": "Semaglutide — ADJUST-T1D (investigator-led)",
+   "company": "Novo Nordisk (drug); academic sponsor",
+   "ticker": "NVO",
+   "modality": "Weekly GLP-1 RA up to 1 mg, added to automated insulin delivery",
+   "population": "Adults with T1D and obesity on AID",
+   "stage": "phase3",
+   "evidence": "phase2",
+   "status": "active",
+   "nct_ids": [
+    "NCT05819138",
+    "NCT06411210",
+    "NCT07891156"
+   ],
+   "endpoints": [
+    {
+     "metric": "Composite (TIR>70%, TBR<4%, ≥5% weight loss), 26 wk, n=72",
+     "result": "36% vs 0% placebo"
+    },
+    {
+     "metric": "Time in range (70–180)",
+     "result": "+8.8 pts vs placebo (95% CI 3.9 to 13.7)"
+    },
+    {
+     "metric": "HbA1c",
+     "result": "−0.3 pts vs placebo"
+    },
+    {
+     "metric": "Body weight",
+     "result": "−8.8 kg vs placebo"
+    },
+    {
+     "metric": "Severe hypo / DKA",
+     "result": "2 severe hypo events per arm; no DKA"
+    }
+   ],
+   "summary": "Randomized trial published in NEJM Evidence (2025); a 2026 Diabetes Care analysis examined insulin-dose reduction. Several academic follow-ons are registered, including a semaglutide cardiovascular-outcomes study in T1D (NCT05819138).",
+   "reality_check": "It's a clean randomized result, but small, and Novo has not announced a T1D registration program. Today this is off-label use, not a label in the making.",
+   "next_catalyst": null,
+   "sources": [
+    {
+     "label": "NEJM Evidence 2025 — Semaglutide in Adults with T1D and Obesity (PMID 40550013)",
+     "url": "https://doi.org/10.1056/EVIDoa2500173"
+    },
+    {
+     "label": "Diabetes Care 2026 — insulin dose reduction analysis (PMID 41429002)",
+     "url": "https://doi.org/10.2337/dc25-2249"
+    }
+   ],
+   "verified_on": "2026-10-24",
+   "trials": [
+    {
+     "nct_id": "NCT05819138",
+     "title": "Type 1 Diabetes Impacts of Semaglutide on Cardiovascular Outcomes",
+     "acronym": "T1-DISCO",
+     "status": "RECRUITING",
+     "why_stopped": null,
+     "phases": [
+      "Phase 3"
+     ],
+     "phase_grade": "phase3",
+     "sponsor": "University of Colorado, Denver",
+     "sponsor_class": "OTHER",
+     "conditions": [
+      "Diabetes Mellitus, Type 1"
+     ],
+     "enrollment": 60,
+     "enrollment_type": "ESTIMATED",
+     "start_date": "2023-06-21",
+     "primary_completion": "2027-10-01",
+     "primary_completion_type": "ESTIMATED",
+     "completion": "2027-12-01",
+     "completion_type": "ESTIMATED",
+     "last_update": "2026-03-04",
+     "has_results": false,
+     "url": "https://clinicaltrials.gov/study/NCT05819138"
+    },
+    {
+     "nct_id": "NCT06411210",
+     "title": "Obesity Complicating Type 1 Diabetes: GLP-1 Analogue Anti-obesity Treatment",
+     "acronym": null,
+     "status": "RECRUITING",
+     "why_stopped": null,
+     "phases": [
+      "Phase 2"
+     ],
+     "phase_grade": "phase2",
+     "sponsor": "Yale University",
+     "sponsor_class": "OTHER",
+     "conditions": [
+      "Diabetes type1",
+      "Obesity"
+     ],
+     "enrollment": 54,
+     "enrollment_type": "ESTIMATED",
+     "start_date": "2024-07-16",
+     "primary_completion": "2028-04-30",
+     "primary_completion_type": "ESTIMATED",
+     "completion": "2028-06-30",
+     "completion_type": "ESTIMATED",
+     "last_update": "2026-08-04",
+     "has_results": false,
+     "url": "https://clinicaltrials.gov/study/NCT06411210"
+    },
+    {
+     "nct_id": "NCT07891156",
+     "title": "Lean Mass Changes With Semaglutide in Adults With Type 1 Diabetes and Overweight/Obesity.",
+     "acronym": "SEMA-T1D-BODY",
+     "status": "RECRUITING",
+     "why_stopped": null,
+     "phases": [
+      "Phase 2",
+      "Phase 3"
+     ],
+     "phase_grade": "phase2",
+     "sponsor": "McGill University Health Centre/Research Institute of the McGill University Health Centre",
+     "sponsor_class": "OTHER",
+     "conditions": [
+      "Type 1 Diabetes",
+      "Overweight , Obesity"
+     ],
+     "enrollment": 40,
+     "enrollment_type": "ESTIMATED",
+     "start_date": "2026-10-13",
+     "primary_completion": "2028-09-01",
+     "primary_completion_type": "ESTIMATED",
+     "completion": "2028-10-01",
+     "completion_type": "ESTIMATED",
+     "last_update": "2026-10-23",
+     "has_results": false,
+     "url": "https://clinicaltrials.gov/study/NCT07891156"
+    }
+   ],
+   "flags": [],
+   "my_commentary": null,
+   "news": [
+    {
+     "title": "Effects of semaglutide on kidney disease in type 2 diabetes: a randomized placebo-controlled trial",
+     "outlet": "Nature",
+     "date": "2026-10-01",
+     "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5vMFZhelBpd01ycnl3YW1BbXpDYUhISlpHNUhhRXdWZTI4UE5JeV9ydmhsTWx3WVBvTW83MmV4SHBZdkFOeDVmcEtIbTFFVkVmUFhrWmpqSVpiRjBzR2Ew?oc=5"
+    },
+    {
+     "title": "Semaglutide in Type 2 Diabetes and CKD: Katherine R. Tuttle, MD, FASN",
+     "outlet": "The American Journal of Managed Care",
+     "date": "2026-10-25",
+     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPR2xZVUNXbUM0M2RNZGFDNXAzN3JfZEFOYURIdnllcTlHUmxJcXZueG40ZDZSZlNGX2NfczJ5bDJSNVNUdV9fcVNMVmU4OUZ1cG8zNVNSVTBQNGV6bDdWWmJyUVlnNjN4dmVjdG1FVmtPVVNYck5SNHFRV1E4ZGlCVmthYXZaZXcyYjFlUlg4UHlwNC1zR1E?oc=5"
+    },
+    {
+     "title": "Newer GLP-1 agents yield substantial weight loss in nondiabetic adults",
+     "outlet": "2 Minute Medicine",
+     "date": "2026-08-31",
+     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQNDVTT0pUX1VfWjIyU3pjcGxNaG5yaFpQa1pwWVNVWDZUbDZXMnA3blZCV3FZUzJDRko2RXNPU0JSU0xqaEpnVnh5dU9zNXlYSGRiOXRYXzJaUjFFTWhwWG0zRGpHSDJMQVphTUxZMndwb2tBQ1l4eXhNQmV4cTVtUzNLVFJmRF83ckpkTUlvNXZrdzNjUy1jWlBBTmdhRlV3YWNPWi13?oc=5"
+    }
+   ]
+  },
+  {
+   "id": "glp1-beta-cell-preservation",
+   "section": "glp1",
+   "glp1_topic": "beta_cell",
+   "name": "GLP-1 RAs for beta-cell preservation (new-onset / early T1D)",
+   "company": "Academic",
+   "ticker": null,
+   "modality": "Semaglutide and other GLP-1 RAs, alone or combined with immunotherapy",
+   "stage": "phase2",
+   "evidence": "phase1",
+   "status": "active",
+   "nct_ids": [
+    "NCT07430332",
+    "NCT06338553",
+    "NCT07614412",
+    "NCT03899402"
+   ],
+   "summary": "In an NEJM correspondence (2023), Dandona et al. reported that 10 people with early T1D started on semaglutide sharply reduced or stopped prandial insulin. It was uncontrolled. Randomized follow-ons are registered, including GLP-1 RA in stage 1 T1D (Cincinnati) and GLP-1 RA given alongside teplizumab in stage 2 (Vanderbilt).",
+   "reality_check": "The hypothesis is exciting, but the evidence is a 10-patient case series. Anyone quoting 'GLP-1s preserve beta cells in T1D' is ahead of the data.",
+   "next_catalyst": null,
+   "sources": [
+    {
+     "label": "NEJM 2023 — Semaglutide in Early Type 1 Diabetes (PMID 37672701)",
+     "url": "https://doi.org/10.1056/NEJMc2302677"
+    },
+    {
+     "label": "ClinicalTrials.gov NCT07430332",
+     "url": "https://clinicaltrials.gov/study/NCT07430332"
+    },
+    {
+     "label": "ClinicalTrials.gov NCT06338553",
+     "url": "https://clinicaltrials.gov/study/NCT06338553"
+    }
+   ],
+   "verified_on": "2026-10-24",
+   "trials": [
+    {
+     "nct_id": "NCT07430332",
+     "title": "GLP-1 RA for Stage 1 Type 1 Diabetes",
+     "acronym": null,
+     "status": "NOT_YET_RECRUITING",
+     "why_stopped": null,
+     "phases": [
+      "Phase 2"
+     ],
+     "phase_grade": "phase2",
+     "sponsor": "Children's Hospital Medical Center, Cincinnati",
+     "sponsor_class": "OTHER",
+     "conditions": [
+      "Stage 1 Diabetes Mellitus, Type 1"
+     ],
+     "enrollment": 15,
+     "enrollment_type": "ESTIMATED",
+     "start_date": "2027-09-01",
+     "primary_completion": "2029-06-01",
+     "primary_completion_type": "ESTIMATED",
+     "completion": "2030-01-01",
+     "completion_type": "ESTIMATED",
+     "last_update": "2026-02-24",
+     "has_results": false,
+     "url": "https://clinicaltrials.gov/study/NCT07430332"
+    },
+    {
+     "nct_id": "NCT06338553",
+     "title": "GLP-1Ra Impact on Metabolic Outcomes in Stage 2 T1DM While Receiving Teplizumab",
+     "acronym": "GLP-TEP",
+     "status": "RECRUITING",
+     "why_stopped": null,
+     "phases": [
+      "Early Phase 1"
+     ],
+     "phase_grade": "phase1",
+     "sponsor": "Vanderbilt University Medical Center",
+     "sponsor_class": "OTHER",
+     "conditions": [
+      "Type 1 Diabetes"
+     ],
+     "enrollment": 24,
+     "enrollment_type": "ESTIMATED",
+     "start_date": "2024-06-12",
+     "primary_completion": "2027-03",
+     "primary_completion_type": "ESTIMATED",
+     "completion": "2027-03",
+     "completion_type": "ESTIMATED",
+     "last_update": "2025-12-18",
+     "has_results": false,
+     "url": "https://clinicaltrials.gov/study/NCT06338553"
+    },
+    {
+     "nct_id": "NCT07614412",
+     "title": "SHIELD-T1D: Shingrix and GLP-1 Agonist for Beta-Cell Preservation in Recent-Onset Type 1 Diabetes.",
+     "acronym": "SHIELD-T1D",
+     "status": "NOT_YET_RECRUITING",
+     "why_stopped": null,
+     "phases": [
+      "Phase 2"
+     ],
+     "phase_grade": "phase2",
+     "sponsor": "Ministry of Health, Saudi Arabia",
+     "sponsor_class": "OTHER_GOV",
+     "conditions": [
+      "Type 1 Diabetes Mellitus"
+     ],
+     "enrollment": 240,
+     "enrollment_type": "ESTIMATED",
+     "start_date": "2027-01-01",
+     "primary_completion": "2028-01-31",
+     "primary_completion_type": "ESTIMATED",
+     "completion": "2028-12-31",
+     "completion_type": "ESTIMATED",
+     "last_update": "2026-05-29",
+     "has_results": false,
+     "url": "https://clinicaltrials.gov/study/NCT07614412"
+    },
+    {
+     "nct_id": "NCT03899402",
+     "title": "Triple Therapy in T1DM",
+     "acronym": null,
+     "status": "ACTIVE_NOT_RECRUITING",
+     "why_stopped": null,
+     "phases": [
+      "Phase 2",
+      "Phase 3"
+     ],
+     "phase_grade": "phase2",
+     "sponsor": "State University of New York at Buffalo",
+     "sponsor_class": "OTHER",
+     "conditions": [
+      "Type 1 Diabetes Mellitus"
+     ],
+     "enrollment": 78,
+     "enrollment_type": "ACTUAL",
+     "start_date": "2019-05-01",
+     "primary_completion": "2026-01-31",
+     "primary_completion_type": "ACTUAL",
+     "completion": "2026-06-30",
+     "completion_type": "ESTIMATED",
+     "last_update": "2026-05-29",
+     "has_results": false,
+     "url": "https://clinicaltrials.gov/study/NCT03899402"
+    }
+   ],
+   "flags": [],
+   "my_commentary": null,
+   "news": []
+  },
+  {
+   "id": "novo-liraglutide-adjunct",
+   "section": "glp1",
+   "glp1_topic": "safety",
+   "name": "Liraglutide — ADJUNCT ONE & TWO (historical)",
+   "company": "Novo Nordisk",
+   "ticker": "NVO",
+   "modality": "Daily GLP-1 RA added to insulin",
+   "stage": "phase3",
+   "evidence": "phase3",
+   "status": "discontinued",
+   "nct_ids": [
+    "NCT01836523",
+    "NCT02098395"
+   ],
+   "endpoints": [
+    {
+     "metric": "HbA1c (ADJUNCT ONE, 52 wk)",
+     "result": "Small reductions vs placebo (≈0.1–0.2 pts)"
+    },
+    {
+     "metric": "Safety",
+     "result": "Higher symptomatic hypoglycemia and hyperglycemia with ketosis at the 1.8 mg dose"
+    }
+   ],
+   "summary": "Novo's 2016 Phase 3 program of GLP-1 add-on in T1D. Glycemic benefit was modest, and symptomatic hypoglycemia and ketosis signals rose. No T1D label resulted.",
+   "reality_check": "This is why there's still no GLP-1 T1D label, and why DKA and hypoglycemia data will decide the tirzepatide filing, more than weight loss will.",
+   "next_catalyst": null,
+   "sources": [
+    {
+     "label": "Diabetes Care 2016 — ADJUNCT ONE (PMID 27506222)",
+     "url": "https://doi.org/10.2337/dc16-0691"
+    },
+    {
+     "label": "Diabetes Care 2016 — ADJUNCT TWO (PMID 27493132)",
+     "url": "https://doi.org/10.2337/dc16-0690"
+    }
+   ],
+   "unverified": [
+    "The ≈0.1–0.2 pt HbA1c range is summarized from the abstracts; check the dose-specific figures in the papers."
+   ],
+   "verified_on": "2026-10-24",
+   "trials": [
+    {
+     "nct_id": "NCT01836523",
+     "title": "The Efficacy and Safety of Liraglutide as Adjunct Therapy to Insulin in the Treatment of Type 1 Diabetes",
+     "acronym": "ADJUNCT ONE™",
+     "status": "COMPLETED",
+     "why_stopped": null,
+     "phases": [
+      "Phase 3"
+     ],
+     "phase_grade": "phase3",
+     "sponsor": "Novo Nordisk A/S",
+     "sponsor_class": "INDUSTRY",
+     "conditions": [
+      "Diabetes",
+      "Diabetes Mellitus, Type 1"
+     ],
+     "enrollment": 1398,
+     "enrollment_type": "ACTUAL",
+     "start_date": "2013-11",
+     "primary_completion": "2015-06",
+     "primary_completion_type": "ACTUAL",
+     "completion": "2015-06",
+     "completion_type": "ACTUAL",
+     "last_update": "2017-03-06",
+     "has_results": true,
+     "url": "https://clinicaltrials.gov/study/NCT01836523"
+    },
+    {
+     "nct_id": "NCT02098395",
+     "title": "The Efficacy and Safety of Liraglutide Adjunct to Insulin Treatment in Type 1 Diabetes",
+     "acronym": "ADJUNCT TWO™",
+     "status": "COMPLETED",
+     "why_stopped": null,
+     "phases": [
+      "Phase 3"
+     ],
+     "phase_grade": "phase3",
+     "sponsor": "Novo Nordisk A/S",
+     "sponsor_class": "INDUSTRY",
+     "conditions": [
+      "Diabetes",
+      "Diabetes Mellitus, Type 1"
+     ],
+     "enrollment": 835,
+     "enrollment_type": "ACTUAL",
+     "start_date": "2014-05",
+     "primary_completion": "2015-04",
+     "primary_completion_type": "ACTUAL",
+     "completion": "2015-04",
+     "completion_type": "ACTUAL",
+     "last_update": "2017-02-09",
+     "has_results": true,
+     "url": "https://clinicaltrials.gov/study/NCT02098395"
+    }
+   ],
+   "flags": [
+    {
+     "level": "info",
+     "text": "Unverified: The ≈0.1–0.2 pt HbA1c range is summarized from the abstracts; check the dose-specific figures in the papers."
+    }
+   ],
+   "my_commentary": null,
+   "news": []
+  }
+ ],
+ "papers": {
+  "cell_replacement": [
+   {
+    "pmid": "42598441",
+    "title": "Retrievable \"sea-island\" microstructured zwitterionic-silicone hydrogel devices: augmented oxygen transport and anti-fibrosis for sustaining islet survival",
+    "journal": "Bioact Mater",
+    "pubdate": "2027 Jan",
+    "sortdate": "2026-08-04",
+    "authors": "Chen D, Wang H, Tang Y et al.",
+    "is_rct": false,
+    "is_review": false,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42598441/",
+    "doi": "10.1016/j.bioactmat.2026.07.057"
+   },
+   {
+    "pmid": "42430551",
+    "title": "IFNα and bleomycin-induced DNA damage activate distinct stress responses in human islets and induced pluripotent stem cell-derived islet cells",
+    "journal": "Islets",
+    "pubdate": "2026 Dec 31",
+    "sortdate": "2026-12-31",
+    "authors": "Akbari Motlagh R, Rampazzo Morelli N, Alcasid N et al.",
+    "is_rct": false,
+    "is_review": false,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42430551/",
+    "doi": "10.1080/19382014.2026.2692859"
+   },
+   {
+    "pmid": "42017902",
+    "title": "Is the intraportal or renal subcapsular space a preferable site for islet allo- and xeno-transplantation? A brief historical review",
+    "journal": "Islets",
+    "pubdate": "2026 Dec 31",
+    "sortdate": "2026-12-31",
+    "authors": "De Taeye S, Bottino R, Cooper DKC",
+    "is_rct": false,
+    "is_review": true,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42017902/",
+    "doi": "10.1080/19382014.2026.2658317"
+   },
+   {
+    "pmid": "42821872",
+    "title": "Summary Report of the Fifth International Pancreas and Islet Transplant Association Summit on Stem Cell-derived Islets",
+    "journal": "Transplantation",
+    "pubdate": "2026 Nov 1",
+    "sortdate": "2026-11-01",
+    "authors": "Odorico JS, Citro A, de Koning EJP et al.",
+    "is_rct": false,
+    "is_review": false,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42821872/",
+    "doi": "10.1097/TP.0000000000005783"
+   },
+   {
+    "pmid": "42907150",
+    "title": "Engineering stem cell-derived islets for type 1 diabetes: genetic strategies for immune evasion and stress resilience",
+    "journal": "Regen Med",
+    "pubdate": "2026 Oct 21",
+    "sortdate": "2026-10-21",
+    "authors": "Leavens C, Chamberlain CS, Kapadia D et al.",
+    "is_rct": false,
+    "is_review": true,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42907150/",
+    "doi": "10.1080/17460751.2026.2751695"
+   },
+   {
+    "pmid": "42887499",
+    "title": "Organotypic vascularization improves maturation of human stem cell-derived islets and restores normoglycemia in diabetic mice",
+    "journal": "Cell Stem Cell",
+    "pubdate": "2026 Oct 16",
+    "sortdate": "2026-10-16",
+    "authors": "Wang J, Pelissier A, Lin JSH et al.",
+    "is_rct": false,
+    "is_review": false,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42887499/",
+    "doi": "10.1016/j.stem.2026.09.011"
+   }
+  ],
+  "gene_edited": [
+   {
+    "pmid": "42907150",
+    "title": "Engineering stem cell-derived islets for type 1 diabetes: genetic strategies for immune evasion and stress resilience",
+    "journal": "Regen Med",
+    "pubdate": "2026 Oct 21",
+    "sortdate": "2026-10-21",
+    "authors": "Leavens C, Chamberlain CS, Kapadia D et al.",
+    "is_rct": false,
+    "is_review": true,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42907150/",
+    "doi": "10.1080/17460751.2026.2751695"
+   },
+   {
+    "pmid": "42787837",
+    "title": "Protective IFIH1 variant reduces islet stress and dysfunction in a type 1 diabetes genetic background",
+    "journal": "iScience",
+    "pubdate": "2026 Oct 16",
+    "sortdate": "2026-09-17",
+    "authors": "Veronese-Paniagua DA, Banks C, Bradley K et al.",
+    "is_rct": false,
+    "is_review": false,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42787837/",
+    "doi": "10.1016/j.isci.2026.117560"
+   },
+   {
+    "pmid": "42923301",
+    "title": "The capsule was never just a capsule: what islet encapsulation is for, now that immunoisolation is no longer its job",
+    "journal": "Front Bioeng Biotechnol",
+    "pubdate": "2026",
+    "sortdate": "2026-10-08",
+    "authors": "Citro A, Piemonti L",
+    "is_rct": false,
+    "is_review": false,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42923301/",
+    "doi": "10.3389/fbioe.2026.1943061"
+   },
+   {
+    "pmid": "42750143",
+    "title": "Engineering Immune-Protective Stem Cell-Derived β-Cell Grafts for Type 1 Diabetes: Encapsulation Technologies and the Emerging Graft Ecosystem",
+    "journal": "Artif Organs",
+    "pubdate": "2026 Sep 16",
+    "sortdate": "2026-09-16",
+    "authors": "Alanazi MA",
+    "is_rct": false,
+    "is_review": true,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42750143/",
+    "doi": "10.1111/aor.70245"
+   },
+   {
+    "pmid": "42626948",
+    "title": "Gene-edited hypoimmune islets as a cure for type 1 diabetes: a review of the immunological challenges",
+    "journal": "Expert Opin Biol Ther",
+    "pubdate": "2026 Sep",
+    "sortdate": "2026-09-01",
+    "authors": "Hassanein A, Cyprian F, Akhtar S",
+    "is_rct": false,
+    "is_review": true,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42626948/",
+    "doi": "10.1080/14712598.2026.2721412"
+   },
+   {
+    "pmid": "42739778",
+    "title": "Clinical Evolution, Outcomes, and Emerging Preservation Technologies in Pancreas and Islet Transplantation",
+    "journal": "J Clin Med",
+    "pubdate": "2026 Aug 31",
+    "sortdate": "2026-08-31",
+    "authors": "Bellini MI, Papalois V",
+    "is_rct": false,
+    "is_review": true,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42739778/",
+    "doi": "10.3390/jcm15176774"
+   }
+  ],
+  "encapsulation": [
+   {
+    "pmid": "42598441",
+    "title": "Retrievable \"sea-island\" microstructured zwitterionic-silicone hydrogel devices: augmented oxygen transport and anti-fibrosis for sustaining islet survival",
+    "journal": "Bioact Mater",
+    "pubdate": "2027 Jan",
+    "sortdate": "2026-08-04",
+    "authors": "Chen D, Wang H, Tang Y et al.",
+    "is_rct": false,
+    "is_review": false,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42598441/",
+    "doi": "10.1016/j.bioactmat.2026.07.057"
+   },
+   {
+    "pmid": "42920585",
+    "title": "The stiffness of three-dimensional biomimetic matrices regulates insulin secretion via the Piezo1 mechanosensitive ion channel",
+    "journal": "Front Chem",
+    "pubdate": "2026",
+    "sortdate": "2026-10-09",
+    "authors": "Chen X, Wang Z, Gu J et al.",
+    "is_rct": false,
+    "is_review": false,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42920585/",
+    "doi": "10.3389/fchem.2026.1981529"
+   },
+   {
+    "pmid": "42923301",
+    "title": "The capsule was never just a capsule: what islet encapsulation is for, now that immunoisolation is no longer its job",
+    "journal": "Front Bioeng Biotechnol",
+    "pubdate": "2026",
+    "sortdate": "2026-10-08",
+    "authors": "Citro A, Piemonti L",
+    "is_rct": false,
+    "is_review": false,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42923301/",
+    "doi": "10.3389/fbioe.2026.1943061"
+   },
+   {
+    "pmid": "42876362",
+    "title": "Oxidative Stress, Post-Translational Modifications, and Type 1 Diabetes Pathogenesis",
+    "journal": "Immunol Rev",
+    "pubdate": "2026 Oct",
+    "sortdate": "2026-10-01",
+    "authors": "Winstead CJ, Hodel M, Tse HM",
+    "is_rct": false,
+    "is_review": true,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42876362/",
+    "doi": "10.1111/imr.70182"
+   },
+   {
+    "pmid": "42750143",
+    "title": "Engineering Immune-Protective Stem Cell-Derived β-Cell Grafts for Type 1 Diabetes: Encapsulation Technologies and the Emerging Graft Ecosystem",
+    "journal": "Artif Organs",
+    "pubdate": "2026 Sep 16",
+    "sortdate": "2026-09-16",
+    "authors": "Alanazi MA",
+    "is_rct": false,
+    "is_review": true,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42750143/",
+    "doi": "10.1111/aor.70245"
+   },
+   {
+    "pmid": "42781481",
+    "title": "Porous-starch-encapsulated quercetin remodels the gut microbiota and elevates short-chain fatty acids, alleviating hyperglycaemia-associated phenotypes in T2DM mice",
+    "journal": "Front Nutr",
+    "pubdate": "2026",
+    "sortdate": "2026-09-09",
+    "authors": "Kang P, Zheng Y, Song S et al.",
+    "is_rct": false,
+    "is_review": false,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42781481/",
+    "doi": "10.3389/fnut.2026.1851659"
+   }
+  ],
+  "immune": [
+   {
+    "pmid": "42612969",
+    "title": "Mesenchymal stem cell therapy for diabetes: clinical evidence, emerging strategies, and future perspectives",
+    "journal": "Metabolism",
+    "pubdate": "2026 Nov",
+    "sortdate": "2026-11-01",
+    "authors": "Jhuang HY, Lee JY, Wang LT",
+    "is_rct": false,
+    "is_review": true,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42612969/",
+    "doi": "10.1016/j.metabol.2026.156748"
+   },
+   {
+    "pmid": "42587353",
+    "title": "Stage-Adapted Disease-Modifying Therapy in Type 1 Diabetes",
+    "journal": "Diabetes Obes Metab",
+    "pubdate": "2026 Nov",
+    "sortdate": "2026-11-01",
+    "authors": "Ye C, Jin Z, Hu SS",
+    "is_rct": false,
+    "is_review": true,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42587353/",
+    "doi": "10.1111/dom.71210"
+   },
+   {
+    "pmid": "42900744",
+    "title": "Clinical Trial Design Considerations for the Development of Disease-Modifying Therapies for Type 1 Diabetes",
+    "journal": "Diabetes",
+    "pubdate": "2026 Oct 20",
+    "sortdate": "2026-10-20",
+    "authors": "Vieth JA, Anderson RL, Ghate S et al.",
+    "is_rct": false,
+    "is_review": false,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42900744/",
+    "doi": "10.2337/db26-0097"
+   },
+   {
+    "pmid": "42517687",
+    "title": "Impact of Albuminuria-Lowering Treatments on Cardiovascular Predictive Ceramides in Diabetes: Post Hoc Analysis of the ROTATE Trials",
+    "journal": "Diabetes Obes Metab",
+    "pubdate": "2026 Oct",
+    "sortdate": "2026-10-01",
+    "authors": "Pigsborg K, Kienle SM, Wretlind A et al.",
+    "is_rct": true,
+    "is_review": false,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42517687/",
+    "doi": "10.1111/dom.71130"
+   },
+   {
+    "pmid": "42467087",
+    "title": "Relationship between participant-reported outcomes, residual beta cell function and metabolic parameters in youth with newly diagnosed type 1 diabetes",
+    "journal": "Diabetologia",
+    "pubdate": "2026 Oct",
+    "sortdate": "2026-10-01",
+    "authors": "Taylor PN, Cheung WY, Lagorio Price J et al.",
+    "is_rct": true,
+    "is_review": false,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42467087/",
+    "doi": "10.1007/s00125-026-06798-z"
+   },
+   {
+    "pmid": "42163482",
+    "title": "Assessing Extracellular Vesicle Proteins as Predictive Biomarkers for Developing Type 1 Diabetes",
+    "journal": "Proteomics",
+    "pubdate": "2026 Oct",
+    "sortdate": "2026-10-01",
+    "authors": "Dakup PP, Bramer LM, Schepmoes A et al.",
+    "is_rct": false,
+    "is_review": false,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42163482/",
+    "doi": "10.1002/pmic.70148"
+   }
+  ]
+ },
+ "news": {
+  "vertex-zimislecel": [
+   {
+    "title": "Vertex reports results from Phase IIb AMPLIFIED trial for AMKD",
+    "outlet": "Clinical Trials Arena",
+    "date": "2026-09-23",
+    "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPTk5JTDFaLWJBbkxFTG1yWkJoZ09iNFVQYUx0SEhRbDRsektvNWNHRmR2X1dzZWVzUzI5MnVyY002Z3RaM29lOXA5bGZxMm1NbDR2bmJzcTRKeWRmcXJxNFoycFJkM3o1cE05Wng2SjlQcHRWaGwtRjJCdVBMcUFsaF9TMA?oc=5"
+   },
+   {
+    "title": "Diabetes cell therapy biotechs Sernova and Seraxis to merge",
+    "outlet": "Endpoints News",
+    "date": "2026-09-16",
+    "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOYU5qSDMxcjI1aTZERGFTdlNKMThNdlpRYzltWC1xVlo4YmFYMzBRSG1LN1FLQ3NDLVNFNnZ4eDEtdW04aFl1bl9WLXMwb3hkQnJiVFFoUjRIVjlQc01scGVkaTJlVTA4MWdza3lHcFRjNWdoMm9WWVJwV1dMQjROTDB3YzhCRUxrZkhZ?oc=5"
+   },
+   {
+    "title": "Vertex Pharmaceuticals (VRTX) Q1 2026 Earnings Call Transcript",
+    "outlet": "Fortune",
+    "date": "2026-10-24",
+    "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE0tMFF5RERWSkhXNXloMjZKN0w2cmY0SGRfcnNoNkhkX1FMVE5kLXozMHdKY1ZFNjNqY20tTlpyd24teDlDcU1ZWktjS0lYaUlMeVVJWkg3U3p1UUpzQlFVYlUtN3RpZzhzbHJscHZJcEsxeVI1bndN?oc=5"
+   }
+  ],
+  "vertex-vx017": [],
+  "celltrans-lantidra": [
+   {
+    "title": "Donor Islet Cells for Type 1 Diabetes Could Be Regulated Like Organs as HHS Seeks Public Comment",
+    "outlet": "Medical Daily",
+    "date": "2026-09-24",
+    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxObmNZdmw1Q0lCZ0VLQkp3dmtScWxjWmxaQnVmeFYxYVRKV0lDa3RQSkhRVkJzMnJVWjU1MHhINDNuV25IQ3VkM1FISDR4OEdrVTJqcFZFVVZyU0lEZkxtRkNrSV80Vjk3TWZMTkZDOWlkaHpDU3JmT1ZSYk93eFRscnlGUE1TMWxi?oc=5"
+   }
+  ],
+  "seraxis-sr02": [
+   {
+    "title": "Sernova and Seraxis merge to form BetaNova",
+    "outlet": "BioXconomy",
+    "date": "2026-09-08",
+    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQNVVRY0FqaXo4OUNlbWRHanJCMm1oZ3NkMUdZZUM0TXNLVWNseUFuV1RyNmtUei1CajV5SFJLOC1VVWJRWFJBQXE1OHdnQUttQTUySHpLMGw3Vkh6cDRyS3lZc2RoUE0zNGNlXzdVTmlzaTZ0NzhudjNSS25XWjl1QjAyUTZjVlZkOGFiaWZVSm00S29fQlpJSGNyb0U1ZFE?oc=5"
+   },
+   {
+    "title": "Diabetes cell therapy biotechs Sernova and Seraxis to merge",
+    "outlet": "Endpoints News",
+    "date": "2026-09-16",
+    "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOYU5qSDMxcjI1aTZERGFTdlNKMThNdlpRYzltWC1xVlo4YmFYMzBRSG1LN1FLQ3NDLVNFNnZ4eDEtdW04aFl1bl9WLXMwb3hkQnJiVFFoUjRIVjlQc01scGVkaTJlVTA4MWdza3lHcFRjNWdoMm9WWVJwV1dMQjROTDB3YzhCRUxrZkhZ?oc=5"
+   },
+   {
+    "title": "Diabetes Cell Therapy Merger Nears Close Ahead of Q1 2027 First Patient Dosing",
+    "outlet": "Streetwise Reports",
+    "date": "2026-10-21",
+    "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQWEFBNGc0SVkweURLckhGSk1YTWszcGNGZFFjQWlBX3dFNUthRFMwSkpWZE5scDFkb25leUJsTTMzUlNoUUliTjZXa05ZbDFkUEZIaTJ2eU5rM19zTWFaZzM3QjZLWVI3ZW1HeHJQQTdVZ2dGZ19RclJJbUw2VUVaYlRSMTNwbVJJUGJUdFJBUlQ0NTU1bTBIcXJDemFidWR2SFd2RVZlTU1sSzBEVlMwaV9DdTlyYlFGU3EyYjViNmRKcnJqcENSWVNwRFpDanNyREE?oc=5"
+   }
+  ],
+  "celregen-crg002": [
+   {
+    "title": "Stem cell-derived islets edge toward clinical reality",
+    "outlet": "BioWorld News",
+    "date": "2026-10-07",
+    "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNZU4wa0Nhd2N4dlhLYm0tdVJZNWRsdm56NU5qYV9feTdzNXdOSnhxdElIdWhhWmQ1S1g5Z3pzZFF3QVFMb3EwbkQxaGtFcERJMW9TOGhUWDdCUWpub3FHeGJyVmR5VWFNMXAtWnBMcjBNelN3QmhBTzVjbUU2MENlWmVvUmYzYkcwZ0FYeGxvYkp2MnZzdkJVZzZR?oc=5"
+   }
+  ],
+  "sana-up421": [
+   {
+    "title": "Sana Biotechnology: A Shot At Diabetes",
+    "outlet": "Seeking Alpha",
+    "date": "2026-10-13",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNbUo4TjlpVm5VeEYyMTYyLW42czVNcGtXOVJycm5rMkM3aTBCb0tub2p2RUtRUHZTSnFHYTNRTnQzUC13N29oSFhUQVhVZkpaaHluNEZ1Rk1UTnVNdnRHM0hSZTI0OGdVcFhpT3hvZlRTdnd2ajc0SzZ0LTN2VU5oOU1pR1g?oc=5"
+   },
+   {
+    "title": "Sana Biotechnology trades at a discount despite promising early T1D treatment data and limited cash runway.",
+    "outlet": "Pluang",
+    "date": "2026-10-13",
+    "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5MVFl4Q3VxMmRmbkJUYUdWeWlEQVBjUUFUVnZIMEIteWtDSFV6YmlhZ0hHM0d1UXQwTWVPdHVUTTh4OXE5UEtKcU0yM2EyREtPS19BTnMzdmtQb2M2YjZmX2F6RGpGOUdJaW5vaTFjM2c3RlhzNEE?oc=5"
+   }
+  ],
+  "sana-sc451": [
+   {
+    "title": "Sana Biotechnology: A Shot At Diabetes",
+    "outlet": "Seeking Alpha",
+    "date": "2026-10-13",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNbUo4TjlpVm5VeEYyMTYyLW42czVNcGtXOVJycm5rMkM3aTBCb0tub2p2RUtRUHZTSnFHYTNRTnQzUC13N29oSFhUQVhVZkpaaHluNEZ1Rk1UTnVNdnRHM0hSZTI0OGdVcFhpT3hvZlRTdnd2ajc0SzZ0LTN2VU5oOU1pR1g?oc=5"
+   },
+   {
+    "title": "6 ‘Moonshot’ Biotech Stocks That Offer Big Risks, Bigger Rewards",
+    "outlet": "Barron's",
+    "date": "2026-09-23",
+    "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9xMnFZSTJua1ZqbEJoWjItMlY4S3daYXhzNV9VdXZUR2t3X2VyTUtTTEllOXdHMFJvRnpQaTBfc2VyTEM1RnNZbWJpRzZYLTRlT19PcVhZdWJWVW9WWEJXTE51SjAxdm83T1RVQlB0eWc0cGtjMzFrX3VPUm4?oc=5"
+   }
+  ],
+  "sernova-cellpouch": [],
+  "otsuka-opf310": [],
+  "aspect-bioprinted": [],
+  "sanofi-teplizumab": [
+   {
+    "title": "Type 1 Diabetes Immunotherapy: Can ATG Rival Teplizumab?",
+    "outlet": "Diabetes In Control",
+    "date": "2026-10-02",
+    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNYXVfcFlOREJPOUtWQmlIazY0UEY0Ulk1TXVSM0ZmNlRyYmJZY3Q3cWhjNkZra2hGMXl1WTI0TWE4UE1FWkNaZjVYaUhBaGMyYlJMeGhmVVR6RUhmenY2Q1Q2ZzRkcFFkQ0xnOUZNbEdIaWZ0V1JiTzh3cVJTZTBMcW9QUUNua2RFbmc?oc=5"
+   },
+   {
+    "title": "Can immunotherapy stop the clock on type 1 diabetes?",
+    "outlet": "The Pharmaceutical Journal",
+    "date": "2026-09-23",
+    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOaEZ2QVF4UHh3UEdLMk1BMXNmRDBnWWl2bFY2Y1JWVlI2d2RFZ1dRam5YN2dVSWhESzBKcV9jYkJnNXpoNzVxRVJUQ0t0NWhOWGdheGl6dmxyZjFPX0hJbklpeGNwOFlLVXVpSHl0d0lyb01tWHRzZEdvdWFCYUc1M0p3bjBxRnczaGp5bVg5NkY3UUtGbnl2TmNMbDR6dGVQUkRlaA?oc=5"
+   },
+   {
+    "title": "T cells in type 1 diabetes: mechanisms of β-cell autoimmunity, innate-adaptive immune crosstalk, and translational immunotherapy",
+    "outlet": "Frontiers",
+    "date": "2026-09-23",
+    "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxObmZJdGp0NkY2cXgzR0RzcUl4bGhBaHBoUmtXZWF2VjUydFpzTE9FZzB2elotdGpJT19IZW9ORlgwWjI2WGJoUXdrcDktTVd0MW9ITWNuQlVGV1F6U2tCenBRdjY3Y2VBLXpQX0VtWDkzZEdRT1VFT1NiWnB4V21USXRETVcwVU41RTBkd1B4dldSZw?oc=5"
+   }
+  ],
+  "lilly-baricitinib": [
+   {
+    "title": "The Treatment Stopped—Did the Benefit Last? New Baricitinib Data in Type 1 Diabetes",
+    "outlet": "Diabetes In Control",
+    "date": "2026-08-31",
+    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNb2FxcXRoeDUxSnd4N3BKcVc4ZDhPUzdOdXZkT3c2NXV0YmtGYWllYnBybG1UMTMzU3gtQ2dVTFVjQnVzOEtJamVPRUQ1T1gyNnl1REgwdHhaY05Uc3pQdXBMSTQxTmFoSVE3Ui0wRFlPY0tSNGJZRTdYQXRoZ3M2TlVrRFNvMnJiVU1KLVVkaw?oc=5"
+   },
+   {
+    "title": "Diabetes Dialogue: Screening, Cell Therapy, and Adjunctive Agents at Breakthrough-T1D",
+    "outlet": "HCPLive",
+    "date": "2026-10-15",
+    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOZWdHWWdYbmg3Qm9neXd2STFZVjB6emFsbmNhNUZMU2JFQUIxM1N1WjF2MG5pOXM5VTJzNVN1ZURuZzZkb0drOVhaeEMyZDZvejJkajRuWUpGSWxIWkdRQnJtbXphazBFSW0xU2k2NG5ZNVRrTUxvQU90bTNHY2taUzJhS2wySmJ6dTlyZXByZGhjelBfZGVWNEt4NE9zRVlSMGVIRTNCc01JSHFSZVBvUA?oc=5"
+   },
+   {
+    "title": "5 FDA Decisions for Primary Care to Know from September 2026",
+    "outlet": "Patient Care Online",
+    "date": "2026-10-01",
+    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOWWhvOXROekc5RlRtU2hNRWRiRDNHd3U3UFRNOFNnZ1gtWVZXMlA2dGtkaXJZNzJhSGJ5bW1Ncm5UMG90SlR4R29GX0FVTzRZWVVvQk85WV9jYjZTVlpKaFJ1SEtrbGtuYTZBdWR2dTRiVHpjYTZBNUY3QW84anF6WlA5X09DRmRlQW1CRUxaVTVuWl9GSWlfQUw3b0RSc3VR?oc=5"
+   }
+  ],
+  "sanofi-frexalimab": [],
+  "verapamil-clver": [
+   {
+    "title": "Clinical Trials and Studies Now Enrolling!",
+    "outlet": "Breakthrough T1D",
+    "date": "2026-10-21",
+    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNZjY1OXhoZDMzNmF3MTlBSFJ0RndrS05BT203aVExOVZxRDAzYmdvM3AxNDRXbU1lV05mSkd2NE5aalBzRFRLS04wN1lJcjFGMU53VUlOODlFX0M2cVB4M3FpUG9SZWF5bkNxMmFuSURPTjhPb0FONFdmWWhlbWQ0bzlNNHd4OEZCX3huQWQySnQ5dm5JNldwUEhzNVhlMjFmUHRacw?oc=5"
+   }
+  ],
+  "golimumab-t1d": [],
+  "lilly-tirzepatide-t1d": [
+   {
+    "title": "Indirect comparative efficacy and safety of tirzepatide vs semaglutide for the treatment of obesity or overweight in patients without type 2 diabetes",
+    "outlet": "Nature",
+    "date": "2026-09-28",
+    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE12aXljbjFfbVFSRWNFeE1Ga0V5RVZIclI4azRtRUN3WjIwY1Q0Y0ctOUJWOFA4SmlpYWlNVHgya1JPZjNkdi0zSHhPVkhMcTRjcGg5UndpVEhqMlItRm5r?oc=5"
+   },
+   {
+    "title": "CagriSema Tops Eli Lilly's Tirzepatide for Weight Loss in Late-Stage Diabetes Trial: Report",
+    "outlet": "Pharmaceutical Executive",
+    "date": "2026-09-21",
+    "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPazVvazk4YUphX2RqYnNsV3AzNmVNMlpBZkdqd1VFRVFBb3JjeUMwQkVaM21xaGVZazNjS1JQNy1TaW1XeHBXMHhseWQ0M3BhQjRyT0lSdjN4YURTVkwzeFZHOEhtQWcxNTctdUsyMy1oMzlETnBpSGM1Zms3MHRoWmpYSFVGRzhOdFB5UGJ0bHBCYmdvblZzZWtB?oc=5"
+   },
+   {
+    "title": "Recap: Tirzepatide Is Approved to Cut Cardiovascular Risk in Type 2 Diabetes",
+    "outlet": "Pharmacy Times",
+    "date": "2026-10-21",
+    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQcTBVZEFyVURuaXlnNGdWZ05oRkxGSUgzQUU3SlBROTNQdHdaTThnVThUaENxXzhGaVZxLUlLV3pjeDdnOXhWMXJ2b01CY3E1R0NuM0VlaXB6TXc2cEdkLThSSWV6OTZ5dTdjS3F1Wnkxd0puMlQ4UjA5RmkxdkUzcmFjQk13UFR6MVRrdGY5eFZidDBTVG83S3Y0Z0ZadDUtY1dJ?oc=5"
+   }
+  ],
+  "semaglutide-adjust-t1d": [
+   {
+    "title": "Effects of semaglutide on kidney disease in type 2 diabetes: a randomized placebo-controlled trial",
+    "outlet": "Nature",
+    "date": "2026-10-01",
+    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5vMFZhelBpd01ycnl3YW1BbXpDYUhISlpHNUhhRXdWZTI4UE5JeV9ydmhsTWx3WVBvTW83MmV4SHBZdkFOeDVmcEtIbTFFVkVmUFhrWmpqSVpiRjBzR2Ew?oc=5"
+   },
+   {
+    "title": "Semaglutide in Type 2 Diabetes and CKD: Katherine R. Tuttle, MD, FASN",
+    "outlet": "The American Journal of Managed Care",
+    "date": "2026-10-25",
+    "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPR2xZVUNXbUM0M2RNZGFDNXAzN3JfZEFOYURIdnllcTlHUmxJcXZueG40ZDZSZlNGX2NfczJ5bDJSNVNUdV9fcVNMVmU4OUZ1cG8zNVNSVTBQNGV6bDdWWmJyUVlnNjN4dmVjdG1FVmtPVVNYck5SNHFRV1E4ZGlCVmthYXZaZXcyYjFlUlg4UHlwNC1zR1E?oc=5"
+   },
+   {
+    "title": "Newer GLP-1 agents yield substantial weight loss in nondiabetic adults",
+    "outlet": "2 Minute Medicine",
+    "date": "2026-08-31",
+    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQNDVTT0pUX1VfWjIyU3pjcGxNaG5yaFpQa1pwWVNVWDZUbDZXMnA3blZCV3FZUzJDRko2RXNPU0JSU0xqaEpnVnh5dU9zNXlYSGRiOXRYXzJaUjFFTWhwWG0zRGpHSDJMQVphTUxZMndwb2tBQ1l4eXhNQmV4cTVtUzNLVFJmRF83ckpkTUlvNXZrdzNjUy1jWlBBTmdhRlV3YWNPWi13?oc=5"
+   }
+  ],
+  "glp1-beta-cell-preservation": []
+ }
+}

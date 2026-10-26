@@ -170,7 +170,10 @@
         return '<div class="r"><i class="sw-' + s.cls + '"></i><span>' + esc(s.name) + '</span><span class="num">' + fmt(s.values[cur]) + "</span></div>";
       }).join("");
       var total = "";
-      if (cfg.type === "stack") {
+      if (cfg.type === "context") {
+        var b0 = cfg.series[0].values[cur], d0 = cfg.series[1].values[cur];
+        total = '<div class="r" style="border-top:1px solid var(--rule);margin-top:4px;padding-top:4px"><i></i><span>Share displaced</span><span class="num">' + pct(b0 ? d0 / b0 : 0, 1) + "</span></div>";
+      } else if (cfg.type === "stack") {
         var t = cfg.series.reduce(function (a, s) { return a + s.values[cur]; }, 0);
         total = '<div class="r" style="border-top:1px solid var(--rule);margin-top:4px;padding-top:4px"><i></i><span>Total</span><span class="num">' + money(t) + "</span></div>";
       }
@@ -213,7 +216,9 @@
     cfg.label = (el.querySelector("svg") || {}).getAttribute ? el.querySelector("svg").getAttribute("aria-label") : "";
     if (el.id === "model-chart" && document.getElementById("model-data")) return;  // model.js owns the model page chart
     charts.push([el, cfg]);
-    if (el.clientWidth < 600) TTC.drawChart(el, cfg); else TTC.attachChart(el, cfg);
+    var redrawable = cfg.type === "stack" || cfg.type === "line";  // context charts ship a narrow SVG instead
+    if (el.clientWidth < 600 && redrawable) TTC.drawChart(el, cfg); else TTC.attachChart(el, cfg);
+    if (!redrawable) charts.pop();
   });
   var rt = 0, lastW = window.innerWidth;
   window.addEventListener("resize", function () {
@@ -283,6 +288,41 @@
   }
   window.addEventListener("hashchange", revealHash);
   if (location.hash.length > 1) revealHash();
+
+  // ------------------------------------------------------------ "More" menu: close on outside click or Escape
+  document.querySelectorAll("details.nav-more, details.menu-btn").forEach(function (d) {
+    document.addEventListener("click", function (e) { if (d.open && !d.contains(e.target)) d.open = false; });
+    d.addEventListener("keydown", function (e) { if (e.key === "Escape" && d.open) { d.open = false; d.querySelector("summary").focus(); } });
+  });
+
+  // ------------------------------------------------------------ pipeline: arrange tracks, switch to matrix
+  var pipe = document.getElementById("pipe-track");
+  if (pipe) {
+    var hype = pipe.querySelector(".hype"), original = Array.prototype.slice.call(hype.children);
+    document.querySelectorAll("[data-arrange]").forEach(function (b) {
+      b.addEventListener("click", function () {
+        var mode = b.getAttribute("data-arrange");
+        document.querySelectorAll("[data-arrange]").forEach(function (o) { o.setAttribute("aria-pressed", o === b ? "true" : "false"); });
+        if (mode === "approach") { original.forEach(function (el) { hype.appendChild(el); el.classList.remove("hidden"); }); return; }
+        var rows = original.filter(function (el) { return el.classList.contains("hype-row"); });
+        original.forEach(function (el) { if (el.classList.contains("hype-group")) el.classList.add("hidden"); });
+        rows.sort(function (x, y) {
+          var a = x.dataset, c = y.dataset;
+          return (a.stopped - c.stopped) || (mode === "gap" ? (c.gap - a.gap) || (c.stage - a.stage) : (c.stage - a.stage) || (c.evidence - a.evidence)) || a.name.localeCompare(c.name);
+        });
+        rows.forEach(function (el) { hype.appendChild(el); });
+      });
+    });
+    var mtx = document.getElementById("pipe-matrix");
+    document.querySelectorAll("[data-pview]").forEach(function (b) {
+      b.addEventListener("click", function () {
+        var v = b.getAttribute("data-pview");
+        document.querySelectorAll("[data-pview]").forEach(function (o) { o.setAttribute("aria-pressed", o === b ? "true" : "false"); });
+        pipe.hidden = v !== "track"; mtx.hidden = v !== "matrix";
+        document.querySelectorAll("[data-arrange]").forEach(function (o) { o.disabled = v !== "track"; });
+      });
+    });
+  }
 
   // ------------------------------------------------------------ copy buttons
   document.querySelectorAll("[data-copy]").forEach(function (b) {

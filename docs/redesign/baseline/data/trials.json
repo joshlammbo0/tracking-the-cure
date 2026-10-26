@@ -1,0 +1,986 @@
+{
+ "trials": {
+  "NCT01836523": {
+   "nct_id": "NCT01836523",
+   "title": "The Efficacy and Safety of Liraglutide as Adjunct Therapy to Insulin in the Treatment of Type 1 Diabetes",
+   "acronym": "ADJUNCT ONE™",
+   "status": "COMPLETED",
+   "why_stopped": null,
+   "phases": [
+    "Phase 3"
+   ],
+   "phase_grade": "phase3",
+   "sponsor": "Novo Nordisk A/S",
+   "sponsor_class": "INDUSTRY",
+   "conditions": [
+    "Diabetes",
+    "Diabetes Mellitus, Type 1"
+   ],
+   "enrollment": 1398,
+   "enrollment_type": "ACTUAL",
+   "start_date": "2013-11",
+   "primary_completion": "2015-06",
+   "primary_completion_type": "ACTUAL",
+   "completion": "2015-06",
+   "completion_type": "ACTUAL",
+   "last_update": "2017-03-06",
+   "has_results": true,
+   "url": "https://clinicaltrials.gov/study/NCT01836523"
+  },
+  "NCT02098395": {
+   "nct_id": "NCT02098395",
+   "title": "The Efficacy and Safety of Liraglutide Adjunct to Insulin Treatment in Type 1 Diabetes",
+   "acronym": "ADJUNCT TWO™",
+   "status": "COMPLETED",
+   "why_stopped": null,
+   "phases": [
+    "Phase 3"
+   ],
+   "phase_grade": "phase3",
+   "sponsor": "Novo Nordisk A/S",
+   "sponsor_class": "INDUSTRY",
+   "conditions": [
+    "Diabetes",
+    "Diabetes Mellitus, Type 1"
+   ],
+   "enrollment": 835,
+   "enrollment_type": "ACTUAL",
+   "start_date": "2014-05",
+   "primary_completion": "2015-04",
+   "primary_completion_type": "ACTUAL",
+   "completion": "2015-04",
+   "completion_type": "ACTUAL",
+   "last_update": "2017-02-09",
+   "has_results": true,
+   "url": "https://clinicaltrials.gov/study/NCT02098395"
+  },
+  "NCT02846545": {
+   "nct_id": "NCT02846545",
+   "title": "A Study of SIMPONI® to Arrest Beta-cell Loss in Type 1 Diabetes",
+   "acronym": "T1GER",
+   "status": "COMPLETED",
+   "why_stopped": null,
+   "phases": [
+    "Phase 2"
+   ],
+   "phase_grade": "phase2",
+   "sponsor": "Janssen Research & Development, LLC",
+   "sponsor_class": "INDUSTRY",
+   "conditions": [
+    "Diabetes Mellitus, Type 1"
+   ],
+   "enrollment": 84,
+   "enrollment_type": "ACTUAL",
+   "start_date": "2016-08-26",
+   "primary_completion": "2019-05-21",
+   "primary_completion_type": "ACTUAL",
+   "completion": "2021-01-05",
+   "completion_type": "ACTUAL",
+   "last_update": "2025-02-04",
+   "has_results": true,
+   "url": "https://clinicaltrials.gov/study/NCT02846545"
+  },
+  "NCT03513939": {
+   "nct_id": "NCT03513939",
+   "title": "A Safety, Tolerability and Efficacy Study of Sernova's Cell Pouch™ for Clinical Islet Transplantation",
+   "acronym": null,
+   "status": "ACTIVE_NOT_RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 1",
+    "Phase 2"
+   ],
+   "phase_grade": "phase1",
+   "sponsor": "Sernova Biotherapeutics Inc.",
+   "sponsor_class": "INDUSTRY",
+   "conditions": [
+    "Type 1 Diabetes Mellitus"
+   ],
+   "enrollment": 17,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2019-02-07",
+   "primary_completion": "2026-10",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2026-10",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-02-25",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT03513939"
+  },
+  "NCT03875729": {
+   "nct_id": "NCT03875729",
+   "title": "Recent-Onset Type 1 Diabetes Trial Evaluating Efficacy and Safety of Teplizumab",
+   "acronym": "PROTECT",
+   "status": "COMPLETED",
+   "why_stopped": null,
+   "phases": [
+    "Phase 3"
+   ],
+   "phase_grade": "phase3",
+   "sponsor": "Provention Bio, Inc.",
+   "sponsor_class": "INDUSTRY",
+   "conditions": [
+    "Type 1 Diabetes Mellitus"
+   ],
+   "enrollment": 328,
+   "enrollment_type": "ACTUAL",
+   "start_date": "2019-04-05",
+   "primary_completion": "2023-05-01",
+   "primary_completion_type": "ACTUAL",
+   "completion": "2023-05-01",
+   "completion_type": "ACTUAL",
+   "last_update": "2024-04-24",
+   "has_results": true,
+   "url": "https://clinicaltrials.gov/study/NCT03875729"
+  },
+  "NCT03899402": {
+   "nct_id": "NCT03899402",
+   "title": "Triple Therapy in T1DM",
+   "acronym": null,
+   "status": "ACTIVE_NOT_RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 2",
+    "Phase 3"
+   ],
+   "phase_grade": "phase2",
+   "sponsor": "State University of New York at Buffalo",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type 1 Diabetes Mellitus"
+   ],
+   "enrollment": 78,
+   "enrollment_type": "ACTUAL",
+   "start_date": "2019-05-01",
+   "primary_completion": "2026-01-31",
+   "primary_completion_type": "ACTUAL",
+   "completion": "2026-06-30",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-05-29",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT03899402"
+  },
+  "NCT04233034": {
+   "nct_id": "NCT04233034",
+   "title": "Hybrid Closed Loop Therapy and Verapamil for Beta Cell Preservation in New Onset Type 1 Diabetes",
+   "acronym": "CLVer",
+   "status": "COMPLETED",
+   "why_stopped": null,
+   "phases": [
+    "Phase 3"
+   ],
+   "phase_grade": "phase3",
+   "sponsor": "Jaeb Center for Health Research",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type1 Diabetes"
+   ],
+   "enrollment": 113,
+   "enrollment_type": "ACTUAL",
+   "start_date": "2020-07-09",
+   "primary_completion": "2022-09-15",
+   "primary_completion_type": "ACTUAL",
+   "completion": "2022-09-30",
+   "completion_type": "ACTUAL",
+   "last_update": "2024-11-27",
+   "has_results": true,
+   "url": "https://clinicaltrials.gov/study/NCT04233034"
+  },
+  "NCT04774224": {
+   "nct_id": "NCT04774224",
+   "title": "Baricitinib in New-onset Type 1 Diabetes",
+   "acronym": "BANDIT",
+   "status": "COMPLETED",
+   "why_stopped": null,
+   "phases": [
+    "Phase 2"
+   ],
+   "phase_grade": "phase2",
+   "sponsor": "St Vincent's Institute of Medical Research",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type 1 Diabetes"
+   ],
+   "enrollment": 91,
+   "enrollment_type": "ACTUAL",
+   "start_date": "2020-10-30",
+   "primary_completion": "2023-01-30",
+   "primary_completion_type": "ACTUAL",
+   "completion": "2024-05-06",
+   "completion_type": "ACTUAL",
+   "last_update": "2024-12-03",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT04774224"
+  },
+  "NCT04786262": {
+   "nct_id": "NCT04786262",
+   "title": "A Safety, Tolerability, and Efficacy Study of VX-880 and VX-017 in Participants With Type 1 Diabetes",
+   "acronym": null,
+   "status": "RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 3"
+   ],
+   "phase_grade": "phase3",
+   "sponsor": "Vertex Pharmaceuticals Incorporated",
+   "sponsor_class": "INDUSTRY",
+   "conditions": [
+    "Diabetes Mellitus, Type 1",
+    "Impaired Hypoglycemic Awareness",
+    "Severe Hypoglycemia"
+   ],
+   "enrollment": 57,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2021-03-29",
+   "primary_completion": "2027-12-31",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2031-12-31",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-09-01",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT04786262"
+  },
+  "NCT05018585": {
+   "nct_id": "NCT05018585",
+   "title": "A Phase III Study to Investigate if the Study Drug Diamyd Can Preserve Insulin Production and Improve Glycemic Control in Patients Newly Diagnosed With Type 1 Diabetes",
+   "acronym": "DIAGNODE-3",
+   "status": "TERMINATED",
+   "why_stopped": "Stopped for futility.",
+   "phases": [
+    "Phase 3"
+   ],
+   "phase_grade": "phase3",
+   "sponsor": "Diamyd Medical AB",
+   "sponsor_class": "INDUSTRY",
+   "conditions": [
+    "Type 1 Diabetes Mellitus"
+   ],
+   "enrollment": 321,
+   "enrollment_type": "ACTUAL",
+   "start_date": "2022-05-19",
+   "primary_completion": "2026-06-24",
+   "primary_completion_type": "ACTUAL",
+   "completion": "2026-06-24",
+   "completion_type": "ACTUAL",
+   "last_update": "2026-08-26",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT05018585"
+  },
+  "NCT05565248": {
+   "nct_id": "NCT05565248",
+   "title": "An Open-Label, FIH Study Evaluating the Safety, Tolerability, and Efficacy of VCTX211 Combination Product in Subjects With T1D",
+   "acronym": null,
+   "status": "TERMINATED",
+   "why_stopped": "Patients to be followed up in the VCTX-201 study",
+   "phases": [
+    "Phase 1"
+   ],
+   "phase_grade": "phase1",
+   "sponsor": "CRISPR Therapeutics AG",
+   "sponsor_class": "INDUSTRY",
+   "conditions": [
+    "Diabetes Mellitus",
+    "Diabetes Mellitus, Type 1",
+    "Glucose Metabolism Disorders",
+    "Metabolic Disease",
+    "Endocrine System Diseases",
+    "Autoimmune Diseases",
+    "Immune System Diseases"
+   ],
+   "enrollment": 5,
+   "enrollment_type": "ACTUAL",
+   "start_date": "2023-01-20",
+   "primary_completion": "2025-08-08",
+   "primary_completion_type": "ACTUAL",
+   "completion": "2025-08-08",
+   "completion_type": "ACTUAL",
+   "last_update": "2026-05-07",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT05565248"
+  },
+  "NCT05791201": {
+   "nct_id": "NCT05791201",
+   "title": "A Safety, Tolerability, and Efficacy Study of VX-264 in Participants With Type 1 Diabetes",
+   "acronym": null,
+   "status": "ACTIVE_NOT_RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 1",
+    "Phase 2"
+   ],
+   "phase_grade": "phase1",
+   "sponsor": "Vertex Pharmaceuticals Incorporated",
+   "sponsor_class": "INDUSTRY",
+   "conditions": [
+    "Type 1 Diabetes"
+   ],
+   "enrollment": 7,
+   "enrollment_type": "ACTUAL",
+   "start_date": "2023-05-16",
+   "primary_completion": "2027-03-12",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2027-03-12",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-10-09",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT05791201"
+  },
+  "NCT05819138": {
+   "nct_id": "NCT05819138",
+   "title": "Type 1 Diabetes Impacts of Semaglutide on Cardiovascular Outcomes",
+   "acronym": "T1-DISCO",
+   "status": "RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 3"
+   ],
+   "phase_grade": "phase3",
+   "sponsor": "University of Colorado, Denver",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Diabetes Mellitus, Type 1"
+   ],
+   "enrollment": 60,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2023-06-21",
+   "primary_completion": "2027-10-01",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2027-12-01",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-03-04",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT05819138"
+  },
+  "NCT06111586": {
+   "nct_id": "NCT06111586",
+   "title": "Frexalimab in Preservation of Endogenous Insulin Secretion Compared to Placebo in Adults, Adolescents and Children on Top of Insulin Therapy (FABULINUS)",
+   "acronym": "FABULINUS",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 2"
+   ],
+   "phase_grade": "phase2",
+   "sponsor": "Sanofi",
+   "sponsor_class": "INDUSTRY",
+   "conditions": [
+    "Type 1 Diabetes Mellitus"
+   ],
+   "enrollment": 197,
+   "enrollment_type": "ACTUAL",
+   "start_date": "2023-12-11",
+   "primary_completion": "2027-04-28",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2030-10-29",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-06-29",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT06111586"
+  },
+  "NCT06239636": {
+   "nct_id": "NCT06239636",
+   "title": "First-in-human Safety Study of Hypoimmune Pancreatic Islet Transplantation in Adult Subjects With Type 1 Diabetes",
+   "acronym": null,
+   "status": "RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Early Phase 1"
+   ],
+   "phase_grade": "phase1",
+   "sponsor": "Per-Ola Carlsson",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type1diabetes"
+   ],
+   "enrollment": 2,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2024-03-08",
+   "primary_completion": "2025-05",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2025-06",
+   "completion_type": "ESTIMATED",
+   "last_update": "2024-12-11",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT06239636"
+  },
+  "NCT06338553": {
+   "nct_id": "NCT06338553",
+   "title": "GLP-1Ra Impact on Metabolic Outcomes in Stage 2 T1DM While Receiving Teplizumab",
+   "acronym": "GLP-TEP",
+   "status": "RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Early Phase 1"
+   ],
+   "phase_grade": "phase1",
+   "sponsor": "Vanderbilt University Medical Center",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type 1 Diabetes"
+   ],
+   "enrollment": 24,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2024-06-12",
+   "primary_completion": "2027-03",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2027-03",
+   "completion_type": "ESTIMATED",
+   "last_update": "2025-12-18",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT06338553"
+  },
+  "NCT06411210": {
+   "nct_id": "NCT06411210",
+   "title": "Obesity Complicating Type 1 Diabetes: GLP-1 Analogue Anti-obesity Treatment",
+   "acronym": null,
+   "status": "RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 2"
+   ],
+   "phase_grade": "phase2",
+   "sponsor": "Yale University",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Diabetes type1",
+    "Obesity"
+   ],
+   "enrollment": 54,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2024-07-16",
+   "primary_completion": "2028-04-30",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2028-06-30",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-08-04",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT06411210"
+  },
+  "NCT06575426": {
+   "nct_id": "NCT06575426",
+   "title": "A Study to Investigate Safety and Effectiveness of Porcine Pancreatic Cells (OPF-310) in Patients With Type 1 Diabetes Mellitus",
+   "acronym": null,
+   "status": "RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 1",
+    "Phase 2"
+   ],
+   "phase_grade": "phase1",
+   "sponsor": "Otsuka Pharmaceutical Factory, Inc.",
+   "sponsor_class": "INDUSTRY",
+   "conditions": [
+    "Diabetes Mellitus, Type 1",
+    "Hypoglycemia",
+    "Islet Cell Transplantation",
+    "Type 1 Diabetes",
+    "Type 1 Diabetes Mellitus",
+    "T1D",
+    "T1DM",
+    "T1DM - Type 1 Diabetes Mellitus",
+    "Type 1 Diabetes (T1D)",
+    "Severe Hypoglycemia",
+    "Xenotransplantation",
+    "Hypoglycemic Episode",
+    "Islet Transplantation in Diabetes Mellitus Type 1",
+    "Glucose Metabolism Disorders (Including Diabetes Mellitus)",
+    "Immune System Diseases",
+    "Autoimmune Diseases",
+    "Metabolic Disease"
+   ],
+   "enrollment": 13,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2025-06-10",
+   "primary_completion": "2027-06-30",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2027-06-30",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-08-21",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT06575426"
+  },
+  "NCT06651515": {
+   "nct_id": "NCT06651515",
+   "title": "A Study of the Safety and Efficacy of Pancreatic Endocrine Cell Clusters Implanted Into the Omentum of Type 1 Diabetes Patients With Severe Hypoglycemia",
+   "acronym": "SUGR",
+   "status": "WITHDRAWN",
+   "why_stopped": "Study is being withdrawn for business reasons",
+   "phases": [
+    "Phase 1",
+    "Phase 2"
+   ],
+   "phase_grade": "phase1",
+   "sponsor": "Seraxis",
+   "sponsor_class": "INDUSTRY",
+   "conditions": [
+    "Diabetes Mellitus Type 1"
+   ],
+   "enrollment": 0,
+   "enrollment_type": "ACTUAL",
+   "start_date": "2025-04",
+   "primary_completion": "2027-03",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2028-03",
+   "completion_type": "ESTIMATED",
+   "last_update": "2025-10-16",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT06651515"
+  },
+  "NCT06791291": {
+   "nct_id": "NCT06791291",
+   "title": "Efficacy and Safety of Teplizumab in Japanese Participants With Stage 2 Type 1 Diabetes",
+   "acronym": "KIBOU-T1D",
+   "status": "RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 2"
+   ],
+   "phase_grade": "phase2",
+   "sponsor": "Sanofi",
+   "sponsor_class": "INDUSTRY",
+   "conditions": [
+    "Type 1 Diabetes Mellitus"
+   ],
+   "enrollment": 10,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2025-07-25",
+   "primary_completion": "2028-03-06",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2028-03-06",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-10-13",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT06791291"
+  },
+  "NCT06832410": {
+   "nct_id": "NCT06832410",
+   "title": "An Efficacy, Safety, and Tolerability Study of VX-880 in Participants With Type 1 Diabetes With a Kidney Transplant",
+   "acronym": null,
+   "status": "RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 3"
+   ],
+   "phase_grade": "phase3",
+   "sponsor": "Vertex Pharmaceuticals Incorporated",
+   "sponsor_class": "INDUSTRY",
+   "conditions": [
+    "Type 1 Diabetes",
+    "Kidney Transplant"
+   ],
+   "enrollment": 10,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2025-03-31",
+   "primary_completion": "2026-09-17",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2027-09-17",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-03-23",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT06832410"
+  },
+  "NCT06914895": {
+   "nct_id": "NCT06914895",
+   "title": "A Study of Tirzepatide (LY3298176) Compared With Placebo in Adults With Type 1 Diabetes and Obesity or Overweight",
+   "acronym": "SURPASS-T1D-1",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 3"
+   ],
+   "phase_grade": "phase3",
+   "sponsor": "Eli Lilly and Company",
+   "sponsor_class": "INDUSTRY",
+   "conditions": [
+    "Type 1 Diabetes",
+    "Obesity",
+    "Overweight"
+   ],
+   "enrollment": 905,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2025-04-25",
+   "primary_completion": "2026-11",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2026-12",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-05-12",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT06914895"
+  },
+  "NCT06962280": {
+   "nct_id": "NCT06962280",
+   "title": "A Long-Term Study of Tirzepatide (LY3298176) in Adults With Type 1 Diabetes and Obesity or Overweight",
+   "acronym": "SURPASS-T1D-2",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 3"
+   ],
+   "phase_grade": "phase3",
+   "sponsor": "Eli Lilly and Company",
+   "sponsor_class": "INDUSTRY",
+   "conditions": [
+    "Type 1 Diabetes",
+    "Obesity",
+    "Overweight"
+   ],
+   "enrollment": 465,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2025-05-12",
+   "primary_completion": "2026-11",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2027-07",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-02-17",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT06962280"
+  },
+  "NCT07088068": {
+   "nct_id": "NCT07088068",
+   "title": "A Study to Investigate Efficacy and Safety of Teplizumab Compared With Placebo in Participants 1 to 25 Years of Age With Stage 3 Type 1 Diabetes",
+   "acronym": "βETA PRESERVE",
+   "status": "RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 3"
+   ],
+   "phase_grade": "phase3",
+   "sponsor": "Sanofi",
+   "sponsor_class": "INDUSTRY",
+   "conditions": [
+    "Type 1 Diabetes Mellitus"
+   ],
+   "enrollment": 723,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2025-08-06",
+   "primary_completion": "2028-06-06",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2028-12-12",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-10-13",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT07088068"
+  },
+  "NCT07216391": {
+   "nct_id": "NCT07216391",
+   "title": "Platform Trial to Delay Stage 3 Diabetes: Comparing Teplizumab With ATG",
+   "acronym": "TN40A",
+   "status": "RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 2"
+   ],
+   "phase_grade": "phase2",
+   "sponsor": "National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK)",
+   "sponsor_class": "NIH",
+   "conditions": [
+    "Type 1 Diabetes Mellitus"
+   ],
+   "enrollment": 60,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2026-07-29",
+   "primary_completion": "2029-11-30",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2030-05-30",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-09-09",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT07216391"
+  },
+  "NCT07222137": {
+   "nct_id": "NCT07222137",
+   "title": "A Study of Baricitinib (LY3009104) for the Delay of Stage 3 Type 1 Diabetes in At-Risk Children and Adults",
+   "acronym": "BARICADE-DELAY",
+   "status": "RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 3"
+   ],
+   "phase_grade": "phase3",
+   "sponsor": "Eli Lilly and Company",
+   "sponsor_class": "INDUSTRY",
+   "conditions": [
+    "Diabetes Mellitus, Type 1"
+   ],
+   "enrollment": 150,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2026-01-12",
+   "primary_completion": "2031-07",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2031-07",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-10-08",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT07222137"
+  },
+  "NCT07222332": {
+   "nct_id": "NCT07222332",
+   "title": "A Study of Baricitinib (LY3009104) to Preserve Beta Cell Function in Children and Adults Newly Diagnosed With Type 1 Diabetes (BARICADE-PRESERVE)",
+   "acronym": null,
+   "status": "RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 3"
+   ],
+   "phase_grade": "phase3",
+   "sponsor": "Eli Lilly and Company",
+   "sponsor_class": "INDUSTRY",
+   "conditions": [
+    "Diabetes Mellitus, Type 1"
+   ],
+   "enrollment": 300,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2026-02-05",
+   "primary_completion": "2028-07",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2028-07",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-10-08",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT07222332"
+  },
+  "NCT07430332": {
+   "nct_id": "NCT07430332",
+   "title": "GLP-1 RA for Stage 1 Type 1 Diabetes",
+   "acronym": null,
+   "status": "NOT_YET_RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 2"
+   ],
+   "phase_grade": "phase2",
+   "sponsor": "Children's Hospital Medical Center, Cincinnati",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Stage 1 Diabetes Mellitus, Type 1"
+   ],
+   "enrollment": 15,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2027-09-01",
+   "primary_completion": "2029-06-01",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2030-01-01",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-02-24",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT07430332"
+  },
+  "NCT07503028": {
+   "nct_id": "NCT07503028",
+   "title": "An Exploratory Clinical Study Evaluating Allogeneic iPSC-derived Pancreatic Islet Cells (CRG-002) for the Treatment of Diabetic Patients With Hypoglycemia Unawareness or Severe Hypoglycemic Events",
+   "acronym": null,
+   "status": "ENROLLING_BY_INVITATION",
+   "why_stopped": null,
+   "phases": [
+    "Early Phase 1"
+   ],
+   "phase_grade": "phase1",
+   "sponsor": "Celregen Therapeutics",
+   "sponsor_class": "INDUSTRY",
+   "conditions": [
+    "T1DM - Type 1 Diabetes Mellitus",
+    "Pancreatogenic Diabetes Mellitus"
+   ],
+   "enrollment": 10,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2025-10-17",
+   "primary_completion": "2028-01-18",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2028-01-18",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-08-26",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT07503028"
+  },
+  "NCT07581197": {
+   "nct_id": "NCT07581197",
+   "title": "Study of the Safety and Efficacy of Pancreatic Endocrine Cells in Adult Patients With Type 1 Diabetes",
+   "acronym": null,
+   "status": "NOT_YET_RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 1",
+    "Phase 2"
+   ],
+   "phase_grade": "phase1",
+   "sponsor": "Seraxis",
+   "sponsor_class": "INDUSTRY",
+   "conditions": [
+    "Diabete Mellitus",
+    "Diabete Type 1"
+   ],
+   "enrollment": 9,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2026-11",
+   "primary_completion": "2028-11",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2029-11",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-10-19",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT07581197"
+  },
+  "NCT07614412": {
+   "nct_id": "NCT07614412",
+   "title": "SHIELD-T1D: Shingrix and GLP-1 Agonist for Beta-Cell Preservation in Recent-Onset Type 1 Diabetes.",
+   "acronym": "SHIELD-T1D",
+   "status": "NOT_YET_RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 2"
+   ],
+   "phase_grade": "phase2",
+   "sponsor": "Ministry of Health, Saudi Arabia",
+   "sponsor_class": "OTHER_GOV",
+   "conditions": [
+    "Type 1 Diabetes Mellitus"
+   ],
+   "enrollment": 240,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2027-01-01",
+   "primary_completion": "2028-01-31",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2028-12-31",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-05-29",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT07614412"
+  },
+  "NCT07683026": {
+   "nct_id": "NCT07683026",
+   "title": "Platform Trial in Stage 1 Diabetes: Comparing Golimumab vs Placebo",
+   "acronym": null,
+   "status": "NOT_YET_RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 2"
+   ],
+   "phase_grade": "phase2",
+   "sponsor": "National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK)",
+   "sponsor_class": "NIH",
+   "conditions": [
+    "Type 1 Diabetes (T1D)"
+   ],
+   "enrollment": 255,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2026-08-08",
+   "primary_completion": "2032-09-01",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2032-09-01",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-07-06",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT07683026"
+  },
+  "NCT07803744": {
+   "nct_id": "NCT07803744",
+   "title": "A Study of Tirzepatide (LY3298176) in Participants With Type 1 Diabetes Mellitus and Overweight or Obesity",
+   "acronym": null,
+   "status": "RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 1"
+   ],
+   "phase_grade": "phase1",
+   "sponsor": "Eli Lilly and Company",
+   "sponsor_class": "INDUSTRY",
+   "conditions": [
+    "Diabetes Mellitus, Type 1",
+    "Overweight",
+    "Obesity"
+   ],
+   "enrollment": 18,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2026-09-11",
+   "primary_completion": "2026-12",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2026-12",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-09-23",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT07803744"
+  },
+  "NCT07804849": {
+   "nct_id": "NCT07804849",
+   "title": "Oral Verapamil Among Newly Diagnosed Children and Adolescents With Type 1 Diabetes",
+   "acronym": null,
+   "status": "RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 2",
+    "Phase 3"
+   ],
+   "phase_grade": "phase2",
+   "sponsor": "Ain Shams University",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type 1 Diabetes Mellitus"
+   ],
+   "enrollment": 70,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2026-08-20",
+   "primary_completion": "2027-02-20",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2027-03-20",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-09-04",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT07804849"
+  },
+  "NCT07880769": {
+   "nct_id": "NCT07880769",
+   "title": "Verapamil In Preclinical Type 1 Diabetes",
+   "acronym": "VIP-1",
+   "status": "NOT_YET_RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 2",
+    "Phase 3"
+   ],
+   "phase_grade": "phase2",
+   "sponsor": "Assistance Publique - Hôpitaux de Paris",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type 1 Diabetes"
+   ],
+   "enrollment": 50,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2027-01",
+   "primary_completion": "2031-03",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2031-03",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-10-22",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT07880769"
+  },
+  "NCT07891156": {
+   "nct_id": "NCT07891156",
+   "title": "Lean Mass Changes With Semaglutide in Adults With Type 1 Diabetes and Overweight/Obesity.",
+   "acronym": "SEMA-T1D-BODY",
+   "status": "RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 2",
+    "Phase 3"
+   ],
+   "phase_grade": "phase2",
+   "sponsor": "McGill University Health Centre/Research Institute of the McGill University Health Centre",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type 1 Diabetes",
+    "Overweight , Obesity"
+   ],
+   "enrollment": 40,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2026-10-13",
+   "primary_completion": "2028-09-01",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2028-10-01",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-10-23",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT07891156"
+  }
+ }
+}

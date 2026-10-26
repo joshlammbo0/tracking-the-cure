@@ -1,0 +1,546 @@
+{
+ "built_at": "2026-10-26T00:47:28Z",
+ "offline_build": false,
+ "counts": {
+  "programs": 22,
+  "trials": 36,
+  "devices": 14,
+  "companies": 17,
+  "catalysts": 48,
+  "flags": 10
+ },
+ "sources": {
+  "ClinicalTrials.gov": {
+   "ok": true,
+   "detail": "refreshed",
+   "at": "2026-10-26T00:44:54.290107Z"
+  },
+  "Source link check": {
+   "ok": true,
+   "detail": "refreshed",
+   "at": "2026-10-26T00:46:39.802018Z"
+  },
+  "PubMed (cure literature)": {
+   "ok": true,
+   "detail": "refreshed",
+   "at": "2026-10-26T00:46:44.801380Z"
+  },
+  "Google News RSS (headlines)": {
+   "ok": true,
+   "detail": "refreshed",
+   "at": "2026-10-26T00:47:05.604492Z"
+  },
+  "ClinicalTrials.gov (GLP-1 scan)": {
+   "ok": true,
+   "detail": "refreshed",
+   "at": "2026-10-26T00:47:05.939323Z"
+  },
+  "PubMed (GLP-1 in T1D)": {
+   "ok": true,
+   "detail": "refreshed",
+   "at": "2026-10-26T00:47:09.086338Z"
+  },
+  "openFDA drug labels": {
+   "ok": true,
+   "detail": "refreshed",
+   "at": "2026-10-26T00:47:12.318426Z"
+  },
+  "openFDA device decisions": {
+   "ok": true,
+   "detail": "refreshed",
+   "at": "2026-10-26T00:47:13.232611Z"
+  },
+  "Market data: DXCM": {
+   "ok": true,
+   "detail": "refreshed",
+   "at": "2026-10-26T00:47:14.470541Z"
+  },
+  "SEC EDGAR: DXCM": {
+   "ok": true,
+   "detail": "refreshed",
+   "at": "2026-10-26T00:47:14.836750Z"
+  },
+  "Market data: PODD": {
+   "ok": true,
+   "detail": "refreshed",
+   "at": "2026-10-26T00:47:15.578471Z"
+  },
+  "SEC EDGAR: PODD": {
+   "ok": true,
+   "detail": "refreshed",
+   "at": "2026-10-26T00:47:15.609666Z"
+  },
+  "Market data: TNDM": {
+   "ok": true,
+   "detail": "refreshed",
+   "at": "2026-10-26T00:47:16.281469Z"
+  },
+  "SEC EDGAR: TNDM": {
+   "ok": true,
+   "detail": "refreshed",
+   "at": "2026-10-26T00:47:16.380923Z"
+  },
+  "Market data: BBNX": {
+   "ok": true,
+   "detail": "refreshed",
+   "at": "2026-10-26T00:47:17.108323Z"
+  },
+  "SEC EDGAR: BBNX": {
+   "ok": true,
+   "detail": "refreshed",
+   "at": "2026-10-26T00:47:17.188334Z"
+  },
+  "Market data: MMED": {
+   "ok": true,
+   "detail": "refreshed",
+   "at": "2026-10-26T00:47:17.824735Z"
+  },
+  "SEC EDGAR: MMED": {
+   "ok": true,
+   "detail": "refreshed",
+   "at": "2026-10-26T00:47:17.977616Z"
+  },
+  "Market data: SENS": {
+   "ok": true,
+   "detail": "refreshed",
+   "at": "2026-10-26T00:47:18.641695Z"
+  },
+  "SEC EDGAR: SENS": {
+   "ok": true,
+   "detail": "refreshed",
+   "at": "2026-10-26T00:47:18.737914Z"
+  },
+  "Market data: EMBC": {
+   "ok": true,
+   "detail": "refreshed",
+   "at": "2026-10-26T00:47:19.472591Z"
+  },
+  "SEC EDGAR: EMBC": {
+   "ok": true,
+   "detail": "refreshed",
+   "at": "2026-10-26T00:47:19.596151Z"
+  },
+  "Market data: ABT": {
+   "ok": true,
+   "detail": "refreshed",
+   "at": "2026-10-26T00:47:20.535060Z"
+  },
+  "SEC EDGAR: ABT": {
+   "ok": true,
+   "detail": "refreshed",
+   "at": "2026-10-26T00:47:20.566346Z"
+  },
+  "Market data: MDT": {
+   "ok": true,
+   "detail": "refreshed",
+   "at": "2026-10-26T00:47:22.357858Z"
+  },
+  "SEC EDGAR: MDT": {
+   "ok": true,
+   "detail": "refreshed",
+   "at": "2026-10-26T00:47:22.389887Z"
+  },
+  "Market data: LLY": {
+   "ok": true,
+   "detail": "refreshed",
+   "at": "2026-10-26T00:47:23.322696Z"
+  },
+  "SEC EDGAR: LLY": {
+   "ok": true,
+   "detail": "refreshed",
+   "at": "2026-10-26T00:47:23.349671Z"
+  },
+  "Market data: NVO": {
+   "ok": true,
+   "detail": "refreshed",
+   "at": "2026-10-26T00:47:24.326225Z"
+  },
+  "SEC EDGAR: NVO": {
+   "ok": true,
+   "detail": "refreshed",
+   "at": "2026-10-26T00:47:24.350013Z"
+  },
+  "Market data: SNY": {
+   "ok": true,
+   "detail": "refreshed",
+   "at": "2026-10-26T00:47:25.201318Z"
+  },
+  "SEC EDGAR: SNY": {
+   "ok": true,
+   "detail": "refreshed",
+   "at": "2026-10-26T00:47:25.237662Z"
+  },
+  "Market data: VRTX": {
+   "ok": true,
+   "detail": "refreshed",
+   "at": "2026-10-26T00:47:25.967011Z"
+  },
+  "SEC EDGAR: VRTX": {
+   "ok": true,
+   "detail": "refreshed",
+   "at": "2026-10-26T00:47:26.035382Z"
+  },
+  "Market data: SANA": {
+   "ok": true,
+   "detail": "refreshed",
+   "at": "2026-10-26T00:47:26.692552Z"
+  },
+  "SEC EDGAR: SANA": {
+   "ok": true,
+   "detail": "refreshed",
+   "at": "2026-10-26T00:47:26.720873Z"
+  },
+  "Market data: CRSP": {
+   "ok": true,
+   "detail": "refreshed",
+   "at": "2026-10-26T00:47:27.328459Z"
+  },
+  "SEC EDGAR: CRSP": {
+   "ok": true,
+   "detail": "refreshed",
+   "at": "2026-10-26T00:47:27.375330Z"
+  },
+  "Market data: DMYD-B.ST": {
+   "ok": true,
+   "detail": "refreshed",
+   "at": "2026-10-26T00:47:28.149944Z"
+  },
+  "Market data: SVA.TO": {
+   "ok": true,
+   "detail": "refreshed",
+   "at": "2026-10-26T00:47:28.912600Z"
+  }
+ },
+ "links": {
+  "https://abbott.mediaroom.com/2026-01-22-Abbott-Reports-Fourth-Quarter-and-Full-Year-2025-Results-Issues-2026-Financial-Outlook": {
+   "state": "ok",
+   "code": 200,
+   "checked": "2026-10-26"
+  },
+  "https://abbott.mediaroom.com/2026-08-25-Abbott-receives-FDA-authorization-for-worlds-first-dual-glucose-ketone-sensing-technology-for-people-with-diabetes": {
+   "state": "ok",
+   "code": 200,
+   "checked": "2026-10-26"
+  },
+  "https://attd.kenes.com/": {
+   "state": "ok",
+   "code": 200,
+   "checked": "2026-10-26"
+  },
+  "https://clinicaltrials.gov/study/NCT03513939": {
+   "state": "ok",
+   "code": 200,
+   "checked": "2026-10-26"
+  },
+  "https://clinicaltrials.gov/study/NCT04786262": {
+   "state": "ok",
+   "code": 200,
+   "checked": "2026-10-26"
+  },
+  "https://clinicaltrials.gov/study/NCT05018585": {
+   "state": "ok",
+   "code": 200,
+   "checked": "2026-10-26"
+  },
+  "https://clinicaltrials.gov/study/NCT05565248": {
+   "state": "ok",
+   "code": 200,
+   "checked": "2026-10-26"
+  },
+  "https://clinicaltrials.gov/study/NCT05791201": {
+   "state": "ok",
+   "code": 200,
+   "checked": "2026-10-26"
+  },
+  "https://clinicaltrials.gov/study/NCT06111586": {
+   "state": "ok",
+   "code": 200,
+   "checked": "2026-10-26"
+  },
+  "https://clinicaltrials.gov/study/NCT06338553": {
+   "state": "ok",
+   "code": 200,
+   "checked": "2026-10-26"
+  },
+  "https://clinicaltrials.gov/study/NCT06575426": {
+   "state": "ok",
+   "code": 200,
+   "checked": "2026-10-26"
+  },
+  "https://clinicaltrials.gov/study/NCT06914895": {
+   "state": "ok",
+   "code": 200,
+   "checked": "2026-10-26"
+  },
+  "https://clinicaltrials.gov/study/NCT07222137": {
+   "state": "ok",
+   "code": 200,
+   "checked": "2026-10-26"
+  },
+  "https://clinicaltrials.gov/study/NCT07222332": {
+   "state": "unreachable",
+   "code": null,
+   "checked": "2026-10-26"
+  },
+  "https://clinicaltrials.gov/study/NCT07430332": {
+   "state": "unreachable",
+   "code": null,
+   "checked": "2026-10-26"
+  },
+  "https://clinicaltrials.gov/study/NCT07503028": {
+   "state": "unreachable",
+   "code": null,
+   "checked": "2026-10-26"
+  },
+  "https://clinicaltrials.gov/study/NCT07581197": {
+   "state": "unreachable",
+   "code": null,
+   "checked": "2026-10-26"
+  },
+  "https://doi.org/10.1001/jama.2023.2064": {
+   "state": "unreachable",
+   "code": 403,
+   "checked": "2026-10-26"
+  },
+  "https://doi.org/10.1056/EVIDoa2500173": {
+   "state": "unreachable",
+   "code": 403,
+   "checked": "2026-10-26"
+  },
+  "https://doi.org/10.1056/NEJMc2302677": {
+   "state": "unreachable",
+   "code": 403,
+   "checked": "2026-10-26"
+  },
+  "https://doi.org/10.1056/NEJMc2604408": {
+   "state": "unreachable",
+   "code": 403,
+   "checked": "2026-10-26"
+  },
+  "https://doi.org/10.1056/NEJMoa1902226": {
+   "state": "unreachable",
+   "code": 403,
+   "checked": "2026-10-26"
+  },
+  "https://doi.org/10.1056/NEJMoa2006136": {
+   "state": "unreachable",
+   "code": 403,
+   "checked": "2026-10-26"
+  },
+  "https://doi.org/10.1056/NEJMoa2306691": {
+   "state": "unreachable",
+   "code": 403,
+   "checked": "2026-10-26"
+  },
+  "https://doi.org/10.1056/NEJMoa2308743": {
+   "state": "unreachable",
+   "code": 403,
+   "checked": "2026-10-26"
+  },
+  "https://doi.org/10.1056/NEJMoa2506549": {
+   "state": "unreachable",
+   "code": 403,
+   "checked": "2026-10-26"
+  },
+  "https://doi.org/10.2337/dc16-0690": {
+   "state": "unreachable",
+   "code": 403,
+   "checked": "2026-10-26"
+  },
+  "https://doi.org/10.2337/dc16-0691": {
+   "state": "unreachable",
+   "code": 403,
+   "checked": "2026-10-26"
+  },
+  "https://doi.org/10.2337/dc25-2249": {
+   "state": "unreachable",
+   "code": 403,
+   "checked": "2026-10-26"
+  },
+  "https://doi.org/10.2337/dc25-2379": {
+   "state": "unreachable",
+   "code": 403,
+   "checked": "2026-10-26"
+  },
+  "https://investor.tandemdiabetes.com/news-releases/news-release-details/tandem-diabetes-cares-control-iq-automated-insulin-delivery/": {
+   "state": "unreachable",
+   "code": 403,
+   "checked": "2026-10-26"
+  },
+  "https://investors.dexcom.com/": {
+   "state": "ok",
+   "code": 200,
+   "checked": "2026-10-26"
+  },
+  "https://investors.dexcom.com/news/news-details/2026/Dexcom-Reaffirms-CGM-Benefits-for-All-People-With-Diabetes-and-Continues-Momentum-Toward-Earlier-Stage-Intervention-and-Preventative-Care-at-ADA-2026/default.aspx": {
+   "state": "ok",
+   "code": 200,
+   "checked": "2026-10-26"
+  },
+  "https://investors.vrtx.com/news-releases/news-release-details/vertex-reports-first-quarter-2026-financial-results": {
+   "state": "unreachable",
+   "code": 403,
+   "checked": "2026-10-26"
+  },
+  "https://investors.vrtx.com/node/33221/pdf": {
+   "state": "unreachable",
+   "code": 403,
+   "checked": "2026-10-26"
+  },
+  "https://ir.sana.com/news-releases/news-release-details/sana-biotechnology-reports-second-quarter-2026-financial-results": {
+   "state": "unreachable",
+   "code": 403,
+   "checked": "2026-10-26"
+  },
+  "https://news.cision.com/diamyd-medical-ab/r/diamyd-medical-discontinues-diagnode-3-following-evaluation-confirming-futility--initiates-strategic,c4333531": {
+   "state": "ok",
+   "code": 200,
+   "checked": "2026-10-26"
+  },
+  "https://news.vrtx.com/news-releases/news-release-details/vertex-reports-second-quarter-2026-financial-results": {
+   "state": "unreachable",
+   "code": 403,
+   "checked": "2026-10-26"
+  },
+  "https://professional.diabetes.org/scientific-sessions": {
+   "state": "ok",
+   "code": 200,
+   "checked": "2026-10-26"
+  },
+  "https://trials.lilly.com/en-US/trial/589916": {
+   "state": "ok",
+   "code": 200,
+   "checked": "2026-10-26"
+  },
+  "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P160017": {
+   "state": "ok",
+   "code": 200,
+   "checked": "2026-10-26"
+  },
+  "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P160048": {
+   "state": "ok",
+   "code": 200,
+   "checked": "2026-10-26"
+  },
+  "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P250012": {
+   "state": "ok",
+   "code": 200,
+   "checked": "2026-10-26"
+  },
+  "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/denovo.cfm?ID=DEN250049": {
+   "state": "ok",
+   "code": 200,
+   "checked": "2026-10-26"
+  },
+  "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K203768": {
+   "state": "ok",
+   "code": 200,
+   "checked": "2026-10-26"
+  },
+  "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K220916": {
+   "state": "ok",
+   "code": 200,
+   "checked": "2026-10-26"
+  },
+  "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K234070": {
+   "state": "ok",
+   "code": 200,
+   "checked": "2026-10-26"
+  },
+  "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K243214": {
+   "state": "ok",
+   "code": 200,
+   "checked": "2026-10-26"
+  },
+  "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K250930": {
+   "state": "ok",
+   "code": 200,
+   "checked": "2026-10-26"
+  },
+  "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K252818": {
+   "state": "ok",
+   "code": 200,
+   "checked": "2026-10-26"
+  },
+  "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K260001": {
+   "state": "ok",
+   "code": 200,
+   "checked": "2026-10-26"
+  },
+  "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K260429": {
+   "state": "ok",
+   "code": 200,
+   "checked": "2026-10-26"
+  },
+  "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K261461": {
+   "state": "ok",
+   "code": 200,
+   "checked": "2026-10-26"
+  },
+  "https://www.barchart.com/story/news/31674354/sernova-biotherapeutics-provides-update-on-phase-1-2-clinical-trial-of-cell-pouch-bio-hybrid-organ-for-treatment-of-type-1-diabetes": {
+   "state": "ok",
+   "code": 200,
+   "checked": "2026-10-26"
+  },
+  "https://www.easd.org/annual-meeting/": {
+   "state": "ok",
+   "code": 200,
+   "checked": "2026-10-26"
+  },
+  "https://www.easd.org/annual-meeting/easd-2026/": {
+   "state": "ok",
+   "code": 200,
+   "checked": "2026-10-26"
+  },
+  "https://www.fda.gov/media/164864/download": {
+   "state": "ok",
+   "code": 200,
+   "checked": "2026-10-26"
+  },
+  "https://www.fda.gov/news-events/press-announcements/fda-approves-first-cellular-therapy-treat-patients-type-1-diabetes": {
+   "state": "ok",
+   "code": 200,
+   "checked": "2026-10-26"
+  },
+  "https://www.fda.gov/news-events/press-announcements/fda-approves-new-indication-tzield-teplizumab-certain-pediatric-patients-recently-diagnosed-stage-3": {
+   "state": "ok",
+   "code": 200,
+   "checked": "2026-10-26"
+  },
+  "https://www.fiercebiotech.com/biotech/novo-nordisk-offloads-diabetes-assets-aspect-amid-cell-therapy-retreat": {
+   "state": "ok",
+   "code": 200,
+   "checked": "2026-10-26"
+  },
+  "https://www.fiercebiotech.com/medtech/dexcom-wins-fda-clearance-15-day-g7-cgm-sensor": {
+   "state": "ok",
+   "code": 200,
+   "checked": "2026-10-26"
+  },
+  "https://www.globenewswire.com/news-release/2026/03/13/3255502/0/en/sana-biotechnology-announces-continued-positive-clinical-results-through-14-months-from-type-1-diabetes-study-of-islet-cell-transplantation-without-immunosuppression.html": {
+   "state": "unreachable",
+   "code": 403,
+   "checked": "2026-10-26"
+  },
+  "https://www.globenewswire.com/news-release/2026/04/13/3272888/0/en/sana-biotechnology-and-mayo-clinic-announce-strategic-collaboration-focused-on-improving-care-in-type-1-diabetes-and-accelerating-development-of-sc451.html": {
+   "state": "unreachable",
+   "code": 403,
+   "checked": "2026-10-26"
+  },
+  "https://www.medtechdive.com/news/beta-bionics-insulin-patch-pump-gets-fda-nod/830332/": {
+   "state": "ok",
+   "code": 200,
+   "checked": "2026-10-26"
+  },
+  "https://www.sec.gov/Archives/edgar/data/1121404/000119312526014575/d100861dex991.htm": {
+   "state": "ok",
+   "code": 200,
+   "checked": "2026-10-26"
+  },
+  "https://www.fda.gov/news-events/press-announcements/fda-approves-first-drug-can-delay-onset-type-1-diabetes": {
+   "state": "broken",
+   "code": 404,
+   "checked": "2026-10-24"
+  }
+ }
+}

@@ -5,20 +5,25 @@
 {% set crumbs = [(root ~ ("pipeline/" if p.section == "cure" else "glp1/"), "Cure pipeline" if p.section == "cure" else "GLP-1s in T1D")] %}
 {% call ui.page_head(p.approach_label, p.name, "", crumbs) %}
 <div class="row mt-3">{{ ui.status_badge(p.status) }}<span class="badge">{{ p.company }}</span>{% if p.ticker %}{% if p.company_slug %}<a class="badge accent" href="{{ root }}companies/{{ p.company_slug }}/">{{ p.ticker }} →</a>{% else %}<span class="badge">{{ p.ticker }}</span>{% endif %}{% endif %}</div>
-<div class="grades mt-6">
+<div class="verdict-strip mt-6">
   <div class="grade"><div class="k">Stage reached</div><div class="v">{{ p.stage|grade }}</div></div>
   <div class="grade"><div class="k">Evidence read out</div><div class="v">{{ p.evidence|grade }}</div></div>
+  <div class="grade"><div class="k">Ahead of results</div><div class="v">{% if p.status == 'discontinued' %}—{% elif p.gap > 0 %}+{{ p.gap }}{% else %}0{% endif %}</div></div>
+  <div class="grade next"><div class="k">Next catalyst</div>
+    {% if p.next_catalyst %}<div class="nc"><b>{{ p.next_catalyst.label }}</b><span class="sub">{{ p.next_label }}{% if p.next_catalyst.date_precision %} · {{ ("registry" if p.next_catalyst.date_precision == "registry" else p.next_catalyst.date_precision)|prec_note }}{% endif %}{% if p.next_catalyst.nct_id %} · <a href="https://clinicaltrials.gov/study/{{ p.next_catalyst.nct_id }}" rel="noopener">{{ p.next_catalyst.nct_id }}</a>{% endif %}</span></div>
+    {% else %}<div class="nc"><span class="sub">None identified.</span></div>{% endif %}
+  </div>
 </div>
-<div class="mt-3" style="max-width:560px">{{ ui.ladder(p) }}<div class="hype-head" style="border:0;grid-template-columns:1fr;padding:4px 0 0"><span class="scale">{% for g in GRADES %}<span>{{ GRADE_SHORT[g] }}</span>{% endfor %}</span></div></div>
+<div class="verdict-track">{{ ui.ladder(p, big=True) }}<div class="hype-head" aria-hidden="true"><span class="scale">{% for g in GRADES %}<span>{{ GRADE_SHORT[g] }}</span>{% endfor %}</span></div></div>
 <div class="meta"><span>Modality: <b>{{ p.modality }}</b></span>{% if p.population %}<span>Population: <b>{{ p.population }}</b></span>{% endif %}<span>Curated record verified <b>{{ p.verified_on|fdate }}</b></span></div>
 {% endcall %}
 <div class="wrap">
 <section class="section" style="padding-top:var(--sp-6)">
   <div class="cols cols-2-1">
     <div class="prose">
-      <h2 class="mt-0" style="font-size:var(--fs-xl)">Summary</h2>
+      <div class="callout big mt-0"><span class="label">Reality check</span><p>{{ p.reality_check }}</p></div>
+      <h2 style="font-size:var(--fs-xl)">Summary</h2>
       <p>{{ p.summary }}</p>
-      <div class="callout big"><span class="label">Reality check</span><p>{{ p.reality_check }}</p></div>
       {% if p.my_commentary %}<div class="callout mine"><span class="label">My take · personal perspective</span><p>{{ p.my_commentary }}</p></div>{% endif %}
       {% if p.endpoints %}
       <h3>Reported endpoints</h3>
@@ -30,14 +35,9 @@
       {% endif %}
     </div>
     <aside>
-      <h4 class="mb-3">Next catalyst</h4>
-      {% if p.next_catalyst %}
-      <p class="mb-0"><b>{{ p.next_catalyst.label }}</b></p>
-      <p class="small muted">{{ p.next_label }}{% if p.next_catalyst.date_precision %} · {{ ("registry" if p.next_catalyst.date_precision == "registry" else p.next_catalyst.date_precision)|prec_note }}{% endif %}{% if p.next_catalyst.nct_id %} · <a href="https://clinicaltrials.gov/study/{{ p.next_catalyst.nct_id }}" rel="noopener">{{ p.next_catalyst.nct_id }}</a>{% endif %}</p>
-      {% else %}<p class="small muted">None identified.</p>{% endif %}
-      <h4 class="mb-3 mt-6">Verification flags</h4>
+      <h2 class="label-h mb-3">Verification flags</h2>
       {% if p.flags %}{{ ui.flags(p.flags) }}{% else %}<p class="small muted">No open flags: registry data and the curated record agree.</p>{% endif %}
-      {% if related %}<h4 class="mb-3 mt-6">Same company</h4><ul class="list">{% for q in related %}<li class="nodate"><span class="what"><a href="{{ root }}{{ q.url }}">{{ q.name }}</a><span class="sub">{{ q.stage|grade }} stage · {{ q.evidence|grade }} evidence{% if q.status != "active" %} · {{ q.status }}{% endif %}</span></span></li>{% endfor %}</ul>{% endif %}
+      {% if related %}<h2 class="label-h mb-3 mt-6">Same company</h2><ul class="list">{% for q in related %}<li class="nodate"><span class="what"><a href="{{ root }}{{ q.url }}">{{ q.name }}</a><span class="sub">{{ q.stage|grade }} stage · {{ q.evidence|grade }} evidence{% if q.status != "active" %} · {{ q.status }}{% endif %}</span></span></li>{% endfor %}</ul>{% endif %}
     </aside>
   </div>
 </section>

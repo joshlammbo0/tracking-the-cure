@@ -95,6 +95,29 @@ change log (status changes and date slips); new GLP-1 trials in T1D; new FDA dev
 decisions; GLP-1 label wording; PubMed papers; headlines; prices, returns, market caps,
 revenue, earnings dates; and SEC filings.
 
+## Design checks (development only)
+
+The visual redesign is protected by three scripts in `tools/` (install `requirements-dev.txt`, which adds pytest
+and Playwright; nothing here runs in the daily Action):
+
+```bash
+.venv/bin/pip install -r requirements-dev.txt && .venv/bin/python -m playwright install chromium
+```
+
+```bash
+.venv/bin/python -m tools.numbers check
+```
+
+* `tools.numbers`: renders the site from a frozen data snapshot (`docs/redesign/baseline/`) at a fixed date and
+  compares every displayed number, unit and caveat, plus all model outputs and the CSV, with the pre-redesign
+  baseline. Any change not listed in `docs/redesign/approved_changes.yaml` fails the check.
+* `tools.shots --site DIR --out DIR`: full-page screenshots (1440/768/375 × light/dark) and layout/accessibility
+  metrics (first-chart position, overflow, WCAG contrast, heading order, JS/Python model agreement).
+* `tools.palette`: checks the colour tokens in `style.css` for AA contrast and colour-blind separation.
+
+`pipeline.render` also accepts `--data-dir`, `--today` (used by the checks) and `--styleguide` (renders a
+development-only `/styleguide/` component page that is never deployed). Plans and phase reports are in `docs/redesign/`.
+
 ## Layout
 
 ```
@@ -102,9 +125,12 @@ data/              curated YAML (programs, devices, companies, catalysts, market
 pipeline/          build.py (data refresh) + ctgov, pubmed, openfda, sec, markets, news
                    model.py (Cure Impact Model), render.py (static pages), charts.py (SVG), og.py (share images)
 templates/         Jinja2 page templates; research/ holds the research notes
-site/assets/       style.css (the design system), app.js, model.js, favicon, og/ (cached share images)
+site/assets/       style.css (the design system), app.js, model.js (model maths, browser port), model-view.js
+                   (display-only model visuals), favicon, og/ (cached share images)
+tools/             development checks for the redesign: numbers guard, screenshots/metrics, palette validator
+docs/redesign/     audit, phase reports, frozen baseline data, approved text changes
 site/data/         JSON written by the daily job (committed by the bot)
-tests/             pytest: validation, parsing, model, full render + link check
+tests/             pytest: validation, parsing, model, full render + link check, presentation and numbers-guard checks
 .github/workflows/refresh.yml   daily: refresh → commit data → render → deploy to Pages
 .github/workflows/validate.yml  PR check: tests, offline build, render
 DESIGN_NOTES.md    design critique, plan and decision log for the rebuild

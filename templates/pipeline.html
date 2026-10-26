@@ -7,8 +7,25 @@
 <div class="wrap">
 <section class="section" aria-labelledby="h-map" style="padding-top:var(--sp-6)">
   <div class="section-head"><div><span class="eyebrow">Overview</span><h2 id="h-map">Stage vs. evidence, by approach</h2><p>{{ ui.hype_explainer() }}</p></div></div>
+  <div class="pipe-controls js-only">
+    <div class="segmented" role="group" aria-label="Arrange programs">
+      <button type="button" class="chip" data-arrange="approach" aria-pressed="true">By approach</button>
+      <button type="button" class="chip" data-arrange="stage" aria-pressed="false">By stage</button>
+      <button type="button" class="chip" data-arrange="gap" aria-pressed="false">By gap</button>
+    </div>
+    <div class="segmented" role="group" aria-label="View">
+      <button type="button" class="chip" data-pview="track" aria-pressed="true">Tracks</button>
+      <button type="button" class="chip" data-pview="matrix" aria-pressed="false">Matrix</button>
+    </div>
+  </div>
+  <div id="pipe-track">
   {{ ui.hype_legend() }}
   {{ ui.hype_map(cure|sort(attribute="name")|sort(attribute="evidence_i", reverse=True)|sort(attribute="stage_i", reverse=True)|sort(attribute="approach"), root, groups=True) }}
+  </div>
+  <div id="pipe-matrix" hidden>
+  <p class="small ink2">Active programs only. Shaded diagonal: evidence matches stage. Cells to the right of it are stages reached without reported results; grey cells are impossible.</p>
+  {{ ui.stage_matrix(cure|selectattr("status","eq","active")|list, root) }}
+  </div>
 </section>
 {% for key, ab in APPROACH.items() %}{% set label = ab[0] %}{% set blurb = ab[1] %}
 {% set ps = cure|selectattr("approach", "eq", key)|list %}

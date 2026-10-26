@@ -189,3 +189,70 @@ def spark(values, w=96, h=28):
 def _wrap(out, cfg, chart_id):
     idattr = ' id="{}"'.format(esc(chart_id)) if chart_id else ""
     return '<div class="chart"{} data-chart="{}">{}</div>'.format(idattr, esc(json.dumps(cfg, separators=(",", ":"))), "".join(out))
+
+
+def context_area(x, baseline, displaced, label, marker=None, w=760, h=360, compact=False, chart_id=None):
+    """Displaced revenue drawn inside the revenue it is a share of (same year, same denominator).
+
+    baseline  : T1D-attributable revenue in the no-cure baseline, per year (model output)
+    displaced : revenue displaced by the cure, per year (model output; always <= baseline)
+    marker    : (year, text) for an assumption marker such as the approval year
+    Direct labels sit at the right edge; compact=True is the narrow (phone) layout.
+    """
+    n = len(x)
+    m = {"t": 34, "r": 16 if compact else 150, "b": 28, "l": 50}
+    step, top = _scale(max(baseline) if baseline else 1)
+    pw, ph = w - m["l"] - m["r"], h - m["t"] - m["b"]
+
+    def X(i):
+        return m["l"] + (i / (n - 1)) * pw
+
+    def Y(v):
+        return m["t"] + ph - (v / top) * ph
+
+    out = ['<svg viewBox="0 0 {} {}" role="img" aria-label="{}" preserveAspectRatio="xMidYMid meet">'.format(w, h, esc(label))]
+    out.append('<g class="grid">')
+    v = 0.0
+    while v <= top + 1e-9:
+        out.append('<line x1="{}" x2="{}" y1="{:.1f}" y2="{:.1f}"/>'.format(m["l"], w - m["r"], Y(v), Y(v)))
+        v += step
+    out.append("</g>")
+    v = 0.0
+    while v <= top + 1e-9:
+        out.append('<text x="{}" y="{:.1f}" text-anchor="end" dy="0.32em">{}</text>'.format(m["l"] - 8, Y(v), esc(money(v, 0) if v else "$0")))
+        v += step
+    base_pts = " ".join("{:.1f},{:.1f}".format(X(i), Y(baseline[i])) for i in range(n))
+    floor = "{:.1f},{:.1f} {:.1f},{:.1f}".format(X(n - 1), Y(0), X(0), Y(0))
+    out.append('<polygon class="fill-baseline" points="{} {}"/>'.format(base_pts, floor))
+    out.append('<polyline class="line stroke-baseline" points="{}"/>'.format(base_pts))
+    disp_pts = " ".join("{:.1f},{:.1f}".format(X(i), Y(displaced[i])) for i in range(n))
+    out.append('<polygon class="fill-accent" points="{} {}"/>'.format(disp_pts, floor))
+    out.append('<polyline class="line stroke-accent" points="{}"/>'.format(disp_pts))
+    out.append('<line class="base" x1="{}" x2="{}" y1="{:.1f}" y2="{:.1f}"/>'.format(m["l"], w - m["r"], Y(0), Y(0)))
+    every = 5 if n > 8 else 1
+    for i, xv in enumerate(x):
+        if i % every == 0 or i == n - 1:
+            out.append('<text x="{:.1f}" y="{}" text-anchor="middle">{}</text>'.format(X(i), h - 8, esc(xv)))
+    if marker and str(marker[0]) in [str(v) for v in x]:
+        i = [str(v) for v in x].index(str(marker[0]))
+        out.append('<line class="xmark" x1="{0:.1f}" x2="{0:.1f}" y1="{1}" y2="{2:.1f}"/>'.format(X(i), m["t"] - 14, Y(0)))
+        out.append('<text class="lbl" x="{:.1f}" y="{}" text-anchor="middle">{}</text>'.format(X(i), m["t"] - 20, esc(marker[1])))
+    # end values: the baseline and the displaced share of it in the last year
+    xe = X(n - 1)
+    out.append('<circle class="marker" cx="{:.1f}" cy="{:.1f}" r="4" fill="var(--ink-2)"/>'.format(xe, Y(baseline[-1])))
+    out.append('<circle class="marker" cx="{:.1f}" cy="{:.1f}" r="4" fill="var(--accent)"/>'.format(xe, Y(displaced[-1])))
+    if compact:
+        out.append('<text class="val" x="{:.1f}" y="{:.1f}" text-anchor="end">{}</text>'.format(xe - 8, Y(baseline[-1]) - 10, esc(money(baseline[-1]))))
+        out.append('<text class="val accent" x="{:.1f}" y="{:.1f}" text-anchor="end">{}</text>'.format(xe - 8, Y(displaced[-1]) - 10, esc(money(displaced[-1]))))
+    else:
+        out.append('<text class="val" x="{:.1f}" y="{:.1f}">{}</text>'.format(xe + 10, Y(baseline[-1]) + 4, esc(money(baseline[-1]))))
+        out.append('<text x="{:.1f}" y="{:.1f}">T1D-attributable</text>'.format(xe + 10, Y(baseline[-1]) + 20))
+        out.append('<text x="{:.1f}" y="{:.1f}">revenue, no cure</text>'.format(xe + 10, Y(baseline[-1]) + 34))
+        out.append('<text class="val accent" x="{:.1f}" y="{:.1f}">{}</text>'.format(xe + 10, Y(displaced[-1]) - 2, esc(money(displaced[-1]))))
+        out.append('<text x="{:.1f}" y="{:.1f}">displaced</text>'.format(xe + 10, Y(displaced[-1]) + 12))
+    out.append('<text x="{:.1f}" y="{:.1f}" text-anchor="start" class="val">{}</text>'.format(X(0) + 6, Y(baseline[0]) - 8, esc(money(baseline[0]))))
+    out.append("</svg>")
+    cfg = {"type": "context", "x": [str(v) for v in x], "w": w, "h": h, "m": m, "top": top,
+           "series": [{"name": "T1D-attributable revenue, no cure", "cls": "baseline", "values": [round(v) for v in baseline]},
+                      {"name": "Displaced by a cure", "cls": "accent", "values": [round(v) for v in displaced]}]}
+    return _wrap(out, cfg, chart_id)

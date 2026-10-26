@@ -1,0 +1,4 @@
+# Development-only tools (tests, redesign regression checks, screenshots). Not used by the daily Action.
+-r requirements.txt
+pytest
+playwright

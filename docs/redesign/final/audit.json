@@ -1,0 +1,76 @@
+{
+ "pages": {},
+ "interactions": [
+  {
+   "check": "Theme toggle switches and persists",
+   "ok": true,
+   "detail": "None\u2192dark (kept after reload: dark)"
+  },
+  {
+   "check": "More menu",
+   "ok": true,
+   "detail": "opens, Escape closes"
+  },
+  {
+   "check": "Homepage chart keyboard tooltip",
+   "ok": true,
+   "detail": "2040 Displaced by a cure $3.2B T1D-attributable revenue, no cure $91.0B Share displaced 3.5%"
+  },
+  {
+   "check": "Model: JS equals Python for all presets",
+   "ok": true,
+   "detail": "\"ok\""
+  },
+  {
+   "check": "Model: presets update tiles to Python values",
+   "ok": true,
+   "detail": "2040 tiles {'bear': '$694M', 'base': '$3.2B', 'bull': '$15.6B', 'immuno': '$434M'} vs Python {'bear': '$694M', 'base': '$3.2B', 'bull': '$15.6B', 'immuno': '$434M'}"
+  },
+  {
+   "check": "Model: sliders keep tiles, context chart, bars and table in sync",
+   "ok": true,
+   "detail": "tile $4.6B context ['$4.6B'] bar 30.5% table 30.5% label current inputs"
+  },
+  {
+   "check": "Model: chart view toggle",
+   "ok": true,
+   "detail": "context/market toggle"
+  },
+  {
+   "check": "Model: Export menu downloads CSV",
+   "ok": true,
+   "detail": "download cure-impact-model-custom.csv"
+  },
+  {
+   "check": "Model: print stylesheet",
+   "ok": true,
+   "detail": "print hides chrome and export menu"
+  },
+  {
+   "check": "Pipeline: arrange by gap, matrix view, restore grouping",
+   "ok": true,
+   "detail": "gap order [2, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, -1, -1, -1], matrix True, groups restored 4"
+  },
+  {
+   "check": "Companies: group filter and sortable column",
+   "ok": true,
+   "detail": "filter: 9 shown, sort: descending"
+  },
+  {
+   "check": "Catalysts: full table opens and filters",
+   "ok": true,
+   "detail": "readouts: 22 shown"
+  },
+  {
+   "check": "Mobile menu lists every destination",
+   "ok": true,
+   "detail": "10 links visible"
+  }
+ ],
+ "summary": {
+  "page_configurations": 330,
+  "with_issues": 0,
+  "interactions_passed": 13,
+  "interactions_total": 13
+ }
+}
