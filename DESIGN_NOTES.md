@@ -137,3 +137,10 @@ The critique's central point held up: density and hierarchy, not palette or font
 
 Declined from the critique: removing the timeline/table duplication on Catalysts (they serve different jobs) and
 cutting navigation destinations (eight is right; the menu now collapses below 1080px).
+
+## 7. Visual redesign (branch `redesign/visual`)
+
+Phase 0 audit: `docs/redesign/PHASE0_AUDIT.md`. Phase 1 report: `docs/redesign/PHASE1_REPORT.md`.
+Every phase is checked against a frozen data snapshot with `python -m tools.numbers check` (no displayed number,
+unit or caveat may change without approval) and `python -m tools.shots` (full-page screenshots and layout/a11y
+metrics), plus `python -m tools.palette` for colour tokens.

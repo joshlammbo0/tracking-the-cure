@@ -32,7 +32,7 @@ try{var t=localStorage.getItem("ttc-theme");if(t==="dark"||t==="light")d.setAttr
 </script>
 {% block head %}{% endblock %}
 </head>
-<body>
+<body class="{% block body_class %}{% endblock %}">
 <a class="skip" href="#main">Skip to content</a>
 <div class="disclaimer-bar" role="note">
   <div class="wrap"><b>Not medical advice. Not investment advice.</b><span>Independent research. Data may be incomplete or delayed; every record links to its source.</span></div>
@@ -44,7 +44,12 @@ try{var t=localStorage.getItem("ttc-theme");if(t==="dark"||t==="light")d.setAttr
       <span><span class="brand-name">Tracking the Cure</span><span class="brand-sub">Independent T1D research</span></span>
     </a>
     <nav class="nav" aria-label="Main">
-      {% for href, label in NAV[1:] %}<a href="{{ root }}{{ href }}"{% if path.startswith(href) and href %} aria-current="page"{% endif %}>{{ label }}</a>{% endfor %}
+      {% for href, label in NAV_PRIMARY %}<a href="{{ root }}{{ href }}"{% if path.startswith(href) %} aria-current="page"{% endif %}>{{ label }}</a>{% endfor %}
+      {% set more_current = NAV_MORE|selectattr(0, "in", [path[:path.find("/")+1] if "/" in path else path])|list %}
+      <details class="nav-more{{ ' has-current' if more_current }}">
+        <summary>More</summary>
+        <div class="menu">{% for href, label in NAV_MORE %}<a href="{{ root }}{{ href }}"{% if path.startswith(href) %} aria-current="page"{% endif %}>{{ label }}</a>{% endfor %}</div>
+      </details>
     </nav>
     <details class="nav-toggle">
       <summary aria-label="Menu">Menu</summary>
@@ -89,7 +94,7 @@ try{var t=localStorage.getItem("ttc-theme");if(t==="dark"||t==="light")d.setAttr
         </ul>
       </div>
     </div>
-    <p class="fine">News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry dates are sponsor estimates and often slip.</p>
+    <p class="fine">Independent research. Data may be incomplete or delayed; every record links to its source. News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry dates are sponsor estimates and often slip.</p>
   </div>
 </footer>
 <script src="{{ root }}assets/app.js?v={{ v["app.js"] }}" defer></script>

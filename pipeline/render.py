@@ -75,6 +75,10 @@ MONTHS = "Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec".split()
 NAV = [("", "Overview"), ("model/", "Cure Impact Model"), ("pipeline/", "Cure pipeline"), ("glp1/", "GLP-1s"),
        ("medtech/", "Medtech"), ("companies/", "Companies"), ("catalysts/", "Catalysts"), ("research/", "Research"),
        ("about/", "About")]
+# Desktop/tablet masthead: five primary destinations plus a "More" menu (short labels to fit from 720px up).
+NAV_PRIMARY = [("model/", "Model"), ("pipeline/", "Pipeline"), ("companies/", "Companies"), ("catalysts/", "Catalysts"),
+               ("research/", "Research")]
+NAV_MORE = [("glp1/", "GLP-1s in T1D"), ("medtech/", "Medtech"), ("methodology/", "Methodology"), ("about/", "About")]
 
 NOTES = [
     {"slug": "glp1s-and-the-t1d-label", "template": "research/glp1_label.html",
@@ -166,8 +170,11 @@ def quarter_of(s):
 
 
 # ------------------------------------------------------------------ data loading
+DATA_JSON = SRC / "data"  # overridable with --data-dir (frozen snapshots for regression checks)
+
+
 def load_json(name, default=None):
-    p = SRC / "data" / name
+    p = DATA_JSON / name
     if not p.exists():
         return default
     return json.loads(p.read_text())
@@ -320,6 +327,16 @@ def model_page_data(D, market):
         ]
     chart = Markup(charts.stacked_area(x, series(base), "Projected T1D-attributable revenue displaced by a functional cure, base case, 2025 to 2040",
                                        marks=(2035, 2040), chart_id="model-chart"))
+    # Homepage hero: displaced revenue inside the T1D-attributable baseline it is a share of. Both series are existing
+    # model.run() outputs (t1d_baseline_total, displaced_total) for the base case; nothing is recalculated here.
+    rows = base["rows"]
+    hero_args = ([r["year"] for r in rows], [r["t1d_baseline_total"] for r in rows], [r["displaced_total"] for r in rows],
+                 "T1D-attributable revenue in the no-cure baseline and the part a cure displaces, base case, 2025 to 2040")
+    approval = base["inputs"]["approval"]
+    hero = {"wide": Markup(charts.context_area(*hero_args, marker=(approval, "Approval {} · assumption".format(approval)))),
+            "narrow": Markup(charts.context_area(*hero_args, marker=(approval, "Approval {} · assumption".format(approval)),
+                                                 w=360, h=300, compact=True)),
+            "baseline_2025": rows[0]["t1d_baseline_total"], "baseline_2040": rows[-1]["t1d_baseline_total"]}
     exposures = model.company_exposure(D["companies"])
     js = {
         "market": {"base_year": market["base_year"], "markets": market["markets"], "population": market["population"]},
@@ -337,10 +354,32 @@ def model_page_data(D, market):
     for r in ra_rows:
         r["kind"] = model.classify(r)
         r["slug"] = slug_ticker(r["ticker"])
+    # Read-across chart categories. Pure-plays whose modelled revenue mix is identical get identical results by
+    # construction, so they are drawn once with their names listed (not as several identical bars).
+    PURE = {"pump": "Pump pure-plays", "cgm": "CGM pure-plays", "insulin": "Insulin-delivery pure-plays"}
+    cats, groups = [], {}
+    for r in ra_rows:
+        if not r["exposure"] or not (r["years"].get("2040") or {}):
+            continue
+        key = tuple(sorted(r["exposure"].items()))
+        if len(key) == 1 and key[0][1] >= 0.95:
+            groups.setdefault(key, []).append(r)
+        else:
+            cats.append({"label": r["name"], "members": None, "tickers": [r["ticker"]],
+                         "value": r["years"]["2040"]["pct_current_rev"]})
+    for key, members in groups.items():
+        vals = {round(m["years"]["2040"]["pct_current_rev"], 12) for m in members}
+        assert len(vals) == 1, "pure-play group with differing results: " + str([m["ticker"] for m in members])
+        label = PURE[key[0][0]] if len(members) > 1 else members[0]["name"]
+        cats.append({"label": label, "members": ", ".join(m["name"] for m in members) if len(members) > 1 else None,
+                     "tickers": [m["ticker"] for m in members], "value": members[0]["years"]["2040"]["pct_current_rev"]})
+    cats.sort(key=lambda c: -c["value"])
+    js["categories"] = [{k: c[k] for k in ("label", "members", "tickers")} for c in cats]
+    not_modelled = [r["name"] for r in ra_rows if not r["exposure"] or not r["years"].get("2040")]
     sens = mj["sensitivity"]
     for g in sens.values():
         g["bins"] = heat_bins(g["values"])
-    return {"json": mj, "results": results, "chart": chart, "js": js, "ra": ra_rows, "series": series, "sens": sens,
+    return {"json": mj, "results": results, "chart": chart, "hero": hero, "js": js, "ra_cats": cats, "ra_not_modelled": not_modelled, "ra": ra_rows, "series": series, "sens": sens,
             "csv": model.to_csv(market, results)}
 
 
@@ -459,7 +498,7 @@ class Site:
         self.env.tests["startingwith"] = lambda v, prefix: str(v).startswith(prefix)
         self.env.globals.update(GRADES=GRADES, GRADE_LABEL=GRADE_LABEL, GRADE_SHORT=GRADE_SHORT, APPROACH=APPROACH,
                                 CAT_TYPE=CAT_TYPE, SITE_NAME=SITE_NAME, SITE_URL=SITE_URL,
-                                NAV=NAV, today=TODAY, days_until=days_until, DEVICE_STATUS=DEVICE_STATUS)
+                                NAV=NAV, NAV_PRIMARY=NAV_PRIMARY, NAV_MORE=NAV_MORE, today=TODAY, days_until=days_until, DEVICE_STATUS=DEVICE_STATUS)
 
     def page(self, path, template, title, description, og_key=None, og_kicker="", **ctx):
         """path is the directory URL relative to the site root ('' for home, 'model/' ...)."""
@@ -481,14 +520,14 @@ class Site:
             self.pages.append(path)
 
 
-def render(out=OUT):
+def render(out=OUT, styleguide=False):
     D = load_all()
     market = D["market"]
     if out.exists():
         shutil.rmtree(out)
     out.mkdir(parents=True)
     shutil.copytree(SRC / "assets", out / "assets", ignore=shutil.ignore_patterns("og"))
-    shutil.copytree(SRC / "data", out / "data")
+    shutil.copytree(DATA_JSON, out / "data")
     enrich_programs(D)
     enrich_companies(D, market)
     md = model_page_data(D, market)
@@ -500,7 +539,7 @@ def render(out=OUT):
     S = Site(out)
     # Content hashes as ?v= cache-busters, so a deploy never serves a stale stylesheet or script.
     S.env.globals["v"] = {n: hashlib.sha1((SRC / "assets" / n).read_bytes()).hexdigest()[:10]
-                          for n in ("style.css", "app.js", "model.js")}
+                          for n in ("style.css", "app.js", "model.js", "model-view.js")}
     S.env.globals.update(built_at=built, built_date=built_date, built_human=fdate(built_date), meta=meta)
     cure = [p for p in D["programs"] if p["section"] == "cure"]
     glp = [p for p in D["programs"] if p["section"] == "glp1"]
@@ -589,6 +628,10 @@ def render(out=OUT):
            "Who built Tracking the Cure and why: an independent research project by someone living with type 1 diabetes.",
            og_kicker="About", **common)
     S.page("404.html", "404.html", "Page not found", "This page does not exist.", og_key="home", **common)
+    if styleguide:  # development reference page: noindex, not linked, not in the sitemap, never built by the Action
+        S.page("styleguide/", "styleguide.html", "Design system reference", "Development-only component reference.",
+               og_key="home", **common)
+        S.pages.remove("styleguide/")
 
     # og images, sitemap, robots
     shutil.copytree(SRC / "assets" / "og", out / "og")
@@ -642,9 +685,18 @@ def quarters(upcoming, n=3):
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", default=str(OUT))
+    # Development-only switches for reproducible renders (numerical regression checks). Defaults leave the
+    # production build untouched: live site/data and today's date.
+    ap.add_argument("--data-dir", default=None, help="read JSON from this folder instead of site/data")
+    ap.add_argument("--today", default=None, help="render as if today were YYYY-MM-DD")
+    ap.add_argument("--styleguide", action="store_true", help="also render the development-only /styleguide/ page")
     a = ap.parse_args()
+    if a.data_dir:
+        DATA_JSON = pathlib.Path(a.data_dir).resolve()
+    if a.today:
+        TODAY = dt.date.fromisoformat(a.today)
     try:
-        render(pathlib.Path(a.out))
+        render(pathlib.Path(a.out), styleguide=a.styleguide)
     except Exception:
         import traceback
         traceback.print_exc()

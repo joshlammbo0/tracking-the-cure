@@ -11,6 +11,7 @@
 {% call ui.page_head("Research", "Research notes", "Short analytical write-ups built from the tracked data. Every figure is pulled from the same records and model the rest of the site uses, and every claim is cited. These notes are analysis, not advice.") %}{% endcall %}
 <div class="wrap">
 <section class="section" style="padding-top:var(--sp-6)">
+  <h2 class="sr-only">All research notes</h2>
   <div class="note-cards">
   {% for n in notes_meta %}{% set f = fig.get(n.slug) %}
     <a class="note-card" href="{{ root }}research/{{ n.slug }}/">

@@ -1,0 +1,680 @@
+_comment: 'Owner-approved presentation text changes. Phase 1 (approved 2026-10-26): nav label ''GLP-1s'' -> ''GLP-1s in T1D'' in the More menu; footer now repeats the disclaimer bar''s second sentence.
+  Phase 2 (approved 2026-10-26): new homepage H1; T1D-attributable baseline values, axis labels and approval marker in the hero chart; $3.2B figure and existing qualifier/caveat repeated in the hero; one
+  text node split by formatting. Phase 2 captions approved 2026-10-26 (hero chart title, subtitle, caption, legend labels). Phase 3 (recorded 2026-10-26): model page reuses the approved homepage context
+  chart strings; read-across bar values duplicate the read-across table; heatmap legend values duplicate heatmap cells. Phase 3 text approved 2026-10-26 (read-across chart title and caption, labels). Phase
+  4 (recorded 2026-10-26): program-page ''Ahead of results'' values and pipeline matrix view re-display existing gap/grade data.'
+added:
+- page: 404.html
+  text: GLP-1s in T1D
+- page: 404.html
+  text: Independent research. Data may be incomplete or delayed; every record links to its source. News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry
+    dates are sponsor estimates and often slip.
+- page: about/index.html
+  text: GLP-1s in T1D
+- page: about/index.html
+  text: Independent research. Data may be incomplete or delayed; every record links to its source. News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry
+    dates are sponsor estimates and often slip.
+- page: catalysts/index.html
+  text: GLP-1s in T1D
+- page: catalysts/index.html
+  text: Independent research. Data may be incomplete or delayed; every record links to its source. News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry
+    dates are sponsor estimates and often slip.
+- page: companies/abt/index.html
+  text: GLP-1s in T1D
+- page: companies/abt/index.html
+  text: Independent research. Data may be incomplete or delayed; every record links to its source. News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry
+    dates are sponsor estimates and often slip.
+- page: companies/bbnx/index.html
+  text: GLP-1s in T1D
+- page: companies/bbnx/index.html
+  text: Independent research. Data may be incomplete or delayed; every record links to its source. News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry
+    dates are sponsor estimates and often slip.
+- page: companies/crsp/index.html
+  text: GLP-1s in T1D
+- page: companies/crsp/index.html
+  text: Independent research. Data may be incomplete or delayed; every record links to its source. News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry
+    dates are sponsor estimates and often slip.
+- page: companies/dmyd-b-st/index.html
+  text: GLP-1s in T1D
+- page: companies/dmyd-b-st/index.html
+  text: Independent research. Data may be incomplete or delayed; every record links to its source. News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry
+    dates are sponsor estimates and often slip.
+- page: companies/dxcm/index.html
+  text: GLP-1s in T1D
+- page: companies/dxcm/index.html
+  text: Independent research. Data may be incomplete or delayed; every record links to its source. News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry
+    dates are sponsor estimates and often slip.
+- page: companies/embc/index.html
+  text: GLP-1s in T1D
+- page: companies/embc/index.html
+  text: Independent research. Data may be incomplete or delayed; every record links to its source. News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry
+    dates are sponsor estimates and often slip.
+- page: companies/index.html
+  text: GLP-1s in T1D
+- page: companies/index.html
+  text: Independent research. Data may be incomplete or delayed; every record links to its source. News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry
+    dates are sponsor estimates and often slip.
+- page: companies/lly/index.html
+  text: GLP-1s in T1D
+- page: companies/lly/index.html
+  text: Independent research. Data may be incomplete or delayed; every record links to its source. News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry
+    dates are sponsor estimates and often slip.
+- page: companies/mdt/index.html
+  text: GLP-1s in T1D
+- page: companies/mdt/index.html
+  text: Independent research. Data may be incomplete or delayed; every record links to its source. News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry
+    dates are sponsor estimates and often slip.
+- page: companies/mmed/index.html
+  text: GLP-1s in T1D
+- page: companies/mmed/index.html
+  text: Independent research. Data may be incomplete or delayed; every record links to its source. News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry
+    dates are sponsor estimates and often slip.
+- page: companies/nvo/index.html
+  text: GLP-1s in T1D
+- page: companies/nvo/index.html
+  text: Independent research. Data may be incomplete or delayed; every record links to its source. News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry
+    dates are sponsor estimates and often slip.
+- page: companies/podd/index.html
+  text: GLP-1s in T1D
+- page: companies/podd/index.html
+  text: Independent research. Data may be incomplete or delayed; every record links to its source. News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry
+    dates are sponsor estimates and often slip.
+- page: companies/sana/index.html
+  text: GLP-1s in T1D
+- page: companies/sana/index.html
+  text: Independent research. Data may be incomplete or delayed; every record links to its source. News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry
+    dates are sponsor estimates and often slip.
+- page: companies/sens/index.html
+  text: GLP-1s in T1D
+- page: companies/sens/index.html
+  text: Independent research. Data may be incomplete or delayed; every record links to its source. News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry
+    dates are sponsor estimates and often slip.
+- page: companies/sny/index.html
+  text: GLP-1s in T1D
+- page: companies/sny/index.html
+  text: Independent research. Data may be incomplete or delayed; every record links to its source. News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry
+    dates are sponsor estimates and often slip.
+- page: companies/sva-to/index.html
+  text: GLP-1s in T1D
+- page: companies/sva-to/index.html
+  text: Independent research. Data may be incomplete or delayed; every record links to its source. News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry
+    dates are sponsor estimates and often slip.
+- page: companies/tndm/index.html
+  text: GLP-1s in T1D
+- page: companies/tndm/index.html
+  text: Independent research. Data may be incomplete or delayed; every record links to its source. News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry
+    dates are sponsor estimates and often slip.
+- page: companies/vrtx/index.html
+  text: GLP-1s in T1D
+- page: companies/vrtx/index.html
+  text: Independent research. Data may be incomplete or delayed; every record links to its source. News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry
+    dates are sponsor estimates and often slip.
+- page: glp1/index.html
+  text: GLP-1s in T1D
+- page: glp1/index.html
+  text: Independent research. Data may be incomplete or delayed; every record links to its source. News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry
+    dates are sponsor estimates and often slip.
+- page: index.html
+  text: GLP-1s in T1D
+- page: index.html
+  text: Independent research. Data may be incomplete or delayed; every record links to its source. News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry
+    dates are sponsor estimates and often slip.
+- page: medtech/cgm/index.html
+  text: GLP-1s in T1D
+- page: medtech/cgm/index.html
+  text: Independent research. Data may be incomplete or delayed; every record links to its source. News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry
+    dates are sponsor estimates and often slip.
+- page: medtech/index.html
+  text: GLP-1s in T1D
+- page: medtech/index.html
+  text: Independent research. Data may be incomplete or delayed; every record links to its source. News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry
+    dates are sponsor estimates and often slip.
+- page: medtech/pumps/index.html
+  text: GLP-1s in T1D
+- page: medtech/pumps/index.html
+  text: Independent research. Data may be incomplete or delayed; every record links to its source. News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry
+    dates are sponsor estimates and often slip.
+- page: medtech/software/index.html
+  text: GLP-1s in T1D
+- page: medtech/software/index.html
+  text: Independent research. Data may be incomplete or delayed; every record links to its source. News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry
+    dates are sponsor estimates and often slip.
+- page: methodology/index.html
+  text: GLP-1s in T1D
+- page: methodology/index.html
+  text: Independent research. Data may be incomplete or delayed; every record links to its source. News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry
+    dates are sponsor estimates and often slip.
+- page: model/index.html
+  text: GLP-1s in T1D
+- page: model/index.html
+  text: Independent research. Data may be incomplete or delayed; every record links to its source. News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry
+    dates are sponsor estimates and often slip.
+- page: pipeline/index.html
+  text: GLP-1s in T1D
+- page: pipeline/index.html
+  text: Independent research. Data may be incomplete or delayed; every record links to its source. News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry
+    dates are sponsor estimates and often slip.
+- page: programs/aspect-bioprinted/index.html
+  text: GLP-1s in T1D
+- page: programs/aspect-bioprinted/index.html
+  text: Independent research. Data may be incomplete or delayed; every record links to its source. News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry
+    dates are sponsor estimates and often slip.
+- page: programs/celltrans-lantidra/index.html
+  text: GLP-1s in T1D
+- page: programs/celltrans-lantidra/index.html
+  text: Independent research. Data may be incomplete or delayed; every record links to its source. News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry
+    dates are sponsor estimates and often slip.
+- page: programs/celregen-crg002/index.html
+  text: GLP-1s in T1D
+- page: programs/celregen-crg002/index.html
+  text: Independent research. Data may be incomplete or delayed; every record links to its source. News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry
+    dates are sponsor estimates and often slip.
+- page: programs/crispr-vctx211/index.html
+  text: GLP-1s in T1D
+- page: programs/crispr-vctx211/index.html
+  text: Independent research. Data may be incomplete or delayed; every record links to its source. News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry
+    dates are sponsor estimates and often slip.
+- page: programs/diamyd-rhgad65/index.html
+  text: GLP-1s in T1D
+- page: programs/diamyd-rhgad65/index.html
+  text: Independent research. Data may be incomplete or delayed; every record links to its source. News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry
+    dates are sponsor estimates and often slip.
+- page: programs/glp1-beta-cell-preservation/index.html
+  text: GLP-1s in T1D
+- page: programs/glp1-beta-cell-preservation/index.html
+  text: Independent research. Data may be incomplete or delayed; every record links to its source. News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry
+    dates are sponsor estimates and often slip.
+- page: programs/golimumab-t1d/index.html
+  text: GLP-1s in T1D
+- page: programs/golimumab-t1d/index.html
+  text: Independent research. Data may be incomplete or delayed; every record links to its source. News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry
+    dates are sponsor estimates and often slip.
+- page: programs/lilly-baricitinib/index.html
+  text: GLP-1s in T1D
+- page: programs/lilly-baricitinib/index.html
+  text: Independent research. Data may be incomplete or delayed; every record links to its source. News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry
+    dates are sponsor estimates and often slip.
+- page: programs/lilly-tirzepatide-t1d/index.html
+  text: GLP-1s in T1D
+- page: programs/lilly-tirzepatide-t1d/index.html
+  text: Independent research. Data may be incomplete or delayed; every record links to its source. News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry
+    dates are sponsor estimates and often slip.
+- page: programs/novo-liraglutide-adjunct/index.html
+  text: GLP-1s in T1D
+- page: programs/novo-liraglutide-adjunct/index.html
+  text: Independent research. Data may be incomplete or delayed; every record links to its source. News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry
+    dates are sponsor estimates and often slip.
+- page: programs/otsuka-opf310/index.html
+  text: GLP-1s in T1D
+- page: programs/otsuka-opf310/index.html
+  text: Independent research. Data may be incomplete or delayed; every record links to its source. News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry
+    dates are sponsor estimates and often slip.
+- page: programs/sana-sc451/index.html
+  text: GLP-1s in T1D
+- page: programs/sana-sc451/index.html
+  text: Independent research. Data may be incomplete or delayed; every record links to its source. News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry
+    dates are sponsor estimates and often slip.
+- page: programs/sana-up421/index.html
+  text: GLP-1s in T1D
+- page: programs/sana-up421/index.html
+  text: Independent research. Data may be incomplete or delayed; every record links to its source. News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry
+    dates are sponsor estimates and often slip.
+- page: programs/sanofi-frexalimab/index.html
+  text: GLP-1s in T1D
+- page: programs/sanofi-frexalimab/index.html
+  text: Independent research. Data may be incomplete or delayed; every record links to its source. News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry
+    dates are sponsor estimates and often slip.
+- page: programs/sanofi-teplizumab/index.html
+  text: GLP-1s in T1D
+- page: programs/sanofi-teplizumab/index.html
+  text: Independent research. Data may be incomplete or delayed; every record links to its source. News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry
+    dates are sponsor estimates and often slip.
+- page: programs/semaglutide-adjust-t1d/index.html
+  text: GLP-1s in T1D
+- page: programs/semaglutide-adjust-t1d/index.html
+  text: Independent research. Data may be incomplete or delayed; every record links to its source. News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry
+    dates are sponsor estimates and often slip.
+- page: programs/seraxis-sr02/index.html
+  text: GLP-1s in T1D
+- page: programs/seraxis-sr02/index.html
+  text: Independent research. Data may be incomplete or delayed; every record links to its source. News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry
+    dates are sponsor estimates and often slip.
+- page: programs/sernova-cellpouch/index.html
+  text: GLP-1s in T1D
+- page: programs/sernova-cellpouch/index.html
+  text: Independent research. Data may be incomplete or delayed; every record links to its source. News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry
+    dates are sponsor estimates and often slip.
+- page: programs/verapamil-clver/index.html
+  text: GLP-1s in T1D
+- page: programs/verapamil-clver/index.html
+  text: Independent research. Data may be incomplete or delayed; every record links to its source. News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry
+    dates are sponsor estimates and often slip.
+- page: programs/vertex-vx017/index.html
+  text: GLP-1s in T1D
+- page: programs/vertex-vx017/index.html
+  text: Independent research. Data may be incomplete or delayed; every record links to its source. News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry
+    dates are sponsor estimates and often slip.
+- page: programs/vertex-vx264/index.html
+  text: GLP-1s in T1D
+- page: programs/vertex-vx264/index.html
+  text: Independent research. Data may be incomplete or delayed; every record links to its source. News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry
+    dates are sponsor estimates and often slip.
+- page: programs/vertex-zimislecel/index.html
+  text: GLP-1s in T1D
+- page: programs/vertex-zimislecel/index.html
+  text: Independent research. Data may be incomplete or delayed; every record links to its source. News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry
+    dates are sponsor estimates and often slip.
+- page: research/glp1s-and-the-t1d-label/index.html
+  text: GLP-1s in T1D
+- page: research/glp1s-and-the-t1d-label/index.html
+  text: Independent research. Data may be incomplete or delayed; every record links to its source. News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry
+    dates are sponsor estimates and often slip.
+- page: research/index.html
+  text: GLP-1s in T1D
+- page: research/index.html
+  text: Independent research. Data may be incomplete or delayed; every record links to its source. News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry
+    dates are sponsor estimates and often slip.
+- page: research/the-cure-race-in-one-chart/index.html
+  text: GLP-1s in T1D
+- page: research/the-cure-race-in-one-chart/index.html
+  text: Independent research. Data may be incomplete or delayed; every record links to its source. News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry
+    dates are sponsor estimates and often slip.
+- page: research/what-a-cure-means-for-pump-makers/index.html
+  text: GLP-1s in T1D
+- page: research/what-a-cure-means-for-pump-makers/index.html
+  text: Independent research. Data may be incomplete or delayed; every record links to its source. News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry
+    dates are sponsor estimates and often slip.
+- page: index.html
+  text: $0
+- page: index.html
+  text: $100B
+- page: index.html
+  text: $17.9B
+- page: index.html
+  text: $25B
+- page: index.html
+  text: $3.2B
+- page: index.html
+  text: $50B
+- page: index.html
+  text: $75B
+- page: index.html
+  text: $91.0B
+- page: index.html
+  text: '2025'
+- page: index.html
+  text: '2030'
+- page: index.html
+  text: '2035'
+- page: index.html
+  text: '2040'
+- page: index.html
+  text: 3.5% of T1D-driven revenue
+- page: index.html
+  text: A cure would rewrite a $48B market. The model says the revenue shifts slowly, and the strategic exposure starts long before.
+- page: index.html
+  text: Approval 2031 · assumption
+- page: index.html
+  text: Model output under labelled assumptions, not a forecast.
+- page: index.html
+  text: T1D-attributable
+- page: index.html
+  text: T1D-attributable revenue, no cure
+- page: index.html
+  text: · CGM, pumps & insulin · model output
+- page: index.html
+  text: How much of T1D-driven revenue a cure displaces
+- page: index.html
+  text: Annual, US$, global CGM, pumps and insulin, 2025–2040
+- page: index.html
+  text: The grey area is revenue attributable to people with T1D if no cure arrives, using the model's labelled T1D-share assumptions; the highlighted area is the part the base-case cure displaces. Model
+    output, not a forecast.
+- page: model/index.html
+  text: $0
+- page: model/index.html
+  text: $1.3B
+- page: model/index.html
+  text: $1.9T
+- page: model/index.html
+  text: $100B
+- page: model/index.html
+  text: $17.9B
+- page: model/index.html
+  text: $25.0B
+- page: model/index.html
+  text: $25B
+- page: model/index.html
+  text: $3.2B
+- page: model/index.html
+  text: $4.2B
+- page: model/index.html
+  text: $50B
+- page: model/index.html
+  text: $75B
+- page: model/index.html
+  text: $91.0B
+- page: model/index.html
+  text: 0.1%
+- page: model/index.html
+  text: 0.3%
+- page: model/index.html
+  text: 1.6%
+- page: model/index.html
+  text: 1.8%
+- page: model/index.html
+  text: 1.9%
+- page: model/index.html
+  text: 10.6%
+- page: model/index.html
+  text: 20.9%
+- page: model/index.html
+  text: '2025'
+- page: model/index.html
+  text: '2030'
+- page: model/index.html
+  text: '2035'
+- page: model/index.html
+  text: '2040'
+- page: model/index.html
+  text: Annual, US$, global CGM, pumps and insulin, 2025–2040
+- page: model/index.html
+  text: Approval 2031 · assumption
+- page: model/index.html
+  text: How much of T1D-driven revenue a cure displaces
+- page: model/index.html
+  text: T1D-attributable
+- page: model/index.html
+  text: T1D-attributable revenue, no cure
+- page: model/index.html
+  text: Modelled displacement in 2040 relative to current company revenue
+- page: model/index.html
+  text: 'Not modelled: Eli Lilly (revenue split not disclosed in the primary sources reviewed, or revenue outside the modelled markets). Model output, not a forecast of company revenue.'
+- page: pipeline/index.html
+  text: CRG-002
+- page: pipeline/index.html
+  text: SR-02
+- page: pipeline/index.html
+  text: OPF-310
+- page: pipeline/index.html
+  text: UP421
+- page: pipeline/index.html
+  text: VX-017
+- page: pipeline/index.html
+  text: SC451
+- page: pipeline/index.html
+  text: Phase 1
+- page: pipeline/index.html
+  text: Phase 1
+- page: pipeline/index.html
+  text: Phase 2
+- page: pipeline/index.html
+  text: Phase 2
+- page: pipeline/index.html
+  text: Phase 3
+- page: pipeline/index.html
+  text: Phase 3
+- page: programs/aspect-bioprinted/index.html
+  text: '0'
+- page: programs/celltrans-lantidra/index.html
+  text: '0'
+- page: programs/celregen-crg002/index.html
+  text: '+1'
+- page: programs/glp1-beta-cell-preservation/index.html
+  text: '+1'
+- page: programs/golimumab-t1d/index.html
+  text: '0'
+- page: programs/lilly-baricitinib/index.html
+  text: '+1'
+- page: programs/lilly-tirzepatide-t1d/index.html
+  text: '+1'
+- page: programs/otsuka-opf310/index.html
+  text: '+1'
+- page: programs/sana-sc451/index.html
+  text: '0'
+- page: programs/sana-up421/index.html
+  text: '0'
+- page: programs/sanofi-frexalimab/index.html
+  text: '+2'
+- page: programs/sanofi-teplizumab/index.html
+  text: '0'
+- page: programs/semaglutide-adjust-t1d/index.html
+  text: '+1'
+- page: programs/seraxis-sr02/index.html
+  text: '+1'
+- page: programs/sernova-cellpouch/index.html
+  text: '+1'
+- page: programs/verapamil-clver/index.html
+  text: '0'
+- page: programs/vertex-vx017/index.html
+  text: '+1'
+- page: programs/vertex-zimislecel/index.html
+  text: '+1'
+removed:
+- page: 404.html
+  text: GLP-1s
+- page: 404.html
+  text: News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry dates are sponsor estimates and often slip.
+- page: about/index.html
+  text: GLP-1s
+- page: about/index.html
+  text: News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry dates are sponsor estimates and often slip.
+- page: catalysts/index.html
+  text: GLP-1s
+- page: catalysts/index.html
+  text: News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry dates are sponsor estimates and often slip.
+- page: companies/abt/index.html
+  text: GLP-1s
+- page: companies/abt/index.html
+  text: News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry dates are sponsor estimates and often slip.
+- page: companies/bbnx/index.html
+  text: GLP-1s
+- page: companies/bbnx/index.html
+  text: News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry dates are sponsor estimates and often slip.
+- page: companies/crsp/index.html
+  text: GLP-1s
+- page: companies/crsp/index.html
+  text: News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry dates are sponsor estimates and often slip.
+- page: companies/dmyd-b-st/index.html
+  text: GLP-1s
+- page: companies/dmyd-b-st/index.html
+  text: News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry dates are sponsor estimates and often slip.
+- page: companies/dxcm/index.html
+  text: GLP-1s
+- page: companies/dxcm/index.html
+  text: News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry dates are sponsor estimates and often slip.
+- page: companies/embc/index.html
+  text: GLP-1s
+- page: companies/embc/index.html
+  text: News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry dates are sponsor estimates and often slip.
+- page: companies/index.html
+  text: GLP-1s
+- page: companies/index.html
+  text: News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry dates are sponsor estimates and often slip.
+- page: companies/lly/index.html
+  text: GLP-1s
+- page: companies/lly/index.html
+  text: News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry dates are sponsor estimates and often slip.
+- page: companies/mdt/index.html
+  text: GLP-1s
+- page: companies/mdt/index.html
+  text: News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry dates are sponsor estimates and often slip.
+- page: companies/mmed/index.html
+  text: GLP-1s
+- page: companies/mmed/index.html
+  text: News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry dates are sponsor estimates and often slip.
+- page: companies/nvo/index.html
+  text: GLP-1s
+- page: companies/nvo/index.html
+  text: News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry dates are sponsor estimates and often slip.
+- page: companies/podd/index.html
+  text: GLP-1s
+- page: companies/podd/index.html
+  text: News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry dates are sponsor estimates and often slip.
+- page: companies/sana/index.html
+  text: GLP-1s
+- page: companies/sana/index.html
+  text: News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry dates are sponsor estimates and often slip.
+- page: companies/sens/index.html
+  text: GLP-1s
+- page: companies/sens/index.html
+  text: News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry dates are sponsor estimates and often slip.
+- page: companies/sny/index.html
+  text: GLP-1s
+- page: companies/sny/index.html
+  text: News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry dates are sponsor estimates and often slip.
+- page: companies/sva-to/index.html
+  text: GLP-1s
+- page: companies/sva-to/index.html
+  text: News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry dates are sponsor estimates and often slip.
+- page: companies/tndm/index.html
+  text: GLP-1s
+- page: companies/tndm/index.html
+  text: News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry dates are sponsor estimates and often slip.
+- page: companies/vrtx/index.html
+  text: GLP-1s
+- page: companies/vrtx/index.html
+  text: News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry dates are sponsor estimates and often slip.
+- page: glp1/index.html
+  text: GLP-1s
+- page: glp1/index.html
+  text: News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry dates are sponsor estimates and often slip.
+- page: index.html
+  text: GLP-1s
+- page: index.html
+  text: News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry dates are sponsor estimates and often slip.
+- page: medtech/cgm/index.html
+  text: GLP-1s
+- page: medtech/cgm/index.html
+  text: News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry dates are sponsor estimates and often slip.
+- page: medtech/index.html
+  text: GLP-1s
+- page: medtech/index.html
+  text: News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry dates are sponsor estimates and often slip.
+- page: medtech/pumps/index.html
+  text: GLP-1s
+- page: medtech/pumps/index.html
+  text: News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry dates are sponsor estimates and often slip.
+- page: medtech/software/index.html
+  text: GLP-1s
+- page: medtech/software/index.html
+  text: News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry dates are sponsor estimates and often slip.
+- page: methodology/index.html
+  text: GLP-1s
+- page: methodology/index.html
+  text: News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry dates are sponsor estimates and often slip.
+- page: model/index.html
+  text: GLP-1s
+- page: model/index.html
+  text: News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry dates are sponsor estimates and often slip.
+- page: pipeline/index.html
+  text: GLP-1s
+- page: pipeline/index.html
+  text: News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry dates are sponsor estimates and often slip.
+- page: programs/aspect-bioprinted/index.html
+  text: GLP-1s
+- page: programs/aspect-bioprinted/index.html
+  text: News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry dates are sponsor estimates and often slip.
+- page: programs/celltrans-lantidra/index.html
+  text: GLP-1s
+- page: programs/celltrans-lantidra/index.html
+  text: News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry dates are sponsor estimates and often slip.
+- page: programs/celregen-crg002/index.html
+  text: GLP-1s
+- page: programs/celregen-crg002/index.html
+  text: News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry dates are sponsor estimates and often slip.
+- page: programs/crispr-vctx211/index.html
+  text: GLP-1s
+- page: programs/crispr-vctx211/index.html
+  text: News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry dates are sponsor estimates and often slip.
+- page: programs/diamyd-rhgad65/index.html
+  text: GLP-1s
+- page: programs/diamyd-rhgad65/index.html
+  text: News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry dates are sponsor estimates and often slip.
+- page: programs/glp1-beta-cell-preservation/index.html
+  text: GLP-1s
+- page: programs/glp1-beta-cell-preservation/index.html
+  text: News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry dates are sponsor estimates and often slip.
+- page: programs/golimumab-t1d/index.html
+  text: GLP-1s
+- page: programs/golimumab-t1d/index.html
+  text: News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry dates are sponsor estimates and often slip.
+- page: programs/lilly-baricitinib/index.html
+  text: GLP-1s
+- page: programs/lilly-baricitinib/index.html
+  text: News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry dates are sponsor estimates and often slip.
+- page: programs/lilly-tirzepatide-t1d/index.html
+  text: GLP-1s
+- page: programs/lilly-tirzepatide-t1d/index.html
+  text: News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry dates are sponsor estimates and often slip.
+- page: programs/novo-liraglutide-adjunct/index.html
+  text: GLP-1s
+- page: programs/novo-liraglutide-adjunct/index.html
+  text: News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry dates are sponsor estimates and often slip.
+- page: programs/otsuka-opf310/index.html
+  text: GLP-1s
+- page: programs/otsuka-opf310/index.html
+  text: News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry dates are sponsor estimates and often slip.
+- page: programs/sana-sc451/index.html
+  text: GLP-1s
+- page: programs/sana-sc451/index.html
+  text: News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry dates are sponsor estimates and often slip.
+- page: programs/sana-up421/index.html
+  text: GLP-1s
+- page: programs/sana-up421/index.html
+  text: News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry dates are sponsor estimates and often slip.
+- page: programs/sanofi-frexalimab/index.html
+  text: GLP-1s
+- page: programs/sanofi-frexalimab/index.html
+  text: News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry dates are sponsor estimates and often slip.
+- page: programs/sanofi-teplizumab/index.html
+  text: GLP-1s
+- page: programs/sanofi-teplizumab/index.html
+  text: News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry dates are sponsor estimates and often slip.
+- page: programs/semaglutide-adjust-t1d/index.html
+  text: GLP-1s
+- page: programs/semaglutide-adjust-t1d/index.html
+  text: News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry dates are sponsor estimates and often slip.
+- page: programs/seraxis-sr02/index.html
+  text: GLP-1s
+- page: programs/seraxis-sr02/index.html
+  text: News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry dates are sponsor estimates and often slip.
+- page: programs/sernova-cellpouch/index.html
+  text: GLP-1s
+- page: programs/sernova-cellpouch/index.html
+  text: News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry dates are sponsor estimates and often slip.
+- page: programs/verapamil-clver/index.html
+  text: GLP-1s
+- page: programs/verapamil-clver/index.html
+  text: News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry dates are sponsor estimates and often slip.
+- page: programs/vertex-vx017/index.html
+  text: GLP-1s
+- page: programs/vertex-vx017/index.html
+  text: News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry dates are sponsor estimates and often slip.
+- page: programs/vertex-vx264/index.html
+  text: GLP-1s
+- page: programs/vertex-vx264/index.html
+  text: News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry dates are sponsor estimates and often slip.
+- page: programs/vertex-zimislecel/index.html
+  text: GLP-1s
+- page: programs/vertex-zimislecel/index.html
+  text: News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry dates are sponsor estimates and often slip.
+- page: research/glp1s-and-the-t1d-label/index.html
+  text: GLP-1s
+- page: research/glp1s-and-the-t1d-label/index.html
+  text: News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry dates are sponsor estimates and often slip.
+- page: research/index.html
+  text: GLP-1s
+- page: research/index.html
+  text: News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry dates are sponsor estimates and often slip.
+- page: research/the-cure-race-in-one-chart/index.html
+  text: GLP-1s
+- page: research/the-cure-race-in-one-chart/index.html
+  text: News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry dates are sponsor estimates and often slip.
+- page: research/what-a-cure-means-for-pump-makers/index.html
+  text: GLP-1s
+- page: research/what-a-cure-means-for-pump-makers/index.html
+  text: News appears as headline links only; no article text is reproduced. Market data may be delayed. Registry dates are sponsor estimates and often slip.
+- page: index.html
+  text: A cure for type 1 diabetes would reshape a $48B market. Here is how close it is, and who is exposed.
+- page: index.html
+  text: CGM, pumps & insulin · model output

@@ -1,0 +1,734 @@
+{
+ "home@1440-light": {
+  "first_viz_top": 1265,
+  "chrome_h": 95,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 0,
+  "page_h": 4471,
+  "model_check": null
+ },
+ "model@1440-light": {
+  "first_viz_top": 955,
+  "chrome_h": 95,
+  "overflow": [],
+  "contrast_fails": [
+   "TD.cell 3.64"
+  ],
+  "n_contrast_fails": 8,
+  "heading_skips": 2,
+  "page_h": 7119,
+  "model_check": "ok"
+ },
+ "pipeline@1440-light": {
+  "first_viz_top": 765,
+  "chrome_h": 95,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 0,
+  "page_h": 6437,
+  "model_check": null
+ },
+ "company-dxcm@1440-light": {
+  "first_viz_top": 466,
+  "chrome_h": 95,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 1,
+  "page_h": 2739,
+  "model_check": null
+ },
+ "program-zimislecel@1440-light": {
+  "first_viz_top": null,
+  "chrome_h": 95,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 1,
+  "page_h": 3282,
+  "model_check": null
+ },
+ "companies@1440-light": {
+  "first_viz_top": null,
+  "chrome_h": 95,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 0,
+  "page_h": 2581,
+  "model_check": null
+ },
+ "catalysts@1440-light": {
+  "first_viz_top": 782,
+  "chrome_h": 95,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 0,
+  "page_h": 2532,
+  "model_check": null
+ },
+ "glp1@1440-light": {
+  "first_viz_top": null,
+  "chrome_h": 95,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 0,
+  "page_h": 9609,
+  "model_check": null
+ },
+ "research@1440-light": {
+  "first_viz_top": null,
+  "chrome_h": 95,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 1,
+  "page_h": 1340,
+  "model_check": null
+ },
+ "medtech-pumps@1440-light": {
+  "first_viz_top": null,
+  "chrome_h": 95,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 0,
+  "page_h": 6386,
+  "model_check": null
+ },
+ "methodology@1440-light": {
+  "first_viz_top": null,
+  "chrome_h": 95,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 0,
+  "page_h": 3600,
+  "model_check": null
+ },
+ "about@1440-light": {
+  "first_viz_top": null,
+  "chrome_h": 95,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 0,
+  "page_h": 2280,
+  "model_check": null
+ },
+ "home@768-light": {
+  "first_viz_top": 1328,
+  "chrome_h": 122,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 0,
+  "page_h": 5888,
+  "model_check": null
+ },
+ "model@768-light": {
+  "first_viz_top": 1114,
+  "chrome_h": 122,
+  "overflow": [],
+  "contrast_fails": [
+   "TD.cell 3.64"
+  ],
+  "n_contrast_fails": 8,
+  "heading_skips": 2,
+  "page_h": 9005,
+  "model_check": "ok"
+ },
+ "pipeline@768-light": {
+  "first_viz_top": 776,
+  "chrome_h": 122,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 0,
+  "page_h": 7071,
+  "model_check": null
+ },
+ "company-dxcm@768-light": {
+  "first_viz_top": 492,
+  "chrome_h": 122,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 1,
+  "page_h": 3573,
+  "model_check": null
+ },
+ "program-zimislecel@768-light": {
+  "first_viz_top": null,
+  "chrome_h": 122,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 1,
+  "page_h": 4704,
+  "model_check": null
+ },
+ "companies@768-light": {
+  "first_viz_top": null,
+  "chrome_h": 122,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 0,
+  "page_h": 3088,
+  "model_check": null
+ },
+ "catalysts@768-light": {
+  "first_viz_top": 793,
+  "chrome_h": 122,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 0,
+  "page_h": 3074,
+  "model_check": null
+ },
+ "glp1@768-light": {
+  "first_viz_top": null,
+  "chrome_h": 122,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 0,
+  "page_h": 13200,
+  "model_check": null
+ },
+ "research@768-light": {
+  "first_viz_top": null,
+  "chrome_h": 122,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 1,
+  "page_h": 2315,
+  "model_check": null
+ },
+ "medtech-pumps@768-light": {
+  "first_viz_top": null,
+  "chrome_h": 122,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 0,
+  "page_h": 7829,
+  "model_check": null
+ },
+ "methodology@768-light": {
+  "first_viz_top": null,
+  "chrome_h": 122,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 0,
+  "page_h": 4998,
+  "model_check": null
+ },
+ "about@768-light": {
+  "first_viz_top": null,
+  "chrome_h": 122,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 0,
+  "page_h": 2658,
+  "model_check": null
+ },
+ "home@375-light": {
+  "first_viz_top": 1561,
+  "chrome_h": 95,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 0,
+  "page_h": 7511,
+  "model_check": null
+ },
+ "model@375-light": {
+  "first_viz_top": 1577,
+  "chrome_h": 95,
+  "overflow": [],
+  "contrast_fails": [
+   "TD.cell 3.64"
+  ],
+  "n_contrast_fails": 8,
+  "heading_skips": 2,
+  "page_h": 11445,
+  "model_check": "ok"
+ },
+ "pipeline@375-light": {
+  "first_viz_top": 999,
+  "chrome_h": 95,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 0,
+  "page_h": 10892,
+  "model_check": null
+ },
+ "company-dxcm@375-light": {
+  "first_viz_top": 473,
+  "chrome_h": 95,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 1,
+  "page_h": 4401,
+  "model_check": null
+ },
+ "program-zimislecel@375-light": {
+  "first_viz_top": null,
+  "chrome_h": 95,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 1,
+  "page_h": 5779,
+  "model_check": null
+ },
+ "companies@375-light": {
+  "first_viz_top": null,
+  "chrome_h": 95,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 0,
+  "page_h": 3637,
+  "model_check": null
+ },
+ "catalysts@375-light": {
+  "first_viz_top": 861,
+  "chrome_h": 95,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 0,
+  "page_h": 3338,
+  "model_check": null
+ },
+ "glp1@375-light": {
+  "first_viz_top": null,
+  "chrome_h": 95,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 0,
+  "page_h": 13879,
+  "model_check": null
+ },
+ "research@375-light": {
+  "first_viz_top": null,
+  "chrome_h": 95,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 1,
+  "page_h": 2644,
+  "model_check": null
+ },
+ "medtech-pumps@375-light": {
+  "first_viz_top": null,
+  "chrome_h": 95,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 0,
+  "page_h": 8686,
+  "model_check": null
+ },
+ "methodology@375-light": {
+  "first_viz_top": null,
+  "chrome_h": 95,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 0,
+  "page_h": 6717,
+  "model_check": null
+ },
+ "about@375-light": {
+  "first_viz_top": null,
+  "chrome_h": 95,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 0,
+  "page_h": 3662,
+  "model_check": null
+ },
+ "home@1440-dark": {
+  "first_viz_top": 1265,
+  "chrome_h": 95,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 0,
+  "page_h": 4471,
+  "model_check": null
+ },
+ "model@1440-dark": {
+  "first_viz_top": 955,
+  "chrome_h": 95,
+  "overflow": [],
+  "contrast_fails": [
+   "TD.cell 3.64"
+  ],
+  "n_contrast_fails": 8,
+  "heading_skips": 2,
+  "page_h": 7119,
+  "model_check": "ok"
+ },
+ "pipeline@1440-dark": {
+  "first_viz_top": 765,
+  "chrome_h": 95,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 0,
+  "page_h": 6437,
+  "model_check": null
+ },
+ "company-dxcm@1440-dark": {
+  "first_viz_top": 466,
+  "chrome_h": 95,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 1,
+  "page_h": 2739,
+  "model_check": null
+ },
+ "program-zimislecel@1440-dark": {
+  "first_viz_top": null,
+  "chrome_h": 95,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 1,
+  "page_h": 3282,
+  "model_check": null
+ },
+ "companies@1440-dark": {
+  "first_viz_top": null,
+  "chrome_h": 95,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 0,
+  "page_h": 2581,
+  "model_check": null
+ },
+ "catalysts@1440-dark": {
+  "first_viz_top": 782,
+  "chrome_h": 95,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 0,
+  "page_h": 2532,
+  "model_check": null
+ },
+ "glp1@1440-dark": {
+  "first_viz_top": null,
+  "chrome_h": 95,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 0,
+  "page_h": 9609,
+  "model_check": null
+ },
+ "research@1440-dark": {
+  "first_viz_top": null,
+  "chrome_h": 95,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 1,
+  "page_h": 1340,
+  "model_check": null
+ },
+ "medtech-pumps@1440-dark": {
+  "first_viz_top": null,
+  "chrome_h": 95,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 0,
+  "page_h": 6386,
+  "model_check": null
+ },
+ "methodology@1440-dark": {
+  "first_viz_top": null,
+  "chrome_h": 95,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 0,
+  "page_h": 3600,
+  "model_check": null
+ },
+ "about@1440-dark": {
+  "first_viz_top": null,
+  "chrome_h": 95,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 0,
+  "page_h": 2280,
+  "model_check": null
+ },
+ "home@768-dark": {
+  "first_viz_top": 1328,
+  "chrome_h": 122,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 0,
+  "page_h": 5888,
+  "model_check": null
+ },
+ "model@768-dark": {
+  "first_viz_top": 1114,
+  "chrome_h": 122,
+  "overflow": [],
+  "contrast_fails": [
+   "TD.cell 3.64"
+  ],
+  "n_contrast_fails": 8,
+  "heading_skips": 2,
+  "page_h": 9005,
+  "model_check": "ok"
+ },
+ "pipeline@768-dark": {
+  "first_viz_top": 776,
+  "chrome_h": 122,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 0,
+  "page_h": 7071,
+  "model_check": null
+ },
+ "company-dxcm@768-dark": {
+  "first_viz_top": 492,
+  "chrome_h": 122,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 1,
+  "page_h": 3573,
+  "model_check": null
+ },
+ "program-zimislecel@768-dark": {
+  "first_viz_top": null,
+  "chrome_h": 122,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 1,
+  "page_h": 4704,
+  "model_check": null
+ },
+ "companies@768-dark": {
+  "first_viz_top": null,
+  "chrome_h": 122,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 0,
+  "page_h": 3088,
+  "model_check": null
+ },
+ "catalysts@768-dark": {
+  "first_viz_top": 793,
+  "chrome_h": 122,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 0,
+  "page_h": 3074,
+  "model_check": null
+ },
+ "glp1@768-dark": {
+  "first_viz_top": null,
+  "chrome_h": 122,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 0,
+  "page_h": 13200,
+  "model_check": null
+ },
+ "research@768-dark": {
+  "first_viz_top": null,
+  "chrome_h": 122,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 1,
+  "page_h": 2315,
+  "model_check": null
+ },
+ "medtech-pumps@768-dark": {
+  "first_viz_top": null,
+  "chrome_h": 122,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 0,
+  "page_h": 7829,
+  "model_check": null
+ },
+ "methodology@768-dark": {
+  "first_viz_top": null,
+  "chrome_h": 122,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 0,
+  "page_h": 4998,
+  "model_check": null
+ },
+ "about@768-dark": {
+  "first_viz_top": null,
+  "chrome_h": 122,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 0,
+  "page_h": 2658,
+  "model_check": null
+ },
+ "home@375-dark": {
+  "first_viz_top": 1561,
+  "chrome_h": 95,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 0,
+  "page_h": 7511,
+  "model_check": null
+ },
+ "model@375-dark": {
+  "first_viz_top": 1577,
+  "chrome_h": 95,
+  "overflow": [],
+  "contrast_fails": [
+   "TD.cell 3.64"
+  ],
+  "n_contrast_fails": 8,
+  "heading_skips": 2,
+  "page_h": 11445,
+  "model_check": "ok"
+ },
+ "pipeline@375-dark": {
+  "first_viz_top": 999,
+  "chrome_h": 95,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 0,
+  "page_h": 10892,
+  "model_check": null
+ },
+ "company-dxcm@375-dark": {
+  "first_viz_top": 473,
+  "chrome_h": 95,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 1,
+  "page_h": 4401,
+  "model_check": null
+ },
+ "program-zimislecel@375-dark": {
+  "first_viz_top": null,
+  "chrome_h": 95,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 1,
+  "page_h": 5779,
+  "model_check": null
+ },
+ "companies@375-dark": {
+  "first_viz_top": null,
+  "chrome_h": 95,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 0,
+  "page_h": 3637,
+  "model_check": null
+ },
+ "catalysts@375-dark": {
+  "first_viz_top": 861,
+  "chrome_h": 95,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 0,
+  "page_h": 3338,
+  "model_check": null
+ },
+ "glp1@375-dark": {
+  "first_viz_top": null,
+  "chrome_h": 95,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 0,
+  "page_h": 13879,
+  "model_check": null
+ },
+ "research@375-dark": {
+  "first_viz_top": null,
+  "chrome_h": 95,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 1,
+  "page_h": 2644,
+  "model_check": null
+ },
+ "medtech-pumps@375-dark": {
+  "first_viz_top": null,
+  "chrome_h": 95,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 0,
+  "page_h": 8686,
+  "model_check": null
+ },
+ "methodology@375-dark": {
+  "first_viz_top": null,
+  "chrome_h": 95,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 0,
+  "page_h": 6717,
+  "model_check": null
+ },
+ "about@375-dark": {
+  "first_viz_top": null,
+  "chrome_h": 95,
+  "overflow": [],
+  "contrast_fails": [],
+  "n_contrast_fails": 0,
+  "heading_skips": 0,
+  "page_h": 3662,
+  "model_check": null
+ }
+}

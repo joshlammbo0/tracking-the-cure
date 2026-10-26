@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% import "_macros.html" as ui %}
+{% block head %}<meta name="robots" content="noindex, nofollow">{% endblock %}
+{% block main %}
+{% call ui.page_head("Development only", "Design system reference", "Every token and component in one place, for checking both themes and all widths. Rendered only with --styleguide; never deployed.") %}{% endcall %}
+<div class="wrap">
+<section class="section" aria-labelledby="sg-type">
+  <h2 id="sg-type" class="mb-5">Type scale</h2>
+  <div class="display-figure">$3.2B</div>
+  <p class="small muted">Display figure · Source Serif 4 600 · 52→72px · tabular lining</p>
+  <h1 class="mt-6">H1 · Source Serif 4 · 44px</h1>
+  <h2 class="mt-5">H2 · Source Serif 4 · 30px</h2>
+  <h3 class="mt-5">H3 · Inter 600 · 18px</h3>
+  <p class="lede mt-5">Lede · Source Serif 4 · 20px. One per page, two lines at most on desktop.</p>
+  <p>Body · Inter 400 · 16px/1.6 in primary ink. Secondary text uses <span class="ink2">ink-2</span>; metadata uses <span class="muted">muted</span>.</p>
+  <p class="small">Table / small · 14px</p>
+  <p class="xs">Caption / micro · 12px floor for UI text</p>
+  <h3 class="label-h mt-5">Label heading (semantic h3, visual micro label)</h3>
+</section>
+<section class="section" aria-labelledby="sg-color">
+  <h2 id="sg-color" class="mb-5">Colour tokens</h2>
+  <div class="swatches">
+  {% for t in ["bg","surface","surface-2","ink","ink-2","muted","rule","rule-strong","accent","accent-soft","s1","s2","s3","s-baseline","good","bad","warn-bg","h0","h1","h2","h3","h4","h5"] %}
+    <div class="swatch"><i style="background:var(--{{ t }})"></i><code>--{{ t }}</code></div>
+  {% endfor %}
+  </div>
+</section>
+<section class="section" aria-labelledby="sg-comp">
+  <h2 id="sg-comp" class="mb-5">Components</h2>
+  <div class="stats">{{ ui.stat("$864M", "Displaced in 2035", "1.7% of T1D-attributable revenue") }}{{ ui.stat("$3.2B", "Displaced in 2040", "3.5% of T1D-attributable revenue") }}{{ ui.stat("4.1%", "Cured by 2040", "388K people") }}{{ ui.stat("$20.0B", "Peak cure sales", "in 2033") }}</div>
+  <div class="row mt-6"><span class="badge">Neutral</span><span class="badge accent">Accent</span><span class="badge good dot">Active</span><span class="badge bad">✕ Discontinued</span><span class="badge warn">▲ Review</span><span class="badge solid">Analysis · not advice</span><span class="tag-assume">assumption</span><span class="tag-src">sourced</span></div>
+  <div class="row mt-5"><a class="btn" href="#">Primary action →</a><a class="btn ghost" href="#">Secondary</a><button class="chip" type="button" aria-pressed="true">Selected</button><button class="chip" type="button" aria-pressed="false">Option</button></div>
+  <div class="callout"><span class="label">Reality check</span><p>Callout for the one interpretive sentence a reader must not miss.</p></div>
+  <div class="callout mine"><span class="label">My take · personal perspective</span><p>Personal notes are always visually distinct from sourced data.</p></div>
+  <ul class="flags"><li class="flag alert"><span class="ico" aria-hidden="true">!</span><span>Alert flag</span></li><li class="flag warn"><span class="ico" aria-hidden="true">▲</span><span>Warning flag</span></li><li class="flag info"><span class="ico" aria-hidden="true">i</span><span>Note flag</span></li></ul>
+  <h3 class="mt-6 mb-3">Heatmap steps (text colour chosen per step for AA)</h3>
+  <table class="data heat"><tbody><tr>{% for b in range(6) %}<td class="cell" data-b="{{ b }}">$1{{ b }}.0B</td>{% endfor %}</tr></tbody></table>
+  <h3 class="mt-6 mb-3">Chart</h3>
+  <div class="legend" aria-hidden="true"><span><i class="sw-s1"></i>Insulin</span><span><i class="sw-s2"></i>CGM</span><span><i class="sw-s3"></i>Pumps / AID</span></div>
+  {{ md.chart }}
+</section>
+</div>
+{% endblock %}

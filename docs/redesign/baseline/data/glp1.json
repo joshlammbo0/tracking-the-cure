@@ -1,0 +1,2091 @@
+{
+ "registry_scan": [
+  {
+   "nct_id": "NCT07891156",
+   "title": "Lean Mass Changes With Semaglutide in Adults With Type 1 Diabetes and Overweight/Obesity.",
+   "acronym": "SEMA-T1D-BODY",
+   "status": "RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 2",
+    "Phase 3"
+   ],
+   "phase_grade": "phase2",
+   "sponsor": "McGill University Health Centre/Research Institute of the McGill University Health Centre",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type 1 Diabetes",
+    "Overweight , Obesity"
+   ],
+   "enrollment": 40,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2026-10-13",
+   "primary_completion": "2028-09-01",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2028-10-01",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-10-23",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT07891156",
+   "tracked": true
+  },
+  {
+   "nct_id": "NCT07889505",
+   "title": "A Phase 2 Two-Part Study of Oral PS1 in Healthy Volunteers and Adults With Newly Diagnosed Type 1 Diabetes",
+   "acronym": null,
+   "status": "NOT_YET_RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 2"
+   ],
+   "phase_grade": "phase2",
+   "sponsor": "Pharmasaga Co. Ltd.",
+   "sponsor_class": "INDUSTRY",
+   "conditions": [
+    "Type 1 Diabetes Mellitus"
+   ],
+   "enrollment": 36,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2026-11-21",
+   "primary_completion": "2028-08-15",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2028-10-31",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-10-22",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT07889505",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT05161793",
+   "title": "Telemedicine Continuous Remote Monitoring of Adults With Uncontrolled Diabetes Mellitus",
+   "acronym": "TELEMTRRDM",
+   "status": "COMPLETED",
+   "why_stopped": null,
+   "phases": [],
+   "phase_grade": null,
+   "sponsor": "University of Southern California",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Diabetes Mellitus, Type 1",
+    "Diabetes Mellitus, Type 2"
+   ],
+   "enrollment": 230,
+   "enrollment_type": "ACTUAL",
+   "start_date": "2022-05-01",
+   "primary_completion": "2025-01-31",
+   "primary_completion_type": "ACTUAL",
+   "completion": "2025-01-31",
+   "completion_type": "ACTUAL",
+   "last_update": "2026-10-20",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT05161793",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT06976619",
+   "title": "The Effect of Glycemic Control and of GLP-1 Receptor Agonism on Islet GLP-1 in People With Type 1 and Type 2 Diabetes",
+   "acronym": null,
+   "status": "RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 2"
+   ],
+   "phase_grade": "phase2",
+   "sponsor": "Mayo Clinic",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type 1 Diabetes",
+    "Type 2 Diabetes"
+   ],
+   "enrollment": 60,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2025-10-03",
+   "primary_completion": "2028-10-30",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2029-03-31",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-10-19",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT06976619",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT07676565",
+   "title": "Safety and Efficacy of Adjunct Therapies in Adults With Type 1 Diabetes: Multicenter, Registry Study",
+   "acronym": "ATT1D",
+   "status": "RECRUITING",
+   "why_stopped": null,
+   "phases": [],
+   "phase_grade": null,
+   "sponsor": "Indiana University",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type 1 Diabetes"
+   ],
+   "enrollment": 300,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2026-03-24",
+   "primary_completion": "2028-04",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2028-04",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-10-16",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT07676565",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT07061574",
+   "title": "A Randomized Phase 1/2 Trial of Low Dose Anti-thymocyte Globulin (ATG) With Subsequent Adalimumab or Verapamil in New Onset Type 1 Diabetes",
+   "acronym": "WAVE T1D",
+   "status": "RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 1",
+    "Phase 2"
+   ],
+   "phase_grade": "phase1",
+   "sponsor": "City of Hope Medical Center",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type 1 Diabetes",
+    "New Onset"
+   ],
+   "enrollment": 120,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2026-03-10",
+   "primary_completion": "2030-04-15",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2031-04-15",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-10-16",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT07061574",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT05478707",
+   "title": "Therapeutic Strategies for Microvascular Dysfunction in Type 1 Diabetes",
+   "acronym": "MCD-1",
+   "status": "RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 2"
+   ],
+   "phase_grade": "phase2",
+   "sponsor": "AdventHealth Translational Research Institute",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Diabetes Mellitus, Type 1",
+    "Endothelial Dysfunction"
+   ],
+   "enrollment": 47,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2023-10-05",
+   "primary_completion": "2028-06-30",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2028-07-30",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-10-15",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT05478707",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT07803744",
+   "title": "A Study of Tirzepatide (LY3298176) in Participants With Type 1 Diabetes Mellitus and Overweight or Obesity",
+   "acronym": null,
+   "status": "RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 1"
+   ],
+   "phase_grade": "phase1",
+   "sponsor": "Eli Lilly and Company",
+   "sponsor_class": "INDUSTRY",
+   "conditions": [
+    "Diabetes Mellitus, Type 1",
+    "Overweight",
+    "Obesity"
+   ],
+   "enrollment": 18,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2026-09-11",
+   "primary_completion": "2026-12",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2026-12",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-09-23",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT07803744",
+   "tracked": true
+  },
+  {
+   "nct_id": "NCT06820281",
+   "title": "Acute Metabolic Effects of Tirzepatide in Type 1 Diabetes",
+   "acronym": "TIRTLE2",
+   "status": "RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 2"
+   ],
+   "phase_grade": "phase2",
+   "sponsor": "Victor Chang Cardiac Research Institute",
+   "sponsor_class": "OTHER_GOV",
+   "conditions": [
+    "Type 1 Diabetes Mellitus"
+   ],
+   "enrollment": 44,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2026-07-07",
+   "primary_completion": "2027-12-31",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2027-12-31",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-09-16",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT06820281",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT06273631",
+   "title": "Effect of Different Carbohydrate Intake Patterns on Glycemic Control in Patients With Type 1 Diabetes",
+   "acronym": null,
+   "status": "RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "N/A"
+   ],
+   "phase_grade": null,
+   "sponsor": "Yang Tao",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type 1 Diabetes",
+    "Diet Intervention",
+    "Glucose Control"
+   ],
+   "enrollment": 80,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2024-08-01",
+   "primary_completion": "2027-12-31",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2027-12-31",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-09-10",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT06273631",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT06762314",
+   "title": "Efficacy and Safety of Empagliflozin or Semaglutide in Overweight/Obese Patients With Type 1 Diabetes",
+   "acronym": null,
+   "status": "COMPLETED",
+   "why_stopped": null,
+   "phases": [
+    "Phase 2"
+   ],
+   "phase_grade": "phase2",
+   "sponsor": "Mostafa Bahaa",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Diabetes"
+   ],
+   "enrollment": 114,
+   "enrollment_type": "ACTUAL",
+   "start_date": "2025-01-20",
+   "primary_completion": "2026-01-20",
+   "primary_completion_type": "ACTUAL",
+   "completion": "2026-01-20",
+   "completion_type": "ACTUAL",
+   "last_update": "2026-09-02",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT06762314",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT07503028",
+   "title": "An Exploratory Clinical Study Evaluating Allogeneic iPSC-derived Pancreatic Islet Cells (CRG-002) for the Treatment of Diabetic Patients With Hypoglycemia Unawareness or Severe Hypoglycemic Events",
+   "acronym": null,
+   "status": "ENROLLING_BY_INVITATION",
+   "why_stopped": null,
+   "phases": [
+    "Early Phase 1"
+   ],
+   "phase_grade": "phase1",
+   "sponsor": "Celregen Therapeutics",
+   "sponsor_class": "INDUSTRY",
+   "conditions": [
+    "T1DM - Type 1 Diabetes Mellitus",
+    "Pancreatogenic Diabetes Mellitus"
+   ],
+   "enrollment": 10,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2025-10-17",
+   "primary_completion": "2028-01-18",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2028-01-18",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-08-26",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT07503028",
+   "tracked": true
+  },
+  {
+   "nct_id": "NCT07427251",
+   "title": "The Postprandial Hypo-Avoid Study",
+   "acronym": null,
+   "status": "RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 4"
+   ],
+   "phase_grade": "approved",
+   "sponsor": "Steno Diabetes Center Copenhagen",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type 1 Diabetes Mellitus"
+   ],
+   "enrollment": 18,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2026-04-27",
+   "primary_completion": "2027-05-01",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2028-05-01",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-08-13",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT07427251",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT07087795",
+   "title": "A Study to See the Effect of NNC0194-0499 Alone or in Combination With Semaglutide on Blood Sugar Control in People Living With Type 1 Diabetes",
+   "acronym": null,
+   "status": "ACTIVE_NOT_RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 1"
+   ],
+   "phase_grade": "phase1",
+   "sponsor": "Novo Nordisk A/S",
+   "sponsor_class": "INDUSTRY",
+   "conditions": [
+    "Diabetes Mellitus, Type 1"
+   ],
+   "enrollment": 96,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2025-07-01",
+   "primary_completion": "2026-09-12",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2026-09-25",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-08-13",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT07087795",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT06422494",
+   "title": "The Role of the Adrenergic System in Hypoglycaemia Induced Inflammatory Response in People With Type 1 Diabetes and People Without Type 1 Diabetes-RAID-II",
+   "acronym": "RAID-II",
+   "status": "COMPLETED",
+   "why_stopped": null,
+   "phases": [
+    "N/A"
+   ],
+   "phase_grade": null,
+   "sponsor": "Radboud University Medical Center",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Diabetes Mellitus, Type 1",
+    "Inflammation"
+   ],
+   "enrollment": 24,
+   "enrollment_type": "ACTUAL",
+   "start_date": "2025-09-28",
+   "primary_completion": "2025-09-28",
+   "primary_completion_type": "ACTUAL",
+   "completion": "2025-09-28",
+   "completion_type": "ACTUAL",
+   "last_update": "2026-08-13",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT06422494",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT06411210",
+   "title": "Obesity Complicating Type 1 Diabetes: GLP-1 Analogue Anti-obesity Treatment",
+   "acronym": null,
+   "status": "RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 2"
+   ],
+   "phase_grade": "phase2",
+   "sponsor": "Yale University",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Diabetes type1",
+    "Obesity"
+   ],
+   "enrollment": 54,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2024-07-16",
+   "primary_completion": "2028-04-30",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2028-06-30",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-08-04",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT06411210",
+   "tracked": true
+  },
+  {
+   "nct_id": "NCT06105931",
+   "title": "Physiologic Markers of Cardiometabolic Risk in People With Type 1 Diabetes",
+   "acronym": null,
+   "status": "ACTIVE_NOT_RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 1"
+   ],
+   "phase_grade": "phase1",
+   "sponsor": "Yale University",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "type1diabetes",
+    "Obesity"
+   ],
+   "enrollment": 15,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2023-12-13",
+   "primary_completion": "2027-08",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2027-08",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-07-23",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT06105931",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT06880835",
+   "title": "Effect of Inhaled Technosphere Insulin vs RAA Insulin on Exercise-Induced Hypoglycemia in Adults With T1D Using Automated Insulin Delivery",
+   "acronym": "INHALE-AIDEx",
+   "status": "RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "N/A"
+   ],
+   "phase_grade": null,
+   "sponsor": "Jaeb Center for Health Research",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Diabetes Mellitus, Type 1"
+   ],
+   "enrollment": 30,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2025-06-05",
+   "primary_completion": "2026-10-31",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2026-12-31",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-07-16",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT06880835",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT07667504",
+   "title": "Dietary Approaches for the Management of Overweight and Obesity in Type 1 Diabetes",
+   "acronym": "D1ANA",
+   "status": "RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "N/A"
+   ],
+   "phase_grade": null,
+   "sponsor": "Fundación Pública Andaluza para la Investigación de Málaga en Biomedicina y Salud",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type 1 Diabetes (T1D)",
+    "Obesity & Overweight"
+   ],
+   "enrollment": 75,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2026-07-02",
+   "primary_completion": "2028-07",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2028-07",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-07-15",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT07667504",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT05536232",
+   "title": "Residual Insulin Secretion in Patients With Type 1 Diabetes Under a Low Carbohydrate Diet or a Ketogenic Diet",
+   "acronym": "KetoDiab",
+   "status": "COMPLETED",
+   "why_stopped": null,
+   "phases": [
+    "N/A"
+   ],
+   "phase_grade": null,
+   "sponsor": "Assistance Publique - Hôpitaux de Paris",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type1 Diabetes"
+   ],
+   "enrollment": 30,
+   "enrollment_type": "ACTUAL",
+   "start_date": "2022-10-17",
+   "primary_completion": "2026-01-13",
+   "primary_completion_type": "ACTUAL",
+   "completion": "2026-01-13",
+   "completion_type": "ACTUAL",
+   "last_update": "2026-07-13",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT05536232",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT05949281",
+   "title": "Repurposing Colchicine for Reduction of Residual Inflammatory Risk in Type 1 Diabetes",
+   "acronym": "REC1TE",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 2"
+   ],
+   "phase_grade": "phase2",
+   "sponsor": "Asger Lund, MD",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type 1 Diabetes",
+    "Cardiovascular Diseases",
+    "Chronic Inflammation"
+   ],
+   "enrollment": 102,
+   "enrollment_type": "ACTUAL",
+   "start_date": "2023-08-29",
+   "primary_completion": "2031-01-15",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2031-01-15",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-07-13",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT05949281",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT07696039",
+   "title": "Real-world Effectiveness and Safety of Omnipod 5 in Adults With Type 1 Diabetes: a 12-month Observational Study.",
+   "acronym": null,
+   "status": "COMPLETED",
+   "why_stopped": null,
+   "phases": [],
+   "phase_grade": null,
+   "sponsor": "Papa Giovanni XXIII Hospital",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type 1 Diabetes Mellitus"
+   ],
+   "enrollment": 300,
+   "enrollment_type": "ACTUAL",
+   "start_date": "2026-01-07",
+   "primary_completion": "2026-06-30",
+   "primary_completion_type": "ACTUAL",
+   "completion": "2026-06-30",
+   "completion_type": "ACTUAL",
+   "last_update": "2026-07-10",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT07696039",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT06694558",
+   "title": "Monocytes in Subjects With Type 1 Diabetes and Chronic Kidney Disease",
+   "acronym": null,
+   "status": "RECRUITING",
+   "why_stopped": null,
+   "phases": [],
+   "phase_grade": null,
+   "sponsor": "The Cleveland Clinic",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Chronic Kidney Disease(CKD)",
+    "Type 1 Diabetes (T1D)"
+   ],
+   "enrollment": 60,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2025-03-01",
+   "primary_completion": "2026-12-30",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2027-07-01",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-07-08",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT06694558",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT05696366",
+   "title": "Combination Adjunctive Therapy to Address Multiple Metabolic Imbalances in Type 1 Diabetes",
+   "acronym": "SOTA",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 1",
+    "Phase 2"
+   ],
+   "phase_grade": "phase1",
+   "sponsor": "University of California, San Diego",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type 1 Diabetes"
+   ],
+   "enrollment": 24,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2024-09-09",
+   "primary_completion": "2028-01",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2028-01",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-06-15",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT05696366",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT07319286",
+   "title": "Role of Glucagon-like Peptide-1 Receptor Agonists in Menstrual Irregularities in Adolescent Females With Type 1 Diabetes Mellitus",
+   "acronym": null,
+   "status": "ENROLLING_BY_INVITATION",
+   "why_stopped": null,
+   "phases": [
+    "Phase 1",
+    "Phase 2"
+   ],
+   "phase_grade": "phase1",
+   "sponsor": "Ain Shams University",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Menstrual Irregularities",
+    "Type1 Diabetes Mellitus",
+    "Glucagon-Like Peptide-1 Receptor Agonists",
+    "Female Reproductive Health"
+   ],
+   "enrollment": 50,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2025-08-04",
+   "primary_completion": "2026-12",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2027-03",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-06-05",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT07319286",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT05822609",
+   "title": "Trial of Semaglutide for Diabetic Kidney Disease in Type 1 Diabetes",
+   "acronym": "RT1D",
+   "status": "RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 2"
+   ],
+   "phase_grade": "phase2",
+   "sponsor": "University of Washington",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Diabetic Kidney Disease",
+    "Type 1 Diabetes"
+   ],
+   "enrollment": 60,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2024-04-05",
+   "primary_completion": "2027-06",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2027-12",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-06-02",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT05822609",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT03899402",
+   "title": "Triple Therapy in T1DM",
+   "acronym": null,
+   "status": "ACTIVE_NOT_RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 2",
+    "Phase 3"
+   ],
+   "phase_grade": "phase2",
+   "sponsor": "State University of New York at Buffalo",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type 1 Diabetes Mellitus"
+   ],
+   "enrollment": 78,
+   "enrollment_type": "ACTUAL",
+   "start_date": "2019-05-01",
+   "primary_completion": "2026-01-31",
+   "primary_completion_type": "ACTUAL",
+   "completion": "2026-06-30",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-05-29",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT03899402",
+   "tracked": true
+  },
+  {
+   "nct_id": "NCT07614412",
+   "title": "SHIELD-T1D: Shingrix and GLP-1 Agonist for Beta-Cell Preservation in Recent-Onset Type 1 Diabetes.",
+   "acronym": "SHIELD-T1D",
+   "status": "NOT_YET_RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 2"
+   ],
+   "phase_grade": "phase2",
+   "sponsor": "Ministry of Health, Saudi Arabia",
+   "sponsor_class": "OTHER_GOV",
+   "conditions": [
+    "Type 1 Diabetes Mellitus"
+   ],
+   "enrollment": 240,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2027-01-01",
+   "primary_completion": "2028-01-31",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2028-12-31",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-05-29",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT07614412",
+   "tracked": true
+  },
+  {
+   "nct_id": "NCT07284511",
+   "title": "A Clinical Trial Using Tirzepatide to Help Adults With Type 1 Diabetes Automatically Control Their Blood Sugar",
+   "acronym": "TZP",
+   "status": "RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 2",
+    "Phase 3"
+   ],
+   "phase_grade": "phase2",
+   "sponsor": "McGill University Health Centre/Research Institute of the McGill University Health Centre",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type 1 Diabetes",
+    "Type 1 Diabetes Mellitus",
+    "T1D",
+    "T1DM",
+    "T1DM - Type 1 Diabetes Mellitus"
+   ],
+   "enrollment": 105,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2026-05-19",
+   "primary_completion": "2028-01",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2029-01",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-05-27",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT07284511",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT07593105",
+   "title": "Oat Flakes β-glucan on Glycemic Variability, Pancreatic Reserve, and Dyslipidemia Among Adolescents With Type 1 Diabetes",
+   "acronym": null,
+   "status": "COMPLETED",
+   "why_stopped": null,
+   "phases": [
+    "N/A"
+   ],
+   "phase_grade": null,
+   "sponsor": "Ain Shams University",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type 1 Diabetes",
+    "Nutrition"
+   ],
+   "enrollment": 60,
+   "enrollment_type": "ACTUAL",
+   "start_date": "2024-10-12",
+   "primary_completion": "2025-11-12",
+   "primary_completion_type": "ACTUAL",
+   "completion": "2026-02-12",
+   "completion_type": "ACTUAL",
+   "last_update": "2026-05-18",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT07593105",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT06914895",
+   "title": "A Study of Tirzepatide (LY3298176) Compared With Placebo in Adults With Type 1 Diabetes and Obesity or Overweight",
+   "acronym": "SURPASS-T1D-1",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 3"
+   ],
+   "phase_grade": "phase3",
+   "sponsor": "Eli Lilly and Company",
+   "sponsor_class": "INDUSTRY",
+   "conditions": [
+    "Type 1 Diabetes",
+    "Obesity",
+    "Overweight"
+   ],
+   "enrollment": 905,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2025-04-25",
+   "primary_completion": "2026-11",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2026-12",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-05-12",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT06914895",
+   "tracked": true
+  },
+  {
+   "nct_id": "NCT06977633",
+   "title": "Feasibility Study of a Continuous Glucose-Ketone Monitoring Device in People With Type 1 Diabetes",
+   "acronym": null,
+   "status": "NOT_YET_RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "N/A"
+   ],
+   "phase_grade": null,
+   "sponsor": "Mahla Poudineh",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type 1 Diabetes (T1D)"
+   ],
+   "enrollment": 10,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2026-06-30",
+   "primary_completion": "2026-09-30",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2027-09-30",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-05-05",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT06977633",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT07550608",
+   "title": "Effects of Pre-Exercise Basal Insulin Manipulation on Glucose Dynamics in Females vs. Males With Type 1 Diabetes",
+   "acronym": null,
+   "status": "COMPLETED",
+   "why_stopped": null,
+   "phases": [
+    "N/A"
+   ],
+   "phase_grade": null,
+   "sponsor": "Naama Constantini",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type 1 Diabetes"
+   ],
+   "enrollment": 18,
+   "enrollment_type": "ACTUAL",
+   "start_date": "2023-10-20",
+   "primary_completion": "2025-07-01",
+   "primary_completion_type": "ACTUAL",
+   "completion": "2025-07-01",
+   "completion_type": "ACTUAL",
+   "last_update": "2026-04-30",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT07550608",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT05762107",
+   "title": "A Study of the Effect of ZT-01 on Night-time Hypoglycemia in Type 1 Diabetes",
+   "acronym": "ZONE",
+   "status": "RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 2"
+   ],
+   "phase_grade": "phase2",
+   "sponsor": "Zucara Therapeutics Inc.",
+   "sponsor_class": "INDUSTRY",
+   "conditions": [
+    "Type 1 Diabetes Mellitus With Hypoglycemia"
+   ],
+   "enrollment": 186,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2023-07-28",
+   "primary_completion": "2026-12",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2027-05",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-04-29",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT05762107",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT06881472",
+   "title": "The Separate and Combined Glucagonotropic Effects of Glucose-dependent Insulinotropic Polypeptide and Alanine in Subjects With and Without Type 1 Diabetes",
+   "acronym": "GIPALANIN",
+   "status": "COMPLETED",
+   "why_stopped": null,
+   "phases": [
+    "N/A"
+   ],
+   "phase_grade": null,
+   "sponsor": "Asger Lund, MD",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type 1 Diabetes"
+   ],
+   "enrollment": 10,
+   "enrollment_type": "ACTUAL",
+   "start_date": "2025-01-01",
+   "primary_completion": "2026-01-16",
+   "primary_completion_type": "ACTUAL",
+   "completion": "2026-01-16",
+   "completion_type": "ACTUAL",
+   "last_update": "2026-04-29",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT06881472",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT07373236",
+   "title": "The Effect of Endogenous GLP-1 on Glucagon Secretion in Type 1 Diabetes",
+   "acronym": "EX-HYPO",
+   "status": "COMPLETED",
+   "why_stopped": null,
+   "phases": [
+    "N/A"
+   ],
+   "phase_grade": null,
+   "sponsor": "Asger Lund, MD",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type 1 Diabetes"
+   ],
+   "enrollment": 12,
+   "enrollment_type": "ACTUAL",
+   "start_date": "2026-01-23",
+   "primary_completion": "2026-04-09",
+   "primary_completion_type": "ACTUAL",
+   "completion": "2026-04-09",
+   "completion_type": "ACTUAL",
+   "last_update": "2026-04-29",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT07373236",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT07425912",
+   "title": "Real-World Evaluation of TouchCare Nano in Pediatric Type 1 Diabetes",
+   "acronym": "NANO-KIDS",
+   "status": "COMPLETED",
+   "why_stopped": null,
+   "phases": [],
+   "phase_grade": null,
+   "sponsor": "University of Campania Luigi Vanvitelli",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type 1 Diabetes Mellitus"
+   ],
+   "enrollment": 76,
+   "enrollment_type": "ACTUAL",
+   "start_date": "2025-09-05",
+   "primary_completion": "2026-03-05",
+   "primary_completion_type": "ACTUAL",
+   "completion": "2026-03-15",
+   "completion_type": "ACTUAL",
+   "last_update": "2026-04-24",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT07425912",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT04061746",
+   "title": "Cellular Therapy for Type 1 Diabetes Using Mesenchymal Stem Cells",
+   "acronym": null,
+   "status": "ACTIVE_NOT_RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 1"
+   ],
+   "phase_grade": "phase1",
+   "sponsor": "Medical University of South Carolina",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Diabetes Mellitus, Type 1"
+   ],
+   "enrollment": 60,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2020-02-27",
+   "primary_completion": "2027-05-30",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2027-05-30",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-04-22",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT04061746",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT07096908",
+   "title": "Tirzepatide Use in People With Obesity and Type 1 Diabetes",
+   "acronym": null,
+   "status": "RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 4"
+   ],
+   "phase_grade": "approved",
+   "sponsor": "Dasman Diabetes Institute",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type1diabetes",
+    "Obesity"
+   ],
+   "enrollment": 60,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2025-07-31",
+   "primary_completion": "2028-02-25",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2028-08-01",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-04-20",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT07096908",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT00679042",
+   "title": "Islet Transplantation in Type 1 Diabetic Patients Using the University of Illinois at Chicago (UIC) Protocol",
+   "acronym": null,
+   "status": "ACTIVE_NOT_RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 3"
+   ],
+   "phase_grade": "phase3",
+   "sponsor": "CellTrans Inc.",
+   "sponsor_class": "INDUSTRY",
+   "conditions": [
+    "Type 1 Diabetes Mellitus"
+   ],
+   "enrollment": 21,
+   "enrollment_type": "ACTUAL",
+   "start_date": "2007-09-05",
+   "primary_completion": "2017-07-19",
+   "primary_completion_type": "ACTUAL",
+   "completion": "2026-06-14",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-04-06",
+   "has_results": true,
+   "url": "https://clinicaltrials.gov/study/NCT00679042",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT07491133",
+   "title": "Effect of Ambient Temperature on Blood Glucose and Insulin Absorption in Adults With Type 1 Diabetes",
+   "acronym": "T1Temp",
+   "status": "NOT_YET_RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "N/A"
+   ],
+   "phase_grade": null,
+   "sponsor": "Institut de Recherches Cliniques de Montreal",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type 1 Diabetes Mellitus"
+   ],
+   "enrollment": 30,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2026-03",
+   "primary_completion": "2027-03",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2027-07",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-03-24",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT07491133",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT06503809",
+   "title": "Efficacy and Safety of a Ketogenic Diet in Type 1 Diabetes",
+   "acronym": null,
+   "status": "RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "N/A"
+   ],
+   "phase_grade": null,
+   "sponsor": "Washington University School of Medicine",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Diabetes Mellitus, Type 1"
+   ],
+   "enrollment": 58,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2024-08-12",
+   "primary_completion": "2030-02-28",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2030-03-31",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-03-19",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT06503809",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT07258394",
+   "title": "Clinical Study for Dimethyl Fumarate in Preserving Islet β-Cell Function in Type 1 Diabetes Mellitus",
+   "acronym": null,
+   "status": "RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 3"
+   ],
+   "phase_grade": "phase3",
+   "sponsor": "Nanjing Medical University",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type 1 Diabetes"
+   ],
+   "enrollment": 90,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2026-01-27",
+   "primary_completion": "2028-12-31",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2028-12-31",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-03-05",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT07258394",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT05819138",
+   "title": "Type 1 Diabetes Impacts of Semaglutide on Cardiovascular Outcomes",
+   "acronym": "T1-DISCO",
+   "status": "RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 3"
+   ],
+   "phase_grade": "phase3",
+   "sponsor": "University of Colorado, Denver",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Diabetes Mellitus, Type 1"
+   ],
+   "enrollment": 60,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2023-06-21",
+   "primary_completion": "2027-10-01",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2027-12-01",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-03-04",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT05819138",
+   "tracked": true
+  },
+  {
+   "nct_id": "NCT06325202",
+   "title": "Closed Loop and Education for Hypoglycemia Awareness Restoration",
+   "acronym": "CLEAR",
+   "status": "RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "N/A"
+   ],
+   "phase_grade": null,
+   "sponsor": "Milton S. Hershey Medical Center",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Diabetes Mellitus, Type 1"
+   ],
+   "enrollment": 324,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2025-10-03",
+   "primary_completion": "2029-07-31",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2029-07-31",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-03-03",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT06325202",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT07430332",
+   "title": "GLP-1 RA for Stage 1 Type 1 Diabetes",
+   "acronym": null,
+   "status": "NOT_YET_RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 2"
+   ],
+   "phase_grade": "phase2",
+   "sponsor": "Children's Hospital Medical Center, Cincinnati",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Stage 1 Diabetes Mellitus, Type 1"
+   ],
+   "enrollment": 15,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2027-09-01",
+   "primary_completion": "2029-06-01",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2030-01-01",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-02-24",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT07430332",
+   "tracked": true
+  },
+  {
+   "nct_id": "NCT06470295",
+   "title": "Effect of C-peptide on Hypoglycemic Counterregulation",
+   "acronym": null,
+   "status": "RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Early Phase 1"
+   ],
+   "phase_grade": "phase1",
+   "sponsor": "University of Cincinnati",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Hypoglycemia",
+    "Type 1 Diabetes"
+   ],
+   "enrollment": 38,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2024-06-01",
+   "primary_completion": "2027-06-01",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2028-01-01",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-02-17",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT06470295",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT06962280",
+   "title": "A Long-Term Study of Tirzepatide (LY3298176) in Adults With Type 1 Diabetes and Obesity or Overweight",
+   "acronym": "SURPASS-T1D-2",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 3"
+   ],
+   "phase_grade": "phase3",
+   "sponsor": "Eli Lilly and Company",
+   "sponsor_class": "INDUSTRY",
+   "conditions": [
+    "Type 1 Diabetes",
+    "Obesity",
+    "Overweight"
+   ],
+   "enrollment": 465,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2025-05-12",
+   "primary_completion": "2026-11",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2027-07",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-02-17",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT06962280",
+   "tracked": true
+  },
+  {
+   "nct_id": "NCT07270172",
+   "title": "The MICRON Study - A Steno 1 Substudy",
+   "acronym": "MICRON",
+   "status": "RECRUITING",
+   "why_stopped": null,
+   "phases": [],
+   "phase_grade": null,
+   "sponsor": "University of Aarhus",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type 1 Diabetes Mellitus"
+   ],
+   "enrollment": 40,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2025-10-27",
+   "primary_completion": "2028-07",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2028-12",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-02-02",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT07270172",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT04614168",
+   "title": "Maximising Time With a Normal Blood Glucose to Restore the Glucagon Response in Type 1 Diabetes",
+   "acronym": null,
+   "status": "COMPLETED",
+   "why_stopped": null,
+   "phases": [
+    "N/A"
+   ],
+   "phase_grade": null,
+   "sponsor": "University of Edinburgh",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type 1 Diabetes",
+    "Type 1 Diabetes Mellitus With Hypoglycemia",
+    "Hypoglycemia",
+    "Hypoglycemia Unawareness",
+    "Glucagon Deficiency",
+    "Insulin Hypoglycemia"
+   ],
+   "enrollment": 24,
+   "enrollment_type": "ACTUAL",
+   "start_date": "2021-07-26",
+   "primary_completion": "2023-09-22",
+   "primary_completion_type": "ACTUAL",
+   "completion": "2025-12-26",
+   "completion_type": "ACTUAL",
+   "last_update": "2026-01-28",
+   "has_results": true,
+   "url": "https://clinicaltrials.gov/study/NCT04614168",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT06630585",
+   "title": "GIP/GLP-1RA as Adjunctive to Automated Insulin Delivery in Adults With Type 1 Diabetes",
+   "acronym": "AID-JUNCT",
+   "status": "RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 3"
+   ],
+   "phase_grade": "phase3",
+   "sponsor": "University of Bern",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type 1 Diabetes (T1D)"
+   ],
+   "enrollment": 42,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2025-02-14",
+   "primary_completion": "2026-06",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2026-06",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-01-26",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT06630585",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT05669547",
+   "title": "Dual Hormone Closed Loop in Type 1 Diabetes",
+   "acronym": "DARE",
+   "status": "COMPLETED",
+   "why_stopped": null,
+   "phases": [
+    "N/A"
+   ],
+   "phase_grade": null,
+   "sponsor": "UMC Utrecht",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Diabetes Mellitus, Type 1",
+    "Diabetes type1",
+    "Diabetes"
+   ],
+   "enrollment": 243,
+   "enrollment_type": "ACTUAL",
+   "start_date": "2023-10-03",
+   "primary_completion": "2025-10-15",
+   "primary_completion_type": "ACTUAL",
+   "completion": "2025-10-15",
+   "completion_type": "ACTUAL",
+   "last_update": "2026-01-21",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT05669547",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT07341243",
+   "title": "Exercising in Hot Conditions: How Does it Effect Blood Glucose in People With T1D",
+   "acronym": "T1D-Heat",
+   "status": "RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "N/A"
+   ],
+   "phase_grade": null,
+   "sponsor": "Liverpool John Moores University",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type 1 Diabetes (T1D)"
+   ],
+   "enrollment": 38,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2025-11-01",
+   "primary_completion": "2026-11-01",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2026-11-01",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-01-14",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT07341243",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT06904846",
+   "title": "To Evaluate the Change in Glucose Parameters in Adult Patients With Type 1 or Type 2 Diabetes From Europe Using the iCan o3 CGM System for 60 Days Period",
+   "acronym": "DETECT",
+   "status": "ENROLLING_BY_INVITATION",
+   "why_stopped": null,
+   "phases": [
+    "N/A"
+   ],
+   "phase_grade": null,
+   "sponsor": "Sinocare",
+   "sponsor_class": "INDUSTRY",
+   "conditions": [
+    "Diabetes Mellitus",
+    "Continuous Glucose Monitoring System"
+   ],
+   "enrollment": 70,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2025-04-23",
+   "primary_completion": "2026-04-30",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2026-06-30",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-01-14",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT06904846",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT04825366",
+   "title": "Restoration of Hypoglycemia Awareness With Home-based High Intensity Interval Training",
+   "acronym": "FEEL-HIIT",
+   "status": "COMPLETED",
+   "why_stopped": null,
+   "phases": [
+    "N/A"
+   ],
+   "phase_grade": null,
+   "sponsor": "Institut de Recherches Cliniques de Montreal",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type 1 Diabetes",
+    "Hypoglycemia Unawareness"
+   ],
+   "enrollment": 47,
+   "enrollment_type": "ACTUAL",
+   "start_date": "2021-08-03",
+   "primary_completion": "2024-12-15",
+   "primary_completion_type": "ACTUAL",
+   "completion": "2025-08-31",
+   "completion_type": "ACTUAL",
+   "last_update": "2026-01-08",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT04825366",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT07247734",
+   "title": "The Effect of Colchicine, on Insulin Sensitivity in Individuals With Type 1 Diabetes and Systemic Low-grade Inflammation",
+   "acronym": "INS1GHT",
+   "status": "RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 2"
+   ],
+   "phase_grade": "phase2",
+   "sponsor": "Asger Lund, MD",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type 1 Diabetes",
+    "Chronic Inflammation",
+    "Insulin Sensitivity"
+   ],
+   "enrollment": 26,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2025-12-01",
+   "primary_completion": "2026-12-22",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2027-06-22",
+   "completion_type": "ESTIMATED",
+   "last_update": "2025-12-23",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT07247734",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT05616273",
+   "title": "Stimulated Glucagon as a Biomarker of Hypoglycemic Risk in Type 1 Diabetes",
+   "acronym": "MUGGLE",
+   "status": "COMPLETED",
+   "why_stopped": null,
+   "phases": [],
+   "phase_grade": null,
+   "sponsor": "University of Exeter",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type 1 Diabetes",
+    "Hypoglycemia"
+   ],
+   "enrollment": 62,
+   "enrollment_type": "ACTUAL",
+   "start_date": "2023-05-03",
+   "primary_completion": "2025-01-28",
+   "primary_completion_type": "ACTUAL",
+   "completion": "2025-09-30",
+   "completion_type": "ACTUAL",
+   "last_update": "2025-12-19",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT05616273",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT06338553",
+   "title": "GLP-1Ra Impact on Metabolic Outcomes in Stage 2 T1DM While Receiving Teplizumab",
+   "acronym": "GLP-TEP",
+   "status": "RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Early Phase 1"
+   ],
+   "phase_grade": "phase1",
+   "sponsor": "Vanderbilt University Medical Center",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type 1 Diabetes"
+   ],
+   "enrollment": 24,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2024-06-12",
+   "primary_completion": "2027-03",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2027-03",
+   "completion_type": "ESTIMATED",
+   "last_update": "2025-12-18",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT06338553",
+   "tracked": true
+  },
+  {
+   "nct_id": "NCT06082973",
+   "title": "Dual-hormone Artificial Pancreas Versus Single-hormone Under Exercise and a Meal Challenge",
+   "acronym": "TAILOR/3",
+   "status": "COMPLETED",
+   "why_stopped": null,
+   "phases": [
+    "N/A"
+   ],
+   "phase_grade": null,
+   "sponsor": "Universitat Politècnica de València",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type 1 Diabetes"
+   ],
+   "enrollment": 15,
+   "enrollment_type": "ACTUAL",
+   "start_date": "2024-05-15",
+   "primary_completion": "2025-05-30",
+   "primary_completion_type": "ACTUAL",
+   "completion": "2025-05-30",
+   "completion_type": "ACTUAL",
+   "last_update": "2025-12-18",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT06082973",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT06588504",
+   "title": "Research Study in Japan to Compare Dasiglucagon With Glucagon in Treating Very Low Levels of Blood Sugar in Asian Adults With Type 1 Diabetes and Testing of Dasiglucagon for the Same Condition in Japanese Adolescents",
+   "acronym": null,
+   "status": "COMPLETED",
+   "why_stopped": null,
+   "phases": [
+    "Phase 1"
+   ],
+   "phase_grade": "phase1",
+   "sponsor": "Novo Nordisk A/S",
+   "sponsor_class": "INDUSTRY",
+   "conditions": [
+    "Diabetes Mellitus, Type 1"
+   ],
+   "enrollment": 38,
+   "enrollment_type": "ACTUAL",
+   "start_date": "2024-09-10",
+   "primary_completion": "2025-07-20",
+   "primary_completion_type": "ACTUAL",
+   "completion": "2025-07-20",
+   "completion_type": "ACTUAL",
+   "last_update": "2025-12-05",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT06588504",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT06418880",
+   "title": "Automated Insulin Delivery for Inpatients With Dysglycemia",
+   "acronym": "AIDING",
+   "status": "COMPLETED",
+   "why_stopped": null,
+   "phases": [
+    "Phase 3"
+   ],
+   "phase_grade": "phase3",
+   "sponsor": "Emory University",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type 1 Diabetes",
+    "Type 2 Diabetes"
+   ],
+   "enrollment": 130,
+   "enrollment_type": "ACTUAL",
+   "start_date": "2025-01-22",
+   "primary_completion": "2025-10-31",
+   "primary_completion_type": "ACTUAL",
+   "completion": "2025-10-31",
+   "completion_type": "ACTUAL",
+   "last_update": "2025-11-14",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT06418880",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT01909245",
+   "title": "Islet Cell Transplant for Type 1 Diabetes",
+   "acronym": "TCD",
+   "status": "ACTIVE_NOT_RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 2"
+   ],
+   "phase_grade": "phase2",
+   "sponsor": "City of Hope Medical Center",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type 1 Diabetes Mellitus"
+   ],
+   "enrollment": 10,
+   "enrollment_type": "ACTUAL",
+   "start_date": "2013-10-16",
+   "primary_completion": "2026-09-22",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2026-09-22",
+   "completion_type": "ESTIMATED",
+   "last_update": "2025-11-10",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT01909245",
+   "tracked": false
+  }
+ ],
+ "papers": {
+  "adjunct": [
+   {
+    "pmid": "42712125",
+    "title": "GLP-1 Receptor Agonists Post-Bariatric Surgery (GRABS) Trial: Rationale, Design and Baseline Characteristics",
+    "journal": "Diabetes Obes Metab",
+    "pubdate": "2026 Nov",
+    "sortdate": "2026-11-01",
+    "authors": "Samuels JM, Williams CR, Patel MB et al.",
+    "is_rct": false,
+    "is_review": false,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42712125/",
+    "doi": "10.1111/dom.71320"
+   },
+   {
+    "pmid": "42675550",
+    "title": "Glycaemic Changes After Semaglutide Discontinuation in Adults With Type 1 Diabetes Using Automated Insulin Delivery: Analysis of the ADJUST-T1D Extension Study",
+    "journal": "Diabetes Obes Metab",
+    "pubdate": "2026 Nov",
+    "sortdate": "2026-11-01",
+    "authors": "Montaser E, Bhasin K, Kruger D et al.",
+    "is_rct": true,
+    "is_review": false,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42675550/",
+    "doi": "10.1111/dom.71287"
+   },
+   {
+    "pmid": "42473259",
+    "title": "Insulin, Semaglutide and Dapagliflozin in Adults With Type 1 Diabetes: Design and Methods of Triple Therapy for Type 1 Diabetes (TTT1)-An International Phase 3 Clinical Trial",
+    "journal": "Diabetes Obes Metab",
+    "pubdate": "2026 Oct",
+    "sortdate": "2026-10-01",
+    "authors": "Timmons JG, Ghanim H, Boyle JG et al.",
+    "is_rct": true,
+    "is_review": false,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42473259/",
+    "doi": "10.1111/dom.71076"
+   },
+   {
+    "pmid": "42410316",
+    "title": "Real-World Effectiveness and Safety of Tirzepatide in Type 1 Diabetes and Obesity: Impact on Glycaemia, Weight, and Cardiometabolic Risk Markers",
+    "journal": "Diabetes Obes Metab",
+    "pubdate": "2026 Oct",
+    "sortdate": "2026-10-01",
+    "authors": "Berry SA, Goodman IR, McNally E et al.",
+    "is_rct": false,
+    "is_review": false,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42410316/",
+    "doi": "10.1111/dom.71080"
+   },
+   {
+    "pmid": "42776131",
+    "title": "Beyond insulin-like growth factor-1 (IGF-1) normalization: portal insulin and hepatic growth hormone (GH) sensitivity across metabolic disease",
+    "journal": "Arch Endocrinol Metab",
+    "pubdate": "2026 Sep 23",
+    "sortdate": "2026-09-23",
+    "authors": "van AJ der Lely, Neggers SJ, Kopchick JJ et al.",
+    "is_rct": false,
+    "is_review": true,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42776131/",
+    "doi": "10.20945/2359-4292-2026-0115"
+   },
+   {
+    "pmid": "36251836",
+    "title": "Tirzepatide",
+    "journal": "",
+    "pubdate": "2026 Jan",
+    "sortdate": "2026-09-14",
+    "authors": "Farzam K, Patel P",
+    "is_rct": false,
+    "is_review": false,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/36251836/",
+    "doi": null
+   },
+   {
+    "pmid": "42695140",
+    "title": "Adjunctive Treatments for Patients with Type 1 Diabetes Using Automated Insulin Delivery Systems. A Narrative Review",
+    "journal": "Diabetes Technol Ther",
+    "pubdate": "2026 Sep 4",
+    "sortdate": "2026-09-04",
+    "authors": "Kitsios K, Trakatelli CM",
+    "is_rct": false,
+    "is_review": true,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42695140/",
+    "doi": "10.1177/15209156261486127"
+   },
+   {
+    "pmid": "42555627",
+    "title": "Weight Loss-Dependent Changes in Body Composition and Bone Health in People With Obesity and Type 1 Diabetes Treated With Liraglutide, Semaglutide, or Tirzepatide",
+    "journal": "Diabetes Metab Res Rev",
+    "pubdate": "2026 Sep",
+    "sortdate": "2026-09-01",
+    "authors": "Al Ozairi E, Irshad M, Alkandri J et al.",
+    "is_rct": false,
+    "is_review": false,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42555627/",
+    "doi": "10.1002/dmrr.70213"
+   }
+  ],
+  "beta_cell": [
+   {
+    "pmid": "42595732",
+    "title": "Liraglutide and Βeta-Cell Function in Young Adults With Long-Standing Type 1 Diabetes and Residual C-Peptide: A Blinded, Randomized Controlled Trial",
+    "journal": "Diabetes Obes Metab",
+    "pubdate": "2026 Nov",
+    "sortdate": "2026-11-01",
+    "authors": "Caballero-Corbalán J, Lundkvist P, Espes D et al.",
+    "is_rct": true,
+    "is_review": false,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42595732/",
+    "doi": "10.1111/dom.71204"
+   },
+   {
+    "pmid": "42811814",
+    "title": "GHRH and GLP-1 receptor agonism promote human β-cell survival and improve glucose homeostasis in diabetic mice",
+    "journal": "Endocrinology",
+    "pubdate": "2026 Sep 29",
+    "sortdate": "2026-09-29",
+    "authors": "Louzada RA, Gonzalez Medina M, Pita-Grisanti V et al.",
+    "is_rct": false,
+    "is_review": false,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42811814/",
+    "doi": "10.1210/endocr/bqag104"
+   },
+   {
+    "pmid": "42526996",
+    "title": "GLP-1 Receptor Agonists May Reduce Insulin Requirements in New-Onset Type 1 Diabetes",
+    "journal": "Endocrinol Metab Clin North Am",
+    "pubdate": "2026 Sep",
+    "sortdate": "2026-09-01",
+    "authors": "Gregory JM",
+    "is_rct": false,
+    "is_review": true,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42526996/",
+    "doi": "10.1016/j.ecl.2026.04.010"
+   },
+   {
+    "pmid": "42452840",
+    "title": "Incident Diabetic Retinopathy after Adjunctive Tirzepatide Treatment for 1 Year in Adults with Type 1 Diabetes",
+    "journal": "Diabetes Technol Ther",
+    "pubdate": "2026 Jul 14",
+    "sortdate": "2026-07-14",
+    "authors": "Polsky S, Beck E, Shah A et al.",
+    "is_rct": false,
+    "is_review": false,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42452840/",
+    "doi": "10.1177/15209156261468108"
+   },
+   {
+    "pmid": "42272327",
+    "title": "Sustained Glycaemic Control and Preserved Beta-Cell Function in Newly Diagnosed Type 1 Diabetes Treated With Semaglutide",
+    "journal": "Diabetes Metab Res Rev",
+    "pubdate": "2026 Jul",
+    "sortdate": "2026-07-01",
+    "authors": "Carollo M, Martinenghi S, Gallo A et al.",
+    "is_rct": false,
+    "is_review": false,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42272327/",
+    "doi": "10.1002/dmrr.70191"
+   },
+   {
+    "pmid": "42250233",
+    "title": "Use of second-generation incretin analogs (GLP-1 and GIP receptor agonists) in type 1 diabetes and latent autoimmune diabetes in adults: A systematic review",
+    "journal": "J Am Assoc Nurse Pract",
+    "pubdate": "2026 Jun 9",
+    "sortdate": "2026-06-09",
+    "authors": "Horne MP, Pollard H, Day H et al.",
+    "is_rct": false,
+    "is_review": false,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42250233/",
+    "doi": "10.1097/JXX.0000000000001303"
+   },
+   {
+    "pmid": "41172278",
+    "title": "Altered Glucagon Response to Oral Glucose in Individuals at Different Stages of Type 1 Diabetes Development",
+    "journal": "J Clin Endocrinol Metab",
+    "pubdate": "2026 Apr 22",
+    "sortdate": "2026-04-22",
+    "authors": "Kontola H, Crisóstomo L, Löyttyniemi E et al.",
+    "is_rct": false,
+    "is_review": false,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41172278/",
+    "doi": "10.1210/clinem/dgaf601"
+   },
+   {
+    "pmid": "41890182",
+    "title": "Glucagon-like peptide-1 agonists' effects on glycemic control, weight loss, and beta cells function in type 1 diabetes",
+    "journal": "Front Endocrinol (Lausanne)",
+    "pubdate": "2026",
+    "sortdate": "2026-03-11",
+    "authors": "Mirghani HO, Albishi L, Alblewi SM",
+    "is_rct": false,
+    "is_review": true,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41890182/",
+    "doi": "10.3389/fendo.2026.1758755"
+   }
+  ],
+  "safety": [
+   {
+    "pmid": "42675550",
+    "title": "Glycaemic Changes After Semaglutide Discontinuation in Adults With Type 1 Diabetes Using Automated Insulin Delivery: Analysis of the ADJUST-T1D Extension Study",
+    "journal": "Diabetes Obes Metab",
+    "pubdate": "2026 Nov",
+    "sortdate": "2026-11-01",
+    "authors": "Montaser E, Bhasin K, Kruger D et al.",
+    "is_rct": true,
+    "is_review": false,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42675550/",
+    "doi": "10.1111/dom.71287"
+   },
+   {
+    "pmid": "42895615",
+    "title": "Antidiabetic medications in the pipeline",
+    "journal": "Hormones (Athens)",
+    "pubdate": "2026 Oct 19",
+    "sortdate": "2026-10-19",
+    "authors": "Efstathiadou ZA, Gogakos AI, Divaris E et al.",
+    "is_rct": false,
+    "is_review": true,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42895615/",
+    "doi": "10.1007/s42000-026-00780-5"
+   },
+   {
+    "pmid": "42473259",
+    "title": "Insulin, Semaglutide and Dapagliflozin in Adults With Type 1 Diabetes: Design and Methods of Triple Therapy for Type 1 Diabetes (TTT1)-An International Phase 3 Clinical Trial",
+    "journal": "Diabetes Obes Metab",
+    "pubdate": "2026 Oct",
+    "sortdate": "2026-10-01",
+    "authors": "Timmons JG, Ghanim H, Boyle JG et al.",
+    "is_rct": true,
+    "is_review": false,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42473259/",
+    "doi": "10.1111/dom.71076"
+   },
+   {
+    "pmid": "42410316",
+    "title": "Real-World Effectiveness and Safety of Tirzepatide in Type 1 Diabetes and Obesity: Impact on Glycaemia, Weight, and Cardiometabolic Risk Markers",
+    "journal": "Diabetes Obes Metab",
+    "pubdate": "2026 Oct",
+    "sortdate": "2026-10-01",
+    "authors": "Berry SA, Goodman IR, McNally E et al.",
+    "is_rct": false,
+    "is_review": false,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42410316/",
+    "doi": "10.1111/dom.71080"
+   },
+   {
+    "pmid": "42380553",
+    "title": "GLP-1-Based Therapies in Type 1 Diabetes: Emerging Evidence on Cardiovascular, Renal, and Safety Outcomes",
+    "journal": "Diabetes Obes Metab",
+    "pubdate": "2026 Oct",
+    "sortdate": "2026-10-01",
+    "authors": "Tentolouris A, Popovic DS, Liarakos AL et al.",
+    "is_rct": false,
+    "is_review": true,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42380553/",
+    "doi": "10.1111/dom.71045"
+   },
+   {
+    "pmid": "42695140",
+    "title": "Adjunctive Treatments for Patients with Type 1 Diabetes Using Automated Insulin Delivery Systems. A Narrative Review",
+    "journal": "Diabetes Technol Ther",
+    "pubdate": "2026 Sep 4",
+    "sortdate": "2026-09-04",
+    "authors": "Kitsios K, Trakatelli CM",
+    "is_rct": false,
+    "is_review": true,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42695140/",
+    "doi": "10.1177/15209156261486127"
+   },
+   {
+    "pmid": "42526994",
+    "title": "Daily Glucagon-like Peptide-1 Receptor Agonists in Type 1 Diabetes: What we've Learned and What Comes Next",
+    "journal": "Endocrinol Metab Clin North Am",
+    "pubdate": "2026 Sep",
+    "sortdate": "2026-09-01",
+    "authors": "Innes R, Petrie JR, Dejgaard TF",
+    "is_rct": false,
+    "is_review": true,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42526994/",
+    "doi": "10.1016/j.ecl.2026.04.002"
+   },
+   {
+    "pmid": "42669023",
+    "title": "Online-Sourced Retatrutide Complicating Impending Diabetic Ketoacidosis in a Patient With Type 1 Diabetes and Concurrent Shigella Gastroenteritis",
+    "journal": "Cureus",
+    "pubdate": "2026 Aug",
+    "sortdate": "2026-08-26",
+    "authors": "Branine N",
+    "is_rct": false,
+    "is_review": false,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42669023/",
+    "doi": "10.7759/cureus.115260"
+   }
+  ]
+ },
+ "labels": [
+  {
+   "brand": "Ozempic",
+   "found": true,
+   "generic": "SEMAGLUTIDE",
+   "manufacturer": "A-S Medication Solutions",
+   "effective": "2026-07-30",
+   "t1d_statement": null,
+   "indication_scope": "type 2 diabetes",
+   "approved_for_t1d": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Ozempic"
+  },
+  {
+   "brand": "Wegovy",
+   "found": true,
+   "generic": "SEMAGLUTIDE",
+   "manufacturer": "A-S Medication Solutions",
+   "effective": "2024-04-23",
+   "t1d_statement": null,
+   "indication_scope": "weight management / obesity-related",
+   "approved_for_t1d": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Wegovy"
+  },
+  {
+   "brand": "Mounjaro",
+   "found": true,
+   "generic": "TIRZEPATIDE",
+   "manufacturer": "Eli Lilly and Company",
+   "effective": "2026-08-27",
+   "t1d_statement": null,
+   "indication_scope": "type 2 diabetes",
+   "approved_for_t1d": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Mounjaro"
+  },
+  {
+   "brand": "Zepbound",
+   "found": true,
+   "generic": "TIRZEPATIDE",
+   "manufacturer": "Eli Lilly and Company",
+   "effective": "2026-08-28",
+   "t1d_statement": null,
+   "indication_scope": "weight management / obesity-related",
+   "approved_for_t1d": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Zepbound"
+  },
+  {
+   "brand": "Victoza",
+   "found": true,
+   "generic": "LIRAGLUTIDE",
+   "manufacturer": "Novo Nordisk",
+   "effective": "2025-10-14",
+   "t1d_statement": null,
+   "indication_scope": "type 2 diabetes",
+   "approved_for_t1d": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Victoza"
+  },
+  {
+   "brand": "Trulicity",
+   "found": true,
+   "generic": "DULAGLUTIDE",
+   "manufacturer": "Eli Lilly and Company",
+   "effective": "2026-06-16",
+   "t1d_statement": null,
+   "indication_scope": "type 2 diabetes",
+   "approved_for_t1d": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Trulicity"
+  },
+  {
+   "brand": "Rybelsus",
+   "found": true,
+   "generic": "ORAL SEMAGLUTIDE",
+   "manufacturer": "Novo Nordisk Pharmaceutical Industries, LP",
+   "effective": "2026-01-30",
+   "t1d_statement": null,
+   "indication_scope": "type 2 diabetes",
+   "approved_for_t1d": false,
+   "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Rybelsus"
+  }
+ ],
+ "any_t1d_label": false
+}
