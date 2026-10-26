@@ -7,17 +7,15 @@
 <section class="hero">
   <span class="eyebrow">Independent research · Type 1 diabetes · Updated {{ built_human }}</span>
   <h1>A cure for type 1 diabetes would reshape a {{ headline.tam|money(0) }} market. Here is how close it is, and who is exposed.</h1>
-  <p class="lede">Every cure program is graded twice: how far it has advanced, and how much evidence has actually read out. The gap between the two is where hype lives. Registry, FDA, SEC and market data refresh daily, and a model sizes what a functional cure would displace.</p>
+  <p class="lede">Every cure program is graded on how far it has advanced and on the results it has actually reported. A model then sizes what a working cure would take from today's device and insulin makers. Data refreshes daily from primary sources.</p>
   <div class="actions">
     <a class="btn" href="{{ root }}model/">Open the Cure Impact Model →</a>
     <a class="btn ghost" href="{{ root }}pipeline/">See the cure pipeline</a>
   </div>
   <div class="stats">
-    {{ ui.stat(headline.active, "Active cure programs", (cure|length - headline.active)|string + " discontinued programs kept on record") }}
-    {{ ui.stat(headline.late, "At Phase 3 or beyond", "only " ~ headline.late_ev ~ " with Phase 3-grade evidence") }}
-    {{ ui.stat(headline.approved|length, "Approved T1D cell or immune therapies", headline.approved|map(attribute="short")|join(", ")) }}
-    {{ ui.stat("None" if not headline.glp_label else "Yes", "GLP-1 labels covering T1D", "checked daily against FDA labels") }}
-    {{ ui.stat(b["2040"].displaced_total|money, "Base-case revenue displaced in 2040", "of CGM, pump & insulin revenue · model output") }}
+    {{ ui.stat(headline.active, "Active cure programs", headline.late ~ " at Phase 3 or beyond · " ~ headline.late_ev ~ " with Phase 3-grade results") }}
+    {{ ui.stat(headline.approved|length, "Approved T1D cell or immune therapies", headline.approved|map(attribute="short")|join(" and ")) }}
+    {{ ui.stat(b["2040"].displaced_total|money, "Revenue displaced in 2040, base case", "CGM, pumps & insulin · model output") }}
   </div>
   <p class="asof">Market size: 2025 global CGM ({{ (market.markets.cgm.value * 1e9)|money }}), insulin pumps ({{ (market.markets.pump.value * 1e9)|money }}) and insulin ({{ (market.markets.insulin.value * 1e9)|money }}), Global Market Insights estimates; <a href="{{ root }}model/#methodology">sources and ranges</a>. {{ headline.trials }} registered trials tracked.</p>
 </section>
@@ -37,65 +35,60 @@
       <div class="fig-sub">Annual, US$, global markets, {{ md.json.start }}–{{ md.json.end }}</div>
       <div class="legend" aria-hidden="true"><span><i class="sw-s1"></i>Insulin</span><span><i class="sw-s2"></i>CGM</span><span><i class="sw-s3"></i>Pumps / AID</span></div>
       {{ md.chart }}
-      <div class="table-scroll mt-5" tabindex="0" role="region" aria-label="Displaced revenue by market">
-      <table class="data">
-        <caption>Displaced revenue by market (model output)</caption>
-        <thead><tr><th>Market</th><th class="r">2025 market</th><th class="r">2035</th><th class="r">2040</th><th class="r">2040 as % of T1D revenue</th></tr></thead>
-        <tbody>
-        {% for key, name in [("insulin", "Insulin"), ("cgm", "CGM"), ("pump", "Pumps / AID")] %}
-        {% set row40 = md.results.base.rows[-1] %}
-        <tr><td>{{ name }}</td><td class="num">{{ (market.markets[key].value * 1e9)|money }}</td><td class="num">{{ b["2035"].displaced[key]|money }}</td><td class="num">{{ b["2040"].displaced[key]|money }}</td><td class="num">{{ (row40.displaced[key] / row40.t1d_baseline[key])|pct(1) }}</td></tr>
-        {% endfor %}
-        <tr class="total"><td>Total</td><td class="num">{{ headline.tam|money }}</td><td class="num">{{ b["2035"].displaced_total|money }}</td><td class="num">{{ b["2040"].displaced_total|money }}</td><td class="num">{{ b["2040"].share_of_t1d|pct(1) }}</td></tr>
-        </tbody>
-      </table></div>
+      <figcaption>Model output under labelled assumptions, not a forecast.</figcaption>
     </figure>
     <div>
-      <h4>Key assumptions · base case</h4>
-      <dl class="assumptions">
-        <div><dt>First broad approval <span class="tag-assume">assumption</span></dt><dd>{{ bi.approval }}</dd></div>
-        <div><dt>Peak share of T1D patients cured <span class="tag-assume">assumption</span></dt><dd>{{ bi.peak|pct }}</dd></div>
-        <div><dt>Years from approval to peak <span class="tag-assume">assumption</span></dt><dd>{{ bi.ramp }}</dd></div>
-        <div><dt>Treatment capacity / year <span class="tag-assume">assumption</span></dt><dd>{{ bi.cap|num }}</dd></div>
-        <div><dt>One-time price per patient <span class="tag-assume">assumption</span></dt><dd>{{ bi.price|money(0) }}</dd></div>
-        <div><dt>Cured patients still using CGM <span class="tag-assume">assumption</span></dt><dd>{{ bi.residual|pct }}</dd></div>
-        <div><dt>People with T1D, global <span class="tag-src">sourced</span></dt><dd>{{ market.population.t1d_global_m }}M</dd></div>
-      </dl>
-      <div class="stats compact mt-5" style="grid-template-columns:repeat(2,minmax(0,1fr))">
-        {{ ui.stat(b["2040"].penetration|pct(1), "T1D patients cured by 2040") }}
-        {{ ui.stat(b.peak_cure_sales|money, "Peak annual cure sales", "in " ~ b.peak_cure_year) }}
+      <div class="stats compact" style="grid-template-columns:repeat(2,minmax(0,1fr))">
+        {{ ui.stat(b["2035"].displaced_total|money, "Displaced in 2035", b["2035"].share_of_t1d|pct(1) ~ " of T1D-driven revenue") }}
+        {{ ui.stat(b["2040"].displaced_total|money, "Displaced in 2040", b["2040"].share_of_t1d|pct(1) ~ " of T1D-driven revenue") }}
       </div>
+      <table class="data mt-5" aria-label="Displaced revenue in 2040 by market">
+        <thead><tr><th>2040, by market</th><th class="r">Displaced</th><th class="r">% of T1D rev.</th></tr></thead>
+        <tbody>
+        {% set row40 = md.results.base.rows[-1] %}
+        {% for key, name in [("pump", "Pumps / AID"), ("cgm", "CGM"), ("insulin", "Insulin")] %}
+        <tr><td>{{ name }}</td><td class="num">{{ b["2040"].displaced[key]|money }}</td><td class="num">{{ (row40.displaced[key] / row40.t1d_baseline[key])|pct(1) }}</td></tr>
+        {% endfor %}
+        </tbody>
+      </table>
+      <p class="small ink2 mt-5 mb-0">Base case <span class="tag-assume">assumptions</span>: approval in {{ bi.approval }}, {{ bi.peak|pct }} of patients cured at peak, {{ (bi.cap/1000)|round|int }}K treatments a year, {{ bi.price|money(0) }} per patient. <a href="{{ root }}model/">Change them in the model →</a></p>
     </div>
   </div>
-  <div class="mt-7">
-    <div class="row mb-5"><h3 class="mb-0">Investment implications</h3>{{ ui.analysis_label() }}</div>
+</section>
+</div>
+
+<div class="band" aria-labelledby="h-imp">
+  <div class="wrap">
+    <div class="row mb-5"><h2 id="h-imp" class="mb-0" style="font-size:var(--fs-xl)">Investment implications</h2>{{ ui.analysis_label() }}</div>
     <ol class="implications">
       {% for i in implications %}<li><div><h3>{{ i.title }}</h3><p>{{ i.body }}</p></div></li>{% endfor %}
     </ol>
   </div>
-</section>
+</div>
 
+<div class="wrap">
 <section class="section" aria-labelledby="h-hype">
   <div class="section-head">
     <div><span class="eyebrow">02 · Stage vs. evidence</span>
     <h2 id="h-hype">The hype map</h2>
-    <p>Outlined steps show how far a program has advanced; filled steps show the evidence actually read out. A long outline with a short fill means a lot is still unproven.</p></div>
-    <a class="more" href="{{ root }}pipeline/">All programs →</a>
+    <p>{{ ui.hype_explainer() }}</p></div>
+    <a class="more" href="{{ root }}pipeline/">All {{ cure|length }} programs →</a>
   </div>
   {{ ui.hype_legend() }}
-  {{ ui.hype_map(hype_order, root) }}
+  {{ ui.hype_map((hype_order|selectattr("status","eq","active")|list)[:8], root) }}
+  <p class="small mt-5 mb-0"><a href="{{ root }}pipeline/">See all {{ headline.active }} active programs and {{ cure|length - headline.active }} discontinued ones →</a></p>
 </section>
 
 <section class="section" aria-labelledby="h-next">
   <div class="cols cols-2">
     <div>
       <div class="section-head" style="margin-bottom:var(--sp-4)"><div><span class="eyebrow">03 · What's next</span><h2 id="h-next">Next catalysts</h2></div><a class="more" href="{{ root }}catalysts/">Calendar →</a></div>
-      {{ ui.catalyst_list(upcoming, root, 7) }}
+      {{ ui.catalyst_list(upcoming, root, 5) }}
     </div>
     <div>
       <div class="section-head" style="margin-bottom:var(--sp-4)"><div><span class="eyebrow">Registry watch</span><h2>Latest registry changes</h2></div><a class="more" href="{{ root }}methodology/#flags">How flags work →</a></div>
       {% if D.changes %}
-      <ul class="list">{% for c in D.changes[:7] %}<li><span class="when">{{ c.date|fdate("exact", True) }}</span><span class="what"><a href="https://clinicaltrials.gov/study/{{ c.nct_id }}" rel="noopener">{{ c.title }}</a><span class="sub">{{ c.nct_id }} · {% if c.kind == "status" %}status {{ c.from|status }} → {{ c.to|status }}{% else %}primary completion {{ c.from }} → {{ c.to }}{% if c.slip_days %} ({{ "+" if c.slip_days > 0 }}{{ c.slip_days }} days){% endif %}{% endif %}</span></span></li>{% endfor %}</ul>
+      <ul class="list">{% for c in D.changes[:5] %}<li><span class="when">{{ c.date|fdate("exact", True) }}</span><span class="what"><a href="https://clinicaltrials.gov/study/{{ c.nct_id }}" rel="noopener">{{ c.title }}</a><span class="sub">{{ c.nct_id }} · {% if c.kind == "status" %}status {{ c.from|status }} → {{ c.to|status }}{% else %}primary completion {{ c.from }} → {{ c.to }}{% if c.slip_days %} ({{ "+" if c.slip_days > 0 }}{{ c.slip_days }} days){% endif %}{% endif %}</span></span></li>{% endfor %}</ul>
       {% else %}
       <p class="small muted">No registry status or date changes detected in the tracked trials since the change log started. Open verification flags are listed instead.</p>
       <ul class="list">{% for p in D.programs if p.flags|selectattr("level","ne","info")|list %}{% for f in p.flags if f.level != "info" %}{% if loop.first %}<li class="nodate"><span class="what"><a href="{{ root }}{{ p.url }}">{{ p.short }}</a><span class="sub">▲ {{ f.text }}</span></span></li>{% endif %}{% endfor %}{% endfor %}</ul>

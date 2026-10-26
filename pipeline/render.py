@@ -78,15 +78,15 @@ NAV = [("", "Overview"), ("model/", "Cure Impact Model"), ("pipeline/", "Cure pi
 
 NOTES = [
     {"slug": "glp1s-and-the-t1d-label", "template": "research/glp1_label.html",
-     "title": "Why GLP-1s don't have a type 1 diabetes label yet",
+     "title": "Why GLP-1s don't have a type 1 diabetes label yet", "kicker": "GLP-1s",
      "dek": "A decade after liraglutide's T1D program, no GLP-1 label covers type 1. The data explain why, and what tirzepatide's Phase 3 has to show.",
      "published": "2026-10-24"},
     {"slug": "the-cure-race-in-one-chart", "template": "research/cure_race.html",
-     "title": "The cure race in one chart",
+     "title": "The cure race in one chart", "kicker": "Cure pipeline",
      "dek": "Plotting every tracked program by how far it has advanced against how far its evidence has actually read out.",
      "published": "2026-10-24"},
     {"slug": "what-a-cure-means-for-pump-makers", "template": "research/pump_makers.html",
-     "title": "What a functional cure means for pump makers",
+     "title": "What a functional cure means for pump makers", "kicker": "Model read-across",
      "dek": "Running the Cure Impact Model through the income statements of the companies most exposed to type 1 diabetes.",
      "published": "2026-10-24"},
 ]
@@ -498,6 +498,9 @@ def render(out=OUT):
     built_date = built[:10] if built else TODAY.isoformat()
 
     S = Site(out)
+    # Content hashes as ?v= cache-busters, so a deploy never serves a stale stylesheet or script.
+    S.env.globals["v"] = {n: hashlib.sha1((SRC / "assets" / n).read_bytes()).hexdigest()[:10]
+                          for n in ("style.css", "app.js", "model.js")}
     S.env.globals.update(built_at=built, built_date=built_date, built_human=fdate(built_date), meta=meta)
     cure = [p for p in D["programs"] if p["section"] == "cure"]
     glp = [p for p in D["programs"] if p["section"] == "glp1"]
@@ -614,7 +617,7 @@ def price_chart(c):
                        "{} share price, {}".format(c["name"], sub), area=True, chart_id="price-chart")
 
 
-def quarters(upcoming, n=6):
+def quarters(upcoming, n=3):
     if not upcoming:
         return []
     start = (TODAY.year, (TODAY.month - 1) // 3 + 1)

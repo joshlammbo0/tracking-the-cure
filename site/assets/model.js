@@ -103,8 +103,7 @@
     ];
     chartCfg.marks = [2035, 2040];
     chartCfg.label = "Projected T1D-attributable revenue displaced by a functional cure, 2025 to 2040";
-    chartEl.innerHTML = TTC.stackSvg(chartCfg);
-    TTC.attachChart(chartEl, chartCfg);
+    TTC.drawChart(chartEl, chartCfg);
     // market table
     var mt = [["insulin", "Insulin"], ["cgm", "CGM"], ["pump", "Pumps / AID"]].map(function (m) {
       return "<tr><td>" + m[1] + '</td><td class="num">' + money(s[2030].displaced[m[0]]) + '</td><td class="num">' + money(s[2035].displaced[m[0]]) + '</td><td class="num">' + money(s[2040].displaced[m[0]]) + '</td><td class="num">' + pct(r40.t1d_baseline[m[0]] ? r40.displaced[m[0]] / r40.t1d_baseline[m[0]] : 0, 1) + "</td></tr>";
@@ -207,11 +206,16 @@
     document.body.appendChild(a); a.click(); setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 500);
   });
 
+  var lastW = window.innerWidth;
+  window.addEventListener("resize", function () { if (window.innerWidth !== lastW) { lastW = window.innerWidth; TTC.drawChart(chartEl, chartCfg); } });
+
   // initial state from the URL (#bull, or #approval=...&peak=...)
   var h = decodeURIComponent(location.hash.slice(1));
   write(D.defaults.base);  // never trust browser-restored form state
   if (D.defaults[h]) write(D.defaults[h]);
   else if (h.indexOf("=") > 0) {
+    var adv = document.getElementById("advanced");
+    if (adv) adv.open = true;  // a shared link may change any input, so show them all
     var v = {};
     h.split("&").forEach(function (kv) {
       var p = kv.split("="), k = p[0];

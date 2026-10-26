@@ -75,7 +75,7 @@
       cum = hi;
     });
     o.push('<line class="base" x1="' + M.l + '" x2="' + (w - M.r) + '" y1="' + Y(0).toFixed(1) + '" y2="' + Y(0).toFixed(1) + '"/>');
-    var every = n <= 8 ? 1 : n <= 16 ? 2 : 5;
+    var every = cfg.every || (n <= 8 ? 1 : n <= 16 ? 2 : 5);
     x.forEach(function (xv, i) { if (i % every === 0 || i === n - 1) o.push('<text x="' + X(i).toFixed(1) + '" y="' + (h - 8) + '" text-anchor="middle">' + esc(xv) + "</text>"); });
     (cfg.marks || []).forEach(function (mk) {
       var i = x.indexOf(String(mk)); if (i < 0) return;
@@ -91,6 +91,52 @@
     ends.forEach(function (e) { if (e[1].values[n - 1] > 0) o.push('<text class="lbl" x="' + (w - M.r + 8) + '" y="' + e[0].toFixed(1) + '" dy="0.32em">' + esc(e[1].name) + "</text>"); });
     o.push("</svg>");
     return o.join("");
+  };
+
+  // ------------------------------------------------------------ line chart (same geometry as charts.line)
+  var MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  function shortDate(s) { var m = String(s).match(/^(\d{4})-(\d{2})/); return m ? MONTHS[+m[2] - 1] + " \u2019" + m[1].slice(2) : s; }
+  TTC.lineSvg = function (cfg) {
+    var x = cfg.x, n = x.length, M = cfg.m, w = cfg.w, h = cfg.h;
+    var all = []; cfg.series.forEach(function (s) { s.values.forEach(function (v) { if (v != null) all.push(v); }); });
+    var lo = Math.min.apply(null, all), hi = Math.max.apply(null, all), pad = (hi - lo) * 0.08 || 1;
+    var step = niceStep(hi - lo + 2 * pad), lo2 = step * Math.floor((lo - pad) / step), hi2 = step * Math.ceil((hi + pad) / step);
+    cfg.lo = lo2; cfg.hi = hi2;
+    var pw = w - M.l - M.r, ph = h - M.t - M.b;
+    function X(i) { return M.l + (i / Math.max(1, n - 1)) * pw; }
+    function Y(v) { return M.t + ph - ((v - lo2) / (hi2 - lo2)) * ph; }
+    function fmt(v) { return step >= 1 ? Math.round(v).toLocaleString("en-US") : v.toFixed(2); }
+    var o = ['<svg viewBox="0 0 ' + w + " " + h + '" role="img" aria-label="' + esc(cfg.label || "") + '"><g class="grid">'];
+    for (var v = lo2; v <= hi2 + 1e-9; v += step) o.push('<line x1="' + M.l + '" x2="' + (w - M.r) + '" y1="' + Y(v).toFixed(1) + '" y2="' + Y(v).toFixed(1) + '"/>');
+    o.push("</g>");
+    for (v = lo2; v <= hi2 + 1e-9; v += step) o.push('<text x="' + (M.l - 8) + '" y="' + Y(v).toFixed(1) + '" text-anchor="end" dy="0.32em">' + fmt(v) + "</text>");
+    cfg.series.forEach(function (s) {
+      var pts = []; s.values.forEach(function (vv, i) { if (vv != null) pts.push([X(i), Y(vv)]); });
+      var d = pts.map(function (p, k) { return (k ? "L" : "M") + p[0].toFixed(1) + " " + p[1].toFixed(1); }).join(" ");
+      if (pts.length) o.push('<path d="' + d + " L" + pts[pts.length - 1][0].toFixed(1) + " " + Y(lo2).toFixed(1) + " L" + pts[0][0].toFixed(1) + " " + Y(lo2).toFixed(1) + ' Z" class="fill-' + s.cls + '" opacity="0.10"/>');
+      o.push('<path class="line stroke-' + s.cls + '" d="' + d + '"/>');
+    });
+    var k = cfg.ticks || 5, seen = {};
+    for (var t = 0; t < k; t++) { var i = Math.round(t * (n - 1) / (k - 1)); if (seen[i]) continue; seen[i] = 1; o.push('<text x="' + X(i).toFixed(1) + '" y="' + (h - 8) + '" text-anchor="middle">' + esc(shortDate(x[i])) + "</text>"); }
+    o.push("</svg>");
+    return o.join("");
+  };
+
+  // ------------------------------------------------------------ responsive: on narrow screens redraw at the real pixel width
+  // so axis labels stay ~11px instead of being scaled down with the whole SVG.
+  TTC.fitCfg = function (el, cfg) {
+    var width = Math.round(el.clientWidth);
+    if (!cfg.w0) { cfg.w0 = cfg.w; cfg.h0 = cfg.h; }
+    if (width && width < 600) {
+      cfg.w = Math.max(300, width); cfg.h = Math.round(Math.min(cfg.h0, Math.max(220, width * 0.72)));
+      cfg.every = 5; cfg.ticks = 3;
+    } else { cfg.w = cfg.w0; cfg.h = cfg.h0; cfg.every = null; cfg.ticks = null; }
+    return cfg;
+  };
+  TTC.drawChart = function (el, cfg) {
+    TTC.fitCfg(el, cfg);
+    el.innerHTML = cfg.type === "stack" ? TTC.stackSvg(cfg) : TTC.lineSvg(cfg);
+    TTC.attachChart(el, cfg);
   };
 
   // ------------------------------------------------------------ hover + keyboard layer for any .chart[data-chart]
@@ -161,7 +207,21 @@
     if (!m) return s;
     return ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"][+m[2] - 1] + " " + (+m[3]) + ", " + m[1];
   }
-  document.querySelectorAll(".chart[data-chart]").forEach(function (el) { TTC.attachChart(el); });
+  var charts = [];
+  document.querySelectorAll(".chart[data-chart]").forEach(function (el) {
+    var cfg = JSON.parse(el.getAttribute("data-chart"));
+    cfg.label = (el.querySelector("svg") || {}).getAttribute ? el.querySelector("svg").getAttribute("aria-label") : "";
+    if (el.id === "model-chart" && document.getElementById("model-data")) return;  // model.js owns the model page chart
+    charts.push([el, cfg]);
+    if (el.clientWidth < 600) TTC.drawChart(el, cfg); else TTC.attachChart(el, cfg);
+  });
+  var rt = 0, lastW = window.innerWidth;
+  window.addEventListener("resize", function () {
+    if (window.innerWidth === lastW) return;
+    lastW = window.innerWidth;
+    clearTimeout(rt);
+    rt = setTimeout(function () { charts.forEach(function (c) { TTC.drawChart(c[0], c[1]); }); }, 150);
+  });
 
   // ------------------------------------------------------------ sortable tables: <table class="data sortable">
   function cellVal(td) {

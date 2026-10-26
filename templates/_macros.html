@@ -28,20 +28,22 @@
 <span class="ladder" role="img" aria-label="Stage {{ p.stage|grade }}, evidence {{ p.evidence|grade }}">{% for g in GRADES %}<i class="{% if loop.index0 <= p.evidence_i %}ev{% elif loop.index0 <= p.stage_i %}st{% endif %}"></i>{% endfor %}</span>
 {% endmacro %}
 
+{% macro hype_explainer() %}Each bar shows two grades. The outline marks the furthest stage of development a program has reached. The fill marks the highest stage at which it has actually reported results; a fill only at Preclinical means no human results yet. The number on the right counts the stages a program has reached without reported results.{% endmacro %}
+
 {% macro hype_legend() %}
-<div class="hype-legend" aria-hidden="true"><span><i class="ev"></i>Evidence read out</span><span><i class="st"></i>Stage reached, not yet proven</span><span><i class="no"></i>Discontinued (struck through)</span></div>
+<div class="hype-legend" aria-hidden="true"><span><i class="ev"></i>Results reported at this stage</span><span><i class="st"></i>Stage reached, results not yet reported</span><span><i class="no"></i>Discontinued (struck through)</span></div>
 {% endmacro %}
 
 {% macro hype_map(programs, root, groups=False) %}
 <div class="hype" role="table" aria-label="Stage versus evidence for each program">
-  <div class="hype-head" role="row"><span class="who" role="columnheader">Program</span><span class="scale" role="columnheader">{% for g in GRADES %}<span>{{ GRADE_SHORT[g] }}</span>{% endfor %}</span><span role="columnheader" style="text-align:right">Gap</span></div>
+  <div class="hype-head" role="row"><span class="who" role="columnheader">Program</span><span class="scale" role="columnheader">{% for g in GRADES %}<span>{{ GRADE_SHORT[g] }}</span>{% endfor %}</span><span role="columnheader" style="text-align:right">Ahead of results</span></div>
   {% set ns = namespace(cur=None) %}
   {% for p in programs %}
   {% if groups and p.approach != ns.cur %}{% set ns.cur = p.approach %}<div class="hype-group" role="row"><span role="cell">{{ APPROACH[p.approach][0] }}</span></div>{% endif %}
   <div class="hype-row{% if p.status == 'discontinued' %} stopped{% endif %}" role="row">
     <span class="nm" role="cell"><a href="{{ root }}{{ p.url }}">{{ p.short }}</a><span class="sub">{{ p.company }}{% if p.status == 'discontinued' %} · discontinued{% endif %}</span></span>
     <span role="cell">{{ ladder(p) }}</span>
-    <span class="gap" role="cell">{% if p.status == 'discontinued' %}—{% elif p.gap > 0 %}<b>+{{ p.gap }}</b> unproven{% else %}<b>0</b> gap{% endif %}</span>
+    <span class="gap" role="cell">{% if p.status == 'discontinued' %}—{% elif p.gap > 0 %}<b>+{{ p.gap }}</b><span class="sr-only"> stage{{ "s" if p.gap > 1 }} ahead of reported results</span>{% else %}<b>0</b><span class="sr-only"> stages ahead of reported results</span>{% endif %}</span>
   </div>
   {% endfor %}
 </div>

@@ -6,7 +6,7 @@
 {% endcall %}
 <div class="wrap">
 <section class="section" aria-labelledby="h-map" style="padding-top:var(--sp-6)">
-  <div class="section-head"><div><span class="eyebrow">Overview</span><h2 id="h-map">Stage vs. evidence, by approach</h2></div></div>
+  <div class="section-head"><div><span class="eyebrow">Overview</span><h2 id="h-map">Stage vs. evidence, by approach</h2><p>{{ ui.hype_explainer() }}</p></div></div>
   {{ ui.hype_legend() }}
   {{ ui.hype_map(cure|sort(attribute="name")|sort(attribute="evidence_i", reverse=True)|sort(attribute="stage_i", reverse=True)|sort(attribute="approach"), root, groups=True) }}
 </section>

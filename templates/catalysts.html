@@ -10,7 +10,7 @@
 {% endcall %}
 <div class="wrap">
 <section class="section" style="padding-top:var(--sp-6)" aria-labelledby="h-q">
-  <div class="section-head"><div><span class="eyebrow">Timeline</span><h2 id="h-q">By quarter</h2></div></div>
+  <div class="section-head"><div><span class="eyebrow">Next three quarters</span><h2 id="h-q">What's coming</h2><p>Readouts, launches and company events by quarter. Earnings dates are summarised at the foot of each quarter; everything is in the full table below.</p></div></div>
   <div class="legend" aria-hidden="true"><span><i style="background:var(--s1)"></i>Readout</span><span><i style="background:var(--s3)"></i>Launch / FDA</span><span><i style="background:var(--s2)"></i>Company</span><span><i style="background:var(--rule-strong)"></i>Conference / earnings</span></div>
   <div class="quarters" tabindex="0" role="region" aria-label="Catalysts by quarter (scrolls sideways)">
     {% for q in quarters %}
@@ -18,8 +18,9 @@
       {% set main = q["items"]|rejectattr("type", "eq", "earnings")|list %}
       {% set earn = q["items"]|selectattr("type", "eq", "earnings")|list %}
       <h3>{{ q.label }} <span class="n">{{ q["items"]|length }}</span></h3>
-      {% if main %}<ul>{% for c in main %}<li data-type="{{ c.type }}"><span class="t">{{ c.type_label }} · {{ c.short }}</span>{% if c.related_url %}<a href="{{ root }}{{ c.related_url }}">{{ c.title }}</a>{% elif c.source %}<a href="{{ c.source }}" rel="noopener">{{ c.title }}</a>{% else %}{{ c.title }}{% endif %}</li>{% endfor %}</ul>{% endif %}
-      {% if earn %}<p class="xs muted mt-3 mb-0">+ {{ earn|length }} earnings date{{ "s" if earn|length > 1 }}: {{ earn|map(attribute="title")|map("replace", " earnings", "")|map("regex_ticker")|join(", ") }}</p>{% endif %}
+      {% if q.label == "Later" %}<p class="small ink2">{{ q["items"]|length }} further items through {{ (q["items"]|map(attribute="date")|max)[:4] }}. <a href="#all-catalysts">See the full table →</a></p>
+      {% elif main %}<ul>{% for c in main %}<li data-type="{{ c.type }}"><span class="t">{{ c.type_label }} · {{ c.short }}</span>{% if c.related_url %}<a href="{{ root }}{{ c.related_url }}">{{ c.title }}</a>{% elif c.source %}<a href="{{ c.source }}" rel="noopener">{{ c.title }}</a>{% else %}{{ c.title }}{% endif %}</li>{% endfor %}</ul>{% endif %}
+      {% if earn and q.label != "Later" %}<p class="xs muted mt-3 mb-0">+ {{ earn|length }} earnings date{{ "s" if earn|length > 1 }}: {{ earn|map(attribute="title")|map("replace", " earnings", "")|map("regex_ticker")|join(", ") }}</p>{% endif %}
       {% if not q["items"] %}<p class="xs muted">Nothing dated yet.</p>{% endif %}
     </div>
     {% endfor %}
@@ -27,7 +28,8 @@
 </section>
 
 <section class="section" aria-labelledby="h-all">
-  <div class="section-head"><div><span class="eyebrow">{{ cats|length }} items</span><h2 id="h-all">All catalysts</h2><p>Includes the last 120 days so slipped readouts stay visible. Click a column to sort.</p></div></div>
+  <details class="table-toggle" id="all-catalysts">
+  <summary><span class="eyebrow">{{ cats|length }} items · sortable &amp; filterable</span><h2 id="h-all">All catalysts</h2><span class="small ink2">Includes the last 120 days, so slipped readouts stay visible. Open to browse.</span></summary>
   <div class="filters" data-filter-for="cat-table" data-attr="type" data-status="cat-count" role="group" aria-label="Filter by type">
     <span class="lbl">Type</span>
     <button class="chip" type="button" data-val="all" aria-pressed="true">All</button>
@@ -50,6 +52,7 @@
     {% endfor %}
     </tbody>
   </table></div>
+  </details>
 </section>
 </div>
 {% endblock %}

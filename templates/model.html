@@ -27,11 +27,10 @@
     <form class="inputs" id="model-inputs" aria-label="Model inputs" autocomplete="off" onsubmit="return false">
       <noscript><p class="small muted">Turn on JavaScript to move the inputs. The figures shown are the base case.</p></noscript>
       <div class="group">
-        <h4 class="mb-3">Cure scenario</h4>
+        <h4 class="mb-3">Key levers</h4>
         {% set rows = [
           ("approval", "First broad approval year", 2027, 2038, 1, bi.approval, bi.approval|string, "Zimislecel's filing timeline is being reset; SC451 has no human data yet."),
           ("peak", "Peak share of all T1D patients cured", 0.01, 0.6, 0.01, bi.peak, bi.peak|pct, "Limited by manufacturing, transplant capacity, eligibility and patient willingness."),
-          ("ramp", "Years from approval to peak", 4, 20, 1, bi.ramp, bi.ramp ~ " yrs", ""),
           ("cap", "Treatment capacity (patients / year)", 1000, 300000, 1000, bi.cap, (bi.cap/1000)|round|int ~ "K", "Cell manufacturing and transplant-centre throughput. Usually the binding constraint early on."),
           ("price", "Blended one-time price per patient", 100000, 3000000, 50000, bi.price, bi.price|money(2), "One-time US gene therapies list at roughly $2–4M; a global blended price with ex-US discounts would be far lower."),
         ] %}
@@ -39,6 +38,13 @@
         <div class="inp"><label for="in-{{ id }}"><span>{{ label }} <span class="tag-assume">assumption</span></span><output id="out-{{ id }}" for="in-{{ id }}">{{ shown }}</output></label>
         <input type="range" id="in-{{ id }}" name="{{ id }}" min="{{ lo }}" max="{{ hi }}" step="{{ step }}" value="{{ val }}">{% if hint %}<div class="hint">{{ hint }}</div>{% endif %}</div>
         {% endfor %}
+      </div>
+      <details class="advanced" id="advanced">
+      <summary>Advanced assumptions <span class="muted">(8)</span></summary>
+      <div class="group">
+        <h4 class="mb-3">Adoption</h4>
+        <div class="inp"><label for="in-ramp"><span>Years from approval to peak <span class="tag-assume">assumption</span></span><output id="out-ramp" for="in-ramp">{{ bi.ramp }} yrs</output></label>
+        <input type="range" id="in-ramp" name="ramp" min="4" max="20" step="1" value="{{ bi.ramp }}"></div>
       </div>
       <div class="group">
         <h4 class="mb-3">Market exposure</h4>
@@ -67,10 +73,12 @@
         <input type="range" id="in-{{ id }}" name="{{ id }}" min="{{ lo }}" max="{{ hi }}" step="{{ step }}" value="{{ val }}"><div class="hint">{{ hint }}</div></div>
         {% endfor %}
       </div>
-      <button type="button" class="btn ghost js-only" id="reset-btn">Reset to base case</button>
+      </details>
+      <button type="button" class="btn ghost js-only mt-5" id="reset-btn">Reset to base case</button>
     </form>
 
     <div class="outputs">
+      <a class="mobile-only small" href="#model-inputs">Adjust the assumptions ↓</a>
       <div class="stats" id="model-stats">
         {{ ui.stat(b["2035"].displaced_total|money, "Displaced in 2035", b["2035"].share_of_t1d|pct(1) ~ " of T1D-attributable revenue") }}
         {{ ui.stat(b["2040"].displaced_total|money, "Displaced in 2040", b["2040"].share_of_t1d|pct(1) ~ " of T1D-attributable revenue") }}
@@ -98,7 +106,8 @@
         </tbody>
       </table></div>
 
-      <h3 class="mt-7 mb-3">Scenario comparison</h3>
+      <h3 class="mt-7 mb-2">Preset scenarios <span class="badge">Fixed</span></h3>
+      <p class="small ink2 mb-3">The four presets at their default settings, for comparison. Unlike everything else on this page, this table does not move with the inputs.</p>
       <div class="table-scroll" tabindex="0" role="region" aria-label="Scenario comparison">
       <table class="data">
         <thead><tr><th>Scenario</th><th class="r">Approval</th><th class="r">Peak share</th><th class="r">Capacity / yr</th><th class="r">Price</th><th class="r">Displaced 2035</th><th class="r">Displaced 2040</th><th class="r">Cured by 2040</th><th class="r">Peak cure sales</th></tr></thead>
@@ -108,7 +117,6 @@
         {% endfor %}
         </tbody>
       </table></div>
-      <p class="xs muted mt-3">Presets are fixed and shown for comparison; the inputs panel drives everything else on this page.</p>
     </div>
   </div>
 </section>
@@ -226,4 +234,4 @@
 </div>
 <script type="application/json" id="model-data">{{ md.js|json }}</script>
 {% endblock %}
-{% block scripts %}<script src="{{ root }}assets/model.js" defer></script>{% endblock %}
+{% block scripts %}<script src="{{ root }}assets/model.js?v={{ v["model.js"] }}" defer></script>{% endblock %}

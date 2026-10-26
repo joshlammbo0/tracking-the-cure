@@ -108,3 +108,32 @@ Design direction
 - `templates/about.html`: name, school/degree/year, photo, LinkedIn, email, a personal sentence, and a disclosure of
   any positions held in covered securities. All marked `[like this]` and styled as visible placeholders.
 - `data/my_notes.yaml`: device takes and program commentary (unchanged; placeholders stay hidden).
+
+## 6. Design revision after external critique (2026-10-25)
+
+The critique's central point held up: density and hierarchy, not palette or fonts. Changes, in the agreed order:
+
+1. **Type and spacing together.** `--fs-sm` 13→14px (navigation, tables, chips, captions); 12px floor for UI text
+   (badges, tags, header labels, timeline cards). 11px is allowed only for chart axis labels and the mobile hype-map
+   stage scale. Table rows, list rows, chips and buttons got more padding (chips ≥40px tall, buttons ≥44px).
+   Charts now redraw at their real pixel width under 600px (`TTC.fitCfg`), so axis labels stay ~11px on phones
+   instead of being scaled down to ~5px with the SVG.
+2. **Homepage.** 3 hero stats instead of 5. The model block keeps its substance (chart, 2035/2040 totals, a 2040
+   per-market breakdown, a one-line assumption summary) but the full assumption list and market table moved to the
+   model page. The three implications sit in their own full-width tinted band. The hype map shows the top 8 active programs.
+3. **Model page.** Results come before inputs below 960px, with a jump link. The 12 inputs are split into 4 key levers
+   plus a collapsed "Advanced assumptions (8)" group, which opens automatically for shared custom links. The preset
+   table is labelled "Fixed" and explains that it doesn't move with the inputs.
+4. **Companies.** One six-column table with group filters: market cap, 1-year return, revenue, disclosed diabetes
+   share, and a separately defined "Cure exposure, 2040" (model output). Both definitions sit above the table. Checked
+   at 1024, 768 (no sideways scroll) and 375 (market cap and revenue hidden; they're on each company page).
+5. **Hype map wording.** It now says "results reported at this stage" vs. "stage reached, results not yet reported",
+   and explains that a Preclinical fill means no human results, so no claim of proven efficacy is implied.
+   The gap column is "Ahead of results".
+6. **Catalysts / GLP-1.** The timeline covers the next three quarters, with later items summarised. The full table is
+   collapsed by default. The GLP-1 label check leads with one data-driven sentence; the per-brand table is collapsed.
+7. **Polish.** Shorter disclaimer strip. Research index cards lead with each note's headline figure.
+   Asset URLs carry content-hash `?v=` tags so a deploy never serves a stale stylesheet.
+
+Declined from the critique: removing the timeline/table duplication on Catalysts (they serve different jobs) and
+cutting navigation destinations (eight is right; the menu now collapses below 1080px).

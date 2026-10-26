@@ -1,38 +1,40 @@
 {% extends "base.html" %}
 {% import "_macros.html" as ui %}
 {% block main %}
-{% call ui.page_head("Companies", "Who is exposed to type 1 diabetes", "Public companies with real T1D exposure, from device pure-plays to diversified pharma. Prices, returns and revenue refresh daily; the diabetes share of revenue is shown only where a filing supports it.") %}
+{% call ui.page_head("Companies", "Who is exposed to type 1 diabetes", "Public companies with real T1D exposure, from device pure-plays to diversified pharma. Prices and revenue refresh daily. Each company page adds the price chart, all returns, earnings date, linked programs and SEC filings.") %}
 <div class="meta"><span><b>{{ D.companies|length }}</b> companies</span><span>Prices as of <b>{{ (D.companies|map(attribute="q")|selectattr("as_of")|map(attribute="as_of")|max or built_date)|fdate }}</b></span><span>Market data via Yahoo Finance (unofficial; may be delayed)</span></div>
 {% endcall %}
 <div class="wrap">
-{% for g, glabel in GROUP_LABEL.items() %}
-{% set cs = D.companies|selectattr("group", "eq", g)|list %}
-{% if cs %}
-<section class="section" aria-labelledby="h-{{ g }}"{% if loop.first %} style="padding-top:var(--sp-6)"{% endif %}>
-  <div class="section-head"><div><span class="eyebrow">{{ cs|length }} companies</span><h2 id="h-{{ g }}">{{ glabel }}</h2></div>{% if loop.first %}<a class="more" href="{{ root }}model/#h-ra">Cure exposure by company →</a>{% endif %}</div>
-  <div class="table-scroll" tabindex="0" role="region" aria-label="{{ glabel }}">
-  <table class="data sortable">
-    <thead><tr><th>Company</th><th class="r">Price</th><th class="r">Market cap</th><th class="r">1M</th><th class="r">YTD</th><th class="r">1Y</th><th data-nosort>1Y trend</th><th class="r">Revenue TTM</th><th class="r">Diabetes % of rev.</th><th>Next earnings</th></tr></thead>
+<section class="section" style="padding-top:var(--sp-6)" aria-labelledby="h-all">
+  <h2 id="h-all" class="sr-only">All companies</h2>
+  <dl class="defs">
+    <div><dt>Diabetes % of revenue</dt><dd>What the company itself discloses, or what can be derived from a filing. "Not disclosed" means no primary source supports a figure.</dd></div>
+    <div><dt>Cure exposure, 2040</dt><dd>A <a href="{{ root }}model/#h-ra">Cure Impact Model</a> output: base-case revenue displaced in 2040, as a % of today's revenue. "Not modelled" means the company's revenue isn't in the CGM, pump or insulin markets, or its split isn't disclosed.</dd></div>
+  </dl>
+  <div class="filters mt-6" data-filter-for="co-table" data-attr="group" data-status="co-count" role="group" aria-label="Filter by group">
+    <span class="lbl">Show</span>
+    <button class="chip" type="button" data-val="all" aria-pressed="true">All</button>
+    {% for g, glabel in GROUP_LABEL.items() %}{% if D.companies|selectattr("group","eq",g)|list %}<button class="chip" type="button" data-val="{{ g }}" aria-pressed="false">{{ glabel }}</button>{% endif %}{% endfor %}
+    <span class="small muted" id="co-count" aria-live="polite">{{ D.companies|length }} shown</span>
+  </div>
+  <div class="table-scroll" tabindex="0" role="region" aria-label="Companies">
+  <table class="data sortable co-table" id="co-table">
+    <thead><tr><th>Company</th><th class="r">Market cap</th><th class="r">1-year return</th><th class="r">Revenue (TTM)</th><th class="r">Diabetes % of revenue</th><th class="r">Cure exposure, 2040</th></tr></thead>
     <tbody>
-    {% for c in cs|sort(attribute="q.market_cap_usd", reverse=True) %}{% set q = c.q %}
-    <tr>
-      <td data-sort="{{ c.name }}"><a href="{{ root }}{{ c.url }}"><b>{{ c.name }}</b></a><span class="sub">{{ c.ticker }}</span></td>
-      <td class="num" data-sort="{{ q.price or '' }}">{{ "{:,.2f}".format(q.price) if q.price else "—" }}<span class="sub">{{ q.currency or "" }}</span></td>
+    {% for c in D.companies|sort(attribute="q.market_cap_usd", reverse=True) %}{% set q = c.q %}{% set r = c.ra %}
+    <tr data-group="{{ c.group }}">
+      <td data-sort="{{ c.name }}"><a href="{{ root }}{{ c.url }}"><b>{{ c.name }}</b></a><span class="sub">{{ c.ticker }}<span class="grp"> · {{ c.group_label }}</span></span></td>
       <td class="num" data-sort="{{ q.market_cap_usd or '' }}">{{ q.market_cap_usd|money }}</td>
-      <td class="num" data-sort="{{ q.ret_1m if q.ret_1m is not none else '' }}">{{ ui.ret(q.ret_1m) }}</td>
-      <td class="num" data-sort="{{ q.ret_ytd if q.ret_ytd is not none else '' }}">{{ ui.ret(q.ret_ytd) }}</td>
       <td class="num" data-sort="{{ q.ret_1y if q.ret_1y is not none else '' }}">{{ ui.ret(q.ret_1y) }}</td>
-      <td>{{ q.spark|spark if q.spark else "" }}</td>
       <td class="num" data-sort="{{ q.revenue_ttm_usd or '' }}">{{ q.revenue_ttm_usd|money }}</td>
-      <td class="num" data-sort="{{ c.diabetes_rev_pct if c.diabetes_rev_pct is not none else '' }}">{% if c.diabetes_rev_pct is not none %}{% if c.pct_source %}<a href="{{ c.pct_source }}" rel="noopener" title="{{ c.pct_note }}">{{ c.diabetes_rev_pct }}%</a>{% else %}{{ c.diabetes_rev_pct }}%{% endif %}{% else %}<span class="muted">not disclosed</span>{% endif %}</td>
-      <td class="num small" data-sort="{{ q.next_earnings or '' }}">{{ q.next_earnings|fdate if q.next_earnings else "—" }}</td>
+      <td class="num" data-sort="{{ c.diabetes_rev_pct if c.diabetes_rev_pct is not none else '' }}">{% if c.diabetes_rev_pct is not none %}{{ c.diabetes_rev_pct }}%{% else %}<span class="muted">not disclosed</span>{% endif %}</td>
+      {% set y40 = r.years["2040"] if r and r.exposure else none %}
+      <td class="num" data-sort="{{ y40.pct_current_rev if y40 else '' }}">{% if y40 %}<b>{{ y40.pct_current_rev|pct(1) }}</b>{% else %}<span class="muted">not modelled</span>{% endif %}</td>
     </tr>
     {% endfor %}
     </tbody>
   </table></div>
+  <p class="small muted mt-5">Market caps converted to US$. Revenue is trailing twelve months, converted from the reporting currency. Sources and the basis for each diabetes share are on each company page.</p>
 </section>
-{% endif %}
-{% endfor %}
-<p class="xs muted">Market caps converted to US$. Revenue is trailing twelve months, converted from the reporting currency. "Diabetes % of revenue" is hand-entered only when disclosed or derivable from a filing; hover or follow the link for the basis.</p>
 </div>
 {% endblock %}

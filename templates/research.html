@@ -1,14 +1,27 @@
 {% extends "base.html" %}
 {% import "_macros.html" as ui %}
+{% set act = cure|selectattr("status", "eq", "active")|list %}
+{% set podd = md.json.read_across.base|selectattr("ticker","eq","PODD")|first %}
+{% set fig = {
+  "glp1s-and-the-t1d-label": ((D.glp1.labels|selectattr("approved_for_t1d")|list|length) ~ " of " ~ (D.glp1.labels|length), "GLP-1 brands with a T1D indication"),
+  "the-cure-race-in-one-chart": ((act|selectattr("gap", "gt", 0)|list|length) ~ " of " ~ (act|length), "active programs ahead of their reported results"),
+  "what-a-cure-means-for-pump-makers": (podd.years["2040"].pct_current_rev|pct(1) if podd and podd.years["2040"] else "—", "of a pump pure-play's revenue displaced by 2040, base case"),
+} %}
 {% block main %}
-{% call ui.page_head("Research", "Research notes", "Short analytical write-ups built from the tracked data. Every figure is pulled live from the same records and model the rest of the site uses, and every claim is cited. These notes are analysis, not advice.") %}{% endcall %}
+{% call ui.page_head("Research", "Research notes", "Short analytical write-ups built from the tracked data. Every figure is pulled from the same records and model the rest of the site uses, and every claim is cited. These notes are analysis, not advice.") %}{% endcall %}
 <div class="wrap">
 <section class="section" style="padding-top:var(--sp-6)">
-  <ul class="note-list">
-  {% for n in notes_meta %}
-    <li><span class="small muted">{{ n.published|fdate }}</span><div><h3><a href="{{ root }}research/{{ n.slug }}/">{{ n.title }}</a></h3><p>{{ n.dek }}</p></div></li>
+  <div class="note-cards">
+  {% for n in notes_meta %}{% set f = fig.get(n.slug) %}
+    <a class="note-card" href="{{ root }}research/{{ n.slug }}/">
+      <span class="eyebrow">{{ n.kicker }}</span>
+      {% if f %}<span class="fig"><span class="v">{{ f[0] }}</span><span class="l">{{ f[1] }}</span></span>{% endif %}
+      <h3>{{ n.title }}</h3>
+      <p>{{ n.dek }}</p>
+      <span class="small muted">{{ n.published|fdate }} · Read the note →</span>
+    </a>
   {% endfor %}
-  </ul>
+  </div>
 </section>
 </div>
 {% endblock %}
