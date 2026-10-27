@@ -302,6 +302,16 @@
  ],
  "fda_feed": [
   {
+   "number": "K262576",
+   "kind": "510(k)",
+   "date": "2026-10-15",
+   "device": "twiist Loop Algorithm",
+   "applicant": "Deka Research and Development Corp.",
+   "product_code": "QJI",
+   "code_label": "Interoperable automated glycemic controller (AID algorithm)",
+   "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K262576"
+  },
+  {
    "number": "K261896",
    "kind": "510(k)",
    "date": "2026-09-16",
@@ -312,16 +322,6 @@
    "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K261896"
   },
   {
-   "number": "K260001",
-   "kind": "510(k)",
-   "date": "2026-09-11",
-   "device": "Mint ACE Pump",
-   "applicant": "Beta Bionics, Inc.",
-   "product_code": "QFG",
-   "code_label": "Alternate controller enabled (ACE) insulin pump",
-   "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K260001"
-  },
-  {
    "number": "K262763",
    "kind": "510(k)",
    "date": "2026-09-11",
@@ -330,6 +330,16 @@
    "product_code": "QJI",
    "code_label": "Interoperable automated glycemic controller (AID algorithm)",
    "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K262763"
+  },
+  {
+   "number": "K260001",
+   "kind": "510(k)",
+   "date": "2026-09-11",
+   "device": "Mint ACE Pump",
+   "applicant": "Beta Bionics, Inc.",
+   "product_code": "QFG",
+   "code_label": "Alternate controller enabled (ACE) insulin pump",
+   "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K260001"
   },
   {
    "number": "K260062",
@@ -402,6 +412,17 @@
    "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K260935"
   },
   {
+   "number": "P160017/S135",
+   "kind": "PMA supplement",
+   "date": "2026-06-12",
+   "device": "MiniMed 780G System",
+   "applicant": "Medtronic Minimed, Inc.",
+   "product_code": "OZP",
+   "code_label": "Closed-loop insulin system (PMA)",
+   "note": "Change Design/Components/Specifications/Material",
+   "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P160017"
+  },
+  {
    "number": "P250012/S008",
    "kind": "PMA supplement",
    "date": "2026-06-12",
@@ -422,17 +443,6 @@
    "code_label": "CGM (PMA)",
    "note": "Change Design/Components/Specifications/Material",
    "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P160007"
-  },
-  {
-   "number": "P160017/S135",
-   "kind": "PMA supplement",
-   "date": "2026-06-12",
-   "device": "MiniMed 780G System",
-   "applicant": "Medtronic Minimed, Inc.",
-   "product_code": "OZP",
-   "code_label": "Closed-loop insulin system (PMA)",
-   "note": "Change Design/Components/Specifications/Material",
-   "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P160017"
   },
   {
    "number": "K261402",
@@ -485,16 +495,6 @@
    "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K253743"
   },
   {
-   "number": "K253701",
-   "kind": "510(k)",
-   "date": "2026-02-03",
-   "device": "SmartGuard Technology; Predictive Low Glucose Technology",
-   "applicant": "Medtronic Minimed",
-   "product_code": "QJI",
-   "code_label": "Interoperable automated glycemic controller (AID algorithm)",
-   "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K253701"
-  },
-  {
    "number": "K253737",
    "kind": "510(k)",
    "date": "2026-02-03",
@@ -503,6 +503,16 @@
    "product_code": "QBJ",
    "code_label": "Integrated CGM (iCGM)",
    "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K253737"
+  },
+  {
+   "number": "K253701",
+   "kind": "510(k)",
+   "date": "2026-02-03",
+   "device": "SmartGuard Technology; Predictive Low Glucose Technology",
+   "applicant": "Medtronic Minimed",
+   "product_code": "QJI",
+   "code_label": "Interoperable automated glycemic controller (AID algorithm)",
+   "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K253701"
   },
   {
    "number": "P160007/S058",
