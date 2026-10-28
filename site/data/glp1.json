@@ -360,33 +360,6 @@
    "tracked": true
   },
   {
-   "nct_id": "NCT07087795",
-   "title": "A Study to See the Effect of NNC0194-0499 Alone or in Combination With Semaglutide on Blood Sugar Control in People Living With Type 1 Diabetes",
-   "acronym": null,
-   "status": "ACTIVE_NOT_RECRUITING",
-   "why_stopped": null,
-   "phases": [
-    "Phase 1"
-   ],
-   "phase_grade": "phase1",
-   "sponsor": "Novo Nordisk A/S",
-   "sponsor_class": "INDUSTRY",
-   "conditions": [
-    "Diabetes Mellitus, Type 1"
-   ],
-   "enrollment": 96,
-   "enrollment_type": "ESTIMATED",
-   "start_date": "2025-07-01",
-   "primary_completion": "2026-09-12",
-   "primary_completion_type": "ESTIMATED",
-   "completion": "2026-09-25",
-   "completion_type": "ESTIMATED",
-   "last_update": "2026-08-13",
-   "has_results": false,
-   "url": "https://clinicaltrials.gov/study/NCT07087795",
-   "tracked": false
-  },
-  {
    "nct_id": "NCT07427251",
    "title": "The Postprandial Hypo-Avoid Study",
    "acronym": null,
@@ -411,6 +384,33 @@
    "last_update": "2026-08-13",
    "has_results": false,
    "url": "https://clinicaltrials.gov/study/NCT07427251",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT07087795",
+   "title": "A Study to See the Effect of NNC0194-0499 Alone or in Combination With Semaglutide on Blood Sugar Control in People Living With Type 1 Diabetes",
+   "acronym": null,
+   "status": "ACTIVE_NOT_RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 1"
+   ],
+   "phase_grade": "phase1",
+   "sponsor": "Novo Nordisk A/S",
+   "sponsor_class": "INDUSTRY",
+   "conditions": [
+    "Diabetes Mellitus, Type 1"
+   ],
+   "enrollment": 96,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2025-07-01",
+   "primary_completion": "2026-09-12",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2026-09-25",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-08-13",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT07087795",
    "tracked": false
   },
   {
@@ -945,6 +945,33 @@
    "tracked": false
   },
   {
+   "nct_id": "NCT07373236",
+   "title": "The Effect of Endogenous GLP-1 on Glucagon Secretion in Type 1 Diabetes",
+   "acronym": "EX-HYPO",
+   "status": "COMPLETED",
+   "why_stopped": null,
+   "phases": [
+    "N/A"
+   ],
+   "phase_grade": null,
+   "sponsor": "Asger Lund, MD",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type 1 Diabetes"
+   ],
+   "enrollment": 12,
+   "enrollment_type": "ACTUAL",
+   "start_date": "2026-01-23",
+   "primary_completion": "2026-04-09",
+   "primary_completion_type": "ACTUAL",
+   "completion": "2026-04-09",
+   "completion_type": "ACTUAL",
+   "last_update": "2026-04-29",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT07373236",
+   "tracked": false
+  },
+  {
    "nct_id": "NCT05762107",
    "title": "A Study of the Effect of ZT-01 on Night-time Hypoglycemia in Type 1 Diabetes",
    "acronym": "ZONE",
@@ -996,33 +1023,6 @@
    "last_update": "2026-04-29",
    "has_results": false,
    "url": "https://clinicaltrials.gov/study/NCT06881472",
-   "tracked": false
-  },
-  {
-   "nct_id": "NCT07373236",
-   "title": "The Effect of Endogenous GLP-1 on Glucagon Secretion in Type 1 Diabetes",
-   "acronym": "EX-HYPO",
-   "status": "COMPLETED",
-   "why_stopped": null,
-   "phases": [
-    "N/A"
-   ],
-   "phase_grade": null,
-   "sponsor": "Asger Lund, MD",
-   "sponsor_class": "OTHER",
-   "conditions": [
-    "Type 1 Diabetes"
-   ],
-   "enrollment": 12,
-   "enrollment_type": "ACTUAL",
-   "start_date": "2026-01-23",
-   "primary_completion": "2026-04-09",
-   "primary_completion_type": "ACTUAL",
-   "completion": "2026-04-09",
-   "completion_type": "ACTUAL",
-   "last_update": "2026-04-29",
-   "has_results": false,
-   "url": "https://clinicaltrials.gov/study/NCT07373236",
    "tracked": false
   },
   {
@@ -1295,34 +1295,6 @@
    "tracked": true
   },
   {
-   "nct_id": "NCT06470295",
-   "title": "Effect of C-peptide on Hypoglycemic Counterregulation",
-   "acronym": null,
-   "status": "RECRUITING",
-   "why_stopped": null,
-   "phases": [
-    "Early Phase 1"
-   ],
-   "phase_grade": "phase1",
-   "sponsor": "University of Cincinnati",
-   "sponsor_class": "OTHER",
-   "conditions": [
-    "Hypoglycemia",
-    "Type 1 Diabetes"
-   ],
-   "enrollment": 38,
-   "enrollment_type": "ESTIMATED",
-   "start_date": "2024-06-01",
-   "primary_completion": "2027-06-01",
-   "primary_completion_type": "ESTIMATED",
-   "completion": "2028-01-01",
-   "completion_type": "ESTIMATED",
-   "last_update": "2026-02-17",
-   "has_results": false,
-   "url": "https://clinicaltrials.gov/study/NCT06470295",
-   "tracked": false
-  },
-  {
    "nct_id": "NCT06962280",
    "title": "A Long-Term Study of Tirzepatide (LY3298176) in Adults With Type 1 Diabetes and Obesity or Overweight",
    "acronym": "SURPASS-T1D-2",
@@ -1350,6 +1322,34 @@
    "has_results": false,
    "url": "https://clinicaltrials.gov/study/NCT06962280",
    "tracked": true
+  },
+  {
+   "nct_id": "NCT06470295",
+   "title": "Effect of C-peptide on Hypoglycemic Counterregulation",
+   "acronym": null,
+   "status": "RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Early Phase 1"
+   ],
+   "phase_grade": "phase1",
+   "sponsor": "University of Cincinnati",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Hypoglycemia",
+    "Type 1 Diabetes"
+   ],
+   "enrollment": 38,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2024-06-01",
+   "primary_completion": "2027-06-01",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2028-01-01",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-02-17",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT06470295",
+   "tracked": false
   },
   {
    "nct_id": "NCT07270172",
@@ -1465,6 +1465,33 @@
    "tracked": false
   },
   {
+   "nct_id": "NCT07341243",
+   "title": "Exercising in Hot Conditions: How Does it Effect Blood Glucose in People With T1D",
+   "acronym": "T1D-Heat",
+   "status": "RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "N/A"
+   ],
+   "phase_grade": null,
+   "sponsor": "Liverpool John Moores University",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type 1 Diabetes (T1D)"
+   ],
+   "enrollment": 38,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2025-11-01",
+   "primary_completion": "2026-11-01",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2026-11-01",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-01-14",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT07341243",
+   "tracked": false
+  },
+  {
    "nct_id": "NCT06904846",
    "title": "To Evaluate the Change in Glucose Parameters in Adult Patients With Type 1 or Type 2 Diabetes From Europe Using the iCan o3 CGM System for 60 Days Period",
    "acronym": "DETECT",
@@ -1490,33 +1517,6 @@
    "last_update": "2026-01-14",
    "has_results": false,
    "url": "https://clinicaltrials.gov/study/NCT06904846",
-   "tracked": false
-  },
-  {
-   "nct_id": "NCT07341243",
-   "title": "Exercising in Hot Conditions: How Does it Effect Blood Glucose in People With T1D",
-   "acronym": "T1D-Heat",
-   "status": "RECRUITING",
-   "why_stopped": null,
-   "phases": [
-    "N/A"
-   ],
-   "phase_grade": null,
-   "sponsor": "Liverpool John Moores University",
-   "sponsor_class": "OTHER",
-   "conditions": [
-    "Type 1 Diabetes (T1D)"
-   ],
-   "enrollment": 38,
-   "enrollment_type": "ESTIMATED",
-   "start_date": "2025-11-01",
-   "primary_completion": "2026-11-01",
-   "primary_completion_type": "ESTIMATED",
-   "completion": "2026-11-01",
-   "completion_type": "ESTIMATED",
-   "last_update": "2026-01-14",
-   "has_results": false,
-   "url": "https://clinicaltrials.gov/study/NCT07341243",
    "tracked": false
   },
   {
@@ -1739,6 +1739,18 @@
     "doi": "10.1111/dom.71287"
    },
    {
+    "pmid": "42946972",
+    "title": "GLP-1-Based Therapy in Type 1 Diabetes: Balancing Efficacy, Safety, and Patient Selection",
+    "journal": "Diabetes Obes Metab",
+    "pubdate": "2026 Oct 27",
+    "sortdate": "2026-10-27",
+    "authors": "Rossatto T, de Andrade Oliveira R, Cardoso AM",
+    "is_rct": false,
+    "is_review": true,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42946972/",
+    "doi": "10.1111/dom.71428"
+   },
+   {
     "pmid": "42473259",
     "title": "Insulin, Semaglutide and Dapagliflozin in Adults With Type 1 Diabetes: Design and Methods of Triple Therapy for Type 1 Diabetes (TTT1)-An International Phase 3 Clinical Trial",
     "journal": "Diabetes Obes Metab",
@@ -1797,18 +1809,6 @@
     "is_review": true,
     "url": "https://pubmed.ncbi.nlm.nih.gov/42695140/",
     "doi": "10.1177/15209156261486127"
-   },
-   {
-    "pmid": "42555627",
-    "title": "Weight Loss-Dependent Changes in Body Composition and Bone Health in People With Obesity and Type 1 Diabetes Treated With Liraglutide, Semaglutide, or Tirzepatide",
-    "journal": "Diabetes Metab Res Rev",
-    "pubdate": "2026 Sep",
-    "sortdate": "2026-09-01",
-    "authors": "Al Ozairi E, Irshad M, Alkandri J et al.",
-    "is_rct": false,
-    "is_review": false,
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42555627/",
-    "doi": "10.1002/dmrr.70213"
    }
   ],
   "beta_cell": [
@@ -1923,6 +1923,18 @@
     "doi": "10.1111/dom.71287"
    },
    {
+    "pmid": "42946972",
+    "title": "GLP-1-Based Therapy in Type 1 Diabetes: Balancing Efficacy, Safety, and Patient Selection",
+    "journal": "Diabetes Obes Metab",
+    "pubdate": "2026 Oct 27",
+    "sortdate": "2026-10-27",
+    "authors": "Rossatto T, de Andrade Oliveira R, Cardoso AM",
+    "is_rct": false,
+    "is_review": true,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42946972/",
+    "doi": "10.1111/dom.71428"
+   },
+   {
     "pmid": "42895615",
     "title": "Antidiabetic medications in the pipeline",
     "journal": "Hormones (Athens)",
@@ -1993,18 +2005,6 @@
     "is_review": true,
     "url": "https://pubmed.ncbi.nlm.nih.gov/42526994/",
     "doi": "10.1016/j.ecl.2026.04.002"
-   },
-   {
-    "pmid": "42669023",
-    "title": "Online-Sourced Retatrutide Complicating Impending Diabetic Ketoacidosis in a Patient With Type 1 Diabetes and Concurrent Shigella Gastroenteritis",
-    "journal": "Cureus",
-    "pubdate": "2026 Aug",
-    "sortdate": "2026-08-26",
-    "authors": "Branine N",
-    "is_rct": false,
-    "is_review": false,
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42669023/",
-    "doi": "10.7759/cureus.115260"
    }
   ]
  },
