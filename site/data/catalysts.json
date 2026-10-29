@@ -20,14 +20,6 @@
    "origin": "curated"
   },
   {
-   "date": "2026-10-21",
-   "type": "earnings",
-   "precision": "exact",
-   "title": "Abbott Laboratories (ABT) earnings",
-   "origin": "yfinance",
-   "source": "https://finance.yahoo.com/quote/ABT"
-  },
-  {
    "date": "2026-10-27",
    "end": "2026-10-29",
    "type": "conference",
