@@ -166,6 +166,31 @@
    "tracked": false
   },
   {
+   "nct_id": "NCT07676565",
+   "title": "Safety and Efficacy of Adjunct Therapies in Adults With Type 1 Diabetes: Multicenter, Registry Study",
+   "acronym": "ATT1D",
+   "status": "RECRUITING",
+   "why_stopped": null,
+   "phases": [],
+   "phase_grade": null,
+   "sponsor": "Indiana University",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type 1 Diabetes"
+   ],
+   "enrollment": 300,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2026-03-24",
+   "primary_completion": "2028-04",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2028-04",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-10-16",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT07676565",
+   "tracked": false
+  },
+  {
    "nct_id": "NCT07061574",
    "title": "A Randomized Phase 1/2 Trial of Low Dose Anti-thymocyte Globulin (ATG) With Subsequent Adalimumab or Verapamil in New Onset Type 1 Diabetes",
    "acronym": "WAVE T1D",
@@ -192,31 +217,6 @@
    "last_update": "2026-10-16",
    "has_results": false,
    "url": "https://clinicaltrials.gov/study/NCT07061574",
-   "tracked": false
-  },
-  {
-   "nct_id": "NCT07676565",
-   "title": "Safety and Efficacy of Adjunct Therapies in Adults With Type 1 Diabetes: Multicenter, Registry Study",
-   "acronym": "ATT1D",
-   "status": "RECRUITING",
-   "why_stopped": null,
-   "phases": [],
-   "phase_grade": null,
-   "sponsor": "Indiana University",
-   "sponsor_class": "OTHER",
-   "conditions": [
-    "Type 1 Diabetes"
-   ],
-   "enrollment": 300,
-   "enrollment_type": "ESTIMATED",
-   "start_date": "2026-03-24",
-   "primary_completion": "2028-04",
-   "primary_completion_type": "ESTIMATED",
-   "completion": "2028-04",
-   "completion_type": "ESTIMATED",
-   "last_update": "2026-10-16",
-   "has_results": false,
-   "url": "https://clinicaltrials.gov/study/NCT07676565",
    "tracked": false
   },
   {
@@ -388,30 +388,30 @@
    "tracked": true
   },
   {
-   "nct_id": "NCT07427251",
-   "title": "The Postprandial Hypo-Avoid Study",
+   "nct_id": "NCT07087795",
+   "title": "A Study to See the Effect of NNC0194-0499 Alone or in Combination With Semaglutide on Blood Sugar Control in People Living With Type 1 Diabetes",
    "acronym": null,
-   "status": "RECRUITING",
+   "status": "ACTIVE_NOT_RECRUITING",
    "why_stopped": null,
    "phases": [
-    "Phase 4"
+    "Phase 1"
    ],
-   "phase_grade": "approved",
-   "sponsor": "Steno Diabetes Center Copenhagen",
-   "sponsor_class": "OTHER",
+   "phase_grade": "phase1",
+   "sponsor": "Novo Nordisk A/S",
+   "sponsor_class": "INDUSTRY",
    "conditions": [
-    "Type 1 Diabetes Mellitus"
+    "Diabetes Mellitus, Type 1"
    ],
-   "enrollment": 18,
+   "enrollment": 96,
    "enrollment_type": "ESTIMATED",
-   "start_date": "2026-04-27",
-   "primary_completion": "2027-05-01",
+   "start_date": "2025-07-01",
+   "primary_completion": "2026-09-12",
    "primary_completion_type": "ESTIMATED",
-   "completion": "2028-05-01",
+   "completion": "2026-09-25",
    "completion_type": "ESTIMATED",
    "last_update": "2026-08-13",
    "has_results": false,
-   "url": "https://clinicaltrials.gov/study/NCT07427251",
+   "url": "https://clinicaltrials.gov/study/NCT07087795",
    "tracked": false
   },
   {
@@ -443,30 +443,30 @@
    "tracked": false
   },
   {
-   "nct_id": "NCT07087795",
-   "title": "A Study to See the Effect of NNC0194-0499 Alone or in Combination With Semaglutide on Blood Sugar Control in People Living With Type 1 Diabetes",
+   "nct_id": "NCT07427251",
+   "title": "The Postprandial Hypo-Avoid Study",
    "acronym": null,
-   "status": "ACTIVE_NOT_RECRUITING",
+   "status": "RECRUITING",
    "why_stopped": null,
    "phases": [
-    "Phase 1"
+    "Phase 4"
    ],
-   "phase_grade": "phase1",
-   "sponsor": "Novo Nordisk A/S",
-   "sponsor_class": "INDUSTRY",
+   "phase_grade": "approved",
+   "sponsor": "Steno Diabetes Center Copenhagen",
+   "sponsor_class": "OTHER",
    "conditions": [
-    "Diabetes Mellitus, Type 1"
+    "Type 1 Diabetes Mellitus"
    ],
-   "enrollment": 96,
+   "enrollment": 18,
    "enrollment_type": "ESTIMATED",
-   "start_date": "2025-07-01",
-   "primary_completion": "2026-09-12",
+   "start_date": "2026-04-27",
+   "primary_completion": "2027-05-01",
    "primary_completion_type": "ESTIMATED",
-   "completion": "2026-09-25",
+   "completion": "2028-05-01",
    "completion_type": "ESTIMATED",
    "last_update": "2026-08-13",
    "has_results": false,
-   "url": "https://clinicaltrials.gov/study/NCT07087795",
+   "url": "https://clinicaltrials.gov/study/NCT07427251",
    "tracked": false
   },
   {
@@ -581,6 +581,33 @@
    "tracked": false
   },
   {
+   "nct_id": "NCT05536232",
+   "title": "Residual Insulin Secretion in Patients With Type 1 Diabetes Under a Low Carbohydrate Diet or a Ketogenic Diet",
+   "acronym": "KetoDiab",
+   "status": "COMPLETED",
+   "why_stopped": null,
+   "phases": [
+    "N/A"
+   ],
+   "phase_grade": null,
+   "sponsor": "Assistance Publique - Hôpitaux de Paris",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type1 Diabetes"
+   ],
+   "enrollment": 30,
+   "enrollment_type": "ACTUAL",
+   "start_date": "2022-10-17",
+   "primary_completion": "2026-01-13",
+   "primary_completion_type": "ACTUAL",
+   "completion": "2026-01-13",
+   "completion_type": "ACTUAL",
+   "last_update": "2026-07-13",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT05536232",
+   "tracked": false
+  },
+  {
    "nct_id": "NCT05949281",
    "title": "Repurposing Colchicine for Reduction of Residual Inflammatory Risk in Type 1 Diabetes",
    "acronym": "REC1TE",
@@ -607,33 +634,6 @@
    "last_update": "2026-07-13",
    "has_results": false,
    "url": "https://clinicaltrials.gov/study/NCT05949281",
-   "tracked": false
-  },
-  {
-   "nct_id": "NCT05536232",
-   "title": "Residual Insulin Secretion in Patients With Type 1 Diabetes Under a Low Carbohydrate Diet or a Ketogenic Diet",
-   "acronym": "KetoDiab",
-   "status": "COMPLETED",
-   "why_stopped": null,
-   "phases": [
-    "N/A"
-   ],
-   "phase_grade": null,
-   "sponsor": "Assistance Publique - Hôpitaux de Paris",
-   "sponsor_class": "OTHER",
-   "conditions": [
-    "Type1 Diabetes"
-   ],
-   "enrollment": 30,
-   "enrollment_type": "ACTUAL",
-   "start_date": "2022-10-17",
-   "primary_completion": "2026-01-13",
-   "primary_completion_type": "ACTUAL",
-   "completion": "2026-01-13",
-   "completion_type": "ACTUAL",
-   "last_update": "2026-07-13",
-   "has_results": false,
-   "url": "https://clinicaltrials.gov/study/NCT05536232",
    "tracked": false
   },
   {
@@ -973,33 +973,6 @@
    "tracked": false
   },
   {
-   "nct_id": "NCT05762107",
-   "title": "A Study of the Effect of ZT-01 on Night-time Hypoglycemia in Type 1 Diabetes",
-   "acronym": "ZONE",
-   "status": "RECRUITING",
-   "why_stopped": null,
-   "phases": [
-    "Phase 2"
-   ],
-   "phase_grade": "phase2",
-   "sponsor": "Zucara Therapeutics Inc.",
-   "sponsor_class": "INDUSTRY",
-   "conditions": [
-    "Type 1 Diabetes Mellitus With Hypoglycemia"
-   ],
-   "enrollment": 186,
-   "enrollment_type": "ESTIMATED",
-   "start_date": "2023-07-28",
-   "primary_completion": "2026-12",
-   "primary_completion_type": "ESTIMATED",
-   "completion": "2027-05",
-   "completion_type": "ESTIMATED",
-   "last_update": "2026-04-29",
-   "has_results": false,
-   "url": "https://clinicaltrials.gov/study/NCT05762107",
-   "tracked": false
-  },
-  {
    "nct_id": "NCT06881472",
    "title": "The Separate and Combined Glucagonotropic Effects of Glucose-dependent Insulinotropic Polypeptide and Alanine in Subjects With and Without Type 1 Diabetes",
    "acronym": "GIPALANIN",
@@ -1024,6 +997,33 @@
    "last_update": "2026-04-29",
    "has_results": false,
    "url": "https://clinicaltrials.gov/study/NCT06881472",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT05762107",
+   "title": "A Study of the Effect of ZT-01 on Night-time Hypoglycemia in Type 1 Diabetes",
+   "acronym": "ZONE",
+   "status": "RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 2"
+   ],
+   "phase_grade": "phase2",
+   "sponsor": "Zucara Therapeutics Inc.",
+   "sponsor_class": "INDUSTRY",
+   "conditions": [
+    "Type 1 Diabetes Mellitus With Hypoglycemia"
+   ],
+   "enrollment": 186,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2023-07-28",
+   "primary_completion": "2026-12",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2027-05",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-04-29",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT05762107",
    "tracked": false
   },
   {
@@ -1323,6 +1323,34 @@
    "tracked": true
   },
   {
+   "nct_id": "NCT06470295",
+   "title": "Effect of C-peptide on Hypoglycemic Counterregulation",
+   "acronym": null,
+   "status": "RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Early Phase 1"
+   ],
+   "phase_grade": "phase1",
+   "sponsor": "University of Cincinnati",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Hypoglycemia",
+    "Type 1 Diabetes"
+   ],
+   "enrollment": 38,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2024-06-01",
+   "primary_completion": "2027-06-01",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2028-01-01",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-02-17",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT06470295",
+   "tracked": false
+  },
+  {
    "nct_id": "NCT06962280",
    "title": "A Long-Term Study of Tirzepatide (LY3298176) in Adults With Type 1 Diabetes and Obesity or Overweight",
    "acronym": "SURPASS-T1D-2",
@@ -1350,34 +1378,6 @@
    "has_results": false,
    "url": "https://clinicaltrials.gov/study/NCT06962280",
    "tracked": true
-  },
-  {
-   "nct_id": "NCT06470295",
-   "title": "Effect of C-peptide on Hypoglycemic Counterregulation",
-   "acronym": null,
-   "status": "RECRUITING",
-   "why_stopped": null,
-   "phases": [
-    "Early Phase 1"
-   ],
-   "phase_grade": "phase1",
-   "sponsor": "University of Cincinnati",
-   "sponsor_class": "OTHER",
-   "conditions": [
-    "Hypoglycemia",
-    "Type 1 Diabetes"
-   ],
-   "enrollment": 38,
-   "enrollment_type": "ESTIMATED",
-   "start_date": "2024-06-01",
-   "primary_completion": "2027-06-01",
-   "primary_completion_type": "ESTIMATED",
-   "completion": "2028-01-01",
-   "completion_type": "ESTIMATED",
-   "last_update": "2026-02-17",
-   "has_results": false,
-   "url": "https://clinicaltrials.gov/study/NCT06470295",
-   "tracked": false
   },
   {
    "nct_id": "NCT07270172",
@@ -1493,6 +1493,33 @@
    "tracked": false
   },
   {
+   "nct_id": "NCT07341243",
+   "title": "Exercising in Hot Conditions: How Does it Effect Blood Glucose in People With T1D",
+   "acronym": "T1D-Heat",
+   "status": "RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "N/A"
+   ],
+   "phase_grade": null,
+   "sponsor": "Liverpool John Moores University",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type 1 Diabetes (T1D)"
+   ],
+   "enrollment": 38,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2025-11-01",
+   "primary_completion": "2026-11-01",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2026-11-01",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-01-14",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT07341243",
+   "tracked": false
+  },
+  {
    "nct_id": "NCT06904846",
    "title": "To Evaluate the Change in Glucose Parameters in Adult Patients With Type 1 or Type 2 Diabetes From Europe Using the iCan o3 CGM System for 60 Days Period",
    "acronym": "DETECT",
@@ -1518,33 +1545,6 @@
    "last_update": "2026-01-14",
    "has_results": false,
    "url": "https://clinicaltrials.gov/study/NCT06904846",
-   "tracked": false
-  },
-  {
-   "nct_id": "NCT07341243",
-   "title": "Exercising in Hot Conditions: How Does it Effect Blood Glucose in People With T1D",
-   "acronym": "T1D-Heat",
-   "status": "RECRUITING",
-   "why_stopped": null,
-   "phases": [
-    "N/A"
-   ],
-   "phase_grade": null,
-   "sponsor": "Liverpool John Moores University",
-   "sponsor_class": "OTHER",
-   "conditions": [
-    "Type 1 Diabetes (T1D)"
-   ],
-   "enrollment": 38,
-   "enrollment_type": "ESTIMATED",
-   "start_date": "2025-11-01",
-   "primary_completion": "2026-11-01",
-   "primary_completion_type": "ESTIMATED",
-   "completion": "2026-11-01",
-   "completion_type": "ESTIMATED",
-   "last_update": "2026-01-14",
-   "has_results": false,
-   "url": "https://clinicaltrials.gov/study/NCT07341243",
    "tracked": false
   },
   {

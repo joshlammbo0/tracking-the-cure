@@ -1170,12 +1170,6 @@
    "my_commentary": null,
    "news": [
     {
-     "title": "The Treatment Stopped—Did the Benefit Last? New Baricitinib Data in Type 1 Diabetes",
-     "outlet": "Diabetes In Control",
-     "date": "2026-08-31",
-     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNb2FxcXRoeDUxSnd4N3BKcVc4ZDhPUzdOdXZkT3c2NXV0YmtGYWllYnBybG1UMTMzU3gtQ2dVTFVjQnVzOEtJamVPRUQ1T1gyNnl1REgwdHhaY05Uc3pQdXBMSTQxTmFoSVE3Ui0wRFlPY0tSNGJZRTdYQXRoZ3M2TlVrRFNvMnJiVU1KLVVkaw?oc=5"
-    },
-    {
      "title": "5 FDA Decisions for Primary Care to Know from September 2026",
      "outlet": "Patient Care Online",
      "date": "2026-10-01",
@@ -1186,6 +1180,12 @@
      "outlet": "HCPLive",
      "date": "2026-10-15",
      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOZWdHWWdYbmg3Qm9neXd2STFZVjB6emFsbmNhNUZMU2JFQUIxM1N1WjF2MG5pOXM5VTJzNVN1ZURuZzZkb0drOVhaeEMyZDZvejJkajRuWUpGSWxIWkdRQnJtbXphazBFSW0xU2k2NG5ZNVRrTUxvQU90bTNHY2taUzJhS2wySmJ6dTlyZXByZGhjelBfZGVWNEt4NE9zRVlSMGVIRTNCc01JSHFSZVBvUA?oc=5"
+    },
+    {
+     "title": "Iraqi Australians behind 'promising' type 1 diabetes treatment research",
+     "outlet": "ABC News & Headlines – Australian Broadcasting Corporation",
+     "date": "2026-09-16",
+     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPSHY0cEFBUkdiV2UyYjhqRV9EYnhGMHhOTjFQUmtzRU9tUHhCYVBGd09hLWpfWWx6THRlN2xlR29HbHNValdBalFFNzROX3dfUXQtdDM1YjVCNmhqUDR6UmltenJ0MU5STzYtUlNncTJYZWFZdlNRVFBoZ291eHhBeFd0bjNzWGF4TW50dzhadUR4Wnc4azNPRXFLdjlKQXVKemY0LVB2NA?oc=5"
     }
    ]
   },
@@ -1427,6 +1427,12 @@
      "outlet": "Breakthrough T1D",
      "date": "2026-10-21",
      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNZjY1OXhoZDMzNmF3MTlBSFJ0RndrS05BT203aVExOVZxRDAzYmdvM3AxNDRXbU1lV05mSkd2NE5aalBzRFRLS04wN1lJcjFGMU53VUlOODlFX0M2cVB4M3FpUG9SZWF5bkNxMmFuSURPTjhPb0FONFdmWWhlbWQ0bzlNNHd4OEZCX3huQWQySnQ5dm5JNldwUEhzNVhlMjFmUHRacw?oc=5"
+    },
+    {
+     "title": "Can immunotherapy stop the clock on type 1 diabetes?",
+     "outlet": "The Pharmaceutical Journal",
+     "date": "2026-09-23",
+     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOaEZ2QVF4UHh3UEdLMk1BMXNmRDBnWWl2bFY2Y1JWVlI2d2RFZ1dRam5YN2dVSWhESzBKcV9jYkJnNXpoNzVxRVJUQ0t0NWhOWGdheGl6dmxyZjFPX0hJbklpeGNwOFlLVXVpSHl0d0lyb01tWHRzZEdvdWFCYUc1M0p3bjBxRnczaGp5bVg5NkY3UUtGbnl2TmNMbDR6dGVQUkRlaA?oc=5"
     }
    ]
   },
@@ -1827,16 +1833,16 @@
      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5vMFZhelBpd01ycnl3YW1BbXpDYUhISlpHNUhhRXdWZTI4UE5JeV9ydmhsTWx3WVBvTW83MmV4SHBZdkFOeDVmcEtIbTFFVkVmUFhrWmpqSVpiRjBzR2Ew?oc=5"
     },
     {
-     "title": "Semaglutide Tied to Fewer Asthma, COPD Exacerbations",
-     "outlet": "Respiratory Therapy",
-     "date": "2026-09-09",
-     "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPTkpFb0pCbC1IRUs2SmYtdkZQWDJLYnpJaThqLVR0QjhZSUYxNWdESzVreW5xdGxzdE1ocl9QZmtHcjRvN0k0M240bGhJWG5EYmdvTHg0ZmVpR1Q3UGJKWFFrYUdRU2RSaXZCT3BaczZuU01jd3lhV0hqbDl4bEpjUkU0YUljTW12RnlYR1pvaFZuWXczeEowdVNkdmNRRFBtdU54Mmx4QjNvOVZmZVVWZ3ZDa1VDVFdmWGFlUEtVRnpfX29talBvNmlldl8?oc=5"
+     "title": "Semaglutide 2 mg Tied to Lower MACE Risk Than Tirzepatide Switch",
+     "outlet": "Pharmacy Times",
+     "date": "2026-10-01",
+     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOZ3h1dGJhU1NFMlEweDJad1JMVUlndjFSS3E3TXZ6Q1ZvTmhYcl9nMjU4R1h1ZDJ5Zlo1a0R3d3N1UWlUMG5zRktrbFA1N0FQeVVHVzhZQ1g4M3NDd19pUUtMc1BpZGVGdFRjZWJCbGdYcVc3aTdOUzJfNFZsRUxyWjFaYnZGMVVyd05rVUVRX1N3Z2JVOHpjck44R0NsZ3J0?oc=5"
     },
     {
-     "title": "Semaglutide 2·4 mg Found Safe and Effective in Patients With Overweight or Obesity | Metabolic Care Today",
-     "outlet": "DocWireNews",
-     "date": "2026-08-31",
-     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQUGpINnhYYXgxSjdnOElacGVxVFFLa1RudDdXd3pkblRKVDV1Znk5aXF3anU2SnFPUkxpei12bTM3SFp0RFBXWW92VzB0T3JoQTFhczJ1eVYwejVBaWQ1TzA2bnNTWnVocDdwa0tiUE1kc3gyX3V2RVJfaUFnMUluU2dGbmZvQVNFLVBxNFdtemJwaW1RM2dxN0MzcTBTRzIzQnNaakVVNlpQMnlJMTNtSDcwN19aOUl0Yk9yTg?oc=5"
+     "title": "Medicine’s Rong Xu finds semaglutide use associated with lower risk of Alzheimer’s diagnosis",
+     "outlet": "Case Western Reserve University",
+     "date": "2026-10-09",
+     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNTzdDSHJkRkdyemJta0hUYTlaUVFobjBLQmZBUVNuOUUwWHl4NXJnbkdYSmw0TWNiaVVlRnA2Wk9OMElBYmR3M1dYckg3YWIxcVVLbnFnMjdYUUxMc1k4QnMyZ09KMFIycktyZlJka2Z1SnRMSkktNlVGRHpVUVViOFFEYi0yV3lwY0dwN2d2elRiN0Y1MFhMMHJDbjJTSk5YZ3FZRG5wbw?oc=5"
     }
    ]
   },
@@ -2503,12 +2509,6 @@
   ],
   "lilly-baricitinib": [
    {
-    "title": "The Treatment Stopped—Did the Benefit Last? New Baricitinib Data in Type 1 Diabetes",
-    "outlet": "Diabetes In Control",
-    "date": "2026-08-31",
-    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNb2FxcXRoeDUxSnd4N3BKcVc4ZDhPUzdOdXZkT3c2NXV0YmtGYWllYnBybG1UMTMzU3gtQ2dVTFVjQnVzOEtJamVPRUQ1T1gyNnl1REgwdHhaY05Uc3pQdXBMSTQxTmFoSVE3Ui0wRFlPY0tSNGJZRTdYQXRoZ3M2TlVrRFNvMnJiVU1KLVVkaw?oc=5"
-   },
-   {
     "title": "5 FDA Decisions for Primary Care to Know from September 2026",
     "outlet": "Patient Care Online",
     "date": "2026-10-01",
@@ -2519,6 +2519,12 @@
     "outlet": "HCPLive",
     "date": "2026-10-15",
     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOZWdHWWdYbmg3Qm9neXd2STFZVjB6emFsbmNhNUZMU2JFQUIxM1N1WjF2MG5pOXM5VTJzNVN1ZURuZzZkb0drOVhaeEMyZDZvejJkajRuWUpGSWxIWkdRQnJtbXphazBFSW0xU2k2NG5ZNVRrTUxvQU90bTNHY2taUzJhS2wySmJ6dTlyZXByZGhjelBfZGVWNEt4NE9zRVlSMGVIRTNCc01JSHFSZVBvUA?oc=5"
+   },
+   {
+    "title": "Iraqi Australians behind 'promising' type 1 diabetes treatment research",
+    "outlet": "ABC News & Headlines – Australian Broadcasting Corporation",
+    "date": "2026-09-16",
+    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPSHY0cEFBUkdiV2UyYjhqRV9EYnhGMHhOTjFQUmtzRU9tUHhCYVBGd09hLWpfWWx6THRlN2xlR29HbHNValdBalFFNzROX3dfUXQtdDM1YjVCNmhqUDR6UmltenJ0MU5STzYtUlNncTJYZWFZdlNRVFBoZ291eHhBeFd0bjNzWGF4TW50dzhadUR4Wnc4azNPRXFLdjlKQXVKemY0LVB2NA?oc=5"
    }
   ],
   "sanofi-frexalimab": [],
@@ -2528,6 +2534,12 @@
     "outlet": "Breakthrough T1D",
     "date": "2026-10-21",
     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNZjY1OXhoZDMzNmF3MTlBSFJ0RndrS05BT203aVExOVZxRDAzYmdvM3AxNDRXbU1lV05mSkd2NE5aalBzRFRLS04wN1lJcjFGMU53VUlOODlFX0M2cVB4M3FpUG9SZWF5bkNxMmFuSURPTjhPb0FONFdmWWhlbWQ0bzlNNHd4OEZCX3huQWQySnQ5dm5JNldwUEhzNVhlMjFmUHRacw?oc=5"
+   },
+   {
+    "title": "Can immunotherapy stop the clock on type 1 diabetes?",
+    "outlet": "The Pharmaceutical Journal",
+    "date": "2026-09-23",
+    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOaEZ2QVF4UHh3UEdLMk1BMXNmRDBnWWl2bFY2Y1JWVlI2d2RFZ1dRam5YN2dVSWhESzBKcV9jYkJnNXpoNzVxRVJUQ0t0NWhOWGdheGl6dmxyZjFPX0hJbklpeGNwOFlLVXVpSHl0d0lyb01tWHRzZEdvdWFCYUc1M0p3bjBxRnczaGp5bVg5NkY3UUtGbnl2TmNMbDR6dGVQUkRlaA?oc=5"
    }
   ],
   "golimumab-t1d": [],
@@ -2559,16 +2571,16 @@
     "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5vMFZhelBpd01ycnl3YW1BbXpDYUhISlpHNUhhRXdWZTI4UE5JeV9ydmhsTWx3WVBvTW83MmV4SHBZdkFOeDVmcEtIbTFFVkVmUFhrWmpqSVpiRjBzR2Ew?oc=5"
    },
    {
-    "title": "Semaglutide Tied to Fewer Asthma, COPD Exacerbations",
-    "outlet": "Respiratory Therapy",
-    "date": "2026-09-09",
-    "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPTkpFb0pCbC1IRUs2SmYtdkZQWDJLYnpJaThqLVR0QjhZSUYxNWdESzVreW5xdGxzdE1ocl9QZmtHcjRvN0k0M240bGhJWG5EYmdvTHg0ZmVpR1Q3UGJKWFFrYUdRU2RSaXZCT3BaczZuU01jd3lhV0hqbDl4bEpjUkU0YUljTW12RnlYR1pvaFZuWXczeEowdVNkdmNRRFBtdU54Mmx4QjNvOVZmZVVWZ3ZDa1VDVFdmWGFlUEtVRnpfX29talBvNmlldl8?oc=5"
+    "title": "Semaglutide 2 mg Tied to Lower MACE Risk Than Tirzepatide Switch",
+    "outlet": "Pharmacy Times",
+    "date": "2026-10-01",
+    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOZ3h1dGJhU1NFMlEweDJad1JMVUlndjFSS3E3TXZ6Q1ZvTmhYcl9nMjU4R1h1ZDJ5Zlo1a0R3d3N1UWlUMG5zRktrbFA1N0FQeVVHVzhZQ1g4M3NDd19pUUtMc1BpZGVGdFRjZWJCbGdYcVc3aTdOUzJfNFZsRUxyWjFaYnZGMVVyd05rVUVRX1N3Z2JVOHpjck44R0NsZ3J0?oc=5"
    },
    {
-    "title": "Semaglutide 2·4 mg Found Safe and Effective in Patients With Overweight or Obesity | Metabolic Care Today",
-    "outlet": "DocWireNews",
-    "date": "2026-08-31",
-    "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQUGpINnhYYXgxSjdnOElacGVxVFFLa1RudDdXd3pkblRKVDV1Znk5aXF3anU2SnFPUkxpei12bTM3SFp0RFBXWW92VzB0T3JoQTFhczJ1eVYwejVBaWQ1TzA2bnNTWnVocDdwa0tiUE1kc3gyX3V2RVJfaUFnMUluU2dGbmZvQVNFLVBxNFdtemJwaW1RM2dxN0MzcTBTRzIzQnNaakVVNlpQMnlJMTNtSDcwN19aOUl0Yk9yTg?oc=5"
+    "title": "Medicine’s Rong Xu finds semaglutide use associated with lower risk of Alzheimer’s diagnosis",
+    "outlet": "Case Western Reserve University",
+    "date": "2026-10-09",
+    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNTzdDSHJkRkdyemJta0hUYTlaUVFobjBLQmZBUVNuOUUwWHl4NXJnbkdYSmw0TWNiaVVlRnA2Wk9OMElBYmR3M1dYckg3YWIxcVVLbnFnMjdYUUxMc1k4QnMyZ09KMFIycktyZlJka2Z1SnRMSkktNlVGRHpVUVViOFFEYi0yV3lwY0dwN2d2elRiN0Y1MFhMMHJDbjJTSk5YZ3FZRG5wbw?oc=5"
    }
   ],
   "glp1-beta-cell-preservation": []
