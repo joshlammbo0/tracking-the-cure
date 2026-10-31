@@ -1,6 +1,33 @@
 {
  "registry_scan": [
   {
+   "nct_id": "NCT06325202",
+   "title": "Closed Loop and Education for Hypoglycemia Awareness Restoration",
+   "acronym": "CLEAR",
+   "status": "RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "N/A"
+   ],
+   "phase_grade": null,
+   "sponsor": "Milton S. Hershey Medical Center",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Diabetes Mellitus, Type 1"
+   ],
+   "enrollment": 324,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2025-10-03",
+   "primary_completion": "2029-12-31",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2029-12-31",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-10-30",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT06325202",
+   "tracked": false
+  },
+  {
    "nct_id": "NCT07901595",
    "title": "Safety, Tolerability, Pharmacokinetics, and Pharmacodynamics of PAL-119 in Healthy Volunteers and Adult Participants With Type 1 or Type 2 Diabetes",
    "acronym": null,
@@ -388,30 +415,30 @@
    "tracked": true
   },
   {
-   "nct_id": "NCT07087795",
-   "title": "A Study to See the Effect of NNC0194-0499 Alone or in Combination With Semaglutide on Blood Sugar Control in People Living With Type 1 Diabetes",
+   "nct_id": "NCT07427251",
+   "title": "The Postprandial Hypo-Avoid Study",
    "acronym": null,
-   "status": "ACTIVE_NOT_RECRUITING",
+   "status": "RECRUITING",
    "why_stopped": null,
    "phases": [
-    "Phase 1"
+    "Phase 4"
    ],
-   "phase_grade": "phase1",
-   "sponsor": "Novo Nordisk A/S",
-   "sponsor_class": "INDUSTRY",
+   "phase_grade": "approved",
+   "sponsor": "Steno Diabetes Center Copenhagen",
+   "sponsor_class": "OTHER",
    "conditions": [
-    "Diabetes Mellitus, Type 1"
+    "Type 1 Diabetes Mellitus"
    ],
-   "enrollment": 96,
+   "enrollment": 18,
    "enrollment_type": "ESTIMATED",
-   "start_date": "2025-07-01",
-   "primary_completion": "2026-09-12",
+   "start_date": "2026-04-27",
+   "primary_completion": "2027-05-01",
    "primary_completion_type": "ESTIMATED",
-   "completion": "2026-09-25",
+   "completion": "2028-05-01",
    "completion_type": "ESTIMATED",
    "last_update": "2026-08-13",
    "has_results": false,
-   "url": "https://clinicaltrials.gov/study/NCT07087795",
+   "url": "https://clinicaltrials.gov/study/NCT07427251",
    "tracked": false
   },
   {
@@ -443,30 +470,30 @@
    "tracked": false
   },
   {
-   "nct_id": "NCT07427251",
-   "title": "The Postprandial Hypo-Avoid Study",
+   "nct_id": "NCT07087795",
+   "title": "A Study to See the Effect of NNC0194-0499 Alone or in Combination With Semaglutide on Blood Sugar Control in People Living With Type 1 Diabetes",
    "acronym": null,
-   "status": "RECRUITING",
+   "status": "ACTIVE_NOT_RECRUITING",
    "why_stopped": null,
    "phases": [
-    "Phase 4"
+    "Phase 1"
    ],
-   "phase_grade": "approved",
-   "sponsor": "Steno Diabetes Center Copenhagen",
-   "sponsor_class": "OTHER",
+   "phase_grade": "phase1",
+   "sponsor": "Novo Nordisk A/S",
+   "sponsor_class": "INDUSTRY",
    "conditions": [
-    "Type 1 Diabetes Mellitus"
+    "Diabetes Mellitus, Type 1"
    ],
-   "enrollment": 18,
+   "enrollment": 96,
    "enrollment_type": "ESTIMATED",
-   "start_date": "2026-04-27",
-   "primary_completion": "2027-05-01",
+   "start_date": "2025-07-01",
+   "primary_completion": "2026-09-12",
    "primary_completion_type": "ESTIMATED",
-   "completion": "2028-05-01",
+   "completion": "2026-09-25",
    "completion_type": "ESTIMATED",
    "last_update": "2026-08-13",
    "has_results": false,
-   "url": "https://clinicaltrials.gov/study/NCT07427251",
+   "url": "https://clinicaltrials.gov/study/NCT07087795",
    "tracked": false
   },
   {
@@ -581,33 +608,6 @@
    "tracked": false
   },
   {
-   "nct_id": "NCT05536232",
-   "title": "Residual Insulin Secretion in Patients With Type 1 Diabetes Under a Low Carbohydrate Diet or a Ketogenic Diet",
-   "acronym": "KetoDiab",
-   "status": "COMPLETED",
-   "why_stopped": null,
-   "phases": [
-    "N/A"
-   ],
-   "phase_grade": null,
-   "sponsor": "Assistance Publique - Hôpitaux de Paris",
-   "sponsor_class": "OTHER",
-   "conditions": [
-    "Type1 Diabetes"
-   ],
-   "enrollment": 30,
-   "enrollment_type": "ACTUAL",
-   "start_date": "2022-10-17",
-   "primary_completion": "2026-01-13",
-   "primary_completion_type": "ACTUAL",
-   "completion": "2026-01-13",
-   "completion_type": "ACTUAL",
-   "last_update": "2026-07-13",
-   "has_results": false,
-   "url": "https://clinicaltrials.gov/study/NCT05536232",
-   "tracked": false
-  },
-  {
    "nct_id": "NCT05949281",
    "title": "Repurposing Colchicine for Reduction of Residual Inflammatory Risk in Type 1 Diabetes",
    "acronym": "REC1TE",
@@ -634,6 +634,33 @@
    "last_update": "2026-07-13",
    "has_results": false,
    "url": "https://clinicaltrials.gov/study/NCT05949281",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT05536232",
+   "title": "Residual Insulin Secretion in Patients With Type 1 Diabetes Under a Low Carbohydrate Diet or a Ketogenic Diet",
+   "acronym": "KetoDiab",
+   "status": "COMPLETED",
+   "why_stopped": null,
+   "phases": [
+    "N/A"
+   ],
+   "phase_grade": null,
+   "sponsor": "Assistance Publique - Hôpitaux de Paris",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type1 Diabetes"
+   ],
+   "enrollment": 30,
+   "enrollment_type": "ACTUAL",
+   "start_date": "2022-10-17",
+   "primary_completion": "2026-01-13",
+   "primary_completion_type": "ACTUAL",
+   "completion": "2026-01-13",
+   "completion_type": "ACTUAL",
+   "last_update": "2026-07-13",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT05536232",
    "tracked": false
   },
   {
@@ -973,6 +1000,33 @@
    "tracked": false
   },
   {
+   "nct_id": "NCT07373236",
+   "title": "The Effect of Endogenous GLP-1 on Glucagon Secretion in Type 1 Diabetes",
+   "acronym": "EX-HYPO",
+   "status": "COMPLETED",
+   "why_stopped": null,
+   "phases": [
+    "N/A"
+   ],
+   "phase_grade": null,
+   "sponsor": "Asger Lund, MD",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type 1 Diabetes"
+   ],
+   "enrollment": 12,
+   "enrollment_type": "ACTUAL",
+   "start_date": "2026-01-23",
+   "primary_completion": "2026-04-09",
+   "primary_completion_type": "ACTUAL",
+   "completion": "2026-04-09",
+   "completion_type": "ACTUAL",
+   "last_update": "2026-04-29",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT07373236",
+   "tracked": false
+  },
+  {
    "nct_id": "NCT06881472",
    "title": "The Separate and Combined Glucagonotropic Effects of Glucose-dependent Insulinotropic Polypeptide and Alanine in Subjects With and Without Type 1 Diabetes",
    "acronym": "GIPALANIN",
@@ -1024,33 +1078,6 @@
    "last_update": "2026-04-29",
    "has_results": false,
    "url": "https://clinicaltrials.gov/study/NCT05762107",
-   "tracked": false
-  },
-  {
-   "nct_id": "NCT07373236",
-   "title": "The Effect of Endogenous GLP-1 on Glucagon Secretion in Type 1 Diabetes",
-   "acronym": "EX-HYPO",
-   "status": "COMPLETED",
-   "why_stopped": null,
-   "phases": [
-    "N/A"
-   ],
-   "phase_grade": null,
-   "sponsor": "Asger Lund, MD",
-   "sponsor_class": "OTHER",
-   "conditions": [
-    "Type 1 Diabetes"
-   ],
-   "enrollment": 12,
-   "enrollment_type": "ACTUAL",
-   "start_date": "2026-01-23",
-   "primary_completion": "2026-04-09",
-   "primary_completion_type": "ACTUAL",
-   "completion": "2026-04-09",
-   "completion_type": "ACTUAL",
-   "last_update": "2026-04-29",
-   "has_results": false,
-   "url": "https://clinicaltrials.gov/study/NCT07373236",
    "tracked": false
   },
   {
@@ -1269,33 +1296,6 @@
    "tracked": true
   },
   {
-   "nct_id": "NCT06325202",
-   "title": "Closed Loop and Education for Hypoglycemia Awareness Restoration",
-   "acronym": "CLEAR",
-   "status": "RECRUITING",
-   "why_stopped": null,
-   "phases": [
-    "N/A"
-   ],
-   "phase_grade": null,
-   "sponsor": "Milton S. Hershey Medical Center",
-   "sponsor_class": "OTHER",
-   "conditions": [
-    "Diabetes Mellitus, Type 1"
-   ],
-   "enrollment": 324,
-   "enrollment_type": "ESTIMATED",
-   "start_date": "2025-10-03",
-   "primary_completion": "2029-07-31",
-   "primary_completion_type": "ESTIMATED",
-   "completion": "2029-07-31",
-   "completion_type": "ESTIMATED",
-   "last_update": "2026-03-03",
-   "has_results": false,
-   "url": "https://clinicaltrials.gov/study/NCT06325202",
-   "tracked": false
-  },
-  {
    "nct_id": "NCT07430332",
    "title": "GLP-1 RA for Stage 1 Type 1 Diabetes",
    "acronym": null,
@@ -1493,33 +1493,6 @@
    "tracked": false
   },
   {
-   "nct_id": "NCT07341243",
-   "title": "Exercising in Hot Conditions: How Does it Effect Blood Glucose in People With T1D",
-   "acronym": "T1D-Heat",
-   "status": "RECRUITING",
-   "why_stopped": null,
-   "phases": [
-    "N/A"
-   ],
-   "phase_grade": null,
-   "sponsor": "Liverpool John Moores University",
-   "sponsor_class": "OTHER",
-   "conditions": [
-    "Type 1 Diabetes (T1D)"
-   ],
-   "enrollment": 38,
-   "enrollment_type": "ESTIMATED",
-   "start_date": "2025-11-01",
-   "primary_completion": "2026-11-01",
-   "primary_completion_type": "ESTIMATED",
-   "completion": "2026-11-01",
-   "completion_type": "ESTIMATED",
-   "last_update": "2026-01-14",
-   "has_results": false,
-   "url": "https://clinicaltrials.gov/study/NCT07341243",
-   "tracked": false
-  },
-  {
    "nct_id": "NCT06904846",
    "title": "To Evaluate the Change in Glucose Parameters in Adult Patients With Type 1 or Type 2 Diabetes From Europe Using the iCan o3 CGM System for 60 Days Period",
    "acronym": "DETECT",
@@ -1545,6 +1518,33 @@
    "last_update": "2026-01-14",
    "has_results": false,
    "url": "https://clinicaltrials.gov/study/NCT06904846",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT07341243",
+   "title": "Exercising in Hot Conditions: How Does it Effect Blood Glucose in People With T1D",
+   "acronym": "T1D-Heat",
+   "status": "RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "N/A"
+   ],
+   "phase_grade": null,
+   "sponsor": "Liverpool John Moores University",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type 1 Diabetes (T1D)"
+   ],
+   "enrollment": 38,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2025-11-01",
+   "primary_completion": "2026-11-01",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2026-11-01",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-01-14",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT07341243",
    "tracked": false
   },
   {
@@ -1631,33 +1631,6 @@
    "tracked": false
   },
   {
-   "nct_id": "NCT06082973",
-   "title": "Dual-hormone Artificial Pancreas Versus Single-hormone Under Exercise and a Meal Challenge",
-   "acronym": "TAILOR/3",
-   "status": "COMPLETED",
-   "why_stopped": null,
-   "phases": [
-    "N/A"
-   ],
-   "phase_grade": null,
-   "sponsor": "Universitat Politècnica de València",
-   "sponsor_class": "OTHER",
-   "conditions": [
-    "Type 1 Diabetes"
-   ],
-   "enrollment": 15,
-   "enrollment_type": "ACTUAL",
-   "start_date": "2024-05-15",
-   "primary_completion": "2025-05-30",
-   "primary_completion_type": "ACTUAL",
-   "completion": "2025-05-30",
-   "completion_type": "ACTUAL",
-   "last_update": "2025-12-18",
-   "has_results": false,
-   "url": "https://clinicaltrials.gov/study/NCT06082973",
-   "tracked": false
-  },
-  {
    "nct_id": "NCT06338553",
    "title": "GLP-1Ra Impact on Metabolic Outcomes in Stage 2 T1DM While Receiving Teplizumab",
    "acronym": "GLP-TEP",
@@ -1683,6 +1656,33 @@
    "has_results": false,
    "url": "https://clinicaltrials.gov/study/NCT06338553",
    "tracked": true
+  },
+  {
+   "nct_id": "NCT06082973",
+   "title": "Dual-hormone Artificial Pancreas Versus Single-hormone Under Exercise and a Meal Challenge",
+   "acronym": "TAILOR/3",
+   "status": "COMPLETED",
+   "why_stopped": null,
+   "phases": [
+    "N/A"
+   ],
+   "phase_grade": null,
+   "sponsor": "Universitat Politècnica de València",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type 1 Diabetes"
+   ],
+   "enrollment": 15,
+   "enrollment_type": "ACTUAL",
+   "start_date": "2024-05-15",
+   "primary_completion": "2025-05-30",
+   "primary_completion_type": "ACTUAL",
+   "completion": "2025-05-30",
+   "completion_type": "ACTUAL",
+   "last_update": "2025-12-18",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT06082973",
+   "tracked": false
   },
   {
    "nct_id": "NCT06588504",

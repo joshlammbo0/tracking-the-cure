@@ -53,14 +53,6 @@
    "source": "https://finance.yahoo.com/quote/LLY"
   },
   {
-   "date": "2026-10-30",
-   "type": "earnings",
-   "precision": "exact",
-   "title": "Sanofi (ADR) (SNY) earnings",
-   "origin": "yfinance",
-   "source": "https://finance.yahoo.com/quote/SNY"
-  },
-  {
    "date": "2026-10-31",
    "type": "readout",
    "precision": "registry-estimated",
@@ -216,6 +208,14 @@
    "source": "https://clinicaltrials.gov/study/NCT07803744",
    "origin": "registry",
    "note": "Registry primary completion is when the last patient finishes the primary endpoint, not a results date. Toplines typically follow 1–6 months later."
+  },
+  {
+   "date": "2027-01-28",
+   "type": "earnings",
+   "precision": "exact",
+   "title": "Sanofi (ADR) (SNY) earnings",
+   "origin": "yfinance",
+   "source": "https://finance.yahoo.com/quote/SNY"
   },
   {
    "date": "2027-02-20",
