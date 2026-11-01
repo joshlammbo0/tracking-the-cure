@@ -344,16 +344,16 @@
      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQNVVRY0FqaXo4OUNlbWRHanJCMm1oZ3NkMUdZZUM0TXNLVWNseUFuV1RyNmtUei1CajV5SFJLOC1VVWJRWFJBQXE1OHdnQUttQTUySHpLMGw3Vkh6cDRyS3lZc2RoUE0zNGNlXzdVTmlzaTZ0NzhudjNSS25XWjl1QjAyUTZjVlZkOGFiaWZVSm00S29fQlpJSGNyb0U1ZFE?oc=5"
     },
     {
+     "title": "Diabetes Cell Therapy Merger Nears Close Ahead of Q1 2027 First Patient Dosing",
+     "outlet": "Streetwise Reports",
+     "date": "2026-10-20",
+     "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQWEFBNGc0SVkweURLckhGSk1YTWszcGNGZFFjQWlBX3dFNUthRFMwSkpWZE5scDFkb25leUJsTTMzUlNoUUliTjZXa05ZbDFkUEZIaTJ2eU5rM19zTWFaZzM3QjZLWVI3ZW1HeHJQQTdVZ2dGZ19RclJJbUw2VUVaYlRSMTNwbVJJUGJUdFJBUlQ0NTU1bTBIcXJDemFidWR2SFd2RVZlTU1sSzBEVlMwaV9DdTlyYlFGU3EyYjViNmRKcnJqcENSWVNwRFpDanNyREE?oc=5"
+    },
+    {
      "title": "Germantown’s Seraxis Announces Merger to Form Diabetes-Focused Biotech Company",
      "outlet": "The MoCo Show -",
      "date": "2026-09-12",
      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQSHRwbm1aY1RGOXR2NXliSy0wdktyS1FTVHdmbExYMml0dlZIS09ydi1TTXdWTjNvYkxpa09pSWdYRjRSVXZRMUdLWjJTY0lsVjF4NVlsOTB0U0lqU3J2bUU5TFc0c18tblVzUC1sM0phWkUyWk42b3NLUDMzWWI5QjRrZU40MGlrWU0zR3hUc1RBVWFYV0gtZktTVXdkYV9hdkktb0tJWF9tWmhpYWV3?oc=5"
-    },
-    {
-     "title": "Diabetes Cell Therapy Merger Nears Close Ahead of Q1 2027 First Patient Dosing",
-     "outlet": "Streetwise Reports",
-     "date": "2026-10-21",
-     "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQWEFBNGc0SVkweURLckhGSk1YTWszcGNGZFFjQWlBX3dFNUthRFMwSkpWZE5scDFkb25leUJsTTMzUlNoUUliTjZXa05ZbDFkUEZIaTJ2eU5rM19zTWFaZzM3QjZLWVI3ZW1HeHJQQTdVZ2dGZ19RclJJbUw2VUVaYlRSMTNwbVJJUGJUdFJBUlQ0NTU1bTBIcXJDemFidWR2SFd2RVZlTU1sSzBEVlMwaV9DdTlyYlFGU3EyYjViNmRKcnJqcENSWVNwRFpDanNyREE?oc=5"
     }
    ]
   },
@@ -420,7 +420,14 @@
     }
    ],
    "my_commentary": null,
-   "news": []
+   "news": [
+    {
+     "title": "Stem cell-derived islets edge toward clinical reality",
+     "outlet": "BioWorld News",
+     "date": "2026-10-07",
+     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNZU4wa0Nhd2N4dlhLYm0tdVJZNWRsdm56NU5qYV9feTdzNXdOSnhxdElIdWhhWmQ1S1g5Z3pzZFF3QVFMb3EwbkQxaGtFcERJMW9TOGhUWDdCUWpub3FHeGJyVmR5VWFNMXAtWnBMcjBNelN3QmhBTzVjbUU2MENlWmVvUmYzYkcwZ0FYeGxvYkp2MnZzdkJVZzZR?oc=5"
+    }
+   ]
   },
   {
    "id": "sana-up421",
@@ -2144,6 +2151,18 @@
     "doi": "10.1097/TP.0000000000005783"
    },
    {
+    "pmid": "42966570",
+    "title": "Graft Localized Immunomodulation with Rapamycin-Eluting PLGA Microparticles Promotes Murine Islet Allograft Survival and Induces Operational Tolerance",
+    "journal": "Am J Transplant",
+    "pubdate": "2026 Oct 31",
+    "sortdate": "2026-10-31",
+    "authors": "Wong J, Kuppan P, Cuesta-Gomez N et al.",
+    "is_rct": false,
+    "is_review": false,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42966570/",
+    "doi": "10.1016/j.ajt.2026.10.025"
+   },
+   {
     "pmid": "42963331",
     "title": "Pancreatic β-cell mitogenic regeneration in type 1 diabetes: A preclinical review",
     "journal": "Diabet Med",
@@ -2154,18 +2173,6 @@
     "is_review": true,
     "url": "https://pubmed.ncbi.nlm.nih.gov/42963331/",
     "doi": "10.1111/dme.70484"
-   },
-   {
-    "pmid": "42928611",
-    "title": "Characterising differential maturation of stem cell-derived islets in mice: Graft function and transcriptomic analysis",
-    "journal": "Diabet Med",
-    "pubdate": "2026 Oct 25",
-    "sortdate": "2026-10-25",
-    "authors": "Sullivan R, Gatward LFD, Hong TW et al.",
-    "is_rct": false,
-    "is_review": false,
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42928611/",
-    "doi": "10.1111/dme.70507"
    }
   ],
   "gene_edited": [
@@ -2256,6 +2263,18 @@
     "doi": "10.1016/j.bioactmat.2026.07.057"
    },
    {
+    "pmid": "42966570",
+    "title": "Graft Localized Immunomodulation with Rapamycin-Eluting PLGA Microparticles Promotes Murine Islet Allograft Survival and Induces Operational Tolerance",
+    "journal": "Am J Transplant",
+    "pubdate": "2026 Oct 31",
+    "sortdate": "2026-10-31",
+    "authors": "Wong J, Kuppan P, Cuesta-Gomez N et al.",
+    "is_rct": false,
+    "is_review": false,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42966570/",
+    "doi": "10.1016/j.ajt.2026.10.025"
+   },
+   {
     "pmid": "42920585",
     "title": "The stiffness of three-dimensional biomimetic matrices regulates insulin secretion via the Piezo1 mechanosensitive ion channel",
     "journal": "Front Chem",
@@ -2302,18 +2321,6 @@
     "is_review": true,
     "url": "https://pubmed.ncbi.nlm.nih.gov/42750143/",
     "doi": "10.1111/aor.70245"
-   },
-   {
-    "pmid": "42781481",
-    "title": "Porous-starch-encapsulated quercetin remodels the gut microbiota and elevates short-chain fatty acids, alleviating hyperglycaemia-associated phenotypes in T2DM mice",
-    "journal": "Front Nutr",
-    "pubdate": "2026",
-    "sortdate": "2026-09-09",
-    "authors": "Kang P, Zheng Y, Song S et al.",
-    "is_rct": false,
-    "is_review": false,
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42781481/",
-    "doi": "10.3389/fnut.2026.1851659"
    }
   ],
   "immune": [
@@ -2340,6 +2347,18 @@
     "is_review": true,
     "url": "https://pubmed.ncbi.nlm.nih.gov/42612969/",
     "doi": "10.1016/j.metabol.2026.156748"
+   },
+   {
+    "pmid": "42610933",
+    "title": "Baseline Serum Metabolites as Predictors of Teplizumab Response in Individuals With Type 1 Diabetes",
+    "journal": "Diabetes",
+    "pubdate": "2026 Nov 1",
+    "sortdate": "2026-11-01",
+    "authors": "Flammer ER, Higdon LE, Sanda S et al.",
+    "is_rct": true,
+    "is_review": false,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42610933/",
+    "doi": "10.2337/db26-0158"
    },
    {
     "pmid": "42587353",
@@ -2376,18 +2395,6 @@
     "is_review": false,
     "url": "https://pubmed.ncbi.nlm.nih.gov/42900744/",
     "doi": "10.2337/db26-0097"
-   },
-   {
-    "pmid": "42517687",
-    "title": "Impact of Albuminuria-Lowering Treatments on Cardiovascular Predictive Ceramides in Diabetes: Post Hoc Analysis of the ROTATE Trials",
-    "journal": "Diabetes Obes Metab",
-    "pubdate": "2026 Oct",
-    "sortdate": "2026-10-01",
-    "authors": "Pigsborg K, Kienle SM, Wretlind A et al.",
-    "is_rct": true,
-    "is_review": false,
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42517687/",
-    "doi": "10.1111/dom.71130"
    }
   ]
  },
@@ -2435,19 +2442,26 @@
     "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQNVVRY0FqaXo4OUNlbWRHanJCMm1oZ3NkMUdZZUM0TXNLVWNseUFuV1RyNmtUei1CajV5SFJLOC1VVWJRWFJBQXE1OHdnQUttQTUySHpLMGw3Vkh6cDRyS3lZc2RoUE0zNGNlXzdVTmlzaTZ0NzhudjNSS25XWjl1QjAyUTZjVlZkOGFiaWZVSm00S29fQlpJSGNyb0U1ZFE?oc=5"
    },
    {
+    "title": "Diabetes Cell Therapy Merger Nears Close Ahead of Q1 2027 First Patient Dosing",
+    "outlet": "Streetwise Reports",
+    "date": "2026-10-20",
+    "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQWEFBNGc0SVkweURLckhGSk1YTWszcGNGZFFjQWlBX3dFNUthRFMwSkpWZE5scDFkb25leUJsTTMzUlNoUUliTjZXa05ZbDFkUEZIaTJ2eU5rM19zTWFaZzM3QjZLWVI3ZW1HeHJQQTdVZ2dGZ19RclJJbUw2VUVaYlRSMTNwbVJJUGJUdFJBUlQ0NTU1bTBIcXJDemFidWR2SFd2RVZlTU1sSzBEVlMwaV9DdTlyYlFGU3EyYjViNmRKcnJqcENSWVNwRFpDanNyREE?oc=5"
+   },
+   {
     "title": "Germantown’s Seraxis Announces Merger to Form Diabetes-Focused Biotech Company",
     "outlet": "The MoCo Show -",
     "date": "2026-09-12",
     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQSHRwbm1aY1RGOXR2NXliSy0wdktyS1FTVHdmbExYMml0dlZIS09ydi1TTXdWTjNvYkxpa09pSWdYRjRSVXZRMUdLWjJTY0lsVjF4NVlsOTB0U0lqU3J2bUU5TFc0c18tblVzUC1sM0phWkUyWk42b3NLUDMzWWI5QjRrZU40MGlrWU0zR3hUc1RBVWFYV0gtZktTVXdkYV9hdkktb0tJWF9tWmhpYWV3?oc=5"
-   },
-   {
-    "title": "Diabetes Cell Therapy Merger Nears Close Ahead of Q1 2027 First Patient Dosing",
-    "outlet": "Streetwise Reports",
-    "date": "2026-10-21",
-    "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQWEFBNGc0SVkweURLckhGSk1YTWszcGNGZFFjQWlBX3dFNUthRFMwSkpWZE5scDFkb25leUJsTTMzUlNoUUliTjZXa05ZbDFkUEZIaTJ2eU5rM19zTWFaZzM3QjZLWVI3ZW1HeHJQQTdVZ2dGZ19RclJJbUw2VUVaYlRSMTNwbVJJUGJUdFJBUlQ0NTU1bTBIcXJDemFidWR2SFd2RVZlTU1sSzBEVlMwaV9DdTlyYlFGU3EyYjViNmRKcnJqcENSWVNwRFpDanNyREE?oc=5"
    }
   ],
-  "celregen-crg002": [],
+  "celregen-crg002": [
+   {
+    "title": "Stem cell-derived islets edge toward clinical reality",
+    "outlet": "BioWorld News",
+    "date": "2026-10-07",
+    "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNZU4wa0Nhd2N4dlhLYm0tdVJZNWRsdm56NU5qYV9feTdzNXdOSnhxdElIdWhhWmQ1S1g5Z3pzZFF3QVFMb3EwbkQxaGtFcERJMW9TOGhUWDdCUWpub3FHeGJyVmR5VWFNMXAtWnBMcjBNelN3QmhBTzVjbUU2MENlWmVvUmYzYkcwZ0FYeGxvYkp2MnZzdkJVZzZR?oc=5"
+   }
+  ],
   "sana-up421": [
    {
     "title": "Sana Biotechnology: A Shot At Diabetes",
