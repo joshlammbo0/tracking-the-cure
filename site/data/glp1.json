@@ -415,6 +415,33 @@
    "tracked": true
   },
   {
+   "nct_id": "NCT07087795",
+   "title": "A Study to See the Effect of NNC0194-0499 Alone or in Combination With Semaglutide on Blood Sugar Control in People Living With Type 1 Diabetes",
+   "acronym": null,
+   "status": "ACTIVE_NOT_RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 1"
+   ],
+   "phase_grade": "phase1",
+   "sponsor": "Novo Nordisk A/S",
+   "sponsor_class": "INDUSTRY",
+   "conditions": [
+    "Diabetes Mellitus, Type 1"
+   ],
+   "enrollment": 96,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2025-07-01",
+   "primary_completion": "2026-09-12",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2026-09-25",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-08-13",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT07087795",
+   "tracked": false
+  },
+  {
    "nct_id": "NCT07427251",
    "title": "The Postprandial Hypo-Avoid Study",
    "acronym": null,
@@ -467,33 +494,6 @@
    "last_update": "2026-08-13",
    "has_results": false,
    "url": "https://clinicaltrials.gov/study/NCT06422494",
-   "tracked": false
-  },
-  {
-   "nct_id": "NCT07087795",
-   "title": "A Study to See the Effect of NNC0194-0499 Alone or in Combination With Semaglutide on Blood Sugar Control in People Living With Type 1 Diabetes",
-   "acronym": null,
-   "status": "ACTIVE_NOT_RECRUITING",
-   "why_stopped": null,
-   "phases": [
-    "Phase 1"
-   ],
-   "phase_grade": "phase1",
-   "sponsor": "Novo Nordisk A/S",
-   "sponsor_class": "INDUSTRY",
-   "conditions": [
-    "Diabetes Mellitus, Type 1"
-   ],
-   "enrollment": 96,
-   "enrollment_type": "ESTIMATED",
-   "start_date": "2025-07-01",
-   "primary_completion": "2026-09-12",
-   "primary_completion_type": "ESTIMATED",
-   "completion": "2026-09-25",
-   "completion_type": "ESTIMATED",
-   "last_update": "2026-08-13",
-   "has_results": false,
-   "url": "https://clinicaltrials.gov/study/NCT07087795",
    "tracked": false
   },
   {
@@ -608,6 +608,33 @@
    "tracked": false
   },
   {
+   "nct_id": "NCT05536232",
+   "title": "Residual Insulin Secretion in Patients With Type 1 Diabetes Under a Low Carbohydrate Diet or a Ketogenic Diet",
+   "acronym": "KetoDiab",
+   "status": "COMPLETED",
+   "why_stopped": null,
+   "phases": [
+    "N/A"
+   ],
+   "phase_grade": null,
+   "sponsor": "Assistance Publique - Hôpitaux de Paris",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type1 Diabetes"
+   ],
+   "enrollment": 30,
+   "enrollment_type": "ACTUAL",
+   "start_date": "2022-10-17",
+   "primary_completion": "2026-01-13",
+   "primary_completion_type": "ACTUAL",
+   "completion": "2026-01-13",
+   "completion_type": "ACTUAL",
+   "last_update": "2026-07-13",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT05536232",
+   "tracked": false
+  },
+  {
    "nct_id": "NCT05949281",
    "title": "Repurposing Colchicine for Reduction of Residual Inflammatory Risk in Type 1 Diabetes",
    "acronym": "REC1TE",
@@ -634,33 +661,6 @@
    "last_update": "2026-07-13",
    "has_results": false,
    "url": "https://clinicaltrials.gov/study/NCT05949281",
-   "tracked": false
-  },
-  {
-   "nct_id": "NCT05536232",
-   "title": "Residual Insulin Secretion in Patients With Type 1 Diabetes Under a Low Carbohydrate Diet or a Ketogenic Diet",
-   "acronym": "KetoDiab",
-   "status": "COMPLETED",
-   "why_stopped": null,
-   "phases": [
-    "N/A"
-   ],
-   "phase_grade": null,
-   "sponsor": "Assistance Publique - Hôpitaux de Paris",
-   "sponsor_class": "OTHER",
-   "conditions": [
-    "Type1 Diabetes"
-   ],
-   "enrollment": 30,
-   "enrollment_type": "ACTUAL",
-   "start_date": "2022-10-17",
-   "primary_completion": "2026-01-13",
-   "primary_completion_type": "ACTUAL",
-   "completion": "2026-01-13",
-   "completion_type": "ACTUAL",
-   "last_update": "2026-07-13",
-   "has_results": false,
-   "url": "https://clinicaltrials.gov/study/NCT05536232",
    "tracked": false
   },
   {
@@ -802,33 +802,6 @@
    "tracked": false
   },
   {
-   "nct_id": "NCT07614412",
-   "title": "SHIELD-T1D: Shingrix and GLP-1 Agonist for Beta-Cell Preservation in Recent-Onset Type 1 Diabetes.",
-   "acronym": "SHIELD-T1D",
-   "status": "NOT_YET_RECRUITING",
-   "why_stopped": null,
-   "phases": [
-    "Phase 2"
-   ],
-   "phase_grade": "phase2",
-   "sponsor": "Ministry of Health, Saudi Arabia",
-   "sponsor_class": "OTHER_GOV",
-   "conditions": [
-    "Type 1 Diabetes Mellitus"
-   ],
-   "enrollment": 240,
-   "enrollment_type": "ESTIMATED",
-   "start_date": "2027-01-01",
-   "primary_completion": "2028-01-31",
-   "primary_completion_type": "ESTIMATED",
-   "completion": "2028-12-31",
-   "completion_type": "ESTIMATED",
-   "last_update": "2026-05-29",
-   "has_results": false,
-   "url": "https://clinicaltrials.gov/study/NCT07614412",
-   "tracked": true
-  },
-  {
    "nct_id": "NCT03899402",
    "title": "Triple Therapy in T1DM",
    "acronym": null,
@@ -854,6 +827,33 @@
    "last_update": "2026-05-29",
    "has_results": false,
    "url": "https://clinicaltrials.gov/study/NCT03899402",
+   "tracked": true
+  },
+  {
+   "nct_id": "NCT07614412",
+   "title": "SHIELD-T1D: Shingrix and GLP-1 Agonist for Beta-Cell Preservation in Recent-Onset Type 1 Diabetes.",
+   "acronym": "SHIELD-T1D",
+   "status": "NOT_YET_RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 2"
+   ],
+   "phase_grade": "phase2",
+   "sponsor": "Ministry of Health, Saudi Arabia",
+   "sponsor_class": "OTHER_GOV",
+   "conditions": [
+    "Type 1 Diabetes Mellitus"
+   ],
+   "enrollment": 240,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2027-01-01",
+   "primary_completion": "2028-01-31",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2028-12-31",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-05-29",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT07614412",
    "tracked": true
   },
   {
@@ -1911,6 +1911,18 @@
   ],
   "safety": [
    {
+    "pmid": "42969666",
+    "title": "GLP-1 Receptor Agonists Versus Empagliflozin or Dapagliflozin in the MASLD-Heart Failure Phenotype: An Exploratory Propensity-Matched Cohort Study",
+    "journal": "Balkan Med J",
+    "pubdate": "2026 Nov 2",
+    "sortdate": "2026-11-02",
+    "authors": "Gautam N, Huynh TM, Truong HH et al.",
+    "is_rct": false,
+    "is_review": false,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42969666/",
+    "doi": "10.4274/balkanmedj.galenos.2026.2026-7-49"
+   },
+   {
     "pmid": "42675550",
     "title": "Glycaemic Changes After Semaglutide Discontinuation in Adults With Type 1 Diabetes Using Automated Insulin Delivery: Analysis of the ADJUST-T1D Extension Study",
     "journal": "Diabetes Obes Metab",
@@ -1993,18 +2005,6 @@
     "is_review": true,
     "url": "https://pubmed.ncbi.nlm.nih.gov/42380553/",
     "doi": "10.1111/dom.71045"
-   },
-   {
-    "pmid": "42695140",
-    "title": "Adjunctive Treatments for Patients with Type 1 Diabetes Using Automated Insulin Delivery Systems. A Narrative Review",
-    "journal": "Diabetes Technol Ther",
-    "pubdate": "2026 Sep 4",
-    "sortdate": "2026-09-04",
-    "authors": "Kitsios K, Trakatelli CM",
-    "is_rct": false,
-    "is_review": true,
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42695140/",
-    "doi": "10.1177/15209156261486127"
    }
   ]
  },

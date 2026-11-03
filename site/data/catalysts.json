@@ -71,6 +71,14 @@
    "source": "https://finance.yahoo.com/quote/VRTX"
   },
   {
+   "date": "2026-11-02",
+   "type": "earnings",
+   "precision": "exact",
+   "title": "CRISPR Therapeutics (CRSP) earnings",
+   "origin": "yfinance",
+   "source": "https://finance.yahoo.com/quote/CRSP"
+  },
+  {
    "date": "2026-11-04",
    "type": "earnings",
    "precision": "exact",
@@ -109,14 +117,6 @@
    "title": "Senseonics (SENS) earnings",
    "origin": "yfinance",
    "source": "https://finance.yahoo.com/quote/SENS"
-  },
-  {
-   "date": "2026-11-09",
-   "type": "earnings",
-   "precision": "exact",
-   "title": "CRISPR Therapeutics (CRSP) earnings",
-   "origin": "yfinance",
-   "source": "https://finance.yahoo.com/quote/CRSP"
   },
   {
    "date": "2026-11-16",

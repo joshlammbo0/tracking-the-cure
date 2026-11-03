@@ -302,6 +302,16 @@
  ],
  "fda_feed": [
   {
+   "number": "K263422",
+   "kind": "510(k)",
+   "date": "2026-10-21",
+   "device": "Mint ACE Pump",
+   "applicant": "Beta Bionics, Inc.",
+   "product_code": "QFG",
+   "code_label": "Alternate controller enabled (ACE) insulin pump",
+   "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K263422"
+  },
+  {
    "number": "K262576",
    "kind": "510(k)",
    "date": "2026-10-15",
@@ -412,17 +422,6 @@
    "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K260935"
   },
   {
-   "number": "P160017/S135",
-   "kind": "PMA supplement",
-   "date": "2026-06-12",
-   "device": "MiniMed 780G System",
-   "applicant": "Medtronic Minimed, Inc.",
-   "product_code": "OZP",
-   "code_label": "Closed-loop insulin system (PMA)",
-   "note": "Change Design/Components/Specifications/Material",
-   "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P160017"
-  },
-  {
    "number": "P250012/S008",
    "kind": "PMA supplement",
    "date": "2026-06-12",
@@ -432,6 +431,17 @@
    "code_label": "CGM sensor (PMA)",
    "note": "Change Design/Components/Specifications/Material",
    "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P250012"
+  },
+  {
+   "number": "P160017/S135",
+   "kind": "PMA supplement",
+   "date": "2026-06-12",
+   "device": "MiniMed 780G System",
+   "applicant": "Medtronic Minimed, Inc.",
+   "product_code": "OZP",
+   "code_label": "Closed-loop insulin system (PMA)",
+   "note": "Change Design/Components/Specifications/Material",
+   "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P160017"
   },
   {
    "number": "P160007/S060",
@@ -495,16 +505,6 @@
    "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K253743"
   },
   {
-   "number": "K253737",
-   "kind": "510(k)",
-   "date": "2026-02-03",
-   "device": "Dexcom G7 Continuous Glucose Monitoring (CGM) System; Dexcom G7 15 Day Continuous Glucose Monitoring (CGM) System",
-   "applicant": "Dexcom, Inc.",
-   "product_code": "QBJ",
-   "code_label": "Integrated CGM (iCGM)",
-   "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K253737"
-  },
-  {
    "number": "K253701",
    "kind": "510(k)",
    "date": "2026-02-03",
@@ -513,6 +513,16 @@
    "product_code": "QJI",
    "code_label": "Interoperable automated glycemic controller (AID algorithm)",
    "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K253701"
+  },
+  {
+   "number": "K253737",
+   "kind": "510(k)",
+   "date": "2026-02-03",
+   "device": "Dexcom G7 Continuous Glucose Monitoring (CGM) System; Dexcom G7 15 Day Continuous Glucose Monitoring (CGM) System",
+   "applicant": "Dexcom, Inc.",
+   "product_code": "QBJ",
+   "code_label": "Integrated CGM (iCGM)",
+   "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K253737"
   },
   {
    "number": "P160007/S058",
