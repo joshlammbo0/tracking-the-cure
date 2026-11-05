@@ -79,14 +79,6 @@
    "source": "https://finance.yahoo.com/quote/PODD"
   },
   {
-   "date": "2026-11-04",
-   "type": "earnings",
-   "precision": "exact",
-   "title": "Novo Nordisk (ADR) (NVO) earnings",
-   "origin": "yfinance",
-   "source": "https://finance.yahoo.com/quote/NVO"
-  },
-  {
    "date": "2026-11-05",
    "type": "earnings",
    "precision": "exact",
@@ -111,7 +103,7 @@
    "source": "https://finance.yahoo.com/quote/SENS"
   },
   {
-   "date": "2026-11-16",
+   "date": "2026-11-24",
    "type": "earnings",
    "precision": "exact",
    "title": "MiniMed Group (MMED) earnings",
@@ -119,7 +111,7 @@
    "source": "https://finance.yahoo.com/quote/MMED"
   },
   {
-   "date": "2026-11-17",
+   "date": "2026-11-24",
    "type": "earnings",
    "precision": "exact",
    "title": "Medtronic (MDT) earnings",
@@ -224,6 +216,14 @@
    "title": "Sanofi (ADR) (SNY) earnings",
    "origin": "yfinance",
    "source": "https://finance.yahoo.com/quote/SNY"
+  },
+  {
+   "date": "2027-02-03",
+   "type": "earnings",
+   "precision": "exact",
+   "title": "Novo Nordisk (ADR) (NVO) earnings",
+   "origin": "yfinance",
+   "source": "https://finance.yahoo.com/quote/NVO"
   },
   {
    "date": "2027-02-20",
