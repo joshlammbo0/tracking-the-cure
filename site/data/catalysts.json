@@ -29,22 +29,6 @@
    "origin": "curated"
   },
   {
-   "date": "2026-10-29",
-   "type": "earnings",
-   "precision": "exact",
-   "title": "Dexcom (DXCM) earnings",
-   "origin": "yfinance",
-   "source": "https://finance.yahoo.com/quote/DXCM"
-  },
-  {
-   "date": "2026-10-29",
-   "type": "earnings",
-   "precision": "exact",
-   "title": "Eli Lilly (LLY) earnings",
-   "origin": "yfinance",
-   "source": "https://finance.yahoo.com/quote/LLY"
-  },
-  {
    "date": "2026-10-31",
    "type": "readout",
    "precision": "registry-estimated",
