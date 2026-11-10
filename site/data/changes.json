@@ -1,3 +1,12 @@
 {
- "changes": []
+ "changes": [
+  {
+   "date": "2026-11-10",
+   "nct_id": "NCT06791291",
+   "kind": "status",
+   "from": "RECRUITING",
+   "to": "ACTIVE_NOT_RECRUITING",
+   "title": "Efficacy and Safety of Teplizumab in Japanese Participants With Stage 2 Type 1 Diabetes"
+  }
+ ]
 }
