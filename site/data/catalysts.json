@@ -82,17 +82,17 @@
    "date": "2026-11-24",
    "type": "earnings",
    "precision": "exact",
-   "title": "Medtronic (MDT) earnings",
-   "origin": "yfinance",
-   "source": "https://finance.yahoo.com/quote/MDT"
-  },
-  {
-   "date": "2026-11-25",
-   "type": "earnings",
-   "precision": "exact",
    "title": "Embecta (EMBC) earnings",
    "origin": "yfinance",
    "source": "https://finance.yahoo.com/quote/EMBC"
+  },
+  {
+   "date": "2026-11-24",
+   "type": "earnings",
+   "precision": "exact",
+   "title": "Medtronic (MDT) earnings",
+   "origin": "yfinance",
+   "source": "https://finance.yahoo.com/quote/MDT"
   },
   {
    "date": "2026-11-30",

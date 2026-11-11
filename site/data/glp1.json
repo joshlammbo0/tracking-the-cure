@@ -1,6 +1,33 @@
 {
  "registry_scan": [
   {
+   "nct_id": "NCT07929207",
+   "title": "Preoperative Gastric Ultrasound to Assess Stomach Contents and Aspiration Risk in Patients With Diabetes",
+   "acronym": null,
+   "status": "NOT_YET_RECRUITING",
+   "why_stopped": null,
+   "phases": [],
+   "phase_grade": null,
+   "sponsor": "Saglik Bilimleri Universitesi Gazi Yasargil Training and Research Hospital",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Diabetes Mellitus ( Type 1 and Type 2)",
+    "Respiratory Aspiration",
+    "Gastroparesis"
+   ],
+   "enrollment": 130,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2026-12-15",
+   "primary_completion": "2027-06-30",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2027-06-30",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-11-10",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT07929207",
+   "tracked": false
+  },
+  {
    "nct_id": "NCT07924553",
    "title": "Efficacy, Safety and Cardiovascular Protection of Mazdutide in Type 1 Diabetes",
    "acronym": null,
@@ -469,33 +496,6 @@
    "tracked": true
   },
   {
-   "nct_id": "NCT07427251",
-   "title": "The Postprandial Hypo-Avoid Study",
-   "acronym": null,
-   "status": "RECRUITING",
-   "why_stopped": null,
-   "phases": [
-    "Phase 4"
-   ],
-   "phase_grade": "approved",
-   "sponsor": "Steno Diabetes Center Copenhagen",
-   "sponsor_class": "OTHER",
-   "conditions": [
-    "Type 1 Diabetes Mellitus"
-   ],
-   "enrollment": 18,
-   "enrollment_type": "ESTIMATED",
-   "start_date": "2026-04-27",
-   "primary_completion": "2027-05-01",
-   "primary_completion_type": "ESTIMATED",
-   "completion": "2028-05-01",
-   "completion_type": "ESTIMATED",
-   "last_update": "2026-08-13",
-   "has_results": false,
-   "url": "https://clinicaltrials.gov/study/NCT07427251",
-   "tracked": false
-  },
-  {
    "nct_id": "NCT07087795",
    "title": "A Study to See the Effect of NNC0194-0499 Alone or in Combination With Semaglutide on Blood Sugar Control in People Living With Type 1 Diabetes",
    "acronym": null,
@@ -548,6 +548,33 @@
    "last_update": "2026-08-13",
    "has_results": false,
    "url": "https://clinicaltrials.gov/study/NCT06422494",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT07427251",
+   "title": "The Postprandial Hypo-Avoid Study",
+   "acronym": null,
+   "status": "RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 4"
+   ],
+   "phase_grade": "approved",
+   "sponsor": "Steno Diabetes Center Copenhagen",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type 1 Diabetes Mellitus"
+   ],
+   "enrollment": 18,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2026-04-27",
+   "primary_completion": "2027-05-01",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2028-05-01",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-08-13",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT07427251",
    "tracked": false
   },
   {
@@ -662,33 +689,6 @@
    "tracked": false
   },
   {
-   "nct_id": "NCT05536232",
-   "title": "Residual Insulin Secretion in Patients With Type 1 Diabetes Under a Low Carbohydrate Diet or a Ketogenic Diet",
-   "acronym": "KetoDiab",
-   "status": "COMPLETED",
-   "why_stopped": null,
-   "phases": [
-    "N/A"
-   ],
-   "phase_grade": null,
-   "sponsor": "Assistance Publique - Hôpitaux de Paris",
-   "sponsor_class": "OTHER",
-   "conditions": [
-    "Type1 Diabetes"
-   ],
-   "enrollment": 30,
-   "enrollment_type": "ACTUAL",
-   "start_date": "2022-10-17",
-   "primary_completion": "2026-01-13",
-   "primary_completion_type": "ACTUAL",
-   "completion": "2026-01-13",
-   "completion_type": "ACTUAL",
-   "last_update": "2026-07-13",
-   "has_results": false,
-   "url": "https://clinicaltrials.gov/study/NCT05536232",
-   "tracked": false
-  },
-  {
    "nct_id": "NCT05949281",
    "title": "Repurposing Colchicine for Reduction of Residual Inflammatory Risk in Type 1 Diabetes",
    "acronym": "REC1TE",
@@ -715,6 +715,33 @@
    "last_update": "2026-07-13",
    "has_results": false,
    "url": "https://clinicaltrials.gov/study/NCT05949281",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT05536232",
+   "title": "Residual Insulin Secretion in Patients With Type 1 Diabetes Under a Low Carbohydrate Diet or a Ketogenic Diet",
+   "acronym": "KetoDiab",
+   "status": "COMPLETED",
+   "why_stopped": null,
+   "phases": [
+    "N/A"
+   ],
+   "phase_grade": null,
+   "sponsor": "Assistance Publique - Hôpitaux de Paris",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type1 Diabetes"
+   ],
+   "enrollment": 30,
+   "enrollment_type": "ACTUAL",
+   "start_date": "2022-10-17",
+   "primary_completion": "2026-01-13",
+   "primary_completion_type": "ACTUAL",
+   "completion": "2026-01-13",
+   "completion_type": "ACTUAL",
+   "last_update": "2026-07-13",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT05536232",
    "tracked": false
   },
   {
@@ -1826,16 +1853,16 @@
     "doi": "10.20945/2359-4292-2026-0115"
    },
    {
-    "pmid": "36251836",
-    "title": "Tirzepatide",
-    "journal": "",
-    "pubdate": "2026 Jan",
-    "sortdate": "2026-09-14",
-    "authors": "Farzam K, Patel P",
+    "pmid": "43005333",
+    "title": "Glycogenic Hepatopathy Mimicking Overlapping with Metabolic Dysfunction-Associated Steatotic Liver Disease in Newly Diagnosed Type 2 Diabetes: A Case Report",
+    "journal": "SAGE Open Med Case Rep",
+    "pubdate": "2026",
+    "sortdate": "2026-09-22",
+    "authors": "Khatiwala P, Ragan J, Michael A et al.",
     "is_rct": false,
     "is_review": false,
-    "url": "https://pubmed.ncbi.nlm.nih.gov/36251836/",
-    "doi": null
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43005333/",
+    "doi": "10.1177/2050313X261492855"
    }
   ],
   "beta_cell": [
