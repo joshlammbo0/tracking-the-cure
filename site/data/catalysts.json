@@ -39,14 +39,6 @@
    "note": "Registry primary completion is when the last patient finishes the primary endpoint, not a results date. Toplines typically follow 1–6 months later."
   },
   {
-   "date": "2026-11-04",
-   "type": "earnings",
-   "precision": "exact",
-   "title": "Insulet (PODD) earnings",
-   "origin": "yfinance",
-   "source": "https://finance.yahoo.com/quote/PODD"
-  },
-  {
    "date": "2026-11-05",
    "type": "earnings",
    "precision": "exact",
