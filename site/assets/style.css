@@ -812,3 +812,4 @@ table.data td .sub { overflow-wrap: anywhere; }
 .hero-denom { font-size: var(--fs-sm); color: var(--ink-2); max-width: 72ch; margin: var(--sp-3) 0 0; }
 .approved-list { list-style: none; padding: 0; margin: 2px 0 0; }
 .approved-list li { margin: 0 0 2px; }
+.section-head .sec-count { margin: var(--sp-2) 0 0; font-size: var(--fs-xs); font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); }

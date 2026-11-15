@@ -28,11 +28,14 @@
   </div>
 </section>
 {% for key, ab in APPROACH.items() %}{% set label = ab[0] %}{% set blurb = ab[1] %}
-{% set ps = cure|selectattr("approach", "eq", key)|list %}
+{# One list drives both the counter and the cards below it, so they cannot drift apart. #}
+{% set cards = cure|selectattr("approach", "eq", key)|sort(attribute="evidence_i", reverse=True)|sort(attribute="stage_i", reverse=True)|sort(attribute="status")|list %}
+{% set n_active = cards|selectattr("status", "eq", "active")|list|length %}
+{% set n_disc = cards|selectattr("status", "eq", "discontinued")|list|length %}
 <section class="section" id="{{ key }}" aria-labelledby="h-{{ key }}">
-  <div class="section-head"><div><span class="eyebrow">{{ ps|selectattr("status","eq","active")|list|length }} active · {{ ps|length }} tracked</span><h2 id="h-{{ key }}">{{ label }}</h2><p>{{ blurb }}</p></div></div>
+  <div class="section-head"><div><h2 id="h-{{ key }}">{{ label }}</h2><p class="sec-count" data-tracked="{{ cards|length }}" data-active="{{ n_active }}">{{ cards|length }} tracked · {{ n_active }} active{% if n_disc %} · {{ n_disc }} discontinued{% endif %}</p><p>{{ blurb }}</p></div></div>
   <div class="card-grid">
-    {% for p in ps|sort(attribute="evidence_i", reverse=True)|sort(attribute="stage_i", reverse=True)|sort(attribute="status") %}{{ ui.program_card(p, root) }}{% endfor %}
+    {% for p in cards %}{{ ui.program_card(p, root) }}{% endfor %}
   </div>
   <details class="more-toggle mt-5"><summary>Recent literature on {{ label|lower }} (PubMed)</summary>{{ ui.papers((D.papers or {}).get(key) or [], 6) }}</details>
 </section>
