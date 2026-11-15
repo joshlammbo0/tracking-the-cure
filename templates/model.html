@@ -189,7 +189,7 @@
   <div class="section-head"><div><span class="eyebrow">Company read-across</span><h2 id="h-ra">Whose revenue is at risk</h2>
   <p>Displaced revenue mapped onto the public companies tracked here, assuming each keeps its current share of its market. Shown as dollars and as a percentage of the company's <b>current</b> trailing-twelve-month revenue. Follows the current inputs.</p></div></div>
   <figure class="figure ra-figure">
-    <div class="fig-title">Modelled displacement in 2040 relative to current company revenue</div>
+    <div class="fig-title">2040 revenue displaced, as a share of today's sales</div>
     <div class="fig-sub"><span data-scenario-label>base case</span> · company shares held at today's levels · companies with an identical modelled revenue mix are shown once</div>
     <ol class="bars" id="ra-bars">
       {% for c in md.ra_cats %}<li><span class="bl">{{ c.label }}{% if c.members %}<span class="sub">{{ c.members }}</span>{% endif %}</span><span class="bar" aria-hidden="true"><i style="width:{{ '%.1f'|format(100 * c.value / md.ra_cats[0].value) }}%"></i></span><span class="bv">{{ c.value|pct(1) }}</span></li>{% endfor %}

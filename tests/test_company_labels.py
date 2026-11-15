@@ -30,3 +30,10 @@ def test_missing_date():
 def test_no_ev_sales_label_left():
     tpl = (pathlib.Path(__file__).resolve().parent.parent / "templates").rglob("*.html")
     assert not any("EV / sales" in p.read_text() for p in tpl)
+
+
+def test_exposure_label_names_its_denominator():
+    root = pathlib.Path(__file__).resolve().parent.parent / "templates"
+    text = "".join(p.read_text() for p in root.rglob("*.html"))
+    assert "Cure exposure" not in text
+    assert "2040 displacement / current revenue" in text
