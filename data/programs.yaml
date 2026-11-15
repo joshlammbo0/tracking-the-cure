@@ -8,6 +8,8 @@
 #   stage    = furthest point of active development (e.g. a Phase 3 trial enrolling)
 #   evidence = highest-quality human data actually read out (the hype filter)
 # status:  active | paused | discontinued
+# next_catalyst.window: the timing exactly as the source words it, shown instead of the placeholder date
+#   (a guided date is the end of the stated window, kept only for sorting).
 # unverified: list anything you could not confirm; it is shown on the site as a flag.
 
 programs:
@@ -40,6 +42,7 @@ programs:
       label: Updated zimislecel / VX-017 timelines
       date: 2026-12-31
       date_precision: guided  # "later this year" per Vertex Q2 2026 release
+      window: "later this year (Vertex Q2 2026 results)"
     sources:
       - label: NEJM 2025 — Stem Cell–Derived, Fully Differentiated Islets for T1D (PMID 40544428)
         url: https://doi.org/10.1056/NEJMoa2506549
@@ -201,6 +204,7 @@ programs:
       label: IND submission / Phase 1/2 start (guided "as early as 2026")
       date: 2026-12-31
       date_precision: guided
+      window: "as early as 2026"
     sources:
       - label: Sana Q2 2026 results
         url: https://ir.sana.com/news-releases/news-release-details/sana-biotechnology-reports-second-quarter-2026-financial-results

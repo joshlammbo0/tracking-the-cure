@@ -88,7 +88,7 @@
 {% for c in rows[:n] %}
   <li><span class="when">{{ c.short }}</span>
   <span class="what"><span class="badge">{{ c.type_label }}</span>{% if c.related_url %}<a href="{{ root }}{{ c.related_url }}">{{ c.title }}</a>{% elif c.source %}<a href="{{ c.source }}" rel="noopener">{{ c.title }}</a>{% else %}{{ c.title }}{% endif %}
-  <span class="sub">{% if c.days is not none and c.days >= 0 %}{{ "today" if c.days == 0 else "in " ~ c.days ~ " day" ~ ("s" if c.days != 1 else "") }}{% elif c.days is not none %}{{ -c.days }} days ago{% endif %}{% if c.prec_note %} · {{ c.prec_note }}{% endif %}</span></span></li>
+  <span class="sub">{% if c.days is not none and c.days >= 0 %}{{ "today" if c.days == 0 else "in " ~ c.days ~ " day" ~ ("s" if c.days != 1 else "") }}{% elif c.days is not none %}{{ -c.days }} days ago{% endif %} · <span class="prov">{{ c.prov_label }}</span>{% if c.prec_note %} · {{ c.prec_note }}{% endif %}</span></span></li>
 {% endfor %}
 </ul>
 {% endmacro %}
