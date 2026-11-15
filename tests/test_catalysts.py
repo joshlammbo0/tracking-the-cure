@@ -45,3 +45,32 @@ def test_ics_titles_carry_type_and_provenance():
     summaries = [l for l in text.replace("\r\n ", "").split("\r\n") if l.startswith("SUMMARY:")]
     assert summaries and all(s.startswith("SUMMARY:[") and " · " in s.split("]")[0] for s in summaries)
     assert "[Readout" not in text
+
+
+def test_month_only_registry_dates_are_never_shown_as_a_day():
+    import re
+    D = render.load_all()
+    checked = 0
+    for r in rows():
+        if r.get("origin") != "registry":
+            continue
+        raw = render.registry_date(r, D["trials"])
+        if raw and len(raw) == 7:
+            checked += 1
+            assert r["month_only"] and r["when"] == r["short"] == render.fdate(raw, "month"), r["title"]
+            assert not re.search(r"\b\d{1,2}\b ’|\d{1,2}, \d{4}", r["when"]), r["when"]
+    assert checked  # the current data has month-only registry dates (e.g. SURPASS-T1D)
+
+
+def test_month_only_ics_event_spans_the_month():
+    text = render.ics(rows()).replace("\r\n ", "")
+    ev = next(e for e in text.split("BEGIN:VEVENT")[1:] if "NCT06914895" in e)
+    assert "DTSTART;VALUE=DATE:20261101" in ev and "DTEND;VALUE=DATE:20261201" in ev
+    assert "month only" in ev
+
+
+def test_program_next_catalyst_uses_registry_precision():
+    D = render.load_all()
+    render.enrich_programs(D)
+    p = next(p for p in D["programs"] if p["id"] == "lilly-tirzepatide-t1d")
+    assert p["next_label"] == "Nov 2026"

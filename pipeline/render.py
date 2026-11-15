@@ -227,6 +227,23 @@ def load_all():
 
 
 # ------------------------------------------------------------------ enrichment
+def registry_date(row, trials):
+    """The registry's own primary-completion date (often month-only, e.g. "2026-11") for a registry-dated row.
+    build.py stores it as registry_date; data generated before that is looked up by NCT id."""
+    raw = row.get("registry_date")
+    if not raw:
+        m = re.search(r"NCT\d{8}", " ".join(str(row.get(k) or "") for k in ("nct_id", "title", "source")))
+        raw = (trials.get(m.group(0)) or {}).get("primary_completion") if m else None
+    return str(raw) if raw else None
+
+
+def registry_label(raw, short=False):
+    """Month-only registry dates are shown as the month: never as an invented day."""
+    if raw and len(raw) == 7:
+        return fdate(raw, "month")
+    return fdate(raw, "exact", short=short)
+
+
 def enrich_programs(D):
     for p in D["programs"]:
         p["stage_i"] = GRADES.index(p["stage"])
@@ -236,19 +253,22 @@ def enrich_programs(D):
         p["short"] = re.split(r"\s[(—]", p["name"])[0].strip()
         p["approach_label"] = APPROACH.get(p.get("approach"), (GLP_TOPIC.get(p.get("glp1_topic"), "GLP-1"), ""))[0]
         p["company_slug"] = slug_ticker(p["ticker"]) if p.get("ticker") else None
-        p["timeline"] = program_timeline(p, D["changes"])
+        p["timeline"] = program_timeline(p, D["changes"], D["trials"])
         nc = p.get("next_catalyst")
         p["next_label"] = None
         if nc:
-            p["next_label"] = nc.get("window") or ("Window not recorded" if nc.get("date_precision") == "guided"
-                                                   else fdate(nc.get("date"), "registry" if nc.get("date_precision") == "registry" else nc.get("date_precision")))
+            if nc.get("date_precision") == "registry":
+                p["next_label"] = registry_label(registry_date(nc, D["trials"]) or nc.get("date"))
+            else:
+                p["next_label"] = nc.get("window") or ("Window not recorded" if nc.get("date_precision") == "guided"
+                                                       else fdate(nc.get("date"), nc.get("date_precision")))
     tracked = {c["ticker"] for c in D["companies"]}
     for p in D["programs"]:
         if p.get("ticker") not in tracked:
             p["company_slug"] = None
 
 
-def program_timeline(p, changes):
+def program_timeline(p, changes, trials=None):
     ev = []
     for t in p.get("trials") or []:
         tag = t.get("acronym") or t["nct_id"]
@@ -273,7 +293,8 @@ def program_timeline(p, changes):
     nc = p.get("next_catalyst")
     if nc and nc.get("date"):
         prec = "registry" if nc.get("date_precision") == "registry" else nc.get("date_precision")
-        ev.append({"date": nc["date"], "label": "Next catalyst: " + nc["label"], "sub": precision_note(prec) or None,
+        date = (registry_date(nc, trials or {}) or nc["date"]) if prec == "registry" else nc["date"]
+        ev.append({"date": date, "label": "Next catalyst: " + nc["label"], "sub": precision_note(prec) or None,
                    "kind": "future", "precision": prec, "window": nc.get("window")})
     ev = [e for e in ev if e.get("date")]
     seen, out = set(), []
@@ -361,12 +382,21 @@ def catalyst_rows(D):
             r["short"] = "{} ’{}".format(fdate(c["date"], "exact", short=True), c["date"][2:4])
         else:
             r["short"] = r["when"]
+        r["month_only"] = False
+        if c.get("origin") == "registry":
+            raw = registry_date(c, D["trials"])
+            if raw and len(raw) == 7:  # the registry gives the month only: show the month, not its last day
+                r["month_only"] = True
+                r["registry_date"] = raw
+                r["when"] = r["short"] = registry_label(raw)
         if c.get("window"):  # guidance windows exactly as the source states them, never collapsed to one date
             r["when"] = r["short"] = c["window"]
         elif prec == "guided":  # guidance with no recorded wording: don't present the placeholder date as the window
             r["when"] = r["short"] = "Window not recorded"
         # The provenance tag covers "registry estimate" / "company guidance"; keep only coarse-date notes.
         r["prec_note"] = precision_note(prec) if prec in ("quarter", "half", "month", "year") and not c.get("window") else ""
+        if r["month_only"]:
+            r["prec_note"] = "registry gives the month only"
         r["type_label"] = CAT_TYPE.get(r["type"], r["type"].title())
         rel = c.get("related")
         r["related_url"] = progs[rel]["url"] if rel in progs else None
@@ -525,6 +555,8 @@ def ics(rows):
         if not d or d < TODAY - dt.timedelta(days=90):
             continue
         end = parse_date(r.get("end")) or d
+        if r.get("month_only"):  # all-day event spanning the whole month the registry names
+            d, end = dt.date(d.year, d.month, 1), parse_date(r["registry_date"])
         parts = ["Date provenance: {}.".format(r["provenance"] or "not classified")]
         if r.get("window"):
             parts.append("Timing as stated by the source: {} (calendar date is a placeholder at the end of that window).".format(r["window"]))

@@ -281,7 +281,9 @@ def build(skip, offline):
                          key=lambda x: x[0])
             if fut:
                 d, t = fut[0]
-                nc.update({"date": d.isoformat(), "date_precision": "registry",
+                # date stays a full date for sorting; registry_date keeps the registry's own precision
+                # (often month-only, e.g. "2026-11"), which is what the site displays
+                nc.update({"date": d.isoformat(), "date_precision": "registry", "registry_date": t.get("primary_completion"),
                            "nct_id": t["nct_id"], "registry_date_type": t.get("primary_completion_type")})
         rec["next_catalyst"] = nc
         rec["my_commentary"] = _note(notes, "programs", p["id"], "commentary")
@@ -404,7 +406,7 @@ def build(skip, offline):
                 continue
             seen.add(t["nct_id"])
             actual = (t.get("primary_completion_type") or "").upper() == "ACTUAL"
-            cats.append({"date": pcd.isoformat(), "type": "trial_completion",
+            cats.append({"date": pcd.isoformat(), "type": "trial_completion", "registry_date": t.get("primary_completion"),
                          "precision": "registry-" + (t.get("primary_completion_type") or "").lower(),
                          "provenance": "Confirmed" if actual else "Registry estimate",
                          "title": "{} — primary completion ({})".format(t.get("acronym") or p["name"], t["nct_id"]),
