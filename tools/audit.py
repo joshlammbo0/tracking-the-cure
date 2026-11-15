@@ -158,9 +158,9 @@ def interactions(page, base):
 
     def catalysts():
         page.click("#all-catalysts > summary")
-        page.click('[data-filter-for="cat-table"] [data-val="readout"]')
+        page.click('[data-filter-for="cat-table"] [data-val="trial_completion"]')
         shown = page.inner_text("#cat-count")
-        return page.is_visible("#cat-table") and shown != "", "readouts: " + shown
+        return page.is_visible("#cat-table") and shown != "", "trial completions: " + shown
     check("Catalysts: full table opens and filters", catalysts)
 
     page.set_viewport_size({"width": 375, "height": 812})
