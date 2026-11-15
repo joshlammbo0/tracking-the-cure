@@ -229,12 +229,30 @@
   });
 
   // ------------------------------------------------------------ sortable tables: <table class="data sortable">
+  // Sort key for a cell: {blank, kind: "date" | "num" | "text", v}.
+  // ISO dates (YYYY-MM or YYYY-MM-DD) compare by the full date; month-only dates sort as the end of that month,
+  // matching pipeline.build.parse_date. Missing values ("", "—", "unknown", "none") always sort last.
+  var ISO_DATE = /^(\d{4})-(\d{2})(?:-(\d{2}))?$/;
   function cellVal(td) {
     var v = td.getAttribute("data-sort");
     if (v == null) v = td.textContent.trim();
-    var n = parseFloat(String(v).replace(/[^0-9.\-−]/g, "").replace("−", "-"));
-    return v !== "" && !isNaN(n) && /^[\s$−\-+]*[\d.,]+/.test(v) ? n : String(v).toLowerCase();
+    v = String(v).trim();
+    var low = v.toLowerCase();
+    if (low === "" || low === "—" || low === "unknown" || low === "none" || low === "null") return { blank: true, kind: "text", v: "" };
+    var d = v.match(ISO_DATE);
+    if (d) return { blank: false, kind: "date", v: d[1] + "-" + d[2] + "-" + (d[3] || "31") };
+    var n = parseFloat(v.replace(/[^0-9.\-−]/g, "").replace("−", "-"));
+    if (!isNaN(n) && /^[\s$−\-+]*[\d.,]+/.test(v)) return { blank: false, kind: "num", v: n };
+    return { blank: false, kind: "text", v: low };
   }
+  function compareCells(x, y, dir) {
+    if (x.blank !== y.blank) return x.blank ? 1 : -1;  // blanks last in both directions
+    if (x.blank) return 0;
+    var r = x.kind === "num" && y.kind === "num" ? x.v - y.v : String(x.v).localeCompare(String(y.v));
+    return dir === "ascending" ? r : -r;
+  }
+  TTC.sortKey = cellVal;
+  TTC.compareCells = compareCells;
   document.querySelectorAll("table.sortable").forEach(function (table) {
     var ths = table.querySelectorAll("thead th");
     ths.forEach(function (th, col) {
@@ -247,13 +265,7 @@
         ths.forEach(function (o) { o.removeAttribute("aria-sort"); });
         th.setAttribute("aria-sort", dir);
         var tb = table.tBodies[0], rows = Array.prototype.slice.call(tb.rows);
-        rows.sort(function (a, c) {
-          var x = cellVal(a.cells[col]), y = cellVal(c.cells[col]);
-          var blankX = x === "—" || x === "" || x === "unknown", blankY = y === "—" || y === "" || y === "unknown";
-          if (blankX !== blankY) return blankX ? 1 : -1;
-          var r = typeof x === "number" && typeof y === "number" ? x - y : String(x).localeCompare(String(y));
-          return dir === "ascending" ? r : -r;
-        });
+        rows.sort(function (a, c) { return compareCells(cellVal(a.cells[col]), cellVal(c.cells[col]), dir); });
         rows.forEach(function (r) { tb.appendChild(r); });
       });
     });
