@@ -275,6 +275,27 @@ def program_timeline(p, changes):
     return out
 
 
+REPORT_FORMS = {"10-Q", "10-K", "8-K", "6-K", "20-F"}
+
+
+def earnings_status(q, filings, today=None):
+    """Date-aware earnings labels. Yahoo's calendar keeps showing the last date until it learns the next one, so:
+    future date -> "Next earnings"; past date with a 10-Q/10-K/8-K/6-K/20-F filed that day or up to 3 days after
+    -> "Last reported earnings" (verified against SEC EDGAR); never present a past date as "next"."""
+    today = today or TODAY
+    d = parse_date((q or {}).get("next_earnings"))
+    out = {"next": None, "last": None, "last_form": None}
+    if d and d >= today:
+        out["next"] = d.isoformat()
+    elif d:
+        for f in filings or []:
+            fd = parse_date(f.get("date"))
+            if f.get("form") in REPORT_FORMS and fd and d <= fd <= d + dt.timedelta(days=3):
+                out["last"], out["last_form"] = d.isoformat(), f["form"]
+                break
+    return out
+
+
 def enrich_companies(D, market):
     base_ra = {r["ticker"]: r for r in model.read_across(D["companies"], market, model.default_inputs(market, "base"))}
     for c in D["companies"]:
@@ -286,6 +307,7 @@ def enrich_companies(D, market):
         c["devices"] = [d for d in D["devices"]["devices"] if d.get("ticker") == c["ticker"]]
         c["ra"] = base_ra.get(c["ticker"])
         c["group_label"] = GROUP_LABEL.get(c.get("group"), c.get("group"))
+        c["earnings"] = earnings_status(q, c.get("filings"))
 
 
 def catalyst_rows(D):
