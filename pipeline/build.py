@@ -103,6 +103,8 @@ def validate(programs, devices, notes):
         for k in ("name", "company", "stage", "evidence", "status", "summary", "reality_check", "sources", "verified_on"):
             if not p.get(k):
                 errs.append("{}: missing '{}'".format(pid, k))
+        if p.get("stage") == "approved" and not p.get("outcome_label"):
+            errs.append("{}: approved programs need an outcome_label (what the approval does and doesn't do)".format(pid))
         for k in ("stage", "evidence"):
             if p.get(k) and p[k] not in GRADES:
                 errs.append("{}: {} '{}' not in {}".format(pid, k, p[k], GRADES))

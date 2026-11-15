@@ -202,6 +202,16 @@ def load_all():
     for t, c in curated_c.items():
         if t not in {x["ticker"] for x in comps}:
             merged.append(dict(c, quote=None, filings=[]))
+    # Curated fields added to programs.yaml since site/data was last generated (e.g. outcome_label, a catalyst
+    # window) are merged in, so labels don't wait for the next daily rebuild. Generated values always win.
+    curated_p = {p["id"]: p for p in load_yaml("programs.yaml")["programs"]}
+    for p in progs["programs"]:
+        y = curated_p.get(p["id"]) or {}
+        for k, v in y.items():
+            p.setdefault(k, v)
+        if isinstance(p.get("next_catalyst"), dict) and isinstance(y.get("next_catalyst"), dict):
+            for k, v in y["next_catalyst"].items():
+                p["next_catalyst"].setdefault(k, v)
     return {
         "programs": progs["programs"], "papers": progs.get("papers") or {},
         "trials": load_json("trials.json", {"trials": {}})["trials"],

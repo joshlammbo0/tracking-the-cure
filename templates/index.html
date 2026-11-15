@@ -30,7 +30,8 @@
     <span class="eyebrow">Evidence today</span>
     <div class="stats">
       {{ ui.stat(headline.active, "Active cure programs", headline.late ~ " at Phase 3 or beyond · " ~ headline.late_ev ~ " with Phase 3-grade results") }}
-      {{ ui.stat(headline.approved|length, "Approved T1D cell or immune therapies", headline.approved|map(attribute="short")|join(" and ")) }}
+      <div class="stat"><div class="v">{{ headline.approved|length }}</div><div class="l">Approved T1D cell or immune therapies</div>
+        <ul class="d approved-list">{% for p in headline.approved %}<li><a href="{{ root }}{{ p.url }}">{{ p.short }}</a>: {{ p.outcome_label }}</li>{% endfor %}</ul></div>
     </div>
     <a class="btn ghost" href="{{ root }}pipeline/">See the cure pipeline</a>
   </div>
