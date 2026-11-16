@@ -54,7 +54,7 @@
     <div>
       <span class="eyebrow">Timeline</span><h2 id="h-time" class="mb-5">Key events</h2>
       {% if p.timeline %}
-      <ol class="timeline">{% for e in p.timeline %}<li class="{{ e.kind }}"><span class="when">{{ e.date|fdate(e.precision if e.precision and e.precision != "registry" else ("month" if (e.date|string|length) == 7 else "exact")) }}{% if e.estimate %}<span class="badge">Estimate</span>{% endif %}</span><br>{% if e.url %}<a href="{{ e.url }}" rel="noopener">{{ e.label }}</a>{% else %}{{ e.label }}{% endif %}{% if e.sub %}<span class="sub">{{ e.sub }}</span>{% endif %}</li>{% endfor %}</ol>
+      <ol class="timeline">{% for e in p.timeline %}<li class="{{ e.kind }}"><span class="when">{{ e.window if e.window else ("Window not recorded" if e.precision == "guided" else e.date|fdate(e.precision if e.precision and e.precision != "registry" else ("month" if (e.date|string|length) == 7 else "exact")) ) }}{% if e.estimate %}<span class="badge">Estimate</span>{% endif %}</span><br>{% if e.url %}<a href="{{ e.url }}" rel="noopener">{{ e.label }}</a>{% else %}{{ e.label }}{% endif %}{% if e.sub %}<span class="sub">{{ e.sub }}</span>{% endif %}</li>{% endfor %}</ol>
       <p class="xs muted">Built from registry dates, the registry change log and the curated next catalyst. Readouts and approvals are described in the summary and sources.</p>
       {% else %}<p class="small muted">No registry events: this program has no registered trial tracked here.</p>{% endif %}
     </div>

@@ -246,11 +246,11 @@ def context_area(x, baseline, displaced, label, marker=None, w=760, h=360, compa
         out.append('<text class="val accent" x="{:.1f}" y="{:.1f}" text-anchor="end">{}</text>'.format(xe - 8, Y(displaced[-1]) - 10, esc(money(displaced[-1]))))
     else:
         out.append('<text class="val" x="{:.1f}" y="{:.1f}">{}</text>'.format(xe + 10, Y(baseline[-1]) + 4, esc(money(baseline[-1]))))
-        out.append('<text x="{:.1f}" y="{:.1f}">T1D-attributable</text>'.format(xe + 10, Y(baseline[-1]) + 20))
+        out.append('<text x="{:.1f}" y="{:.1f}">{} T1D-attributable</text>'.format(xe + 10, Y(baseline[-1]) + 20, esc(x[-1])))
         out.append('<text x="{:.1f}" y="{:.1f}">revenue, no cure</text>'.format(xe + 10, Y(baseline[-1]) + 34))
         out.append('<text class="val accent" x="{:.1f}" y="{:.1f}">{}</text>'.format(xe + 10, Y(displaced[-1]) - 2, esc(money(displaced[-1]))))
-        out.append('<text x="{:.1f}" y="{:.1f}">displaced</text>'.format(xe + 10, Y(displaced[-1]) + 12))
-    out.append('<text x="{:.1f}" y="{:.1f}" text-anchor="start" class="val">{}</text>'.format(X(0) + 6, Y(baseline[0]) - 8, esc(money(baseline[0]))))
+        out.append('<text x="{:.1f}" y="{:.1f}">displaced in {}</text>'.format(xe + 10, Y(displaced[-1]) + 12, esc(x[-1])))
+    out.append('<text x="{:.1f}" y="{:.1f}" text-anchor="start" class="val">{} in {}</text>'.format(X(0) + 6, Y(baseline[0]) - 8, esc(money(baseline[0])), esc(x[0])))
     out.append("</svg>")
     cfg = {"type": "context", "x": [str(v) for v in x], "w": w, "h": h, "m": m, "top": top,
            "series": [{"name": "T1D-attributable revenue, no cure", "cls": "baseline", "values": [round(v) for v in baseline]},

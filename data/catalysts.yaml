@@ -1,36 +1,44 @@
 # Hand-curated catalysts. The pipeline ADDS:
-#   - registry primary-completion dates for every tracked trial (ClinicalTrials.gov)
+#   - registry primary-completion dates for every tracked trial (ClinicalTrials.gov), as type trial_completion
 #   - upcoming earnings dates for tracked tickers (yfinance)
 #   - each program's next_catalyst from programs.yaml
-# type: conference | fda | readout | company | launch
+# type: conference | fda | readout | trial_completion | company | launch
+#   readout          = a results readout, ONLY when a source separate from the registry says results will be reported
+#   trial_completion = a trial's primary / study completion date (not a results date)
 # precision: exact | month | quarter | half | year | guided   (guided = company guidance, not a fixed date)
+# provenance: Registry estimate | Company guidance | Confirmed. Leave it out when the source doesn't settle it;
+#   the site then shows "Provenance not classified" instead of guessing.
+# window: the timing exactly as the source words it (e.g. "end of 2027 or early 2028"). Shown instead of `date`,
+#   which stays as a sortable placeholder at the end of the window.
 
 catalysts:
-  - {date: 2026-09-28, end: 2026-10-02, type: conference, precision: exact,
+  - {date: 2026-09-28, end: 2026-10-02, type: conference, precision: exact, provenance: Confirmed,
      title: "EASD 2026 — 62nd Annual Meeting (Milan)",
      source: "https://www.easd.org/annual-meeting/easd-2026/"}
+  # Provenance left unset: the source link is the ADA Scientific Sessions page, not the Diabetes Technology Meeting.
   - {date: 2026-10-27, end: 2026-10-29, type: conference, precision: exact,
      title: "Diabetes Technology Meeting 2026 (Washington, DC)",
      source: "https://professional.diabetes.org/scientific-sessions"}
-  - {date: 2026-12-31, type: launch, precision: half,
+  - {date: 2026-12-31, type: launch, precision: half, provenance: Company guidance, window: "later in 2026",
      title: "Abbott Libre Duo 10 Day (glucose-ketone) US launch — guided 'later in 2026'",
      related: abbott-libre-duo,
      source: "https://abbott.mediaroom.com/2026-08-25-Abbott-receives-FDA-authorization-for-worlds-first-dual-glucose-ketone-sensing-technology-for-people-with-diabetes"}
+  # Provenance left unset: dates come from conference listings and still need confirming on the official site.
   - {date: 2027-03-03, end: 2027-03-06, type: conference, precision: exact,
      title: "ATTD 2027 — Advanced Technologies & Treatments for Diabetes (Paris)",
      source: "https://attd.kenes.com/",
      note: "Dates from conference listings; confirm on the official site."}
-  - {date: 2027-03-31, type: launch, precision: quarter,
+  - {date: 2027-03-31, type: launch, precision: quarter, provenance: Company guidance, window: "Q1 2027",
      title: "Beta Bionics Mint patch pump — full US launch (guided Q1 2027)",
      related: betabionics-mint,
      source: "https://www.medtechdive.com/news/beta-bionics-insulin-patch-pump-gets-fda-nod/830332/"}
-  - {date: 2027-06-18, end: 2027-06-21, type: conference, precision: exact,
+  - {date: 2027-06-18, end: 2027-06-21, type: conference, precision: exact, provenance: Confirmed,
      title: "ADA 87th Scientific Sessions (Washington, DC)",
      source: "https://professional.diabetes.org/scientific-sessions"}
-  - {date: 2027-09-21, end: 2027-09-24, type: conference, precision: exact,
+  - {date: 2027-09-21, end: 2027-09-24, type: conference, precision: exact, provenance: Confirmed,
      title: "EASD 2027 — 63rd Annual Meeting (Budapest)",
      source: "https://www.easd.org/annual-meeting/"}
-  - {date: 2027-12-31, type: launch, precision: guided,
+  - {date: 2027-12-31, type: launch, precision: guided, provenance: Company guidance, window: "end of 2027 or early 2028",
      title: "Dexcom G8 launch — guided 'end of 2027 or early 2028'",
      related: dexcom-g8,
      source: "https://investors.dexcom.com/"}

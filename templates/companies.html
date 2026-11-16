@@ -9,7 +9,7 @@
   <h2 id="h-all" class="sr-only">All companies</h2>
   <dl class="defs">
     <div><dt>Diabetes % of revenue</dt><dd>What the company itself discloses, or what can be derived from a filing. "Not disclosed" means no primary source supports a figure.</dd></div>
-    <div><dt>Cure exposure, 2040</dt><dd>A <a href="{{ root }}model/#h-ra">Cure Impact Model</a> output: base-case revenue displaced in 2040, as a % of today's revenue. "Not modelled" means the company's revenue isn't in the CGM, pump or insulin markets, or its split isn't disclosed.</dd></div>
+    <div><dt>2040 displacement / current revenue</dt><dd>A <a href="{{ root }}model/#h-ra">Cure Impact Model</a> output: 2040 revenue displaced, as a share of today's sales (trailing-twelve-month revenue), base case, with the dollar amount displaced in 2040. It is not a share of the company's 2040 sales. "Not modelled" means the company's revenue isn't in the CGM, pump or insulin markets, or its split isn't disclosed.</dd></div>
   </dl>
   <div class="filters mt-6" data-filter-for="co-table" data-attr="group" data-status="co-count" role="group" aria-label="Filter by group">
     <span class="lbl">Show</span>
@@ -19,7 +19,7 @@
   </div>
   <div class="table-scroll" tabindex="0" role="region" aria-label="Companies">
   <table class="data sortable co-table" id="co-table">
-    <thead><tr><th>Company</th><th class="r">Market cap</th><th class="r">1-year return</th><th class="r">Revenue (TTM)</th><th class="r">Diabetes % of revenue</th><th class="r">Cure exposure, 2040</th></tr></thead>
+    <thead><tr><th>Company</th><th class="r">Market cap</th><th class="r">1-year return</th><th class="r">Revenue (TTM)</th><th class="r">Diabetes % of revenue</th><th class="r">2040 displacement / current revenue</th></tr></thead>
     <tbody>
     {% for c in D.companies|sort(attribute="q.market_cap_usd", reverse=True) %}{% set q = c.q %}{% set r = c.ra %}
     <tr data-group="{{ c.group }}">
@@ -29,7 +29,7 @@
       <td class="num" data-sort="{{ q.revenue_ttm_usd or '' }}">{{ q.revenue_ttm_usd|money }}</td>
       <td class="num" data-sort="{{ c.diabetes_rev_pct if c.diabetes_rev_pct is not none else '' }}">{% if c.diabetes_rev_pct is not none %}{{ c.diabetes_rev_pct }}%{% else %}<span class="muted">not disclosed</span>{% endif %}</td>
       {% set y40 = r.years["2040"] if r and r.exposure else none %}
-      <td class="num" data-sort="{{ y40.pct_current_rev if y40 else '' }}">{% if y40 %}<b>{{ y40.pct_current_rev|pct(1) }}</b>{% else %}<span class="muted">not modelled</span>{% endif %}</td>
+      <td class="num" data-sort="{{ y40.pct_current_rev if y40 else '' }}">{% if y40 %}<b>{{ y40.pct_current_rev|pct(1) }}</b><span class="sub">{{ y40.displaced|money }} in 2040</span>{% else %}<span class="muted">not modelled</span>{% endif %}</td>
     </tr>
     {% endfor %}
     </tbody>

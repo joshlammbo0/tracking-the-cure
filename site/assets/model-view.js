@@ -59,10 +59,10 @@
       o.push('<text class="val" x="' + (xe - 8).toFixed(1) + '" y="' + (Y(bl) - 10).toFixed(1) + '" text-anchor="end">' + money(bl) + "</text>");
       o.push('<text class="val accent" x="' + (xe - 8).toFixed(1) + '" y="' + (Y(dl) - 10).toFixed(1) + '" text-anchor="end">' + money(dl) + "</text>");
     } else {
-      o.push('<text class="val" x="' + (xe + 10).toFixed(1) + '" y="' + (Y(bl) + 4).toFixed(1) + '">' + money(bl) + '</text><text x="' + (xe + 10).toFixed(1) + '" y="' + (Y(bl) + 20).toFixed(1) + '">T1D-attributable</text><text x="' + (xe + 10).toFixed(1) + '" y="' + (Y(bl) + 34).toFixed(1) + '">revenue, no cure</text>');
-      o.push('<text class="val accent" x="' + (xe + 10).toFixed(1) + '" y="' + (Y(dl) - 2).toFixed(1) + '">' + money(dl) + '</text><text x="' + (xe + 10).toFixed(1) + '" y="' + (Y(dl) + 12).toFixed(1) + '">displaced</text>');
+      o.push('<text class="val" x="' + (xe + 10).toFixed(1) + '" y="' + (Y(bl) + 4).toFixed(1) + '">' + money(bl) + '</text><text x="' + (xe + 10).toFixed(1) + '" y="' + (Y(bl) + 20).toFixed(1) + '">' + x[n - 1] + ' T1D-attributable</text><text x="' + (xe + 10).toFixed(1) + '" y="' + (Y(bl) + 34).toFixed(1) + '">revenue, no cure</text>');
+      o.push('<text class="val accent" x="' + (xe + 10).toFixed(1) + '" y="' + (Y(dl) - 2).toFixed(1) + '">' + money(dl) + '</text><text x="' + (xe + 10).toFixed(1) + '" y="' + (Y(dl) + 12).toFixed(1) + '">displaced in ' + x[n - 1] + '</text>');
     }
-    o.push('<text x="' + (X(0) + 6).toFixed(1) + '" y="' + (Y(base[0]) - 8).toFixed(1) + '" text-anchor="start" class="val">' + money(base[0]) + "</text></svg>");
+    o.push('<text x="' + (X(0) + 6).toFixed(1) + '" y="' + (Y(base[0]) - 8).toFixed(1) + '" text-anchor="start" class="val">' + money(base[0]) + " in " + x[0] + "</text></svg>");
     return { svg: o.join(""), cfg: { type: "context", x: x, w: w, h: h, m: m, top: top,
       series: [{ name: "T1D-attributable revenue, no cure", cls: "baseline", values: base }, { name: "Displaced by a cure", cls: "accent", values: disp }] } };
   }

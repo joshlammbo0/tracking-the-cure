@@ -7,17 +7,18 @@
 <section class="hero hero-b" aria-labelledby="h-hero">
   <span class="eyebrow">Independent research · Type 1 diabetes · Updated {{ built_human }}</span>
   <h1 id="h-hero">A cure would rewrite a {{ headline.tam|money(0) }} market. The model says the revenue shifts slowly, and the strategic exposure starts long before.</h1>
+  <p class="hero-denom">{{ headline.tam|money(0) }}: 2025 global CGM, insulin-pump and insulin markets, across all diabetes types (Global Market Insights estimates). The part attributable to type 1 diabetes in the model is {{ md.hero.baseline_2025|money }}.</p>
   <div class="hero-grid">
     <div class="hero-figure">
       <div class="display-figure">{{ b["2040"].displaced_total|money }}</div>
-      <p class="hero-label">Revenue displaced in 2040, base case</p>
-      <p class="hero-qual"><b>{{ b["2040"].share_of_t1d|pct(1) }} of T1D-driven revenue</b> · CGM, pumps &amp; insulin · model output</p>
+      <p class="hero-label">Annual revenue displaced in 2040 · base case</p>
+      <p class="hero-qual"><b>{{ b["2040"].share_of_t1d|pct(1) }} of projected 2040 T1D-attributable revenue ({{ md.hero.baseline_2040|money }}, no-cure baseline)</b> · CGM, pumps &amp; insulin · model output</p>
       <p class="hero-caveat">Model output under labelled assumptions, not a forecast.</p>
       <p class="hero-lede">Every cure program is graded on how far it has advanced and on the results it has actually reported. A model then sizes what a working cure would take from today's device and insulin makers. Data refreshes daily from primary sources.</p>
       <div class="actions"><a class="btn" href="{{ root }}model/">Open the Cure Impact Model →</a></div>
     </div>
     <figure class="figure hero-chart">
-      <div class="fig-title">How much of T1D-driven revenue a cure displaces</div>
+      <div class="fig-title">How much projected T1D-attributable revenue a cure displaces · base case</div>
       <div class="fig-sub">Annual, US$, global CGM, pumps and insulin, {{ md.json.start }}–{{ md.json.end }}</div>
       <div class="legend" aria-hidden="true"><span><i class="sw-baseline"></i>T1D-attributable revenue, no cure</span><span><i class="sw-accent"></i>Displaced by a cure, base case</span></div>
       <div class="chart-wide">{{ md.hero.wide }}</div>
@@ -29,7 +30,8 @@
     <span class="eyebrow">Evidence today</span>
     <div class="stats">
       {{ ui.stat(headline.active, "Active cure programs", headline.late ~ " at Phase 3 or beyond · " ~ headline.late_ev ~ " with Phase 3-grade results") }}
-      {{ ui.stat(headline.approved|length, "Approved T1D cell or immune therapies", headline.approved|map(attribute="short")|join(" and ")) }}
+      <div class="stat"><div class="v">{{ headline.approved|length }}</div><div class="l">Approved T1D cell or immune therapies</div>
+        <ul class="d approved-list">{% for p in headline.approved %}<li><a href="{{ root }}{{ p.url }}">{{ p.short }}</a>: {{ p.outcome_label }}</li>{% endfor %}</ul></div>
     </div>
     <a class="btn ghost" href="{{ root }}pipeline/">See the cure pipeline</a>
   </div>
@@ -55,11 +57,11 @@
     </figure>
     <div>
       <div class="stats compact" style="grid-template-columns:repeat(2,minmax(0,1fr))">
-        {{ ui.stat(b["2035"].displaced_total|money, "Displaced in 2035", b["2035"].share_of_t1d|pct(1) ~ " of T1D-driven revenue") }}
-        {{ ui.stat(b["2040"].displaced_total|money, "Displaced in 2040", b["2040"].share_of_t1d|pct(1) ~ " of T1D-driven revenue") }}
+        {{ ui.stat(b["2035"].displaced_total|money, "Displaced in 2035", b["2035"].share_of_t1d|pct(1) ~ " of projected 2035 T1D-attributable revenue") }}
+        {{ ui.stat(b["2040"].displaced_total|money, "Displaced in 2040", b["2040"].share_of_t1d|pct(1) ~ " of projected 2040 T1D-attributable revenue") }}
       </div>
       <table class="data mt-5" aria-label="Displaced revenue in 2040 by market">
-        <thead><tr><th>2040, by market</th><th class="r">Displaced</th><th class="r">% of T1D rev.</th></tr></thead>
+        <thead><tr><th>2040, by market</th><th class="r">Displaced</th><th class="r">% of projected T1D-attributable rev.</th></tr></thead>
         <tbody>
         {% set row40 = md.results.base.rows[-1] %}
         {% for key, name in [("pump", "Pumps / AID"), ("cgm", "CGM"), ("insulin", "Insulin")] %}

@@ -11,7 +11,7 @@
 <div class="wrap">
 <section class="section" style="padding-top:var(--sp-6)" aria-labelledby="h-q">
   <div class="section-head"><div><span class="eyebrow">Next three quarters</span><h2 id="h-q">What's coming</h2><p>Readouts, launches and company events by quarter. Earnings dates are summarised at the foot of each quarter; everything is in the full table below.</p></div></div>
-  <div class="legend" aria-hidden="true"><span><i style="background:var(--s1)"></i>Readout</span><span><i style="background:var(--s3)"></i>Launch / FDA</span><span><i style="background:var(--s2)"></i>Company</span><span><i style="background:var(--rule-strong)"></i>Conference / earnings</span></div>
+  <div class="legend" aria-hidden="true"><span><i style="background:var(--s1)"></i>Trial completion / results readout</span><span><i style="background:var(--s3)"></i>Launch / FDA</span><span><i style="background:var(--s2)"></i>Company</span><span><i style="background:var(--rule-strong)"></i>Conference / earnings</span></div>
   <div class="quarters" tabindex="0" role="region" aria-label="Catalysts by quarter (scrolls sideways)">
     {% for q in quarters %}
     <div class="quarter">
@@ -19,7 +19,7 @@
       {% set earn = q["items"]|selectattr("type", "eq", "earnings")|list %}
       <h3>{{ q.label }} <span class="n">{{ q["items"]|length }}</span></h3>
       {% if q.label == "Later" %}<p class="small ink2">{{ q["items"]|length }} further items through {{ (q["items"]|map(attribute="date")|max)[:4] }}. <a href="#all-catalysts">See the full table →</a></p>
-      {% elif main %}<ul>{% for c in main %}<li data-type="{{ c.type }}"><span class="t">{{ c.type_label }} · {{ c.short }}</span>{% if c.related_url %}<a href="{{ root }}{{ c.related_url }}">{{ c.title }}</a>{% elif c.source %}<a href="{{ c.source }}" rel="noopener">{{ c.title }}</a>{% else %}{{ c.title }}{% endif %}</li>{% endfor %}</ul>{% endif %}
+      {% elif main %}<ul>{% for c in main %}<li data-type="{{ c.type }}"><span class="t">{{ c.type_label }} · {{ c.short }} · {{ c.prov_label }}</span>{% if c.related_url %}<a href="{{ root }}{{ c.related_url }}">{{ c.title }}</a>{% elif c.source %}<a href="{{ c.source }}" rel="noopener">{{ c.title }}</a>{% else %}{{ c.title }}{% endif %}</li>{% endfor %}</ul>{% endif %}
       {% if earn and q.label != "Later" %}<p class="xs muted mt-3 mb-0">+ {{ earn|length }} earnings date{{ "s" if earn|length > 1 }}: {{ earn|map(attribute="title")|map("replace", " earnings", "")|map("regex_ticker")|join(", ") }}</p>{% endif %}
       {% if not q["items"] %}<p class="xs muted">Nothing dated yet.</p>{% endif %}
     </div>
@@ -39,14 +39,14 @@
   </div>
   <div class="table-scroll" tabindex="0" role="region" aria-label="All catalysts">
   <table class="data sortable" id="cat-table">
-    <thead><tr><th>Date</th><th>Type</th><th>Event</th><th>Date precision</th><th>Source</th></tr></thead>
+    <thead><tr><th>Date</th><th>Type</th><th>Event</th><th>Date provenance</th><th>Source</th></tr></thead>
     <tbody>
     {% for c in cats %}
     <tr data-type="{{ c.type }}{{ ' upcoming' if c.days is not none and c.days >= 0 }}"{% if c.days is not none and c.days < 0 %} style="color:var(--muted)"{% endif %}>
       <td class="num" data-sort="{{ c.date }}">{{ c.when }}{% if c.end and c.end != c.date %}<span class="sub">to {{ c.end|fdate }}</span>{% endif %}{% if c.days is not none and c.days < 0 %}<span class="sub">past</span>{% endif %}</td>
       <td><span class="badge">{{ c.type_label }}</span></td>
       <td class="wrap-text">{% if c.related_url %}<a href="{{ root }}{{ c.related_url }}">{{ c.title }}</a>{% else %}{{ c.title }}{% endif %}{% if c.note %}<span class="sub">{{ c.note }}</span>{% endif %}</td>
-      <td class="small">{{ c.prec_note or "exact" }}</td>
+      <td class="small">{{ c.prov_label }}{% if c.prec_note %}<span class="sub">{{ c.prec_note }}</span>{% endif %}</td>
       <td class="small">{% if c.source %}<a href="{{ c.source }}" rel="noopener">{{ c.origin }}</a>{% else %}{{ c.origin }}{% endif %}</td>
     </tr>
     {% endfor %}

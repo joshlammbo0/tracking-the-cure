@@ -48,8 +48,9 @@ APPROACH = {
                "Stop or slow the autoimmune attack. Today these delay or preserve function; none is a cure."),
 }
 GLP_TOPIC = {"adjunct": "Add-on therapy trials", "beta_cell": "Beta-cell preservation", "safety": "Safety & history"}
-CAT_TYPE = {"conference": "Conference", "fda": "FDA", "readout": "Readout", "company": "Company",
-            "launch": "Launch", "earnings": "Earnings"}
+CAT_TYPE = {"conference": "Conference", "fda": "FDA", "readout": "Results readout", "trial_completion": "Trial completion",
+            "company": "Company", "launch": "Launch", "earnings": "Earnings"}
+UNCLASSIFIED = "Provenance not classified"
 STATUS_LABEL = {
     "RECRUITING": "Recruiting", "NOT_YET_RECRUITING": "Not yet recruiting", "ACTIVE_NOT_RECRUITING": "Active, not recruiting",
     "ENROLLING_BY_INVITATION": "Enrolling by invitation", "COMPLETED": "Completed", "TERMINATED": "Terminated",
@@ -201,6 +202,16 @@ def load_all():
     for t, c in curated_c.items():
         if t not in {x["ticker"] for x in comps}:
             merged.append(dict(c, quote=None, filings=[]))
+    # Curated fields added to programs.yaml since site/data was last generated (e.g. outcome_label, a catalyst
+    # window) are merged in, so labels don't wait for the next daily rebuild. Generated values always win.
+    curated_p = {p["id"]: p for p in load_yaml("programs.yaml")["programs"]}
+    for p in progs["programs"]:
+        y = curated_p.get(p["id"]) or {}
+        for k, v in y.items():
+            p.setdefault(k, v)
+        if isinstance(p.get("next_catalyst"), dict) and isinstance(y.get("next_catalyst"), dict):
+            for k, v in y["next_catalyst"].items():
+                p["next_catalyst"].setdefault(k, v)
     return {
         "programs": progs["programs"], "papers": progs.get("papers") or {},
         "trials": load_json("trials.json", {"trials": {}})["trials"],
@@ -216,6 +227,23 @@ def load_all():
 
 
 # ------------------------------------------------------------------ enrichment
+def registry_date(row, trials):
+    """The registry's own primary-completion date (often month-only, e.g. "2026-11") for a registry-dated row.
+    build.py stores it as registry_date; data generated before that is looked up by NCT id."""
+    raw = row.get("registry_date")
+    if not raw:
+        m = re.search(r"NCT\d{8}", " ".join(str(row.get(k) or "") for k in ("nct_id", "title", "source")))
+        raw = (trials.get(m.group(0)) or {}).get("primary_completion") if m else None
+    return str(raw) if raw else None
+
+
+def registry_label(raw, short=False):
+    """Month-only registry dates are shown as the month: never as an invented day."""
+    if raw and len(raw) == 7:
+        return fdate(raw, "month")
+    return fdate(raw, "exact", short=short)
+
+
 def enrich_programs(D):
     for p in D["programs"]:
         p["stage_i"] = GRADES.index(p["stage"])
@@ -225,18 +253,22 @@ def enrich_programs(D):
         p["short"] = re.split(r"\s[(—]", p["name"])[0].strip()
         p["approach_label"] = APPROACH.get(p.get("approach"), (GLP_TOPIC.get(p.get("glp1_topic"), "GLP-1"), ""))[0]
         p["company_slug"] = slug_ticker(p["ticker"]) if p.get("ticker") else None
-        p["timeline"] = program_timeline(p, D["changes"])
+        p["timeline"] = program_timeline(p, D["changes"], D["trials"])
         nc = p.get("next_catalyst")
         p["next_label"] = None
         if nc:
-            p["next_label"] = fdate(nc.get("date"), "registry" if nc.get("date_precision") == "registry" else nc.get("date_precision"))
+            if nc.get("date_precision") == "registry":
+                p["next_label"] = registry_label(registry_date(nc, D["trials"]) or nc.get("date"))
+            else:
+                p["next_label"] = nc.get("window") or ("Window not recorded" if nc.get("date_precision") == "guided"
+                                                       else fdate(nc.get("date"), nc.get("date_precision")))
     tracked = {c["ticker"] for c in D["companies"]}
     for p in D["programs"]:
         if p.get("ticker") not in tracked:
             p["company_slug"] = None
 
 
-def program_timeline(p, changes):
+def program_timeline(p, changes, trials=None):
     ev = []
     for t in p.get("trials") or []:
         tag = t.get("acronym") or t["nct_id"]
@@ -261,8 +293,9 @@ def program_timeline(p, changes):
     nc = p.get("next_catalyst")
     if nc and nc.get("date"):
         prec = "registry" if nc.get("date_precision") == "registry" else nc.get("date_precision")
-        ev.append({"date": nc["date"], "label": "Next catalyst: " + nc["label"], "sub": precision_note(prec) or None,
-                   "kind": "future", "precision": prec})
+        date = (registry_date(nc, trials or {}) or nc["date"]) if prec == "registry" else nc["date"]
+        ev.append({"date": date, "label": "Next catalyst: " + nc["label"], "sub": precision_note(prec) or None,
+                   "kind": "future", "precision": prec, "window": nc.get("window")})
     ev = [e for e in ev if e.get("date")]
     seen, out = set(), []
     for e in sorted(ev, key=lambda e: (str(e["date"]), e["label"])):
@@ -270,6 +303,27 @@ def program_timeline(p, changes):
         if k not in seen:
             seen.add(k)
             out.append(e)
+    return out
+
+
+REPORT_FORMS = {"10-Q", "10-K", "8-K", "6-K", "20-F"}
+
+
+def earnings_status(q, filings, today=None):
+    """Date-aware earnings labels. Yahoo's calendar keeps showing the last date until it learns the next one, so:
+    future date -> "Next earnings"; past date with a 10-Q/10-K/8-K/6-K/20-F filed that day or up to 3 days after
+    -> "Last reported earnings" (verified against SEC EDGAR); never present a past date as "next"."""
+    today = today or TODAY
+    d = parse_date((q or {}).get("next_earnings"))
+    out = {"next": None, "last": None, "last_form": None}
+    if d and d >= today:
+        out["next"] = d.isoformat()
+    elif d:
+        for f in filings or []:
+            fd = parse_date(f.get("date"))
+            if f.get("form") in REPORT_FORMS and fd and d <= fd <= d + dt.timedelta(days=3):
+                out["last"], out["last_form"] = d.isoformat(), f["form"]
+                break
     return out
 
 
@@ -284,26 +338,66 @@ def enrich_companies(D, market):
         c["devices"] = [d for d in D["devices"]["devices"] if d.get("ticker") == c["ticker"]]
         c["ra"] = base_ra.get(c["ticker"])
         c["group_label"] = GROUP_LABEL.get(c.get("group"), c.get("group"))
+        c["earnings"] = earnings_status(q, c.get("filings"))
 
 
 def catalyst_rows(D):
     progs = {p["id"]: p for p in D["programs"]}
     devs = {d["id"]: d for d in D["devices"]["devices"]}
+    # window / provenance live in the curated YAML; read them from there too, so the labels are right even when
+    # site/data/catalysts.json predates those fields (it is regenerated by the daily build).
+    curated = {x["title"]: x for x in load_yaml("catalysts.yaml")["catalysts"]}
+    nc_by_prog = {p["id"]: p.get("next_catalyst") or {} for p in D["programs"]}
     rows = []
     for c in D["catalysts"]:
+        c = dict(c)
+        src = curated.get(c["title"]) if c.get("origin") == "curated" else (
+            nc_by_prog.get(c.get("related")) if c.get("origin") == "program" else None)
+        for k in ("window", "provenance"):
+            if src and k in src and k not in c:
+                c[k] = src[k]
         r = dict(c)
+        prec = c.get("precision") or "exact"
+        # Data written before build.py emitted trial_completion still calls registry dates "readout".
+        if c.get("origin") == "registry" and c["type"] == "readout":
+            r["type"] = "trial_completion"
         # Stable across runs (no list position), so calendar apps update events instead of duplicating them.
-        key = "{}|{}|{}".format(c["type"], c["title"], c.get("related") or c.get("source") or "")
+        # Registry completions keep the key they had as "readout" so subscribed calendars don't see new events.
+        key_type = "readout" if r["type"] == "trial_completion" else r["type"]
+        key = "{}|{}|{}".format(key_type, c["title"], c.get("related") or c.get("source") or "")
         r["uid"] = "ttc-" + hashlib.sha1(key.encode("utf-8")).hexdigest()[:16]
         r["days"] = days_until(c["date"])
-        prec = c.get("precision") or "exact"
+        if "provenance" in c:
+            prov = c["provenance"]
+        elif c.get("origin") == "registry":
+            prov = "Confirmed" if prec == "registry-actual" else "Registry estimate"
+        elif c.get("origin") == "program" and prec == "guided":
+            prov = "Company guidance"
+        else:
+            prov = None
+        r["provenance"] = prov
+        r["prov_label"] = prov or UNCLASSIFIED
         r["when"] = fdate(c["date"], "exact" if prec.startswith("registry") else prec)
         if prec == "exact" or prec.startswith("registry"):
             r["short"] = "{} ’{}".format(fdate(c["date"], "exact", short=True), c["date"][2:4])
         else:
             r["short"] = r["when"]
-        r["prec_note"] = precision_note(prec)
-        r["type_label"] = CAT_TYPE.get(c["type"], c["type"].title())
+        r["month_only"] = False
+        if c.get("origin") == "registry":
+            raw = registry_date(c, D["trials"])
+            if raw and len(raw) == 7:  # the registry gives the month only: show the month, not its last day
+                r["month_only"] = True
+                r["registry_date"] = raw
+                r["when"] = r["short"] = registry_label(raw)
+        if c.get("window"):  # guidance windows exactly as the source states them, never collapsed to one date
+            r["when"] = r["short"] = c["window"]
+        elif prec == "guided":  # guidance with no recorded wording: don't present the placeholder date as the window
+            r["when"] = r["short"] = "Window not recorded"
+        # The provenance tag covers "registry estimate" / "company guidance"; keep only coarse-date notes.
+        r["prec_note"] = precision_note(prec) if prec in ("quarter", "half", "month", "year") and not c.get("window") else ""
+        if r["month_only"]:
+            r["prec_note"] = "registry gives the month only"
+        r["type_label"] = CAT_TYPE.get(r["type"], r["type"].title())
         rel = c.get("related")
         r["related_url"] = progs[rel]["url"] if rel in progs else None
         if rel in devs:
@@ -461,12 +555,24 @@ def ics(rows):
         if not d or d < TODAY - dt.timedelta(days=90):
             continue
         end = parse_date(r.get("end")) or d
-        desc = "Date precision: {}. ".format(r["prec_note"] or "exact") if r.get("prec_note") else ""
-        desc += (r.get("note") or "") + (" Source: " + r["source"] if r.get("source") else "")
+        if r.get("month_only"):  # all-day event spanning the whole month the registry names
+            d, end = dt.date(d.year, d.month, 1), parse_date(r["registry_date"])
+        parts = ["Date provenance: {}.".format(r["provenance"] or "not classified")]
+        if r.get("window"):
+            parts.append("Timing as stated by the source: {} (calendar date is a placeholder at the end of that window).".format(r["window"]))
+        elif r.get("precision") == "guided":
+            parts.append("Company guidance; the source's timing window is not recorded (calendar date is a placeholder).")
+        elif r.get("prec_note"):
+            parts.append("Date precision: {}.".format(r["prec_note"]))
+        if r.get("note"):
+            parts.append(r["note"])
+        if r.get("source"):
+            parts.append("Source: " + r["source"])
+        desc = " ".join(parts)
         lines += ["BEGIN:VEVENT", "UID:{}@tracking-the-cure".format(r["uid"]), "DTSTAMP:" + stamp,
                   "DTSTART;VALUE=DATE:" + d.strftime("%Y%m%d"),
                   "DTEND;VALUE=DATE:" + (end + dt.timedelta(days=1)).strftime("%Y%m%d"),
-                  "SUMMARY:" + esc_ics("[{}] {}".format(r["type_label"], r["title"]) + (" (≈)" if r.get("prec_note") else "")),
+                  "SUMMARY:" + esc_ics("[{} · {}] {}".format(r["type_label"], r["prov_label"], r["title"])),
                   "DESCRIPTION:" + esc_ics(desc.strip())]
         if r.get("source"):
             lines.append("URL:" + r["source"])

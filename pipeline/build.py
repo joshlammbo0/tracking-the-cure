@@ -29,6 +29,10 @@ APPROACHES = {"cell_replacement", "gene_edited", "encapsulation", "immune"}
 STOPPED = {"TERMINATED", "WITHDRAWN", "SUSPENDED"}
 ACTIVE = {"RECRUITING", "NOT_YET_RECRUITING", "ACTIVE_NOT_RECRUITING", "ENROLLING_BY_INVITATION"}
 CURATION_STALE_DAYS = 120
+# Catalyst vocabulary. "readout" is a results readout and needs its own source saying results will be reported;
+# a registry primary-completion date is a "trial_completion", never a readout.
+CATALYST_TYPES = {"conference", "fda", "readout", "trial_completion", "company", "launch", "earnings"}
+PROVENANCE = {"Registry estimate", "Company guidance", "Confirmed"}
 TODAY = dt.date.today()
 
 health = {}  # source -> {"ok": bool, "detail": str, "at": iso}
@@ -99,6 +103,8 @@ def validate(programs, devices, notes):
         for k in ("name", "company", "stage", "evidence", "status", "summary", "reality_check", "sources", "verified_on"):
             if not p.get(k):
                 errs.append("{}: missing '{}'".format(pid, k))
+        if p.get("stage") == "approved" and not p.get("outcome_label"):
+            errs.append("{}: approved programs need an outcome_label (what the approval does and doesn't do)".format(pid))
         for k in ("stage", "evidence"):
             if p.get(k) and p[k] not in GRADES:
                 errs.append("{}: {} '{}' not in {}".format(pid, k, p[k], GRADES))
@@ -117,6 +123,19 @@ def validate(programs, devices, notes):
     for k in (notes.get("programs") or {}):
         if k not in ids:
             errs.append("my_notes.yaml: program '{}' not found in programs.yaml".format(k))
+    return errs
+
+
+def validate_catalysts(cats):
+    errs = []
+    for c in cats:
+        name = c.get("title", "?")
+        if c.get("type") not in CATALYST_TYPES:
+            errs.append("catalysts.yaml: {}: type '{}' not in {}".format(name, c.get("type"), sorted(CATALYST_TYPES)))
+        if c.get("provenance") is not None and c["provenance"] not in PROVENANCE:
+            errs.append("catalysts.yaml: {}: provenance '{}' not in {}".format(name, c["provenance"], sorted(PROVENANCE)))
+        if c.get("type") == "readout" and not c.get("source"):
+            errs.append("catalysts.yaml: {}: a results readout needs a source saying results will be reported".format(name))
     return errs
 
 
@@ -153,7 +172,7 @@ def build(skip, offline):
     market_y, notes = load_yaml("market.yaml"), load_yaml("my_notes.yaml") or {}
     programs, devices = progs_y["programs"], devs_y["devices"]
 
-    errs = validate(programs, devices, notes)
+    errs = validate(programs, devices, notes) + validate_catalysts(cats_y["catalysts"])
     if errs:
         print("Curated data has errors:\n  " + "\n  ".join(errs), file=sys.stderr)
         sys.exit(1)
@@ -262,7 +281,9 @@ def build(skip, offline):
                          key=lambda x: x[0])
             if fut:
                 d, t = fut[0]
-                nc.update({"date": d.isoformat(), "date_precision": "registry",
+                # date stays a full date for sorting; registry_date keeps the registry's own precision
+                # (often month-only, e.g. "2026-11"), which is what the site displays
+                nc.update({"date": d.isoformat(), "date_precision": "registry", "registry_date": t.get("primary_completion"),
                            "nct_id": t["nct_id"], "registry_date_type": t.get("primary_completion_type")})
         rec["next_catalyst"] = nc
         rec["my_commentary"] = _note(notes, "programs", p["id"], "commentary")
@@ -370,8 +391,10 @@ def build(skip, offline):
     for p in out_programs:
         nc = p.get("next_catalyst")
         if nc and nc.get("date") and nc.get("date_precision") != "registry":
+            prov = nc.get("provenance") or ("Company guidance" if nc.get("date_precision") == "guided" else None)
             cats.append({"date": str(nc["date"]), "type": "company", "precision": nc.get("date_precision", "exact"),
                          "title": "{} — {}".format(p["name"], nc["label"]), "related": p["id"],
+                         "window": nc.get("window"), "provenance": prov,
                          "source": p["sources"][0]["url"], "origin": "program"})
     seen = set()
     for p in out_programs:
@@ -382,8 +405,10 @@ def build(skip, offline):
             if pcd < TODAY - dt.timedelta(days=120) or pcd > TODAY + dt.timedelta(days=365 * 4):
                 continue
             seen.add(t["nct_id"])
-            cats.append({"date": pcd.isoformat(), "type": "readout",
+            actual = (t.get("primary_completion_type") or "").upper() == "ACTUAL"
+            cats.append({"date": pcd.isoformat(), "type": "trial_completion", "registry_date": t.get("primary_completion"),
                          "precision": "registry-" + (t.get("primary_completion_type") or "").lower(),
+                         "provenance": "Confirmed" if actual else "Registry estimate",
                          "title": "{} — primary completion ({})".format(t.get("acronym") or p["name"], t["nct_id"]),
                          "related": p["id"], "source": t["url"], "origin": "registry",
                          "note": "Registry primary completion is when the last patient finishes the primary endpoint, not a results date. Toplines typically follow 1–6 months later."})
@@ -391,7 +416,8 @@ def build(skip, offline):
         e = (c.get("quote") or {}).get("next_earnings")
         ed = parse_date(e)
         if ed and TODAY - dt.timedelta(days=7) <= ed <= TODAY + dt.timedelta(days=120):
-            cats.append({"date": ed.isoformat(), "type": "earnings", "precision": "exact",
+            # provenance left unset: Yahoo Finance doesn't say whether a date is company-confirmed or estimated
+            cats.append({"date": ed.isoformat(), "type": "earnings", "precision": "exact", "provenance": None,
                          "title": "{} ({}) earnings".format(c["name"], c["ticker"]), "origin": "yfinance",
                          "source": "https://finance.yahoo.com/quote/" + c["ticker"]})
     cats.sort(key=lambda x: x["date"])
