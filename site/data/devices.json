@@ -433,17 +433,6 @@
    "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P160017"
   },
   {
-   "number": "P250012/S008",
-   "kind": "PMA supplement",
-   "date": "2026-06-12",
-   "device": "Simplera Sync Sensor",
-   "applicant": "Medtronic Minimed, Inc.",
-   "product_code": "SFI",
-   "code_label": "CGM sensor (PMA)",
-   "note": "Change Design/Components/Specifications/Material",
-   "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P250012"
-  },
-  {
    "number": "P160007/S060",
    "kind": "PMA supplement",
    "date": "2026-06-12",
@@ -453,6 +442,17 @@
    "code_label": "CGM (PMA)",
    "note": "Change Design/Components/Specifications/Material",
    "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P160007"
+  },
+  {
+   "number": "P250012/S008",
+   "kind": "PMA supplement",
+   "date": "2026-06-12",
+   "device": "Simplera Sync Sensor",
+   "applicant": "Medtronic Minimed, Inc.",
+   "product_code": "SFI",
+   "code_label": "CGM sensor (PMA)",
+   "note": "Change Design/Components/Specifications/Material",
+   "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P250012"
   },
   {
    "number": "K261402",

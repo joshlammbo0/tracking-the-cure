@@ -22,9 +22,36 @@
    "primary_completion_type": "ESTIMATED",
    "completion": "2027-06-30",
    "completion_type": "ESTIMATED",
-   "last_update": "2026-11-10",
+   "last_update": "2026-11-16",
    "has_results": false,
    "url": "https://clinicaltrials.gov/study/NCT07929207",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT06588504",
+   "title": "Research Study in Japan to Compare Dasiglucagon With Glucagon in Treating Very Low Levels of Blood Sugar in Asian Adults With Type 1 Diabetes and Testing of Dasiglucagon for the Same Condition in Japanese Adolescents",
+   "acronym": null,
+   "status": "COMPLETED",
+   "why_stopped": null,
+   "phases": [
+    "Phase 3"
+   ],
+   "phase_grade": "phase3",
+   "sponsor": "Novo Nordisk A/S",
+   "sponsor_class": "INDUSTRY",
+   "conditions": [
+    "Diabetes Mellitus, Type 1"
+   ],
+   "enrollment": 38,
+   "enrollment_type": "ACTUAL",
+   "start_date": "2024-09-10",
+   "primary_completion": "2025-07-20",
+   "primary_completion_type": "ACTUAL",
+   "completion": "2025-07-20",
+   "completion_type": "ACTUAL",
+   "last_update": "2026-11-16",
+   "has_results": true,
+   "url": "https://clinicaltrials.gov/study/NCT06588504",
    "tracked": false
   },
   {
@@ -496,6 +523,33 @@
    "tracked": true
   },
   {
+   "nct_id": "NCT07427251",
+   "title": "The Postprandial Hypo-Avoid Study",
+   "acronym": null,
+   "status": "RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 4"
+   ],
+   "phase_grade": "approved",
+   "sponsor": "Steno Diabetes Center Copenhagen",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type 1 Diabetes Mellitus"
+   ],
+   "enrollment": 18,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2026-04-27",
+   "primary_completion": "2027-05-01",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2028-05-01",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-08-13",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT07427251",
+   "tracked": false
+  },
+  {
    "nct_id": "NCT06422494",
    "title": "The Role of the Adrenergic System in Hypoglycaemia Induced Inflammatory Response in People With Type 1 Diabetes and People Without Type 1 Diabetes-RAID-II",
    "acronym": "RAID-II",
@@ -521,33 +575,6 @@
    "last_update": "2026-08-13",
    "has_results": false,
    "url": "https://clinicaltrials.gov/study/NCT06422494",
-   "tracked": false
-  },
-  {
-   "nct_id": "NCT07427251",
-   "title": "The Postprandial Hypo-Avoid Study",
-   "acronym": null,
-   "status": "RECRUITING",
-   "why_stopped": null,
-   "phases": [
-    "Phase 4"
-   ],
-   "phase_grade": "approved",
-   "sponsor": "Steno Diabetes Center Copenhagen",
-   "sponsor_class": "OTHER",
-   "conditions": [
-    "Type 1 Diabetes Mellitus"
-   ],
-   "enrollment": 18,
-   "enrollment_type": "ESTIMATED",
-   "start_date": "2026-04-27",
-   "primary_completion": "2027-05-01",
-   "primary_completion_type": "ESTIMATED",
-   "completion": "2028-05-01",
-   "completion_type": "ESTIMATED",
-   "last_update": "2026-08-13",
-   "has_results": false,
-   "url": "https://clinicaltrials.gov/study/NCT07427251",
    "tracked": false
   },
   {
@@ -1547,33 +1574,6 @@
    "tracked": false
   },
   {
-   "nct_id": "NCT07341243",
-   "title": "Exercising in Hot Conditions: How Does it Effect Blood Glucose in People With T1D",
-   "acronym": "T1D-Heat",
-   "status": "RECRUITING",
-   "why_stopped": null,
-   "phases": [
-    "N/A"
-   ],
-   "phase_grade": null,
-   "sponsor": "Liverpool John Moores University",
-   "sponsor_class": "OTHER",
-   "conditions": [
-    "Type 1 Diabetes (T1D)"
-   ],
-   "enrollment": 38,
-   "enrollment_type": "ESTIMATED",
-   "start_date": "2025-11-01",
-   "primary_completion": "2026-11-01",
-   "primary_completion_type": "ESTIMATED",
-   "completion": "2026-11-01",
-   "completion_type": "ESTIMATED",
-   "last_update": "2026-01-14",
-   "has_results": false,
-   "url": "https://clinicaltrials.gov/study/NCT07341243",
-   "tracked": false
-  },
-  {
    "nct_id": "NCT06904846",
    "title": "To Evaluate the Change in Glucose Parameters in Adult Patients With Type 1 or Type 2 Diabetes From Europe Using the iCan o3 CGM System for 60 Days Period",
    "acronym": "DETECT",
@@ -1599,6 +1599,33 @@
    "last_update": "2026-01-14",
    "has_results": false,
    "url": "https://clinicaltrials.gov/study/NCT06904846",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT07341243",
+   "title": "Exercising in Hot Conditions: How Does it Effect Blood Glucose in People With T1D",
+   "acronym": "T1D-Heat",
+   "status": "RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "N/A"
+   ],
+   "phase_grade": null,
+   "sponsor": "Liverpool John Moores University",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type 1 Diabetes (T1D)"
+   ],
+   "enrollment": 38,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2025-11-01",
+   "primary_completion": "2026-11-01",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2026-11-01",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-01-14",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT07341243",
    "tracked": false
   },
   {
@@ -1737,33 +1764,6 @@
    "has_results": false,
    "url": "https://clinicaltrials.gov/study/NCT06338553",
    "tracked": true
-  },
-  {
-   "nct_id": "NCT06588504",
-   "title": "Research Study in Japan to Compare Dasiglucagon With Glucagon in Treating Very Low Levels of Blood Sugar in Asian Adults With Type 1 Diabetes and Testing of Dasiglucagon for the Same Condition in Japanese Adolescents",
-   "acronym": null,
-   "status": "COMPLETED",
-   "why_stopped": null,
-   "phases": [
-    "Phase 1"
-   ],
-   "phase_grade": "phase1",
-   "sponsor": "Novo Nordisk A/S",
-   "sponsor_class": "INDUSTRY",
-   "conditions": [
-    "Diabetes Mellitus, Type 1"
-   ],
-   "enrollment": 38,
-   "enrollment_type": "ACTUAL",
-   "start_date": "2024-09-10",
-   "primary_completion": "2025-07-20",
-   "primary_completion_type": "ACTUAL",
-   "completion": "2025-07-20",
-   "completion_type": "ACTUAL",
-   "last_update": "2025-12-05",
-   "has_results": false,
-   "url": "https://clinicaltrials.gov/study/NCT06588504",
-   "tracked": false
   }
  ],
  "papers": {
