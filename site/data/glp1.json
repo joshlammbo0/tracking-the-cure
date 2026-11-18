@@ -523,33 +523,6 @@
    "tracked": true
   },
   {
-   "nct_id": "NCT07427251",
-   "title": "The Postprandial Hypo-Avoid Study",
-   "acronym": null,
-   "status": "RECRUITING",
-   "why_stopped": null,
-   "phases": [
-    "Phase 4"
-   ],
-   "phase_grade": "approved",
-   "sponsor": "Steno Diabetes Center Copenhagen",
-   "sponsor_class": "OTHER",
-   "conditions": [
-    "Type 1 Diabetes Mellitus"
-   ],
-   "enrollment": 18,
-   "enrollment_type": "ESTIMATED",
-   "start_date": "2026-04-27",
-   "primary_completion": "2027-05-01",
-   "primary_completion_type": "ESTIMATED",
-   "completion": "2028-05-01",
-   "completion_type": "ESTIMATED",
-   "last_update": "2026-08-13",
-   "has_results": false,
-   "url": "https://clinicaltrials.gov/study/NCT07427251",
-   "tracked": false
-  },
-  {
    "nct_id": "NCT06422494",
    "title": "The Role of the Adrenergic System in Hypoglycaemia Induced Inflammatory Response in People With Type 1 Diabetes and People Without Type 1 Diabetes-RAID-II",
    "acronym": "RAID-II",
@@ -575,6 +548,33 @@
    "last_update": "2026-08-13",
    "has_results": false,
    "url": "https://clinicaltrials.gov/study/NCT06422494",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT07427251",
+   "title": "The Postprandial Hypo-Avoid Study",
+   "acronym": null,
+   "status": "RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 4"
+   ],
+   "phase_grade": "approved",
+   "sponsor": "Steno Diabetes Center Copenhagen",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type 1 Diabetes Mellitus"
+   ],
+   "enrollment": 18,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2026-04-27",
+   "primary_completion": "2027-05-01",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2028-05-01",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-08-13",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT07427251",
    "tracked": false
   },
   {
