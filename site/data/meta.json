@@ -1,5 +1,5 @@
 {
- "built_at": "2026-11-18T12:15:25Z",
+ "built_at": "2026-11-19T12:15:57Z",
  "offline_build": false,
  "counts": {
   "programs": 22,
@@ -13,202 +13,202 @@
   "ClinicalTrials.gov": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-11-18T12:14:32.673912Z"
+   "at": "2026-11-19T12:15:09.579271Z"
   },
   "Source link check": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-11-18T12:14:32.675128Z"
+   "at": "2026-11-19T12:15:09.580358Z"
   },
   "PubMed (cure literature)": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-11-18T12:14:39.029502Z"
+   "at": "2026-11-19T12:15:14.366174Z"
   },
   "Google News RSS (headlines)": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-11-18T12:14:59.510924Z"
+   "at": "2026-11-19T12:15:35.074504Z"
   },
   "ClinicalTrials.gov (GLP-1 scan)": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-11-18T12:14:59.990181Z"
+   "at": "2026-11-19T12:15:35.610508Z"
   },
   "PubMed (GLP-1 in T1D)": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-11-18T12:15:03.837981Z"
+   "at": "2026-11-19T12:15:39.318059Z"
   },
   "openFDA drug labels": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-11-18T12:15:10.529016Z"
+   "at": "2026-11-19T12:15:42.348864Z"
   },
   "openFDA device decisions": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-11-18T12:15:11.439937Z"
+   "at": "2026-11-19T12:15:43.215158Z"
   },
   "Market data: DXCM": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-11-18T12:15:12.556707Z"
+   "at": "2026-11-19T12:15:44.181222Z"
   },
   "SEC EDGAR: DXCM": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-11-18T12:15:12.920050Z"
+   "at": "2026-11-19T12:15:44.531075Z"
   },
   "Market data: PODD": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-11-18T12:15:13.583325Z"
+   "at": "2026-11-19T12:15:45.181621Z"
   },
   "SEC EDGAR: PODD": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-11-18T12:15:13.631871Z"
+   "at": "2026-11-19T12:15:45.218474Z"
   },
   "Market data: TNDM": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-11-18T12:15:14.333216Z"
+   "at": "2026-11-19T12:15:45.873463Z"
   },
   "SEC EDGAR: TNDM": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-11-18T12:15:14.376746Z"
+   "at": "2026-11-19T12:15:45.983716Z"
   },
   "Market data: BBNX": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-11-18T12:15:14.992890Z"
+   "at": "2026-11-19T12:15:46.592680Z"
   },
   "SEC EDGAR: BBNX": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-11-18T12:15:15.032364Z"
+   "at": "2026-11-19T12:15:46.643374Z"
   },
   "Market data: MMED": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-11-18T12:15:15.649140Z"
+   "at": "2026-11-19T12:15:47.245261Z"
   },
   "SEC EDGAR: MMED": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-11-18T12:15:15.792284Z"
+   "at": "2026-11-19T12:15:47.447790Z"
   },
   "Market data: SENS": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-11-18T12:15:16.448304Z"
+   "at": "2026-11-19T12:15:48.060108Z"
   },
   "SEC EDGAR: SENS": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-11-18T12:15:16.556604Z"
+   "at": "2026-11-19T12:15:48.135929Z"
   },
   "Market data: EMBC": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-11-18T12:15:17.223806Z"
+   "at": "2026-11-19T12:15:48.753152Z"
   },
   "SEC EDGAR: EMBC": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-11-18T12:15:17.317850Z"
+   "at": "2026-11-19T12:15:48.788421Z"
   },
   "Market data: ABT": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-11-18T12:15:18.034010Z"
+   "at": "2026-11-19T12:15:49.498807Z"
   },
   "SEC EDGAR: ABT": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-11-18T12:15:18.068987Z"
+   "at": "2026-11-19T12:15:49.613986Z"
   },
   "Market data: MDT": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-11-18T12:15:18.793230Z"
+   "at": "2026-11-19T12:15:50.336728Z"
   },
   "SEC EDGAR: MDT": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-11-18T12:15:18.829817Z"
+   "at": "2026-11-19T12:15:50.372689Z"
   },
   "Market data: LLY": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-11-18T12:15:19.581455Z"
+   "at": "2026-11-19T12:15:51.089411Z"
   },
   "SEC EDGAR: LLY": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-11-18T12:15:19.617924Z"
+   "at": "2026-11-19T12:15:51.126893Z"
   },
   "Market data: NVO": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-11-18T12:15:20.822944Z"
+   "at": "2026-11-19T12:15:52.191176Z"
   },
   "SEC EDGAR: NVO": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-11-18T12:15:20.879215Z"
+   "at": "2026-11-19T12:15:52.295028Z"
   },
   "Market data: SNY": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-11-18T12:15:21.738155Z"
+   "at": "2026-11-19T12:15:53.332694Z"
   },
   "SEC EDGAR: SNY": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-11-18T12:15:21.782739Z"
+   "at": "2026-11-19T12:15:53.426964Z"
   },
   "Market data: VRTX": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-11-18T12:15:22.389172Z"
+   "at": "2026-11-19T12:15:54.032228Z"
   },
   "SEC EDGAR: VRTX": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-11-18T12:15:22.398111Z"
+   "at": "2026-11-19T12:15:54.082490Z"
   },
   "Market data: SANA": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-11-18T12:15:23.052500Z"
+   "at": "2026-11-19T12:15:54.687812Z"
   },
   "SEC EDGAR: SANA": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-11-18T12:15:23.090075Z"
+   "at": "2026-11-19T12:15:54.740783Z"
   },
   "Market data: CRSP": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-11-18T12:15:23.736984Z"
+   "at": "2026-11-19T12:15:55.350243Z"
   },
   "SEC EDGAR: CRSP": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-11-18T12:15:23.776232Z"
+   "at": "2026-11-19T12:15:55.433481Z"
   },
   "Market data: DMYD-B.ST": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-11-18T12:15:24.627419Z"
+   "at": "2026-11-19T12:15:56.251809Z"
   },
   "Market data: SVA.TO": {
    "ok": true,
    "detail": "refreshed",
-   "at": "2026-11-18T12:15:25.473443Z"
+   "at": "2026-11-19T12:15:57.051616Z"
   }
  },
  "links": {
