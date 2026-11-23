@@ -237,18 +237,6 @@
    "my_commentary": null,
    "news": [
     {
-     "title": "Donor Islet Cells for Type 1 Diabetes Could Be Regulated Like Organs as HHS Seeks Public Comment",
-     "outlet": "Medical Daily",
-     "date": "2026-09-24",
-     "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxObmNZdmw1Q0lCZ0VLQkp3dmtScWxjWmxaQnVmeFYxYVRKV0lDa3RQSkhRVkJzMnJVWjU1MHhINDNuV25IQ3VkM1FISDR4OEdrVTJqcFZFVVZyU0lEZkxtRkNrSV80Vjk3TWZMTkZDOWlkaHpDU3JmT1ZSYk93eFRscnlGUE1TMWxi?oc=5"
-    },
-    {
-     "title": "Lantidra Market Analysis Report Examining Demand Patterns and Competitive Landscape",
-     "outlet": "EIN Presswire",
-     "date": "2026-11-05",
-     "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNX245Nld3a2FVRWhjV0tuVzBQdTRqWTA4YzU4Nk53U2NzUTc0ZnduakRaMElfd05tbzBxYmpiQ1JGZ1BhQjh4S05qNTBfS2RCRDhPaWNHM2JqcU9nVzRvUTI5X29vRVFJcldFVm9VYl9KcVdCY0Q1S1ZSOWp0NW1FUW00TUl3UlBLa0N1bWhWampXMElRUDVBWm5NNHBqUkhKSk1IMGhsUkZyVFBneGluazBGcElMOWZMWEVuSU52Yl9qMC1WUnV2NUdB?oc=5"
-    },
-    {
      "title": "MIT scientists implanted oxygen-producing devices with insulin-making cells in mice and rats; the cells re",
      "outlet": "The Economic Times",
      "date": "2026-11-18",
@@ -360,16 +348,16 @@
      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQWEFBNGc0SVkweURLckhGSk1YTWszcGNGZFFjQWlBX3dFNUthRFMwSkpWZE5scDFkb25leUJsTTMzUlNoUUliTjZXa05ZbDFkUEZIaTJ2eU5rM19zTWFaZzM3QjZLWVI3ZW1HeHJQQTdVZ2dGZ19RclJJbUw2VUVaYlRSMTNwbVJJUGJUdFJBUlQ0NTU1bTBIcXJDemFidWR2SFd2RVZlTU1sSzBEVlMwaV9DdTlyYlFGU3EyYjViNmRKcnJqcENSWVNwRFpDanNyREE?oc=5"
     },
     {
-     "title": "Sernova and Seraxis Close US$11.2 Million Financing to Fund Merger to Become BetaNova Biotherapeutics and Advance Type 1 Diabetes Cell Therapy Into Near Term Phase 1/2 Clinical Trial",
-     "outlet": "Investing News Network",
-     "date": "2026-10-05",
-     "url": "https://news.google.com/rss/articles/CBMiswJBVV95cUxPODVnRlk1Si1ITHd0aWs5T2ozc2MtOXFJWGM3VTZOcXhlX045OHcxWHJuZXV6cXkzbnFtNGdCUEROVVJQVkE2ZW9ZTWh2VF9XY3ZoOVN4ME9XZ2lZNjFVM21GOVFpdnR5V0dnVVcySG01OG9BdHZ3U3JUVmtTMlNEREZwMk1zV3NqLWtOZWJQODJTdDhWMEozRWt1UU1jX1FfLVNYSkNtN3Nqekh3bUhQcHBQa1hMOEdZcjAwVDRqeEFoOEZtTXE5SEwtY2xkOHBpSGhPbnZVemJBbl80N3RxTEo1TDV4M2pYcW5iV09LT3R4WnpuRkpqYjZyT2tEUDRKZDM0UDhYdFhoWEhVMDFISko2YVF2WHZOaXA4RUdUeXVrZDVTS0tPbVNIZzZwTF9OMG1j?oc=5"
-    },
-    {
      "title": "Sernova and Seraxis close USD 11.2m financing to advance merger and T1D cell therapy trial",
      "outlet": "AllSci",
      "date": "2026-10-05",
      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNSGJnTzVTWnRVNDBpSFVHbE1qaW9RU3VLVUN5WE96ZWpPQ2lRRU1kSHBxdktCSFdkWjd3OGdxazVkc21VV2Vac00zdW5Vd1RORWloZ2NJTjUxb2l1SjAtRUp3OWl3NDZPT3hSdmhBM2haTDhWQmdYeFc4QXRIR21WZVdfNXhzTzg?oc=5"
+    },
+    {
+     "title": "Sernova and Seraxis Close US$11.2 Million Financing to Fund Merger to Become BetaNova Biotherapeutics and Advance Type 1 Diabetes Cell Therapy Into Near Term Phase 1/2 Clinical Trial",
+     "outlet": "Investing News Network",
+     "date": "2026-10-05",
+     "url": "https://news.google.com/rss/articles/CBMiswJBVV95cUxPODVnRlk1Si1ITHd0aWs5T2ozc2MtOXFJWGM3VTZOcXhlX045OHcxWHJuZXV6cXkzbnFtNGdCUEROVVJQVkE2ZW9ZTWh2VF9XY3ZoOVN4ME9XZ2lZNjFVM21GOVFpdnR5V0dnVVcySG01OG9BdHZ3U3JUVmtTMlNEREZwMk1zV3NqLWtOZWJQODJTdDhWMEozRWt1UU1jX1FfLVNYSkNtN3Nqekh3bUhQcHBQa1hMOEdZcjAwVDRqeEFoOEZtTXE5SEwtY2xkOHBpSGhPbnZVemJBbl80N3RxTEo1TDV4M2pYcW5iV09LT3R4WnpuRkpqYjZyT2tEUDRKZDM0UDhYdFhoWEhVMDFISko2YVF2WHZOaXA4RUdUeXVrZDVTS0tPbVNIZzZwTF9OMG1j?oc=5"
     }
    ]
   },
@@ -569,15 +557,9 @@
     },
     {
      "title": "Sana Biotechnology Reports Third Quarter 2026 Financial Results and Business Updates",
-     "outlet": "Yahoo Finance",
+     "outlet": "GlobeNewswire",
      "date": "2026-11-05",
-     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQeW91R3B4NmZJTGhWckxPcmlvbHpLQTJ2aXhuMTd3OUo3eDFXWnVsMUlxQkotWDdIQ3pnOVp3M1gzejF4dWRGWXBuVEM4OHdZQWZudHltLU5KZmZhS2R0Yy1pSFpVbUZWUzNSaGVaeWlsaU5DN2puZ1hTQTBYSkt4d1R3SjR5QzZSTHM4S3lPLWEzX2RDMkc0MWtXYThjcTdFU0pn?oc=5"
-    },
-    {
-     "title": "Sana Biotechnology Reports Q3 2026 Results, $121.7 Million in Cash",
-     "outlet": "TradingView",
-     "date": "2026-11-05",
-     "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNSXJkbDhfb1NJR3BESWF0aXpEQW0xN1BfcjI3WTRtWU9LVWQzckpaOGhOblQ4X0lDSFZfNUV2OUNNdlNsZWtaVk5NeXItNDJHeFB6S0FfOFIyRUJJcVg2TmZIRmJhTEJ0RS0zQ0JKMHFwR2Y5T1Z1ZVRVZGFWMDFUd0JZbTZUT1ZQUEstS1psZWNoaWdzTTB6NDhCWFQ5dEhJeEl4dnBvZkhaUTFNdml6N1Uxb2Zua283bGdpT2pxRDlLdGF1?oc=5"
+     "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPQVZ6WGpBVXB2VFFSZnNlREQxRjl3Q1dtenVyVEZUaW9VQWFqcWV0SWo0LTdBWVhoZVZnaE1Ja3NZbjVKQzZpYld4d09EdnN1U2NsZU9NTFJtSVlBRUJVbWhNczJGaDltdGNOd3Y2T2RCN0R4cmpYbzA1VVF5cE1TZkRnVmFmUjFsbkc0SVh4cnMzc1EwYk9pc1hCRjVGekhhb3d1VEFwakJIOWtBZW85NW44N0R1cTM0WkxMZDZZNHRpbHkxYnVSVHZKdU1BWmFmSzRwMFdSLTlBeGR6QmxmLVRqR0wxbjE0VGhJRg?oc=5"
     }
    ]
   },
@@ -2198,6 +2180,18 @@
     "doi": "10.1111/dom.71343"
    },
    {
+    "pmid": "43063494",
+    "title": "Heparin-Decorated Hydrogel Microspheres Enable Bioactive Islet Encapsulation and Sustained Glycemic Control in Diabetic Mice",
+    "journal": "ACS Appl Mater Interfaces",
+    "pubdate": "2026 Nov 23",
+    "sortdate": "2026-11-23",
+    "authors": "Liu M, Jia W, Zhou Y et al.",
+    "is_rct": false,
+    "is_review": false,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43063494/",
+    "doi": "10.1021/acsami.6c15035"
+   },
+   {
     "pmid": "43034240",
     "title": "Triphasic decline in kidney function after islet transplantation: sex-based differences and the impact of calcineurin inhibitor immunosuppression in a 20 year single-centre cohort",
     "journal": "Diabetologia",
@@ -2208,18 +2202,6 @@
     "is_review": false,
     "url": "https://pubmed.ncbi.nlm.nih.gov/43034240/",
     "doi": "10.1007/s00125-026-06913-0"
-   },
-   {
-    "pmid": "43059844",
-    "title": "Engineered endocrine objects tolerate hypoxia in macroencapsulation devices and enable subcutaneous engraftment in diabetic mice",
-    "journal": "bioRxiv",
-    "pubdate": "2026 Nov 12",
-    "sortdate": "2026-11-12",
-    "authors": "Wang K, Okada K, Jin M et al.",
-    "is_rct": false,
-    "is_review": false,
-    "url": "https://pubmed.ncbi.nlm.nih.gov/43059844/",
-    "doi": "10.64898/2026.11.10.765512"
    }
   ],
   "gene_edited": [
@@ -2310,6 +2292,18 @@
     "doi": "10.1016/j.bioactmat.2026.07.057"
    },
    {
+    "pmid": "43063494",
+    "title": "Heparin-Decorated Hydrogel Microspheres Enable Bioactive Islet Encapsulation and Sustained Glycemic Control in Diabetic Mice",
+    "journal": "ACS Appl Mater Interfaces",
+    "pubdate": "2026 Nov 23",
+    "sortdate": "2026-11-23",
+    "authors": "Liu M, Jia W, Zhou Y et al.",
+    "is_rct": false,
+    "is_review": false,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43063494/",
+    "doi": "10.1021/acsami.6c15035"
+   },
+   {
     "pmid": "43059844",
     "title": "Engineered endocrine objects tolerate hypoxia in macroencapsulation devices and enable subcutaneous engraftment in diabetic mice",
     "journal": "bioRxiv",
@@ -2356,18 +2350,6 @@
     "is_review": false,
     "url": "https://pubmed.ncbi.nlm.nih.gov/42923301/",
     "doi": "10.3389/fbioe.2026.1943061"
-   },
-   {
-    "pmid": "42876362",
-    "title": "Oxidative Stress, Post-Translational Modifications, and Type 1 Diabetes Pathogenesis",
-    "journal": "Immunol Rev",
-    "pubdate": "2026 Oct",
-    "sortdate": "2026-10-01",
-    "authors": "Winstead CJ, Hodel M, Tse HM",
-    "is_rct": false,
-    "is_review": true,
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42876362/",
-    "doi": "10.1111/imr.70182"
    }
   ],
   "immune": [
@@ -2476,18 +2458,6 @@
   ],
   "celltrans-lantidra": [
    {
-    "title": "Donor Islet Cells for Type 1 Diabetes Could Be Regulated Like Organs as HHS Seeks Public Comment",
-    "outlet": "Medical Daily",
-    "date": "2026-09-24",
-    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxObmNZdmw1Q0lCZ0VLQkp3dmtScWxjWmxaQnVmeFYxYVRKV0lDa3RQSkhRVkJzMnJVWjU1MHhINDNuV25IQ3VkM1FISDR4OEdrVTJqcFZFVVZyU0lEZkxtRkNrSV80Vjk3TWZMTkZDOWlkaHpDU3JmT1ZSYk93eFRscnlGUE1TMWxi?oc=5"
-   },
-   {
-    "title": "Lantidra Market Analysis Report Examining Demand Patterns and Competitive Landscape",
-    "outlet": "EIN Presswire",
-    "date": "2026-11-05",
-    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNX245Nld3a2FVRWhjV0tuVzBQdTRqWTA4YzU4Nk53U2NzUTc0ZnduakRaMElfd05tbzBxYmpiQ1JGZ1BhQjh4S05qNTBfS2RCRDhPaWNHM2JqcU9nVzRvUTI5X29vRVFJcldFVm9VYl9KcVdCY0Q1S1ZSOWp0NW1FUW00TUl3UlBLa0N1bWhWampXMElRUDVBWm5NNHBqUkhKSk1IMGhsUkZyVFBneGluazBGcElMOWZMWEVuSU52Yl9qMC1WUnV2NUdB?oc=5"
-   },
-   {
     "title": "MIT scientists implanted oxygen-producing devices with insulin-making cells in mice and rats; the cells re",
     "outlet": "The Economic Times",
     "date": "2026-11-18",
@@ -2502,16 +2472,16 @@
     "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQWEFBNGc0SVkweURLckhGSk1YTWszcGNGZFFjQWlBX3dFNUthRFMwSkpWZE5scDFkb25leUJsTTMzUlNoUUliTjZXa05ZbDFkUEZIaTJ2eU5rM19zTWFaZzM3QjZLWVI3ZW1HeHJQQTdVZ2dGZ19RclJJbUw2VUVaYlRSMTNwbVJJUGJUdFJBUlQ0NTU1bTBIcXJDemFidWR2SFd2RVZlTU1sSzBEVlMwaV9DdTlyYlFGU3EyYjViNmRKcnJqcENSWVNwRFpDanNyREE?oc=5"
    },
    {
-    "title": "Sernova and Seraxis Close US$11.2 Million Financing to Fund Merger to Become BetaNova Biotherapeutics and Advance Type 1 Diabetes Cell Therapy Into Near Term Phase 1/2 Clinical Trial",
-    "outlet": "Investing News Network",
-    "date": "2026-10-05",
-    "url": "https://news.google.com/rss/articles/CBMiswJBVV95cUxPODVnRlk1Si1ITHd0aWs5T2ozc2MtOXFJWGM3VTZOcXhlX045OHcxWHJuZXV6cXkzbnFtNGdCUEROVVJQVkE2ZW9ZTWh2VF9XY3ZoOVN4ME9XZ2lZNjFVM21GOVFpdnR5V0dnVVcySG01OG9BdHZ3U3JUVmtTMlNEREZwMk1zV3NqLWtOZWJQODJTdDhWMEozRWt1UU1jX1FfLVNYSkNtN3Nqekh3bUhQcHBQa1hMOEdZcjAwVDRqeEFoOEZtTXE5SEwtY2xkOHBpSGhPbnZVemJBbl80N3RxTEo1TDV4M2pYcW5iV09LT3R4WnpuRkpqYjZyT2tEUDRKZDM0UDhYdFhoWEhVMDFISko2YVF2WHZOaXA4RUdUeXVrZDVTS0tPbVNIZzZwTF9OMG1j?oc=5"
-   },
-   {
     "title": "Sernova and Seraxis close USD 11.2m financing to advance merger and T1D cell therapy trial",
     "outlet": "AllSci",
     "date": "2026-10-05",
     "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNSGJnTzVTWnRVNDBpSFVHbE1qaW9RU3VLVUN5WE96ZWpPQ2lRRU1kSHBxdktCSFdkWjd3OGdxazVkc21VV2Vac00zdW5Vd1RORWloZ2NJTjUxb2l1SjAtRUp3OWl3NDZPT3hSdmhBM2haTDhWQmdYeFc4QXRIR21WZVdfNXhzTzg?oc=5"
+   },
+   {
+    "title": "Sernova and Seraxis Close US$11.2 Million Financing to Fund Merger to Become BetaNova Biotherapeutics and Advance Type 1 Diabetes Cell Therapy Into Near Term Phase 1/2 Clinical Trial",
+    "outlet": "Investing News Network",
+    "date": "2026-10-05",
+    "url": "https://news.google.com/rss/articles/CBMiswJBVV95cUxPODVnRlk1Si1ITHd0aWs5T2ozc2MtOXFJWGM3VTZOcXhlX045OHcxWHJuZXV6cXkzbnFtNGdCUEROVVJQVkE2ZW9ZTWh2VF9XY3ZoOVN4ME9XZ2lZNjFVM21GOVFpdnR5V0dnVVcySG01OG9BdHZ3U3JUVmtTMlNEREZwMk1zV3NqLWtOZWJQODJTdDhWMEozRWt1UU1jX1FfLVNYSkNtN3Nqekh3bUhQcHBQa1hMOEdZcjAwVDRqeEFoOEZtTXE5SEwtY2xkOHBpSGhPbnZVemJBbl80N3RxTEo1TDV4M2pYcW5iV09LT3R4WnpuRkpqYjZyT2tEUDRKZDM0UDhYdFhoWEhVMDFISko2YVF2WHZOaXA4RUdUeXVrZDVTS0tPbVNIZzZwTF9OMG1j?oc=5"
    }
   ],
   "celregen-crg002": [],
@@ -2544,15 +2514,9 @@
    },
    {
     "title": "Sana Biotechnology Reports Third Quarter 2026 Financial Results and Business Updates",
-    "outlet": "Yahoo Finance",
+    "outlet": "GlobeNewswire",
     "date": "2026-11-05",
-    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQeW91R3B4NmZJTGhWckxPcmlvbHpLQTJ2aXhuMTd3OUo3eDFXWnVsMUlxQkotWDdIQ3pnOVp3M1gzejF4dWRGWXBuVEM4OHdZQWZudHltLU5KZmZhS2R0Yy1pSFpVbUZWUzNSaGVaeWlsaU5DN2puZ1hTQTBYSkt4d1R3SjR5QzZSTHM4S3lPLWEzX2RDMkc0MWtXYThjcTdFU0pn?oc=5"
-   },
-   {
-    "title": "Sana Biotechnology Reports Q3 2026 Results, $121.7 Million in Cash",
-    "outlet": "TradingView",
-    "date": "2026-11-05",
-    "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNSXJkbDhfb1NJR3BESWF0aXpEQW0xN1BfcjI3WTRtWU9LVWQzckpaOGhOblQ4X0lDSFZfNUV2OUNNdlNsZWtaVk5NeXItNDJHeFB6S0FfOFIyRUJJcVg2TmZIRmJhTEJ0RS0zQ0JKMHFwR2Y5T1Z1ZVRVZGFWMDFUd0JZbTZUT1ZQUEstS1psZWNoaWdzTTB6NDhCWFQ5dEhJeEl4dnBvZkhaUTFNdml6N1Uxb2Zua283bGdpT2pxRDlLdGF1?oc=5"
+    "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPQVZ6WGpBVXB2VFFSZnNlREQxRjl3Q1dtenVyVEZUaW9VQWFqcWV0SWo0LTdBWVhoZVZnaE1Ja3NZbjVKQzZpYld4d09EdnN1U2NsZU9NTFJtSVlBRUJVbWhNczJGaDltdGNOd3Y2T2RCN0R4cmpYbzA1VVF5cE1TZkRnVmFmUjFsbkc0SVh4cnMzc1EwYk9pc1hCRjVGekhhb3d1VEFwakJIOWtBZW85NW44N0R1cTM0WkxMZDZZNHRpbHkxYnVSVHZKdU1BWmFmSzRwMFdSLTlBeGR6QmxmLVRqR0wxbjE0VGhJRg?oc=5"
    }
   ],
   "sernova-cellpouch": [],
