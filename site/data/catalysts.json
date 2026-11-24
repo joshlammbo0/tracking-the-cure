@@ -183,9 +183,72 @@
    "type": "earnings",
    "precision": "exact",
    "provenance": null,
+   "title": "Eli Lilly (LLY) earnings",
+   "origin": "yfinance",
+   "source": "https://finance.yahoo.com/quote/LLY"
+  },
+  {
+   "date": "2027-02-03",
+   "type": "earnings",
+   "precision": "exact",
+   "provenance": null,
    "title": "Novo Nordisk (ADR) (NVO) earnings",
    "origin": "yfinance",
    "source": "https://finance.yahoo.com/quote/NVO"
+  },
+  {
+   "date": "2027-02-11",
+   "type": "earnings",
+   "precision": "exact",
+   "provenance": null,
+   "title": "Dexcom (DXCM) earnings",
+   "origin": "yfinance",
+   "source": "https://finance.yahoo.com/quote/DXCM"
+  },
+  {
+   "date": "2027-02-11",
+   "type": "earnings",
+   "precision": "exact",
+   "provenance": null,
+   "title": "Vertex Pharmaceuticals (VRTX) earnings",
+   "origin": "yfinance",
+   "source": "https://finance.yahoo.com/quote/VRTX"
+  },
+  {
+   "date": "2027-02-11",
+   "type": "earnings",
+   "precision": "exact",
+   "provenance": null,
+   "title": "CRISPR Therapeutics (CRSP) earnings",
+   "origin": "yfinance",
+   "source": "https://finance.yahoo.com/quote/CRSP"
+  },
+  {
+   "date": "2027-02-16",
+   "type": "earnings",
+   "precision": "exact",
+   "provenance": null,
+   "title": "Beta Bionics (BBNX) earnings",
+   "origin": "yfinance",
+   "source": "https://finance.yahoo.com/quote/BBNX"
+  },
+  {
+   "date": "2027-02-17",
+   "type": "earnings",
+   "precision": "exact",
+   "provenance": null,
+   "title": "Insulet (PODD) earnings",
+   "origin": "yfinance",
+   "source": "https://finance.yahoo.com/quote/PODD"
+  },
+  {
+   "date": "2027-02-18",
+   "type": "earnings",
+   "precision": "exact",
+   "provenance": null,
+   "title": "Tandem Diabetes Care (TNDM) earnings",
+   "origin": "yfinance",
+   "source": "https://finance.yahoo.com/quote/TNDM"
   },
   {
    "date": "2027-02-20",

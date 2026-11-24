@@ -631,33 +631,6 @@
    "tracked": false
   },
   {
-   "nct_id": "NCT07427251",
-   "title": "The Postprandial Hypo-Avoid Study",
-   "acronym": null,
-   "status": "RECRUITING",
-   "why_stopped": null,
-   "phases": [
-    "Phase 4"
-   ],
-   "phase_grade": "approved",
-   "sponsor": "Steno Diabetes Center Copenhagen",
-   "sponsor_class": "OTHER",
-   "conditions": [
-    "Type 1 Diabetes Mellitus"
-   ],
-   "enrollment": 18,
-   "enrollment_type": "ESTIMATED",
-   "start_date": "2026-04-27",
-   "primary_completion": "2027-05-01",
-   "primary_completion_type": "ESTIMATED",
-   "completion": "2028-05-01",
-   "completion_type": "ESTIMATED",
-   "last_update": "2026-08-13",
-   "has_results": false,
-   "url": "https://clinicaltrials.gov/study/NCT07427251",
-   "tracked": false
-  },
-  {
    "nct_id": "NCT06422494",
    "title": "The Role of the Adrenergic System in Hypoglycaemia Induced Inflammatory Response in People With Type 1 Diabetes and People Without Type 1 Diabetes-RAID-II",
    "acronym": "RAID-II",
@@ -683,6 +656,33 @@
    "last_update": "2026-08-13",
    "has_results": false,
    "url": "https://clinicaltrials.gov/study/NCT06422494",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT07427251",
+   "title": "The Postprandial Hypo-Avoid Study",
+   "acronym": null,
+   "status": "RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 4"
+   ],
+   "phase_grade": "approved",
+   "sponsor": "Steno Diabetes Center Copenhagen",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type 1 Diabetes Mellitus"
+   ],
+   "enrollment": 18,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2026-04-27",
+   "primary_completion": "2027-05-01",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2028-05-01",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-08-13",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT07427251",
    "tracked": false
   },
   {
@@ -797,33 +797,6 @@
    "tracked": false
   },
   {
-   "nct_id": "NCT05536232",
-   "title": "Residual Insulin Secretion in Patients With Type 1 Diabetes Under a Low Carbohydrate Diet or a Ketogenic Diet",
-   "acronym": "KetoDiab",
-   "status": "COMPLETED",
-   "why_stopped": null,
-   "phases": [
-    "N/A"
-   ],
-   "phase_grade": null,
-   "sponsor": "Assistance Publique - Hôpitaux de Paris",
-   "sponsor_class": "OTHER",
-   "conditions": [
-    "Type1 Diabetes"
-   ],
-   "enrollment": 30,
-   "enrollment_type": "ACTUAL",
-   "start_date": "2022-10-17",
-   "primary_completion": "2026-01-13",
-   "primary_completion_type": "ACTUAL",
-   "completion": "2026-01-13",
-   "completion_type": "ACTUAL",
-   "last_update": "2026-07-13",
-   "has_results": false,
-   "url": "https://clinicaltrials.gov/study/NCT05536232",
-   "tracked": false
-  },
-  {
    "nct_id": "NCT05949281",
    "title": "Repurposing Colchicine for Reduction of Residual Inflammatory Risk in Type 1 Diabetes",
    "acronym": "REC1TE",
@@ -850,6 +823,33 @@
    "last_update": "2026-07-13",
    "has_results": false,
    "url": "https://clinicaltrials.gov/study/NCT05949281",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT05536232",
+   "title": "Residual Insulin Secretion in Patients With Type 1 Diabetes Under a Low Carbohydrate Diet or a Ketogenic Diet",
+   "acronym": "KetoDiab",
+   "status": "COMPLETED",
+   "why_stopped": null,
+   "phases": [
+    "N/A"
+   ],
+   "phase_grade": null,
+   "sponsor": "Assistance Publique - Hôpitaux de Paris",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type1 Diabetes"
+   ],
+   "enrollment": 30,
+   "enrollment_type": "ACTUAL",
+   "start_date": "2022-10-17",
+   "primary_completion": "2026-01-13",
+   "primary_completion_type": "ACTUAL",
+   "completion": "2026-01-13",
+   "completion_type": "ACTUAL",
+   "last_update": "2026-07-13",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT05536232",
    "tracked": false
   },
   {
@@ -991,33 +991,6 @@
    "tracked": false
   },
   {
-   "nct_id": "NCT07614412",
-   "title": "SHIELD-T1D: Shingrix and GLP-1 Agonist for Beta-Cell Preservation in Recent-Onset Type 1 Diabetes.",
-   "acronym": "SHIELD-T1D",
-   "status": "NOT_YET_RECRUITING",
-   "why_stopped": null,
-   "phases": [
-    "Phase 2"
-   ],
-   "phase_grade": "phase2",
-   "sponsor": "Ministry of Health, Saudi Arabia",
-   "sponsor_class": "OTHER_GOV",
-   "conditions": [
-    "Type 1 Diabetes Mellitus"
-   ],
-   "enrollment": 240,
-   "enrollment_type": "ESTIMATED",
-   "start_date": "2027-01-01",
-   "primary_completion": "2028-01-31",
-   "primary_completion_type": "ESTIMATED",
-   "completion": "2028-12-31",
-   "completion_type": "ESTIMATED",
-   "last_update": "2026-05-29",
-   "has_results": false,
-   "url": "https://clinicaltrials.gov/study/NCT07614412",
-   "tracked": true
-  },
-  {
    "nct_id": "NCT03899402",
    "title": "Triple Therapy in T1DM",
    "acronym": null,
@@ -1043,6 +1016,33 @@
    "last_update": "2026-05-29",
    "has_results": false,
    "url": "https://clinicaltrials.gov/study/NCT03899402",
+   "tracked": true
+  },
+  {
+   "nct_id": "NCT07614412",
+   "title": "SHIELD-T1D: Shingrix and GLP-1 Agonist for Beta-Cell Preservation in Recent-Onset Type 1 Diabetes.",
+   "acronym": "SHIELD-T1D",
+   "status": "NOT_YET_RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Phase 2"
+   ],
+   "phase_grade": "phase2",
+   "sponsor": "Ministry of Health, Saudi Arabia",
+   "sponsor_class": "OTHER_GOV",
+   "conditions": [
+    "Type 1 Diabetes Mellitus"
+   ],
+   "enrollment": 240,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2027-01-01",
+   "primary_completion": "2028-01-31",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2028-12-31",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-05-29",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT07614412",
    "tracked": true
   },
   {
@@ -1216,33 +1216,6 @@
    "tracked": false
   },
   {
-   "nct_id": "NCT06881472",
-   "title": "The Separate and Combined Glucagonotropic Effects of Glucose-dependent Insulinotropic Polypeptide and Alanine in Subjects With and Without Type 1 Diabetes",
-   "acronym": "GIPALANIN",
-   "status": "COMPLETED",
-   "why_stopped": null,
-   "phases": [
-    "N/A"
-   ],
-   "phase_grade": null,
-   "sponsor": "Asger Lund, MD",
-   "sponsor_class": "OTHER",
-   "conditions": [
-    "Type 1 Diabetes"
-   ],
-   "enrollment": 10,
-   "enrollment_type": "ACTUAL",
-   "start_date": "2025-01-01",
-   "primary_completion": "2026-01-16",
-   "primary_completion_type": "ACTUAL",
-   "completion": "2026-01-16",
-   "completion_type": "ACTUAL",
-   "last_update": "2026-04-29",
-   "has_results": false,
-   "url": "https://clinicaltrials.gov/study/NCT06881472",
-   "tracked": false
-  },
-  {
    "nct_id": "NCT05762107",
    "title": "A Study of the Effect of ZT-01 on Night-time Hypoglycemia in Type 1 Diabetes",
    "acronym": "ZONE",
@@ -1267,6 +1240,33 @@
    "last_update": "2026-04-29",
    "has_results": false,
    "url": "https://clinicaltrials.gov/study/NCT05762107",
+   "tracked": false
+  },
+  {
+   "nct_id": "NCT06881472",
+   "title": "The Separate and Combined Glucagonotropic Effects of Glucose-dependent Insulinotropic Polypeptide and Alanine in Subjects With and Without Type 1 Diabetes",
+   "acronym": "GIPALANIN",
+   "status": "COMPLETED",
+   "why_stopped": null,
+   "phases": [
+    "N/A"
+   ],
+   "phase_grade": null,
+   "sponsor": "Asger Lund, MD",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Type 1 Diabetes"
+   ],
+   "enrollment": 10,
+   "enrollment_type": "ACTUAL",
+   "start_date": "2025-01-01",
+   "primary_completion": "2026-01-16",
+   "primary_completion_type": "ACTUAL",
+   "completion": "2026-01-16",
+   "completion_type": "ACTUAL",
+   "last_update": "2026-04-29",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT06881472",
    "tracked": false
   },
   {
@@ -1460,34 +1460,6 @@
    "tracked": true
   },
   {
-   "nct_id": "NCT06470295",
-   "title": "Effect of C-peptide on Hypoglycemic Counterregulation",
-   "acronym": null,
-   "status": "RECRUITING",
-   "why_stopped": null,
-   "phases": [
-    "Early Phase 1"
-   ],
-   "phase_grade": "phase1",
-   "sponsor": "University of Cincinnati",
-   "sponsor_class": "OTHER",
-   "conditions": [
-    "Hypoglycemia",
-    "Type 1 Diabetes"
-   ],
-   "enrollment": 38,
-   "enrollment_type": "ESTIMATED",
-   "start_date": "2024-06-01",
-   "primary_completion": "2027-06-01",
-   "primary_completion_type": "ESTIMATED",
-   "completion": "2028-01-01",
-   "completion_type": "ESTIMATED",
-   "last_update": "2026-02-17",
-   "has_results": false,
-   "url": "https://clinicaltrials.gov/study/NCT06470295",
-   "tracked": false
-  },
-  {
    "nct_id": "NCT06962280",
    "title": "A Long-Term Study of Tirzepatide (LY3298176) in Adults With Type 1 Diabetes and Obesity or Overweight",
    "acronym": "SURPASS-T1D-2",
@@ -1515,6 +1487,34 @@
    "has_results": false,
    "url": "https://clinicaltrials.gov/study/NCT06962280",
    "tracked": true
+  },
+  {
+   "nct_id": "NCT06470295",
+   "title": "Effect of C-peptide on Hypoglycemic Counterregulation",
+   "acronym": null,
+   "status": "RECRUITING",
+   "why_stopped": null,
+   "phases": [
+    "Early Phase 1"
+   ],
+   "phase_grade": "phase1",
+   "sponsor": "University of Cincinnati",
+   "sponsor_class": "OTHER",
+   "conditions": [
+    "Hypoglycemia",
+    "Type 1 Diabetes"
+   ],
+   "enrollment": 38,
+   "enrollment_type": "ESTIMATED",
+   "start_date": "2024-06-01",
+   "primary_completion": "2027-06-01",
+   "primary_completion_type": "ESTIMATED",
+   "completion": "2028-01-01",
+   "completion_type": "ESTIMATED",
+   "last_update": "2026-02-17",
+   "has_results": false,
+   "url": "https://clinicaltrials.gov/study/NCT06470295",
+   "tracked": false
   },
   {
    "nct_id": "NCT07270172",
@@ -1798,6 +1798,18 @@
  "papers": {
   "adjunct": [
    {
+    "pmid": "43074825",
+    "title": "Adjunctive pharmacotherapy for obesity in type 1 diabetes: current evidence for GLP-1 receptor agonists",
+    "journal": "Front Endocrinol (Lausanne)",
+    "pubdate": "2026",
+    "sortdate": "2026-11-09",
+    "authors": "Baretić M, Belančić A",
+    "is_rct": false,
+    "is_review": true,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43074825/",
+    "doi": "10.3389/fendo.2026.1944597"
+   },
+   {
     "pmid": "42712125",
     "title": "GLP-1 Receptor Agonists Post-Bariatric Surgery (GRABS) Trial: Rationale, Design and Baseline Characteristics",
     "journal": "Diabetes Obes Metab",
@@ -1880,18 +1892,6 @@
     "is_review": true,
     "url": "https://pubmed.ncbi.nlm.nih.gov/42776131/",
     "doi": "10.20945/2359-4292-2026-0115"
-   },
-   {
-    "pmid": "43005333",
-    "title": "Glycogenic Hepatopathy Mimicking Overlapping with Metabolic Dysfunction-Associated Steatotic Liver Disease in Newly Diagnosed Type 2 Diabetes: A Case Report",
-    "journal": "SAGE Open Med Case Rep",
-    "pubdate": "2026",
-    "sortdate": "2026-09-22",
-    "authors": "Khatiwala P, Ragan J, Michael A et al.",
-    "is_rct": false,
-    "is_review": false,
-    "url": "https://pubmed.ncbi.nlm.nih.gov/43005333/",
-    "doi": "10.1177/2050313X261492855"
    }
   ],
   "beta_cell": [
