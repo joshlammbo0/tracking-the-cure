@@ -302,6 +302,36 @@
  ],
  "fda_feed": [
   {
+   "number": "K262992",
+   "kind": "510(k)",
+   "date": "2026-11-13",
+   "device": "MiniMed Fit pump",
+   "applicant": "Medtronic MiniMed",
+   "product_code": "QFG",
+   "code_label": "Alternate controller enabled (ACE) insulin pump",
+   "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K262992"
+  },
+  {
+   "number": "K261816",
+   "kind": "510(k)",
+   "date": "2026-11-12",
+   "device": "Tandem Mobi insulin pump with interoperable technology",
+   "applicant": "Tandem Diabetes Care, Inc.",
+   "product_code": "QFG",
+   "code_label": "Alternate controller enabled (ACE) insulin pump",
+   "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K261816"
+  },
+  {
+   "number": "K263756",
+   "kind": "510(k)",
+   "date": "2026-11-12",
+   "device": "twiist system",
+   "applicant": "Deka Research and Development Corp.",
+   "product_code": "QFG",
+   "code_label": "Alternate controller enabled (ACE) insulin pump",
+   "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K263756"
+  },
+  {
    "number": "K263422",
    "kind": "510(k)",
    "date": "2026-10-21",
@@ -332,16 +362,6 @@
    "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K261896"
   },
   {
-   "number": "K260001",
-   "kind": "510(k)",
-   "date": "2026-09-11",
-   "device": "Mint ACE Pump",
-   "applicant": "Beta Bionics, Inc.",
-   "product_code": "QFG",
-   "code_label": "Alternate controller enabled (ACE) insulin pump",
-   "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K260001"
-  },
-  {
    "number": "K262763",
    "kind": "510(k)",
    "date": "2026-09-11",
@@ -350,6 +370,16 @@
    "product_code": "QJI",
    "code_label": "Interoperable automated glycemic controller (AID algorithm)",
    "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K262763"
+  },
+  {
+   "number": "K260001",
+   "kind": "510(k)",
+   "date": "2026-09-11",
+   "device": "Mint ACE Pump",
+   "applicant": "Beta Bionics, Inc.",
+   "product_code": "QFG",
+   "code_label": "Alternate controller enabled (ACE) insulin pump",
+   "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K260001"
   },
   {
    "number": "K260062",
@@ -422,15 +452,15 @@
    "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K260935"
   },
   {
-   "number": "P160017/S135",
+   "number": "P250012/S008",
    "kind": "PMA supplement",
    "date": "2026-06-12",
-   "device": "MiniMed 780G System",
+   "device": "Simplera Sync Sensor",
    "applicant": "Medtronic Minimed, Inc.",
-   "product_code": "OZP",
-   "code_label": "Closed-loop insulin system (PMA)",
+   "product_code": "SFI",
+   "code_label": "CGM sensor (PMA)",
    "note": "Change Design/Components/Specifications/Material",
-   "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P160017"
+   "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P250012"
   },
   {
    "number": "P160007/S060",
@@ -444,15 +474,15 @@
    "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P160007"
   },
   {
-   "number": "P250012/S008",
+   "number": "P160017/S135",
    "kind": "PMA supplement",
    "date": "2026-06-12",
-   "device": "Simplera Sync Sensor",
+   "device": "MiniMed 780G System",
    "applicant": "Medtronic Minimed, Inc.",
-   "product_code": "SFI",
-   "code_label": "CGM sensor (PMA)",
+   "product_code": "OZP",
+   "code_label": "Closed-loop insulin system (PMA)",
    "note": "Change Design/Components/Specifications/Material",
-   "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P250012"
+   "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P160017"
   },
   {
    "number": "K261402",

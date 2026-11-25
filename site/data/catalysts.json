@@ -44,33 +44,6 @@
    "note": "Registry primary completion is when the last patient finishes the primary endpoint, not a results date. Toplines typically follow 1–6 months later."
   },
   {
-   "date": "2026-11-24",
-   "type": "earnings",
-   "precision": "exact",
-   "provenance": null,
-   "title": "MiniMed Group (MMED) earnings",
-   "origin": "yfinance",
-   "source": "https://finance.yahoo.com/quote/MMED"
-  },
-  {
-   "date": "2026-11-24",
-   "type": "earnings",
-   "precision": "exact",
-   "provenance": null,
-   "title": "Embecta (EMBC) earnings",
-   "origin": "yfinance",
-   "source": "https://finance.yahoo.com/quote/EMBC"
-  },
-  {
-   "date": "2026-11-24",
-   "type": "earnings",
-   "precision": "exact",
-   "provenance": null,
-   "title": "Medtronic (MDT) earnings",
-   "origin": "yfinance",
-   "source": "https://finance.yahoo.com/quote/MDT"
-  },
-  {
    "date": "2026-11-30",
    "type": "trial_completion",
    "registry_date": "2026-11",
@@ -197,6 +170,15 @@
    "source": "https://finance.yahoo.com/quote/NVO"
   },
   {
+   "date": "2027-02-04",
+   "type": "earnings",
+   "precision": "exact",
+   "provenance": null,
+   "title": "Embecta (EMBC) earnings",
+   "origin": "yfinance",
+   "source": "https://finance.yahoo.com/quote/EMBC"
+  },
+  {
    "date": "2027-02-11",
    "type": "earnings",
    "precision": "exact",
@@ -233,6 +215,15 @@
    "source": "https://finance.yahoo.com/quote/BBNX"
   },
   {
+   "date": "2027-02-16",
+   "type": "earnings",
+   "precision": "exact",
+   "provenance": null,
+   "title": "MiniMed Group (MMED) earnings",
+   "origin": "yfinance",
+   "source": "https://finance.yahoo.com/quote/MMED"
+  },
+  {
    "date": "2027-02-17",
    "type": "earnings",
    "precision": "exact",
@@ -261,6 +252,15 @@
    "source": "https://clinicaltrials.gov/study/NCT07804849",
    "origin": "registry",
    "note": "Registry primary completion is when the last patient finishes the primary endpoint, not a results date. Toplines typically follow 1–6 months later."
+  },
+  {
+   "date": "2027-02-23",
+   "type": "earnings",
+   "precision": "exact",
+   "provenance": null,
+   "title": "Medtronic (MDT) earnings",
+   "origin": "yfinance",
+   "source": "https://finance.yahoo.com/quote/MDT"
   },
   {
    "date": "2027-03-03",
