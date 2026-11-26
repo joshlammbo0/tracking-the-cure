@@ -105,16 +105,22 @@
    "my_commentary": null,
    "news": [
     {
-     "title": "Zag Bio advances antigen-specific immune tolerance antibody into Phase Ib/IIa T1D trial",
-     "outlet": "AllSci",
-     "date": "2026-10-07",
-     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQN1pyUlhHTEN0amh5VVM5YmY2elNhZDdTb2RmcjJqQUMwcEdvRmdLTHlwcWpiN0dVUVROb1IwQVJWaEVWZXEza1hfbTJOdW92U3VJY0VjdnlNak55MzdjalFCOURaU2w5ZDhjLV9MWkpPTV9QY1Y3WENwQWQ1YldjNUctNjc?oc=5"
+     "title": "Type 1 Diabetes Clinical Trials",
+     "outlet": "Making Sense of Diabetes",
+     "date": "2026-11-16",
+     "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE55X0V0ZTI5RFdIX242S1ZuaURzd1lWZUZSdW9QSExXUU53aE9VX3pCTWFkOTlvS0ZkN0JYTTNLclB0N0h3N1cycFJiOTZKamRlTWwtS3NjSGt2c0JNaE5xcEg5SEVhaXo2eGlUUlliTm5SeVBGUHFUTWxR?oc=5"
     },
     {
      "title": "After stem cell therapy: 10 of 12 without insulin",
      "outlet": "Denkstrom",
      "date": "2026-11-18",
      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPMUsyRG90dWE5LThabXpHRmktaWtCeUMxUWxWVmdYdnFiMnVWSUxyVXNVV2pGbXVlUnBnNlFLU09oYm84ZXRqd1RuTkN0SE5hV3Y5Z2JESFlwY2tLU0tnbVVUcm42d2VkcHlGYk4taUFsU2xXa1JQMV9GMWtnSFRnQlNnMmJBbnhzYjNF?oc=5"
+    },
+    {
+     "title": "Zag Bio advances antigen-specific immune tolerance antibody into Phase Ib/IIa T1D trial",
+     "outlet": "AllSci",
+     "date": "2026-10-07",
+     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQN1pyUlhHTEN0amh5VVM5YmY2elNhZDdTb2RmcjJqQUMwcEdvRmdLTHlwcWpiN0dVUVROb1IwQVJWaEVWZXEza1hfbTJOdW92U3VJY0VjdnlNak55MzdjalFCOURaU2w5ZDhjLV9MWkpPTV9QY1Y3WENwQWQ1YldjNUctNjc?oc=5"
     }
    ]
   },
@@ -195,16 +201,16 @@
    "my_commentary": null,
    "news": [
     {
+     "title": "Type 1 Diabetes Clinical Trials",
+     "outlet": "Making Sense of Diabetes",
+     "date": "2026-11-16",
+     "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE55X0V0ZTI5RFdIX242S1ZuaURzd1lWZUZSdW9QSExXUU53aE9VX3pCTWFkOTlvS0ZkN0JYTTNLclB0N0h3N1cycFJiOTZKamRlTWwtS3NjSGt2c0JNaE5xcEg5SEVhaXo2eGlUUlliTm5SeVBGUHFUTWxR?oc=5"
+    },
+    {
      "title": "Press Release Service: Vertex Reports Third Quarter 2026 Financial Results",
      "outlet": "CRISPR Medicine News",
      "date": "2026-11-03",
      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOaktySzAyeVBqd0VnMHhVUFhSdm45dXFxWk15ZTFwaFN3amF6cWl0SEhjOFc4bUZNc0JJZUxGZER0enc0bmt1UG11WUg0REVJMXNFek5xQ0IwSGFLekw3eVUxSXF4YXpoVFJOOHo3YW44TzZCV0k2ZUZCQThsUFBBY2JSYUcyc3ZreFNBcmhiVm1UNlFXWE9uRnlINzZxOGpscWxSNXJVdWVZSWxrSE9z?oc=5"
-    },
-    {
-     "title": "After stem cell therapy: 10 of 12 without insulin",
-     "outlet": "Denkstrom",
-     "date": "2026-11-18",
-     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPMUsyRG90dWE5LThabXpHRmktaWtCeUMxUWxWVmdYdnFiMnVWSUxyVXNVV2pGbXVlUnBnNlFLU09oYm84ZXRqd1RuTkN0SE5hV3Y5Z2JESFlwY2tLU0tnbVVUcm42d2VkcHlGYk4taUFsU2xXa1JQMV9GMWtnSFRnQlNnMmJBbnhzYjNF?oc=5"
     },
     {
      "title": "Vertex Pharmaceuticals Incorporated Q3 2026 Earnings Call Summary",
@@ -436,7 +442,14 @@
     }
    ],
    "my_commentary": null,
-   "news": []
+   "news": [
+    {
+     "title": "Stem cell-derived islets edge toward clinical reality",
+     "outlet": "BioWorld News",
+     "date": "2026-10-07",
+     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNZU4wa0Nhd2N4dlhLYm0tdVJZNWRsdm56NU5qYV9feTdzNXdOSnhxdElIdWhhWmQ1S1g5Z3pzZFF3QVFMb3EwbkQxaGtFcERJMW9TOGhUWDdCUWpub3FHeGJyVmR5VWFNMXAtWnBMcjBNelN3QmhBTzVjbUU2MENlWmVvUmYzYkcwZ0FYeGxvYkp2MnZzdkJVZzZR?oc=5"
+    }
+   ]
   },
   {
    "id": "sana-up421",
@@ -1064,10 +1077,10 @@
      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBSdlVTNjZCZkN4MnVoM3hFNzBpMHFMU0d4REo4M2NVblhPcjlZUVJ3eGt1U2RaeG4ydU9RalZTSEZvYU1LQXpTTWNLTU5GNVlFSkFhSWNFeDhJRjA?oc=5"
     },
     {
-     "title": "Off-Label Teplizumab Treatment for Adult-Onset Autoimmune Type 1 Diabetes Initially Misdiagnosed As Type 2 Diabetes: A Case Report",
-     "outlet": "Cureus",
-     "date": "2026-11-17",
-     "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOM1pDbGJILXJXeUhnSTYwbXEycVJhMzNKUXpsQnIyYVBtSkpYcWlqdTkwOXdPMGhhMWpGYXVXN0xxNU1WUWJJaTN1Zk5lY0pMc2lCWTBfcjBPZGJOdGlZQlJLa0xuazRlSGYxYUltbkFmX2ExRGVkV3o5YVVTZW1DeVhZeVNkYUxGaTNUUmVFRXBBWFdDVU04SVhNYVd1STNlZktyMzVYRnhIclR1MHJyaEFCMUhmdWliUEFPemJCLTNNbWJjOHZocXJzSXVqRUhuVW5wMWtMMVpGLWFkMFE5d1I2TktzZ1YtQlRmZlpSODZNNXVldGVMcE9uTXY?oc=5"
+     "title": "CU Anschutz–Led Team Publishes National Roadmap for First Approved Immunotherapy for Newly Diagnosed Type 1 Diabetes in Children",
+     "outlet": "University of Colorado Anschutz",
+     "date": "2026-11-11",
+     "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNNTBzODV3TUVTOGMwYmFRb0VweE9nTURVNWNneUp4dzFCSjA2WGgxQUJBRUFITERoMW9tU00xaTVURmNMZ1U3VkZRYm1kdS1KeTlGYmEycnIyaFpsQXhKTC1EcjhUM2IwQVlBVzJWdU1HX1pUQkM2aVpJdklLaU91a3AtbDJ3MnM2Y0xuUDRaLTBvb25MV2MxREpHTktMSTl2UTV2amhzX0VkandPaHo0c0c0VkRueFJFUG5rSVFtRHJXdXFKTzFoV01uQ3N3ZWRrcUl1TzJnSU45UUNQUUE3RmZfZi1FWFFJeU4wdEdEZVhMekNQTmFqckpXNGNVQdIBjgJBVV95cUxPZkhSaDVkMzFpVGJyNEI0QVNld0hwdWhNV0swbm1NX3FUU3loVnZHOWNVcTRxbUNfSVh3SjNDZ3VNbTUxQ1lJeldTRFhLV0hZd2laaGpXMmFlYkx3c2RTRDA0ZnpvZExsckN1TkhGQ3R1dUV2VlRxZ2FNclJtSUVwZFAwVGlWeHdJU1UxdUVMQXQ4NzhLNlRiYll5MUZ3NkIzZVZaN2pMb25KUkZ5Z013TlF4ekdxdGdYT25BVk01UlJEZGtOME01VWJ4bmRwSFpkSGxjUEEyWURsYjBBWWI5RFE1NkFaTlA0R3JUVFhlbXBna3RrbFo1WXIzWEhZNkJBX3hFYnNNY1dTaEhwc0E?oc=5"
     }
    ]
   },
@@ -1196,6 +1209,12 @@
    "my_commentary": null,
    "news": [
     {
+     "title": "Type 1 Diabetes Clinical Trials",
+     "outlet": "Making Sense of Diabetes",
+     "date": "2026-11-16",
+     "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE55X0V0ZTI5RFdIX242S1ZuaURzd1lWZUZSdW9QSExXUU53aE9VX3pCTWFkOTlvS0ZkN0JYTTNLclB0N0h3N1cycFJiOTZKamRlTWwtS3NjSGt2c0JNaE5xcEg5SEVhaXo2eGlUUlliTm5SeVBGUHFUTWxR?oc=5"
+    },
+    {
      "title": "JAKi, TNFi Initiation Associated With Similar Incident Diabetes Risks in Seropositive RA",
      "outlet": "Rheumatology Advisor",
      "date": "2026-11-10",
@@ -1206,12 +1225,6 @@
      "outlet": "HCPLive",
      "date": "2026-10-15",
      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOZWdHWWdYbmg3Qm9neXd2STFZVjB6emFsbmNhNUZMU2JFQUIxM1N1WjF2MG5pOXM5VTJzNVN1ZURuZzZkb0drOVhaeEMyZDZvejJkajRuWUpGSWxIWkdRQnJtbXphazBFSW0xU2k2NG5ZNVRrTUxvQU90bTNHY2taUzJhS2wySmJ6dTlyZXByZGhjelBfZGVWNEt4NE9zRVlSMGVIRTNCc01JSHFSZVBvUA?oc=5"
-    },
-    {
-     "title": "Combined Immune Therapy Examined for Early Type 1 Diabetes",
-     "outlet": "Medscape",
-     "date": "2026-11-09",
-     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPUGFhN3kxV2d4XzRRRUJrdUNDQTRJSTJVREVwQmhiaUdhVG9IQmN4SnNFeV9yaUZYenlaODA3SG0zc3ROX3JSOHhveG10Y2ZKQzRmYWJPaWtaeFUxUXdGNVRReWJ5X1JDZTRIb0xVclpSQTJ1M1hEdEdnWkwxT2xwTmpMTW9KaDJaaXlGYVpyeE15UF9ZNjhiTDREVnpSTEdEa3gyb1NodHRRZjllUlE?oc=5"
     }
    ]
   },
@@ -1450,10 +1463,10 @@
    "my_commentary": null,
    "news": [
     {
-     "title": "Verapamil and Diabetes Prevention: What New Research Shows",
+     "title": "Diabetic Macular Edema Treatment Response: Is It Failing?",
      "outlet": "Diabetes In Control",
      "date": "2026-11-24",
-     "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBHYUJEcm5Ra0draTdGZjRkbkxFdE9TaS1jMEx6SWF1TWZIU1lVR2h1VDcySGVXbEdNeGVpa0N6QV9SV09sOFZjMTRRcUctdTVqcWlaUldVTTZaNlk4VlR1bjRCMU04cWlDdkYtU2FFVWUxMllhOFpN?oc=5"
+     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPeW5HYTdXOEZGMjJYSXBjOHpKMGx6NnRidlJYaXpVMUh0QnBOSFRNcUNseGhtQXNxYUZmdUhWWDVFUU9DTGpmZFFlUmxFNG9sTzdDdWdjZG1zOFpLRDg4Q1EtVDRjV0RoWlkyNUZKRDNhbWh6dXlSVVBKOW0yNFFNMmNB?oc=5"
     },
     {
      "title": "10 Medications Not To Mix With Coffee",
@@ -1874,16 +1887,16 @@
      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5vMFZhelBpd01ycnl3YW1BbXpDYUhISlpHNUhhRXdWZTI4UE5JeV9ydmhsTWx3WVBvTW83MmV4SHBZdkFOeDVmcEtIbTFFVkVmUFhrWmpqSVpiRjBzR2Ew?oc=5"
     },
     {
+     "title": "Can Ozempic Affect Eye Health? Here’s What Ophthalmologists Want You to Know",
+     "outlet": "American Academy of Ophthalmology",
+     "date": "2026-11-11",
+     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQSkVnWWZnZWlnNG8xVmVuTkFkNl9uekZWLTlXNDNEX2ZtNy1vSEZvYTB6SE5JbFZIalJYS1hoS0JpZ1gtdHpnNVRvWkRMX3V3UE11cHQ4Yk5MdUlGU1VoeE5ja25MaUhCUnI4VXRaYnQ5VVduR1FGSUlVUTA3WFJKRmRJQVluSXpMc2VlUWI0bw?oc=5"
+    },
+    {
      "title": "NEWSLETTER: GLP-1 drugs help control prediabetes better than current standard medicine",
      "outlet": "Reuters",
      "date": "2026-11-04",
      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxORHJraGhpZDJuNGN4MGhLWkR2UEltdXpUaVphcjVHVGU1WERiSElLc1d1UUE4blNsUDR5ZmRZcVFoVFE1RkhCMnhXWUt3WndiQzQ3LWh4aXBibWV6dXlXb0Nkd0RleHpvdmNnSWc1a0prQnR4MDI1QXFzZEdfSW02UFdxTGxNZ1A4SmYyakd4Vml2NDlHbjdtWko3NV80Y2hTVDlNUnAwSkZYYkhqczlNczA3VHVxcUJURXFEYjJhRnhMWGRCZFgzc0NrcVJZYjRWSnEzSDRmMmk2UktLeS0w?oc=5"
-    },
-    {
-     "title": "Retatrutide vs Semaglutide for People With Type 2 Diabetes",
-     "outlet": "Medscape",
-     "date": "2026-11-20",
-     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNX1d5YlRpbW1SZk1hTW81emhVVUNGX0FlVTZuZnlWamw5WndmUkxtTXhxbGlxR21Uck8wQlZfZmE3SU5DQ2pWRUJiMkdNTlUxcVRmM29fcU1NMldORmFqaHVUM1pfMEc2TjhDb2E2MzlJMEY1M0RSQXF0Q2RyS2x5Z1JYcW1JRy1kTGlxTHRIcnFqNkZfcXRxejRWWFYwUXpU?oc=5"
     }
    ]
   },
@@ -2192,6 +2205,18 @@
     "doi": "10.1111/dom.71343"
    },
    {
+    "pmid": "42750143",
+    "title": "Engineering Immune-Protective Stem Cell-Derived β-Cell Grafts for Type 1 Diabetes: Encapsulation Technologies and the Emerging Graft Ecosystem",
+    "journal": "Artif Organs",
+    "pubdate": "2026 Dec",
+    "sortdate": "2026-12-01",
+    "authors": "Alanazi MA",
+    "is_rct": false,
+    "is_review": true,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42750143/",
+    "doi": "10.1111/aor.70245"
+   },
+   {
     "pmid": "43063494",
     "title": "Heparin-Decorated Hydrogel Microspheres Enable Bioactive Islet Encapsulation and Sustained Glycemic Control in Diabetic Mice",
     "journal": "ACS Appl Mater Interfaces",
@@ -2202,21 +2227,21 @@
     "is_review": false,
     "url": "https://pubmed.ncbi.nlm.nih.gov/43063494/",
     "doi": "10.1021/acsami.6c15035"
-   },
-   {
-    "pmid": "43034240",
-    "title": "Triphasic decline in kidney function after islet transplantation: sex-based differences and the impact of calcineurin inhibitor immunosuppression in a 20 year single-centre cohort",
-    "journal": "Diabetologia",
-    "pubdate": "2026 Nov 14",
-    "sortdate": "2026-11-14",
-    "authors": "Carr ALJ, Marfil-Garza BA, Ling Y et al.",
-    "is_rct": false,
-    "is_review": false,
-    "url": "https://pubmed.ncbi.nlm.nih.gov/43034240/",
-    "doi": "10.1007/s00125-026-06913-0"
    }
   ],
   "gene_edited": [
+   {
+    "pmid": "42750143",
+    "title": "Engineering Immune-Protective Stem Cell-Derived β-Cell Grafts for Type 1 Diabetes: Encapsulation Technologies and the Emerging Graft Ecosystem",
+    "journal": "Artif Organs",
+    "pubdate": "2026 Dec",
+    "sortdate": "2026-12-01",
+    "authors": "Alanazi MA",
+    "is_rct": false,
+    "is_review": true,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42750143/",
+    "doi": "10.1111/aor.70245"
+   },
    {
     "pmid": "43010164",
     "title": "The road ahead for stem cell therapies in type 1 diabetes",
@@ -2228,6 +2253,18 @@
     "is_review": true,
     "url": "https://pubmed.ncbi.nlm.nih.gov/43010164/",
     "doi": "10.1111/dme.70511"
+   },
+   {
+    "pmid": "42476259",
+    "title": "Rebuilding beta-cell function: Advances in replacement, preservation and regeneration",
+    "journal": "Ann Endocrinol (Paris)",
+    "pubdate": "2026 Nov",
+    "sortdate": "2026-11-01",
+    "authors": "Lericque V, Pasquetti G, Thevenet J et al.",
+    "is_rct": false,
+    "is_review": true,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42476259/",
+    "doi": "10.1016/j.ando.2026.102591"
    },
    {
     "pmid": "42907150",
@@ -2264,30 +2301,6 @@
     "is_review": false,
     "url": "https://pubmed.ncbi.nlm.nih.gov/42923301/",
     "doi": "10.3389/fbioe.2026.1943061"
-   },
-   {
-    "pmid": "42750143",
-    "title": "Engineering Immune-Protective Stem Cell-Derived β-Cell Grafts for Type 1 Diabetes: Encapsulation Technologies and the Emerging Graft Ecosystem",
-    "journal": "Artif Organs",
-    "pubdate": "2026 Sep 16",
-    "sortdate": "2026-09-16",
-    "authors": "Alanazi MA",
-    "is_rct": false,
-    "is_review": true,
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42750143/",
-    "doi": "10.1111/aor.70245"
-   },
-   {
-    "pmid": "42626948",
-    "title": "Gene-edited hypoimmune islets as a cure for type 1 diabetes: a review of the immunological challenges",
-    "journal": "Expert Opin Biol Ther",
-    "pubdate": "2026 Sep",
-    "sortdate": "2026-09-01",
-    "authors": "Hassanein A, Cyprian F, Akhtar S",
-    "is_rct": false,
-    "is_review": true,
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42626948/",
-    "doi": "10.1080/14712598.2026.2721412"
    }
   ],
   "encapsulation": [
@@ -2302,6 +2315,18 @@
     "is_review": false,
     "url": "https://pubmed.ncbi.nlm.nih.gov/42598441/",
     "doi": "10.1016/j.bioactmat.2026.07.057"
+   },
+   {
+    "pmid": "42750143",
+    "title": "Engineering Immune-Protective Stem Cell-Derived β-Cell Grafts for Type 1 Diabetes: Encapsulation Technologies and the Emerging Graft Ecosystem",
+    "journal": "Artif Organs",
+    "pubdate": "2026 Dec",
+    "sortdate": "2026-12-01",
+    "authors": "Alanazi MA",
+    "is_rct": false,
+    "is_review": true,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42750143/",
+    "doi": "10.1111/aor.70245"
    },
    {
     "pmid": "43063494",
@@ -2350,18 +2375,6 @@
     "is_review": false,
     "url": "https://pubmed.ncbi.nlm.nih.gov/42966570/",
     "doi": "10.1016/j.ajt.2026.10.025"
-   },
-   {
-    "pmid": "42920585",
-    "title": "The stiffness of three-dimensional biomimetic matrices regulates insulin secretion via the Piezo1 mechanosensitive ion channel",
-    "journal": "Front Chem",
-    "pubdate": "2026",
-    "sortdate": "2026-10-09",
-    "authors": "Chen X, Wang Z, Gu J et al.",
-    "is_rct": false,
-    "is_review": false,
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42920585/",
-    "doi": "10.3389/fchem.2026.1981529"
    }
   ],
   "immune": [
@@ -2442,30 +2455,36 @@
  "news": {
   "vertex-zimislecel": [
    {
-    "title": "Zag Bio advances antigen-specific immune tolerance antibody into Phase Ib/IIa T1D trial",
-    "outlet": "AllSci",
-    "date": "2026-10-07",
-    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQN1pyUlhHTEN0amh5VVM5YmY2elNhZDdTb2RmcjJqQUMwcEdvRmdLTHlwcWpiN0dVUVROb1IwQVJWaEVWZXEza1hfbTJOdW92U3VJY0VjdnlNak55MzdjalFCOURaU2w5ZDhjLV9MWkpPTV9QY1Y3WENwQWQ1YldjNUctNjc?oc=5"
+    "title": "Type 1 Diabetes Clinical Trials",
+    "outlet": "Making Sense of Diabetes",
+    "date": "2026-11-16",
+    "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE55X0V0ZTI5RFdIX242S1ZuaURzd1lWZUZSdW9QSExXUU53aE9VX3pCTWFkOTlvS0ZkN0JYTTNLclB0N0h3N1cycFJiOTZKamRlTWwtS3NjSGt2c0JNaE5xcEg5SEVhaXo2eGlUUlliTm5SeVBGUHFUTWxR?oc=5"
    },
    {
     "title": "After stem cell therapy: 10 of 12 without insulin",
     "outlet": "Denkstrom",
     "date": "2026-11-18",
     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPMUsyRG90dWE5LThabXpHRmktaWtCeUMxUWxWVmdYdnFiMnVWSUxyVXNVV2pGbXVlUnBnNlFLU09oYm84ZXRqd1RuTkN0SE5hV3Y5Z2JESFlwY2tLU0tnbVVUcm42d2VkcHlGYk4taUFsU2xXa1JQMV9GMWtnSFRnQlNnMmJBbnhzYjNF?oc=5"
+   },
+   {
+    "title": "Zag Bio advances antigen-specific immune tolerance antibody into Phase Ib/IIa T1D trial",
+    "outlet": "AllSci",
+    "date": "2026-10-07",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQN1pyUlhHTEN0amh5VVM5YmY2elNhZDdTb2RmcjJqQUMwcEdvRmdLTHlwcWpiN0dVUVROb1IwQVJWaEVWZXEza1hfbTJOdW92U3VJY0VjdnlNak55MzdjalFCOURaU2w5ZDhjLV9MWkpPTV9QY1Y3WENwQWQ1YldjNUctNjc?oc=5"
    }
   ],
   "vertex-vx017": [
+   {
+    "title": "Type 1 Diabetes Clinical Trials",
+    "outlet": "Making Sense of Diabetes",
+    "date": "2026-11-16",
+    "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE55X0V0ZTI5RFdIX242S1ZuaURzd1lWZUZSdW9QSExXUU53aE9VX3pCTWFkOTlvS0ZkN0JYTTNLclB0N0h3N1cycFJiOTZKamRlTWwtS3NjSGt2c0JNaE5xcEg5SEVhaXo2eGlUUlliTm5SeVBGUHFUTWxR?oc=5"
+   },
    {
     "title": "Press Release Service: Vertex Reports Third Quarter 2026 Financial Results",
     "outlet": "CRISPR Medicine News",
     "date": "2026-11-03",
     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOaktySzAyeVBqd0VnMHhVUFhSdm45dXFxWk15ZTFwaFN3amF6cWl0SEhjOFc4bUZNc0JJZUxGZER0enc0bmt1UG11WUg0REVJMXNFek5xQ0IwSGFLekw3eVUxSXF4YXpoVFJOOHo3YW44TzZCV0k2ZUZCQThsUFBBY2JSYUcyc3ZreFNBcmhiVm1UNlFXWE9uRnlINzZxOGpscWxSNXJVdWVZSWxrSE9z?oc=5"
-   },
-   {
-    "title": "After stem cell therapy: 10 of 12 without insulin",
-    "outlet": "Denkstrom",
-    "date": "2026-11-18",
-    "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPMUsyRG90dWE5LThabXpHRmktaWtCeUMxUWxWVmdYdnFiMnVWSUxyVXNVV2pGbXVlUnBnNlFLU09oYm84ZXRqd1RuTkN0SE5hV3Y5Z2JESFlwY2tLU0tnbVVUcm42d2VkcHlGYk4taUFsU2xXa1JQMV9GMWtnSFRnQlNnMmJBbnhzYjNF?oc=5"
    },
    {
     "title": "Vertex Pharmaceuticals Incorporated Q3 2026 Earnings Call Summary",
@@ -2508,7 +2527,14 @@
     "url": "https://news.google.com/rss/articles/CBMiswJBVV95cUxPODVnRlk1Si1ITHd0aWs5T2ozc2MtOXFJWGM3VTZOcXhlX045OHcxWHJuZXV6cXkzbnFtNGdCUEROVVJQVkE2ZW9ZTWh2VF9XY3ZoOVN4ME9XZ2lZNjFVM21GOVFpdnR5V0dnVVcySG01OG9BdHZ3U3JUVmtTMlNEREZwMk1zV3NqLWtOZWJQODJTdDhWMEozRWt1UU1jX1FfLVNYSkNtN3Nqekh3bUhQcHBQa1hMOEdZcjAwVDRqeEFoOEZtTXE5SEwtY2xkOHBpSGhPbnZVemJBbl80N3RxTEo1TDV4M2pYcW5iV09LT3R4WnpuRkpqYjZyT2tEUDRKZDM0UDhYdFhoWEhVMDFISko2YVF2WHZOaXA4RUdUeXVrZDVTS0tPbVNIZzZwTF9OMG1j?oc=5"
    }
   ],
-  "celregen-crg002": [],
+  "celregen-crg002": [
+   {
+    "title": "Stem cell-derived islets edge toward clinical reality",
+    "outlet": "BioWorld News",
+    "date": "2026-10-07",
+    "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNZU4wa0Nhd2N4dlhLYm0tdVJZNWRsdm56NU5qYV9feTdzNXdOSnhxdElIdWhhWmQ1S1g5Z3pzZFF3QVFMb3EwbkQxaGtFcERJMW9TOGhUWDdCUWpub3FHeGJyVmR5VWFNMXAtWnBMcjBNelN3QmhBTzVjbUU2MENlWmVvUmYzYkcwZ0FYeGxvYkp2MnZzdkJVZzZR?oc=5"
+   }
+  ],
   "sana-up421": [
    {
     "title": "Sana Biotechnology: A Shot At Diabetes",
@@ -2560,13 +2586,19 @@
     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBSdlVTNjZCZkN4MnVoM3hFNzBpMHFMU0d4REo4M2NVblhPcjlZUVJ3eGt1U2RaeG4ydU9RalZTSEZvYU1LQXpTTWNLTU5GNVlFSkFhSWNFeDhJRjA?oc=5"
    },
    {
-    "title": "Off-Label Teplizumab Treatment for Adult-Onset Autoimmune Type 1 Diabetes Initially Misdiagnosed As Type 2 Diabetes: A Case Report",
-    "outlet": "Cureus",
-    "date": "2026-11-17",
-    "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOM1pDbGJILXJXeUhnSTYwbXEycVJhMzNKUXpsQnIyYVBtSkpYcWlqdTkwOXdPMGhhMWpGYXVXN0xxNU1WUWJJaTN1Zk5lY0pMc2lCWTBfcjBPZGJOdGlZQlJLa0xuazRlSGYxYUltbkFmX2ExRGVkV3o5YVVTZW1DeVhZeVNkYUxGaTNUUmVFRXBBWFdDVU04SVhNYVd1STNlZktyMzVYRnhIclR1MHJyaEFCMUhmdWliUEFPemJCLTNNbWJjOHZocXJzSXVqRUhuVW5wMWtMMVpGLWFkMFE5d1I2TktzZ1YtQlRmZlpSODZNNXVldGVMcE9uTXY?oc=5"
+    "title": "CU Anschutz–Led Team Publishes National Roadmap for First Approved Immunotherapy for Newly Diagnosed Type 1 Diabetes in Children",
+    "outlet": "University of Colorado Anschutz",
+    "date": "2026-11-11",
+    "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNNTBzODV3TUVTOGMwYmFRb0VweE9nTURVNWNneUp4dzFCSjA2WGgxQUJBRUFITERoMW9tU00xaTVURmNMZ1U3VkZRYm1kdS1KeTlGYmEycnIyaFpsQXhKTC1EcjhUM2IwQVlBVzJWdU1HX1pUQkM2aVpJdklLaU91a3AtbDJ3MnM2Y0xuUDRaLTBvb25MV2MxREpHTktMSTl2UTV2amhzX0VkandPaHo0c0c0VkRueFJFUG5rSVFtRHJXdXFKTzFoV01uQ3N3ZWRrcUl1TzJnSU45UUNQUUE3RmZfZi1FWFFJeU4wdEdEZVhMekNQTmFqckpXNGNVQdIBjgJBVV95cUxPZkhSaDVkMzFpVGJyNEI0QVNld0hwdWhNV0swbm1NX3FUU3loVnZHOWNVcTRxbUNfSVh3SjNDZ3VNbTUxQ1lJeldTRFhLV0hZd2laaGpXMmFlYkx3c2RTRDA0ZnpvZExsckN1TkhGQ3R1dUV2VlRxZ2FNclJtSUVwZFAwVGlWeHdJU1UxdUVMQXQ4NzhLNlRiYll5MUZ3NkIzZVZaN2pMb25KUkZ5Z013TlF4ekdxdGdYT25BVk01UlJEZGtOME01VWJ4bmRwSFpkSGxjUEEyWURsYjBBWWI5RFE1NkFaTlA0R3JUVFhlbXBna3RrbFo1WXIzWEhZNkJBX3hFYnNNY1dTaEhwc0E?oc=5"
    }
   ],
   "lilly-baricitinib": [
+   {
+    "title": "Type 1 Diabetes Clinical Trials",
+    "outlet": "Making Sense of Diabetes",
+    "date": "2026-11-16",
+    "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE55X0V0ZTI5RFdIX242S1ZuaURzd1lWZUZSdW9QSExXUU53aE9VX3pCTWFkOTlvS0ZkN0JYTTNLclB0N0h3N1cycFJiOTZKamRlTWwtS3NjSGt2c0JNaE5xcEg5SEVhaXo2eGlUUlliTm5SeVBGUHFUTWxR?oc=5"
+   },
    {
     "title": "JAKi, TNFi Initiation Associated With Similar Incident Diabetes Risks in Seropositive RA",
     "outlet": "Rheumatology Advisor",
@@ -2578,21 +2610,15 @@
     "outlet": "HCPLive",
     "date": "2026-10-15",
     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOZWdHWWdYbmg3Qm9neXd2STFZVjB6emFsbmNhNUZMU2JFQUIxM1N1WjF2MG5pOXM5VTJzNVN1ZURuZzZkb0drOVhaeEMyZDZvejJkajRuWUpGSWxIWkdRQnJtbXphazBFSW0xU2k2NG5ZNVRrTUxvQU90bTNHY2taUzJhS2wySmJ6dTlyZXByZGhjelBfZGVWNEt4NE9zRVlSMGVIRTNCc01JSHFSZVBvUA?oc=5"
-   },
-   {
-    "title": "Combined Immune Therapy Examined for Early Type 1 Diabetes",
-    "outlet": "Medscape",
-    "date": "2026-11-09",
-    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPUGFhN3kxV2d4XzRRRUJrdUNDQTRJSTJVREVwQmhiaUdhVG9IQmN4SnNFeV9yaUZYenlaODA3SG0zc3ROX3JSOHhveG10Y2ZKQzRmYWJPaWtaeFUxUXdGNVRReWJ5X1JDZTRIb0xVclpSQTJ1M1hEdEdnWkwxT2xwTmpMTW9KaDJaaXlGYVpyeE15UF9ZNjhiTDREVnpSTEdEa3gyb1NodHRRZjllUlE?oc=5"
    }
   ],
   "sanofi-frexalimab": [],
   "verapamil-clver": [
    {
-    "title": "Verapamil and Diabetes Prevention: What New Research Shows",
+    "title": "Diabetic Macular Edema Treatment Response: Is It Failing?",
     "outlet": "Diabetes In Control",
     "date": "2026-11-24",
-    "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBHYUJEcm5Ra0draTdGZjRkbkxFdE9TaS1jMEx6SWF1TWZIU1lVR2h1VDcySGVXbEdNeGVpa0N6QV9SV09sOFZjMTRRcUctdTVqcWlaUldVTTZaNlk4VlR1bjRCMU04cWlDdkYtU2FFVWUxMllhOFpN?oc=5"
+    "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPeW5HYTdXOEZGMjJYSXBjOHpKMGx6NnRidlJYaXpVMUh0QnBOSFRNcUNseGhtQXNxYUZmdUhWWDVFUU9DTGpmZFFlUmxFNG9sTzdDdWdjZG1zOFpLRDg4Q1EtVDRjV0RoWlkyNUZKRDNhbWh6dXlSVVBKOW0yNFFNMmNB?oc=5"
    },
    {
     "title": "10 Medications Not To Mix With Coffee",
@@ -2643,16 +2669,16 @@
     "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5vMFZhelBpd01ycnl3YW1BbXpDYUhISlpHNUhhRXdWZTI4UE5JeV9ydmhsTWx3WVBvTW83MmV4SHBZdkFOeDVmcEtIbTFFVkVmUFhrWmpqSVpiRjBzR2Ew?oc=5"
    },
    {
+    "title": "Can Ozempic Affect Eye Health? Here’s What Ophthalmologists Want You to Know",
+    "outlet": "American Academy of Ophthalmology",
+    "date": "2026-11-11",
+    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQSkVnWWZnZWlnNG8xVmVuTkFkNl9uekZWLTlXNDNEX2ZtNy1vSEZvYTB6SE5JbFZIalJYS1hoS0JpZ1gtdHpnNVRvWkRMX3V3UE11cHQ4Yk5MdUlGU1VoeE5ja25MaUhCUnI4VXRaYnQ5VVduR1FGSUlVUTA3WFJKRmRJQVluSXpMc2VlUWI0bw?oc=5"
+   },
+   {
     "title": "NEWSLETTER: GLP-1 drugs help control prediabetes better than current standard medicine",
     "outlet": "Reuters",
     "date": "2026-11-04",
     "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxORHJraGhpZDJuNGN4MGhLWkR2UEltdXpUaVphcjVHVGU1WERiSElLc1d1UUE4blNsUDR5ZmRZcVFoVFE1RkhCMnhXWUt3WndiQzQ3LWh4aXBibWV6dXlXb0Nkd0RleHpvdmNnSWc1a0prQnR4MDI1QXFzZEdfSW02UFdxTGxNZ1A4SmYyakd4Vml2NDlHbjdtWko3NV80Y2hTVDlNUnAwSkZYYkhqczlNczA3VHVxcUJURXFEYjJhRnhMWGRCZFgzc0NrcVJZYjRWSnEzSDRmMmk2UktLeS0w?oc=5"
-   },
-   {
-    "title": "Retatrutide vs Semaglutide for People With Type 2 Diabetes",
-    "outlet": "Medscape",
-    "date": "2026-11-20",
-    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNX1d5YlRpbW1SZk1hTW81emhVVUNGX0FlVTZuZnlWamw5WndmUkxtTXhxbGlxR21Uck8wQlZfZmE3SU5DQ2pWRUJiMkdNTlUxcVRmM29fcU1NMldORmFqaHVUM1pfMEc2TjhDb2E2MzlJMEY1M0RSQXF0Q2RyS2x5Z1JYcW1JRy1kTGlxTHRIcnFqNkZfcXRxejRWWFYwUXpU?oc=5"
    }
   ],
   "glp1-beta-cell-preservation": []
